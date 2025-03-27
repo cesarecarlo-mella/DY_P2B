@@ -1,0 +1,117 @@
+id HLcontracted =  + INT(PL,-1,1,1)*gv(ti)*cga(tj)*i_*gs^2*tag*sqrtziu * ( 12*
+         m2 - 10*d*m2 + 2*d^2*m2 - 12*Nc^2*m2 + 10*Nc^2*d*m2 - 2*Nc^2*d^2*m2 )
+
+       + INT(PL,-1,1,1)*gv(ti)*cga(tj)*i_*gs^2*tag*sqrtzu * ( 12*m2 - 10*d*m2
+          + 2*d^2*m2 - 12*Nc^2*m2 + 10*Nc^2*d*m2 - 2*Nc^2*d^2*m2 )
+
+       + INT(PL,-1,1,1)*ga(ti)*cgv(tj)*i_*gs^2*tag*sqrtziu * ( 108*m2 - 90*d*
+         m2 + 24*d^2*m2 - 2*d^3*m2 - 108*Nc^2*m2 + 90*Nc^2*d*m2 - 24*Nc^2*d^2*
+         m2 + 2*Nc^2*d^3*m2 )
+
+       + INT(PL,-1,1,1)*ga(ti)*cgv(tj)*i_*gs^2*tag*sqrtzu * ( 108*m2 - 90*d*m2
+          + 24*d^2*m2 - 2*d^3*m2 - 108*Nc^2*m2 + 90*Nc^2*d*m2 - 24*Nc^2*d^2*m2
+          + 2*Nc^2*d^3*m2 )
+
+       + INT(PL,0,0,1)*gv(ti)*cga(tj)*i_*gs^2*tag*sqrtziu * (  - 12*m2 + 10*d*
+         m2 - 2*d^2*m2 + 12*Nc^2*m2 - 10*Nc^2*d*m2 + 2*Nc^2*d^2*m2 )
+
+       + INT(PL,0,0,1)*gv(ti)*cga(tj)*i_*gs^2*tag*sqrtzu * (  - 12*m2 + 10*d*
+         m2 - 2*d^2*m2 + 12*Nc^2*m2 - 10*Nc^2*d*m2 + 2*Nc^2*d^2*m2 )
+
+       + INT(PL,0,0,1)*ga(ti)*cgv(tj)*i_*gs^2*tag*sqrtziu * (  - 108*m2 + 90*d
+         *m2 - 24*d^2*m2 + 2*d^3*m2 + 108*Nc^2*m2 - 90*Nc^2*d*m2 + 24*Nc^2*d^2
+         *m2 - 2*Nc^2*d^3*m2 )
+
+       + INT(PL,0,0,1)*ga(ti)*cgv(tj)*i_*gs^2*tag*sqrtzu * (  - 108*m2 + 90*d*
+         m2 - 24*d^2*m2 + 2*d^3*m2 + 108*Nc^2*m2 - 90*Nc^2*d*m2 + 24*Nc^2*d^2*
+         m2 - 2*Nc^2*d^3*m2 )
+
+       + INT(PL,0,1,0)*gv(ti)*cga(tj)*i_*gs^2*tag*sqrtziu * (  - 12*m2 + 10*d*
+         m2 - 2*d^2*m2 + 12*Nc^2*m2 - 10*Nc^2*d*m2 + 2*Nc^2*d^2*m2 )
+
+       + INT(PL,0,1,0)*gv(ti)*cga(tj)*i_*gs^2*tag*sqrtzu * (  - 12*m2 + 10*d*
+         m2 - 2*d^2*m2 + 12*Nc^2*m2 - 10*Nc^2*d*m2 + 2*Nc^2*d^2*m2 )
+
+       + INT(PL,0,1,0)*ga(ti)*cgv(tj)*i_*gs^2*tag*sqrtziu * (  - 108*m2 + 90*d
+         *m2 - 24*d^2*m2 + 2*d^3*m2 + 108*Nc^2*m2 - 90*Nc^2*d*m2 + 24*Nc^2*d^2
+         *m2 - 2*Nc^2*d^3*m2 )
+
+       + INT(PL,0,1,0)*ga(ti)*cgv(tj)*i_*gs^2*tag*sqrtzu * (  - 108*m2 + 90*d*
+         m2 - 24*d^2*m2 + 2*d^3*m2 + 108*Nc^2*m2 - 90*Nc^2*d*m2 + 24*Nc^2*d^2*
+         m2 - 2*Nc^2*d^3*m2 )
+
+       + INT(PL,0,1,1)*gv(ti)*cga(tj)*i_*gs^2*tag*sqrtziu * ( 48*m2^2 - 46*d*
+         m2^2 + 13*d^2*m2^2 - d^3*m2^2 - 48*Nc^2*m2^2 + 46*Nc^2*d*m2^2 - 13*
+         Nc^2*d^2*m2^2 + Nc^2*d^3*m2^2 )
+
+       + INT(PL,0,1,1)*gv(ti)*cga(tj)*i_*gs^2*tag*sqrtzu * ( 48*m2^2 - 46*d*
+         m2^2 + 13*d^2*m2^2 - d^3*m2^2 - 48*Nc^2*m2^2 + 46*Nc^2*d*m2^2 - 13*
+         Nc^2*d^2*m2^2 + Nc^2*d^3*m2^2 )
+
+       + INT(PL,0,1,1)*ga(ti)*cgv(tj)*i_*gs^2*tag*sqrtziu * ( 96*m2^2 - 74*d*
+         m2^2 + 17*d^2*m2^2 - d^3*m2^2 - 96*Nc^2*m2^2 + 74*Nc^2*d*m2^2 - 17*
+         Nc^2*d^2*m2^2 + Nc^2*d^3*m2^2 )
+
+       + INT(PL,0,1,1)*ga(ti)*cgv(tj)*i_*gs^2*tag*sqrtzu * ( 96*m2^2 - 74*d*
+         m2^2 + 17*d^2*m2^2 - d^3*m2^2 - 96*Nc^2*m2^2 + 74*Nc^2*d*m2^2 - 17*
+         Nc^2*d^2*m2^2 + Nc^2*d^3*m2^2 )
+
+       + INT(PL,1,0,0)*gv(ti)*cga(tj)*i_*gs^2*tag*sqrtziu * ( 12*m2 - 10*d*m2
+          + 2*d^2*m2 - 12*Nc^2*m2 + 10*Nc^2*d*m2 - 2*Nc^2*d^2*m2 )
+
+       + INT(PL,1,0,0)*gv(ti)*cga(tj)*i_*gs^2*tag*sqrtzu * ( 12*m2 - 10*d*m2
+          + 2*d^2*m2 - 12*Nc^2*m2 + 10*Nc^2*d*m2 - 2*Nc^2*d^2*m2 )
+
+       + INT(PL,1,0,0)*ga(ti)*cgv(tj)*i_*gs^2*tag*sqrtziu * ( 108*m2 - 90*d*m2
+          + 24*d^2*m2 - 2*d^3*m2 - 108*Nc^2*m2 + 90*Nc^2*d*m2 - 24*Nc^2*d^2*m2
+          + 2*Nc^2*d^3*m2 )
+
+       + INT(PL,1,0,0)*ga(ti)*cgv(tj)*i_*gs^2*tag*sqrtzu * ( 108*m2 - 90*d*m2
+          + 24*d^2*m2 - 2*d^3*m2 - 108*Nc^2*m2 + 90*Nc^2*d*m2 - 24*Nc^2*d^2*m2
+          + 2*Nc^2*d^3*m2 )
+
+       + INT(PL,1,0,1)*gv(ti)*cga(tj)*i_*gs^2*tag*sqrtziu * (  - 12*m2^2 + 10*
+         d*m2^2 - 2*d^2*m2^2 + 12*Nc^2*m2^2 - 10*Nc^2*d*m2^2 + 2*Nc^2*d^2*m2^2
+          )
+
+       + INT(PL,1,0,1)*gv(ti)*cga(tj)*i_*gs^2*tag*sqrtzu * (  - 12*m2^2 + 10*d
+         *m2^2 - 2*d^2*m2^2 + 12*Nc^2*m2^2 - 10*Nc^2*d*m2^2 + 2*Nc^2*d^2*m2^2
+          )
+
+       + INT(PL,1,0,1)*ga(ti)*cgv(tj)*i_*gs^2*tag*sqrtziu * (  - 12*m2^2 + 10*
+         d*m2^2 - 2*d^2*m2^2 + 12*Nc^2*m2^2 - 10*Nc^2*d*m2^2 + 2*Nc^2*d^2*m2^2
+          )
+
+       + INT(PL,1,0,1)*ga(ti)*cgv(tj)*i_*gs^2*tag*sqrtzu * (  - 12*m2^2 + 10*d
+         *m2^2 - 2*d^2*m2^2 + 12*Nc^2*m2^2 - 10*Nc^2*d*m2^2 + 2*Nc^2*d^2*m2^2
+          )
+
+       + INT(PL,1,1,0)*gv(ti)*cga(tj)*i_*gs^2*tag*sqrtziu * (  - 12*m2^2 + 10*
+         d*m2^2 - 2*d^2*m2^2 + 12*Nc^2*m2^2 - 10*Nc^2*d*m2^2 + 2*Nc^2*d^2*m2^2
+          )
+
+       + INT(PL,1,1,0)*gv(ti)*cga(tj)*i_*gs^2*tag*sqrtzu * (  - 12*m2^2 + 10*d
+         *m2^2 - 2*d^2*m2^2 + 12*Nc^2*m2^2 - 10*Nc^2*d*m2^2 + 2*Nc^2*d^2*m2^2
+          )
+
+       + INT(PL,1,1,0)*ga(ti)*cgv(tj)*i_*gs^2*tag*sqrtziu * (  - 12*m2^2 + 10*
+         d*m2^2 - 2*d^2*m2^2 + 12*Nc^2*m2^2 - 10*Nc^2*d*m2^2 + 2*Nc^2*d^2*m2^2
+          )
+
+       + INT(PL,1,1,0)*ga(ti)*cgv(tj)*i_*gs^2*tag*sqrtzu * (  - 12*m2^2 + 10*d
+         *m2^2 - 2*d^2*m2^2 + 12*Nc^2*m2^2 - 10*Nc^2*d*m2^2 + 2*Nc^2*d^2*m2^2
+          )
+
+       + INT(PL,1,1,1)*gv(ti)*cga(tj)*i_*gs^2*tag*sqrtziu * ( 12*m2^3 - 10*d*
+         m2^3 + 2*d^2*m2^3 - 12*Nc^2*m2^3 + 10*Nc^2*d*m2^3 - 2*Nc^2*d^2*m2^3 )
+
+       + INT(PL,1,1,1)*gv(ti)*cga(tj)*i_*gs^2*tag*sqrtzu * ( 12*m2^3 - 10*d*
+         m2^3 + 2*d^2*m2^3 - 12*Nc^2*m2^3 + 10*Nc^2*d*m2^3 - 2*Nc^2*d^2*m2^3 )
+
+       + INT(PL,1,1,1)*ga(ti)*cgv(tj)*i_*gs^2*tag*sqrtziu * ( 12*m2^3 - 10*d*
+         m2^3 + 2*d^2*m2^3 - 12*Nc^2*m2^3 + 10*Nc^2*d*m2^3 - 2*Nc^2*d^2*m2^3 )
+
+       + INT(PL,1,1,1)*ga(ti)*cgv(tj)*i_*gs^2*tag*sqrtzu * ( 12*m2^3 - 10*d*
+         m2^3 + 2*d^2*m2^3 - 12*Nc^2*m2^3 + 10*Nc^2*d*m2^3 - 2*Nc^2*d^2*m2^3 )
+         ;
+

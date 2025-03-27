@@ -1,0 +1,16 @@
+import re
+
+filename = 'tmp/toreduce.inc'
+
+with open(filename, 'r') as f:
+    content = f.read().replace('\n', '')
+    diag_unique = list(
+        set([i.replace(' ', '') for i in re.findall('INT\('+"(.*?)"+'\)', content)]))
+    rly_unique = sorted(list(set([j for k in diag_unique for j in k])))
+    print(rly_unique)
+    
+with open('external/ints.inc', 'w') as g:
+    for intt in rly_unique:
+        new = intt.split(',')[0]+'   '+' '.join(intt.split(',')[1:])
+        g.write(new+'\n')
+    

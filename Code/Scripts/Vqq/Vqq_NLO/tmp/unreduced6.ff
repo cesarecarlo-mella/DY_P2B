@@ -1,0 +1,248 @@
+id HLcontracted =  + INT(PL,-1,1,1)*gv(ti)*cga(tj)*i_*gs^2*tag*sqrtziu * ( 6*
+         Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*m2^2 - 5*Prop(cut,-q,m2)*
+         Den(cut, - q.p1 + q.p2*u)*d*m2^2 + Prop(cut,-q,m2)*Den(cut, - q.p1 + 
+         q.p2*u)*d^2*m2^2 - 6*Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*
+         m2^2 + 5*Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*d*m2^2 - 
+         Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*d^2*m2^2 )
+
+       + INT(PL,-1,1,1)*gv(ti)*cga(tj)*i_*gs^2*tag*sqrtzu * ( 6*Prop(cut,-q,m2
+         )*Den(cut, - q.p1 + q.p2*u)*m2^2 - 5*Prop(cut,-q,m2)*Den(cut, - q.p1
+          + q.p2*u)*d*m2^2 + Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*d^2*
+         m2^2 - 6*Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*m2^2 + 5*
+         Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*d*m2^2 - Prop(cut,-q,
+         m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*d^2*m2^2 )
+
+       + INT(PL,-1,1,1)*ga(ti)*cgv(tj)*i_*gs^2*tag*sqrtziu * ( 54*Prop(cut,-q,
+         m2)*Den(cut, - q.p1 + q.p2*u)*m2^2 - 45*Prop(cut,-q,m2)*Den(cut, - 
+         q.p1 + q.p2*u)*d*m2^2 + 12*Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*
+         d^2*m2^2 - Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*d^3*m2^2 - 54*
+         Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*m2^2 + 45*Prop(cut,-q,
+         m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*d*m2^2 - 12*Prop(cut,-q,m2)*Den(
+         cut, - q.p1 + q.p2*u)*Nc^2*d^2*m2^2 + Prop(cut,-q,m2)*Den(cut, - q.p1
+          + q.p2*u)*Nc^2*d^3*m2^2 )
+
+       + INT(PL,-1,1,1)*ga(ti)*cgv(tj)*i_*gs^2*tag*sqrtzu * ( 54*Prop(cut,-q,
+         m2)*Den(cut, - q.p1 + q.p2*u)*m2^2 - 45*Prop(cut,-q,m2)*Den(cut, - 
+         q.p1 + q.p2*u)*d*m2^2 + 12*Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*
+         d^2*m2^2 - Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*d^3*m2^2 - 54*
+         Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*m2^2 + 45*Prop(cut,-q,
+         m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*d*m2^2 - 12*Prop(cut,-q,m2)*Den(
+         cut, - q.p1 + q.p2*u)*Nc^2*d^2*m2^2 + Prop(cut,-q,m2)*Den(cut, - q.p1
+          + q.p2*u)*Nc^2*d^3*m2^2 )
+
+       + INT(PL,0,0,1)*gv(ti)*cga(tj)*i_*gs^2*tag*sqrtziu * (  - 6*Prop(cut,-q
+         ,m2)*Den(cut, - q.p1 + q.p2*u)*m2^2 + 5*Prop(cut,-q,m2)*Den(cut, - 
+         q.p1 + q.p2*u)*d*m2^2 - Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*d^2
+         *m2^2 + 6*Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*m2^2 - 5*
+         Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*d*m2^2 + Prop(cut,-q,
+         m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*d^2*m2^2 )
+
+       + INT(PL,0,0,1)*gv(ti)*cga(tj)*i_*gs^2*tag*sqrtzu * (  - 6*Prop(cut,-q,
+         m2)*Den(cut, - q.p1 + q.p2*u)*m2^2 + 5*Prop(cut,-q,m2)*Den(cut, - 
+         q.p1 + q.p2*u)*d*m2^2 - Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*d^2
+         *m2^2 + 6*Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*m2^2 - 5*
+         Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*d*m2^2 + Prop(cut,-q,
+         m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*d^2*m2^2 )
+
+       + INT(PL,0,0,1)*ga(ti)*cgv(tj)*i_*gs^2*tag*sqrtziu * (  - 54*Prop(cut,
+         -q,m2)*Den(cut, - q.p1 + q.p2*u)*m2^2 + 45*Prop(cut,-q,m2)*Den(cut,
+          - q.p1 + q.p2*u)*d*m2^2 - 12*Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*
+         u)*d^2*m2^2 + Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*d^3*m2^2 + 54
+         *Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*m2^2 - 45*Prop(cut,-q
+         ,m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*d*m2^2 + 12*Prop(cut,-q,m2)*Den(
+         cut, - q.p1 + q.p2*u)*Nc^2*d^2*m2^2 - Prop(cut,-q,m2)*Den(cut, - q.p1
+          + q.p2*u)*Nc^2*d^3*m2^2 )
+
+       + INT(PL,0,0,1)*ga(ti)*cgv(tj)*i_*gs^2*tag*sqrtzu * (  - 54*Prop(cut,-q
+         ,m2)*Den(cut, - q.p1 + q.p2*u)*m2^2 + 45*Prop(cut,-q,m2)*Den(cut, - 
+         q.p1 + q.p2*u)*d*m2^2 - 12*Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*
+         d^2*m2^2 + Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*d^3*m2^2 + 54*
+         Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*m2^2 - 45*Prop(cut,-q,
+         m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*d*m2^2 + 12*Prop(cut,-q,m2)*Den(
+         cut, - q.p1 + q.p2*u)*Nc^2*d^2*m2^2 - Prop(cut,-q,m2)*Den(cut, - q.p1
+          + q.p2*u)*Nc^2*d^3*m2^2 )
+
+       + INT(PL,0,1,0)*gv(ti)*cga(tj)*i_*gs^2*tag*sqrtziu * (  - 6*Prop(cut,-q
+         ,m2)*Den(cut, - q.p1 + q.p2*u)*m2^2 + 5*Prop(cut,-q,m2)*Den(cut, - 
+         q.p1 + q.p2*u)*d*m2^2 - Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*d^2
+         *m2^2 + 6*Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*m2^2 - 5*
+         Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*d*m2^2 + Prop(cut,-q,
+         m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*d^2*m2^2 )
+
+       + INT(PL,0,1,0)*gv(ti)*cga(tj)*i_*gs^2*tag*sqrtzu * (  - 6*Prop(cut,-q,
+         m2)*Den(cut, - q.p1 + q.p2*u)*m2^2 + 5*Prop(cut,-q,m2)*Den(cut, - 
+         q.p1 + q.p2*u)*d*m2^2 - Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*d^2
+         *m2^2 + 6*Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*m2^2 - 5*
+         Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*d*m2^2 + Prop(cut,-q,
+         m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*d^2*m2^2 )
+
+       + INT(PL,0,1,0)*ga(ti)*cgv(tj)*i_*gs^2*tag*sqrtziu * (  - 54*Prop(cut,
+         -q,m2)*Den(cut, - q.p1 + q.p2*u)*m2^2 + 45*Prop(cut,-q,m2)*Den(cut,
+          - q.p1 + q.p2*u)*d*m2^2 - 12*Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*
+         u)*d^2*m2^2 + Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*d^3*m2^2 + 54
+         *Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*m2^2 - 45*Prop(cut,-q
+         ,m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*d*m2^2 + 12*Prop(cut,-q,m2)*Den(
+         cut, - q.p1 + q.p2*u)*Nc^2*d^2*m2^2 - Prop(cut,-q,m2)*Den(cut, - q.p1
+          + q.p2*u)*Nc^2*d^3*m2^2 )
+
+       + INT(PL,0,1,0)*ga(ti)*cgv(tj)*i_*gs^2*tag*sqrtzu * (  - 54*Prop(cut,-q
+         ,m2)*Den(cut, - q.p1 + q.p2*u)*m2^2 + 45*Prop(cut,-q,m2)*Den(cut, - 
+         q.p1 + q.p2*u)*d*m2^2 - 12*Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*
+         d^2*m2^2 + Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*d^3*m2^2 + 54*
+         Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*m2^2 - 45*Prop(cut,-q,
+         m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*d*m2^2 + 12*Prop(cut,-q,m2)*Den(
+         cut, - q.p1 + q.p2*u)*Nc^2*d^2*m2^2 - Prop(cut,-q,m2)*Den(cut, - q.p1
+          + q.p2*u)*Nc^2*d^3*m2^2 )
+
+       + INT(PL,0,1,1)*gv(ti)*cga(tj)*i_*gs^2*tag*sqrtziu * ( 24*Prop(cut,-q,
+         m2)*Den(cut, - q.p1 + q.p2*u)*m2^3 - 23*Prop(cut,-q,m2)*Den(cut, - 
+         q.p1 + q.p2*u)*d*m2^3 + 13/2*Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u
+         )*d^2*m2^3 - 1/2*Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*d^3*m2^3
+          - 24*Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*m2^3 + 23*Prop(
+         cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*d*m2^3 - 13/2*Prop(cut,-q,
+         m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*d^2*m2^3 + 1/2*Prop(cut,-q,m2)*
+         Den(cut, - q.p1 + q.p2*u)*Nc^2*d^3*m2^3 )
+
+       + INT(PL,0,1,1)*gv(ti)*cga(tj)*i_*gs^2*tag*sqrtzu * ( 24*Prop(cut,-q,m2
+         )*Den(cut, - q.p1 + q.p2*u)*m2^3 - 23*Prop(cut,-q,m2)*Den(cut, - q.p1
+          + q.p2*u)*d*m2^3 + 13/2*Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*
+         d^2*m2^3 - 1/2*Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*d^3*m2^3 - 
+         24*Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*m2^3 + 23*Prop(cut,
+         -q,m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*d*m2^3 - 13/2*Prop(cut,-q,m2)*
+         Den(cut, - q.p1 + q.p2*u)*Nc^2*d^2*m2^3 + 1/2*Prop(cut,-q,m2)*Den(cut
+         , - q.p1 + q.p2*u)*Nc^2*d^3*m2^3 )
+
+       + INT(PL,0,1,1)*ga(ti)*cgv(tj)*i_*gs^2*tag*sqrtziu * ( 48*Prop(cut,-q,
+         m2)*Den(cut, - q.p1 + q.p2*u)*m2^3 - 37*Prop(cut,-q,m2)*Den(cut, - 
+         q.p1 + q.p2*u)*d*m2^3 + 17/2*Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u
+         )*d^2*m2^3 - 1/2*Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*d^3*m2^3
+          - 48*Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*m2^3 + 37*Prop(
+         cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*d*m2^3 - 17/2*Prop(cut,-q,
+         m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*d^2*m2^3 + 1/2*Prop(cut,-q,m2)*
+         Den(cut, - q.p1 + q.p2*u)*Nc^2*d^3*m2^3 )
+
+       + INT(PL,0,1,1)*ga(ti)*cgv(tj)*i_*gs^2*tag*sqrtzu * ( 48*Prop(cut,-q,m2
+         )*Den(cut, - q.p1 + q.p2*u)*m2^3 - 37*Prop(cut,-q,m2)*Den(cut, - q.p1
+          + q.p2*u)*d*m2^3 + 17/2*Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*
+         d^2*m2^3 - 1/2*Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*d^3*m2^3 - 
+         48*Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*m2^3 + 37*Prop(cut,
+         -q,m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*d*m2^3 - 17/2*Prop(cut,-q,m2)*
+         Den(cut, - q.p1 + q.p2*u)*Nc^2*d^2*m2^3 + 1/2*Prop(cut,-q,m2)*Den(cut
+         , - q.p1 + q.p2*u)*Nc^2*d^3*m2^3 )
+
+       + INT(PL,1,0,0)*gv(ti)*cga(tj)*i_*gs^2*tag*sqrtziu * ( 6*Prop(cut,-q,m2
+         )*Den(cut, - q.p1 + q.p2*u)*m2^2 - 5*Prop(cut,-q,m2)*Den(cut, - q.p1
+          + q.p2*u)*d*m2^2 + Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*d^2*
+         m2^2 - 6*Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*m2^2 + 5*
+         Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*d*m2^2 - Prop(cut,-q,
+         m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*d^2*m2^2 )
+
+       + INT(PL,1,0,0)*gv(ti)*cga(tj)*i_*gs^2*tag*sqrtzu * ( 6*Prop(cut,-q,m2)
+         *Den(cut, - q.p1 + q.p2*u)*m2^2 - 5*Prop(cut,-q,m2)*Den(cut, - q.p1
+          + q.p2*u)*d*m2^2 + Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*d^2*
+         m2^2 - 6*Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*m2^2 + 5*
+         Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*d*m2^2 - Prop(cut,-q,
+         m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*d^2*m2^2 )
+
+       + INT(PL,1,0,0)*ga(ti)*cgv(tj)*i_*gs^2*tag*sqrtziu * ( 54*Prop(cut,-q,
+         m2)*Den(cut, - q.p1 + q.p2*u)*m2^2 - 45*Prop(cut,-q,m2)*Den(cut, - 
+         q.p1 + q.p2*u)*d*m2^2 + 12*Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*
+         d^2*m2^2 - Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*d^3*m2^2 - 54*
+         Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*m2^2 + 45*Prop(cut,-q,
+         m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*d*m2^2 - 12*Prop(cut,-q,m2)*Den(
+         cut, - q.p1 + q.p2*u)*Nc^2*d^2*m2^2 + Prop(cut,-q,m2)*Den(cut, - q.p1
+          + q.p2*u)*Nc^2*d^3*m2^2 )
+
+       + INT(PL,1,0,0)*ga(ti)*cgv(tj)*i_*gs^2*tag*sqrtzu * ( 54*Prop(cut,-q,m2
+         )*Den(cut, - q.p1 + q.p2*u)*m2^2 - 45*Prop(cut,-q,m2)*Den(cut, - q.p1
+          + q.p2*u)*d*m2^2 + 12*Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*d^2*
+         m2^2 - Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*d^3*m2^2 - 54*Prop(
+         cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*m2^2 + 45*Prop(cut,-q,m2)*
+         Den(cut, - q.p1 + q.p2*u)*Nc^2*d*m2^2 - 12*Prop(cut,-q,m2)*Den(cut,
+          - q.p1 + q.p2*u)*Nc^2*d^2*m2^2 + Prop(cut,-q,m2)*Den(cut, - q.p1 + 
+         q.p2*u)*Nc^2*d^3*m2^2 )
+
+       + INT(PL,1,0,1)*gv(ti)*cga(tj)*i_*gs^2*tag*sqrtziu * (  - 6*Prop(cut,-q
+         ,m2)*Den(cut, - q.p1 + q.p2*u)*m2^3 + 5*Prop(cut,-q,m2)*Den(cut, - 
+         q.p1 + q.p2*u)*d*m2^3 - Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*d^2
+         *m2^3 + 6*Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*m2^3 - 5*
+         Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*d*m2^3 + Prop(cut,-q,
+         m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*d^2*m2^3 )
+
+       + INT(PL,1,0,1)*gv(ti)*cga(tj)*i_*gs^2*tag*sqrtzu * (  - 6*Prop(cut,-q,
+         m2)*Den(cut, - q.p1 + q.p2*u)*m2^3 + 5*Prop(cut,-q,m2)*Den(cut, - 
+         q.p1 + q.p2*u)*d*m2^3 - Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*d^2
+         *m2^3 + 6*Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*m2^3 - 5*
+         Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*d*m2^3 + Prop(cut,-q,
+         m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*d^2*m2^3 )
+
+       + INT(PL,1,0,1)*ga(ti)*cgv(tj)*i_*gs^2*tag*sqrtziu * (  - 6*Prop(cut,-q
+         ,m2)*Den(cut, - q.p1 + q.p2*u)*m2^3 + 5*Prop(cut,-q,m2)*Den(cut, - 
+         q.p1 + q.p2*u)*d*m2^3 - Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*d^2
+         *m2^3 + 6*Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*m2^3 - 5*
+         Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*d*m2^3 + Prop(cut,-q,
+         m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*d^2*m2^3 )
+
+       + INT(PL,1,0,1)*ga(ti)*cgv(tj)*i_*gs^2*tag*sqrtzu * (  - 6*Prop(cut,-q,
+         m2)*Den(cut, - q.p1 + q.p2*u)*m2^3 + 5*Prop(cut,-q,m2)*Den(cut, - 
+         q.p1 + q.p2*u)*d*m2^3 - Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*d^2
+         *m2^3 + 6*Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*m2^3 - 5*
+         Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*d*m2^3 + Prop(cut,-q,
+         m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*d^2*m2^3 )
+
+       + INT(PL,1,1,0)*gv(ti)*cga(tj)*i_*gs^2*tag*sqrtziu * (  - 6*Prop(cut,-q
+         ,m2)*Den(cut, - q.p1 + q.p2*u)*m2^3 + 5*Prop(cut,-q,m2)*Den(cut, - 
+         q.p1 + q.p2*u)*d*m2^3 - Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*d^2
+         *m2^3 + 6*Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*m2^3 - 5*
+         Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*d*m2^3 + Prop(cut,-q,
+         m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*d^2*m2^3 )
+
+       + INT(PL,1,1,0)*gv(ti)*cga(tj)*i_*gs^2*tag*sqrtzu * (  - 6*Prop(cut,-q,
+         m2)*Den(cut, - q.p1 + q.p2*u)*m2^3 + 5*Prop(cut,-q,m2)*Den(cut, - 
+         q.p1 + q.p2*u)*d*m2^3 - Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*d^2
+         *m2^3 + 6*Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*m2^3 - 5*
+         Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*d*m2^3 + Prop(cut,-q,
+         m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*d^2*m2^3 )
+
+       + INT(PL,1,1,0)*ga(ti)*cgv(tj)*i_*gs^2*tag*sqrtziu * (  - 6*Prop(cut,-q
+         ,m2)*Den(cut, - q.p1 + q.p2*u)*m2^3 + 5*Prop(cut,-q,m2)*Den(cut, - 
+         q.p1 + q.p2*u)*d*m2^3 - Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*d^2
+         *m2^3 + 6*Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*m2^3 - 5*
+         Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*d*m2^3 + Prop(cut,-q,
+         m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*d^2*m2^3 )
+
+       + INT(PL,1,1,0)*ga(ti)*cgv(tj)*i_*gs^2*tag*sqrtzu * (  - 6*Prop(cut,-q,
+         m2)*Den(cut, - q.p1 + q.p2*u)*m2^3 + 5*Prop(cut,-q,m2)*Den(cut, - 
+         q.p1 + q.p2*u)*d*m2^3 - Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*d^2
+         *m2^3 + 6*Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*m2^3 - 5*
+         Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*d*m2^3 + Prop(cut,-q,
+         m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*d^2*m2^3 )
+
+       + INT(PL,1,1,1)*gv(ti)*cga(tj)*i_*gs^2*tag*sqrtziu * ( 6*Prop(cut,-q,m2
+         )*Den(cut, - q.p1 + q.p2*u)*m2^4 - 5*Prop(cut,-q,m2)*Den(cut, - q.p1
+          + q.p2*u)*d*m2^4 + Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*d^2*
+         m2^4 - 6*Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*m2^4 + 5*
+         Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*d*m2^4 - Prop(cut,-q,
+         m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*d^2*m2^4 )
+
+       + INT(PL,1,1,1)*gv(ti)*cga(tj)*i_*gs^2*tag*sqrtzu * ( 6*Prop(cut,-q,m2)
+         *Den(cut, - q.p1 + q.p2*u)*m2^4 - 5*Prop(cut,-q,m2)*Den(cut, - q.p1
+          + q.p2*u)*d*m2^4 + Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*d^2*
+         m2^4 - 6*Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*m2^4 + 5*
+         Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*d*m2^4 - Prop(cut,-q,
+         m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*d^2*m2^4 )
+
+       + INT(PL,1,1,1)*ga(ti)*cgv(tj)*i_*gs^2*tag*sqrtziu * ( 6*Prop(cut,-q,m2
+         )*Den(cut, - q.p1 + q.p2*u)*m2^4 - 5*Prop(cut,-q,m2)*Den(cut, - q.p1
+          + q.p2*u)*d*m2^4 + Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*d^2*
+         m2^4 - 6*Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*m2^4 + 5*
+         Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*d*m2^4 - Prop(cut,-q,
+         m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*d^2*m2^4 )
+
+       + INT(PL,1,1,1)*ga(ti)*cgv(tj)*i_*gs^2*tag*sqrtzu * ( 6*Prop(cut,-q,m2)
+         *Den(cut, - q.p1 + q.p2*u)*m2^4 - 5*Prop(cut,-q,m2)*Den(cut, - q.p1
+          + q.p2*u)*d*m2^4 + Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*d^2*
+         m2^4 - 6*Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*m2^4 + 5*
+         Prop(cut,-q,m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*d*m2^4 - Prop(cut,-q,
+         m2)*Den(cut, - q.p1 + q.p2*u)*Nc^2*d^2*m2^4 );
+

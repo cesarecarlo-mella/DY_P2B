@@ -1,0 +1,4 @@
+import os
+
+for proc in ['Vqq']:
+    os.system(f"tform -d 'PROC'={proc} -M utils/colour_algebra.frm")

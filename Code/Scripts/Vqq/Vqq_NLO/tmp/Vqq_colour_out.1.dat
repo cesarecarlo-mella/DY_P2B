@@ -1,0 +1,36 @@
+l ampl1L =  + Spin(1,p1,mu1,k1,mu95,k1,mu2,p2)*pQuark(3, - k1 + p1,4)*pQuark(5
+      , - k1 - p2,6)*pgluon(mu1,mu2,-k1)*d_(i99,i97) * ( 1/2*pol(V(mu95,q))*
+         gv(ti)*gs^2*Nc^-1 - 1/2*pol(V(mu95,q))*gv(ti)*gs^2*Nc )
+
+       + Spin(1,p1,mu1,k1,mu95,p2,mu2,p2)*pQuark(3, - k1 + p1,4)*pQuark(5, - 
+      k1 - p2,6)*pgluon(mu1,mu2,-k1)*d_(i99,i97) * ( 1/2*pol(V(mu95,q))*gv(ti)
+         *gs^2*Nc^-1 - 1/2*pol(V(mu95,q))*gv(ti)*gs^2*Nc )
+
+       + Spin(1,p1,mu1,k1,rho1,rho2,rho3,k1,mu2,p2)*pQuark(3, - k1 + p1,4)*
+      pQuark(5, - k1 - p2,6)*pgluon(mu1,mu2,-k1)*d_(i99,i97) * ( 1/12*pol(V(
+         mu95,q))*ga(ti)*eps(mu95,rho1,rho2,rho3)*gs^2*Nc^-1 - 1/12*pol(V(mu95
+         ,q))*ga(ti)*eps(mu95,rho1,rho2,rho3)*gs^2*Nc )
+
+       + Spin(1,p1,mu1,k1,rho1,rho2,rho3,p2,mu2,p2)*pQuark(3, - k1 + p1,4)*
+      pQuark(5, - k1 - p2,6)*pgluon(mu1,mu2,-k1)*d_(i99,i97) * ( 1/12*pol(V(
+         mu95,q))*ga(ti)*eps(mu95,rho1,rho2,rho3)*gs^2*Nc^-1 - 1/12*pol(V(mu95
+         ,q))*ga(ti)*eps(mu95,rho1,rho2,rho3)*gs^2*Nc )
+
+       + Spin(1,p1,mu1,p1,mu95,k1,mu2,p2)*pQuark(3, - k1 + p1,4)*pQuark(5, - 
+      k1 - p2,6)*pgluon(mu1,mu2,-k1)*d_(i99,i97) * (  - 1/2*pol(V(mu95,q))*gv(
+         ti)*gs^2*Nc^-1 + 1/2*pol(V(mu95,q))*gv(ti)*gs^2*Nc )
+
+       + Spin(1,p1,mu1,p1,mu95,p2,mu2,p2)*pQuark(3, - k1 + p1,4)*pQuark(5, - 
+      k1 - p2,6)*pgluon(mu1,mu2,-k1)*d_(i99,i97) * (  - 1/2*pol(V(mu95,q))*gv(
+         ti)*gs^2*Nc^-1 + 1/2*pol(V(mu95,q))*gv(ti)*gs^2*Nc )
+
+       + Spin(1,p1,mu1,p1,rho1,rho2,rho3,k1,mu2,p2)*pQuark(3, - k1 + p1,4)*
+      pQuark(5, - k1 - p2,6)*pgluon(mu1,mu2,-k1)*d_(i99,i97) * (  - 1/12*pol(
+         V(mu95,q))*ga(ti)*eps(mu95,rho1,rho2,rho3)*gs^2*Nc^-1 + 1/12*pol(V(
+         mu95,q))*ga(ti)*eps(mu95,rho1,rho2,rho3)*gs^2*Nc )
+
+       + Spin(1,p1,mu1,p1,rho1,rho2,rho3,p2,mu2,p2)*pQuark(3, - k1 + p1,4)*
+      pQuark(5, - k1 - p2,6)*pgluon(mu1,mu2,-k1)*d_(i99,i97) * (  - 1/12*pol(
+         V(mu95,q))*ga(ti)*eps(mu95,rho1,rho2,rho3)*gs^2*Nc^-1 + 1/12*pol(V(
+         mu95,q))*ga(ti)*eps(mu95,rho1,rho2,rho3)*gs^2*Nc );
+

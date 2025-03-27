@@ -1,0 +1,19 @@
+off statistics;
+#-
+#include all_header.h
+#include process_header.h
+
+
+
+*will change when loops are present
+#include ./tmp/Vqq_colour_out.'NLOOP'.dat
+#include ./tmp/CVqq_colour_out.'NLOOP'.dat
+
+b Sector, i_, gs, gem, lambda, T, f, s, pol, Nc, Nf, NfZ, NfG, NfGext, NfZext;
+.sort
+#write <tmp/Vqq.'NLOOP'.dat> "id ampl'NLOOP''PROC' = %e" ampl
+#write <tmp/ConjVqq.'NLOOP'.dat> "id conjampl'NLOOP''PROC' = %e" Campl
+#message reformat done and written in tmp/
+
+
+.end

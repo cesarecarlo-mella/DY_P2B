@@ -1,0 +1,12 @@
+#define NDIAG "1"
+#define NLOOP "0"
+#define PROC "Vqq"
+*#define NPROP "3"
+*#define NPROJ "12"
+*#define NEWINTNO "5"
+*#procedure reconstruction
+*id INT(PL?, x1?, ..., x'NPROP'?) = INT(PL , theta_(1,x1)*2^((1-1)*theta_(1,x1)), theta_(1,x2)*2^((2-1)*the!ta_(1,x2)), theta_(1,x3)*2^((3-1)*theta_(1,x3)),
+*!                                    [], x1,..., x'NPROP');
+
+*id INT(PL?, n1?, ..., n'NPROP'?, [], x1?, ..., x'NPROP'?) = INT(PL, n1+...+n'NPROP', [], x1, ..., x'NPROP');
+*#endprocedure

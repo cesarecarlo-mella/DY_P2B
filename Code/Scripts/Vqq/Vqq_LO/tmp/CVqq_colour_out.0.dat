@@ -1,0 +1,6 @@
+l Campl0L =  + SpinC(1,p2,nu95,p1)*pol(CutV(nu95,q))*i_ * (  - cgv(tj)*
+         d_(i99,i97) )
+
+       + SpinC(1,p2,omega3,omega2,omega1,p1)*pol(CutV(nu95,q))*i_ * ( 1/6*cga(
+         tj)*eps(nu95,omega1,omega2,omega3)*d_(i99,i97) );
+

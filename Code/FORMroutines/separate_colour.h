@@ -1,0 +1,56 @@
+id vggg(a1?,a2?,a3?,mu1?,mu2?,mu3?,mom1?,mom2?,mom3?) =
+    gs* f(a1,a2,a3)*vggg(mu1,mu2,mu3,mom1,mom2,mom3);
+ 
+id once vgggg(a1?,a2?,a3?,a4?,mu1?,mu2?,mu3?,mu4?) =
+    -i_*gs^2*f(a1,a2,a100)*f(a3,a4,a100)*vgggg(mu1,mu2,mu3,mu4)
+    -i_*gs^2*f(a1,a3,a100)*f(a2,a4,a100)*vgggg(mu1,mu3,mu2,mu4)
+    -i_*gs^2*f(a1,a4,a100)*f(a3,a2,a100)*vgggg(mu1,mu4,mu3,mu2);
+
+id once vgggg(a1?,a2?,a3?,a4?,mu1?,mu2?,mu3?,mu4?) =
+-i_*gs^2*f(a1,a2,a101)*f(a3,a4,a101)*vgggg(mu1,mu2,mu3,mu4)
+-i_*gs^2*f(a1,a3,a101)*f(a2,a4,a101)*vgggg(mu1,mu3,mu2,mu4)
+-i_*gs^2*f(a1,a4,a101)*f(a3,a2,a101)*vgggg(mu1,mu4,mu3,mu2);
+
+id once vgggg(a1?,a2?,a3?,a4?,mu1?,mu2?,mu3?,mu4?) = 
+-i_*gs^2*f(a1,a2,a102)*f(a3,a4,a102)*vgggg(mu1,mu2,mu3,mu4)
+-i_*gs^2*f(a1,a3,a102)*f(a2,a4,a102)*vgggg(mu1,mu3,mu2,mu4)
+-i_*gs^2*f(a1,a4,a102)*f(a3,a2,a102)*vgggg(mu1,mu4,mu3,mu2);
+
+
+id vHgg(a1?,a2?,mu1?,mu2?, mom1?,mom2?) =
+    i_*lambda*d_(a1,a2)*vHgg(mu1,mu2,mom1,mom2);
+
+id vHggg(a1?,a2?,a3?,mu1?,mu2?,mu3?,mom1?,mom2?,mom3?) =
+    lambda*gs*f(a1,a2,a3)*vHggg(mu1,mu2,mu3,mom1,mom2,mom3);
+
+id vAgg(a1?,a2?,mu1?,mu2?, mom1?,mom2?) =
+    -i_*gA*d_(a1,a2)*vAgg(mu1,mu2,mom1,mom2);
+
+id vAggg(a1?,a2?,a3?,mu1?,mu2?,mu3?,mom1?,mom2?,mom3?) =
+    -TAG*gs*gA*f(a1,a2,a3)*vAggg(mu1,mu2,mu3,mom1,mom2,mom3);
+
+id once vHgggg(a1?,a2?,a3?,a4?,mu1?,mu2?,mu3?,mu4?) =
+    -i_*lambda*gs^2*f(a1,a2,a110)*f(a3,a4,a110)*vHgggg(mu1,mu2,mu3,mu4)
+    -i_*lambda*gs^2*f(a1,a3,a110)*f(a2,a4,a110)*vHgggg(mu1,mu3,mu2,mu4)
+    -i_*lambda*gs^2*f(a1,a4,a110)*f(a3,a2,a110)*vHgggg(mu1,mu4,mu3,mu2);
+
+*might not be compatible with other rules
+id vQQZ(j1?,j2?,?x) = -i_*d_(j1,j2)*vQQZ(?x);
+id vQQV(j1?,j2?,?x) = -i_*d_(j1,j2)*vQQV(?x);
+
+
+*maybe unsafe order
+id vQQg(i1?,a3?,i2?,n1?,mu3?,n2?) =
+    -i_*gs*T(a3,i1,i2)*vQQg(mu3,n1,n2);
+id vQQp(i1?,i2?,n1?,mu3?,n2?) =
+    -i_*vQQp(mu3,n1,n2)*d_(i1,i2);
+
+id vGGg(a1?,a2?,a3?,mu1?,mom1?) =
+    -gs*f(a1,a2,a3)*vGGg(mu1,mom1);
+
+.sort
+
+id pgluon(a1?,a2?,mu1?,mu2?,v?) = - i_*d_(a1, a2)*pgluon(mu1,mu2,v);
+id pQuark(i1?,i2?,n1?, v?,n2?) = i_*d_(i1,i2)*pQuark(n1, v,n2);
+id pghost(a1?,a2?, v?) = i_*d_(a1,a2)*pghost(v);
+.sort

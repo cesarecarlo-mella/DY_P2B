@@ -1,0 +1,5 @@
+l ampl0L =  + Spin(1,p1,mu95,p2)*d_(i99,i97) * (  - pol(V(mu95,q))*gv(ti)*i_ )
+
+       + Spin(1,p1,rho1,rho2,rho3,p2)*d_(i99,i97) * (  - 1/6*pol(V(mu95,q))*
+         ga(ti)*eps(mu95,rho1,rho2,rho3)*i_ );
+

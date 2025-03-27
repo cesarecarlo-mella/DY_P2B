@@ -1,0 +1,38 @@
+myfolder = "ampl"
+layers = {&layers&}
+&colourdict&
+FFs=&ff&
+weight = &weight&
+
+solution = Get["../../../Mathematica/MasterIntegrals/&nloop&L/MIsolutions.m"]
+
+Convert[x_] := 
+ x /. {Den[y_] :> 1/y, Num[y_] :> y} /. (s12 -> 
+ m2 - s23 - s13)/. {m2->1, gem -> 1,eq -> 1, gs -> 1, T[y__] :> 1, s[y__] :> 1, f[y__] :> 1, CMetric[y__]:>1}
+
+SimplePreMI[x_] := Collect[x/.d->4-2*eps, _INT, Together]
+
+ApplySolution[x_] := x/.solution
+
+ExpandExpression[x_] := Collect[Series[x,{eps,0,weight}]//Normal, {eps, _G, _Zeta, Pi, I}, Together]
+
+
+(**)
+
+Process[i_] := Module[
+    {expr}, Do[
+StringDelete[
+  Import["tmp/layers/"<>ToString[lay]<>"/"<>myfolder<>"/FF"<>ToString[i]<>"/S1_reduced.ff", "String"], 
+  "\n" | " " | ";"] // ToExpression;
+expr[i][lay] = colour[lay]*ExpandExpression[
+    ApplySolution[
+        SimplePreMI[
+            Convert[
+                FF[i][lay]
+                ]
+                ]
+                ]];
+                Print[i], {lay, layers}];
+Write["tmp/results/FF"<>ToString[i]<>"_unrenorm.m", Sum[expr[i][lay],{lay, layers}]]]
+
+Do[Process[#]&/@ Range[1,FFs]]
