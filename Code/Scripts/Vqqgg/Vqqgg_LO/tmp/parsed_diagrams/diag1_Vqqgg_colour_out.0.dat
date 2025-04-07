@@ -1,0 +1,36 @@
+l [diag1] =  + Spin(1,p1,mu95,q,mu91,p2,mu93,p2)*pQuark(1,q + p1,2)*pQuark(3,
+       - p2 - r1,4) * ( pol(V(mu95,q))*pol(gluon(mu93,r1,a93))*pol(gluon(mu91,
+         r2,a91))*gv(ti)*T(a93,i97,i4)*T(a91,i4,i99)*i_*gs^2 )
+
+       + Spin(1,p1,mu95,q,mu91,r1,mu93,p2)*pQuark(1,q + p1,2)*pQuark(3, - p2
+       - r1,4) * ( pol(V(mu95,q))*pol(gluon(mu93,r1,a93))*pol(gluon(mu91,r2,
+         a91))*gv(ti)*T(a93,i97,i4)*T(a91,i4,i99)*i_*gs^2 )
+
+       + Spin(1,p1,mu95,p1,mu91,p2,mu93,p2)*pQuark(1,q + p1,2)*pQuark(3, - p2
+       - r1,4) * ( pol(V(mu95,q))*pol(gluon(mu93,r1,a93))*pol(gluon(mu91,r2,
+         a91))*gv(ti)*T(a93,i97,i4)*T(a91,i4,i99)*i_*gs^2 )
+
+       + Spin(1,p1,mu95,p1,mu91,r1,mu93,p2)*pQuark(1,q + p1,2)*pQuark(3, - p2
+       - r1,4) * ( pol(V(mu95,q))*pol(gluon(mu93,r1,a93))*pol(gluon(mu91,r2,
+         a91))*gv(ti)*T(a93,i97,i4)*T(a91,i4,i99)*i_*gs^2 )
+
+       + Spin(1,p1,rho1,rho2,rho3,q,mu91,p2,mu93,p2)*pQuark(1,q + p1,2)*
+      pQuark(3, - p2 - r1,4) * ( 1/6*pol(V(mu95,q))*pol(gluon(mu93,r1,a93))*
+         pol(gluon(mu91,r2,a91))*ga(ti)*eps(mu95,rho1,rho2,rho3)*T(a93,i97,i4)
+         *T(a91,i4,i99)*i_*gs^2 )
+
+       + Spin(1,p1,rho1,rho2,rho3,q,mu91,r1,mu93,p2)*pQuark(1,q + p1,2)*
+      pQuark(3, - p2 - r1,4) * ( 1/6*pol(V(mu95,q))*pol(gluon(mu93,r1,a93))*
+         pol(gluon(mu91,r2,a91))*ga(ti)*eps(mu95,rho1,rho2,rho3)*T(a93,i97,i4)
+         *T(a91,i4,i99)*i_*gs^2 )
+
+       + Spin(1,p1,rho1,rho2,rho3,p1,mu91,p2,mu93,p2)*pQuark(1,q + p1,2)*
+      pQuark(3, - p2 - r1,4) * ( 1/6*pol(V(mu95,q))*pol(gluon(mu93,r1,a93))*
+         pol(gluon(mu91,r2,a91))*ga(ti)*eps(mu95,rho1,rho2,rho3)*T(a93,i97,i4)
+         *T(a91,i4,i99)*i_*gs^2 )
+
+       + Spin(1,p1,rho1,rho2,rho3,p1,mu91,r1,mu93,p2)*pQuark(1,q + p1,2)*
+      pQuark(3, - p2 - r1,4) * ( 1/6*pol(V(mu95,q))*pol(gluon(mu93,r1,a93))*
+         pol(gluon(mu91,r2,a91))*ga(ti)*eps(mu95,rho1,rho2,rho3)*T(a93,i97,i4)
+         *T(a91,i4,i99)*i_*gs^2 );
+ 

@@ -1,0 +1,37 @@
+l [Cdiag5] =  + SpinC(1,p2,nu91,p2,nu95,p1,nu93,p1)*pol(CutV(nu95,q))*pol(
+      Cutgluon(nu93,r1,a93))*pol(Cutgluon(nu91,r2,a91))*pQuark(1,p1 + r1,2)*
+      pQuark(3, - p2 - r2,4)*T(a93,i99,i2)*T(a91,i2,i97)*i_ * (  - cgv(tj)*
+         gs^2 )
+
+       + SpinC(1,p2,nu91,p2,nu95,r1,nu93,p1)*pol(CutV(nu95,q))*pol(Cutgluon(
+      nu93,r1,a93))*pol(Cutgluon(nu91,r2,a91))*pQuark(1,p1 + r1,2)*pQuark(3,
+       - p2 - r2,4)*T(a93,i99,i2)*T(a91,i2,i97)*i_ * (  - cgv(tj)*gs^2 )
+
+       + SpinC(1,p2,nu91,p2,omega3,omega2,omega1,p1,nu93,p1)*pol(CutV(nu95,q))
+      *pol(Cutgluon(nu93,r1,a93))*pol(Cutgluon(nu91,r2,a91))*pQuark(1,p1 + r1,
+      2)*pQuark(3, - p2 - r2,4)*T(a93,i99,i2)*T(a91,i2,i97)*i_ * ( 1/6*cga(tj)
+         *eps(nu95,omega1,omega2,omega3)*gs^2 )
+
+       + SpinC(1,p2,nu91,p2,omega3,omega2,omega1,r1,nu93,p1)*pol(CutV(nu95,q))
+      *pol(Cutgluon(nu93,r1,a93))*pol(Cutgluon(nu91,r2,a91))*pQuark(1,p1 + r1,
+      2)*pQuark(3, - p2 - r2,4)*T(a93,i99,i2)*T(a91,i2,i97)*i_ * ( 1/6*cga(tj)
+         *eps(nu95,omega1,omega2,omega3)*gs^2 )
+
+       + SpinC(1,p2,nu91,r2,nu95,p1,nu93,p1)*pol(CutV(nu95,q))*pol(Cutgluon(
+      nu93,r1,a93))*pol(Cutgluon(nu91,r2,a91))*pQuark(1,p1 + r1,2)*pQuark(3,
+       - p2 - r2,4)*T(a93,i99,i2)*T(a91,i2,i97)*i_ * (  - cgv(tj)*gs^2 )
+
+       + SpinC(1,p2,nu91,r2,nu95,r1,nu93,p1)*pol(CutV(nu95,q))*pol(Cutgluon(
+      nu93,r1,a93))*pol(Cutgluon(nu91,r2,a91))*pQuark(1,p1 + r1,2)*pQuark(3,
+       - p2 - r2,4)*T(a93,i99,i2)*T(a91,i2,i97)*i_ * (  - cgv(tj)*gs^2 )
+
+       + SpinC(1,p2,nu91,r2,omega3,omega2,omega1,p1,nu93,p1)*pol(CutV(nu95,q))
+      *pol(Cutgluon(nu93,r1,a93))*pol(Cutgluon(nu91,r2,a91))*pQuark(1,p1 + r1,
+      2)*pQuark(3, - p2 - r2,4)*T(a93,i99,i2)*T(a91,i2,i97)*i_ * ( 1/6*cga(tj)
+         *eps(nu95,omega1,omega2,omega3)*gs^2 )
+
+       + SpinC(1,p2,nu91,r2,omega3,omega2,omega1,r1,nu93,p1)*pol(CutV(nu95,q))
+      *pol(Cutgluon(nu93,r1,a93))*pol(Cutgluon(nu91,r2,a91))*pQuark(1,p1 + r1,
+      2)*pQuark(3, - p2 - r2,4)*T(a93,i99,i2)*T(a91,i2,i97)*i_ * ( 1/6*cga(tj)
+         *eps(nu95,omega1,omega2,omega3)*gs^2 );
+
