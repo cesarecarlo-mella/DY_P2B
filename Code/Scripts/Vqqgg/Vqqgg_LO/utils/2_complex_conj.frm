@@ -19,7 +19,7 @@ off statistics;
 
 id T(a1?, i1?, i2?) = T(a1,i2,i1);
 .sort
-argument Spin, eps, pgluon, pQuark, pol;
+argument Spin, eps, pgluon, pQuark, pol, vggg, vgggg;
 #do counter = 1,20
 id mu'counter'= nu'counter';
 #enddo

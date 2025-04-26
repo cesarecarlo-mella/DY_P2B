@@ -59,7 +59,9 @@ os.chdir("./utils/tmp_fld/")
 with concurrent.futures.ProcessPoolExecutor(max_workers=mw) as executor:
         futures = [executor.submit(run_form, i, j) for i in range(1, ndiag1+1) for j in range(1, ndiag2+1)]
         concurrent.futures.wait(futures)
-
+#with concurrent.futures.ProcessPoolExecutor(max_workers=mw) as executor:
+#        futures = [executor.submit(run_form, i, j) for i in [1] for j in [3]]
+#        concurrent.futures.wait(futures)
 
 os.chdir("../../")
 shutil.rmtree("./utils/tmp_fld")

@@ -6,16 +6,8 @@ off statistics;
 
 
 
-*#include ./tmp/C'PROC'_colour_out.0.dat
-*#include ./tmp/'PROC'_colour_out.0.dat
 
 #message square
-*l interf =ampl0L*Campl0L;
-*.sort
-*Drop;
-*NDrop interf;
-
-
 #include ../../../tmp/parsed_diagrams/diag'loopind'_'PROC'_colour_out.'NLOOP'.dat
 #include ../../../tmp/parsed_diagrams/Cdiag'loopind2'_'PROC'_colour_out.'NLOOP'.dat
 
@@ -33,6 +25,7 @@ id Spin(1,p1,?x, p2)*SpinC(1,p2, ?y, p1) = g_(1,p1,?x, p2, ?y);
 .sort
 
 
+
 #message do again color algebra for external color structures
 #message color again
 #include color.h
@@ -42,6 +35,8 @@ id Spin(1,p1,?x, p2)*SpinC(1,p2, ?y, p1) = g_(1,p1,?x, p2, ?y);
 
 b gs,[Nc^2-1], pol,ga,gv,cga,cgv,eps,pQuark,g_;
 .sort
+
+
 
 
 #message traces and contractions
@@ -85,10 +80,10 @@ b d_,e_,Nc, gs,[Nc^2-1],Prop, Den, ga, cga, gv, cgv;
 
 b d_,e_,Nc, gs,[Nc^2-1],Prop, Den, ga, cga, gv, cgv;
 .sort
-#write <../../../tmp/squared_diagrams/vv/vv_diag_'loopind'_'loopind2'.inc> "l [interf'loopind'vs'loopind2']=%e" vv
-#write <../../../tmp/squared_diagrams/aa/aa_diag_'loopind'_'loopind2'.inc> "l [interf'loopind'vs'loopind2']=%e" aa
-#write <../../../tmp/squared_diagrams/va/va_diag_'loopind'_'loopind2'.inc> "l [interf'loopind'vs'loopind2']=%e" va
-#write <../../../tmp/squared_diagrams/av/av_diag_'loopind'_'loopind2'.inc> "l [interf'loopind'vs'loopind2']=%e" av
+#write <../../../tmp/squared_diagrams/vv/vv_diag_'loopind'_'loopind2'.inc> "l [interf'loopind'_'loopind2']=%e" vv
+#write <../../../tmp/squared_diagrams/aa/aa_diag_'loopind'_'loopind2'.inc> "l [interf'loopind'_'loopind2']=%e" aa
+#write <../../../tmp/squared_diagrams/va/va_diag_'loopind'_'loopind2'.inc> "l [interf'loopind'_'loopind2']=%e" va
+#write <../../../tmp/squared_diagrams/av/av_diag_'loopind'_'loopind2'.inc> "l [interf'loopind'_'loopind2']=%e" av
 .end
 
 
