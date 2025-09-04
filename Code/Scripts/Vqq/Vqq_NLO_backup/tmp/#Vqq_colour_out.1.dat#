@@ -1,0 +1,10 @@
+l ampl =  + gs^2*Nc^-1 * ( 1/2*Spin(1,p1,mu1, - k1 + p1,mu95, - k1 - p2,mu2,p2
+         )*gv(ti)*pgluon(mu1,mu2,-k1)*d_(i99,i97) + 1/12*Spin(1,p1,mu1, - k1
+          + p1,rho1,rho2,rho3, - k1 - p2,mu2,p2)*ga(ti)*eps(mu95,rho1,rho2,
+         rho3)*pgluon(mu1,mu2,-k1)*d_(i99,i97) )
+
+       + gs^2*Nc * (  - 1/2*Spin(1,p1,mu1, - k1 + p1,mu95, - k1 - p2,mu2,p2)*
+         gv(ti)*pgluon(mu1,mu2,-k1)*d_(i99,i97) - 1/12*Spin(1,p1,mu1, - k1 + 
+         p1,rho1,rho2,rho3, - k1 - p2,mu2,p2)*ga(ti)*eps(mu95,rho1,rho2,rho3)*
+         pgluon(mu1,mu2,-k1)*d_(i99,i97) );
+

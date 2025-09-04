@@ -1,0 +1,38 @@
+from common import *
+from pynman.form_helpers import *
+from pynman.diagram_generation import *
+from pynman.momenta_words import *
+from pynman.processing_sector_mappings import *
+import logging
+setup_logger(DEBUG=True, start_new_log=True)
+logging.info(
+    f"Executing script 01_setup.py for {process} {axialtype} at {NLoops} loops.")
+
+# run qgraf diagram generation
+run_qgraf(all=True)
+
+# fill in family names, colour layers etc. into all scripts
+adjust_scripts()
+
+# process sector mappings files and extract lists of zero sectors
+write_zero_sectors()
+
+# check if the diagram shifts are available
+assert os.path.isfile(
+    reduze_diagram_shifts), f"The file {reduze_diagram_shifts} was not found.\n Run Reduze shifter on the QGRAF yaml output and re-run the setup script."
+
+# run colour algebra script
+run_colour_algebra()
+
+# run
+momenta_main_function()
+
+# split diagrams by colour layers
+run_colour_splitting()
+
+# check that the projectors for this process are available
+assert os.path.isfile(
+    projectors_file), f"The file {projectors_file} with the independent tensor structures (not the projector coefficients) was not found."
+
+# run script 04
+run_sector_splitting(cores=4)

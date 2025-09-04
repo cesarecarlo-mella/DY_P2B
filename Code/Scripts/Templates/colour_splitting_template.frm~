@@ -1,0 +1,24 @@
+#-
+#include all_header.h
+#include process_header.h
+
+#do n = 1,'Ndiag'
+g [diag'n'] = diag'n';
+#enddo
+
+#include tmp/mom2words_out.&nloop&.inc
+
+b Nc, Nf, NfZ;
+.sort
+
+#do n = 1,'Ndiag'
+l L&ID&diag'n' = [diag'n'][&layer&];
+#enddo
+
+.sort
+
+#do n = 1,'Ndiag'
+#write <tmp/layers/&ID&/partial_amp.inc> "id L&ID&diag'n' = %e" L&ID&diag'n';
+#enddo
+.end
+#+

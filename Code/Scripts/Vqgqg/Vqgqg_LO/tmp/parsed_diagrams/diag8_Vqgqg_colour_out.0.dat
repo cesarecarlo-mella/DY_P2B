@@ -1,0 +1,32 @@
+l [diag8] =  + Spin(1,p1,mu2,q,mu95,r1)*pQuark(3, - q - r1,4)*pgluon(mu1,mu2,
+       - p2 - r2) * (  - pol(V(mu95,q))*pol(gluon(mu97,p2,a97))*pol(gluon(mu91
+         ,r2,a91))*pol(Qbar(93,r1,i93))*gv(ti)*T(a97,i93,j3)*T(a91,j3,i99)*
+         vggg(mu97,mu91,mu1,p2,r2, - p2 - r2)*i_*gs^2 + pol(V(mu95,q))*pol(
+         gluon(mu97,p2,a97))*pol(gluon(mu91,r2,a91))*pol(Qbar(93,r1,i93))*gv(
+         ti)*T(a97,j3,i99)*T(a91,i93,j3)*vggg(mu97,mu91,mu1,p2,r2, - p2 - r2)*
+         i_*gs^2 )
+
+       + Spin(1,p1,mu2,q,rho1,rho2,rho3,r1)*pQuark(3, - q - r1,4)*pgluon(mu1,
+      mu2, - p2 - r2) * (  - 1/6*pol(V(mu95,q))*pol(gluon(mu97,p2,a97))*pol(
+         gluon(mu91,r2,a91))*pol(Qbar(93,r1,i93))*ga(ti)*eps(mu95,rho1,rho2,
+         rho3)*T(a97,i93,j3)*T(a91,j3,i99)*vggg(mu97,mu91,mu1,p2,r2, - p2 - r2
+         )*i_*gs^2 + 1/6*pol(V(mu95,q))*pol(gluon(mu97,p2,a97))*pol(gluon(mu91
+         ,r2,a91))*pol(Qbar(93,r1,i93))*ga(ti)*eps(mu95,rho1,rho2,rho3)*T(a97,
+         j3,i99)*T(a91,i93,j3)*vggg(mu97,mu91,mu1,p2,r2, - p2 - r2)*i_*gs^2 )
+
+       + Spin(1,p1,mu2,r1,mu95,r1)*pQuark(3, - q - r1,4)*pgluon(mu1,mu2, - p2
+       - r2) * (  - pol(V(mu95,q))*pol(gluon(mu97,p2,a97))*pol(gluon(mu91,r2,
+         a91))*pol(Qbar(93,r1,i93))*gv(ti)*T(a97,i93,j3)*T(a91,j3,i99)*vggg(
+         mu97,mu91,mu1,p2,r2, - p2 - r2)*i_*gs^2 + pol(V(mu95,q))*pol(gluon(
+         mu97,p2,a97))*pol(gluon(mu91,r2,a91))*pol(Qbar(93,r1,i93))*gv(ti)*T(
+         a97,j3,i99)*T(a91,i93,j3)*vggg(mu97,mu91,mu1,p2,r2, - p2 - r2)*i_*
+         gs^2 )
+
+       + Spin(1,p1,mu2,r1,rho1,rho2,rho3,r1)*pQuark(3, - q - r1,4)*pgluon(mu1,
+      mu2, - p2 - r2) * (  - 1/6*pol(V(mu95,q))*pol(gluon(mu97,p2,a97))*pol(
+         gluon(mu91,r2,a91))*pol(Qbar(93,r1,i93))*ga(ti)*eps(mu95,rho1,rho2,
+         rho3)*T(a97,i93,j3)*T(a91,j3,i99)*vggg(mu97,mu91,mu1,p2,r2, - p2 - r2
+         )*i_*gs^2 + 1/6*pol(V(mu95,q))*pol(gluon(mu97,p2,a97))*pol(gluon(mu91
+         ,r2,a91))*pol(Qbar(93,r1,i93))*ga(ti)*eps(mu95,rho1,rho2,rho3)*T(a97,
+         j3,i99)*T(a91,i93,j3)*vggg(mu97,mu91,mu1,p2,r2, - p2 - r2)*i_*gs^2 );
+ 

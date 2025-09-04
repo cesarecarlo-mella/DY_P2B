@@ -1,0 +1,36 @@
+l [diag3] =  + Spin(1,r1,mu3,p2)*Spin(2,p1,mu95,q,mu4,r2)*pQuark(1,q + p1,2)*
+      pgluon(mu3,mu4, - p2 - r1)*d_(i99,i97)*d_(i93,i91) * (  - 1/2*pol(V(mu95
+         ,q))*pol(Quark(93,r1,i93))*pol(Qbar(91,r2,i91))*gv(ti)*i_*gs^2 )
+
+       + Spin(1,r1,mu3,p2)*Spin(2,p1,mu95,q,mu4,r2)*pQuark(1,q + p1,2)*pgluon(
+      mu3,mu4, - p2 - r1)*d_(i99,i91)*d_(i97,i93) * ( 1/2*pol(V(mu95,q))*pol(
+         Quark(93,r1,i93))*pol(Qbar(91,r2,i91))*gv(ti)*i_*gs^2*Nc^-1 )
+
+       + Spin(1,r1,mu3,p2)*Spin(2,p1,mu95,p1,mu4,r2)*pQuark(1,q + p1,2)*
+      pgluon(mu3,mu4, - p2 - r1)*d_(i99,i97)*d_(i93,i91) * (  - 1/2*pol(V(mu95
+         ,q))*pol(Quark(93,r1,i93))*pol(Qbar(91,r2,i91))*gv(ti)*i_*gs^2 )
+
+       + Spin(1,r1,mu3,p2)*Spin(2,p1,mu95,p1,mu4,r2)*pQuark(1,q + p1,2)*
+      pgluon(mu3,mu4, - p2 - r1)*d_(i99,i91)*d_(i97,i93) * ( 1/2*pol(V(mu95,q)
+         )*pol(Quark(93,r1,i93))*pol(Qbar(91,r2,i91))*gv(ti)*i_*gs^2*Nc^-1 )
+
+       + Spin(1,r1,mu3,p2)*Spin(2,p1,rho1,rho2,rho3,q,mu4,r2)*pQuark(1,q + p1,
+      2)*pgluon(mu3,mu4, - p2 - r1)*d_(i99,i97)*d_(i93,i91) * (  - 1/12*pol(V(
+         mu95,q))*pol(Quark(93,r1,i93))*pol(Qbar(91,r2,i91))*ga(ti)*eps(mu95,
+         rho1,rho2,rho3)*i_*gs^2 )
+
+       + Spin(1,r1,mu3,p2)*Spin(2,p1,rho1,rho2,rho3,q,mu4,r2)*pQuark(1,q + p1,
+      2)*pgluon(mu3,mu4, - p2 - r1)*d_(i99,i91)*d_(i97,i93) * ( 1/12*pol(V(
+         mu95,q))*pol(Quark(93,r1,i93))*pol(Qbar(91,r2,i91))*ga(ti)*eps(mu95,
+         rho1,rho2,rho3)*i_*gs^2*Nc^-1 )
+
+       + Spin(1,r1,mu3,p2)*Spin(2,p1,rho1,rho2,rho3,p1,mu4,r2)*pQuark(1,q + p1
+      ,2)*pgluon(mu3,mu4, - p2 - r1)*d_(i99,i97)*d_(i93,i91) * (  - 1/12*pol(
+         V(mu95,q))*pol(Quark(93,r1,i93))*pol(Qbar(91,r2,i91))*ga(ti)*eps(mu95
+         ,rho1,rho2,rho3)*i_*gs^2 )
+
+       + Spin(1,r1,mu3,p2)*Spin(2,p1,rho1,rho2,rho3,p1,mu4,r2)*pQuark(1,q + p1
+      ,2)*pgluon(mu3,mu4, - p2 - r1)*d_(i99,i91)*d_(i97,i93) * ( 1/12*pol(V(
+         mu95,q))*pol(Quark(93,r1,i93))*pol(Qbar(91,r2,i91))*ga(ti)*eps(mu95,
+         rho1,rho2,rho3)*i_*gs^2*Nc^-1 );
+ 

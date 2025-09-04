@@ -1,6 +1,0 @@
-id INT(PL1?{PL1,PL2}, n1?, n2?neg0_,n3?,n4?) = 0;
-id INT(PL1?{PL1,PL2}, n1?neg0_, n2?,n3?,n4?) = 0;
-id INT(PL1?{PL1,PL2}, n1?, n2?,n3?neg0_,n4?) = 0;
-id INT(PL3, n1?, n2?neg0_,n3?,n4?, n5?) = 0;
-id INT(PL3, n1?neg0_, n2?,n3?,n4?, n5?) = 0;
-id INT(PL3, n1?, n2?,n3?neg0_,n4?, n5?) = 0;

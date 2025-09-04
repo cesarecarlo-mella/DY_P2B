@@ -52,5 +52,6 @@ id vGGg(a1?,a2?,a3?,mu1?,mom1?) =
 
 id pgluon(a1?,a2?,mu1?,mu2?,v?) = - i_*d_(a1, a2)*pgluon(mu1,mu2,v);
 id pQuark(i1?,i2?,n1?, v?,n2?) = i_*d_(i1,i2)*pQuark(n1, v,n2);
+id pQuark2(i1?,i2?,n1?, v?,n2?) = i_*d_(i1,i2)*pQuark(n1, v,n2);
 id pghost(a1?,a2?, v?) = i_*d_(a1,a2)*pghost(v);
 .sort

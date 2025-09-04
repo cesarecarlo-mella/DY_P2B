@@ -1,0 +1,2087 @@
+ HLcontracted = ( + INT[topo6,1,1,1,1,-1,1,0]*gs^4*sqrtziu * (  - 2*
+         Num[ - 2 + d]*Num[ - 3 + d]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-1)*tag
+          )
+
+       + INT[topo6,1,1,1,1,-1,1,0]*gs^4*Nc^2*sqrtziu * ( 2*Num[ - 2 + d
+         ]*Num[ - 3 + d]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-1)*tag )
+
+       + INT[topo6,1,1,1,1,-1,1,1]*gs^4*sqrtziu * ( 2*Num[ - 2 + d]*
+         Num[ - 3 + d]*e_[p1,p2,r1,r2]*u^(-1)*tag )
+
+       + INT[topo6,1,1,1,1,-1,1,1]*gs^4*Nc^2*sqrtziu * (  - 2*Num[ - 2
+          + d]*Num[ - 3 + d]*e_[p1,p2,r1,r2]*u^(-1)*tag )
+
+       + INT[topo6,1,1,1,1,0,0,0]*gs^4*sqrtziu * (  - 2*Num[ - 2 + d]*
+         Num[ - 3 + d]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-1)*tag )
+
+       + INT[topo6,1,1,1,1,0,0,0]*gs^4*Nc^2*sqrtziu * ( 2*Num[ - 2 + d]
+         *Num[ - 3 + d]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-1)*tag )
+
+       + INT[topo6,1,1,1,1,0,0,1]*gs^4*sqrtziu * ( 2*Num[ - 2 + d]*Num[
+          - 3 + d]*e_[p1,p2,r1,r2]*u^(-1)*tag )
+
+       + INT[topo6,1,1,1,1,0,0,1]*gs^4*Nc^2*sqrtziu * (  - 2*Num[ - 2
+          + d]*Num[ - 3 + d]*e_[p1,p2,r1,r2]*u^(-1)*tag )
+
+       + INT[topo6,1,1,1,1,0,1,-1]*gs^4*sqrtziu * (  - Den[ - 1 + u]*
+         Num[12 + 12*u - 8*u^2 - 4*d - 4*d*u^2 - d^2*u + 2*d^2*u^2]*e_[
+         p1,p2,r1,r2]*m2^(-1)*u^(-1)*tag )
+
+       + INT[topo6,1,1,1,1,0,1,-1]*gs^4*sqrtzu * (  - Den[ - 1 + u]*
+         Num[ - 24 + 44*u + 10*d - 20*d*u - d^2 + 2*d^2*u]*e_[p1,p2,r1,
+         r2]*m2^(-1)*u^(-1)*tag )
+
+       + INT[topo6,1,1,1,1,0,1,-1]*gs^4*Nc^2*sqrtziu * ( Den[ - 1 + u]*
+         Num[12 + 12*u - 8*u^2 - 4*d - 4*d*u^2 - d^2*u + 2*d^2*u^2]*e_[
+         p1,p2,r1,r2]*m2^(-1)*u^(-1)*tag )
+
+       + INT[topo6,1,1,1,1,0,1,-1]*gs^4*Nc^2*sqrtzu * ( Den[ - 1 + u]*
+         Num[ - 24 + 44*u + 10*d - 20*d*u - d^2 + 2*d^2*u]*e_[p1,p2,r1,
+         r2]*m2^(-1)*u^(-1)*tag )
+
+       + INT[topo6,1,1,1,1,0,1,0]*gs^4*sqrtziu * ( 2*Den[ - 1 + u]*Num[
+          - 18 - 18*z + 18*u + 44*u*z - 8*u^2*z + 6*d + 8*d*z - 6*d*u
+          - 13*d*u*z - 4*d*u^2*z - d^2*z + 2*d^2*u^2*z]*e_[p1,p2,r1,r2]
+         *u^(-1)*tag*z^(-1) )
+
+       + INT[topo6,1,1,1,1,0,1,0]*gs^4*sqrtzu * ( 2*Den[ - 1 + u]*Num[
+          - 24 + 44*u + 10*d - 20*d*u - d^2 + 2*d^2*u]*e_[p1,p2,r1,r2]*
+         u^(-1)*tag )
+
+       + INT[topo6,1,1,1,1,0,1,0]*gs^4*Nc^2*sqrtziu * (  - 2*Den[ - 1
+          + u]*Num[ - 18 - 18*z + 18*u + 44*u*z - 8*u^2*z + 6*d + 8*d*z
+          - 6*d*u - 13*d*u*z - 4*d*u^2*z - d^2*z + 2*d^2*u^2*z]*e_[p1,
+         p2,r1,r2]*u^(-1)*tag*z^(-1) )
+
+       + INT[topo6,1,1,1,1,0,1,0]*gs^4*Nc^2*sqrtzu * (  - 2*Den[ - 1 + 
+         u]*Num[ - 24 + 44*u + 10*d - 20*d*u - d^2 + 2*d^2*u]*e_[p1,p2,
+         r1,r2]*u^(-1)*tag )
+
+       + INT[topo6,1,1,1,1,0,1,1]*gs^4*sqrtziu * (  - Den[ - 1 + u]*
+         Num[ - 36 - 48*z + 36*u + 76*u*z - 8*u^2*z + 12*d + 20*d*z - 
+         12*d*u - 26*d*u*z - 4*d*u^2*z - 2*d^2*z + d^2*u*z + 2*d^2*u^2*
+         z]*e_[p1,p2,r1,r2]*m2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo6,1,1,1,1,0,1,1]*gs^4*sqrtzu * (  - Den[ - 1 + u]*Num[
+          - 24 + 44*u + 10*d - 20*d*u - d^2 + 2*d^2*u]*e_[p1,p2,r1,r2]*
+         m2*u^(-1)*tag )
+
+       + INT[topo6,1,1,1,1,0,1,1]*gs^4*Nc^2*sqrtziu * ( Den[ - 1 + u]*
+         Num[ - 36 - 48*z + 36*u + 76*u*z - 8*u^2*z + 12*d + 20*d*z - 
+         12*d*u - 26*d*u*z - 4*d*u^2*z - 2*d^2*z + d^2*u*z + 2*d^2*u^2*
+         z]*e_[p1,p2,r1,r2]*m2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo6,1,1,1,1,0,1,1]*gs^4*Nc^2*sqrtzu * ( Den[ - 1 + u]*
+         Num[ - 24 + 44*u + 10*d - 20*d*u - d^2 + 2*d^2*u]*e_[p1,p2,r1,
+         r2]*m2*u^(-1)*tag )
+
+       + INT[topo6,1,1,1,1,1,0,-1]*gs^4*sqrtziu * (  - Den[ - 1 + u]*
+         Num[ - 12 + 32*u + 6*d - 16*d*u - d^2 + 2*d^2*u]*e_[p1,p2,r1,
+         r2]*m2^(-1)*tag )
+
+       + INT[topo6,1,1,1,1,1,0,-1]*gs^4*sqrtzu * (  - Den[ - 1 + u]*
+         Num[ - 4 + d]*Num[ - 4*u - d + 2*d*u]*e_[p1,p2,r1,r2]*m2^(-1)*
+         u^(-1)*tag )
+
+       + INT[topo6,1,1,1,1,1,0,-1]*gs^4*Nc^2*sqrtziu * ( Den[ - 1 + u]*
+         Num[ - 12 + 32*u + 6*d - 16*d*u - d^2 + 2*d^2*u]*e_[p1,p2,r1,
+         r2]*m2^(-1)*tag )
+
+       + INT[topo6,1,1,1,1,1,0,-1]*gs^4*Nc^2*sqrtzu * ( Den[ - 1 + u]*
+         Num[ - 4 + d]*Num[ - 4*u - d + 2*d*u]*e_[p1,p2,r1,r2]*m2^(-1)*
+         u^(-1)*tag )
+
+       + INT[topo6,1,1,1,1,1,0,0]*gs^4*sqrtziu * ( 2*Den[ - 1 + u]*Num[
+          - 6 + 6*u - 12*u*z + 32*u^2*z + 2*d - 2*d*u + 6*d*u*z - 16*d*
+         u^2*z - d^2*u*z + 2*d^2*u^2*z]*e_[p1,p2,r1,r2]*u^(-1)*tag*
+         z^(-1) )
+
+       + INT[topo6,1,1,1,1,1,0,0]*gs^4*sqrtzu * ( 2*Den[ - 1 + u]*Num[
+          - 3 + d]*Num[4 - 10*u - d + 2*d*u]*e_[p1,p2,r1,r2]*u^(-1)*tag
+          )
+
+       + INT[topo6,1,1,1,1,1,0,0]*gs^4*Nc^2*sqrtziu * (  - 2*Den[ - 1
+          + u]*Num[ - 6 + 6*u - 12*u*z + 32*u^2*z + 2*d - 2*d*u + 6*d*u
+         *z - 16*d*u^2*z - d^2*u*z + 2*d^2*u^2*z]*e_[p1,p2,r1,r2]*
+         u^(-1)*tag*z^(-1) )
+
+       + INT[topo6,1,1,1,1,1,0,0]*gs^4*Nc^2*sqrtzu * (  - 2*Den[ - 1 + 
+         u]*Num[ - 3 + d]*Num[4 - 10*u - d + 2*d*u]*e_[p1,p2,r1,r2]*
+         u^(-1)*tag )
+
+       + INT[topo6,1,1,1,1,1,0,1]*gs^4*sqrtziu * (  - Den[ - 1 + u]*
+         Num[ - 12 + 12*u - 12*u*z + 32*u^2*z + 4*d - 4*d*u + 6*d*u*z
+          - 16*d*u^2*z - d^2*u*z + 2*d^2*u^2*z]*e_[p1,p2,r1,r2]*m2*
+         u^(-1)*tag*z^(-1) )
+
+       + INT[topo6,1,1,1,1,1,0,1]*gs^4*sqrtzu * (  - Den[ - 1 + u]*Num[
+          - 24 + 44*u + 10*d - 20*d*u - d^2 + 2*d^2*u]*e_[p1,p2,r1,r2]*
+         m2*u^(-1)*tag )
+
+       + INT[topo6,1,1,1,1,1,0,1]*gs^4*Nc^2*sqrtziu * ( Den[ - 1 + u]*
+         Num[ - 12 + 12*u - 12*u*z + 32*u^2*z + 4*d - 4*d*u + 6*d*u*z
+          - 16*d*u^2*z - d^2*u*z + 2*d^2*u^2*z]*e_[p1,p2,r1,r2]*m2*
+         u^(-1)*tag*z^(-1) )
+
+       + INT[topo6,1,1,1,1,1,0,1]*gs^4*Nc^2*sqrtzu * ( Den[ - 1 + u]*
+         Num[ - 24 + 44*u + 10*d - 20*d*u - d^2 + 2*d^2*u]*e_[p1,p2,r1,
+         r2]*m2*u^(-1)*tag )
+
+       + INT[topo6,1,1,1,1,1,1,-2]*gs^4*sqrtziu * ( 4*Den[ - 1 + u]*
+         Num[ - 4 + u + d]*e_[p1,p2,r1,r2]*m2^(-1)*tag )
+
+       + INT[topo6,1,1,1,1,1,1,-2]*gs^4*sqrtzu * ( 4*Den[ - 1 + u]*Num[
+         1 - 4*u + d*u]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-1)*tag )
+
+       + INT[topo6,1,1,1,1,1,1,-2]*gs^4*Nc^2*sqrtziu * (  - 4*Den[ - 1
+          + u]*Num[ - 4 + u + d]*e_[p1,p2,r1,r2]*m2^(-1)*tag )
+
+       + INT[topo6,1,1,1,1,1,1,-2]*gs^4*Nc^2*sqrtzu * (  - 4*Den[ - 1
+          + u]*Num[1 - 4*u + d*u]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-1)*tag )
+
+       + INT[topo6,1,1,1,1,1,1,-1]*gs^4*sqrtziu * ( Den[ - 1 + u]*Num[
+          - 12 + 12*z + 32*u*z + 4*d + 2*d*z - 20*d*u*z - d^2*z + 2*d^2
+         *u*z]*e_[p1,p2,r1,r2]*tag*z^(-1) )
+
+       + INT[topo6,1,1,1,1,1,1,-1]*gs^4*sqrtzu * ( Den[ - 1 + u]*Num[
+          - 12 - 36*z + 80*u*z + 4*d + 10*d*z - 28*d*u*z - d^2*z + 2*
+         d^2*u*z]*e_[p1,p2,r1,r2]*u^(-1)*tag*z^(-1) )
+
+       + INT[topo6,1,1,1,1,1,1,-1]*gs^4*Nc^2*sqrtziu * (  - Den[ - 1 + 
+         u]*Num[ - 12 + 12*z + 32*u*z + 4*d + 2*d*z - 20*d*u*z - d^2*z
+          + 2*d^2*u*z]*e_[p1,p2,r1,r2]*tag*z^(-1) )
+
+       + INT[topo6,1,1,1,1,1,1,-1]*gs^4*Nc^2*sqrtzu * (  - Den[ - 1 + u
+         ]*Num[ - 12 - 36*z + 80*u*z + 4*d + 10*d*z - 28*d*u*z - d^2*z
+          + 2*d^2*u*z]*e_[p1,p2,r1,r2]*u^(-1)*tag*z^(-1) )
+
+       + INT[topo6,1,1,1,1,1,1,0]*gs^4*sqrtziu * (  - 2*Den[ - 1 + u]*
+         Num[ - 4 + 2*u - 12*u*z + 38*u^2*z + 2*d*u + 8*d*u*z - 20*d*
+         u^2*z - d^2*u*z + 2*d^2*u^2*z]*e_[p1,p2,r1,r2]*m2*u^(-1)*tag*
+         z^(-1) )
+
+       + INT[topo6,1,1,1,1,1,1,0]*gs^4*sqrtzu * (  - 2*Den[ - 1 + u]*
+         Num[ - 2 - 30*z + 56*u*z + 2*d + 10*d*z - 22*d*u*z - d^2*z + 2
+         *d^2*u*z]*e_[p1,p2,r1,r2]*m2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo6,1,1,1,1,1,1,0]*gs^4*Nc^2*sqrtziu * ( 2*Den[ - 1 + u]
+         *Num[ - 4 + 2*u - 12*u*z + 38*u^2*z + 2*d*u + 8*d*u*z - 20*d*
+         u^2*z - d^2*u*z + 2*d^2*u^2*z]*e_[p1,p2,r1,r2]*m2*u^(-1)*tag*
+         z^(-1) )
+
+       + INT[topo6,1,1,1,1,1,1,0]*gs^4*Nc^2*sqrtzu * ( 2*Den[ - 1 + u]*
+         Num[ - 2 - 30*z + 56*u*z + 2*d + 10*d*z - 22*d*u*z - d^2*z + 2
+         *d^2*u*z]*e_[p1,p2,r1,r2]*m2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo6,1,1,1,1,1,1,1]*gs^4*sqrtziu * ( Den[ - 1 + u]*Num[
+          - 1 + 2*u]*Num[8 + 20*u*z - 10*d*u*z + d^2*u*z]*e_[p1,p2,r1,
+         r2]*m2^2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo6,1,1,1,1,1,1,1]*gs^4*sqrtzu * ( Den[ - 1 + u]*Num[8
+          - 28*z + 48*u*z + 10*d*z - 20*d*u*z - d^2*z + 2*d^2*u*z]*e_[
+         p1,p2,r1,r2]*m2^2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo6,1,1,1,1,1,1,1]*gs^4*Nc^2*sqrtziu * (  - Den[ - 1 + u
+         ]*Num[ - 1 + 2*u]*Num[8 + 20*u*z - 10*d*u*z + d^2*u*z]*e_[p1,
+         p2,r1,r2]*m2^2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo6,1,1,1,1,1,1,1]*gs^4*Nc^2*sqrtzu * (  - Den[ - 1 + u]
+         *Num[8 - 28*z + 48*u*z + 10*d*z - 20*d*u*z - d^2*z + 2*d^2*u*z
+         ]*e_[p1,p2,r1,r2]*m2^2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo7,1,1,1,1,0,0,0]*gs^4*sqrtzu * (  - 2*Num[ - 2 + d]*
+         Num[ - 3 + d]*e_[p1,p2,r1,r2]*m2^(-1)*tag )
+
+       + INT[topo7,1,1,1,1,0,0,0]*gs^4*Nc^2*sqrtzu * ( 2*Num[ - 2 + d]*
+         Num[ - 3 + d]*e_[p1,p2,r1,r2]*m2^(-1)*tag )
+
+       + INT[topo7,1,1,1,1,0,0,1]*gs^4*sqrtzu * ( 2*Num[ - 2 + d]*Num[
+          - 3 + d]*e_[p1,p2,r1,r2]*tag )
+
+       + INT[topo7,1,1,1,1,0,0,1]*gs^4*Nc^2*sqrtzu * (  - 2*Num[ - 2 + 
+         d]*Num[ - 3 + d]*e_[p1,p2,r1,r2]*tag )
+
+       + INT[topo7,1,1,1,1,0,1,-1]*gs^4*sqrtziu * (  - Den[ - 1 + u]*
+         Num[ - 4 + d]*Num[4 - 2*d + d*u]*e_[p1,p2,r1,r2]*m2^(-1)*tag )
+
+       + INT[topo7,1,1,1,1,0,1,-1]*gs^4*sqrtzu * (  - Den[ - 1 + u]*
+         Num[ - 32 + 12*u + 16*d - 6*d*u - 2*d^2 + d^2*u]*e_[p1,p2,r1,
+         r2]*m2^(-1)*u^(-1)*tag )
+
+       + INT[topo7,1,1,1,1,0,1,-1]*gs^4*Nc^2*sqrtziu * ( Den[ - 1 + u]*
+         Num[ - 4 + d]*Num[4 - 2*d + d*u]*e_[p1,p2,r1,r2]*m2^(-1)*tag )
+
+       + INT[topo7,1,1,1,1,0,1,-1]*gs^4*Nc^2*sqrtzu * ( Den[ - 1 + u]*
+         Num[ - 32 + 12*u + 16*d - 6*d*u - 2*d^2 + d^2*u]*e_[p1,p2,r1,
+         r2]*m2^(-1)*u^(-1)*tag )
+
+       + INT[topo7,1,1,1,1,0,1,0]*gs^4*sqrtziu * ( 2*Den[ - 1 + u]*Num[
+          - 3 + d]*Num[10 - 4*u - 2*d + d*u]*e_[p1,p2,r1,r2]*tag )
+
+       + INT[topo7,1,1,1,1,0,1,0]*gs^4*sqrtzu * ( 2*Den[ - 1 + u]*Num[
+          - 32*z - 6*u + 12*u*z + 6*u^2 + 16*d*z + 2*d*u - 6*d*u*z - 2*
+         d*u^2 - 2*d^2*z + d^2*u*z]*e_[p1,p2,r1,r2]*u^(-1)*tag*z^(-1) )
+
+       + INT[topo7,1,1,1,1,0,1,0]*gs^4*Nc^2*sqrtziu * (  - 2*Den[ - 1
+          + u]*Num[ - 3 + d]*Num[10 - 4*u - 2*d + d*u]*e_[p1,p2,r1,r2]*
+         tag )
+
+       + INT[topo7,1,1,1,1,0,1,0]*gs^4*Nc^2*sqrtzu * (  - 2*Den[ - 1 + 
+         u]*Num[ - 32*z - 6*u + 12*u*z + 6*u^2 + 16*d*z + 2*d*u - 6*d*u
+         *z - 2*d*u^2 - 2*d^2*z + d^2*u*z]*e_[p1,p2,r1,r2]*u^(-1)*tag*
+         z^(-1) )
+
+       + INT[topo7,1,1,1,1,0,1,1]*gs^4*sqrtziu * (  - Den[ - 1 + u]*
+         Num[ - 44 + 24*u + 20*d - 10*d*u - 2*d^2 + d^2*u]*e_[p1,p2,r1,
+         r2]*m2*tag )
+
+       + INT[topo7,1,1,1,1,0,1,1]*gs^4*sqrtzu * (  - Den[ - 1 + u]*Num[
+          - 32*z - 12*u + 12*u*z + 12*u^2 + 16*d*z + 4*d*u - 6*d*u*z - 
+         4*d*u^2 - 2*d^2*z + d^2*u*z]*e_[p1,p2,r1,r2]*m2*u^(-1)*tag*
+         z^(-1) )
+
+       + INT[topo7,1,1,1,1,0,1,1]*gs^4*Nc^2*sqrtziu * ( Den[ - 1 + u]*
+         Num[ - 44 + 24*u + 20*d - 10*d*u - 2*d^2 + d^2*u]*e_[p1,p2,r1,
+         r2]*m2*tag )
+
+       + INT[topo7,1,1,1,1,0,1,1]*gs^4*Nc^2*sqrtzu * ( Den[ - 1 + u]*
+         Num[ - 32*z - 12*u + 12*u*z + 12*u^2 + 16*d*z + 4*d*u - 6*d*u*
+         z - 4*d*u^2 - 2*d^2*z + d^2*u*z]*e_[p1,p2,r1,r2]*m2*u^(-1)*tag
+         *z^(-1) )
+
+       + INT[topo7,1,1,1,1,1,-1,0]*gs^4*sqrtzu * (  - 2*Num[ - 2 + d]*
+         Num[ - 3 + d]*e_[p1,p2,r1,r2]*m2^(-1)*tag )
+
+       + INT[topo7,1,1,1,1,1,-1,0]*gs^4*Nc^2*sqrtzu * ( 2*Num[ - 2 + d]
+         *Num[ - 3 + d]*e_[p1,p2,r1,r2]*m2^(-1)*tag )
+
+       + INT[topo7,1,1,1,1,1,-1,1]*gs^4*sqrtzu * ( 2*Num[ - 2 + d]*Num[
+          - 3 + d]*e_[p1,p2,r1,r2]*tag )
+
+       + INT[topo7,1,1,1,1,1,-1,1]*gs^4*Nc^2*sqrtzu * (  - 2*Num[ - 2
+          + d]*Num[ - 3 + d]*e_[p1,p2,r1,r2]*tag )
+
+       + INT[topo7,1,1,1,1,1,0,-1]*gs^4*sqrtziu * (  - Den[ - 1 + u]*
+         Num[ - 44 + 24*u + 20*d - 10*d*u - 2*d^2 + d^2*u]*e_[p1,p2,r1,
+         r2]*m2^(-1)*tag )
+
+       + INT[topo7,1,1,1,1,1,0,-1]*gs^4*sqrtzu * (  - Den[ - 1 + u]*
+         Num[8 - 12*u - 12*u^2 + 4*d + 4*d*u^2 - 2*d^2 + d^2*u]*e_[p1,
+         p2,r1,r2]*m2^(-1)*u^(-1)*tag )
+
+       + INT[topo7,1,1,1,1,1,0,-1]*gs^4*Nc^2*sqrtziu * ( Den[ - 1 + u]*
+         Num[ - 44 + 24*u + 20*d - 10*d*u - 2*d^2 + d^2*u]*e_[p1,p2,r1,
+         r2]*m2^(-1)*tag )
+
+       + INT[topo7,1,1,1,1,1,0,-1]*gs^4*Nc^2*sqrtzu * ( Den[ - 1 + u]*
+         Num[8 - 12*u - 12*u^2 + 4*d + 4*d*u^2 - 2*d^2 + d^2*u]*e_[p1,
+         p2,r1,r2]*m2^(-1)*u^(-1)*tag )
+
+       + INT[topo7,1,1,1,1,1,0,0]*gs^4*sqrtziu * ( 2*Den[ - 1 + u]*Num[
+          - 44 + 24*u + 20*d - 10*d*u - 2*d^2 + d^2*u]*e_[p1,p2,r1,r2]*
+         tag )
+
+       + INT[topo7,1,1,1,1,1,0,0]*gs^4*sqrtzu * ( 2*Den[ - 1 + u]*Num[8
+         *z - 18*u - 44*u*z + 18*u^2 + 18*u^2*z + 4*d*z + 6*d*u + 13*d*
+         u*z - 6*d*u^2 - 8*d*u^2*z - 2*d^2*z + d^2*u^2*z]*e_[p1,p2,r1,
+         r2]*u^(-1)*tag*z^(-1) )
+
+       + INT[topo7,1,1,1,1,1,0,0]*gs^4*Nc^2*sqrtziu * (  - 2*Den[ - 1
+          + u]*Num[ - 44 + 24*u + 20*d - 10*d*u - 2*d^2 + d^2*u]*e_[p1,
+         p2,r1,r2]*tag )
+
+       + INT[topo7,1,1,1,1,1,0,0]*gs^4*Nc^2*sqrtzu * (  - 2*Den[ - 1 + 
+         u]*Num[8*z - 18*u - 44*u*z + 18*u^2 + 18*u^2*z + 4*d*z + 6*d*u
+          + 13*d*u*z - 6*d*u^2 - 8*d*u^2*z - 2*d^2*z + d^2*u^2*z]*e_[p1
+         ,p2,r1,r2]*u^(-1)*tag*z^(-1) )
+
+       + INT[topo7,1,1,1,1,1,0,1]*gs^4*sqrtziu * (  - Den[ - 1 + u]*
+         Num[ - 44 + 24*u + 20*d - 10*d*u - 2*d^2 + d^2*u]*e_[p1,p2,r1,
+         r2]*m2*tag )
+
+       + INT[topo7,1,1,1,1,1,0,1]*gs^4*sqrtzu * (  - Den[ - 1 + u]*Num[
+         8*z - 36*u - 76*u*z + 36*u^2 + 48*u^2*z + 4*d*z + 12*d*u + 26*
+         d*u*z - 12*d*u^2 - 20*d*u^2*z - 2*d^2*z - d^2*u*z + 2*d^2*u^2*
+         z]*e_[p1,p2,r1,r2]*m2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo7,1,1,1,1,1,0,1]*gs^4*Nc^2*sqrtziu * ( Den[ - 1 + u]*
+         Num[ - 44 + 24*u + 20*d - 10*d*u - 2*d^2 + d^2*u]*e_[p1,p2,r1,
+         r2]*m2*tag )
+
+       + INT[topo7,1,1,1,1,1,0,1]*gs^4*Nc^2*sqrtzu * ( Den[ - 1 + u]*
+         Num[8*z - 36*u - 76*u*z + 36*u^2 + 48*u^2*z + 4*d*z + 12*d*u
+          + 26*d*u*z - 12*d*u^2 - 20*d*u^2*z - 2*d^2*z - d^2*u*z + 2*
+         d^2*u^2*z]*e_[p1,p2,r1,r2]*m2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo7,1,1,1,1,1,1,-2]*gs^4*sqrtziu * (  - 4*Den[ - 1 + u]*
+         Num[ - 4 + u + d]*e_[p1,p2,r1,r2]*m2^(-1)*tag )
+
+       + INT[topo7,1,1,1,1,1,1,-2]*gs^4*sqrtzu * (  - 4*Den[ - 1 + u]*
+         Num[1 - 4*u + d*u]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-1)*tag )
+
+       + INT[topo7,1,1,1,1,1,1,-2]*gs^4*Nc^2*sqrtziu * ( 4*Den[ - 1 + u
+         ]*Num[ - 4 + u + d]*e_[p1,p2,r1,r2]*m2^(-1)*tag )
+
+       + INT[topo7,1,1,1,1,1,1,-2]*gs^4*Nc^2*sqrtzu * ( 4*Den[ - 1 + u]
+         *Num[1 - 4*u + d*u]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-1)*tag )
+
+       + INT[topo7,1,1,1,1,1,1,-1]*gs^4*sqrtziu * ( Den[ - 1 + u]*Num[
+          - 80*z + 12*u + 36*u*z + 28*d*z - 4*d*u - 10*d*u*z - 2*d^2*z
+          + d^2*u*z]*e_[p1,p2,r1,r2]*tag*z^(-1) )
+
+       + INT[topo7,1,1,1,1,1,1,-1]*gs^4*sqrtzu * ( Den[ - 1 + u]*Num[
+          - 32*z + 12*u - 12*u*z + 20*d*z - 4*d*u - 2*d*u*z - 2*d^2*z
+          + d^2*u*z]*e_[p1,p2,r1,r2]*u^(-1)*tag*z^(-1) )
+
+       + INT[topo7,1,1,1,1,1,1,-1]*gs^4*Nc^2*sqrtziu * (  - Den[ - 1 + 
+         u]*Num[ - 80*z + 12*u + 36*u*z + 28*d*z - 4*d*u - 10*d*u*z - 2
+         *d^2*z + d^2*u*z]*e_[p1,p2,r1,r2]*tag*z^(-1) )
+
+       + INT[topo7,1,1,1,1,1,1,-1]*gs^4*Nc^2*sqrtzu * (  - Den[ - 1 + u
+         ]*Num[ - 32*z + 12*u - 12*u*z + 20*d*z - 4*d*u - 2*d*u*z - 2*
+         d^2*z + d^2*u*z]*e_[p1,p2,r1,r2]*u^(-1)*tag*z^(-1) )
+
+       + INT[topo7,1,1,1,1,1,1,0]*gs^4*sqrtziu * (  - 2*Den[ - 1 + u]*
+         Num[ - 56*z + 2*u + 30*u*z + 22*d*z - 2*d*u - 10*d*u*z - 2*d^2
+         *z + d^2*u*z]*e_[p1,p2,r1,r2]*m2*tag*z^(-1) )
+
+       + INT[topo7,1,1,1,1,1,1,0]*gs^4*sqrtzu * (  - 2*Den[ - 1 + u]*
+         Num[ - 38*z - 2*u + 12*u*z + 4*u^2 + 20*d*z - 2*d*u - 8*d*u*z
+          - 2*d^2*z + d^2*u*z]*e_[p1,p2,r1,r2]*m2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo7,1,1,1,1,1,1,0]*gs^4*Nc^2*sqrtziu * ( 2*Den[ - 1 + u]
+         *Num[ - 56*z + 2*u + 30*u*z + 22*d*z - 2*d*u - 10*d*u*z - 2*
+         d^2*z + d^2*u*z]*e_[p1,p2,r1,r2]*m2*tag*z^(-1) )
+
+       + INT[topo7,1,1,1,1,1,1,0]*gs^4*Nc^2*sqrtzu * ( 2*Den[ - 1 + u]*
+         Num[ - 38*z - 2*u + 12*u*z + 4*u^2 + 20*d*z - 2*d*u - 8*d*u*z
+          - 2*d^2*z + d^2*u*z]*e_[p1,p2,r1,r2]*m2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo7,1,1,1,1,1,1,1]*gs^4*sqrtziu * ( Den[ - 1 + u]*Num[
+          - 48*z - 8*u + 28*u*z + 20*d*z - 10*d*u*z - 2*d^2*z + d^2*u*z
+         ]*e_[p1,p2,r1,r2]*m2^2*tag*z^(-1) )
+
+       + INT[topo7,1,1,1,1,1,1,1]*gs^4*sqrtzu * ( Den[ - 1 + u]*Num[ - 
+         2 + u]*Num[20*z + 8*u - 10*d*z + d^2*z]*e_[p1,p2,r1,r2]*m2^2*
+         u^(-1)*tag*z^(-1) )
+
+       + INT[topo7,1,1,1,1,1,1,1]*gs^4*Nc^2*sqrtziu * (  - Den[ - 1 + u
+         ]*Num[ - 48*z - 8*u + 28*u*z + 20*d*z - 10*d*u*z - 2*d^2*z + 
+         d^2*u*z]*e_[p1,p2,r1,r2]*m2^2*tag*z^(-1) )
+
+       + INT[topo7,1,1,1,1,1,1,1]*gs^4*Nc^2*sqrtzu * (  - Den[ - 1 + u]
+         *Num[ - 2 + u]*Num[20*z + 8*u - 10*d*z + d^2*z]*e_[p1,p2,r1,r2
+         ]*m2^2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo17,1,1,1,1,-2,1,1]*gs^4*sqrtziu * (  - Num[4 + 4*u - 4
+         *d + d^2]*e_[p1,p2,r1,r2]*m2^(-1)*u*tag )
+
+       + INT[topo17,1,1,1,1,-2,1,1]*gs^4*sqrtzu * (  - Num[ - 4 - 16*u
+          - 2*d + 4*d*u + d^2]*e_[p1,p2,r1,r2]*m2^(-1)*tag )
+
+       + INT[topo17,1,1,1,1,-2,1,1]*gs^4*Nc^2*sqrtziu * ( Num[4 + 4*u
+          - 4*d + d^2]*e_[p1,p2,r1,r2]*m2^(-1)*u*tag )
+
+       + INT[topo17,1,1,1,1,-2,1,1]*gs^4*Nc^2*sqrtzu * ( Num[ - 4 - 16*
+         u - 2*d + 4*d*u + d^2]*e_[p1,p2,r1,r2]*m2^(-1)*tag )
+
+       + INT[topo17,1,1,1,1,-2,2,1]*gs^4*sqrtziu * (  - Den[1 + u]*Num[
+          - 48 - 24*u + 4*u^2 + 22*d + 12*d*u - 2*d^2 - d^2*u]*e_[p1,p2
+         ,r1,r2]*tag )
+
+       + INT[topo17,1,1,1,1,-2,2,1]*gs^4*sqrtzu * (  - Den[1 + u]*Num[
+          - 36 - 16*u + 14*d + 4*d*u - d^2]*e_[p1,p2,r1,r2]*tag )
+
+       + INT[topo17,1,1,1,1,-2,2,1]*gs^4*Nc^2*sqrtziu * ( Den[1 + u]*
+         Num[ - 48 - 24*u + 4*u^2 + 22*d + 12*d*u - 2*d^2 - d^2*u]*e_[
+         p1,p2,r1,r2]*tag )
+
+       + INT[topo17,1,1,1,1,-2,2,1]*gs^4*Nc^2*sqrtzu * ( Den[1 + u]*
+         Num[ - 36 - 16*u + 14*d + 4*d*u - d^2]*e_[p1,p2,r1,r2]*tag )
+
+       + INT[topo17,1,1,1,1,-1,0,1]*gs^4*sqrtziu * ( Num[ - 12 + 12*u
+          + 2*d + d^2]*e_[p1,p2,r1,r2]*m2^(-1)*u*tag )
+
+       + INT[topo17,1,1,1,1,-1,0,1]*gs^4*sqrtzu * ( Num[ - 12 - 36*u + 
+         6*d + 8*d*u - d^2]*e_[p1,p2,r1,r2]*m2^(-1)*tag )
+
+       + INT[topo17,1,1,1,1,-1,0,1]*gs^4*Nc^2*sqrtziu * (  - Num[ - 12
+          + 12*u + 2*d + d^2]*e_[p1,p2,r1,r2]*m2^(-1)*u*tag )
+
+       + INT[topo17,1,1,1,1,-1,0,1]*gs^4*Nc^2*sqrtzu * (  - Num[ - 12
+          - 36*u + 6*d + 8*d*u - d^2]*e_[p1,p2,r1,r2]*m2^(-1)*tag )
+
+       + INT[topo17,1,1,1,1,-1,1,0]*gs^4*sqrtziu * ( 2*Num[6 + 6*u - 4*
+         d + d^2]*e_[p1,p2,r1,r2]*m2^(-1)*u*tag )
+
+       + INT[topo17,1,1,1,1,-1,1,0]*gs^4*sqrtzu * ( 2*Num[ - 12 - 24*u
+          + 6*d*u + d^2]*e_[p1,p2,r1,r2]*m2^(-1)*tag )
+
+       + INT[topo17,1,1,1,1,-1,1,0]*gs^4*Nc^2*sqrtziu * (  - 2*Num[6 + 
+         6*u - 4*d + d^2]*e_[p1,p2,r1,r2]*m2^(-1)*u*tag )
+
+       + INT[topo17,1,1,1,1,-1,1,0]*gs^4*Nc^2*sqrtzu * (  - 2*Num[ - 12
+          - 24*u + 6*d*u + d^2]*e_[p1,p2,r1,r2]*m2^(-1)*tag )
+
+       + INT[topo17,1,1,1,1,-1,1,1]*gs^4*sqrtziu * ( Den[1 + u]*Num[12*
+         u + 24*u*z + 12*u^2 + 36*u^2*z + 2*d*z - 4*d*u - 2*d*u*z - 4*d
+         *u^2 - 10*d*u^2*z + d^2*u^2*z]*e_[p1,p2,r1,r2]*tag*z^(-1) )
+
+       + INT[topo17,1,1,1,1,-1,1,1]*gs^4*sqrtzu * ( Den[1 + u]*Num[24
+          + 12*z + 24*u - 8*d - 12*d*z - 8*d*u - 6*d*u*z + 2*d^2*z + 
+         d^2*u*z]*e_[p1,p2,r1,r2]*tag*z^(-1) )
+
+       + INT[topo17,1,1,1,1,-1,1,1]*gs^4*Nc^2*sqrtziu * (  - Den[1 + u]
+         *Num[12*u + 24*u*z + 12*u^2 + 36*u^2*z + 2*d*z - 4*d*u - 2*d*u
+         *z - 4*d*u^2 - 10*d*u^2*z + d^2*u^2*z]*e_[p1,p2,r1,r2]*tag*
+         z^(-1) )
+
+       + INT[topo17,1,1,1,1,-1,1,1]*gs^4*Nc^2*sqrtzu * (  - Den[1 + u]*
+         Num[24 + 12*z + 24*u - 8*d - 12*d*z - 8*d*u - 6*d*u*z + 2*d^2*
+         z + d^2*u*z]*e_[p1,p2,r1,r2]*tag*z^(-1) )
+
+       + INT[topo17,1,1,1,1,-1,2,0]*gs^4*sqrtziu * ( 2*Den[1 + u]*Num[
+          - 30 - 32*u + 6*u^2 + 13*d + 14*d*u - d^2 - d^2*u]*e_[p1,p2,
+         r1,r2]*tag )
+
+       + INT[topo17,1,1,1,1,-1,2,0]*gs^4*sqrtzu * ( 2*Den[1 + u]*Num[
+          - 34 - 24*u + 14*d + 6*d*u - d^2]*e_[p1,p2,r1,r2]*tag )
+
+       + INT[topo17,1,1,1,1,-1,2,0]*gs^4*Nc^2*sqrtziu * (  - 2*Den[1 + 
+         u]*Num[ - 30 - 32*u + 6*u^2 + 13*d + 14*d*u - d^2 - d^2*u]*e_[
+         p1,p2,r1,r2]*tag )
+
+       + INT[topo17,1,1,1,1,-1,2,0]*gs^4*Nc^2*sqrtzu * (  - 2*Den[1 + u
+         ]*Num[ - 34 - 24*u + 14*d + 6*d*u - d^2]*e_[p1,p2,r1,r2]*tag )
+
+       + INT[topo17,1,1,1,1,-1,2,1]*gs^4*sqrtziu * (  - Den[1 + u]*Num[
+          - 36 + 56*z - 12*u + 28*u*z + 12*d - 20*d*z + 4*d*u - 10*d*u*
+         z + 2*d^2*z + d^2*u*z]*e_[p1,p2,r1,r2]*m2*tag*z^(-1) )
+
+       + INT[topo17,1,1,1,1,-1,2,1]*gs^4*sqrtzu * (  - Den[1 + u]*Num[
+          - 24 + 28*z + 8*d - 10*d*z + d^2*z]*e_[p1,p2,r1,r2]*m2*tag*
+         z^(-1) )
+
+       + INT[topo17,1,1,1,1,-1,2,1]*gs^4*Nc^2*sqrtziu * ( Den[1 + u]*
+         Num[ - 36 + 56*z - 12*u + 28*u*z + 12*d - 20*d*z + 4*d*u - 10*
+         d*u*z + 2*d^2*z + d^2*u*z]*e_[p1,p2,r1,r2]*m2*tag*z^(-1) )
+
+       + INT[topo17,1,1,1,1,-1,2,1]*gs^4*Nc^2*sqrtzu * ( Den[1 + u]*
+         Num[ - 24 + 28*z + 8*d - 10*d*z + d^2*z]*e_[p1,p2,r1,r2]*m2*
+         tag*z^(-1) )
+
+       + INT[topo17,1,1,1,1,0,-1,1]*gs^4*sqrtziu * (  - Num[ - 36 + 12*
+         u + 16*d - d^2]*e_[p1,p2,r1,r2]*m2^(-1)*u*tag )
+
+       + INT[topo17,1,1,1,1,0,-1,1]*gs^4*sqrtzu * (  - Num[12 - 24*u - 
+         2*d + 4*d*u - d^2]*e_[p1,p2,r1,r2]*m2^(-1)*tag )
+
+       + INT[topo17,1,1,1,1,0,-1,1]*gs^4*Nc^2*sqrtziu * ( Num[ - 36 + 
+         12*u + 16*d - d^2]*e_[p1,p2,r1,r2]*m2^(-1)*u*tag )
+
+       + INT[topo17,1,1,1,1,0,-1,1]*gs^4*Nc^2*sqrtzu * ( Num[12 - 24*u
+          - 2*d + 4*d*u - d^2]*e_[p1,p2,r1,r2]*m2^(-1)*tag )
+
+       + INT[topo17,1,1,1,1,0,0,0]*gs^4*sqrtziu * (  - 12*Num[ - 2 + 2*
+         u + d]*e_[p1,p2,r1,r2]*m2^(-1)*u*tag )
+
+       + INT[topo17,1,1,1,1,0,0,0]*gs^4*sqrtzu * (  - 2*Num[ - 18 - 36*
+         u + 7*d + 8*d*u - d^2]*e_[p1,p2,r1,r2]*m2^(-1)*tag )
+
+       + INT[topo17,1,1,1,1,0,0,0]*gs^4*Nc^2*sqrtziu * ( 12*Num[ - 2 + 
+         2*u + d]*e_[p1,p2,r1,r2]*m2^(-1)*u*tag )
+
+       + INT[topo17,1,1,1,1,0,0,0]*gs^4*Nc^2*sqrtzu * ( 2*Num[ - 18 - 
+         36*u + 7*d + 8*d*u - d^2]*e_[p1,p2,r1,r2]*m2^(-1)*tag )
+
+       + INT[topo17,1,1,1,1,0,0,1]*gs^4*sqrtziu * (  - Den[1 + u]*Num[
+         48*z + 24*u + 96*u*z + 24*u^2 + 60*u^2*z - 20*d*z - 8*d*u - 34
+         *d*u*z - 8*d*u^2 - 20*d*u^2*z + 2*d^2*z + 3*d^2*u*z + 2*d^2*
+         u^2*z]*e_[p1,p2,r1,r2]*tag*z^(-1) )
+
+       + INT[topo17,1,1,1,1,0,0,1]*gs^4*sqrtzu * ( Den[1 + u]*Num[12*u
+          + 6*d - d^2]*e_[p1,p2,r1,r2]*tag )
+
+       + INT[topo17,1,1,1,1,0,0,1]*gs^4*Nc^2*sqrtziu * ( Den[1 + u]*
+         Num[48*z + 24*u + 96*u*z + 24*u^2 + 60*u^2*z - 20*d*z - 8*d*u
+          - 34*d*u*z - 8*d*u^2 - 20*d*u^2*z + 2*d^2*z + 3*d^2*u*z + 2*
+         d^2*u^2*z]*e_[p1,p2,r1,r2]*tag*z^(-1) )
+
+       + INT[topo17,1,1,1,1,0,0,1]*gs^4*Nc^2*sqrtzu * (  - Den[1 + u]*
+         Num[12*u + 6*d - d^2]*e_[p1,p2,r1,r2]*tag )
+
+       + INT[topo17,1,1,1,1,0,1,-1]*gs^4*sqrtziu * (  - Num[12 + 12*u
+          - 4*d + d^2]*e_[p1,p2,r1,r2]*m2^(-1)*u*tag )
+
+       + INT[topo17,1,1,1,1,0,1,-1]*gs^4*sqrtzu * (  - Num[ - 36 - 48*u
+          + 6*d + 12*d*u + d^2]*e_[p1,p2,r1,r2]*m2^(-1)*tag )
+
+       + INT[topo17,1,1,1,1,0,1,-1]*gs^4*Nc^2*sqrtziu * ( Num[12 + 12*u
+          - 4*d + d^2]*e_[p1,p2,r1,r2]*m2^(-1)*u*tag )
+
+       + INT[topo17,1,1,1,1,0,1,-1]*gs^4*Nc^2*sqrtzu * ( Num[ - 36 - 48
+         *u + 6*d + 12*d*u + d^2]*e_[p1,p2,r1,r2]*m2^(-1)*tag )
+
+       + INT[topo17,1,1,1,1,0,1,0]*gs^4*sqrtziu * (  - 2*Den[1 + u]*
+         Num[18*z + 12*u + 20*u*z + 12*u^2 + 36*u^2*z - 8*d*z - 4*d*u
+          - 7*d*u*z - 4*d*u^2 - 10*d*u^2*z + d^2*z + d^2*u*z + d^2*u^2*
+         z]*e_[p1,p2,r1,r2]*tag*z^(-1) )
+
+       + INT[topo17,1,1,1,1,0,1,0]*gs^4*sqrtzu * (  - 2*Den[1 + u]*Num[
+         18 + 34*z + 18*u - 6*d - 17*d*z - 6*d*u - 6*d*u*z + 2*d^2*z + 
+         d^2*u*z]*e_[p1,p2,r1,r2]*tag*z^(-1) )
+
+       + INT[topo17,1,1,1,1,0,1,0]*gs^4*Nc^2*sqrtziu * ( 2*Den[1 + u]*
+         Num[18*z + 12*u + 20*u*z + 12*u^2 + 36*u^2*z - 8*d*z - 4*d*u
+          - 7*d*u*z - 4*d*u^2 - 10*d*u^2*z + d^2*z + d^2*u*z + d^2*u^2*
+         z]*e_[p1,p2,r1,r2]*tag*z^(-1) )
+
+       + INT[topo17,1,1,1,1,0,1,0]*gs^4*Nc^2*sqrtzu * ( 2*Den[1 + u]*
+         Num[18 + 34*z + 18*u - 6*d - 17*d*z - 6*d*u - 6*d*u*z + 2*d^2*
+         z + d^2*u*z]*e_[p1,p2,r1,r2]*tag*z^(-1) )
+
+       + INT[topo17,1,1,1,1,0,1,1]*gs^4*sqrtziu * ( 2*Num[ - 2 + 28*z
+          + 2*d - 10*d*z + d^2*z]*e_[p1,p2,r1,r2]*m2*tag*z^(-1) )
+
+       + INT[topo17,1,1,1,1,0,1,1]*gs^4*sqrtzu * (  - 8*e_[p1,p2,r1,r2]
+         *m2*tag*z^(-1) )
+
+       + INT[topo17,1,1,1,1,0,1,1]*gs^4*Nc^2*sqrtziu * (  - 2*Num[ - 2
+          + 28*z + 2*d - 10*d*z + d^2*z]*e_[p1,p2,r1,r2]*m2*tag*z^(-1)
+          )
+
+       + INT[topo17,1,1,1,1,0,1,1]*gs^4*Nc^2*sqrtzu * ( 8*e_[p1,p2,r1,
+         r2]*m2*tag*z^(-1) )
+
+       + INT[topo17,1,1,1,1,0,2,-1]*gs^4*sqrtziu * (  - Den[1 + u]*Num[
+          - 12 - 56*u + 12*u^2 + 4*d + 20*d*u - d^2*u]*e_[p1,p2,r1,r2]*
+         tag )
+
+       + INT[topo17,1,1,1,1,0,2,-1]*gs^4*sqrtzu * (  - Den[1 + u]*Num[
+          - 28 - 48*u + 14*d + 12*d*u - d^2]*e_[p1,p2,r1,r2]*tag )
+
+       + INT[topo17,1,1,1,1,0,2,-1]*gs^4*Nc^2*sqrtziu * ( Den[1 + u]*
+         Num[ - 12 - 56*u + 12*u^2 + 4*d + 20*d*u - d^2*u]*e_[p1,p2,r1,
+         r2]*tag )
+
+       + INT[topo17,1,1,1,1,0,2,-1]*gs^4*Nc^2*sqrtzu * ( Den[1 + u]*
+         Num[ - 28 - 48*u + 14*d + 12*d*u - d^2]*e_[p1,p2,r1,r2]*tag )
+
+       + INT[topo17,1,1,1,1,0,2,0]*gs^4*sqrtziu * ( 2*Den[1 + u]*Num[
+          - 18 + 28*z - 12*u + 28*u*z + 6*d - 10*d*z + 4*d*u - 10*d*u*z
+          + d^2*z + d^2*u*z]*e_[p1,p2,r1,r2]*m2*tag*z^(-1) )
+
+       + INT[topo17,1,1,1,1,0,2,0]*gs^4*sqrtzu * ( 2*Den[1 + u]*Num[ - 
+         18 + 28*z + 6*d - 10*d*z + d^2*z]*e_[p1,p2,r1,r2]*m2*tag*
+         z^(-1) )
+
+       + INT[topo17,1,1,1,1,0,2,0]*gs^4*Nc^2*sqrtziu * (  - 2*Den[1 + u
+         ]*Num[ - 18 + 28*z - 12*u + 28*u*z + 6*d - 10*d*z + 4*d*u - 10
+         *d*u*z + d^2*z + d^2*u*z]*e_[p1,p2,r1,r2]*m2*tag*z^(-1) )
+
+       + INT[topo17,1,1,1,1,0,2,0]*gs^4*Nc^2*sqrtzu * (  - 2*Den[1 + u]
+         *Num[ - 18 + 28*z + 6*d - 10*d*z + d^2*z]*e_[p1,p2,r1,r2]*m2*
+         tag*z^(-1) )
+
+       + INT[topo17,1,1,1,1,0,2,1]*gs^4*sqrtziu * (  - 8*Den[1 + u]*e_[
+         p1,p2,r1,r2]*m2^2*tag*z^(-1) )
+
+       + INT[topo17,1,1,1,1,0,2,1]*gs^4*sqrtzu * (  - 8*Den[1 + u]*e_[
+         p1,p2,r1,r2]*m2^2*tag*z^(-1) )
+
+       + INT[topo17,1,1,1,1,0,2,1]*gs^4*Nc^2*sqrtziu * ( 8*Den[1 + u]*
+         e_[p1,p2,r1,r2]*m2^2*tag*z^(-1) )
+
+       + INT[topo17,1,1,1,1,0,2,1]*gs^4*Nc^2*sqrtzu * ( 8*Den[1 + u]*
+         e_[p1,p2,r1,r2]*m2^2*tag*z^(-1) )
+
+       + INT[topo17,1,1,1,1,1,-2,1]*gs^4*sqrtziu * ( Num[ - 20 + 4*u + 
+         10*d - d^2]*e_[p1,p2,r1,r2]*m2^(-1)*u*tag )
+
+       + INT[topo17,1,1,1,1,1,-2,1]*gs^4*sqrtzu * (  - Num[ - 20 + 4*u
+          + 10*d - d^2]*e_[p1,p2,r1,r2]*m2^(-1)*tag )
+
+       + INT[topo17,1,1,1,1,1,-2,1]*gs^4*Nc^2*sqrtziu * (  - Num[ - 20
+          + 4*u + 10*d - d^2]*e_[p1,p2,r1,r2]*m2^(-1)*u*tag )
+
+       + INT[topo17,1,1,1,1,1,-2,1]*gs^4*Nc^2*sqrtzu * ( Num[ - 20 + 4*
+         u + 10*d - d^2]*e_[p1,p2,r1,r2]*m2^(-1)*tag )
+
+       + INT[topo17,1,1,1,1,1,-1,0]*gs^4*sqrtziu * ( 2*Num[ - 18 + 6*u
+          + 10*d - d^2]*e_[p1,p2,r1,r2]*m2^(-1)*u*tag )
+
+       + INT[topo17,1,1,1,1,1,-1,0]*gs^4*sqrtzu * ( 2*Num[6 - 12*u - 3*
+         d + 2*d*u]*e_[p1,p2,r1,r2]*m2^(-1)*tag )
+
+       + INT[topo17,1,1,1,1,1,-1,0]*gs^4*Nc^2*sqrtziu * (  - 2*Num[ - 
+         18 + 6*u + 10*d - d^2]*e_[p1,p2,r1,r2]*m2^(-1)*u*tag )
+
+       + INT[topo17,1,1,1,1,1,-1,0]*gs^4*Nc^2*sqrtzu * (  - 2*Num[6 - 
+         12*u - 3*d + 2*d*u]*e_[p1,p2,r1,r2]*m2^(-1)*tag )
+
+       + INT[topo17,1,1,1,1,1,-1,1]*gs^4*sqrtziu * ( Den[1 + u]*Num[12
+          + 48*z + 12*u + 28*u*z - 4*d - 20*d*z - 4*d*u - 10*d*u*z + 2*
+         d^2*z + d^2*u*z]*e_[p1,p2,r1,r2]*u*tag*z^(-1) )
+
+       + INT[topo17,1,1,1,1,1,-1,1]*gs^4*sqrtzu * (  - Den[1 + u]*Num[
+         24 + 48*z + 24*u + 28*u*z - 8*d - 20*d*z - 8*d*u - 10*d*u*z + 
+         2*d^2*z + d^2*u*z]*e_[p1,p2,r1,r2]*tag*z^(-1) )
+
+       + INT[topo17,1,1,1,1,1,-1,1]*gs^4*Nc^2*sqrtziu * (  - Den[1 + u]
+         *Num[12 + 48*z + 12*u + 28*u*z - 4*d - 20*d*z - 4*d*u - 10*d*u
+         *z + 2*d^2*z + d^2*u*z]*e_[p1,p2,r1,r2]*u*tag*z^(-1) )
+
+       + INT[topo17,1,1,1,1,1,-1,1]*gs^4*Nc^2*sqrtzu * ( Den[1 + u]*
+         Num[24 + 48*z + 24*u + 28*u*z - 8*d - 20*d*z - 8*d*u - 10*d*u*
+         z + 2*d^2*z + d^2*u*z]*e_[p1,p2,r1,r2]*tag*z^(-1) )
+
+       + INT[topo17,1,1,1,1,1,0,-1]*gs^4*sqrtziu * ( Num[ - 12 + 12*u
+          + 10*d - d^2]*e_[p1,p2,r1,r2]*m2^(-1)*u*tag )
+
+       + INT[topo17,1,1,1,1,1,0,-1]*gs^4*sqrtzu * ( Num[ - 24 - 36*u + 
+         8*d + 8*d*u - d^2]*e_[p1,p2,r1,r2]*m2^(-1)*tag )
+
+       + INT[topo17,1,1,1,1,1,0,-1]*gs^4*Nc^2*sqrtziu * (  - Num[ - 12
+          + 12*u + 10*d - d^2]*e_[p1,p2,r1,r2]*m2^(-1)*u*tag )
+
+       + INT[topo17,1,1,1,1,1,0,-1]*gs^4*Nc^2*sqrtzu * (  - Num[ - 24
+          - 36*u + 8*d + 8*d*u - d^2]*e_[p1,p2,r1,r2]*m2^(-1)*tag )
+
+       + INT[topo17,1,1,1,1,1,0,0]*gs^4*sqrtziu * ( 2*Den[1 + u]*Num[12
+          + 40*z + 12*u + 30*u*z - 4*d - 18*d*z - 4*d*u - 10*d*u*z + 2*
+         d^2*z + d^2*u*z]*e_[p1,p2,r1,r2]*u*tag*z^(-1) )
+
+       + INT[topo17,1,1,1,1,1,0,0]*gs^4*sqrtzu * (  - 2*Den[1 + u]*Num[
+         6 - 2*z + 6*u + 6*u*z - 2*d + d*z - 2*d*u]*e_[p1,p2,r1,r2]*tag
+         *z^(-1) )
+
+       + INT[topo17,1,1,1,1,1,0,0]*gs^4*Nc^2*sqrtziu * (  - 2*Den[1 + u
+         ]*Num[12 + 40*z + 12*u + 30*u*z - 4*d - 18*d*z - 4*d*u - 10*d*
+         u*z + 2*d^2*z + d^2*u*z]*e_[p1,p2,r1,r2]*u*tag*z^(-1) )
+
+       + INT[topo17,1,1,1,1,1,0,0]*gs^4*Nc^2*sqrtzu * ( 2*Den[1 + u]*
+         Num[6 - 2*z + 6*u + 6*u*z - 2*d + d*z - 2*d*u]*e_[p1,p2,r1,r2]
+         *tag*z^(-1) )
+
+       + INT[topo17,1,1,1,1,1,0,1]*gs^4*sqrtziu * (  - Den[1 + u]*Num[
+         32 + 8*u + 28*u*z - 8*d - 10*d*u*z + d^2*u*z]*e_[p1,p2,r1,r2]*
+         m2*tag*z^(-1) )
+
+       + INT[topo17,1,1,1,1,1,0,1]*gs^4*sqrtzu * ( Den[1 + u]*Num[ - 16
+          + 28*z + 8*u + 8*d - 10*d*z + d^2*z]*e_[p1,p2,r1,r2]*m2*tag*
+         z^(-1) )
+
+       + INT[topo17,1,1,1,1,1,0,1]*gs^4*Nc^2*sqrtziu * ( Den[1 + u]*
+         Num[32 + 8*u + 28*u*z - 8*d - 10*d*u*z + d^2*u*z]*e_[p1,p2,r1,
+         r2]*m2*tag*z^(-1) )
+
+       + INT[topo17,1,1,1,1,1,0,1]*gs^4*Nc^2*sqrtzu * (  - Den[1 + u]*
+         Num[ - 16 + 28*z + 8*u + 8*d - 10*d*z + d^2*z]*e_[p1,p2,r1,r2]
+         *m2*tag*z^(-1) )
+
+       + INT[topo17,1,1,1,1,1,1,-2]*gs^4*sqrtziu * ( 4*Num[1 + u]*e_[p1
+         ,p2,r1,r2]*m2^(-1)*u*tag )
+
+       + INT[topo17,1,1,1,1,1,1,-2]*gs^4*sqrtzu * ( 4*Num[1 + u]*Num[
+          - 4 + d]*e_[p1,p2,r1,r2]*m2^(-1)*tag )
+
+       + INT[topo17,1,1,1,1,1,1,-2]*gs^4*Nc^2*sqrtziu * (  - 4*Num[1 + 
+         u]*e_[p1,p2,r1,r2]*m2^(-1)*u*tag )
+
+       + INT[topo17,1,1,1,1,1,1,-2]*gs^4*Nc^2*sqrtzu * (  - 4*Num[1 + u
+         ]*Num[ - 4 + d]*e_[p1,p2,r1,r2]*m2^(-1)*tag )
+
+       + INT[topo17,1,1,1,1,1,1,-1]*gs^4*sqrtziu * ( Den[1 + u]*Num[12
+          + 16*z + 12*u + 36*u*z - 4*d - 12*d*z - 4*d*u - 10*d*u*z + 2*
+         d^2*z + d^2*u*z]*e_[p1,p2,r1,r2]*u*tag*z^(-1) )
+
+       + INT[topo17,1,1,1,1,1,1,-1]*gs^4*sqrtzu * ( Den[1 + u]*Num[12
+          + 56*z + 12*u - 4*d - 22*d*z - 4*d*u - 6*d*u*z + 2*d^2*z + 
+         d^2*u*z]*e_[p1,p2,r1,r2]*tag*z^(-1) )
+
+       + INT[topo17,1,1,1,1,1,1,-1]*gs^4*Nc^2*sqrtziu * (  - Den[1 + u]
+         *Num[12 + 16*z + 12*u + 36*u*z - 4*d - 12*d*z - 4*d*u - 10*d*u
+         *z + 2*d^2*z + d^2*u*z]*e_[p1,p2,r1,r2]*u*tag*z^(-1) )
+
+       + INT[topo17,1,1,1,1,1,1,-1]*gs^4*Nc^2*sqrtzu * (  - Den[1 + u]*
+         Num[12 + 56*z + 12*u - 4*d - 22*d*z - 4*d*u - 6*d*u*z + 2*d^2*
+         z + d^2*u*z]*e_[p1,p2,r1,r2]*tag*z^(-1) )
+
+       + INT[topo17,1,1,1,1,1,1,0]*gs^4*sqrtziu * (  - 2*Den[1 + u]*
+         Num[16 - 2*u + 28*u*z - 4*d + 2*d*u - 10*d*u*z + d^2*u*z]*e_[
+         p1,p2,r1,r2]*m2*tag*z^(-1) )
+
+       + INT[topo17,1,1,1,1,1,1,0]*gs^4*sqrtzu * ( 4*Den[1 + u]*Num[ - 
+         1 + 2*u + d]*e_[p1,p2,r1,r2]*m2*tag*z^(-1) )
+
+       + INT[topo17,1,1,1,1,1,1,0]*gs^4*Nc^2*sqrtziu * ( 2*Den[1 + u]*
+         Num[16 - 2*u + 28*u*z - 4*d + 2*d*u - 10*d*u*z + d^2*u*z]*e_[
+         p1,p2,r1,r2]*m2*tag*z^(-1) )
+
+       + INT[topo17,1,1,1,1,1,1,0]*gs^4*Nc^2*sqrtzu * (  - 4*Den[1 + u]
+         *Num[ - 1 + 2*u + d]*e_[p1,p2,r1,r2]*m2*tag*z^(-1) )
+
+       + INT[topo17,1,1,1,1,1,1,1]*gs^4*sqrtziu * ( 8*Den[1 + u]*e_[p1,
+         p2,r1,r2]*m2^2*tag*z^(-1) )
+
+       + INT[topo17,1,1,1,1,1,1,1]*gs^4*sqrtzu * ( 8*Den[1 + u]*e_[p1,
+         p2,r1,r2]*m2^2*tag*z^(-1) )
+
+       + INT[topo17,1,1,1,1,1,1,1]*gs^4*Nc^2*sqrtziu * (  - 8*Den[1 + u
+         ]*e_[p1,p2,r1,r2]*m2^2*tag*z^(-1) )
+
+       + INT[topo17,1,1,1,1,1,1,1]*gs^4*Nc^2*sqrtzu * (  - 8*Den[1 + u]
+         *e_[p1,p2,r1,r2]*m2^2*tag*z^(-1) )
+
+       + INT[topo17,1,1,1,1,1,2,-2]*gs^4*sqrtziu * ( 4*Den[1 + u]*Num[
+          - 4 + u + d]*e_[p1,p2,r1,r2]*u*tag )
+
+       + INT[topo17,1,1,1,1,1,2,-2]*gs^4*sqrtzu * ( 4*Den[1 + u]*Num[1
+          - 4*u + d*u]*e_[p1,p2,r1,r2]*tag )
+
+       + INT[topo17,1,1,1,1,1,2,-2]*gs^4*Nc^2*sqrtziu * (  - 4*Den[1 + 
+         u]*Num[ - 4 + u + d]*e_[p1,p2,r1,r2]*u*tag )
+
+       + INT[topo17,1,1,1,1,1,2,-2]*gs^4*Nc^2*sqrtzu * (  - 4*Den[1 + u
+         ]*Num[1 - 4*u + d*u]*e_[p1,p2,r1,r2]*tag )
+
+       + INT[topo17,1,1,1,1,1,2,-1]*gs^4*sqrtziu * (  - Den[1 + u]*Num[
+          - 12 + 28*z + 4*d - 10*d*z + d^2*z]*e_[p1,p2,r1,r2]*m2*u*tag*
+         z^(-1) )
+
+       + INT[topo17,1,1,1,1,1,2,-1]*gs^4*sqrtzu * (  - Den[1 + u]*Num[
+          - 12 + 28*z + 4*d - 10*d*z + d^2*z]*e_[p1,p2,r1,r2]*m2*tag*
+         z^(-1) )
+
+       + INT[topo17,1,1,1,1,1,2,-1]*gs^4*Nc^2*sqrtziu * ( Den[1 + u]*
+         Num[ - 12 + 28*z + 4*d - 10*d*z + d^2*z]*e_[p1,p2,r1,r2]*m2*u*
+         tag*z^(-1) )
+
+       + INT[topo17,1,1,1,1,1,2,-1]*gs^4*Nc^2*sqrtzu * ( Den[1 + u]*
+         Num[ - 12 + 28*z + 4*d - 10*d*z + d^2*z]*e_[p1,p2,r1,r2]*m2*
+         tag*z^(-1) )
+
+       + INT[topo17,1,1,1,1,1,2,0]*gs^4*sqrtziu * ( 8*Den[1 + u]*e_[p1,
+         p2,r1,r2]*m2^2*tag*z^(-1) )
+
+       + INT[topo17,1,1,1,1,1,2,0]*gs^4*sqrtzu * ( 8*Den[1 + u]*e_[p1,
+         p2,r1,r2]*m2^2*tag*z^(-1) )
+
+       + INT[topo17,1,1,1,1,1,2,0]*gs^4*Nc^2*sqrtziu * (  - 8*Den[1 + u
+         ]*e_[p1,p2,r1,r2]*m2^2*tag*z^(-1) )
+
+       + INT[topo17,1,1,1,1,1,2,0]*gs^4*Nc^2*sqrtzu * (  - 8*Den[1 + u]
+         *e_[p1,p2,r1,r2]*m2^2*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,-2,1,1]*gs^4*sqrtziu * ( Num[ - 4 + 20*u - 
+         10*d*u + d^2*u]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-2)*tag )
+
+       + INT[topo18,1,1,1,1,-2,1,1]*gs^4*sqrtzu * (  - Num[ - 4 + 20*u
+          - 10*d*u + d^2*u]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-3)*tag )
+
+       + INT[topo18,1,1,1,1,-2,1,1]*gs^4*Nc^2*sqrtziu * (  - Num[ - 4
+          + 20*u - 10*d*u + d^2*u]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-2)*tag )
+
+       + INT[topo18,1,1,1,1,-2,1,1]*gs^4*Nc^2*sqrtzu * ( Num[ - 4 + 20*
+         u - 10*d*u + d^2*u]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-3)*tag )
+
+       + INT[topo18,1,1,1,1,-2,2,1]*gs^4*sqrtziu * ( Den[1 + u]*Num[4
+          + 24*u - 10*d*u + d^2*u]*e_[p1,p2,r1,r2]*u^(-1)*tag )
+
+       + INT[topo18,1,1,1,1,-2,2,1]*gs^4*sqrtzu * (  - Den[1 + u]*Num[4
+          + 24*u - 10*d*u + d^2*u]*e_[p1,p2,r1,r2]*u^(-2)*tag )
+
+       + INT[topo18,1,1,1,1,-2,2,1]*gs^4*Nc^2*sqrtziu * (  - Den[1 + u]
+         *Num[4 + 24*u - 10*d*u + d^2*u]*e_[p1,p2,r1,r2]*u^(-1)*tag )
+
+       + INT[topo18,1,1,1,1,-2,2,1]*gs^4*Nc^2*sqrtzu * ( Den[1 + u]*
+         Num[4 + 24*u - 10*d*u + d^2*u]*e_[p1,p2,r1,r2]*u^(-2)*tag )
+
+       + INT[topo18,1,1,1,1,-1,0,1]*gs^4*sqrtziu * ( Num[24 - 12*u - 4*
+         d + 2*d*u + d^2*u]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-2)*tag )
+
+       + INT[topo18,1,1,1,1,-1,0,1]*gs^4*sqrtzu * ( Num[ - 12 + 36*u - 
+         16*d*u + d^2*u]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-3)*tag )
+
+       + INT[topo18,1,1,1,1,-1,0,1]*gs^4*Nc^2*sqrtziu * (  - Num[24 - 
+         12*u - 4*d + 2*d*u + d^2*u]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-2)*tag
+          )
+
+       + INT[topo18,1,1,1,1,-1,0,1]*gs^4*Nc^2*sqrtzu * (  - Num[ - 12
+          + 36*u - 16*d*u + d^2*u]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-3)*tag )
+
+       + INT[topo18,1,1,1,1,-1,1,0]*gs^4*sqrtziu * (  - 2*Num[12 - 6*u
+          - 2*d + 3*d*u]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-2)*tag )
+
+       + INT[topo18,1,1,1,1,-1,1,0]*gs^4*sqrtzu * (  - 2*Num[ - 6 + 18*
+         u - 10*d*u + d^2*u]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-3)*tag )
+
+       + INT[topo18,1,1,1,1,-1,1,0]*gs^4*Nc^2*sqrtziu * ( 2*Num[12 - 6*
+         u - 2*d + 3*d*u]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-2)*tag )
+
+       + INT[topo18,1,1,1,1,-1,1,0]*gs^4*Nc^2*sqrtzu * ( 2*Num[ - 6 + 
+         18*u - 10*d*u + d^2*u]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-3)*tag )
+
+       + INT[topo18,1,1,1,1,-1,1,1]*gs^4*sqrtziu * (  - Den[1 + u]*Num[
+         24 + 48*z + 24*u + 36*u*z - 8*d - 14*d*z - 8*d*u - 8*d*u*z + 
+         d^2*z]*e_[p1,p2,r1,r2]*u^(-1)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,-1,1,1]*gs^4*sqrtzu * ( Den[1 + u]*Num[12
+          + 36*z + 12*u + 48*u*z + 24*u^2*z - 4*d - 10*d*z - 4*d*u - 18
+         *d*u*z - 14*d*u^2*z + d^2*z + 2*d^2*u*z + 2*d^2*u^2*z]*e_[p1,
+         p2,r1,r2]*u^(-2)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,-1,1,1]*gs^4*Nc^2*sqrtziu * ( Den[1 + u]*
+         Num[24 + 48*z + 24*u + 36*u*z - 8*d - 14*d*z - 8*d*u - 8*d*u*z
+          + d^2*z]*e_[p1,p2,r1,r2]*u^(-1)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,-1,1,1]*gs^4*Nc^2*sqrtzu * (  - Den[1 + u]*
+         Num[12 + 36*z + 12*u + 48*u*z + 24*u^2*z - 4*d - 10*d*z - 4*d*
+         u - 18*d*u*z - 14*d*u^2*z + d^2*z + 2*d^2*u*z + 2*d^2*u^2*z]*
+         e_[p1,p2,r1,r2]*u^(-2)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,-1,2,0]*gs^4*sqrtziu * (  - 2*Den[1 + u]*
+         Num[ - 12 - 4*u + 2*d + d*u]*e_[p1,p2,r1,r2]*u^(-1)*tag )
+
+       + INT[topo18,1,1,1,1,-1,2,0]*gs^4*sqrtzu * (  - 2*Den[1 + u]*
+         Num[6 + 16*u - 8*d*u + d^2*u]*e_[p1,p2,r1,r2]*u^(-2)*tag )
+
+       + INT[topo18,1,1,1,1,-1,2,0]*gs^4*Nc^2*sqrtziu * ( 2*Den[1 + u]*
+         Num[ - 12 - 4*u + 2*d + d*u]*e_[p1,p2,r1,r2]*u^(-1)*tag )
+
+       + INT[topo18,1,1,1,1,-1,2,0]*gs^4*Nc^2*sqrtzu * ( 2*Den[1 + u]*
+         Num[6 + 16*u - 8*d*u + d^2*u]*e_[p1,p2,r1,r2]*u^(-2)*tag )
+
+       + INT[topo18,1,1,1,1,-1,2,1]*gs^4*sqrtziu * (  - Den[1 + u]*Num[
+          - 24 + 28*z + 8*d - 10*d*z + d^2*z]*e_[p1,p2,r1,r2]*m2*tag*
+         z^(-1) )
+
+       + INT[topo18,1,1,1,1,-1,2,1]*gs^4*sqrtzu * ( Den[1 + u]*Num[ - 
+         12 + 28*z + 12*u + 4*d - 10*d*z - 4*d*u + d^2*z]*e_[p1,p2,r1,
+         r2]*m2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,-1,2,1]*gs^4*Nc^2*sqrtziu * ( Den[1 + u]*
+         Num[ - 24 + 28*z + 8*d - 10*d*z + d^2*z]*e_[p1,p2,r1,r2]*m2*
+         tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,-1,2,1]*gs^4*Nc^2*sqrtzu * (  - Den[1 + u]*
+         Num[ - 12 + 28*z + 12*u + 4*d - 10*d*z - 4*d*u + d^2*z]*e_[p1,
+         p2,r1,r2]*m2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,0,-1,1]*gs^4*sqrtziu * (  - Num[36 + 12*u
+          - 8*d - 6*d*u + d^2*u]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-2)*tag )
+
+       + INT[topo18,1,1,1,1,0,-1,1]*gs^4*sqrtzu * ( Num[12 - 12*u + 2*d
+         *u + d^2*u]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-3)*tag )
+
+       + INT[topo18,1,1,1,1,0,-1,1]*gs^4*Nc^2*sqrtziu * ( Num[36 + 12*u
+          - 8*d - 6*d*u + d^2*u]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-2)*tag )
+
+       + INT[topo18,1,1,1,1,0,-1,1]*gs^4*Nc^2*sqrtzu * (  - Num[12 - 12
+         *u + 2*d*u + d^2*u]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-3)*tag )
+
+       + INT[topo18,1,1,1,1,0,0,0]*gs^4*sqrtziu * ( 2*Num[36 + 18*u - 8
+         *d - 7*d*u + d^2*u]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-2)*tag )
+
+       + INT[topo18,1,1,1,1,0,0,0]*gs^4*sqrtzu * (  - 12*Num[2 - 2*u + 
+         d*u]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-3)*tag )
+
+       + INT[topo18,1,1,1,1,0,0,0]*gs^4*Nc^2*sqrtziu * (  - 2*Num[36 + 
+         18*u - 8*d - 7*d*u + d^2*u]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-2)*tag
+          )
+
+       + INT[topo18,1,1,1,1,0,0,0]*gs^4*Nc^2*sqrtzu * ( 12*Num[2 - 2*u
+          + d*u]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-3)*tag )
+
+       + INT[topo18,1,1,1,1,0,0,1]*gs^4*sqrtziu * (  - Den[1 + u]*Num[
+          - 24 - 12*u + 4*d - 2*d*u + d^2*u]*e_[p1,p2,r1,r2]*u^(-1)*tag
+          )
+
+       + INT[topo18,1,1,1,1,0,0,1]*gs^4*sqrtzu * (  - Den[1 + u]*Num[24
+          + 60*z + 24*u + 48*u*z - 8*d - 20*d*z - 8*d*u - 12*d*u*z + 2*
+         d*u^2*z + 2*d^2*z + d^2*u*z]*e_[p1,p2,r1,r2]*u^(-2)*tag*z^(-1)
+          )
+
+       + INT[topo18,1,1,1,1,0,0,1]*gs^4*Nc^2*sqrtziu * ( Den[1 + u]*
+         Num[ - 24 - 12*u + 4*d - 2*d*u + d^2*u]*e_[p1,p2,r1,r2]*u^(-1)
+         *tag )
+
+       + INT[topo18,1,1,1,1,0,0,1]*gs^4*Nc^2*sqrtzu * ( Den[1 + u]*Num[
+         24 + 60*z + 24*u + 48*u*z - 8*d - 20*d*z - 8*d*u - 12*d*u*z + 
+         2*d*u^2*z + 2*d^2*z + d^2*u*z]*e_[p1,p2,r1,r2]*u^(-2)*tag*
+         z^(-1) )
+
+       + INT[topo18,1,1,1,1,0,1,-1]*gs^4*sqrtziu * (  - Num[36 + 24*u
+          - 8*d - 8*d*u + d^2*u]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-2)*tag )
+
+       + INT[topo18,1,1,1,1,0,1,-1]*gs^4*sqrtzu * (  - Num[ - 12 + 12*u
+          - 10*d*u + d^2*u]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-3)*tag )
+
+       + INT[topo18,1,1,1,1,0,1,-1]*gs^4*Nc^2*sqrtziu * ( Num[36 + 24*u
+          - 8*d - 8*d*u + d^2*u]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-2)*tag )
+
+       + INT[topo18,1,1,1,1,0,1,-1]*gs^4*Nc^2*sqrtzu * ( Num[ - 12 + 12
+         *u - 10*d*u + d^2*u]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-3)*tag )
+
+       + INT[topo18,1,1,1,1,0,1,0]*gs^4*sqrtziu * ( 2*Den[1 + u]*Num[
+          - 6 - 30*z - 6*u + 4*u*z + 2*d + 6*d*z + 2*d*u - 5*d*u*z + 
+         d^2*u*z]*e_[p1,p2,r1,r2]*u^(-1)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,0,1,0]*gs^4*sqrtzu * ( 2*Den[1 + u]*Num[12
+          + 36*z + 12*u + 8*u*z + 6*u^2*z - 4*d - 10*d*z - 4*d*u - 4*d*
+         u*z - 5*d*u^2*z + d^2*z + d^2*u*z + d^2*u^2*z]*e_[p1,p2,r1,r2]
+         *u^(-2)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,0,1,0]*gs^4*Nc^2*sqrtziu * (  - 2*Den[1 + u
+         ]*Num[ - 6 - 30*z - 6*u + 4*u*z + 2*d + 6*d*z + 2*d*u - 5*d*u*
+         z + d^2*u*z]*e_[p1,p2,r1,r2]*u^(-1)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,0,1,0]*gs^4*Nc^2*sqrtzu * (  - 2*Den[1 + u]
+         *Num[12 + 36*z + 12*u + 8*u*z + 6*u^2*z - 4*d - 10*d*z - 4*d*u
+          - 4*d*u*z - 5*d*u^2*z + d^2*z + d^2*u*z + d^2*u^2*z]*e_[p1,p2
+         ,r1,r2]*u^(-2)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,0,1,1]*gs^4*sqrtziu * ( 8*e_[p1,p2,r1,r2]*
+         m2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,0,1,1]*gs^4*sqrtzu * (  - 2*Num[ - 2 + 28*z
+          + 2*d - 10*d*z + d^2*z]*e_[p1,p2,r1,r2]*m2*u^(-1)*tag*z^(-1)
+          )
+
+       + INT[topo18,1,1,1,1,0,1,1]*gs^4*Nc^2*sqrtziu * (  - 8*e_[p1,p2,
+         r1,r2]*m2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,0,1,1]*gs^4*Nc^2*sqrtzu * ( 2*Num[ - 2 + 28
+         *z + 2*d - 10*d*z + d^2*z]*e_[p1,p2,r1,r2]*m2*u^(-1)*tag*
+         z^(-1) )
+
+       + INT[topo18,1,1,1,1,0,2,-1]*gs^4*sqrtziu * (  - Den[1 + u]*Num[
+          - 36 + 20*u + 8*d - 8*d*u + d^2*u]*e_[p1,p2,r1,r2]*u^(-1)*tag
+          )
+
+       + INT[topo18,1,1,1,1,0,2,-1]*gs^4*sqrtzu * (  - Den[1 + u]*Num[
+         12 - 8*u - 2*d*u + d^2*u]*e_[p1,p2,r1,r2]*u^(-2)*tag )
+
+       + INT[topo18,1,1,1,1,0,2,-1]*gs^4*Nc^2*sqrtziu * ( Den[1 + u]*
+         Num[ - 36 + 20*u + 8*d - 8*d*u + d^2*u]*e_[p1,p2,r1,r2]*u^(-1)
+         *tag )
+
+       + INT[topo18,1,1,1,1,0,2,-1]*gs^4*Nc^2*sqrtzu * ( Den[1 + u]*
+         Num[12 - 8*u - 2*d*u + d^2*u]*e_[p1,p2,r1,r2]*u^(-2)*tag )
+
+       + INT[topo18,1,1,1,1,0,2,0]*gs^4*sqrtziu * (  - 4*Den[1 + u]*
+         Num[ - 3 + d]*e_[p1,p2,r1,r2]*m2*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,0,2,0]*gs^4*sqrtzu * ( 2*Den[1 + u]*Num[ - 
+         12 + 28*z + 6*u + 4*d - 10*d*z - 2*d*u + d^2*z]*e_[p1,p2,r1,r2
+         ]*m2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,0,2,0]*gs^4*Nc^2*sqrtziu * ( 4*Den[1 + u]*
+         Num[ - 3 + d]*e_[p1,p2,r1,r2]*m2*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,0,2,0]*gs^4*Nc^2*sqrtzu * (  - 2*Den[1 + u]
+         *Num[ - 12 + 28*z + 6*u + 4*d - 10*d*z - 2*d*u + d^2*z]*e_[p1,
+         p2,r1,r2]*m2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,0,2,1]*gs^4*sqrtziu * (  - 8*Den[1 + u]*e_[
+         p1,p2,r1,r2]*m2^2*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,0,2,1]*gs^4*sqrtzu * (  - 8*Den[1 + u]*e_[
+         p1,p2,r1,r2]*m2^2*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,0,2,1]*gs^4*Nc^2*sqrtziu * ( 8*Den[1 + u]*
+         e_[p1,p2,r1,r2]*m2^2*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,0,2,1]*gs^4*Nc^2*sqrtzu * ( 8*Den[1 + u]*
+         e_[p1,p2,r1,r2]*m2^2*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,1,-2,1]*gs^4*sqrtziu * (  - Num[ - 16 - 4*u
+          + 4*d - 2*d*u + d^2*u]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-2)*tag )
+
+       + INT[topo18,1,1,1,1,1,-2,1]*gs^4*sqrtzu * (  - Num[4 + 4*u - 4*
+         d*u + d^2*u]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-3)*tag )
+
+       + INT[topo18,1,1,1,1,1,-2,1]*gs^4*Nc^2*sqrtziu * ( Num[ - 16 - 4
+         *u + 4*d - 2*d*u + d^2*u]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-2)*tag )
+
+       + INT[topo18,1,1,1,1,1,-2,1]*gs^4*Nc^2*sqrtzu * ( Num[4 + 4*u - 
+         4*d*u + d^2*u]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-3)*tag )
+
+       + INT[topo18,1,1,1,1,1,-1,0]*gs^4*sqrtziu * ( 2*Num[ - 24 - 12*u
+          + 6*d + d^2*u]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-2)*tag )
+
+       + INT[topo18,1,1,1,1,1,-1,0]*gs^4*sqrtzu * ( 2*Num[6 + 6*u - 4*d
+         *u + d^2*u]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-3)*tag )
+
+       + INT[topo18,1,1,1,1,1,-1,0]*gs^4*Nc^2*sqrtziu * (  - 2*Num[ - 
+         24 - 12*u + 6*d + d^2*u]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-2)*tag )
+
+       + INT[topo18,1,1,1,1,1,-1,0]*gs^4*Nc^2*sqrtzu * (  - 2*Num[6 + 6
+         *u - 4*d*u + d^2*u]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-3)*tag )
+
+       + INT[topo18,1,1,1,1,1,-1,1]*gs^4*sqrtziu * ( Den[1 + u]*Num[24
+          + 20*z + 24*u - 8*d - 10*d*z - 8*d*u + d^2*z]*e_[p1,p2,r1,r2]
+         *u^(-1)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,1,-1,1]*gs^4*sqrtzu * (  - Den[1 + u]*Num[
+          - 12 - 28*z - 12*u - 24*u*z + 24*u^2*z + 4*d + 10*d*z + 4*d*u
+          + 4*d*u*z - 16*d*u^2*z - d^2*z + 2*d^2*u^2*z]*e_[p1,p2,r1,r2]
+         *u^(-2)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,1,-1,1]*gs^4*Nc^2*sqrtziu * (  - Den[1 + u]
+         *Num[24 + 20*z + 24*u - 8*d - 10*d*z - 8*d*u + d^2*z]*e_[p1,p2
+         ,r1,r2]*u^(-1)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,1,-1,1]*gs^4*Nc^2*sqrtzu * ( Den[1 + u]*
+         Num[ - 12 - 28*z - 12*u - 24*u*z + 24*u^2*z + 4*d + 10*d*z + 4
+         *d*u + 4*d*u*z - 16*d*u^2*z - d^2*z + 2*d^2*u^2*z]*e_[p1,p2,r1
+         ,r2]*u^(-2)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,1,0,-1]*gs^4*sqrtziu * (  - Num[ - 48 - 36*
+         u + 12*d + 6*d*u + d^2*u]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-2)*tag )
+
+       + INT[topo18,1,1,1,1,1,0,-1]*gs^4*sqrtzu * (  - Num[12 + 12*u - 
+         4*d*u + d^2*u]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-3)*tag )
+
+       + INT[topo18,1,1,1,1,1,0,-1]*gs^4*Nc^2*sqrtziu * ( Num[ - 48 - 
+         36*u + 12*d + 6*d*u + d^2*u]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-2)*
+         tag )
+
+       + INT[topo18,1,1,1,1,1,0,-1]*gs^4*Nc^2*sqrtzu * ( Num[12 + 12*u
+          - 4*d*u + d^2*u]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-3)*tag )
+
+       + INT[topo18,1,1,1,1,1,0,0]*gs^4*sqrtziu * (  - 2*Den[1 + u]*
+         Num[18 + 12*z + 18*u + 2*u*z - 6*d - 8*d*z - 6*d*u + d^2*z]*
+         e_[p1,p2,r1,r2]*u^(-1)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,1,0,0]*gs^4*sqrtzu * ( 2*Den[1 + u]*Num[ - 
+         12 - 30*z - 12*u - 4*u*z + 18*u^2*z + 4*d + 10*d*z + 4*d*u - d
+         *u*z - 10*d*u^2*z - d^2*z + d^2*u^2*z]*e_[p1,p2,r1,r2]*u^(-2)*
+         tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,1,0,0]*gs^4*Nc^2*sqrtziu * ( 2*Den[1 + u]*
+         Num[18 + 12*z + 18*u + 2*u*z - 6*d - 8*d*z - 6*d*u + d^2*z]*
+         e_[p1,p2,r1,r2]*u^(-1)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,1,0,0]*gs^4*Nc^2*sqrtzu * (  - 2*Den[1 + u]
+         *Num[ - 12 - 30*z - 12*u - 4*u*z + 18*u^2*z + 4*d + 10*d*z + 4
+         *d*u - d*u*z - 10*d*u^2*z - d^2*z + d^2*u^2*z]*e_[p1,p2,r1,r2]
+         *u^(-2)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,1,0,1]*gs^4*sqrtziu * ( Den[1 + u]*Num[ - 8
+          - 32*u + 28*u*z + 8*d*u - 10*d*u*z + d^2*u*z]*e_[p1,p2,r1,r2]
+         *m2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,1,0,1]*gs^4*sqrtzu * ( Den[1 + u]*Num[8 + 
+         28*z - 16*u + 56*u*z - 10*d*z + 8*d*u - 20*d*u*z + d^2*z + 2*
+         d^2*u*z]*e_[p1,p2,r1,r2]*m2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,1,0,1]*gs^4*Nc^2*sqrtziu * (  - Den[1 + u]*
+         Num[ - 8 - 32*u + 28*u*z + 8*d*u - 10*d*u*z + d^2*u*z]*e_[p1,
+         p2,r1,r2]*m2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,1,0,1]*gs^4*Nc^2*sqrtzu * (  - Den[1 + u]*
+         Num[8 + 28*z - 16*u + 56*u*z - 10*d*z + 8*d*u - 20*d*u*z + d^2
+         *z + 2*d^2*u*z]*e_[p1,p2,r1,r2]*m2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,1,1,-2]*gs^4*sqrtziu * ( 4*Num[1 + u]*Num[
+          - 4 + d]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-2)*tag )
+
+       + INT[topo18,1,1,1,1,1,1,-2]*gs^4*sqrtzu * ( 4*Num[1 + u]*e_[p1,
+         p2,r1,r2]*m2^(-1)*u^(-3)*tag )
+
+       + INT[topo18,1,1,1,1,1,1,-2]*gs^4*Nc^2*sqrtziu * (  - 4*Num[1 + 
+         u]*Num[ - 4 + d]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-2)*tag )
+
+       + INT[topo18,1,1,1,1,1,1,-2]*gs^4*Nc^2*sqrtzu * (  - 4*Num[1 + u
+         ]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-3)*tag )
+
+       + INT[topo18,1,1,1,1,1,1,-1]*gs^4*sqrtziu * ( Den[1 + u]*Num[12
+          - 12*z + 12*u + 8*u*z - 4*d - 2*d*z - 4*d*u + d^2*z]*e_[p1,p2
+         ,r1,r2]*u^(-1)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,1,1,-1]*gs^4*sqrtzu * ( Den[1 + u]*Num[12
+          + 36*z + 12*u - 32*u*z - 12*u^2*z - 4*d - 10*d*z - 4*d*u + 10
+         *d*u*z + 4*d*u^2*z + d^2*z]*e_[p1,p2,r1,r2]*u^(-2)*tag*z^(-1)
+          )
+
+       + INT[topo18,1,1,1,1,1,1,-1]*gs^4*Nc^2*sqrtziu * (  - Den[1 + u]
+         *Num[12 - 12*z + 12*u + 8*u*z - 4*d - 2*d*z - 4*d*u + d^2*z]*
+         e_[p1,p2,r1,r2]*u^(-1)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,1,1,-1]*gs^4*Nc^2*sqrtzu * (  - Den[1 + u]*
+         Num[12 + 36*z + 12*u - 32*u*z - 12*u^2*z - 4*d - 10*d*z - 4*d*
+         u + 10*d*u*z + 4*d*u^2*z + d^2*z]*e_[p1,p2,r1,r2]*u^(-2)*tag*
+         z^(-1) )
+
+       + INT[topo18,1,1,1,1,1,1,0]*gs^4*sqrtziu * (  - 2*Den[1 + u]*
+         Num[ - 4 - 22*u + 28*u*z + 6*d*u - 10*d*u*z + d^2*u*z]*e_[p1,
+         p2,r1,r2]*m2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,1,1,0]*gs^4*sqrtzu * (  - 2*Den[1 + u]*Num[
+          - 2 + 28*z - 8*u + 28*u*z + 2*d - 10*d*z + 4*d*u - 10*d*u*z
+          + d^2*z + d^2*u*z]*e_[p1,p2,r1,r2]*m2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,1,1,0]*gs^4*Nc^2*sqrtziu * ( 2*Den[1 + u]*
+         Num[ - 4 - 22*u + 28*u*z + 6*d*u - 10*d*u*z + d^2*u*z]*e_[p1,
+         p2,r1,r2]*m2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,1,1,0]*gs^4*Nc^2*sqrtzu * ( 2*Den[1 + u]*
+         Num[ - 2 + 28*z - 8*u + 28*u*z + 2*d - 10*d*z + 4*d*u - 10*d*u
+         *z + d^2*z + d^2*u*z]*e_[p1,p2,r1,r2]*m2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,1,1,1]*gs^4*sqrtziu * ( 8*Den[1 + u]*e_[p1,
+         p2,r1,r2]*m2^2*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,1,1,1]*gs^4*sqrtzu * ( 8*Den[1 + u]*e_[p1,
+         p2,r1,r2]*m2^2*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,1,1,1]*gs^4*Nc^2*sqrtziu * (  - 8*Den[1 + u
+         ]*e_[p1,p2,r1,r2]*m2^2*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,1,1,1]*gs^4*Nc^2*sqrtzu * (  - 8*Den[1 + u]
+         *e_[p1,p2,r1,r2]*m2^2*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,1,2,-2]*gs^4*sqrtziu * (  - 4*Den[1 + u]*
+         Num[ - 4 + u + d]*e_[p1,p2,r1,r2]*u^(-1)*tag )
+
+       + INT[topo18,1,1,1,1,1,2,-2]*gs^4*sqrtzu * (  - 4*Den[1 + u]*
+         Num[1 - 4*u + d*u]*e_[p1,p2,r1,r2]*u^(-2)*tag )
+
+       + INT[topo18,1,1,1,1,1,2,-2]*gs^4*Nc^2*sqrtziu * ( 4*Den[1 + u]*
+         Num[ - 4 + u + d]*e_[p1,p2,r1,r2]*u^(-1)*tag )
+
+       + INT[topo18,1,1,1,1,1,2,-2]*gs^4*Nc^2*sqrtzu * ( 4*Den[1 + u]*
+         Num[1 - 4*u + d*u]*e_[p1,p2,r1,r2]*u^(-2)*tag )
+
+       + INT[topo18,1,1,1,1,1,2,-1]*gs^4*sqrtziu * ( Den[1 + u]*Num[ - 
+         12 + 28*z + 4*d - 10*d*z + d^2*z]*e_[p1,p2,r1,r2]*m2*tag*
+         z^(-1) )
+
+       + INT[topo18,1,1,1,1,1,2,-1]*gs^4*sqrtzu * ( Den[1 + u]*Num[ - 
+         12 + 28*z + 4*d - 10*d*z + d^2*z]*e_[p1,p2,r1,r2]*m2*u^(-1)*
+         tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,1,2,-1]*gs^4*Nc^2*sqrtziu * (  - Den[1 + u]
+         *Num[ - 12 + 28*z + 4*d - 10*d*z + d^2*z]*e_[p1,p2,r1,r2]*m2*
+         tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,1,2,-1]*gs^4*Nc^2*sqrtzu * (  - Den[1 + u]*
+         Num[ - 12 + 28*z + 4*d - 10*d*z + d^2*z]*e_[p1,p2,r1,r2]*m2*
+         u^(-1)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,1,2,0]*gs^4*sqrtziu * (  - 8*Den[1 + u]*e_[
+         p1,p2,r1,r2]*m2^2*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,1,2,0]*gs^4*sqrtzu * (  - 8*Den[1 + u]*e_[
+         p1,p2,r1,r2]*m2^2*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,1,2,0]*gs^4*Nc^2*sqrtziu * ( 8*Den[1 + u]*
+         e_[p1,p2,r1,r2]*m2^2*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,1,2,0]*gs^4*Nc^2*sqrtzu * ( 8*Den[1 + u]*
+         e_[p1,p2,r1,r2]*m2^2*tag*z^(-1) )
+
+       + INT[topo26,1,1,1,1,0,0,1]*gs^4*sqrtziu * (  - 4*Den[1 + u]*
+         Num[ - 3 + d]*Num[ - 6 + d]*e_[p1,p2,r1,r2]*tag )
+
+       + INT[topo26,1,1,1,1,0,0,1]*gs^4*sqrtzu * (  - 4*Den[1 + u]*Num[
+          - 3 + d]*Num[ - 6 + d]*e_[p1,p2,r1,r2]*tag )
+
+       + INT[topo26,1,1,1,1,0,0,1]*gs^4*Nc^2*sqrtziu * ( 4*Den[1 + u]*
+         Num[ - 3 + d]*Num[ - 6 + d]*e_[p1,p2,r1,r2]*tag )
+
+       + INT[topo26,1,1,1,1,0,0,1]*gs^4*Nc^2*sqrtzu * ( 4*Den[1 + u]*
+         Num[ - 3 + d]*Num[ - 6 + d]*e_[p1,p2,r1,r2]*tag )
+
+       + INT[topo26,1,1,1,1,0,1,0]*gs^4*sqrtziu * (  - 4*Den[1 + u]*
+         Num[ - 3 + d]*Num[ - 6 + d]*e_[p1,p2,r1,r2]*tag )
+
+       + INT[topo26,1,1,1,1,0,1,0]*gs^4*sqrtzu * (  - 4*Den[1 + u]*Num[
+          - 3 + d]*Num[ - 6 + d]*e_[p1,p2,r1,r2]*tag )
+
+       + INT[topo26,1,1,1,1,0,1,0]*gs^4*Nc^2*sqrtziu * ( 4*Den[1 + u]*
+         Num[ - 3 + d]*Num[ - 6 + d]*e_[p1,p2,r1,r2]*tag )
+
+       + INT[topo26,1,1,1,1,0,1,0]*gs^4*Nc^2*sqrtzu * ( 4*Den[1 + u]*
+         Num[ - 3 + d]*Num[ - 6 + d]*e_[p1,p2,r1,r2]*tag )
+
+       + INT[topo26,1,1,1,1,1,-1,1]*gs^4*sqrtziu * (  - 4*Den[1 + u]^2*
+         Num[ - 3 + d]*Num[1 - 5*u + d*u]*e_[p1,p2,r1,r2]*tag )
+
+       + INT[topo26,1,1,1,1,1,-1,1]*gs^4*sqrtzu * (  - 2*Den[1 + u]^2*
+         Num[ - 3 + d]*Num[8 - 4*u - d + d*u]*e_[p1,p2,r1,r2]*tag )
+
+       + INT[topo26,1,1,1,1,1,-1,1]*gs^4*Nc^2*sqrtziu * ( 4*Den[1 + u]^
+         2*Num[ - 3 + d]*Num[1 - 5*u + d*u]*e_[p1,p2,r1,r2]*tag )
+
+       + INT[topo26,1,1,1,1,1,-1,1]*gs^4*Nc^2*sqrtzu * ( 2*Den[1 + u]^2
+         *Num[ - 3 + d]*Num[8 - 4*u - d + d*u]*e_[p1,p2,r1,r2]*tag )
+
+       + INT[topo26,1,1,1,1,1,0,0]*gs^4*sqrtziu * (  - 2*Den[1 + u]^2*
+         Num[ - 3 + d]*Num[22 - 2*u - 3*d + d*u]*e_[p1,p2,r1,r2]*tag )
+
+       + INT[topo26,1,1,1,1,1,0,0]*gs^4*sqrtzu * (  - 2*Den[1 + u]^2*
+         Num[ - 3 + d]*Num[22 - 2*u - 3*d + d*u]*e_[p1,p2,r1,r2]*tag )
+
+       + INT[topo26,1,1,1,1,1,0,0]*gs^4*Nc^2*sqrtziu * ( 2*Den[1 + u]^2
+         *Num[ - 3 + d]*Num[22 - 2*u - 3*d + d*u]*e_[p1,p2,r1,r2]*tag )
+
+       + INT[topo26,1,1,1,1,1,0,0]*gs^4*Nc^2*sqrtzu * ( 2*Den[1 + u]^2*
+         Num[ - 3 + d]*Num[22 - 2*u - 3*d + d*u]*e_[p1,p2,r1,r2]*tag )
+
+       + INT[topo26,1,1,1,1,1,0,1]*gs^4*sqrtziu * ( 2*Den[1 + u]*Num[
+          - 24 + 28*z + 8*d - 10*d*z + d^2*z]*e_[p1,p2,r1,r2]*m2*tag*
+         z^(-1) )
+
+       + INT[topo26,1,1,1,1,1,0,1]*gs^4*sqrtzu * ( 2*Den[1 + u]*Num[ - 
+         24 + 28*z + 8*d - 10*d*z + d^2*z]*e_[p1,p2,r1,r2]*m2*tag*
+         z^(-1) )
+
+       + INT[topo26,1,1,1,1,1,0,1]*gs^4*Nc^2*sqrtziu * (  - 2*Den[1 + u
+         ]*Num[ - 24 + 28*z + 8*d - 10*d*z + d^2*z]*e_[p1,p2,r1,r2]*m2*
+         tag*z^(-1) )
+
+       + INT[topo26,1,1,1,1,1,0,1]*gs^4*Nc^2*sqrtzu * (  - 2*Den[1 + u]
+         *Num[ - 24 + 28*z + 8*d - 10*d*z + d^2*z]*e_[p1,p2,r1,r2]*m2*
+         tag*z^(-1) )
+
+       + INT[topo26,1,1,1,1,1,1,-1]*gs^4*sqrtziu * ( 2*Den[1 + u]^2*
+         Num[ - 3 + d]*Num[ - 20 - 8*u + 3*d + d*u]*e_[p1,p2,r1,r2]*tag
+          )
+
+       + INT[topo26,1,1,1,1,1,1,-1]*gs^4*sqrtzu * (  - 4*Den[1 + u]^2*
+         Num[ - 3 + d]*Num[7 + u - d]*e_[p1,p2,r1,r2]*tag )
+
+       + INT[topo26,1,1,1,1,1,1,-1]*gs^4*Nc^2*sqrtziu * (  - 2*Den[1 + 
+         u]^2*Num[ - 3 + d]*Num[ - 20 - 8*u + 3*d + d*u]*e_[p1,p2,r1,r2
+         ]*tag )
+
+       + INT[topo26,1,1,1,1,1,1,-1]*gs^4*Nc^2*sqrtzu * ( 4*Den[1 + u]^2
+         *Num[ - 3 + d]*Num[7 + u - d]*e_[p1,p2,r1,r2]*tag )
+
+       + INT[topo26,1,1,1,1,1,1,0]*gs^4*sqrtziu * ( 2*Den[1 + u]*Num[
+          - 24 + 28*z + 8*d - 10*d*z + d^2*z]*e_[p1,p2,r1,r2]*m2*tag*
+         z^(-1) )
+
+       + INT[topo26,1,1,1,1,1,1,0]*gs^4*sqrtzu * ( 2*Den[1 + u]*Num[ - 
+         24 + 28*z + 8*d - 10*d*z + d^2*z]*e_[p1,p2,r1,r2]*m2*tag*
+         z^(-1) )
+
+       + INT[topo26,1,1,1,1,1,1,0]*gs^4*Nc^2*sqrtziu * (  - 2*Den[1 + u
+         ]*Num[ - 24 + 28*z + 8*d - 10*d*z + d^2*z]*e_[p1,p2,r1,r2]*m2*
+         tag*z^(-1) )
+
+       + INT[topo26,1,1,1,1,1,1,0]*gs^4*Nc^2*sqrtzu * (  - 2*Den[1 + u]
+         *Num[ - 24 + 28*z + 8*d - 10*d*z + d^2*z]*e_[p1,p2,r1,r2]*m2*
+         tag*z^(-1) )
+
+       + INT[topo26,1,1,1,1,2,-2,1]*gs^4*sqrtziu * (  - Den[1 + u]^3*
+         Num[4 + 24*u - 10*d*u + d^2*u]*e_[p1,p2,r1,r2]*u*tag )
+
+       + INT[topo26,1,1,1,1,2,-2,1]*gs^4*sqrtzu * ( Den[1 + u]^3*Num[4
+          + 24*u - 10*d*u + d^2*u]*e_[p1,p2,r1,r2]*tag )
+
+       + INT[topo26,1,1,1,1,2,-2,1]*gs^4*Nc^2*sqrtziu * ( Den[1 + u]^3*
+         Num[4 + 24*u - 10*d*u + d^2*u]*e_[p1,p2,r1,r2]*u*tag )
+
+       + INT[topo26,1,1,1,1,2,-2,1]*gs^4*Nc^2*sqrtzu * (  - Den[1 + u]^
+         3*Num[4 + 24*u - 10*d*u + d^2*u]*e_[p1,p2,r1,r2]*tag )
+
+       + INT[topo26,1,1,1,1,2,-1,0]*gs^4*sqrtziu * ( Den[1 + u]^3*Num[
+          - 12 + 40*u - 8*u^2 + 4*d - 24*d*u + 2*d*u^2 + 3*d^2*u]*e_[p1
+         ,p2,r1,r2]*tag )
+
+       + INT[topo26,1,1,1,1,2,-1,0]*gs^4*sqrtzu * ( Den[1 + u]^3*Num[
+          - 28 + 32*u + 14*d - 16*d*u - d^2 + 2*d^2*u]*e_[p1,p2,r1,r2]*
+         tag )
+
+       + INT[topo26,1,1,1,1,2,-1,0]*gs^4*Nc^2*sqrtziu * (  - Den[1 + u]
+         ^3*Num[ - 12 + 40*u - 8*u^2 + 4*d - 24*d*u + 2*d*u^2 + 3*d^2*u
+         ]*e_[p1,p2,r1,r2]*tag )
+
+       + INT[topo26,1,1,1,1,2,-1,0]*gs^4*Nc^2*sqrtzu * (  - Den[1 + u]^
+         3*Num[ - 28 + 32*u + 14*d - 16*d*u - d^2 + 2*d^2*u]*e_[p1,p2,
+         r1,r2]*tag )
+
+       + INT[topo26,1,1,1,1,2,-1,1]*gs^4*sqrtziu * ( Den[1 + u]^2*Num[
+          - 24 + 28*z + 8*d - 10*d*z + d^2*z]*e_[p1,p2,r1,r2]*m2*u*tag*
+         z^(-1) )
+
+       + INT[topo26,1,1,1,1,2,-1,1]*gs^4*sqrtzu * (  - Den[1 + u]^2*
+         Num[ - 12 + 28*z + 12*u + 4*d - 10*d*z - 4*d*u + d^2*z]*e_[p1,
+         p2,r1,r2]*m2*tag*z^(-1) )
+
+       + INT[topo26,1,1,1,1,2,-1,1]*gs^4*Nc^2*sqrtziu * (  - Den[1 + u]
+         ^2*Num[ - 24 + 28*z + 8*d - 10*d*z + d^2*z]*e_[p1,p2,r1,r2]*m2
+         *u*tag*z^(-1) )
+
+       + INT[topo26,1,1,1,1,2,-1,1]*gs^4*Nc^2*sqrtzu * ( Den[1 + u]^2*
+         Num[ - 12 + 28*z + 12*u + 4*d - 10*d*z - 4*d*u + d^2*z]*e_[p1,
+         p2,r1,r2]*m2*tag*z^(-1) )
+
+       + INT[topo26,1,1,1,1,2,0,-1]*gs^4*sqrtziu * ( Den[1 + u]^3*Num[
+          - 60 + 20*u + 20*u^2 + 26*d - 12*d*u - 8*d*u^2 - 2*d^2 + 2*
+         d^2*u + d^2*u^2]*e_[p1,p2,r1,r2]*tag )
+
+       + INT[topo26,1,1,1,1,2,0,-1]*gs^4*sqrtzu * ( Den[1 + u]^3*Num[
+          - 68 - 8*u + 28*d - 2*d*u - 2*d^2 + d^2*u]*e_[p1,p2,r1,r2]*
+         tag )
+
+       + INT[topo26,1,1,1,1,2,0,-1]*gs^4*Nc^2*sqrtziu * (  - Den[1 + u]
+         ^3*Num[ - 60 + 20*u + 20*u^2 + 26*d - 12*d*u - 8*d*u^2 - 2*d^2
+          + 2*d^2*u + d^2*u^2]*e_[p1,p2,r1,r2]*tag )
+
+       + INT[topo26,1,1,1,1,2,0,-1]*gs^4*Nc^2*sqrtzu * (  - Den[1 + u]^
+         3*Num[ - 68 - 8*u + 28*d - 2*d*u - 2*d^2 + d^2*u]*e_[p1,p2,r1,
+         r2]*tag )
+
+       + INT[topo26,1,1,1,1,2,0,0]*gs^4*sqrtziu * (  - 2*Den[1 + u]^2*
+         Num[ - 18 + 28*z + 6*u + 6*d - 10*d*z - 2*d*u + d^2*z]*e_[p1,
+         p2,r1,r2]*m2*tag*z^(-1) )
+
+       + INT[topo26,1,1,1,1,2,0,0]*gs^4*sqrtzu * (  - 2*Den[1 + u]^2*
+         Num[ - 18 + 28*z + 6*u + 6*d - 10*d*z - 2*d*u + d^2*z]*e_[p1,
+         p2,r1,r2]*m2*tag*z^(-1) )
+
+       + INT[topo26,1,1,1,1,2,0,0]*gs^4*Nc^2*sqrtziu * ( 2*Den[1 + u]^2
+         *Num[ - 18 + 28*z + 6*u + 6*d - 10*d*z - 2*d*u + d^2*z]*e_[p1,
+         p2,r1,r2]*m2*tag*z^(-1) )
+
+       + INT[topo26,1,1,1,1,2,0,0]*gs^4*Nc^2*sqrtzu * ( 2*Den[1 + u]^2*
+         Num[ - 18 + 28*z + 6*u + 6*d - 10*d*z - 2*d*u + d^2*z]*e_[p1,
+         p2,r1,r2]*m2*tag*z^(-1) )
+
+       + INT[topo26,1,1,1,1,2,0,1]*gs^4*sqrtziu * ( 8*Den[1 + u]*e_[p1,
+         p2,r1,r2]*m2^2*tag*z^(-1) )
+
+       + INT[topo26,1,1,1,1,2,0,1]*gs^4*sqrtzu * ( 8*Den[1 + u]*e_[p1,
+         p2,r1,r2]*m2^2*tag*z^(-1) )
+
+       + INT[topo26,1,1,1,1,2,0,1]*gs^4*Nc^2*sqrtziu * (  - 8*Den[1 + u
+         ]*e_[p1,p2,r1,r2]*m2^2*tag*z^(-1) )
+
+       + INT[topo26,1,1,1,1,2,0,1]*gs^4*Nc^2*sqrtzu * (  - 8*Den[1 + u]
+         *e_[p1,p2,r1,r2]*m2^2*tag*z^(-1) )
+
+       + INT[topo26,1,1,1,1,2,1,-2]*gs^4*sqrtziu * ( Den[1 + u]^3*Num[
+          - 48 - 24*u + 4*u^2 + 22*d + 12*d*u - 2*d^2 - d^2*u]*e_[p1,p2
+         ,r1,r2]*tag )
+
+       + INT[topo26,1,1,1,1,2,1,-2]*gs^4*sqrtzu * ( Den[1 + u]^3*Num[
+          - 36 - 16*u + 14*d + 4*d*u - d^2]*e_[p1,p2,r1,r2]*tag )
+
+       + INT[topo26,1,1,1,1,2,1,-2]*gs^4*Nc^2*sqrtziu * (  - Den[1 + u]
+         ^3*Num[ - 48 - 24*u + 4*u^2 + 22*d + 12*d*u - 2*d^2 - d^2*u]*
+         e_[p1,p2,r1,r2]*tag )
+
+       + INT[topo26,1,1,1,1,2,1,-2]*gs^4*Nc^2*sqrtzu * (  - Den[1 + u]^
+         3*Num[ - 36 - 16*u + 14*d + 4*d*u - d^2]*e_[p1,p2,r1,r2]*tag )
+
+       + INT[topo26,1,1,1,1,2,1,-1]*gs^4*sqrtziu * (  - Den[1 + u]^2*
+         Num[ - 36 + 56*z - 12*u + 28*u*z + 12*d - 20*d*z + 4*d*u - 10*
+         d*u*z + 2*d^2*z + d^2*u*z]*e_[p1,p2,r1,r2]*m2*tag*z^(-1) )
+
+       + INT[topo26,1,1,1,1,2,1,-1]*gs^4*sqrtzu * (  - Den[1 + u]^2*
+         Num[ - 24 + 28*z + 8*d - 10*d*z + d^2*z]*e_[p1,p2,r1,r2]*m2*
+         tag*z^(-1) )
+
+       + INT[topo26,1,1,1,1,2,1,-1]*gs^4*Nc^2*sqrtziu * ( Den[1 + u]^2*
+         Num[ - 36 + 56*z - 12*u + 28*u*z + 12*d - 20*d*z + 4*d*u - 10*
+         d*u*z + 2*d^2*z + d^2*u*z]*e_[p1,p2,r1,r2]*m2*tag*z^(-1) )
+
+       + INT[topo26,1,1,1,1,2,1,-1]*gs^4*Nc^2*sqrtzu * ( Den[1 + u]^2*
+         Num[ - 24 + 28*z + 8*d - 10*d*z + d^2*z]*e_[p1,p2,r1,r2]*m2*
+         tag*z^(-1) )
+
+       + INT[topo26,1,1,1,1,2,1,0]*gs^4*sqrtziu * ( 8*Den[1 + u]*e_[p1,
+         p2,r1,r2]*m2^2*tag*z^(-1) )
+
+       + INT[topo26,1,1,1,1,2,1,0]*gs^4*sqrtzu * ( 8*Den[1 + u]*e_[p1,
+         p2,r1,r2]*m2^2*tag*z^(-1) )
+
+       + INT[topo26,1,1,1,1,2,1,0]*gs^4*Nc^2*sqrtziu * (  - 8*Den[1 + u
+         ]*e_[p1,p2,r1,r2]*m2^2*tag*z^(-1) )
+
+       + INT[topo26,1,1,1,1,2,1,0]*gs^4*Nc^2*sqrtzu * (  - 8*Den[1 + u]
+         *e_[p1,p2,r1,r2]*m2^2*tag*z^(-1) )
+
+       + INT[topo32,1,1,1,1,-1,0,1]*gs^4*sqrtziu * ( 4*Num[ - 2 + d]*
+         Num[ - 3 + d]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-1)*tag )
+
+       + INT[topo32,1,1,1,1,-1,0,1]*gs^4*Nc^2*sqrtziu * (  - 4*Num[ - 2
+          + d]*Num[ - 3 + d]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-1)*tag )
+
+       + INT[topo32,1,1,1,1,-1,1,1]*gs^4*sqrtziu * (  - 4*Num[ - 2 + d]
+         *Num[ - 3 + d]*e_[p1,p2,r1,r2]*u^(-1)*tag )
+
+       + INT[topo32,1,1,1,1,-1,1,1]*gs^4*Nc^2*sqrtziu * ( 4*Num[ - 2 + 
+         d]*Num[ - 3 + d]*e_[p1,p2,r1,r2]*u^(-1)*tag )
+
+       + INT[topo32,1,1,1,1,0,-1,1]*gs^4*sqrtziu * ( 4*Num[ - 3 + d]*
+         Num[1 + d*u]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-1)*tag )
+
+       + INT[topo32,1,1,1,1,0,-1,1]*gs^4*sqrtzu * ( 2*Num[ - 3 + d]*
+         Num[ - 4 + d]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-1)*tag )
+
+       + INT[topo32,1,1,1,1,0,-1,1]*gs^4*Nc^2*sqrtziu * (  - 4*Num[ - 3
+          + d]*Num[1 + d*u]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-1)*tag )
+
+       + INT[topo32,1,1,1,1,0,-1,1]*gs^4*Nc^2*sqrtzu * (  - 2*Num[ - 3
+          + d]*Num[ - 4 + d]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-1)*tag )
+
+       + INT[topo32,1,1,1,1,0,0,0]*gs^4*sqrtziu * ( 2*Num[ - 2 + d]*
+         Num[ - 3 + d]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-1)*tag )
+
+       + INT[topo32,1,1,1,1,0,0,0]*gs^4*Nc^2*sqrtziu * (  - 2*Num[ - 2
+          + d]*Num[ - 3 + d]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-1)*tag )
+
+       + INT[topo32,1,1,1,1,0,0,1]*gs^4*sqrtziu * (  - 2*Num[24 + 18*z
+          - 8*d - 8*d*z - 12*d*u*z + d^2*z + 4*d^2*u*z]*e_[p1,p2,r1,r2]
+         *u^(-1)*tag*z^(-1) )
+
+       + INT[topo32,1,1,1,1,0,0,1]*gs^4*sqrtzu * (  - 2*Num[ - 4 + d]*
+         Num[ - 9 + 2*d]*e_[p1,p2,r1,r2]*u^(-1)*tag )
+
+       + INT[topo32,1,1,1,1,0,0,1]*gs^4*Nc^2*sqrtziu * ( 2*Num[24 + 18*
+         z - 8*d - 8*d*z - 12*d*u*z + d^2*z + 4*d^2*u*z]*e_[p1,p2,r1,r2
+         ]*u^(-1)*tag*z^(-1) )
+
+       + INT[topo32,1,1,1,1,0,0,1]*gs^4*Nc^2*sqrtzu * ( 2*Num[ - 4 + d]
+         *Num[ - 9 + 2*d]*e_[p1,p2,r1,r2]*u^(-1)*tag )
+
+       + INT[topo32,1,1,1,1,0,1,0]*gs^4*sqrtziu * (  - 2*Num[ - 2 + d]*
+         Num[ - 3 + d]*e_[p1,p2,r1,r2]*u^(-1)*tag )
+
+       + INT[topo32,1,1,1,1,0,1,0]*gs^4*Nc^2*sqrtziu * ( 2*Num[ - 2 + d
+         ]*Num[ - 3 + d]*e_[p1,p2,r1,r2]*u^(-1)*tag )
+
+       + INT[topo32,1,1,1,1,0,1,1]*gs^4*sqrtziu * ( 2*Num[24 + 24*z - 8
+         *d - 10*d*z - 6*d*u*z + d^2*z + 2*d^2*u*z]*e_[p1,p2,r1,r2]*m2*
+         u^(-1)*tag*z^(-1) )
+
+       + INT[topo32,1,1,1,1,0,1,1]*gs^4*sqrtzu * ( 2*Num[ - 4 + d]*Num[
+          - 6 + d]*e_[p1,p2,r1,r2]*m2*u^(-1)*tag )
+
+       + INT[topo32,1,1,1,1,0,1,1]*gs^4*Nc^2*sqrtziu * (  - 2*Num[24 + 
+         24*z - 8*d - 10*d*z - 6*d*u*z + d^2*z + 2*d^2*u*z]*e_[p1,p2,r1
+         ,r2]*m2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo32,1,1,1,1,0,1,1]*gs^4*Nc^2*sqrtzu * (  - 2*Num[ - 4
+          + d]*Num[ - 6 + d]*e_[p1,p2,r1,r2]*m2*u^(-1)*tag )
+
+       + INT[topo32,1,1,1,1,1,-2,1]*gs^4*sqrtziu * ( Num[ - 16 - 4*u + 
+         4*d - 2*d*u + d^2*u]*e_[p1,p2,r1,r2]*m2^(-1)*tag )
+
+       + INT[topo32,1,1,1,1,1,-2,1]*gs^4*sqrtzu * ( Num[4 + 4*u - 4*d*u
+          + d^2*u]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-1)*tag )
+
+       + INT[topo32,1,1,1,1,1,-2,1]*gs^4*Nc^2*sqrtziu * (  - Num[ - 16
+          - 4*u + 4*d - 2*d*u + d^2*u]*e_[p1,p2,r1,r2]*m2^(-1)*tag )
+
+       + INT[topo32,1,1,1,1,1,-2,1]*gs^4*Nc^2*sqrtzu * (  - Num[4 + 4*u
+          - 4*d*u + d^2*u]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-1)*tag )
+
+       + INT[topo32,1,1,1,1,1,-1,0]*gs^4*sqrtziu * ( Num[12 - 6*d + d^2
+         ]*e_[p1,p2,r1,r2]*m2^(-1)*tag )
+
+       + INT[topo32,1,1,1,1,1,-1,0]*gs^4*sqrtzu * ( Num[ - 4 + d]*e_[p1
+         ,p2,r1,r2]*d*m2^(-1)*u^(-1)*tag )
+
+       + INT[topo32,1,1,1,1,1,-1,0]*gs^4*Nc^2*sqrtziu * (  - Num[12 - 6
+         *d + d^2]*e_[p1,p2,r1,r2]*m2^(-1)*tag )
+
+       + INT[topo32,1,1,1,1,1,-1,0]*gs^4*Nc^2*sqrtzu * (  - Num[ - 4 + 
+         d]*e_[p1,p2,r1,r2]*d*m2^(-1)*u^(-1)*tag )
+
+       + INT[topo32,1,1,1,1,1,-1,1]*gs^4*sqrtziu * (  - Num[24 - 12*z
+          - 12*u*z - 8*d - 2*d*z - 6*d*u*z + d^2*z + 3*d^2*u*z]*e_[p1,
+         p2,r1,r2]*tag*z^(-1) )
+
+       + INT[topo32,1,1,1,1,1,-1,1]*gs^4*sqrtzu * (  - Num[12 + 36*z + 
+         36*u*z - 4*d - 10*d*z - 18*d*u*z + d^2*z + 3*d^2*u*z]*e_[p1,p2
+         ,r1,r2]*u^(-1)*tag*z^(-1) )
+
+       + INT[topo32,1,1,1,1,1,-1,1]*gs^4*Nc^2*sqrtziu * ( Num[24 - 12*z
+          - 12*u*z - 8*d - 2*d*z - 6*d*u*z + d^2*z + 3*d^2*u*z]*e_[p1,
+         p2,r1,r2]*tag*z^(-1) )
+
+       + INT[topo32,1,1,1,1,1,-1,1]*gs^4*Nc^2*sqrtzu * ( Num[12 + 36*z
+          + 36*u*z - 4*d - 10*d*z - 18*d*u*z + d^2*z + 3*d^2*u*z]*e_[p1
+         ,p2,r1,r2]*u^(-1)*tag*z^(-1) )
+
+       + INT[topo32,1,1,1,1,1,0,0]*gs^4*sqrtziu * (  - 2*Num[6 + 12*u*z
+          - 2*d - 6*d*u*z + d^2*u*z]*e_[p1,p2,r1,r2]*u^(-1)*tag*z^(-1)
+          )
+
+       + INT[topo32,1,1,1,1,1,0,0]*gs^4*sqrtzu * (  - 2*Num[ - 3 + d]*
+         Num[ - 4 + d]*e_[p1,p2,r1,r2]*u^(-1)*tag )
+
+       + INT[topo32,1,1,1,1,1,0,0]*gs^4*Nc^2*sqrtziu * ( 2*Num[6 + 12*u
+         *z - 2*d - 6*d*u*z + d^2*u*z]*e_[p1,p2,r1,r2]*u^(-1)*tag*
+         z^(-1) )
+
+       + INT[topo32,1,1,1,1,1,0,0]*gs^4*Nc^2*sqrtzu * ( 2*Num[ - 3 + d]
+         *Num[ - 4 + d]*e_[p1,p2,r1,r2]*u^(-1)*tag )
+
+       + INT[topo32,1,1,1,1,1,0,1]*gs^4*sqrtziu * ( Num[8 + 48*u + 24*u
+         *z - 12*u^2*z - 16*d*u - 16*d*u*z - 6*d*u^2*z + 2*d^2*u*z + 3*
+         d^2*u^2*z]*e_[p1,p2,r1,r2]*m2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo32,1,1,1,1,1,0,1]*gs^4*sqrtzu * ( Num[4 + 60*z + 60*u*
+         z - 4*d - 20*d*z - 24*d*u*z + 2*d^2*z + 3*d^2*u*z]*e_[p1,p2,r1
+         ,r2]*m2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo32,1,1,1,1,1,0,1]*gs^4*Nc^2*sqrtziu * (  - Num[8 + 48*
+         u + 24*u*z - 12*u^2*z - 16*d*u - 16*d*u*z - 6*d*u^2*z + 2*d^2*
+         u*z + 3*d^2*u^2*z]*e_[p1,p2,r1,r2]*m2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo32,1,1,1,1,1,0,1]*gs^4*Nc^2*sqrtzu * (  - Num[4 + 60*z
+          + 60*u*z - 4*d - 20*d*z - 24*d*u*z + 2*d^2*z + 3*d^2*u*z]*e_[
+         p1,p2,r1,r2]*m2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo32,1,1,1,1,1,1,0]*gs^4*sqrtziu * ( Num[12 + 12*u*z - 4
+         *d - 6*d*u*z + d^2*u*z]*e_[p1,p2,r1,r2]*m2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo32,1,1,1,1,1,1,0]*gs^4*sqrtzu * ( Num[ - 4 + d]*Num[
+          - 6 + d]*e_[p1,p2,r1,r2]*m2*u^(-1)*tag )
+
+       + INT[topo32,1,1,1,1,1,1,0]*gs^4*Nc^2*sqrtziu * (  - Num[12 + 12
+         *u*z - 4*d - 6*d*u*z + d^2*u*z]*e_[p1,p2,r1,r2]*m2*u^(-1)*tag*
+         z^(-1) )
+
+       + INT[topo32,1,1,1,1,1,1,0]*gs^4*Nc^2*sqrtzu * (  - Num[ - 4 + d
+         ]*Num[ - 6 + d]*e_[p1,p2,r1,r2]*m2*u^(-1)*tag )
+
+       + INT[topo32,1,1,1,1,1,1,1]*gs^4*sqrtziu * (  - Num[8 + 24*u + 
+         20*u*z - 4*u^2*z - 8*d*u - 10*d*u*z - 2*d*u^2*z + d^2*u*z + 
+         d^2*u^2*z]*e_[p1,p2,r1,r2]*m2^2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo32,1,1,1,1,1,1,1]*gs^4*sqrtzu * (  - Num[ - 8 + 28*z
+          + 28*u*z - 10*d*z - 10*d*u*z + d^2*z + d^2*u*z]*e_[p1,p2,r1,
+         r2]*m2^2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo32,1,1,1,1,1,1,1]*gs^4*Nc^2*sqrtziu * ( Num[8 + 24*u
+          + 20*u*z - 4*u^2*z - 8*d*u - 10*d*u*z - 2*d*u^2*z + d^2*u*z
+          + d^2*u^2*z]*e_[p1,p2,r1,r2]*m2^2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo32,1,1,1,1,1,1,1]*gs^4*Nc^2*sqrtzu * ( Num[ - 8 + 28*z
+          + 28*u*z - 10*d*z - 10*d*u*z + d^2*z + d^2*u*z]*e_[p1,p2,r1,
+         r2]*m2^2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo34,1,1,1,1,-1,0,1]*gs^4*sqrtziu * (  - 4*Num[ - 2 + d]
+         *Num[ - 3 + d]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-1)*tag )
+
+       + INT[topo34,1,1,1,1,-1,0,1]*gs^4*Nc^2*sqrtziu * ( 4*Num[ - 2 + 
+         d]*Num[ - 3 + d]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-1)*tag )
+
+       + INT[topo34,1,1,1,1,-1,1,1]*gs^4*sqrtziu * ( 4*Num[ - 2 + d]*
+         Num[ - 3 + d]*e_[p1,p2,r1,r2]*u^(-1)*tag )
+
+       + INT[topo34,1,1,1,1,-1,1,1]*gs^4*Nc^2*sqrtziu * (  - 4*Num[ - 2
+          + d]*Num[ - 3 + d]*e_[p1,p2,r1,r2]*u^(-1)*tag )
+
+       + INT[topo34,1,1,1,1,0,-1,1]*gs^4*sqrtziu * ( 4*Num[ - 3 + d]*
+         Num[ - 1 - 4*u + d*u]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-1)*tag )
+
+       + INT[topo34,1,1,1,1,0,-1,1]*gs^4*sqrtzu * (  - 2*Num[ - 3 + d]*
+         Num[ - 4 + d]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-1)*tag )
+
+       + INT[topo34,1,1,1,1,0,-1,1]*gs^4*Nc^2*sqrtziu * (  - 4*Num[ - 3
+          + d]*Num[ - 1 - 4*u + d*u]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-1)*tag
+          )
+
+       + INT[topo34,1,1,1,1,0,-1,1]*gs^4*Nc^2*sqrtzu * ( 2*Num[ - 3 + d
+         ]*Num[ - 4 + d]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-1)*tag )
+
+       + INT[topo34,1,1,1,1,0,0,0]*gs^4*sqrtziu * ( 6*Num[ - 2 + d]*
+         Num[ - 3 + d]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-1)*tag )
+
+       + INT[topo34,1,1,1,1,0,0,0]*gs^4*Nc^2*sqrtziu * (  - 6*Num[ - 2
+          + d]*Num[ - 3 + d]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-1)*tag )
+
+       + INT[topo34,1,1,1,1,0,0,1]*gs^4*sqrtziu * (  - 2*Num[ - 24 - 18
+         *z + 48*u*z + 8*d + 8*d*z - 28*d*u*z - d^2*z + 4*d^2*u*z]*e_[
+         p1,p2,r1,r2]*u^(-1)*tag*z^(-1) )
+
+       + INT[topo34,1,1,1,1,0,0,1]*gs^4*sqrtzu * ( 2*Num[ - 4 + d]*Num[
+          - 9 + 2*d]*e_[p1,p2,r1,r2]*u^(-1)*tag )
+
+       + INT[topo34,1,1,1,1,0,0,1]*gs^4*Nc^2*sqrtziu * ( 2*Num[ - 24 - 
+         18*z + 48*u*z + 8*d + 8*d*z - 28*d*u*z - d^2*z + 4*d^2*u*z]*
+         e_[p1,p2,r1,r2]*u^(-1)*tag*z^(-1) )
+
+       + INT[topo34,1,1,1,1,0,0,1]*gs^4*Nc^2*sqrtzu * (  - 2*Num[ - 4
+          + d]*Num[ - 9 + 2*d]*e_[p1,p2,r1,r2]*u^(-1)*tag )
+
+       + INT[topo34,1,1,1,1,0,1,0]*gs^4*sqrtziu * (  - 6*Num[ - 2 + d]*
+         Num[ - 3 + d]*e_[p1,p2,r1,r2]*u^(-1)*tag )
+
+       + INT[topo34,1,1,1,1,0,1,0]*gs^4*Nc^2*sqrtziu * ( 6*Num[ - 2 + d
+         ]*Num[ - 3 + d]*e_[p1,p2,r1,r2]*u^(-1)*tag )
+
+       + INT[topo34,1,1,1,1,0,1,1]*gs^4*sqrtziu * ( 2*Num[ - 24 - 24*z
+          + 24*u*z + 8*d + 10*d*z - 14*d*u*z - d^2*z + 2*d^2*u*z]*e_[p1
+         ,p2,r1,r2]*m2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo34,1,1,1,1,0,1,1]*gs^4*sqrtzu * (  - 2*Num[ - 4 + d]*
+         Num[ - 6 + d]*e_[p1,p2,r1,r2]*m2*u^(-1)*tag )
+
+       + INT[topo34,1,1,1,1,0,1,1]*gs^4*Nc^2*sqrtziu * (  - 2*Num[ - 24
+          - 24*z + 24*u*z + 8*d + 10*d*z - 14*d*u*z - d^2*z + 2*d^2*u*z
+         ]*e_[p1,p2,r1,r2]*m2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo34,1,1,1,1,0,1,1]*gs^4*Nc^2*sqrtzu * ( 2*Num[ - 4 + d]
+         *Num[ - 6 + d]*e_[p1,p2,r1,r2]*m2*u^(-1)*tag )
+
+       + INT[topo34,1,1,1,1,1,-2,1]*gs^4*sqrtziu * (  - Num[ - 4 + 20*u
+          - 10*d*u + d^2*u]*e_[p1,p2,r1,r2]*m2^(-1)*tag )
+
+       + INT[topo34,1,1,1,1,1,-2,1]*gs^4*sqrtzu * ( Num[ - 4 + 20*u - 
+         10*d*u + d^2*u]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-1)*tag )
+
+       + INT[topo34,1,1,1,1,1,-2,1]*gs^4*Nc^2*sqrtziu * ( Num[ - 4 + 20
+         *u - 10*d*u + d^2*u]*e_[p1,p2,r1,r2]*m2^(-1)*tag )
+
+       + INT[topo34,1,1,1,1,1,-2,1]*gs^4*Nc^2*sqrtzu * (  - Num[ - 4 + 
+         20*u - 10*d*u + d^2*u]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-1)*tag )
+
+       + INT[topo34,1,1,1,1,1,-1,0]*gs^4*sqrtziu * (  - Num[12 + 48*u
+          - 4*d - 24*d*u + 3*d^2*u]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-1)*tag
+          )
+
+       + INT[topo34,1,1,1,1,1,-1,0]*gs^4*sqrtzu * ( Num[ - 4 + d]*Num[
+          - 6 + d]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-1)*tag )
+
+       + INT[topo34,1,1,1,1,1,-1,0]*gs^4*Nc^2*sqrtziu * ( Num[12 + 48*u
+          - 4*d - 24*d*u + 3*d^2*u]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-1)*tag
+          )
+
+       + INT[topo34,1,1,1,1,1,-1,0]*gs^4*Nc^2*sqrtzu * (  - Num[ - 4 + 
+         d]*Num[ - 6 + d]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-1)*tag )
+
+       + INT[topo34,1,1,1,1,1,-1,1]*gs^4*sqrtziu * ( Num[ - 24 - 36*z
+          + 60*u*z + 8*d + 10*d*z - 30*d*u*z - d^2*z + 3*d^2*u*z]*e_[p1
+         ,p2,r1,r2]*tag*z^(-1) )
+
+       + INT[topo34,1,1,1,1,1,-1,1]*gs^4*sqrtzu * (  - Num[ - 12 - 36*z
+          + 60*u*z + 4*d + 10*d*z - 30*d*u*z - d^2*z + 3*d^2*u*z]*e_[p1
+         ,p2,r1,r2]*u^(-1)*tag*z^(-1) )
+
+       + INT[topo34,1,1,1,1,1,-1,1]*gs^4*Nc^2*sqrtziu * (  - Num[ - 24
+          - 36*z + 60*u*z + 8*d + 10*d*z - 30*d*u*z - d^2*z + 3*d^2*u*z
+         ]*e_[p1,p2,r1,r2]*tag*z^(-1) )
+
+       + INT[topo34,1,1,1,1,1,-1,1]*gs^4*Nc^2*sqrtzu * ( Num[ - 12 - 36
+         *z + 60*u*z + 4*d + 10*d*z - 30*d*u*z - d^2*z + 3*d^2*u*z]*e_[
+         p1,p2,r1,r2]*u^(-1)*tag*z^(-1) )
+
+       + INT[topo34,1,1,1,1,1,0,-1]*gs^4*sqrtziu * (  - 2*Num[ - 2 + d]
+         *Num[ - 3 + d]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-1)*tag )
+
+       + INT[topo34,1,1,1,1,1,0,-1]*gs^4*Nc^2*sqrtziu * ( 2*Num[ - 2 + 
+         d]*Num[ - 3 + d]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-1)*tag )
+
+       + INT[topo34,1,1,1,1,1,0,0]*gs^4*sqrtziu * ( 2*Num[ - 18 - 18*z
+          + 48*u*z + 6*d + 8*d*z - 24*d*u*z - d^2*z + 3*d^2*u*z]*e_[p1,
+         p2,r1,r2]*u^(-1)*tag*z^(-1) )
+
+       + INT[topo34,1,1,1,1,1,0,0]*gs^4*sqrtzu * (  - 2*Num[ - 4 + d]*
+         Num[ - 6 + d]*e_[p1,p2,r1,r2]*u^(-1)*tag )
+
+       + INT[topo34,1,1,1,1,1,0,0]*gs^4*Nc^2*sqrtziu * (  - 2*Num[ - 18
+          - 18*z + 48*u*z + 6*d + 8*d*z - 24*d*u*z - d^2*z + 3*d^2*u*z]
+         *e_[p1,p2,r1,r2]*u^(-1)*tag*z^(-1) )
+
+       + INT[topo34,1,1,1,1,1,0,0]*gs^4*Nc^2*sqrtzu * ( 2*Num[ - 4 + d]
+         *Num[ - 6 + d]*e_[p1,p2,r1,r2]*u^(-1)*tag )
+
+       + INT[topo34,1,1,1,1,1,0,1]*gs^4*sqrtziu * (  - Num[8 - 48*u - 
+         60*u*z + 60*u^2*z + 16*d*u + 20*d*u*z - 30*d*u^2*z - 2*d^2*u*z
+          + 3*d^2*u^2*z]*e_[p1,p2,r1,r2]*m2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo34,1,1,1,1,1,0,1]*gs^4*sqrtzu * ( Num[ - 4 - 60*z + 60
+         *u*z + 4*d + 20*d*z - 30*d*u*z - 2*d^2*z + 3*d^2*u*z]*e_[p1,p2
+         ,r1,r2]*m2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo34,1,1,1,1,1,0,1]*gs^4*Nc^2*sqrtziu * ( Num[8 - 48*u
+          - 60*u*z + 60*u^2*z + 16*d*u + 20*d*u*z - 30*d*u^2*z - 2*d^2*
+         u*z + 3*d^2*u^2*z]*e_[p1,p2,r1,r2]*m2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo34,1,1,1,1,1,0,1]*gs^4*Nc^2*sqrtzu * (  - Num[ - 4 - 
+         60*z + 60*u*z + 4*d + 20*d*z - 30*d*u*z - 2*d^2*z + 3*d^2*u*z]
+         *e_[p1,p2,r1,r2]*m2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo34,1,1,1,1,1,1,-1]*gs^4*sqrtziu * ( 2*Num[ - 2 + d]*
+         Num[ - 3 + d]*e_[p1,p2,r1,r2]*u^(-1)*tag )
+
+       + INT[topo34,1,1,1,1,1,1,-1]*gs^4*Nc^2*sqrtziu * (  - 2*Num[ - 2
+          + d]*Num[ - 3 + d]*e_[p1,p2,r1,r2]*u^(-1)*tag )
+
+       + INT[topo34,1,1,1,1,1,1,0]*gs^4*sqrtziu * (  - Num[ - 36 - 48*z
+          + 48*u*z + 12*d + 20*d*z - 24*d*u*z - 2*d^2*z + 3*d^2*u*z]*
+         e_[p1,p2,r1,r2]*m2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo34,1,1,1,1,1,1,0]*gs^4*sqrtzu * ( Num[ - 4 + d]*Num[
+          - 6 + d]*e_[p1,p2,r1,r2]*m2*u^(-1)*tag )
+
+       + INT[topo34,1,1,1,1,1,1,0]*gs^4*Nc^2*sqrtziu * ( Num[ - 36 - 48
+         *z + 48*u*z + 12*d + 20*d*z - 24*d*u*z - 2*d^2*z + 3*d^2*u*z]*
+         e_[p1,p2,r1,r2]*m2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo34,1,1,1,1,1,1,0]*gs^4*Nc^2*sqrtzu * (  - Num[ - 4 + d
+         ]*Num[ - 6 + d]*e_[p1,p2,r1,r2]*m2*u^(-1)*tag )
+
+       + INT[topo34,1,1,1,1,1,1,1]*gs^4*sqrtziu * ( Num[8 - 24*u - 28*u
+         *z + 20*u^2*z + 8*d*u + 10*d*u*z - 10*d*u^2*z - d^2*u*z + d^2*
+         u^2*z]*e_[p1,p2,r1,r2]*m2^2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo34,1,1,1,1,1,1,1]*gs^4*sqrtzu * (  - Num[8 - 28*z + 20
+         *u*z + 10*d*z - 10*d*u*z - d^2*z + d^2*u*z]*e_[p1,p2,r1,r2]*
+         m2^2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo34,1,1,1,1,1,1,1]*gs^4*Nc^2*sqrtziu * (  - Num[8 - 24*
+         u - 28*u*z + 20*u^2*z + 8*d*u + 10*d*u*z - 10*d*u^2*z - d^2*u*
+         z + d^2*u^2*z]*e_[p1,p2,r1,r2]*m2^2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo34,1,1,1,1,1,1,1]*gs^4*Nc^2*sqrtzu * ( Num[8 - 28*z + 
+         20*u*z + 10*d*z - 10*d*u*z - d^2*z + d^2*u*z]*e_[p1,p2,r1,r2]*
+         m2^2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo40,1,1,1,1,-1,0,1]*gs^4*sqrtzu * (  - 4*Num[ - 2 + d]*
+         Num[ - 3 + d]*e_[p1,p2,r1,r2]*m2^(-1)*tag )
+
+       + INT[topo40,1,1,1,1,-1,0,1]*gs^4*Nc^2*sqrtzu * ( 4*Num[ - 2 + d
+         ]*Num[ - 3 + d]*e_[p1,p2,r1,r2]*m2^(-1)*tag )
+
+       + INT[topo40,1,1,1,1,-1,1,1]*gs^4*sqrtzu * ( 4*Num[ - 2 + d]*
+         Num[ - 3 + d]*e_[p1,p2,r1,r2]*tag )
+
+       + INT[topo40,1,1,1,1,-1,1,1]*gs^4*Nc^2*sqrtzu * (  - 4*Num[ - 2
+          + d]*Num[ - 3 + d]*e_[p1,p2,r1,r2]*tag )
+
+       + INT[topo40,1,1,1,1,0,-1,1]*gs^4*sqrtziu * (  - 2*Num[ - 3 + d]
+         *Num[ - 4 + d]*e_[p1,p2,r1,r2]*m2^(-1)*tag )
+
+       + INT[topo40,1,1,1,1,0,-1,1]*gs^4*sqrtzu * (  - 4*Num[ - 3 + d]*
+         Num[4 + u - d]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-1)*tag )
+
+       + INT[topo40,1,1,1,1,0,-1,1]*gs^4*Nc^2*sqrtziu * ( 2*Num[ - 3 + 
+         d]*Num[ - 4 + d]*e_[p1,p2,r1,r2]*m2^(-1)*tag )
+
+       + INT[topo40,1,1,1,1,0,-1,1]*gs^4*Nc^2*sqrtzu * ( 4*Num[ - 3 + d
+         ]*Num[4 + u - d]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-1)*tag )
+
+       + INT[topo40,1,1,1,1,0,0,0]*gs^4*sqrtzu * ( 6*Num[ - 2 + d]*Num[
+          - 3 + d]*e_[p1,p2,r1,r2]*m2^(-1)*tag )
+
+       + INT[topo40,1,1,1,1,0,0,0]*gs^4*Nc^2*sqrtzu * (  - 6*Num[ - 2
+          + d]*Num[ - 3 + d]*e_[p1,p2,r1,r2]*m2^(-1)*tag )
+
+       + INT[topo40,1,1,1,1,0,0,1]*gs^4*sqrtziu * ( 2*Num[ - 4 + d]*
+         Num[ - 9 + 2*d]*e_[p1,p2,r1,r2]*tag )
+
+       + INT[topo40,1,1,1,1,0,0,1]*gs^4*sqrtzu * ( 2*Num[ - 48*z + 24*u
+          + 18*u*z + 28*d*z - 8*d*u - 8*d*u*z - 4*d^2*z + d^2*u*z]*e_[
+         p1,p2,r1,r2]*u^(-1)*tag*z^(-1) )
+
+       + INT[topo40,1,1,1,1,0,0,1]*gs^4*Nc^2*sqrtziu * (  - 2*Num[ - 4
+          + d]*Num[ - 9 + 2*d]*e_[p1,p2,r1,r2]*tag )
+
+       + INT[topo40,1,1,1,1,0,0,1]*gs^4*Nc^2*sqrtzu * (  - 2*Num[ - 48*
+         z + 24*u + 18*u*z + 28*d*z - 8*d*u - 8*d*u*z - 4*d^2*z + d^2*u
+         *z]*e_[p1,p2,r1,r2]*u^(-1)*tag*z^(-1) )
+
+       + INT[topo40,1,1,1,1,0,1,0]*gs^4*sqrtzu * (  - 6*Num[ - 2 + d]*
+         Num[ - 3 + d]*e_[p1,p2,r1,r2]*tag )
+
+       + INT[topo40,1,1,1,1,0,1,0]*gs^4*Nc^2*sqrtzu * ( 6*Num[ - 2 + d]
+         *Num[ - 3 + d]*e_[p1,p2,r1,r2]*tag )
+
+       + INT[topo40,1,1,1,1,0,1,1]*gs^4*sqrtziu * (  - 2*Num[ - 4 + d]*
+         Num[ - 6 + d]*e_[p1,p2,r1,r2]*m2*tag )
+
+       + INT[topo40,1,1,1,1,0,1,1]*gs^4*sqrtzu * (  - 2*Num[ - 24*z + 
+         24*u + 24*u*z + 14*d*z - 8*d*u - 10*d*u*z - 2*d^2*z + d^2*u*z]
+         *e_[p1,p2,r1,r2]*m2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo40,1,1,1,1,0,1,1]*gs^4*Nc^2*sqrtziu * ( 2*Num[ - 4 + d
+         ]*Num[ - 6 + d]*e_[p1,p2,r1,r2]*m2*tag )
+
+       + INT[topo40,1,1,1,1,0,1,1]*gs^4*Nc^2*sqrtzu * ( 2*Num[ - 24*z
+          + 24*u + 24*u*z + 14*d*z - 8*d*u - 10*d*u*z - 2*d^2*z + d^2*u
+         *z]*e_[p1,p2,r1,r2]*m2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo40,1,1,1,1,1,-2,1]*gs^4*sqrtziu * (  - Num[ - 20 + 4*u
+          + 10*d - d^2]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-1)*tag )
+
+       + INT[topo40,1,1,1,1,1,-2,1]*gs^4*sqrtzu * ( Num[ - 20 + 4*u + 
+         10*d - d^2]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-2)*tag )
+
+       + INT[topo40,1,1,1,1,1,-2,1]*gs^4*Nc^2*sqrtziu * ( Num[ - 20 + 4
+         *u + 10*d - d^2]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-1)*tag )
+
+       + INT[topo40,1,1,1,1,1,-2,1]*gs^4*Nc^2*sqrtzu * (  - Num[ - 20
+          + 4*u + 10*d - d^2]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-2)*tag )
+
+       + INT[topo40,1,1,1,1,1,-1,0]*gs^4*sqrtziu * ( Num[ - 4 + d]*Num[
+          - 6 + d]*e_[p1,p2,r1,r2]*m2^(-1)*tag )
+
+       + INT[topo40,1,1,1,1,1,-1,0]*gs^4*sqrtzu * ( Num[ - 48 - 12*u + 
+         24*d + 4*d*u - 3*d^2]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-1)*tag )
+
+       + INT[topo40,1,1,1,1,1,-1,0]*gs^4*Nc^2*sqrtziu * (  - Num[ - 4
+          + d]*Num[ - 6 + d]*e_[p1,p2,r1,r2]*m2^(-1)*tag )
+
+       + INT[topo40,1,1,1,1,1,-1,0]*gs^4*Nc^2*sqrtzu * (  - Num[ - 48
+          - 12*u + 24*d + 4*d*u - 3*d^2]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-1)
+         *tag )
+
+       + INT[topo40,1,1,1,1,1,-1,1]*gs^4*sqrtziu * ( Num[ - 60*z + 12*u
+          + 36*u*z + 30*d*z - 4*d*u - 10*d*u*z - 3*d^2*z + d^2*u*z]*e_[
+         p1,p2,r1,r2]*u^(-1)*tag*z^(-1) )
+
+       + INT[topo40,1,1,1,1,1,-1,1]*gs^4*sqrtzu * (  - Num[ - 60*z + 24
+         *u + 36*u*z + 30*d*z - 8*d*u - 10*d*u*z - 3*d^2*z + d^2*u*z]*
+         e_[p1,p2,r1,r2]*u^(-2)*tag*z^(-1) )
+
+       + INT[topo40,1,1,1,1,1,-1,1]*gs^4*Nc^2*sqrtziu * (  - Num[ - 60*
+         z + 12*u + 36*u*z + 30*d*z - 4*d*u - 10*d*u*z - 3*d^2*z + d^2*
+         u*z]*e_[p1,p2,r1,r2]*u^(-1)*tag*z^(-1) )
+
+       + INT[topo40,1,1,1,1,1,-1,1]*gs^4*Nc^2*sqrtzu * ( Num[ - 60*z + 
+         24*u + 36*u*z + 30*d*z - 8*d*u - 10*d*u*z - 3*d^2*z + d^2*u*z]
+         *e_[p1,p2,r1,r2]*u^(-2)*tag*z^(-1) )
+
+       + INT[topo40,1,1,1,1,1,0,-1]*gs^4*sqrtzu * (  - 2*Num[ - 2 + d]*
+         Num[ - 3 + d]*e_[p1,p2,r1,r2]*m2^(-1)*tag )
+
+       + INT[topo40,1,1,1,1,1,0,-1]*gs^4*Nc^2*sqrtzu * ( 2*Num[ - 2 + d
+         ]*Num[ - 3 + d]*e_[p1,p2,r1,r2]*m2^(-1)*tag )
+
+       + INT[topo40,1,1,1,1,1,0,0]*gs^4*sqrtziu * (  - 2*Num[ - 4 + d]*
+         Num[ - 6 + d]*e_[p1,p2,r1,r2]*tag )
+
+       + INT[topo40,1,1,1,1,1,0,0]*gs^4*sqrtzu * (  - 2*Num[ - 48*z + 
+         18*u + 18*u*z + 24*d*z - 6*d*u - 8*d*u*z - 3*d^2*z + d^2*u*z]*
+         e_[p1,p2,r1,r2]*u^(-1)*tag*z^(-1) )
+
+       + INT[topo40,1,1,1,1,1,0,0]*gs^4*Nc^2*sqrtziu * ( 2*Num[ - 4 + d
+         ]*Num[ - 6 + d]*e_[p1,p2,r1,r2]*tag )
+
+       + INT[topo40,1,1,1,1,1,0,0]*gs^4*Nc^2*sqrtzu * ( 2*Num[ - 48*z
+          + 18*u + 18*u*z + 24*d*z - 6*d*u - 8*d*u*z - 3*d^2*z + d^2*u*
+         z]*e_[p1,p2,r1,r2]*u^(-1)*tag*z^(-1) )
+
+       + INT[topo40,1,1,1,1,1,0,1]*gs^4*sqrtziu * (  - Num[ - 60*z + 4*
+         u + 60*u*z + 30*d*z - 4*d*u - 20*d*u*z - 3*d^2*z + 2*d^2*u*z]*
+         e_[p1,p2,r1,r2]*m2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo40,1,1,1,1,1,0,1]*gs^4*sqrtzu * ( Num[ - 60*z + 48*u
+          + 60*u*z - 8*u^2 + 30*d*z - 16*d*u - 20*d*u*z - 3*d^2*z + 2*
+         d^2*u*z]*e_[p1,p2,r1,r2]*m2*u^(-2)*tag*z^(-1) )
+
+       + INT[topo40,1,1,1,1,1,0,1]*gs^4*Nc^2*sqrtziu * ( Num[ - 60*z + 
+         4*u + 60*u*z + 30*d*z - 4*d*u - 20*d*u*z - 3*d^2*z + 2*d^2*u*z
+         ]*e_[p1,p2,r1,r2]*m2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo40,1,1,1,1,1,0,1]*gs^4*Nc^2*sqrtzu * (  - Num[ - 60*z
+          + 48*u + 60*u*z - 8*u^2 + 30*d*z - 16*d*u - 20*d*u*z - 3*d^2*
+         z + 2*d^2*u*z]*e_[p1,p2,r1,r2]*m2*u^(-2)*tag*z^(-1) )
+
+       + INT[topo40,1,1,1,1,1,1,-1]*gs^4*sqrtzu * ( 2*Num[ - 2 + d]*
+         Num[ - 3 + d]*e_[p1,p2,r1,r2]*tag )
+
+       + INT[topo40,1,1,1,1,1,1,-1]*gs^4*Nc^2*sqrtzu * (  - 2*Num[ - 2
+          + d]*Num[ - 3 + d]*e_[p1,p2,r1,r2]*tag )
+
+       + INT[topo40,1,1,1,1,1,1,0]*gs^4*sqrtziu * ( Num[ - 4 + d]*Num[
+          - 6 + d]*e_[p1,p2,r1,r2]*m2*tag )
+
+       + INT[topo40,1,1,1,1,1,1,0]*gs^4*sqrtzu * ( Num[ - 48*z + 36*u
+          + 48*u*z + 24*d*z - 12*d*u - 20*d*u*z - 3*d^2*z + 2*d^2*u*z]*
+         e_[p1,p2,r1,r2]*m2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo40,1,1,1,1,1,1,0]*gs^4*Nc^2*sqrtziu * (  - Num[ - 4 + 
+         d]*Num[ - 6 + d]*e_[p1,p2,r1,r2]*m2*tag )
+
+       + INT[topo40,1,1,1,1,1,1,0]*gs^4*Nc^2*sqrtzu * (  - Num[ - 48*z
+          + 36*u + 48*u*z + 24*d*z - 12*d*u - 20*d*u*z - 3*d^2*z + 2*
+         d^2*u*z]*e_[p1,p2,r1,r2]*m2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo40,1,1,1,1,1,1,1]*gs^4*sqrtziu * ( Num[ - 20*z - 8*u
+          + 28*u*z + 10*d*z - 10*d*u*z - d^2*z + d^2*u*z]*e_[p1,p2,r1,
+         r2]*m2^2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo40,1,1,1,1,1,1,1]*gs^4*sqrtzu * (  - Num[ - 20*z + 24*
+         u + 28*u*z - 8*u^2 + 10*d*z - 8*d*u - 10*d*u*z - d^2*z + d^2*u
+         *z]*e_[p1,p2,r1,r2]*m2^2*u^(-2)*tag*z^(-1) )
+
+       + INT[topo40,1,1,1,1,1,1,1]*gs^4*Nc^2*sqrtziu * (  - Num[ - 20*z
+          - 8*u + 28*u*z + 10*d*z - 10*d*u*z - d^2*z + d^2*u*z]*e_[p1,
+         p2,r1,r2]*m2^2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo40,1,1,1,1,1,1,1]*gs^4*Nc^2*sqrtzu * ( Num[ - 20*z + 
+         24*u + 28*u*z - 8*u^2 + 10*d*z - 8*d*u - 10*d*u*z - d^2*z + 
+         d^2*u*z]*e_[p1,p2,r1,r2]*m2^2*u^(-2)*tag*z^(-1) )
+
+       + INT[topo41,1,1,1,1,-1,0,1]*gs^4*sqrtzu * ( 4*Num[ - 2 + d]*
+         Num[ - 3 + d]*e_[p1,p2,r1,r2]*m2^(-1)*tag )
+
+       + INT[topo41,1,1,1,1,-1,0,1]*gs^4*Nc^2*sqrtzu * (  - 4*Num[ - 2
+          + d]*Num[ - 3 + d]*e_[p1,p2,r1,r2]*m2^(-1)*tag )
+
+       + INT[topo41,1,1,1,1,-1,1,1]*gs^4*sqrtzu * (  - 4*Num[ - 2 + d]*
+         Num[ - 3 + d]*e_[p1,p2,r1,r2]*tag )
+
+       + INT[topo41,1,1,1,1,-1,1,1]*gs^4*Nc^2*sqrtzu * ( 4*Num[ - 2 + d
+         ]*Num[ - 3 + d]*e_[p1,p2,r1,r2]*tag )
+
+       + INT[topo41,1,1,1,1,0,-1,1]*gs^4*sqrtziu * ( 2*Num[ - 3 + d]*
+         Num[ - 4 + d]*e_[p1,p2,r1,r2]*m2^(-1)*tag )
+
+       + INT[topo41,1,1,1,1,0,-1,1]*gs^4*sqrtzu * ( 4*Num[ - 3 + d]*
+         Num[u + d]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-1)*tag )
+
+       + INT[topo41,1,1,1,1,0,-1,1]*gs^4*Nc^2*sqrtziu * (  - 2*Num[ - 3
+          + d]*Num[ - 4 + d]*e_[p1,p2,r1,r2]*m2^(-1)*tag )
+
+       + INT[topo41,1,1,1,1,0,-1,1]*gs^4*Nc^2*sqrtzu * (  - 4*Num[ - 3
+          + d]*Num[u + d]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-1)*tag )
+
+       + INT[topo41,1,1,1,1,0,0,0]*gs^4*sqrtzu * ( 2*Num[ - 2 + d]*Num[
+          - 3 + d]*e_[p1,p2,r1,r2]*m2^(-1)*tag )
+
+       + INT[topo41,1,1,1,1,0,0,0]*gs^4*Nc^2*sqrtzu * (  - 2*Num[ - 2
+          + d]*Num[ - 3 + d]*e_[p1,p2,r1,r2]*m2^(-1)*tag )
+
+       + INT[topo41,1,1,1,1,0,0,1]*gs^4*sqrtziu * (  - 2*Num[ - 4 + d]*
+         Num[ - 9 + 2*d]*e_[p1,p2,r1,r2]*tag )
+
+       + INT[topo41,1,1,1,1,0,0,1]*gs^4*sqrtzu * (  - 2*Num[24*u + 18*u
+         *z - 12*d*z - 8*d*u - 8*d*u*z + 4*d^2*z + d^2*u*z]*e_[p1,p2,r1
+         ,r2]*u^(-1)*tag*z^(-1) )
+
+       + INT[topo41,1,1,1,1,0,0,1]*gs^4*Nc^2*sqrtziu * ( 2*Num[ - 4 + d
+         ]*Num[ - 9 + 2*d]*e_[p1,p2,r1,r2]*tag )
+
+       + INT[topo41,1,1,1,1,0,0,1]*gs^4*Nc^2*sqrtzu * ( 2*Num[24*u + 18
+         *u*z - 12*d*z - 8*d*u - 8*d*u*z + 4*d^2*z + d^2*u*z]*e_[p1,p2,
+         r1,r2]*u^(-1)*tag*z^(-1) )
+
+       + INT[topo41,1,1,1,1,0,1,0]*gs^4*sqrtzu * (  - 2*Num[ - 2 + d]*
+         Num[ - 3 + d]*e_[p1,p2,r1,r2]*tag )
+
+       + INT[topo41,1,1,1,1,0,1,0]*gs^4*Nc^2*sqrtzu * ( 2*Num[ - 2 + d]
+         *Num[ - 3 + d]*e_[p1,p2,r1,r2]*tag )
+
+       + INT[topo41,1,1,1,1,0,1,1]*gs^4*sqrtziu * ( 2*Num[ - 4 + d]*
+         Num[ - 6 + d]*e_[p1,p2,r1,r2]*m2*tag )
+
+       + INT[topo41,1,1,1,1,0,1,1]*gs^4*sqrtzu * ( 2*Num[24*u + 24*u*z
+          - 6*d*z - 8*d*u - 10*d*u*z + 2*d^2*z + d^2*u*z]*e_[p1,p2,r1,
+         r2]*m2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo41,1,1,1,1,0,1,1]*gs^4*Nc^2*sqrtziu * (  - 2*Num[ - 4
+          + d]*Num[ - 6 + d]*e_[p1,p2,r1,r2]*m2*tag )
+
+       + INT[topo41,1,1,1,1,0,1,1]*gs^4*Nc^2*sqrtzu * (  - 2*Num[24*u
+          + 24*u*z - 6*d*z - 8*d*u - 10*d*u*z + 2*d^2*z + d^2*u*z]*e_[
+         p1,p2,r1,r2]*m2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo41,1,1,1,1,1,-2,1]*gs^4*sqrtziu * ( Num[4 + 4*u - 4*d
+          + d^2]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-1)*tag )
+
+       + INT[topo41,1,1,1,1,1,-2,1]*gs^4*sqrtzu * ( Num[ - 4 - 16*u - 2
+         *d + 4*d*u + d^2]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-2)*tag )
+
+       + INT[topo41,1,1,1,1,1,-2,1]*gs^4*Nc^2*sqrtziu * (  - Num[4 + 4*
+         u - 4*d + d^2]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-1)*tag )
+
+       + INT[topo41,1,1,1,1,1,-2,1]*gs^4*Nc^2*sqrtzu * (  - Num[ - 4 - 
+         16*u - 2*d + 4*d*u + d^2]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-2)*tag )
+
+       + INT[topo41,1,1,1,1,1,-1,0]*gs^4*sqrtziu * ( Num[ - 4 + d]*e_[
+         p1,p2,r1,r2]*d*m2^(-1)*tag )
+
+       + INT[topo41,1,1,1,1,1,-1,0]*gs^4*sqrtzu * ( Num[12 - 6*d + d^2]
+         *e_[p1,p2,r1,r2]*m2^(-1)*u^(-1)*tag )
+
+       + INT[topo41,1,1,1,1,1,-1,0]*gs^4*Nc^2*sqrtziu * (  - Num[ - 4
+          + d]*e_[p1,p2,r1,r2]*d*m2^(-1)*tag )
+
+       + INT[topo41,1,1,1,1,1,-1,0]*gs^4*Nc^2*sqrtzu * (  - Num[12 - 6*
+         d + d^2]*e_[p1,p2,r1,r2]*m2^(-1)*u^(-1)*tag )
+
+       + INT[topo41,1,1,1,1,1,-1,1]*gs^4*sqrtziu * (  - Num[36*z + 12*u
+          + 36*u*z - 18*d*z - 4*d*u - 10*d*u*z + 3*d^2*z + d^2*u*z]*e_[
+         p1,p2,r1,r2]*u^(-1)*tag*z^(-1) )
+
+       + INT[topo41,1,1,1,1,1,-1,1]*gs^4*sqrtzu * (  - Num[ - 12*z + 24
+         *u - 12*u*z - 6*d*z - 8*d*u - 2*d*u*z + 3*d^2*z + d^2*u*z]*e_[
+         p1,p2,r1,r2]*u^(-2)*tag*z^(-1) )
+
+       + INT[topo41,1,1,1,1,1,-1,1]*gs^4*Nc^2*sqrtziu * ( Num[36*z + 12
+         *u + 36*u*z - 18*d*z - 4*d*u - 10*d*u*z + 3*d^2*z + d^2*u*z]*
+         e_[p1,p2,r1,r2]*u^(-1)*tag*z^(-1) )
+
+       + INT[topo41,1,1,1,1,1,-1,1]*gs^4*Nc^2*sqrtzu * ( Num[ - 12*z + 
+         24*u - 12*u*z - 6*d*z - 8*d*u - 2*d*u*z + 3*d^2*z + d^2*u*z]*
+         e_[p1,p2,r1,r2]*u^(-2)*tag*z^(-1) )
+
+       + INT[topo41,1,1,1,1,1,0,0]*gs^4*sqrtziu * (  - 2*Num[ - 3 + d]*
+         Num[ - 4 + d]*e_[p1,p2,r1,r2]*tag )
+
+       + INT[topo41,1,1,1,1,1,0,0]*gs^4*sqrtzu * (  - 2*Num[12*z + 6*u
+          - 6*d*z - 2*d*u + d^2*z]*e_[p1,p2,r1,r2]*u^(-1)*tag*z^(-1) )
+
+       + INT[topo41,1,1,1,1,1,0,0]*gs^4*Nc^2*sqrtziu * ( 2*Num[ - 3 + d
+         ]*Num[ - 4 + d]*e_[p1,p2,r1,r2]*tag )
+
+       + INT[topo41,1,1,1,1,1,0,0]*gs^4*Nc^2*sqrtzu * ( 2*Num[12*z + 6*
+         u - 6*d*z - 2*d*u + d^2*z]*e_[p1,p2,r1,r2]*u^(-1)*tag*z^(-1) )
+
+       + INT[topo41,1,1,1,1,1,0,1]*gs^4*sqrtziu * ( Num[60*z + 4*u + 60
+         *u*z - 24*d*z - 4*d*u - 20*d*u*z + 3*d^2*z + 2*d^2*u*z]*e_[p1,
+         p2,r1,r2]*m2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo41,1,1,1,1,1,0,1]*gs^4*sqrtzu * ( Num[ - 12*z + 48*u
+          + 24*u*z + 8*u^2 - 6*d*z - 16*d*u - 16*d*u*z + 3*d^2*z + 2*
+         d^2*u*z]*e_[p1,p2,r1,r2]*m2*u^(-2)*tag*z^(-1) )
+
+       + INT[topo41,1,1,1,1,1,0,1]*gs^4*Nc^2*sqrtziu * (  - Num[60*z + 
+         4*u + 60*u*z - 24*d*z - 4*d*u - 20*d*u*z + 3*d^2*z + 2*d^2*u*z
+         ]*e_[p1,p2,r1,r2]*m2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo41,1,1,1,1,1,0,1]*gs^4*Nc^2*sqrtzu * (  - Num[ - 12*z
+          + 48*u + 24*u*z + 8*u^2 - 6*d*z - 16*d*u - 16*d*u*z + 3*d^2*z
+          + 2*d^2*u*z]*e_[p1,p2,r1,r2]*m2*u^(-2)*tag*z^(-1) )
+
+       + INT[topo41,1,1,1,1,1,1,0]*gs^4*sqrtziu * ( Num[ - 4 + d]*Num[
+          - 6 + d]*e_[p1,p2,r1,r2]*m2*tag )
+
+       + INT[topo41,1,1,1,1,1,1,0]*gs^4*sqrtzu * ( Num[12*z + 12*u - 6*
+         d*z - 4*d*u + d^2*z]*e_[p1,p2,r1,r2]*m2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo41,1,1,1,1,1,1,0]*gs^4*Nc^2*sqrtziu * (  - Num[ - 4 + 
+         d]*Num[ - 6 + d]*e_[p1,p2,r1,r2]*m2*tag )
+
+       + INT[topo41,1,1,1,1,1,1,0]*gs^4*Nc^2*sqrtzu * (  - Num[12*z + 
+         12*u - 6*d*z - 4*d*u + d^2*z]*e_[p1,p2,r1,r2]*m2*u^(-1)*tag*
+         z^(-1) )
+
+       + INT[topo41,1,1,1,1,1,1,1]*gs^4*sqrtziu * (  - Num[28*z - 8*u
+          + 28*u*z - 10*d*z - 10*d*u*z + d^2*z + d^2*u*z]*e_[p1,p2,r1,
+         r2]*m2^2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo41,1,1,1,1,1,1,1]*gs^4*sqrtzu * (  - Num[ - 4*z + 24*u
+          + 20*u*z + 8*u^2 - 2*d*z - 8*d*u - 10*d*u*z + d^2*z + d^2*u*z
+         ]*e_[p1,p2,r1,r2]*m2^2*u^(-2)*tag*z^(-1) )
+
+       + INT[topo41,1,1,1,1,1,1,1]*gs^4*Nc^2*sqrtziu * ( Num[28*z - 8*u
+          + 28*u*z - 10*d*z - 10*d*u*z + d^2*z + d^2*u*z]*e_[p1,p2,r1,
+         r2]*m2^2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo41,1,1,1,1,1,1,1]*gs^4*Nc^2*sqrtzu * ( Num[ - 4*z + 24
+         *u + 20*u*z + 8*u^2 - 2*d*z - 8*d*u - 10*d*u*z + d^2*z + d^2*u
+         *z]*e_[p1,p2,r1,r2]*m2^2*u^(-2)*tag*z^(-1) ))

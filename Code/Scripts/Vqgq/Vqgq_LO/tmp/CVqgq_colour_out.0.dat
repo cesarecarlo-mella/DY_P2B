@@ -1,0 +1,32 @@
+l Campl0L =  + SpinC(1,r1,nu97,q,nu95,p1)*pol(CutV(nu95,q))*pol(gluon(nu97,p2,
+      a97))*pol(CutQbar(93,r1,i93))*pQuark(1,q + p1,2)*T(a97,i99,i93)*i_ * ( 
+          - cgv(tj)*gs )
+
+       + SpinC(1,r1,nu97,q,omega3,omega2,omega1,p1)*pol(CutV(nu95,q))*pol(
+      gluon(nu97,p2,a97))*pol(CutQbar(93,r1,i93))*pQuark(1,q + p1,2)*T(a97,i99
+      ,i93)*i_ * ( 1/6*cga(tj)*eps(nu95,omega1,omega2,omega3)*gs )
+
+       + SpinC(1,r1,nu97,p1,nu95,p1)*pol(CutV(nu95,q))*pol(gluon(nu97,p2,a97))
+      *pol(CutQbar(93,r1,i93))*pQuark(1,q + p1,2)*T(a97,i99,i93)*i_ * (  - 
+         cgv(tj)*gs )
+
+       + SpinC(1,r1,nu97,p1,omega3,omega2,omega1,p1)*pol(CutV(nu95,q))*pol(
+      gluon(nu97,p2,a97))*pol(CutQbar(93,r1,i93))*pQuark(1,q + p1,2)*T(a97,i99
+      ,i93)*i_ * ( 1/6*cga(tj)*eps(nu95,omega1,omega2,omega3)*gs )
+
+       + SpinC(1,r1,nu95,p1,nu97,p1)*pol(CutV(nu95,q))*pol(gluon(nu97,p2,a97))
+      *pol(CutQbar(93,r1,i93))*pQuark(1,p1 + p2,2)*T(a97,i99,i93)*i_ * (  - 
+         cgv(tj)*gs )
+
+       + SpinC(1,r1,nu95,p2,nu97,p1)*pol(CutV(nu95,q))*pol(gluon(nu97,p2,a97))
+      *pol(CutQbar(93,r1,i93))*pQuark(1,p1 + p2,2)*T(a97,i99,i93)*i_ * (  - 
+         cgv(tj)*gs )
+
+       + SpinC(1,r1,omega3,omega2,omega1,p1,nu97,p1)*pol(CutV(nu95,q))*pol(
+      gluon(nu97,p2,a97))*pol(CutQbar(93,r1,i93))*pQuark(1,p1 + p2,2)*T(a97,
+      i99,i93)*i_ * ( 1/6*cga(tj)*eps(nu95,omega1,omega2,omega3)*gs )
+
+       + SpinC(1,r1,omega3,omega2,omega1,p2,nu97,p1)*pol(CutV(nu95,q))*pol(
+      gluon(nu97,p2,a97))*pol(CutQbar(93,r1,i93))*pQuark(1,p1 + p2,2)*T(a97,
+      i99,i93)*i_ * ( 1/6*cga(tj)*eps(nu95,omega1,omega2,omega3)*gs );
+

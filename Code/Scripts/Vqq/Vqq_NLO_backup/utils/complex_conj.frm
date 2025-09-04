@@ -1,0 +1,59 @@
+off statistics;
+#-
+#include all_header.h
+#include process_header.h
+
+
+#include ./tmp/Vqq_colour_out.'NLOOP'.dat
+
+
+
+argument Spin, eps, pgluon, pQuark;
+#do counter = 1,20
+id mu'counter'= nu'counter';
+#enddo
+id mu99 = nu99;
+id mu97 = nu97;
+id mu95 = nu95;
+id mu93 = nu93;
+id mu91 = nu91;
+id mu89 = nu89;
+id rho1 =omega1;
+id rho2 =omega2;
+id rho3 =omega3;
+id rho4 =omega4;
+endargument;
+.sort
+
+*complex conjugate for couplings
+id gv(ti) = cgv(tj);
+id ga(ti) = cga(tj);
+.sort
+
+#message revert spins
+id Spin(1,?x, p2) = Spin(1,?x)*SpinC(1,p2);
+.sort
+repeat;
+id Spin(1,?x, nu?)*SpinC(1,?p2) = Spin(1,?x)*SpinC(1,?p2, nu);
+endrepeat;
+id Spin(1) =1;
+.sort
+id i_ = -i_;
+.sort
+
+
+
+
+b SpinC, i_, pgluon, pQuark, gem, T, f, s, pol, Nc, Nf, NfZ, NfG, NfGext, NfZext;
+.sort
+b SpinC, i_, pgluon, pQuark, gem, T, f, s, pol, Nc, Nf, NfZ, NfG, NfGext, NfZext;
+#write <tmp/CVqq_colour_out.'NLOOP'.dat> "l Campl'NLOOP'L = %e" ampl'NLOOP'L
+#message performed sum and written in tmp/
+.end
+
+
+
+
+
+
+

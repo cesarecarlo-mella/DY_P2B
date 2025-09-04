@@ -1,0 +1,40 @@
+l [diag6] =  + Spin(1,p1,mu91,p1,mu95,p2,mu97,r1)*pQuark(1,p1 + r2,2)*pQuark(3
+      , - p2 - r1,4) * ( pol(V(mu95,q))*pol(gluon(mu97,p2,a97))*pol(gluon(mu91
+         ,r2,a91))*pol(Qbar(93,r1,i93))*gv(ti)*T(a97,i93,i2)*T(a91,i2,i99)*i_*
+         gs^2 )
+
+       + Spin(1,p1,mu91,p1,mu95,r1,mu97,r1)*pQuark(1,p1 + r2,2)*pQuark(3, - p2
+       - r1,4) * ( pol(V(mu95,q))*pol(gluon(mu97,p2,a97))*pol(gluon(mu91,r2,
+         a91))*pol(Qbar(93,r1,i93))*gv(ti)*T(a97,i93,i2)*T(a91,i2,i99)*i_*gs^2
+          )
+
+       + Spin(1,p1,mu91,p1,rho1,rho2,rho3,p2,mu97,r1)*pQuark(1,p1 + r2,2)*
+      pQuark(3, - p2 - r1,4) * ( 1/6*pol(V(mu95,q))*pol(gluon(mu97,p2,a97))*
+         pol(gluon(mu91,r2,a91))*pol(Qbar(93,r1,i93))*ga(ti)*eps(mu95,rho1,
+         rho2,rho3)*T(a97,i93,i2)*T(a91,i2,i99)*i_*gs^2 )
+
+       + Spin(1,p1,mu91,p1,rho1,rho2,rho3,r1,mu97,r1)*pQuark(1,p1 + r2,2)*
+      pQuark(3, - p2 - r1,4) * ( 1/6*pol(V(mu95,q))*pol(gluon(mu97,p2,a97))*
+         pol(gluon(mu91,r2,a91))*pol(Qbar(93,r1,i93))*ga(ti)*eps(mu95,rho1,
+         rho2,rho3)*T(a97,i93,i2)*T(a91,i2,i99)*i_*gs^2 )
+
+       + Spin(1,p1,mu91,r2,mu95,p2,mu97,r1)*pQuark(1,p1 + r2,2)*pQuark(3, - p2
+       - r1,4) * ( pol(V(mu95,q))*pol(gluon(mu97,p2,a97))*pol(gluon(mu91,r2,
+         a91))*pol(Qbar(93,r1,i93))*gv(ti)*T(a97,i93,i2)*T(a91,i2,i99)*i_*gs^2
+          )
+
+       + Spin(1,p1,mu91,r2,mu95,r1,mu97,r1)*pQuark(1,p1 + r2,2)*pQuark(3, - p2
+       - r1,4) * ( pol(V(mu95,q))*pol(gluon(mu97,p2,a97))*pol(gluon(mu91,r2,
+         a91))*pol(Qbar(93,r1,i93))*gv(ti)*T(a97,i93,i2)*T(a91,i2,i99)*i_*gs^2
+          )
+
+       + Spin(1,p1,mu91,r2,rho1,rho2,rho3,p2,mu97,r1)*pQuark(1,p1 + r2,2)*
+      pQuark(3, - p2 - r1,4) * ( 1/6*pol(V(mu95,q))*pol(gluon(mu97,p2,a97))*
+         pol(gluon(mu91,r2,a91))*pol(Qbar(93,r1,i93))*ga(ti)*eps(mu95,rho1,
+         rho2,rho3)*T(a97,i93,i2)*T(a91,i2,i99)*i_*gs^2 )
+
+       + Spin(1,p1,mu91,r2,rho1,rho2,rho3,r1,mu97,r1)*pQuark(1,p1 + r2,2)*
+      pQuark(3, - p2 - r1,4) * ( 1/6*pol(V(mu95,q))*pol(gluon(mu97,p2,a97))*
+         pol(gluon(mu91,r2,a91))*pol(Qbar(93,r1,i93))*ga(ti)*eps(mu95,rho1,
+         rho2,rho3)*T(a97,i93,i2)*T(a91,i2,i99)*i_*gs^2 );
+ 

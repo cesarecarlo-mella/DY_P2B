@@ -1,0 +1,1 @@
+l L1 = (d-2)/(d-1)/3*q.q*((2 - 3*d+d*d)*cga(t2)*ga(t1)+6*cgv(t2)*gv(t1))*(-d_(mu95,nu95)*q.q + q(mu95)*q(nu95));

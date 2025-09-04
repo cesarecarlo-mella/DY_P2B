@@ -1,0 +1,70 @@
+import os
+import shutil
+import subprocess
+import concurrent.futures 
+
+if not os.path.exists("./tmp/squared_diagrams"):
+   os.makedirs("./tmp/squared_diagrams")
+   os.makedirs("./tmp/squared_diagrams/vv")
+   os.makedirs("./tmp/squared_diagrams/aa")
+   os.makedirs("./tmp/squared_diagrams/va")
+   os.makedirs("./tmp/squared_diagrams/av")
+else:
+   shutil.rmtree("./tmp/squared_diagrams")
+   os.makedirs("./tmp/squared_diagrams")
+   os.makedirs("./tmp/squared_diagrams/vv")
+   os.makedirs("./tmp/squared_diagrams/aa")
+   os.makedirs("./tmp/squared_diagrams/va")
+   os.makedirs("./tmp/squared_diagrams/av")
+
+
+def run_form(i, j):
+    folder = f"./tmp_{i}_{j}"
+    os.mkdir(folder)
+    shutil.copy("../3_square_ampl.frm", f"{folder}/3_square_ampl.frm")
+    command = f'form -d loopind={i} -d loopind2={j} 3_square_ampl.frm'
+    os.chdir(folder)
+    os.system(command)
+    os.chdir("../")
+    shutil.rmtree(folder)
+
+mw = int(input("Enter the max number of parallel jobs: "))
+
+
+
+
+
+with open("./process_header.h", "r") as file:
+    line = file.readline().strip()  # Read first line and remove extra spaces/newlines
+    ndiag1=int((line.split(" ")[2]).split("\"")[1])
+
+with open("./process_header.h", "r") as file:
+    line = file.readline().strip()  # Read first line and remove extra spaces/newlines
+    ndiag2=int((line.split(" ")[2]).split("\"")[1])
+
+
+
+print("Number of diagram of amp1 is", ndiag1)
+print("Number of diagram of amp2 is", ndiag2)
+
+
+if os.path.exists("./utils/tmp_fld"):  # Check if folder exists
+    shutil.rmtree("./utils/tmp_fld")  # Removes folder
+    os.mkdir("./utils/tmp_fld")  # Create folder
+else:
+    os.mkdir("./utils/tmp_fld") 
+
+os.chdir("./utils/tmp_fld/")
+
+with concurrent.futures.ProcessPoolExecutor(max_workers=mw) as executor:
+        futures = [executor.submit(run_form, i, j) for i in range(1, ndiag1+1) for j in range(1, ndiag2+1)]
+        concurrent.futures.wait(futures)
+#with concurrent.futures.ProcessPoolExecutor(max_workers=mw) as executor:
+#        futures = [executor.submit(run_form, i, j) for i in [1] for j in [3]]
+#        concurrent.futures.wait(futures)
+
+os.chdir("../../")
+shutil.rmtree("./utils/tmp_fld")
+
+
+

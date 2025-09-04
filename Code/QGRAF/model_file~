@@ -1,0 +1,30 @@
+
+%  propagators
+
+  [Quark,Qbar,-;mass='0']
+[Quark2,Qbar2,-;mass='0']
+  [ghost,Ghost,-;mass='0']
+  [gluon,gluon,+;mass='0']
+  [Z,Z,+,external;mass='sqrt(m2)']
+  [photon,photon,+,external;mass='0']
+  [H,H,+,external;mass='sqrt(m2)']
+  [A,A,+,external;mass='sqrt(m2)']
+  [V,V,+, external;mass='sqrt(m2)']
+%  vertices
+  [Qbar,gluon,Quark]
+  [Qbar2,gluon,Quark2]
+  [Ghost,gluon,ghost]
+  [gluon,gluon,gluon]
+  [gluon,gluon,gluon,gluon]
+  [Qbar,Z,Quark]
+  [Qbar,V,Quark]
+  [Qbar2,Z,Quark2]
+  [Qbar2,V,Quark2]
+  [gluon, gluon, H]
+  [gluon, gluon, gluon, H]
+  [gluon, gluon, gluon, gluon, H]
+  [gluon, gluon, A]
+  [gluon, gluon, gluon, A]
+  [Qbar, photon, Quark]
+  [Qbar2, photon, Quark2]
+

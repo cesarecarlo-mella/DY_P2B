@@ -1,0 +1,38 @@
+l [Cdiag1] =  + SpinC(1,r1,nu4,q,nu95,p1)*SpinC(2,r2,nu3,p2)*pol(CutV(nu95,q))
+      *pol(CutQbar2(91,r2,i91))*pol(CutQbar2(93,r1,i93))*pQuark(1,q + p1,2)*
+      pgluon(nu3,nu4, - p2 - r2)*i_*Nc^-1 * (  - 1/2*cgv(tj)*d_(i99,i93)*
+         d_(i97,i91)*gs^2 )
+
+       + SpinC(1,r1,nu4,q,nu95,p1)*SpinC(2,r2,nu3,p2)*pol(CutV(nu95,q))*pol(
+      CutQbar2(91,r2,i91))*pol(CutQbar2(93,r1,i93))*pQuark(1,q + p1,2)*pgluon(
+      nu3,nu4, - p2 - r2)*i_ * ( 1/2*cgv(tj)*d_(i99,i91)*d_(i97,i93)*gs^2 )
+
+       + SpinC(1,r1,nu4,q,omega3,omega2,omega1,p1)*SpinC(2,r2,nu3,p2)*pol(
+      CutV(nu95,q))*pol(CutQbar2(91,r2,i91))*pol(CutQbar2(93,r1,i93))*pQuark(1
+      ,q + p1,2)*pgluon(nu3,nu4, - p2 - r2)*i_*Nc^-1 * ( 1/12*cga(tj)*eps(nu95
+         ,omega1,omega2,omega3)*d_(i99,i93)*d_(i97,i91)*gs^2 )
+
+       + SpinC(1,r1,nu4,q,omega3,omega2,omega1,p1)*SpinC(2,r2,nu3,p2)*pol(
+      CutV(nu95,q))*pol(CutQbar2(91,r2,i91))*pol(CutQbar2(93,r1,i93))*pQuark(1
+      ,q + p1,2)*pgluon(nu3,nu4, - p2 - r2)*i_ * (  - 1/12*cga(tj)*eps(nu95,
+         omega1,omega2,omega3)*d_(i99,i91)*d_(i97,i93)*gs^2 )
+
+       + SpinC(1,r1,nu4,p1,nu95,p1)*SpinC(2,r2,nu3,p2)*pol(CutV(nu95,q))*pol(
+      CutQbar2(91,r2,i91))*pol(CutQbar2(93,r1,i93))*pQuark(1,q + p1,2)*pgluon(
+      nu3,nu4, - p2 - r2)*i_*Nc^-1 * (  - 1/2*cgv(tj)*d_(i99,i93)*d_(i97,i91)*
+         gs^2 )
+
+       + SpinC(1,r1,nu4,p1,nu95,p1)*SpinC(2,r2,nu3,p2)*pol(CutV(nu95,q))*pol(
+      CutQbar2(91,r2,i91))*pol(CutQbar2(93,r1,i93))*pQuark(1,q + p1,2)*pgluon(
+      nu3,nu4, - p2 - r2)*i_ * ( 1/2*cgv(tj)*d_(i99,i91)*d_(i97,i93)*gs^2 )
+
+       + SpinC(1,r1,nu4,p1,omega3,omega2,omega1,p1)*SpinC(2,r2,nu3,p2)*pol(
+      CutV(nu95,q))*pol(CutQbar2(91,r2,i91))*pol(CutQbar2(93,r1,i93))*pQuark(1
+      ,q + p1,2)*pgluon(nu3,nu4, - p2 - r2)*i_*Nc^-1 * ( 1/12*cga(tj)*eps(nu95
+         ,omega1,omega2,omega3)*d_(i99,i93)*d_(i97,i91)*gs^2 )
+
+       + SpinC(1,r1,nu4,p1,omega3,omega2,omega1,p1)*SpinC(2,r2,nu3,p2)*pol(
+      CutV(nu95,q))*pol(CutQbar2(91,r2,i91))*pol(CutQbar2(93,r1,i93))*pQuark(1
+      ,q + p1,2)*pgluon(nu3,nu4, - p2 - r2)*i_ * (  - 1/12*cga(tj)*eps(nu95,
+         omega1,omega2,omega3)*d_(i99,i91)*d_(i97,i93)*gs^2 );
+

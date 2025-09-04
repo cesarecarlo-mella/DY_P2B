@@ -1,0 +1,2 @@
+L decayAmpsSquared =- 4*cgv(lj)*d_(mu1, mu2)*d_(mu95, nu95)*gv(li)*k1(mu2)*k2(mu1)+ 4*cgv(lj)*gv(li)*k1(nu95)*k2(mu95) ]+4*cgv(lj)*gv(li)*k1(mu95)*k2(nu95);
+

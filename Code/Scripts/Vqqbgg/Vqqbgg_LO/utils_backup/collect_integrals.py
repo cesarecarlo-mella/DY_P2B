@@ -1,0 +1,44 @@
+import re
+import os
+
+# Set the root directory where to start the search
+root_dir = "./tmp/unreduced/"
+# Remove output file if it already exists
+if os.path.exists("./external/toreduce.m"):
+    os.remove("./external/toreduce.m")
+
+
+
+
+# Regular expression to match INT(...)
+pattern = r"INT\([^)]*\)"
+
+# Set to store unique matches
+unique_matches = set()
+
+# Loop through all files in the directory tree
+for foldername, subfolders, filenames in os.walk(root_dir):
+    for filename in filenames:
+        filepath = os.path.join(foldername, filename)
+        try:
+            with open(filepath, "r") as file:
+                content = file.read()
+                matches = re.findall(pattern, content)
+                for match in matches:
+                    converted = match.replace("(", "[").replace(")", "]")
+                    unique_matches.add(converted)
+        except Exception as e:
+            print(f"Could not read {filepath}: {e}")
+
+# After scanning all files
+print("\nUnique int entries found:")
+for match in unique_matches:
+    print(match)
+
+# Optionally, save to a file
+output_file = "external/toreduce.m"
+with open(output_file, "w") as f:
+    for match in sorted(unique_matches):
+        f.write(match + "\n")
+
+print(f"\nSaved {len(unique_matches)} unique matches to '{output_file}'")

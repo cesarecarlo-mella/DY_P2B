@@ -1,0 +1,44 @@
+l [Cdiag3] =  + SpinC(1,p2,nu4,q,nu95,p1)*pol(CutV(nu95,q))*pol(Cutgluon(nu93,
+      r1,a93))*pol(Cutgluon(nu91,r2,a91))*pQuark(1,q + p1,2)*pgluon(nu3,nu4,
+       - r1 - r2)*T(a93,i99,jj3)*T(a91,jj3,i97)*i_ * ( cgv(tj)*vggg(nu93,nu91,
+         nu3,r1,r2, - r1 - r2)*gs^2 )
+
+       + SpinC(1,p2,nu4,q,nu95,p1)*pol(CutV(nu95,q))*pol(Cutgluon(nu93,r1,a93)
+      )*pol(Cutgluon(nu91,r2,a91))*pQuark(1,q + p1,2)*pgluon(nu3,nu4, - r1 - 
+      r2)*T(a93,jj3,i97)*T(a91,i99,jj3)*i_ * (  - cgv(tj)*vggg(nu93,nu91,nu3,
+         r1,r2, - r1 - r2)*gs^2 )
+
+       + SpinC(1,p2,nu4,q,omega3,omega2,omega1,p1)*pol(CutV(nu95,q))*pol(
+      Cutgluon(nu93,r1,a93))*pol(Cutgluon(nu91,r2,a91))*pQuark(1,q + p1,2)*
+      pgluon(nu3,nu4, - r1 - r2)*T(a93,i99,jj3)*T(a91,jj3,i97)*i_ * (  - 1/6*
+         cga(tj)*eps(nu95,omega1,omega2,omega3)*vggg(nu93,nu91,nu3,r1,r2, - r1
+          - r2)*gs^2 )
+
+       + SpinC(1,p2,nu4,q,omega3,omega2,omega1,p1)*pol(CutV(nu95,q))*pol(
+      Cutgluon(nu93,r1,a93))*pol(Cutgluon(nu91,r2,a91))*pQuark(1,q + p1,2)*
+      pgluon(nu3,nu4, - r1 - r2)*T(a93,jj3,i97)*T(a91,i99,jj3)*i_ * ( 1/6*cga(
+         tj)*eps(nu95,omega1,omega2,omega3)*vggg(nu93,nu91,nu3,r1,r2, - r1 - 
+         r2)*gs^2 )
+
+       + SpinC(1,p2,nu4,p1,nu95,p1)*pol(CutV(nu95,q))*pol(Cutgluon(nu93,r1,a93
+      ))*pol(Cutgluon(nu91,r2,a91))*pQuark(1,q + p1,2)*pgluon(nu3,nu4, - r1 - 
+      r2)*T(a93,i99,jj3)*T(a91,jj3,i97)*i_ * ( cgv(tj)*vggg(nu93,nu91,nu3,r1,
+         r2, - r1 - r2)*gs^2 )
+
+       + SpinC(1,p2,nu4,p1,nu95,p1)*pol(CutV(nu95,q))*pol(Cutgluon(nu93,r1,a93
+      ))*pol(Cutgluon(nu91,r2,a91))*pQuark(1,q + p1,2)*pgluon(nu3,nu4, - r1 - 
+      r2)*T(a93,jj3,i97)*T(a91,i99,jj3)*i_ * (  - cgv(tj)*vggg(nu93,nu91,nu3,
+         r1,r2, - r1 - r2)*gs^2 )
+
+       + SpinC(1,p2,nu4,p1,omega3,omega2,omega1,p1)*pol(CutV(nu95,q))*pol(
+      Cutgluon(nu93,r1,a93))*pol(Cutgluon(nu91,r2,a91))*pQuark(1,q + p1,2)*
+      pgluon(nu3,nu4, - r1 - r2)*T(a93,i99,jj3)*T(a91,jj3,i97)*i_ * (  - 1/6*
+         cga(tj)*eps(nu95,omega1,omega2,omega3)*vggg(nu93,nu91,nu3,r1,r2, - r1
+          - r2)*gs^2 )
+
+       + SpinC(1,p2,nu4,p1,omega3,omega2,omega1,p1)*pol(CutV(nu95,q))*pol(
+      Cutgluon(nu93,r1,a93))*pol(Cutgluon(nu91,r2,a91))*pQuark(1,q + p1,2)*
+      pgluon(nu3,nu4, - r1 - r2)*T(a93,jj3,i97)*T(a91,i99,jj3)*i_ * ( 1/6*cga(
+         tj)*eps(nu95,omega1,omega2,omega3)*vggg(nu93,nu91,nu3,r1,r2, - r1 - 
+         r2)*gs^2 );
+

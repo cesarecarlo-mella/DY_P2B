@@ -1,0 +1,27 @@
+id INT(PL,0,0,1) = 
+ + 0
+;
+
+id INT(PL,1,1,0) = 
+ + 0
+;
+
+id IT(PL,1,0,1) = 
+ + 0
+;
+
+id INT(PL,0,1,0) = 
+ + 0
+;
+
+id INT(PL,1,0,0) = 
+ + 0
+;
+
+id INT(PL,-1,1,1) = 
+ + INT(PL,0,1,1)*(Num(-m2)*Den(2))
+;
+
+id INT(PL,1,1,1) = 
+ + INT(PL,0,1,1)*(Num((-2*d+6))*Den((d-4)*m2))
+;

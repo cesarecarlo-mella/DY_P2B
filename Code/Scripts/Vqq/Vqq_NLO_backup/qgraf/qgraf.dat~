@@ -1,0 +1,14 @@
+output = '../external/Vqq.1.yaml' ;
+
+style = '../../../../QGRAF/reduze.sty' ;
+ 
+model = '../../../../QGRAF/model_file';
+
+in = Quark[p1], Qbar[p2], V[q];
+out = ;
+
+loops = 1 ;
+
+loop_momentum = k ;
+
+options = nosnail, onshell, notadpole; 

@@ -1,0 +1,1293 @@
+ HLcontracted = ( + INT[topo7,1,1,1,1,-1,1,-1]*gs^4*sqrtziu * ( 1/2*
+         Num[ - 2 + d]^2*Num[ - 3 + d]*u^(-1)*tag )
+
+       + INT[topo7,1,1,1,1,-1,1,-1]*gs^4*Nc^2*sqrtziu * (  - 1/2*Num[
+          - 2 + d]^2*Num[ - 3 + d]*u^(-1)*tag )
+
+       + INT[topo7,1,1,1,1,-1,1,0]*gs^4*sqrtziu * (  - Num[ - 2 + d]^2*
+         Num[ - 3 + d]*m2*u^(-1)*tag )
+
+       + INT[topo7,1,1,1,1,-1,1,0]*gs^4*sqrtzu * (  - 1/2*Num[ - 2 + d]
+         ^2*Num[ - 3 + d]*m2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo7,1,1,1,1,-1,1,0]*gs^4*Nc^2*sqrtziu * ( Num[ - 2 + d]^
+         2*Num[ - 3 + d]*m2*u^(-1)*tag )
+
+       + INT[topo7,1,1,1,1,-1,1,0]*gs^4*Nc^2*sqrtzu * ( 1/2*Num[ - 2 + 
+         d]^2*Num[ - 3 + d]*m2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo7,1,1,1,1,-1,1,1]*gs^4*sqrtziu * ( 1/2*Num[ - 2 + d]^2
+         *Num[ - 3 + d]*m2^2*u^(-1)*tag )
+
+       + INT[topo7,1,1,1,1,-1,1,1]*gs^4*sqrtzu * ( 1/2*Num[ - 2 + d]^2*
+         Num[ - 3 + d]*m2^2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo7,1,1,1,1,-1,1,1]*gs^4*Nc^2*sqrtziu * (  - 1/2*Num[ - 
+         2 + d]^2*Num[ - 3 + d]*m2^2*u^(-1)*tag )
+
+       + INT[topo7,1,1,1,1,-1,1,1]*gs^4*Nc^2*sqrtzu * (  - 1/2*Num[ - 2
+          + d]^2*Num[ - 3 + d]*m2^2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo7,1,1,1,1,-1,2,-2]*gs^4*sqrtziu * ( Num[ - 2 + d]*Num[
+          - 3 + d]*u^(-2)*tag )
+
+       + INT[topo7,1,1,1,1,-1,2,-2]*gs^4*Nc^2*sqrtziu * (  - Num[ - 2
+          + d]*Num[ - 3 + d]*u^(-2)*tag )
+
+       + INT[topo7,1,1,1,1,-1,2,-1]*gs^4*sqrtziu * (  - Num[ - 2 + d]*
+         Num[ - 3 + d]*Num[3*z - u]*m2*u^(-2)*tag*z^(-1) )
+
+       + INT[topo7,1,1,1,1,-1,2,-1]*gs^4*sqrtzu * (  - Num[ - 2 + d]*
+         Num[ - 3 + d]*m2*u^(-2)*tag*z^(-1) )
+
+       + INT[topo7,1,1,1,1,-1,2,-1]*gs^4*Nc^2*sqrtziu * ( Num[ - 2 + d]
+         *Num[ - 3 + d]*Num[3*z - u]*m2*u^(-2)*tag*z^(-1) )
+
+       + INT[topo7,1,1,1,1,-1,2,-1]*gs^4*Nc^2*sqrtzu * ( Num[ - 2 + d]*
+         Num[ - 3 + d]*m2*u^(-2)*tag*z^(-1) )
+
+       + INT[topo7,1,1,1,1,-1,2,0]*gs^4*sqrtziu * ( Num[ - 2 + d]*Num[
+          - 3 + d]*Num[3*z - 2*u]*m2^2*u^(-2)*tag*z^(-1) )
+
+       + INT[topo7,1,1,1,1,-1,2,0]*gs^4*sqrtzu * ( Num[ - 2 + d]*Num[
+          - 3 + d]*Num[2*z - u]*m2^2*u^(-2)*tag*z^(-2) )
+
+       + INT[topo7,1,1,1,1,-1,2,0]*gs^4*Nc^2*sqrtziu * (  - Num[ - 2 + 
+         d]*Num[ - 3 + d]*Num[3*z - 2*u]*m2^2*u^(-2)*tag*z^(-1) )
+
+       + INT[topo7,1,1,1,1,-1,2,0]*gs^4*Nc^2*sqrtzu * (  - Num[ - 2 + d
+         ]*Num[ - 3 + d]*Num[2*z - u]*m2^2*u^(-2)*tag*z^(-2) )
+
+       + INT[topo7,1,1,1,1,-1,2,1]*gs^4*sqrtziu * (  - Num[ - 2 + d]*
+         Num[ - 3 + d]*Num[z - u]*m2^3*u^(-2)*tag*z^(-1) )
+
+       + INT[topo7,1,1,1,1,-1,2,1]*gs^4*sqrtzu * (  - Num[ - 2 + d]*
+         Num[ - 3 + d]*Num[z - u]*m2^3*u^(-2)*tag*z^(-2) )
+
+       + INT[topo7,1,1,1,1,-1,2,1]*gs^4*Nc^2*sqrtziu * ( Num[ - 2 + d]*
+         Num[ - 3 + d]*Num[z - u]*m2^3*u^(-2)*tag*z^(-1) )
+
+       + INT[topo7,1,1,1,1,-1,2,1]*gs^4*Nc^2*sqrtzu * ( Num[ - 2 + d]*
+         Num[ - 3 + d]*Num[z - u]*m2^3*u^(-2)*tag*z^(-2) )
+
+       + INT[topo7,1,1,1,1,0,0,-1]*gs^4*sqrtziu * (  - 1/2*Num[ - 2 + d
+         ]^2*Num[ - 3 + d]*u^(-1)*tag )
+
+       + INT[topo7,1,1,1,1,0,0,-1]*gs^4*sqrtzu * ( 1/2*Num[1 + u]*Num[
+          - 2 + d]^2*Num[ - 3 + d]*u^(-2)*tag )
+
+       + INT[topo7,1,1,1,1,0,0,-1]*gs^4*Nc^2*sqrtziu * ( 1/2*Num[ - 2
+          + d]^2*Num[ - 3 + d]*u^(-1)*tag )
+
+       + INT[topo7,1,1,1,1,0,0,-1]*gs^4*Nc^2*sqrtzu * (  - 1/2*Num[1 + 
+         u]*Num[ - 2 + d]^2*Num[ - 3 + d]*u^(-2)*tag )
+
+       + INT[topo7,1,1,1,1,0,0,0]*gs^4*sqrtziu * ( 3/2*Num[ - 2 + d]^2*
+         Num[ - 3 + d]*m2*u^(-1)*tag )
+
+       + INT[topo7,1,1,1,1,0,0,0]*gs^4*sqrtzu * (  - 1/2*Num[ - 2 + d]^
+         2*Num[ - 3 + d]*Num[3*z - u + 2*u*z]*m2*u^(-2)*tag*z^(-1) )
+
+       + INT[topo7,1,1,1,1,0,0,0]*gs^4*Nc^2*sqrtziu * (  - 3/2*Num[ - 2
+          + d]^2*Num[ - 3 + d]*m2*u^(-1)*tag )
+
+       + INT[topo7,1,1,1,1,0,0,0]*gs^4*Nc^2*sqrtzu * ( 1/2*Num[ - 2 + d
+         ]^2*Num[ - 3 + d]*Num[3*z - u + 2*u*z]*m2*u^(-2)*tag*z^(-1) )
+
+       + INT[topo7,1,1,1,1,0,0,1]*gs^4*sqrtziu * (  - 3/2*Num[ - 2 + d]
+         ^2*Num[ - 3 + d]*m2^2*u^(-1)*tag )
+
+       + INT[topo7,1,1,1,1,0,0,1]*gs^4*sqrtzu * ( 1/2*Num[ - 2 + d]^2*
+         Num[ - 3 + d]*Num[3*z - 3*u + u*z]*m2^2*u^(-2)*tag*z^(-1) )
+
+       + INT[topo7,1,1,1,1,0,0,1]*gs^4*Nc^2*sqrtziu * ( 3/2*Num[ - 2 + 
+         d]^2*Num[ - 3 + d]*m2^2*u^(-1)*tag )
+
+       + INT[topo7,1,1,1,1,0,0,1]*gs^4*Nc^2*sqrtzu * (  - 1/2*Num[ - 2
+          + d]^2*Num[ - 3 + d]*Num[3*z - 3*u + u*z]*m2^2*u^(-2)*tag*
+         z^(-1) )
+
+       + INT[topo7,1,1,1,1,0,0,2]*gs^4*sqrtziu * ( 1/2*Num[ - 2 + d]^2*
+         Num[ - 3 + d]*m2^3*u^(-1)*tag )
+
+       + INT[topo7,1,1,1,1,0,0,2]*gs^4*sqrtzu * (  - 1/2*Num[ - 2 + d]^
+         2*Num[ - 3 + d]*Num[z - 2*u]*m2^3*u^(-2)*tag*z^(-1) )
+
+       + INT[topo7,1,1,1,1,0,0,2]*gs^4*Nc^2*sqrtziu * (  - 1/2*Num[ - 2
+          + d]^2*Num[ - 3 + d]*m2^3*u^(-1)*tag )
+
+       + INT[topo7,1,1,1,1,0,0,2]*gs^4*Nc^2*sqrtzu * ( 1/2*Num[ - 2 + d
+         ]^2*Num[ - 3 + d]*Num[z - 2*u]*m2^3*u^(-2)*tag*z^(-1) )
+
+       + INT[topo7,1,1,1,1,0,1,-2]*gs^4*sqrtziu * ( 1/2*Num[ - 2 + d]*
+         Num[ - 3 + d]*Num[ - 4 - 4*u + d*u]*u^(-2)*tag )
+
+       + INT[topo7,1,1,1,1,0,1,-2]*gs^4*sqrtzu * ( 2*Num[1 + u]*Num[ - 
+         2 + d]*Num[ - 3 + d]*u^(-3)*tag )
+
+       + INT[topo7,1,1,1,1,0,1,-2]*gs^4*Nc^2*sqrtziu * (  - 1/2*Num[ - 
+         2 + d]*Num[ - 3 + d]*Num[ - 4 - 4*u + d*u]*u^(-2)*tag )
+
+       + INT[topo7,1,1,1,1,0,1,-2]*gs^4*Nc^2*sqrtzu * (  - 2*Num[1 + u]
+         *Num[ - 2 + d]*Num[ - 3 + d]*u^(-3)*tag )
+
+       + INT[topo7,1,1,1,1,0,1,-1]*gs^4*sqrtziu * (  - 1/2*Num[ - 2 + d
+         ]*Num[ - 3 + d]*Num[ - 16*z + 2*u - 12*u*z + 3*d*u*z]*m2*
+         u^(-2)*tag*z^(-1) )
+
+       + INT[topo7,1,1,1,1,0,1,-1]*gs^4*sqrtzu * (  - Num[ - 2 + d]*
+         Num[ - 3 + d]*Num[8*z - 4*u + 6*u*z - u^2]*m2*u^(-3)*tag*
+         z^(-1) )
+
+       + INT[topo7,1,1,1,1,0,1,-1]*gs^4*Nc^2*sqrtziu * ( 1/2*Num[ - 2
+          + d]*Num[ - 3 + d]*Num[ - 16*z + 2*u - 12*u*z + 3*d*u*z]*m2*
+         u^(-2)*tag*z^(-1) )
+
+       + INT[topo7,1,1,1,1,0,1,-1]*gs^4*Nc^2*sqrtzu * ( Num[ - 2 + d]*
+         Num[ - 3 + d]*Num[8*z - 4*u + 6*u*z - u^2]*m2*u^(-3)*tag*
+         z^(-1) )
+
+       + INT[topo7,1,1,1,1,0,1,0]*gs^4*sqrtziu * ( 1/2*Num[ - 2 + d]*
+         Num[ - 3 + d]*Num[ - 24*z + 8*u - 12*u*z + 3*d*u*z]*m2^2*
+         u^(-2)*tag*z^(-1) )
+
+       + INT[topo7,1,1,1,1,0,1,0]*gs^4*sqrtzu * ( 1/2*Num[ - 2 + d]*
+         Num[ - 3 + d]*Num[24*z^2 - 28*u*z + 12*u*z^2 + 2*u^2 - 10*u^2*
+         z + d*u^2*z]*m2^2*u^(-3)*tag*z^(-2) )
+
+       + INT[topo7,1,1,1,1,0,1,0]*gs^4*Nc^2*sqrtziu * (  - 1/2*Num[ - 2
+          + d]*Num[ - 3 + d]*Num[ - 24*z + 8*u - 12*u*z + 3*d*u*z]*m2^2
+         *u^(-2)*tag*z^(-1) )
+
+       + INT[topo7,1,1,1,1,0,1,0]*gs^4*Nc^2*sqrtzu * (  - 1/2*Num[ - 2
+          + d]*Num[ - 3 + d]*Num[24*z^2 - 28*u*z + 12*u*z^2 + 2*u^2 - 
+         10*u^2*z + d*u^2*z]*m2^2*u^(-3)*tag*z^(-2) )
+
+       + INT[topo7,1,1,1,1,0,1,1]*gs^4*sqrtziu * (  - 1/2*Num[ - 2 + d]
+         *Num[ - 3 + d]*Num[ - 16*z + 10*u - 4*u*z + d*u*z]*m2^3*u^(-2)
+         *tag*z^(-1) )
+
+       + INT[topo7,1,1,1,1,0,1,1]*gs^4*sqrtzu * (  - 1/2*Num[ - 2 + d]*
+         Num[ - 3 + d]*Num[16*z^2 - 32*u*z + 4*u*z^2 + 10*u^2 - 8*u^2*z
+          + d*u^2*z]*m2^3*u^(-3)*tag*z^(-2) )
+
+       + INT[topo7,1,1,1,1,0,1,1]*gs^4*Nc^2*sqrtziu * ( 1/2*Num[ - 2 + 
+         d]*Num[ - 3 + d]*Num[ - 16*z + 10*u - 4*u*z + d*u*z]*m2^3*
+         u^(-2)*tag*z^(-1) )
+
+       + INT[topo7,1,1,1,1,0,1,1]*gs^4*Nc^2*sqrtzu * ( 1/2*Num[ - 2 + d
+         ]*Num[ - 3 + d]*Num[16*z^2 - 32*u*z + 4*u*z^2 + 10*u^2 - 8*u^2
+         *z + d*u^2*z]*m2^3*u^(-3)*tag*z^(-2) )
+
+       + INT[topo7,1,1,1,1,0,1,2]*gs^4*sqrtziu * (  - 2*Num[ - 2 + d]*
+         Num[ - 3 + d]*Num[z - u]*m2^4*u^(-2)*tag*z^(-1) )
+
+       + INT[topo7,1,1,1,1,0,1,2]*gs^4*sqrtzu * ( 2*Num[ - 2 + d]*Num[
+          - 3 + d]*Num[z - u]*Num[z - 2*u]*m2^4*u^(-3)*tag*z^(-2) )
+
+       + INT[topo7,1,1,1,1,0,1,2]*gs^4*Nc^2*sqrtziu * ( 2*Num[ - 2 + d]
+         *Num[ - 3 + d]*Num[z - u]*m2^4*u^(-2)*tag*z^(-1) )
+
+       + INT[topo7,1,1,1,1,0,1,2]*gs^4*Nc^2*sqrtzu * (  - 2*Num[ - 2 + 
+         d]*Num[ - 3 + d]*Num[z - u]*Num[z - 2*u]*m2^4*u^(-3)*tag*
+         z^(-2) )
+
+       + INT[topo7,1,1,1,1,0,2,-3]*gs^4*sqrtziu * (  - Num[ - 2 + d]*
+         Num[2 + u]*Num[ - 3 + d]*u^(-3)*tag )
+
+       + INT[topo7,1,1,1,1,0,2,-3]*gs^4*sqrtzu * ( 2*Num[1 + u]*Num[ - 
+         2 + d]*Num[ - 3 + d]*u^(-4)*tag )
+
+       + INT[topo7,1,1,1,1,0,2,-3]*gs^4*Nc^2*sqrtziu * ( Num[ - 2 + d]*
+         Num[2 + u]*Num[ - 3 + d]*u^(-3)*tag )
+
+       + INT[topo7,1,1,1,1,0,2,-3]*gs^4*Nc^2*sqrtzu * (  - 2*Num[1 + u]
+         *Num[ - 2 + d]*Num[ - 3 + d]*u^(-4)*tag )
+
+       + INT[topo7,1,1,1,1,0,2,-2]*gs^4*sqrtziu * ( 2*Num[ - 2 + d]*
+         Num[ - 3 + d]*Num[5*z - u + 2*u*z]*m2*u^(-3)*tag*z^(-1) )
+
+       + INT[topo7,1,1,1,1,0,2,-2]*gs^4*sqrtzu * (  - Num[ - 2 + d]*
+         Num[ - 3 + d]*Num[10*z - 6*u + 8*u*z - 3*u^2]*m2*u^(-4)*tag*
+         z^(-1) )
+
+       + INT[topo7,1,1,1,1,0,2,-2]*gs^4*Nc^2*sqrtziu * (  - 2*Num[ - 2
+          + d]*Num[ - 3 + d]*Num[5*z - u + 2*u*z]*m2*u^(-3)*tag*z^(-1)
+          )
+
+       + INT[topo7,1,1,1,1,0,2,-2]*gs^4*Nc^2*sqrtzu * ( Num[ - 2 + d]*
+         Num[ - 3 + d]*Num[10*z - 6*u + 8*u*z - 3*u^2]*m2*u^(-4)*tag*
+         z^(-1) )
+
+       + INT[topo7,1,1,1,1,0,2,-1]*gs^4*sqrtziu * (  - Num[ - 2 + d]*
+         Num[ - 3 + d]*Num[20*z - 10*u + 6*u*z - u^2]*m2^2*u^(-3)*tag*
+         z^(-1) )
+
+       + INT[topo7,1,1,1,1,0,2,-1]*gs^4*sqrtzu * ( Num[ - 2 + d]*Num[
+          - 3 + d]*Num[20*z^2 - 26*u*z + 12*u*z^2 + 4*u^2 - 11*u^2*z]*
+         m2^2*u^(-4)*tag*z^(-2) )
+
+       + INT[topo7,1,1,1,1,0,2,-1]*gs^4*Nc^2*sqrtziu * ( Num[ - 2 + d]*
+         Num[ - 3 + d]*Num[20*z - 10*u + 6*u*z - u^2]*m2^2*u^(-3)*tag*
+         z^(-1) )
+
+       + INT[topo7,1,1,1,1,0,2,-1]*gs^4*Nc^2*sqrtzu * (  - Num[ - 2 + d
+         ]*Num[ - 3 + d]*Num[20*z^2 - 26*u*z + 12*u*z^2 + 4*u^2 - 11*
+         u^2*z]*m2^2*u^(-4)*tag*z^(-2) )
+
+       + INT[topo7,1,1,1,1,0,2,0]*gs^4*sqrtziu * ( 2*Num[ - 2 + d]*Num[
+          - 3 + d]*Num[10*z^2 - 9*u*z + 2*u*z^2 + u^2 - u^2*z]*m2^3*
+         u^(-3)*tag*z^(-2) )
+
+       + INT[topo7,1,1,1,1,0,2,0]*gs^4*sqrtzu * (  - Num[ - 2 + d]*Num[
+          - 3 + d]*Num[20*z^2 - 42*u*z + 8*u*z^2 + 18*u^2 - 13*u^2*z + 
+         3*u^3]*m2^3*u^(-4)*tag*z^(-2) )
+
+       + INT[topo7,1,1,1,1,0,2,0]*gs^4*Nc^2*sqrtziu * (  - 2*Num[ - 2
+          + d]*Num[ - 3 + d]*Num[10*z^2 - 9*u*z + 2*u*z^2 + u^2 - u^2*z
+         ]*m2^3*u^(-3)*tag*z^(-2) )
+
+       + INT[topo7,1,1,1,1,0,2,0]*gs^4*Nc^2*sqrtzu * ( Num[ - 2 + d]*
+         Num[ - 3 + d]*Num[20*z^2 - 42*u*z + 8*u*z^2 + 18*u^2 - 13*u^2*
+         z + 3*u^3]*m2^3*u^(-4)*tag*z^(-2) )
+
+       + INT[topo7,1,1,1,1,0,2,1]*gs^4*sqrtziu * (  - Num[ - 2 + d]*
+         Num[ - 3 + d]*Num[z - u]*Num[10*z - 4*u + u*z]*m2^4*u^(-3)*tag
+         *z^(-2) )
+
+       + INT[topo7,1,1,1,1,0,2,1]*gs^4*sqrtzu * ( Num[ - 2 + d]*Num[ - 
+         3 + d]*Num[z - u]*Num[10*z^2 - 20*u*z + 2*u*z^2 + 4*u^2 - 3*
+         u^2*z]*m2^4*u^(-4)*tag*z^(-3) )
+
+       + INT[topo7,1,1,1,1,0,2,1]*gs^4*Nc^2*sqrtziu * ( Num[ - 2 + d]*
+         Num[ - 3 + d]*Num[z - u]*Num[10*z - 4*u + u*z]*m2^4*u^(-3)*tag
+         *z^(-2) )
+
+       + INT[topo7,1,1,1,1,0,2,1]*gs^4*Nc^2*sqrtzu * (  - Num[ - 2 + d]
+         *Num[ - 3 + d]*Num[z - u]*Num[10*z^2 - 20*u*z + 2*u*z^2 + 4*
+         u^2 - 3*u^2*z]*m2^4*u^(-4)*tag*z^(-3) )
+
+       + INT[topo7,1,1,1,1,0,2,2]*gs^4*sqrtziu * ( 2*Num[ - 2 + d]*Num[
+          - 3 + d]*Num[z - u]^2*m2^5*u^(-3)*tag*z^(-2) )
+
+       + INT[topo7,1,1,1,1,0,2,2]*gs^4*sqrtzu * (  - 2*Num[ - 2 + d]*
+         Num[ - 3 + d]*Num[z - u]^2*Num[z - 2*u]*m2^5*u^(-4)*tag*z^(-3)
+          )
+
+       + INT[topo7,1,1,1,1,0,2,2]*gs^4*Nc^2*sqrtziu * (  - 2*Num[ - 2
+          + d]*Num[ - 3 + d]*Num[z - u]^2*m2^5*u^(-3)*tag*z^(-2) )
+
+       + INT[topo7,1,1,1,1,0,2,2]*gs^4*Nc^2*sqrtzu * ( 2*Num[ - 2 + d]*
+         Num[ - 3 + d]*Num[z - u]^2*Num[z - 2*u]*m2^5*u^(-4)*tag*z^(-3)
+          )
+
+       + INT[topo18,1,1,1,1,-3,1,1]*gs^4*sqrtziu * ( 1/2*Num[ - 2 + d]*
+         Num[ - 3 + d]*Num[ - 2 - 4*u + d*u]*u^(-2)*tag )
+
+       + INT[topo18,1,1,1,1,-3,1,1]*gs^4*sqrtzu * (  - 1/2*Num[ - 2 + d
+         ]*Num[ - 3 + d]*Num[ - 2 - 4*u + d*u]*u^(-3)*tag )
+
+       + INT[topo18,1,1,1,1,-3,1,1]*gs^4*Nc^2*sqrtziu * (  - 1/2*Num[
+          - 2 + d]*Num[ - 3 + d]*Num[ - 2 - 4*u + d*u]*u^(-2)*tag )
+
+       + INT[topo18,1,1,1,1,-3,1,1]*gs^4*Nc^2*sqrtzu * ( 1/2*Num[ - 2
+          + d]*Num[ - 3 + d]*Num[ - 2 - 4*u + d*u]*u^(-3)*tag )
+
+       + INT[topo18,1,1,1,1,-3,2,0]*gs^4*sqrtziu * ( Num[ - 2 + d]*Num[
+          - 3 + d]*u^(-2)*tag )
+
+       + INT[topo18,1,1,1,1,-3,2,0]*gs^4*sqrtzu * (  - Num[ - 2 + d]*
+         Num[ - 3 + d]*u^(-3)*tag )
+
+       + INT[topo18,1,1,1,1,-3,2,0]*gs^4*Nc^2*sqrtziu * (  - Num[ - 2
+          + d]*Num[ - 3 + d]*u^(-2)*tag )
+
+       + INT[topo18,1,1,1,1,-3,2,0]*gs^4*Nc^2*sqrtzu * ( Num[ - 2 + d]*
+         Num[ - 3 + d]*u^(-3)*tag )
+
+       + INT[topo18,1,1,1,1,-3,2,1]*gs^4*sqrtziu * (  - Num[ - 2 + d]*
+         Num[2 + u]*Num[ - 3 + d]*m2*u^(-2)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,-3,2,1]*gs^4*sqrtzu * ( Num[ - 2 + d]*Num[2
+          + u]*Num[ - 3 + d]*m2*u^(-3)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,-3,2,1]*gs^4*Nc^2*sqrtziu * ( Num[ - 2 + d]
+         *Num[2 + u]*Num[ - 3 + d]*m2*u^(-2)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,-3,2,1]*gs^4*Nc^2*sqrtzu * (  - Num[ - 2 + 
+         d]*Num[2 + u]*Num[ - 3 + d]*m2*u^(-3)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,-2,0,1]*gs^4*sqrtziu * (  - 1/2*Num[ - 2 + 
+         d]*Num[ - 3 + d]*Num[ - 4 - 6*u + d*u]*u^(-2)*tag )
+
+       + INT[topo18,1,1,1,1,-2,0,1]*gs^4*sqrtzu * ( 1/2*Num[ - 2 + d]*
+         Num[ - 3 + d]*Num[ - 6 - 12*u - 4*u^2 + 2*d*u + d*u^2]*u^(-3)*
+         tag )
+
+       + INT[topo18,1,1,1,1,-2,0,1]*gs^4*Nc^2*sqrtziu * ( 1/2*Num[ - 2
+          + d]*Num[ - 3 + d]*Num[ - 4 - 6*u + d*u]*u^(-2)*tag )
+
+       + INT[topo18,1,1,1,1,-2,0,1]*gs^4*Nc^2*sqrtzu * (  - 1/2*Num[ - 
+         2 + d]*Num[ - 3 + d]*Num[ - 6 - 12*u - 4*u^2 + 2*d*u + d*u^2]*
+         u^(-3)*tag )
+
+       + INT[topo18,1,1,1,1,-2,0,2]*gs^4*sqrtziu * ( 1/2*Num[ - 2 + d]^
+         2*Num[ - 3 + d]*m2*u^(-1)*tag )
+
+       + INT[topo18,1,1,1,1,-2,0,2]*gs^4*sqrtzu * (  - 1/2*Num[ - 2 + d
+         ]^2*Num[ - 3 + d]*m2*u^(-2)*tag )
+
+       + INT[topo18,1,1,1,1,-2,0,2]*gs^4*Nc^2*sqrtziu * (  - 1/2*Num[
+          - 2 + d]^2*Num[ - 3 + d]*m2*u^(-1)*tag )
+
+       + INT[topo18,1,1,1,1,-2,0,2]*gs^4*Nc^2*sqrtzu * ( 1/2*Num[ - 2
+          + d]^2*Num[ - 3 + d]*m2*u^(-2)*tag )
+
+       + INT[topo18,1,1,1,1,-2,1,0]*gs^4*sqrtziu * ( 1/2*Num[ - 2 + d]*
+         Num[ - 3 + d]*Num[ - 8 - 6*u + d*u]*u^(-2)*tag )
+
+       + INT[topo18,1,1,1,1,-2,1,0]*gs^4*sqrtzu * (  - Num[ - 2 + d]*
+         Num[ - 3 + d]*Num[ - 6 - 6*u + d*u]*u^(-3)*tag )
+
+       + INT[topo18,1,1,1,1,-2,1,0]*gs^4*Nc^2*sqrtziu * (  - 1/2*Num[
+          - 2 + d]*Num[ - 3 + d]*Num[ - 8 - 6*u + d*u]*u^(-2)*tag )
+
+       + INT[topo18,1,1,1,1,-2,1,0]*gs^4*Nc^2*sqrtzu * ( Num[ - 2 + d]*
+         Num[ - 3 + d]*Num[ - 6 - 6*u + d*u]*u^(-3)*tag )
+
+       + INT[topo18,1,1,1,1,-2,1,1]*gs^4*sqrtziu * (  - 1/2*Num[ - 2 + 
+         d]*Num[ - 3 + d]*Num[ - 8 - 8*u - 2*u*z + d*u*z]*m2*u^(-2)*tag
+         *z^(-1) )
+
+       + INT[topo18,1,1,1,1,-2,1,1]*gs^4*sqrtzu * ( 1/2*Num[ - 2 + d]*
+         Num[ - 3 + d]*Num[ - 12 - 16*u - 2*u*z - 6*u^2 + d*u*z + d*u^2
+         ]*m2*u^(-3)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,-2,1,1]*gs^4*Nc^2*sqrtziu * ( 1/2*Num[ - 2
+          + d]*Num[ - 3 + d]*Num[ - 8 - 8*u - 2*u*z + d*u*z]*m2*u^(-2)*
+         tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,-2,1,1]*gs^4*Nc^2*sqrtzu * (  - 1/2*Num[ - 
+         2 + d]*Num[ - 3 + d]*Num[ - 12 - 16*u - 2*u*z - 6*u^2 + d*u*z
+          + d*u^2]*m2*u^(-3)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,-2,1,2]*gs^4*sqrtziu * ( 2*Num[ - 2 + d]*
+         Num[ - 3 + d]*m2^2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,-2,1,2]*gs^4*sqrtzu * (  - 2*Num[ - 2 + d]*
+         Num[ - 3 + d]*m2^2*u^(-2)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,-2,1,2]*gs^4*Nc^2*sqrtziu * (  - 2*Num[ - 2
+          + d]*Num[ - 3 + d]*m2^2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,-2,1,2]*gs^4*Nc^2*sqrtzu * ( 2*Num[ - 2 + d
+         ]*Num[ - 3 + d]*m2^2*u^(-2)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,-2,2,-1]*gs^4*sqrtziu * ( 2*Num[ - 2 + d]*
+         Num[ - 3 + d]*u^(-2)*tag )
+
+       + INT[topo18,1,1,1,1,-2,2,-1]*gs^4*sqrtzu * (  - 3*Num[ - 2 + d]
+         *Num[ - 3 + d]*u^(-3)*tag )
+
+       + INT[topo18,1,1,1,1,-2,2,-1]*gs^4*Nc^2*sqrtziu * (  - 2*Num[ - 
+         2 + d]*Num[ - 3 + d]*u^(-2)*tag )
+
+       + INT[topo18,1,1,1,1,-2,2,-1]*gs^4*Nc^2*sqrtzu * ( 3*Num[ - 2 + 
+         d]*Num[ - 3 + d]*u^(-3)*tag )
+
+       + INT[topo18,1,1,1,1,-2,2,0]*gs^4*sqrtziu * (  - Num[ - 2 + d]*
+         Num[ - 3 + d]*Num[4 + 3*u]*m2*u^(-2)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,-2,2,0]*gs^4*sqrtzu * ( Num[ - 2 + d]*Num[
+          - 3 + d]*Num[6 + 5*u]*m2*u^(-3)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,-2,2,0]*gs^4*Nc^2*sqrtziu * ( Num[ - 2 + d]
+         *Num[ - 3 + d]*Num[4 + 3*u]*m2*u^(-2)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,-2,2,0]*gs^4*Nc^2*sqrtzu * (  - Num[ - 2 + 
+         d]*Num[ - 3 + d]*Num[6 + 5*u]*m2*u^(-3)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,-2,2,1]*gs^4*sqrtziu * (  - Num[ - 2 + d]*
+         Num[ - 2 + z]*Num[ - 3 + d]*m2^2*u^(-1)*tag*z^(-2) )
+
+       + INT[topo18,1,1,1,1,-2,2,1]*gs^4*sqrtzu * ( Num[ - 2 + d]*Num[
+          - 3 + d]*Num[ - 4 + z - u]*m2^2*u^(-2)*tag*z^(-2) )
+
+       + INT[topo18,1,1,1,1,-2,2,1]*gs^4*Nc^2*sqrtziu * ( Num[ - 2 + d]
+         *Num[ - 2 + z]*Num[ - 3 + d]*m2^2*u^(-1)*tag*z^(-2) )
+
+       + INT[topo18,1,1,1,1,-2,2,1]*gs^4*Nc^2*sqrtzu * (  - Num[ - 2 + 
+         d]*Num[ - 3 + d]*Num[ - 4 + z - u]*m2^2*u^(-2)*tag*z^(-2) )
+
+       + INT[topo18,1,1,1,1,-2,2,2]*gs^4*sqrtziu * ( 2*Num[ - 2 + d]*
+         Num[ - 3 + d]*m2^3*u^(-1)*tag*z^(-2) )
+
+       + INT[topo18,1,1,1,1,-2,2,2]*gs^4*sqrtzu * (  - 2*Num[ - 2 + d]*
+         Num[ - 3 + d]*m2^3*u^(-2)*tag*z^(-2) )
+
+       + INT[topo18,1,1,1,1,-2,2,2]*gs^4*Nc^2*sqrtziu * (  - 2*Num[ - 2
+          + d]*Num[ - 3 + d]*m2^3*u^(-1)*tag*z^(-2) )
+
+       + INT[topo18,1,1,1,1,-2,2,2]*gs^4*Nc^2*sqrtzu * ( 2*Num[ - 2 + d
+         ]*Num[ - 3 + d]*m2^3*u^(-2)*tag*z^(-2) )
+
+       + INT[topo18,1,1,1,1,-1,-1,1]*gs^4*sqrtziu * (  - 1/2*Num[ - 2
+          + d]*Num[ - 3 + d]*Num[2 + d*u]*u^(-2)*tag )
+
+       + INT[topo18,1,1,1,1,-1,-1,1]*gs^4*sqrtzu * (  - 1/2*Num[ - 2 + 
+         d]*Num[ - 3 + d]*Num[ - 6 - 12*u - 8*u^2 + d*u + 2*d*u^2]*
+         u^(-3)*tag )
+
+       + INT[topo18,1,1,1,1,-1,-1,1]*gs^4*Nc^2*sqrtziu * ( 1/2*Num[ - 2
+          + d]*Num[ - 3 + d]*Num[2 + d*u]*u^(-2)*tag )
+
+       + INT[topo18,1,1,1,1,-1,-1,1]*gs^4*Nc^2*sqrtzu * ( 1/2*Num[ - 2
+          + d]*Num[ - 3 + d]*Num[ - 6 - 12*u - 8*u^2 + d*u + 2*d*u^2]*
+         u^(-3)*tag )
+
+       + INT[topo18,1,1,1,1,-1,-1,2]*gs^4*sqrtzu * ( Num[1 + u]*Num[ - 
+         2 + d]^2*Num[ - 3 + d]*m2*u^(-2)*tag )
+
+       + INT[topo18,1,1,1,1,-1,-1,2]*gs^4*Nc^2*sqrtzu * (  - Num[1 + u]
+         *Num[ - 2 + d]^2*Num[ - 3 + d]*m2*u^(-2)*tag )
+
+       + INT[topo18,1,1,1,1,-1,0,0]*gs^4*sqrtziu * ( Num[ - 2 + d]*Num[
+          - 3 + d]*Num[3 + d*u]*u^(-2)*tag )
+
+       + INT[topo18,1,1,1,1,-1,0,0]*gs^4*sqrtzu * ( Num[ - 2 + d]*Num[
+          - 3 + d]*Num[ - 9 - 12*u - 4*u^2 + d*u + d*u^2]*u^(-3)*tag )
+
+       + INT[topo18,1,1,1,1,-1,0,0]*gs^4*Nc^2*sqrtziu * (  - Num[ - 2
+          + d]*Num[ - 3 + d]*Num[3 + d*u]*u^(-2)*tag )
+
+       + INT[topo18,1,1,1,1,-1,0,0]*gs^4*Nc^2*sqrtzu * (  - Num[ - 2 + 
+         d]*Num[ - 3 + d]*Num[ - 9 - 12*u - 4*u^2 + d*u + d*u^2]*u^(-3)
+         *tag )
+
+       + INT[topo18,1,1,1,1,-1,0,1]*gs^4*sqrtziu * (  - Num[ - 2 + d]*
+         Num[2 + 5*u]*Num[ - 3 + d]*m2*u^(-2)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,-1,0,1]*gs^4*sqrtzu * (  - Num[ - 2 + d]*
+         Num[ - 3 + d]*Num[ - 6 - 13*u - 4*u*z - 6*u^2 - 2*u^2*z + 2*d*
+         u*z + d*u^2 + d*u^2*z]*m2*u^(-3)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,-1,0,1]*gs^4*Nc^2*sqrtziu * ( Num[ - 2 + d]
+         *Num[2 + 5*u]*Num[ - 3 + d]*m2*u^(-2)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,-1,0,1]*gs^4*Nc^2*sqrtzu * ( Num[ - 2 + d]*
+         Num[ - 3 + d]*Num[ - 6 - 13*u - 4*u*z - 6*u^2 - 2*u^2*z + 2*d*
+         u*z + d*u^2 + d*u^2*z]*m2*u^(-3)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,-1,0,2]*gs^4*sqrtzu * ( Num[ - 2 + d]*Num[
+          - 3 + d]*Num[4 + 2*u + d*u]*m2^2*u^(-2)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,-1,0,2]*gs^4*Nc^2*sqrtzu * (  - Num[ - 2 + 
+         d]*Num[ - 3 + d]*Num[4 + 2*u + d*u]*m2^2*u^(-2)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,-1,1,-1]*gs^4*sqrtziu * (  - 1/2*Num[ - 2
+          + d]*Num[ - 3 + d]*Num[6 + d*u]*u^(-2)*tag )
+
+       + INT[topo18,1,1,1,1,-1,1,-1]*gs^4*sqrtzu * (  - 1/2*Num[ - 2 + 
+         d]*Num[ - 3 + d]*Num[ - 18 - 12*u + d*u]*u^(-3)*tag )
+
+       + INT[topo18,1,1,1,1,-1,1,-1]*gs^4*Nc^2*sqrtziu * ( 1/2*Num[ - 2
+          + d]*Num[ - 3 + d]*Num[6 + d*u]*u^(-2)*tag )
+
+       + INT[topo18,1,1,1,1,-1,1,-1]*gs^4*Nc^2*sqrtzu * ( 1/2*Num[ - 2
+          + d]*Num[ - 3 + d]*Num[ - 18 - 12*u + d*u]*u^(-3)*tag )
+
+       + INT[topo18,1,1,1,1,-1,1,0]*gs^4*sqrtziu * ( Num[ - 2 + d]*Num[
+          - 3 + d]*Num[4 + 7*u]*m2*u^(-2)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,-1,1,0]*gs^4*sqrtzu * ( 1/2*Num[ - 2 + d]*
+         Num[ - 3 + d]*Num[ - 24 - 40*u - 4*u*z - 8*u^2 + 2*d*u*z + d*
+         u^2]*m2*u^(-3)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,-1,1,0]*gs^4*Nc^2*sqrtziu * (  - Num[ - 2
+          + d]*Num[ - 3 + d]*Num[4 + 7*u]*m2*u^(-2)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,-1,1,0]*gs^4*Nc^2*sqrtzu * (  - 1/2*Num[ - 
+         2 + d]*Num[ - 3 + d]*Num[ - 24 - 40*u - 4*u*z - 8*u^2 + 2*d*u*
+         z + d*u^2]*m2*u^(-3)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,-1,1,1]*gs^4*sqrtziu * ( Num[ - 2 + d]*Num[
+          - 3 + d]*Num[ - 4 + z]*m2^2*u^(-1)*tag*z^(-2) )
+
+       + INT[topo18,1,1,1,1,-1,1,1]*gs^4*sqrtzu * (  - 1/2*Num[ - 2 + d
+         ]*Num[ - 3 + d]*Num[ - 16 + 12*z - 4*u + 4*u*z + d*u*z]*m2^2*
+         u^(-2)*tag*z^(-2) )
+
+       + INT[topo18,1,1,1,1,-1,1,1]*gs^4*Nc^2*sqrtziu * (  - Num[ - 2
+          + d]*Num[ - 3 + d]*Num[ - 4 + z]*m2^2*u^(-1)*tag*z^(-2) )
+
+       + INT[topo18,1,1,1,1,-1,1,1]*gs^4*Nc^2*sqrtzu * ( 1/2*Num[ - 2
+          + d]*Num[ - 3 + d]*Num[ - 16 + 12*z - 4*u + 4*u*z + d*u*z]*
+         m2^2*u^(-2)*tag*z^(-2) )
+
+       + INT[topo18,1,1,1,1,-1,1,2]*gs^4*sqrtzu * ( 4*Num[1 + 2*u]*Num[
+          - 2 + d]*Num[ - 3 + d]*m2^3*u^(-2)*tag*z^(-2) )
+
+       + INT[topo18,1,1,1,1,-1,1,2]*gs^4*Nc^2*sqrtzu * (  - 4*Num[1 + 2
+         *u]*Num[ - 2 + d]*Num[ - 3 + d]*m2^3*u^(-2)*tag*z^(-2) )
+
+       + INT[topo18,1,1,1,1,-1,2,-2]*gs^4*sqrtziu * ( Num[ - 2 + d]*
+         Num[ - 3 + d]*u^(-2)*tag )
+
+       + INT[topo18,1,1,1,1,-1,2,-2]*gs^4*sqrtzu * (  - 3*Num[ - 2 + d]
+         *Num[ - 3 + d]*u^(-3)*tag )
+
+       + INT[topo18,1,1,1,1,-1,2,-2]*gs^4*Nc^2*sqrtziu * (  - Num[ - 2
+          + d]*Num[ - 3 + d]*u^(-2)*tag )
+
+       + INT[topo18,1,1,1,1,-1,2,-2]*gs^4*Nc^2*sqrtzu * ( 3*Num[ - 2 + 
+         d]*Num[ - 3 + d]*u^(-3)*tag )
+
+       + INT[topo18,1,1,1,1,-1,2,-1]*gs^4*sqrtziu * (  - 2*Num[1 + u]*
+         Num[ - 2 + d]*Num[ - 3 + d]*m2*u^(-2)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,-1,2,-1]*gs^4*sqrtzu * ( Num[ - 2 + d]*Num[
+          - 3 + d]*Num[6 + 7*u]*m2*u^(-3)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,-1,2,-1]*gs^4*Nc^2*sqrtziu * ( 2*Num[1 + u]
+         *Num[ - 2 + d]*Num[ - 3 + d]*m2*u^(-2)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,-1,2,-1]*gs^4*Nc^2*sqrtzu * (  - Num[ - 2
+          + d]*Num[ - 3 + d]*Num[6 + 7*u]*m2*u^(-3)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,-1,2,0]*gs^4*sqrtziu * (  - Num[ - 2 + d]*
+         Num[ - 2 + z]*Num[ - 3 + d]*m2^2*u^(-1)*tag*z^(-2) )
+
+       + INT[topo18,1,1,1,1,-1,2,0]*gs^4*sqrtzu * ( Num[ - 2 + d]*Num[
+          - 3 + d]*Num[ - 8 + 2*z - u]*m2^2*u^(-2)*tag*z^(-2) )
+
+       + INT[topo18,1,1,1,1,-1,2,0]*gs^4*Nc^2*sqrtziu * ( Num[ - 2 + d]
+         *Num[ - 2 + z]*Num[ - 3 + d]*m2^2*u^(-1)*tag*z^(-2) )
+
+       + INT[topo18,1,1,1,1,-1,2,0]*gs^4*Nc^2*sqrtzu * (  - Num[ - 2 + 
+         d]*Num[ - 3 + d]*Num[ - 8 + 2*z - u]*m2^2*u^(-2)*tag*z^(-2) )
+
+       + INT[topo18,1,1,1,1,-1,2,1]*gs^4*sqrtziu * ( 2*Num[ - 2 + d]*
+         Num[ - 3 + d]*m2^3*u^(-1)*tag*z^(-2) )
+
+       + INT[topo18,1,1,1,1,-1,2,1]*gs^4*sqrtzu * (  - Num[ - 2 + d]*
+         Num[ - 3 + d]*Num[4 + 3*u]*m2^3*u^(-2)*tag*z^(-2) )
+
+       + INT[topo18,1,1,1,1,-1,2,1]*gs^4*Nc^2*sqrtziu * (  - 2*Num[ - 2
+          + d]*Num[ - 3 + d]*m2^3*u^(-1)*tag*z^(-2) )
+
+       + INT[topo18,1,1,1,1,-1,2,1]*gs^4*Nc^2*sqrtzu * ( Num[ - 2 + d]*
+         Num[ - 3 + d]*Num[4 + 3*u]*m2^3*u^(-2)*tag*z^(-2) )
+
+       + INT[topo18,1,1,1,1,-1,2,2]*gs^4*sqrtzu * ( 4*Num[ - 2 + d]*
+         Num[ - 3 + d]*m2^4*u^(-1)*tag*z^(-3) )
+
+       + INT[topo18,1,1,1,1,-1,2,2]*gs^4*Nc^2*sqrtzu * (  - 4*Num[ - 2
+          + d]*Num[ - 3 + d]*m2^4*u^(-1)*tag*z^(-3) )
+
+       + INT[topo18,1,1,1,1,0,-2,1]*gs^4*sqrtziu * ( 1/2*Num[ - 2 + d]^
+         2*Num[ - 3 + d]*u^(-1)*tag )
+
+       + INT[topo18,1,1,1,1,0,-2,1]*gs^4*sqrtzu * ( 1/2*Num[ - 2 + d]*
+         Num[ - 3 + d]*Num[ - 2 - 4*u - 4*u^2 + d*u^2]*u^(-3)*tag )
+
+       + INT[topo18,1,1,1,1,0,-2,1]*gs^4*Nc^2*sqrtziu * (  - 1/2*Num[
+          - 2 + d]^2*Num[ - 3 + d]*u^(-1)*tag )
+
+       + INT[topo18,1,1,1,1,0,-2,1]*gs^4*Nc^2*sqrtzu * (  - 1/2*Num[ - 
+         2 + d]*Num[ - 3 + d]*Num[ - 2 - 4*u - 4*u^2 + d*u^2]*u^(-3)*
+         tag )
+
+       + INT[topo18,1,1,1,1,0,-2,2]*gs^4*sqrtziu * (  - 1/2*Num[ - 2 + 
+         d]^2*Num[ - 3 + d]*m2*u^(-1)*tag )
+
+       + INT[topo18,1,1,1,1,0,-2,2]*gs^4*sqrtzu * (  - 1/2*Num[1 + 2*u]
+         *Num[ - 2 + d]^2*Num[ - 3 + d]*m2*u^(-2)*tag )
+
+       + INT[topo18,1,1,1,1,0,-2,2]*gs^4*Nc^2*sqrtziu * ( 1/2*Num[ - 2
+          + d]^2*Num[ - 3 + d]*m2*u^(-1)*tag )
+
+       + INT[topo18,1,1,1,1,0,-2,2]*gs^4*Nc^2*sqrtzu * ( 1/2*Num[1 + 2*
+         u]*Num[ - 2 + d]^2*Num[ - 3 + d]*m2*u^(-2)*tag )
+
+       + INT[topo18,1,1,1,1,0,-1,0]*gs^4*sqrtziu * (  - 3/2*Num[ - 2 + 
+         d]^2*Num[ - 3 + d]*u^(-1)*tag )
+
+       + INT[topo18,1,1,1,1,0,-1,0]*gs^4*sqrtzu * (  - Num[ - 2 + d]*
+         Num[ - 3 + d]*Num[ - 4 - 6*u - 4*u^2 + d*u^2]*u^(-3)*tag )
+
+       + INT[topo18,1,1,1,1,0,-1,0]*gs^4*Nc^2*sqrtziu * ( 3/2*Num[ - 2
+          + d]^2*Num[ - 3 + d]*u^(-1)*tag )
+
+       + INT[topo18,1,1,1,1,0,-1,0]*gs^4*Nc^2*sqrtzu * ( Num[ - 2 + d]*
+         Num[ - 3 + d]*Num[ - 4 - 6*u - 4*u^2 + d*u^2]*u^(-3)*tag )
+
+       + INT[topo18,1,1,1,1,0,-1,1]*gs^4*sqrtziu * ( 1/2*Num[ - 2 + d]*
+         Num[ - 3 + d]*Num[4 - 6*z + 3*d*z]*m2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,0,-1,1]*gs^4*sqrtzu * ( 1/2*Num[ - 2 + d]*
+         Num[ - 3 + d]*Num[ - 4 - 12*u - 6*u*z - 6*u^2 - 8*u^2*z + 3*d*
+         u*z + d*u^2 + 4*d*u^2*z]*m2*u^(-3)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,0,-1,1]*gs^4*Nc^2*sqrtziu * (  - 1/2*Num[
+          - 2 + d]*Num[ - 3 + d]*Num[4 - 6*z + 3*d*z]*m2*u^(-1)*tag*
+         z^(-1) )
+
+       + INT[topo18,1,1,1,1,0,-1,1]*gs^4*Nc^2*sqrtzu * (  - 1/2*Num[ - 
+         2 + d]*Num[ - 3 + d]*Num[ - 4 - 12*u - 6*u*z - 6*u^2 - 8*u^2*z
+          + 3*d*u*z + d*u^2 + 4*d*u^2*z]*m2*u^(-3)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,0,-1,2]*gs^4*sqrtziu * (  - 2*Num[ - 2 + d]
+         *Num[ - 3 + d]*m2^2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,0,-1,2]*gs^4*sqrtzu * (  - Num[ - 2 + d]*
+         Num[ - 3 + d]*Num[2 + 2*u + d*u]*m2^2*u^(-2)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,0,-1,2]*gs^4*Nc^2*sqrtziu * ( 2*Num[ - 2 + 
+         d]*Num[ - 3 + d]*m2^2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,0,-1,2]*gs^4*Nc^2*sqrtzu * ( Num[ - 2 + d]*
+         Num[ - 3 + d]*Num[2 + 2*u + d*u]*m2^2*u^(-2)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,0,0,-1]*gs^4*sqrtziu * ( 3/2*Num[ - 2 + d]^
+         2*Num[ - 3 + d]*u^(-1)*tag )
+
+       + INT[topo18,1,1,1,1,0,0,-1]*gs^4*sqrtzu * ( 1/2*Num[ - 2 + d]*
+         Num[ - 3 + d]*Num[ - 12 - 12*u - 4*u^2 + d*u^2]*u^(-3)*tag )
+
+       + INT[topo18,1,1,1,1,0,0,-1]*gs^4*Nc^2*sqrtziu * (  - 3/2*Num[
+          - 2 + d]^2*Num[ - 3 + d]*u^(-1)*tag )
+
+       + INT[topo18,1,1,1,1,0,0,-1]*gs^4*Nc^2*sqrtzu * (  - 1/2*Num[ - 
+         2 + d]*Num[ - 3 + d]*Num[ - 12 - 12*u - 4*u^2 + d*u^2]*u^(-3)*
+         tag )
+
+       + INT[topo18,1,1,1,1,0,0,0]*gs^4*sqrtziu * (  - 1/2*Num[ - 2 + d
+         ]*Num[ - 3 + d]*Num[8 - 6*z + 3*d*z]*m2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,0,0,0]*gs^4*sqrtzu * (  - 1/2*Num[ - 2 + d]
+         *Num[ - 3 + d]*Num[ - 12 - 30*u - 6*u*z - 8*u^2 - 4*u^2*z + 3*
+         d*u*z + d*u^2 + 2*d*u^2*z]*m2*u^(-3)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,0,0,0]*gs^4*Nc^2*sqrtziu * ( 1/2*Num[ - 2
+          + d]*Num[ - 3 + d]*Num[8 - 6*z + 3*d*z]*m2*u^(-1)*tag*z^(-1)
+          )
+
+       + INT[topo18,1,1,1,1,0,0,0]*gs^4*Nc^2*sqrtzu * ( 1/2*Num[ - 2 + 
+         d]*Num[ - 3 + d]*Num[ - 12 - 30*u - 6*u*z - 8*u^2 - 4*u^2*z + 
+         3*d*u*z + d*u^2 + 2*d*u^2*z]*m2*u^(-3)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,0,0,1]*gs^4*sqrtziu * ( 2*Num[1 + 2*z]*Num[
+          - 2 + d]*Num[ - 3 + d]*m2^2*u^(-1)*tag*z^(-2) )
+
+       + INT[topo18,1,1,1,1,0,0,1]*gs^4*sqrtzu * ( 1/2*Num[ - 2 + d]*
+         Num[ - 3 + d]*Num[ - 8 + 10*z - 2*u + 8*u*z + 3*d*u*z]*m2^2*
+         u^(-2)*tag*z^(-2) )
+
+       + INT[topo18,1,1,1,1,0,0,1]*gs^4*Nc^2*sqrtziu * (  - 2*Num[1 + 2
+         *z]*Num[ - 2 + d]*Num[ - 3 + d]*m2^2*u^(-1)*tag*z^(-2) )
+
+       + INT[topo18,1,1,1,1,0,0,1]*gs^4*Nc^2*sqrtzu * (  - 1/2*Num[ - 2
+          + d]*Num[ - 3 + d]*Num[ - 8 + 10*z - 2*u + 8*u*z + 3*d*u*z]*
+         m2^2*u^(-2)*tag*z^(-2) )
+
+       + INT[topo18,1,1,1,1,0,0,2]*gs^4*sqrtziu * (  - 2*Num[ - 2 + d]*
+         Num[ - 3 + d]*m2^3*u^(-1)*tag*z^(-2) )
+
+       + INT[topo18,1,1,1,1,0,0,2]*gs^4*sqrtzu * (  - 2*Num[1 + 4*u]*
+         Num[ - 2 + d]*Num[ - 3 + d]*m2^3*u^(-2)*tag*z^(-2) )
+
+       + INT[topo18,1,1,1,1,0,0,2]*gs^4*Nc^2*sqrtziu * ( 2*Num[ - 2 + d
+         ]*Num[ - 3 + d]*m2^3*u^(-1)*tag*z^(-2) )
+
+       + INT[topo18,1,1,1,1,0,0,2]*gs^4*Nc^2*sqrtzu * ( 2*Num[1 + 4*u]*
+         Num[ - 2 + d]*Num[ - 3 + d]*m2^3*u^(-2)*tag*z^(-2) )
+
+       + INT[topo18,1,1,1,1,0,1,-2]*gs^4*sqrtziu * (  - 1/2*Num[ - 2 + 
+         d]^2*Num[ - 3 + d]*u^(-1)*tag )
+
+       + INT[topo18,1,1,1,1,0,1,-2]*gs^4*sqrtzu * ( 2*Num[ - 2 + d]*
+         Num[2 + u]*Num[ - 3 + d]*u^(-3)*tag )
+
+       + INT[topo18,1,1,1,1,0,1,-2]*gs^4*Nc^2*sqrtziu * ( 1/2*Num[ - 2
+          + d]^2*Num[ - 3 + d]*u^(-1)*tag )
+
+       + INT[topo18,1,1,1,1,0,1,-2]*gs^4*Nc^2*sqrtzu * (  - 2*Num[ - 2
+          + d]*Num[2 + u]*Num[ - 3 + d]*u^(-3)*tag )
+
+       + INT[topo18,1,1,1,1,0,1,-1]*gs^4*sqrtziu * ( 1/2*Num[ - 2 + d]*
+         Num[ - 3 + d]*Num[4 - 2*z + d*z]*m2*u^(-1)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,0,1,-1]*gs^4*sqrtzu * ( 1/2*Num[ - 2 + d]*
+         Num[ - 3 + d]*Num[ - 12 - 24*u - 2*u*z - 2*u^2 + d*u*z]*m2*
+         u^(-3)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,0,1,-1]*gs^4*Nc^2*sqrtziu * (  - 1/2*Num[
+          - 2 + d]*Num[ - 3 + d]*Num[4 - 2*z + d*z]*m2*u^(-1)*tag*
+         z^(-1) )
+
+       + INT[topo18,1,1,1,1,0,1,-1]*gs^4*Nc^2*sqrtzu * (  - 1/2*Num[ - 
+         2 + d]*Num[ - 3 + d]*Num[ - 12 - 24*u - 2*u*z - 2*u^2 + d*u*z]
+         *m2*u^(-3)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,0,1,0]*gs^4*sqrtziu * (  - 2*Num[1 + z]*
+         Num[ - 2 + d]*Num[ - 3 + d]*m2^2*u^(-1)*tag*z^(-2) )
+
+       + INT[topo18,1,1,1,1,0,1,0]*gs^4*sqrtzu * (  - 1/2*Num[ - 2 + d]
+         *Num[ - 3 + d]*Num[ - 16 + 8*z - 2*u + 4*u*z + d*u*z]*m2^2*
+         u^(-2)*tag*z^(-2) )
+
+       + INT[topo18,1,1,1,1,0,1,0]*gs^4*Nc^2*sqrtziu * ( 2*Num[1 + z]*
+         Num[ - 2 + d]*Num[ - 3 + d]*m2^2*u^(-1)*tag*z^(-2) )
+
+       + INT[topo18,1,1,1,1,0,1,0]*gs^4*Nc^2*sqrtzu * ( 1/2*Num[ - 2 + 
+         d]*Num[ - 3 + d]*Num[ - 16 + 8*z - 2*u + 4*u*z + d*u*z]*m2^2*
+         u^(-2)*tag*z^(-2) )
+
+       + INT[topo18,1,1,1,1,0,1,1]*gs^4*sqrtziu * ( 2*Num[ - 2 + d]*
+         Num[ - 3 + d]*m2^3*u^(-1)*tag*z^(-2) )
+
+       + INT[topo18,1,1,1,1,0,1,1]*gs^4*sqrtzu * ( Num[ - 2 + d]*Num[
+          - 3 + d]*Num[4 + 11*u]*m2^3*u^(-2)*tag*z^(-2) )
+
+       + INT[topo18,1,1,1,1,0,1,1]*gs^4*Nc^2*sqrtziu * (  - 2*Num[ - 2
+          + d]*Num[ - 3 + d]*m2^3*u^(-1)*tag*z^(-2) )
+
+       + INT[topo18,1,1,1,1,0,1,1]*gs^4*Nc^2*sqrtzu * (  - Num[ - 2 + d
+         ]*Num[ - 3 + d]*Num[4 + 11*u]*m2^3*u^(-2)*tag*z^(-2) )
+
+       + INT[topo18,1,1,1,1,0,1,2]*gs^4*sqrtzu * (  - 4*Num[ - 2 + d]*
+         Num[ - 3 + d]*m2^4*u^(-1)*tag*z^(-3) )
+
+       + INT[topo18,1,1,1,1,0,1,2]*gs^4*Nc^2*sqrtzu * ( 4*Num[ - 2 + d]
+         *Num[ - 3 + d]*m2^4*u^(-1)*tag*z^(-3) )
+
+       + INT[topo18,1,1,1,1,0,2,-3]*gs^4*sqrtzu * (  - Num[ - 2 + d]*
+         Num[ - 3 + d]*u^(-3)*tag )
+
+       + INT[topo18,1,1,1,1,0,2,-3]*gs^4*Nc^2*sqrtzu * ( Num[ - 2 + d]*
+         Num[ - 3 + d]*u^(-3)*tag )
+
+       + INT[topo18,1,1,1,1,0,2,-2]*gs^4*sqrtzu * ( Num[ - 2 + d]*Num[2
+          + 3*u]*Num[ - 3 + d]*m2*u^(-3)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,0,2,-2]*gs^4*Nc^2*sqrtzu * (  - Num[ - 2 + 
+         d]*Num[2 + 3*u]*Num[ - 3 + d]*m2*u^(-3)*tag*z^(-1) )
+
+       + INT[topo18,1,1,1,1,0,2,-1]*gs^4*sqrtzu * ( Num[ - 2 + d]*Num[
+          - 3 + d]*Num[ - 4 + z]*m2^2*u^(-2)*tag*z^(-2) )
+
+       + INT[topo18,1,1,1,1,0,2,-1]*gs^4*Nc^2*sqrtzu * (  - Num[ - 2 + 
+         d]*Num[ - 3 + d]*Num[ - 4 + z]*m2^2*u^(-2)*tag*z^(-2) )
+
+       + INT[topo18,1,1,1,1,0,2,0]*gs^4*sqrtzu * (  - Num[ - 2 + d]*
+         Num[2 + 3*u]*Num[ - 3 + d]*m2^3*u^(-2)*tag*z^(-2) )
+
+       + INT[topo18,1,1,1,1,0,2,0]*gs^4*Nc^2*sqrtzu * ( Num[ - 2 + d]*
+         Num[2 + 3*u]*Num[ - 3 + d]*m2^3*u^(-2)*tag*z^(-2) )
+
+       + INT[topo18,1,1,1,1,0,2,1]*gs^4*sqrtzu * ( 4*Num[ - 2 + d]*Num[
+          - 3 + d]*m2^4*u^(-1)*tag*z^(-3) )
+
+       + INT[topo18,1,1,1,1,0,2,1]*gs^4*Nc^2*sqrtzu * (  - 4*Num[ - 2
+          + d]*Num[ - 3 + d]*m2^4*u^(-1)*tag*z^(-3) )
+
+       + INT[topo29,1,1,1,1,-1,0,1]*gs^4*sqrtziu * (  - Num[ - 3 + d]*
+         Num[20 - 10*d + d^2]*m2*u^(-1)*tag )
+
+       + INT[topo29,1,1,1,1,-1,0,1]*gs^4*sqrtzu * (  - Num[ - 3 + d]*
+         Num[20 - 10*d + d^2]*m2*u^(-1)*tag )
+
+       + INT[topo29,1,1,1,1,-1,0,1]*gs^4*Nc^2*sqrtziu * ( Num[ - 3 + d]
+         *Num[20 - 10*d + d^2]*m2*u^(-1)*tag )
+
+       + INT[topo29,1,1,1,1,-1,0,1]*gs^4*Nc^2*sqrtzu * ( Num[ - 3 + d]*
+         Num[20 - 10*d + d^2]*m2*u^(-1)*tag )
+
+       + INT[topo29,1,1,1,1,-1,1,1]*gs^4*sqrtziu * ( Num[ - 3 + d]*Num[
+         20 - 10*d + d^2]*m2^2*u^(-1)*tag )
+
+       + INT[topo29,1,1,1,1,-1,1,1]*gs^4*sqrtzu * ( Num[ - 3 + d]*Num[
+         20 - 10*d + d^2]*m2^2*u^(-1)*tag )
+
+       + INT[topo29,1,1,1,1,-1,1,1]*gs^4*Nc^2*sqrtziu * (  - Num[ - 3
+          + d]*Num[20 - 10*d + d^2]*m2^2*u^(-1)*tag )
+
+       + INT[topo29,1,1,1,1,-1,1,1]*gs^4*Nc^2*sqrtzu * (  - Num[ - 3 + 
+         d]*Num[20 - 10*d + d^2]*m2^2*u^(-1)*tag )
+
+       + INT[topo29,1,1,1,1,0,-2,1]*gs^4*sqrtziu * ( Num[1 + u]*Num[ - 
+         3 + d]*Num[ - 8 - 6*u + 2*d + d*u]*u^(-3)*tag )
+
+       + INT[topo29,1,1,1,1,0,-2,1]*gs^4*sqrtzu * ( 1/2*Num[1 + u]*Num[
+          - 3 + d]*Num[ - 8 + 16*u + 4*d - 8*d*u + d^2*u]*u^(-3)*tag )
+
+       + INT[topo29,1,1,1,1,0,-2,1]*gs^4*Nc^2*sqrtziu * (  - Num[1 + u]
+         *Num[ - 3 + d]*Num[ - 8 - 6*u + 2*d + d*u]*u^(-3)*tag )
+
+       + INT[topo29,1,1,1,1,0,-2,1]*gs^4*Nc^2*sqrtzu * (  - 1/2*Num[1
+          + u]*Num[ - 3 + d]*Num[ - 8 + 16*u + 4*d - 8*d*u + d^2*u]*
+         u^(-3)*tag )
+
+       + INT[topo29,1,1,1,1,0,-1,0]*gs^4*sqrtziu * ( Num[ - 3 + d]*Num[
+         20 - 10*d + d^2]*u^(-1)*tag )
+
+       + INT[topo29,1,1,1,1,0,-1,0]*gs^4*sqrtzu * ( 1/2*Num[ - 1 + u]*
+         Num[ - 3 + d]*Num[20 - 10*d + d^2]*u^(-2)*tag )
+
+       + INT[topo29,1,1,1,1,0,-1,0]*gs^4*Nc^2*sqrtziu * (  - Num[ - 3
+          + d]*Num[20 - 10*d + d^2]*u^(-1)*tag )
+
+       + INT[topo29,1,1,1,1,0,-1,0]*gs^4*Nc^2*sqrtzu * (  - 1/2*Num[ - 
+         1 + u]*Num[ - 3 + d]*Num[20 - 10*d + d^2]*u^(-2)*tag )
+
+       + INT[topo29,1,1,1,1,0,-1,1]*gs^4*sqrtziu * ( Num[ - 3 + d]*Num[
+         24 + 40*u + 40*u^2 - 6*d - 8*d*u - 14*d*u^2 + d^2*u^2]*m2*
+         u^(-3)*tag )
+
+       + INT[topo29,1,1,1,1,0,-1,1]*gs^4*sqrtzu * (  - Num[ - 3 + d]*
+         Num[ - 12 + 24*u + 12*u^2 + 6*d - 12*d*u - 6*d*u^2 + 2*d^2*u
+          + d^2*u^2]*m2*u^(-3)*tag )
+
+       + INT[topo29,1,1,1,1,0,-1,1]*gs^4*Nc^2*sqrtziu * (  - Num[ - 3
+          + d]*Num[24 + 40*u + 40*u^2 - 6*d - 8*d*u - 14*d*u^2 + d^2*
+         u^2]*m2*u^(-3)*tag )
+
+       + INT[topo29,1,1,1,1,0,-1,1]*gs^4*Nc^2*sqrtzu * ( Num[ - 3 + d]*
+         Num[ - 12 + 24*u + 12*u^2 + 6*d - 12*d*u - 6*d*u^2 + 2*d^2*u
+          + d^2*u^2]*m2*u^(-3)*tag )
+
+       + INT[topo29,1,1,1,1,0,0,0]*gs^4*sqrtzu * ( Num[ - 3 + d]*Num[20
+          - 10*d + d^2]*m2*u^(-2)*tag )
+
+       + INT[topo29,1,1,1,1,0,0,0]*gs^4*Nc^2*sqrtzu * (  - Num[ - 3 + d
+         ]*Num[20 - 10*d + d^2]*m2*u^(-2)*tag )
+
+       + INT[topo29,1,1,1,1,0,0,1]*gs^4*sqrtziu * (  - Num[ - 3 + d]*
+         Num[24*z + 38*u*z - 24*u^2 + 62*u^2*z - 6*d*z - 7*d*u*z + 4*d*
+         u^2 - 25*d*u^2*z + 2*d^2*u^2*z]*m2^2*u^(-3)*tag*z^(-1) )
+
+       + INT[topo29,1,1,1,1,0,0,1]*gs^4*sqrtzu * ( 1/2*Num[ - 3 + d]*
+         Num[ - 24*z + 72*u*z - 64*u^2 + 12*d*z - 36*d*u*z + 32*d*u^2
+          + 5*d^2*u*z - 4*d^2*u^2 + d^2*u^2*z]*m2^2*u^(-3)*tag*z^(-1) )
+
+       + INT[topo29,1,1,1,1,0,0,1]*gs^4*Nc^2*sqrtziu * ( Num[ - 3 + d]*
+         Num[24*z + 38*u*z - 24*u^2 + 62*u^2*z - 6*d*z - 7*d*u*z + 4*d*
+         u^2 - 25*d*u^2*z + 2*d^2*u^2*z]*m2^2*u^(-3)*tag*z^(-1) )
+
+       + INT[topo29,1,1,1,1,0,0,1]*gs^4*Nc^2*sqrtzu * (  - 1/2*Num[ - 3
+          + d]*Num[ - 24*z + 72*u*z - 64*u^2 + 12*d*z - 36*d*u*z + 32*d
+         *u^2 + 5*d^2*u*z - 4*d^2*u^2 + d^2*u^2*z]*m2^2*u^(-3)*tag*
+         z^(-1) )
+
+       + INT[topo29,1,1,1,1,0,1,0]*gs^4*sqrtziu * (  - Num[ - 3 + d]*
+         Num[20 - 10*d + d^2]*m2^2*u^(-1)*tag )
+
+       + INT[topo29,1,1,1,1,0,1,0]*gs^4*sqrtzu * (  - 1/2*Num[1 + u]*
+         Num[ - 3 + d]*Num[20 - 10*d + d^2]*m2^2*u^(-2)*tag )
+
+       + INT[topo29,1,1,1,1,0,1,0]*gs^4*Nc^2*sqrtziu * ( Num[ - 3 + d]*
+         Num[20 - 10*d + d^2]*m2^2*u^(-1)*tag )
+
+       + INT[topo29,1,1,1,1,0,1,0]*gs^4*Nc^2*sqrtzu * ( 1/2*Num[1 + u]*
+         Num[ - 3 + d]*Num[20 - 10*d + d^2]*m2^2*u^(-2)*tag )
+
+       + INT[topo29,1,1,1,1,0,1,1]*gs^4*sqrtziu * ( Num[ - 3 + d]*Num[8
+         *z + 12*u*z - 24*u^2 + 28*u^2*z - 2*d*z - 2*d*u*z + 4*d*u^2 - 
+         12*d*u^2*z + d^2*u^2*z]*m2^3*u^(-3)*tag*z^(-1) )
+
+       + INT[topo29,1,1,1,1,0,1,1]*gs^4*sqrtzu * (  - Num[ - 3 + d]*
+         Num[ - 4*z + 16*u*z - 32*u^2 - 4*u^2*z + 2*d*z - 8*d*u*z + 16*
+         d*u^2 + 2*d*u^2*z + d^2*u*z - 2*d^2*u^2]*m2^3*u^(-3)*tag*
+         z^(-1) )
+
+       + INT[topo29,1,1,1,1,0,1,1]*gs^4*Nc^2*sqrtziu * (  - Num[ - 3 + 
+         d]*Num[8*z + 12*u*z - 24*u^2 + 28*u^2*z - 2*d*z - 2*d*u*z + 4*
+         d*u^2 - 12*d*u^2*z + d^2*u^2*z]*m2^3*u^(-3)*tag*z^(-1) )
+
+       + INT[topo29,1,1,1,1,0,1,1]*gs^4*Nc^2*sqrtzu * ( Num[ - 3 + d]*
+         Num[ - 4*z + 16*u*z - 32*u^2 - 4*u^2*z + 2*d*z - 8*d*u*z + 16*
+         d*u^2 + 2*d*u^2*z + d^2*u*z - 2*d^2*u^2]*m2^3*u^(-3)*tag*
+         z^(-1) )
+
+       + INT[topo29,1,1,1,1,1,-3,1]*gs^4*sqrtziu * (  - Num[1 + u]*Num[
+          - 2 + d]*Num[2 + u]*Num[ - 3 + d]*u^(-3)*tag )
+
+       + INT[topo29,1,1,1,1,1,-3,1]*gs^4*sqrtzu * ( Num[1 + u]*Num[ - 2
+          + d]*Num[2 + u]*Num[ - 3 + d]*u^(-4)*tag )
+
+       + INT[topo29,1,1,1,1,1,-3,1]*gs^4*Nc^2*sqrtziu * ( Num[1 + u]*
+         Num[ - 2 + d]*Num[2 + u]*Num[ - 3 + d]*u^(-3)*tag )
+
+       + INT[topo29,1,1,1,1,1,-3,1]*gs^4*Nc^2*sqrtzu * (  - Num[1 + u]*
+         Num[ - 2 + d]*Num[2 + u]*Num[ - 3 + d]*u^(-4)*tag )
+
+       + INT[topo29,1,1,1,1,1,-2,0]*gs^4*sqrtziu * (  - Num[ - 3 + d]*
+         Num[ - 16 - 18*u + 20*u^2 + 4*d + 5*d*u - 10*d*u^2 + d^2*u^2]*
+         u^(-3)*tag )
+
+       + INT[topo29,1,1,1,1,1,-2,0]*gs^4*sqrtzu * ( 1/2*Num[ - 3 + d]*
+         Num[8 + 32*u - 4*d - 16*d*u + d^2*u]*u^(-3)*tag )
+
+       + INT[topo29,1,1,1,1,1,-2,0]*gs^4*Nc^2*sqrtziu * ( Num[ - 3 + d]
+         *Num[ - 16 - 18*u + 20*u^2 + 4*d + 5*d*u - 10*d*u^2 + d^2*u^2]
+         *u^(-3)*tag )
+
+       + INT[topo29,1,1,1,1,1,-2,0]*gs^4*Nc^2*sqrtzu * (  - 1/2*Num[ - 
+         3 + d]*Num[8 + 32*u - 4*d - 16*d*u + d^2*u]*u^(-3)*tag )
+
+       + INT[topo29,1,1,1,1,1,-2,1]*gs^4*sqrtziu * ( Num[ - 3 + d]*Num[
+          - 16*z - 12*u - 22*u*z - 10*u^2 - 10*u^2*z + 8*d*z + 2*d*u + 
+         11*d*u*z + d*u^2 + 5*d*u^2*z]*m2*u^(-3)*tag*z^(-1) )
+
+       + INT[topo29,1,1,1,1,1,-2,1]*gs^4*sqrtzu * (  - 1/2*Num[ - 3 + d
+         ]*Num[ - 32*z + 16*u - 44*u*z + 28*u^2 - 20*u^2*z - 12*u^3 + 
+         16*d*z - 8*d*u + 22*d*u*z - 14*d*u^2 + 10*d*u^2*z + 6*d*u^3 - 
+         d^2*u^3]*m2*u^(-4)*tag*z^(-1) )
+
+       + INT[topo29,1,1,1,1,1,-2,1]*gs^4*Nc^2*sqrtziu * (  - Num[ - 3
+          + d]*Num[ - 16*z - 12*u - 22*u*z - 10*u^2 - 10*u^2*z + 8*d*z
+          + 2*d*u + 11*d*u*z + d*u^2 + 5*d*u^2*z]*m2*u^(-3)*tag*z^(-1)
+          )
+
+       + INT[topo29,1,1,1,1,1,-2,1]*gs^4*Nc^2*sqrtzu * ( 1/2*Num[ - 3
+          + d]*Num[ - 32*z + 16*u - 44*u*z + 28*u^2 - 20*u^2*z - 12*u^3
+          + 16*d*z - 8*d*u + 22*d*u*z - 14*d*u^2 + 10*d*u^2*z + 6*d*u^3
+          - d^2*u^3]*m2*u^(-4)*tag*z^(-1) )
+
+       + INT[topo29,1,1,1,1,1,-1,-1]*gs^4*sqrtziu * (  - Num[ - 3 + d]*
+         Num[20 - 10*d + d^2]*u^(-1)*tag )
+
+       + INT[topo29,1,1,1,1,1,-1,-1]*gs^4*sqrtzu * ( 1/2*Num[ - 3 + d]*
+         Num[20 - 10*d + d^2]*u^(-2)*tag )
+
+       + INT[topo29,1,1,1,1,1,-1,-1]*gs^4*Nc^2*sqrtziu * ( Num[ - 3 + d
+         ]*Num[20 - 10*d + d^2]*u^(-1)*tag )
+
+       + INT[topo29,1,1,1,1,1,-1,-1]*gs^4*Nc^2*sqrtzu * (  - 1/2*Num[
+          - 3 + d]*Num[20 - 10*d + d^2]*u^(-2)*tag )
+
+       + INT[topo29,1,1,1,1,1,-1,0]*gs^4*sqrtziu * ( Num[ - 3 + d]*Num[
+          - 48*z + 16*u - 50*u*z - 10*u^2 + 38*u^2*z + 12*d*z - 4*d*u
+          + 13*d*u*z + d*u^2 - 19*d*u^2*z + 2*d^2*u^2*z]*m2*u^(-3)*tag*
+         z^(-1) )
+
+       + INT[topo29,1,1,1,1,1,-1,0]*gs^4*sqrtzu * (  - Num[ - 3 + d]*
+         Num[12*z - 2*u + 36*u*z - 20*u^2 - 6*d*z + d*u - 18*d*u*z + 10
+         *d*u^2 + d^2*u*z - d^2*u^2]*m2*u^(-3)*tag*z^(-1) )
+
+       + INT[topo29,1,1,1,1,1,-1,0]*gs^4*Nc^2*sqrtziu * (  - Num[ - 3
+          + d]*Num[ - 48*z + 16*u - 50*u*z - 10*u^2 + 38*u^2*z + 12*d*z
+          - 4*d*u + 13*d*u*z + d*u^2 - 19*d*u^2*z + 2*d^2*u^2*z]*m2*
+         u^(-3)*tag*z^(-1) )
+
+       + INT[topo29,1,1,1,1,1,-1,0]*gs^4*Nc^2*sqrtzu * ( Num[ - 3 + d]*
+         Num[12*z - 2*u + 36*u*z - 20*u^2 - 6*d*z + d*u - 18*d*u*z + 10
+         *d*u^2 + d^2*u*z - d^2*u^2]*m2*u^(-3)*tag*z^(-1) )
+
+       + INT[topo29,1,1,1,1,1,-1,1]*gs^4*sqrtziu * (  - Num[ - 3 + d]*
+         Num[ - 24*z - 48*u - 30*u*z - 14*u^2 - 18*u^2*z + 12*d*z + 8*d
+         *u + 15*d*u*z - d*u^2 + 9*d*u^2*z]*m2^2*u^(-3)*tag*z^(-1) )
+
+       + INT[topo29,1,1,1,1,1,-1,1]*gs^4*sqrtzu * ( 1/2*Num[ - 3 + d]*
+         Num[ - 48*z + 48*u - 60*u*z + 104*u^2 - 36*u^2*z + 16*u^3 + 24
+         *d*z - 24*d*u + 30*d*u*z - 52*d*u^2 + 18*d*u^2*z - 8*d*u^3 - 
+         d^2*u^3]*m2^2*u^(-4)*tag*z^(-1) )
+
+       + INT[topo29,1,1,1,1,1,-1,1]*gs^4*Nc^2*sqrtziu * ( Num[ - 3 + d]
+         *Num[ - 24*z - 48*u - 30*u*z - 14*u^2 - 18*u^2*z + 12*d*z + 8*
+         d*u + 15*d*u*z - d*u^2 + 9*d*u^2*z]*m2^2*u^(-3)*tag*z^(-1) )
+
+       + INT[topo29,1,1,1,1,1,-1,1]*gs^4*Nc^2*sqrtzu * (  - 1/2*Num[ - 
+         3 + d]*Num[ - 48*z + 48*u - 60*u*z + 104*u^2 - 36*u^2*z + 16*
+         u^3 + 24*d*z - 24*d*u + 30*d*u*z - 52*d*u^2 + 18*d*u^2*z - 8*d
+         *u^3 - d^2*u^3]*m2^2*u^(-4)*tag*z^(-1) )
+
+       + INT[topo29,1,1,1,1,1,0,-1]*gs^4*sqrtziu * ( Num[ - 3 + d]*Num[
+         20 - 10*d + d^2]*m2*u^(-1)*tag )
+
+       + INT[topo29,1,1,1,1,1,0,-1]*gs^4*sqrtzu * (  - 1/2*Num[ - 3 + d
+         ]*Num[2*z - u]*Num[20 - 10*d + d^2]*m2*u^(-2)*tag*z^(-1) )
+
+       + INT[topo29,1,1,1,1,1,0,-1]*gs^4*Nc^2*sqrtziu * (  - Num[ - 3
+          + d]*Num[20 - 10*d + d^2]*m2*u^(-1)*tag )
+
+       + INT[topo29,1,1,1,1,1,0,-1]*gs^4*Nc^2*sqrtzu * ( 1/2*Num[ - 3
+          + d]*Num[2*z - u]*Num[20 - 10*d + d^2]*m2*u^(-2)*tag*z^(-1) )
+
+       + INT[topo29,1,1,1,1,1,0,0]*gs^4*sqrtziu * (  - Num[ - 3 + d]*
+         Num[ - 48*z + 32*u - 46*u*z + 2*u^2 + 16*u^2*z + 12*d*z - 8*d*
+         u + 11*d*u*z - d*u^2 - 8*d*u^2*z + d^2*u^2*z]*m2^2*u^(-3)*tag*
+         z^(-1) )
+
+       + INT[topo29,1,1,1,1,1,0,0]*gs^4*sqrtzu * ( 1/2*Num[ - 3 + d]*
+         Num[24*z - 8*u + 48*u*z - 44*u^2 - 12*d*z + 4*d*u - 24*d*u*z
+          + 22*d*u^2 + d^2*u*z - 2*d^2*u^2]*m2^2*u^(-3)*tag*z^(-1) )
+
+       + INT[topo29,1,1,1,1,1,0,0]*gs^4*Nc^2*sqrtziu * ( Num[ - 3 + d]*
+         Num[ - 48*z + 32*u - 46*u*z + 2*u^2 + 16*u^2*z + 12*d*z - 8*d*
+         u + 11*d*u*z - d*u^2 - 8*d*u^2*z + d^2*u^2*z]*m2^2*u^(-3)*tag*
+         z^(-1) )
+
+       + INT[topo29,1,1,1,1,1,0,0]*gs^4*Nc^2*sqrtzu * (  - 1/2*Num[ - 3
+          + d]*Num[24*z - 8*u + 48*u*z - 44*u^2 - 12*d*z + 4*d*u - 24*d
+         *u*z + 22*d*u^2 + d^2*u*z - 2*d^2*u^2]*m2^2*u^(-3)*tag*z^(-1)
+          )
+
+       + INT[topo29,1,1,1,1,1,0,1]*gs^4*sqrtziu * ( Num[ - 3 + d]*Num[
+          - 16*z^2 - 60*u*z - 18*u*z^2 + 24*u^2 + 4*u^2*z - 14*u^2*z^2
+          + 8*d*z^2 + 10*d*u*z + 9*d*u*z^2 - 4*d*u^2 - 6*d*u^2*z + 7*d*
+         u^2*z^2]*m2^3*u^(-3)*tag*z^(-2) )
+
+       + INT[topo29,1,1,1,1,1,0,1]*gs^4*sqrtzu * (  - Num[ - 2 + d]*
+         Num[ - 3 + d]*Num[8*z^2 - 12*u*z + 9*u*z^2 - 31*u^2*z + 7*u^2*
+         z^2 + 12*u^3 - 11*u^3*z]*m2^3*u^(-4)*tag*z^(-2) )
+
+       + INT[topo29,1,1,1,1,1,0,1]*gs^4*Nc^2*sqrtziu * (  - Num[ - 3 + 
+         d]*Num[ - 16*z^2 - 60*u*z - 18*u*z^2 + 24*u^2 + 4*u^2*z - 14*
+         u^2*z^2 + 8*d*z^2 + 10*d*u*z + 9*d*u*z^2 - 4*d*u^2 - 6*d*u^2*z
+          + 7*d*u^2*z^2]*m2^3*u^(-3)*tag*z^(-2) )
+
+       + INT[topo29,1,1,1,1,1,0,1]*gs^4*Nc^2*sqrtzu * ( Num[ - 2 + d]*
+         Num[ - 3 + d]*Num[8*z^2 - 12*u*z + 9*u*z^2 - 31*u^2*z + 7*u^2*
+         z^2 + 12*u^3 - 11*u^3*z]*m2^3*u^(-4)*tag*z^(-2) )
+
+       + INT[topo29,1,1,1,1,1,1,-1]*gs^4*sqrtzu * ( 1/2*Num[ - 3 + d]*
+         Num[z - u]*Num[20 - 10*d + d^2]*m2^2*u^(-2)*tag*z^(-1) )
+
+       + INT[topo29,1,1,1,1,1,1,-1]*gs^4*Nc^2*sqrtzu * (  - 1/2*Num[ - 
+         3 + d]*Num[z - u]*Num[20 - 10*d + d^2]*m2^2*u^(-2)*tag*z^(-1)
+          )
+
+       + INT[topo29,1,1,1,1,1,1,0]*gs^4*sqrtziu * ( Num[ - 3 + d]*Num[
+          - 16*z + 16*u - 14*u*z + 12*u^2 - 2*u^2*z + 4*d*z - 4*d*u + 3
+         *d*u*z - 2*d*u^2 + d*u^2*z]*m2^3*u^(-3)*tag*z^(-1) )
+
+       + INT[topo29,1,1,1,1,1,1,0]*gs^4*sqrtzu * ( Num[1 + u]*Num[ - 2
+          + d]*Num[ - 3 + d]*Num[2*z - u]*m2^3*u^(-3)*tag*z^(-1) )
+
+       + INT[topo29,1,1,1,1,1,1,0]*gs^4*Nc^2*sqrtziu * (  - Num[ - 3 + 
+         d]*Num[ - 16*z + 16*u - 14*u*z + 12*u^2 - 2*u^2*z + 4*d*z - 4*
+         d*u + 3*d*u*z - 2*d*u^2 + d*u^2*z]*m2^3*u^(-3)*tag*z^(-1) )
+
+       + INT[topo29,1,1,1,1,1,1,0]*gs^4*Nc^2*sqrtzu * (  - Num[1 + u]*
+         Num[ - 2 + d]*Num[ - 3 + d]*Num[2*z - u]*m2^3*u^(-3)*tag*
+         z^(-1) )
+
+       + INT[topo29,1,1,1,1,1,1,1]*gs^4*sqrtziu * (  - 2*Num[ - 3 + d]*
+         Num[ - 2*z^2 - 12*u*z - 2*u*z^2 + 12*u^2 + 4*u^2*z - 2*u^2*z^2
+          + d*z^2 + 2*d*u*z + d*u*z^2 - 2*d*u^2 - 2*d*u^2*z + d*u^2*z^2
+         ]*m2^4*u^(-3)*tag*z^(-2) )
+
+       + INT[topo29,1,1,1,1,1,1,1]*gs^4*sqrtzu * ( 2*Num[ - 2 + d]*Num[
+          - 3 + d]*Num[z^2 - 2*u*z + u*z^2 - 6*u^2*z + u^2*z^2 + 6*u^3
+          - 2*u^3*z]*m2^4*u^(-4)*tag*z^(-2) )
+
+       + INT[topo29,1,1,1,1,1,1,1]*gs^4*Nc^2*sqrtziu * ( 2*Num[ - 3 + d
+         ]*Num[ - 2*z^2 - 12*u*z - 2*u*z^2 + 12*u^2 + 4*u^2*z - 2*u^2*
+         z^2 + d*z^2 + 2*d*u*z + d*u*z^2 - 2*d*u^2 - 2*d*u^2*z + d*u^2*
+         z^2]*m2^4*u^(-3)*tag*z^(-2) )
+
+       + INT[topo29,1,1,1,1,1,1,1]*gs^4*Nc^2*sqrtzu * (  - 2*Num[ - 2
+          + d]*Num[ - 3 + d]*Num[z^2 - 2*u*z + u*z^2 - 6*u^2*z + u^2*
+         z^2 + 6*u^3 - 2*u^3*z]*m2^4*u^(-4)*tag*z^(-2) )
+
+       + INT[topo29,1,1,1,1,2,-3,0]*gs^4*sqrtziu * ( Num[ - 2 + d]*Num[
+         2 + 3*u]*Num[ - 3 + d]*u^(-3)*tag )
+
+       + INT[topo29,1,1,1,1,2,-3,0]*gs^4*sqrtzu * (  - Num[ - 2 + d]*
+         Num[2 + 3*u]*Num[ - 3 + d]*u^(-4)*tag )
+
+       + INT[topo29,1,1,1,1,2,-3,0]*gs^4*Nc^2*sqrtziu * (  - Num[ - 2
+          + d]*Num[2 + 3*u]*Num[ - 3 + d]*u^(-3)*tag )
+
+       + INT[topo29,1,1,1,1,2,-3,0]*gs^4*Nc^2*sqrtzu * ( Num[ - 2 + d]*
+         Num[2 + 3*u]*Num[ - 3 + d]*u^(-4)*tag )
+
+       + INT[topo29,1,1,1,1,2,-3,1]*gs^4*sqrtziu * (  - Num[ - 2 + d]*
+         Num[2 + u]*Num[ - 3 + d]*m2*u^(-2)*tag*z^(-1) )
+
+       + INT[topo29,1,1,1,1,2,-3,1]*gs^4*sqrtzu * ( Num[ - 2 + d]*Num[2
+          + u]*Num[ - 3 + d]*m2*u^(-3)*tag*z^(-1) )
+
+       + INT[topo29,1,1,1,1,2,-3,1]*gs^4*Nc^2*sqrtziu * ( Num[ - 2 + d]
+         *Num[2 + u]*Num[ - 3 + d]*m2*u^(-2)*tag*z^(-1) )
+
+       + INT[topo29,1,1,1,1,2,-3,1]*gs^4*Nc^2*sqrtzu * (  - Num[ - 2 + 
+         d]*Num[2 + u]*Num[ - 3 + d]*m2*u^(-3)*tag*z^(-1) )
+
+       + INT[topo29,1,1,1,1,2,-2,-1]*gs^4*sqrtziu * ( 2*Num[ - 3 + d]*
+         Num[ - 4 - 2*u + d + d*u]*u^(-3)*tag )
+
+       + INT[topo29,1,1,1,1,2,-2,-1]*gs^4*Nc^2*sqrtziu * (  - 2*Num[ - 
+         3 + d]*Num[ - 4 - 2*u + d + d*u]*u^(-3)*tag )
+
+       + INT[topo29,1,1,1,1,2,-2,0]*gs^4*sqrtziu * (  - Num[ - 3 + d]*
+         Num[ - 16*z + 16*u - 22*u*z + 2*u^2 + 8*d*z - 4*d*u + 11*d*u*z
+          - d*u^2]*m2*u^(-3)*tag*z^(-1) )
+
+       + INT[topo29,1,1,1,1,2,-2,0]*gs^4*sqrtzu * ( Num[ - 2 + d]*Num[
+          - 3 + d]*Num[8*z - 6*u + 11*u*z - 6*u^2]*m2*u^(-4)*tag*z^(-1)
+          )
+
+       + INT[topo29,1,1,1,1,2,-2,0]*gs^4*Nc^2*sqrtziu * ( Num[ - 3 + d]
+         *Num[ - 16*z + 16*u - 22*u*z + 2*u^2 + 8*d*z - 4*d*u + 11*d*u*
+         z - d*u^2]*m2*u^(-3)*tag*z^(-1) )
+
+       + INT[topo29,1,1,1,1,2,-2,0]*gs^4*Nc^2*sqrtzu * (  - Num[ - 2 + 
+         d]*Num[ - 3 + d]*Num[8*z - 6*u + 11*u*z - 6*u^2]*m2*u^(-4)*tag
+         *z^(-1) )
+
+       + INT[topo29,1,1,1,1,2,-2,1]*gs^4*sqrtziu * ( 2*Num[ - 3 + d]*
+         Num[ - 10*z - 2*u - 4*u*z + 5*d*z + 2*d*u*z]*m2^2*u^(-2)*tag*
+         z^(-2) )
+
+       + INT[topo29,1,1,1,1,2,-2,1]*gs^4*sqrtzu * (  - Num[ - 2 + d]*
+         Num[ - 3 + d]*Num[10*z - 4*u + 4*u*z - u^2]*m2^2*u^(-3)*tag*
+         z^(-2) )
+
+       + INT[topo29,1,1,1,1,2,-2,1]*gs^4*Nc^2*sqrtziu * (  - 2*Num[ - 3
+          + d]*Num[ - 10*z - 2*u - 4*u*z + 5*d*z + 2*d*u*z]*m2^2*u^(-2)
+         *tag*z^(-2) )
+
+       + INT[topo29,1,1,1,1,2,-2,1]*gs^4*Nc^2*sqrtzu * ( Num[ - 2 + d]*
+         Num[ - 3 + d]*Num[10*z - 4*u + 4*u*z - u^2]*m2^2*u^(-3)*tag*
+         z^(-2) )
+
+       + INT[topo29,1,1,1,1,2,-1,-1]*gs^4*sqrtziu * (  - Num[ - 3 + d]*
+         Num[ - 24*z + 16*u - 10*u*z + 4*u^2 + 6*d*z - 4*d*u + 5*d*u*z
+          - 2*d*u^2]*m2*u^(-3)*tag*z^(-1) )
+
+       + INT[topo29,1,1,1,1,2,-1,-1]*gs^4*sqrtzu * (  - Num[ - 2 + d]*
+         Num[ - 3 + d]*m2*u^(-2)*tag*z^(-1) )
+
+       + INT[topo29,1,1,1,1,2,-1,-1]*gs^4*Nc^2*sqrtziu * ( Num[ - 3 + d
+         ]*Num[ - 24*z + 16*u - 10*u*z + 4*u^2 + 6*d*z - 4*d*u + 5*d*u*
+         z - 2*d*u^2]*m2*u^(-3)*tag*z^(-1) )
+
+       + INT[topo29,1,1,1,1,2,-1,-1]*gs^4*Nc^2*sqrtzu * ( Num[ - 2 + d]
+         *Num[ - 3 + d]*m2*u^(-2)*tag*z^(-1) )
+
+       + INT[topo29,1,1,1,1,2,-1,0]*gs^4*sqrtziu * ( Num[ - 3 + d]*Num[
+          - 24*z^2 + 36*u*z - 30*u*z^2 - 12*u^2 + 6*u^2*z + 12*d*z^2 - 
+         10*d*u*z + 15*d*u*z^2 + 2*d*u^2 - 3*d*u^2*z]*m2^2*u^(-3)*tag*
+         z^(-2) )
+
+       + INT[topo29,1,1,1,1,2,-1,0]*gs^4*sqrtzu * (  - Num[ - 2 + d]*
+         Num[ - 3 + d]*Num[12*z^2 - 18*u*z + 15*u*z^2 + 4*u^2 - 18*u^2*
+         z]*m2^2*u^(-4)*tag*z^(-2) )
+
+       + INT[topo29,1,1,1,1,2,-1,0]*gs^4*Nc^2*sqrtziu * (  - Num[ - 3
+          + d]*Num[ - 24*z^2 + 36*u*z - 30*u*z^2 - 12*u^2 + 6*u^2*z + 
+         12*d*z^2 - 10*d*u*z + 15*d*u*z^2 + 2*d*u^2 - 3*d*u^2*z]*m2^2*
+         u^(-3)*tag*z^(-2) )
+
+       + INT[topo29,1,1,1,1,2,-1,0]*gs^4*Nc^2*sqrtzu * ( Num[ - 2 + d]*
+         Num[ - 3 + d]*Num[12*z^2 - 18*u*z + 15*u*z^2 + 4*u^2 - 18*u^2*
+         z]*m2^2*u^(-4)*tag*z^(-2) )
+
+       + INT[topo29,1,1,1,1,2,-1,1]*gs^4*sqrtziu * (  - Num[ - 3 + d]*
+         Num[ - 36*z + 4*u - 10*u*z + 18*d*z - 4*d*u + 5*d*u*z]*m2^3*
+         u^(-2)*tag*z^(-2) )
+
+       + INT[topo29,1,1,1,1,2,-1,1]*gs^4*sqrtzu * ( Num[ - 2 + d]*Num[
+          - 3 + d]*Num[18*z - 20*u + 5*u*z - 5*u^2]*m2^3*u^(-3)*tag*
+         z^(-2) )
+
+       + INT[topo29,1,1,1,1,2,-1,1]*gs^4*Nc^2*sqrtziu * ( Num[ - 3 + d]
+         *Num[ - 36*z + 4*u - 10*u*z + 18*d*z - 4*d*u + 5*d*u*z]*m2^3*
+         u^(-2)*tag*z^(-2) )
+
+       + INT[topo29,1,1,1,1,2,-1,1]*gs^4*Nc^2*sqrtzu * (  - Num[ - 2 + 
+         d]*Num[ - 3 + d]*Num[18*z - 20*u + 5*u*z - 5*u^2]*m2^3*u^(-3)*
+         tag*z^(-2) )
+
+       + INT[topo29,1,1,1,1,2,0,-1]*gs^4*sqrtziu * ( Num[ - 3 + d]*Num[
+          - 24*z^2 + 32*u*z - 8*u*z^2 - 8*u^2 + 6*u^2*z + 6*d*z^2 - 8*d
+         *u*z + 4*d*u*z^2 + 2*d*u^2 - 3*d*u^2*z]*m2^2*u^(-3)*tag*z^(-2)
+          )
+
+       + INT[topo29,1,1,1,1,2,0,-1]*gs^4*sqrtzu * ( Num[ - 2 + d]*Num[
+          - 3 + d]*Num[2*z - u]*m2^2*u^(-2)*tag*z^(-2) )
+
+       + INT[topo29,1,1,1,1,2,0,-1]*gs^4*Nc^2*sqrtziu * (  - Num[ - 3
+          + d]*Num[ - 24*z^2 + 32*u*z - 8*u*z^2 - 8*u^2 + 6*u^2*z + 6*d
+         *z^2 - 8*d*u*z + 4*d*u*z^2 + 2*d*u^2 - 3*d*u^2*z]*m2^2*u^(-3)*
+         tag*z^(-2) )
+
+       + INT[topo29,1,1,1,1,2,0,-1]*gs^4*Nc^2*sqrtzu * (  - Num[ - 2 + 
+         d]*Num[ - 3 + d]*Num[2*z - u]*m2^2*u^(-2)*tag*z^(-2) )
+
+       + INT[topo29,1,1,1,1,2,0,0]*gs^4*sqrtziu * (  - Num[ - 3 + d]*
+         Num[ - 16*z^2 + 24*u*z - 18*u*z^2 - 12*u^2 + 8*u^2*z + 8*d*z^2
+          - 8*d*u*z + 9*d*u*z^2 + 2*d*u^2 - 4*d*u^2*z]*m2^3*u^(-3)*tag*
+         z^(-2) )
+
+       + INT[topo29,1,1,1,1,2,0,0]*gs^4*sqrtzu * ( Num[ - 2 + d]*Num[
+          - 3 + d]*Num[8*z^2 - 18*u*z + 9*u*z^2 + 8*u^2 - 18*u^2*z + 4*
+         u^3]*m2^3*u^(-4)*tag*z^(-2) )
+
+       + INT[topo29,1,1,1,1,2,0,0]*gs^4*Nc^2*sqrtziu * ( Num[ - 3 + d]*
+         Num[ - 16*z^2 + 24*u*z - 18*u*z^2 - 12*u^2 + 8*u^2*z + 8*d*z^2
+          - 8*d*u*z + 9*d*u*z^2 + 2*d*u^2 - 4*d*u^2*z]*m2^3*u^(-3)*tag*
+         z^(-2) )
+
+       + INT[topo29,1,1,1,1,2,0,0]*gs^4*Nc^2*sqrtzu * (  - Num[ - 2 + d
+         ]*Num[ - 3 + d]*Num[8*z^2 - 18*u*z + 9*u*z^2 + 8*u^2 - 18*u^2*
+         z + 4*u^3]*m2^3*u^(-4)*tag*z^(-2) )
+
+       + INT[topo29,1,1,1,1,2,0,1]*gs^4*sqrtziu * ( 2*Num[ - 2 + d]*
+         Num[ - 3 + d]*Num[7*z - 4*u + u*z]*m2^4*u^(-2)*tag*z^(-2) )
+
+       + INT[topo29,1,1,1,1,2,0,1]*gs^4*sqrtzu * (  - 2*Num[ - 2 + d]*
+         Num[ - 3 + d]*Num[7*z^2 - 14*u*z + u*z^2 + 4*u^2 - 2*u^2*z]*
+         m2^4*u^(-3)*tag*z^(-3) )
+
+       + INT[topo29,1,1,1,1,2,0,1]*gs^4*Nc^2*sqrtziu * (  - 2*Num[ - 2
+          + d]*Num[ - 3 + d]*Num[7*z - 4*u + u*z]*m2^4*u^(-2)*tag*
+         z^(-2) )
+
+       + INT[topo29,1,1,1,1,2,0,1]*gs^4*Nc^2*sqrtzu * ( 2*Num[ - 2 + d]
+         *Num[ - 3 + d]*Num[7*z^2 - 14*u*z + u*z^2 + 4*u^2 - 2*u^2*z]*
+         m2^4*u^(-3)*tag*z^(-3) )
+
+       + INT[topo29,1,1,1,1,2,1,-1]*gs^4*sqrtziu * (  - Num[ - 3 + d]*
+         Num[z - u]*Num[ - 8*z + 8*u - 2*u*z + 2*d*z - 2*d*u + d*u*z]*
+         m2^3*u^(-3)*tag*z^(-2) )
+
+       + INT[topo29,1,1,1,1,2,1,-1]*gs^4*sqrtzu * (  - Num[ - 2 + d]*
+         Num[ - 3 + d]*Num[z - u]*m2^3*u^(-2)*tag*z^(-2) )
+
+       + INT[topo29,1,1,1,1,2,1,-1]*gs^4*Nc^2*sqrtziu * ( Num[ - 3 + d]
+         *Num[z - u]*Num[ - 8*z + 8*u - 2*u*z + 2*d*z - 2*d*u + d*u*z]*
+         m2^3*u^(-3)*tag*z^(-2) )
+
+       + INT[topo29,1,1,1,1,2,1,-1]*gs^4*Nc^2*sqrtzu * ( Num[ - 2 + d]*
+         Num[ - 3 + d]*Num[z - u]*m2^3*u^(-2)*tag*z^(-2) )
+
+       + INT[topo29,1,1,1,1,2,1,0]*gs^4*sqrtziu * ( 2*Num[1 + u]*Num[
+          - 2 + d]*Num[ - 3 + d]*Num[z - u]*m2^4*u^(-3)*tag*z^(-1) )
+
+       + INT[topo29,1,1,1,1,2,1,0]*gs^4*sqrtzu * (  - 2*Num[1 + u]*Num[
+          - 2 + d]*Num[ - 3 + d]*Num[z - u]*Num[z - 2*u]*m2^4*u^(-4)*
+         tag*z^(-2) )
+
+       + INT[topo29,1,1,1,1,2,1,0]*gs^4*Nc^2*sqrtziu * (  - 2*Num[1 + u
+         ]*Num[ - 2 + d]*Num[ - 3 + d]*Num[z - u]*m2^4*u^(-3)*tag*
+         z^(-1) )
+
+       + INT[topo29,1,1,1,1,2,1,0]*gs^4*Nc^2*sqrtzu * ( 2*Num[1 + u]*
+         Num[ - 2 + d]*Num[ - 3 + d]*Num[z - u]*Num[z - 2*u]*m2^4*
+         u^(-4)*tag*z^(-2) )
+
+       + INT[topo29,1,1,1,1,2,1,1]*gs^4*sqrtziu * (  - 4*Num[ - 2 + d]*
+         Num[ - 3 + d]*Num[z - u]*m2^5*u^(-2)*tag*z^(-2) )
+
+       + INT[topo29,1,1,1,1,2,1,1]*gs^4*sqrtzu * ( 4*Num[ - 2 + d]*Num[
+          - 3 + d]*Num[z - u]*Num[z - 2*u]*m2^5*u^(-3)*tag*z^(-3) )
+
+       + INT[topo29,1,1,1,1,2,1,1]*gs^4*Nc^2*sqrtziu * ( 4*Num[ - 2 + d
+         ]*Num[ - 3 + d]*Num[z - u]*m2^5*u^(-2)*tag*z^(-2) )
+
+       + INT[topo29,1,1,1,1,2,1,1]*gs^4*Nc^2*sqrtzu * (  - 4*Num[ - 2
+          + d]*Num[ - 3 + d]*Num[z - u]*Num[z - 2*u]*m2^5*u^(-3)*tag*
+         z^(-3) ))

@@ -21,7 +21,7 @@ id T(a1?, j1?, j1?) = 0;
 
 *Trade back T's for f's for the 3g amps
 id T(a1?,i1?,i2?)*T(a2?,i2?,i1?) = d_(a1,a2)/2;
-id T(a1?,i1?,i2?)*T(a2?,i2?,i3?)*T(a3?,i3?,i1?) = 1/4*(i_*f(a1,a2,a3)+s(a1,a2,a3));
-id T(a1?,i1?,i2?)*T(a2?,i2?,i3?)*T(a3?,i3?,i4?)*T(a4?,i4?,i1?) = 
-1/4/Nc *d_(a1,a2)*d_(a3,a4) + 1/8*(i_*f(a1,a2,a200)+s(a1,a2,a200))*(i_*f(a3,a4,a200)+s(a3,a4,a200));
+*id T(a1?,i1?,i2?)*T(a2?,i2?,i3?)*T(a3?,i3?,i1?) = 1/4*(i_*f(a1,a2,a3)+s(a1,a2,a3));
+*id T(a1?,i1?,i2?)*T(a2?,i2?,i3?)*T(a3?,i3?,i4?)*T(a4?,i4?,i1?) = 
+*1/4/Nc *d_(a1,a2)*d_(a3,a4) + 1/8*(i_*f(a1,a2,a200)+s(a1,a2,a200))*(i_*f(a3,a4,a200)+s(a3,a4,a200));
 #endprocedure

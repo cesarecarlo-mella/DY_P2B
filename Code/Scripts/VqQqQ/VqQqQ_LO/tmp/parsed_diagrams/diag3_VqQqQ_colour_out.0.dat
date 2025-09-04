@@ -1,0 +1,38 @@
+l [diag3] =  + Spin(1,p1,mu1,r1)*Spin(2,p2,mu2,q,mu95,r2)*pQuark(3, - q - r2,4
+      )*pgluon(mu1,mu2, - p1 - r1)*d_(i99,i93)*d_(i97,i91) * (  - 1/2*pol(V(
+         mu95,q))*pol(Qbar2(91,r2,i91))*pol(Qbar2(93,r1,i93))*Gv(ti)*i_*gs^2*
+         Nc^-1 )
+
+       + Spin(1,p1,mu1,r1)*Spin(2,p2,mu2,q,mu95,r2)*pQuark(3, - q - r2,4)*
+      pgluon(mu1,mu2, - p1 - r1)*d_(i99,i91)*d_(i97,i93) * ( 1/2*pol(V(mu95,q)
+         )*pol(Qbar2(91,r2,i91))*pol(Qbar2(93,r1,i93))*Gv(ti)*i_*gs^2 )
+
+       + Spin(1,p1,mu1,r1)*Spin(2,p2,mu2,q,rho1,rho2,rho3,r2)*pQuark(3, - q - 
+      r2,4)*pgluon(mu1,mu2, - p1 - r1)*d_(i99,i93)*d_(i97,i91) * (  - 1/12*
+         pol(V(mu95,q))*pol(Qbar2(91,r2,i91))*pol(Qbar2(93,r1,i93))*eps(mu95,
+         rho1,rho2,rho3)*Ga(ti)*i_*gs^2*Nc^-1 )
+
+       + Spin(1,p1,mu1,r1)*Spin(2,p2,mu2,q,rho1,rho2,rho3,r2)*pQuark(3, - q - 
+      r2,4)*pgluon(mu1,mu2, - p1 - r1)*d_(i99,i91)*d_(i97,i93) * ( 1/12*pol(V(
+         mu95,q))*pol(Qbar2(91,r2,i91))*pol(Qbar2(93,r1,i93))*eps(mu95,rho1,
+         rho2,rho3)*Ga(ti)*i_*gs^2 )
+
+       + Spin(1,p1,mu1,r1)*Spin(2,p2,mu2,r2,mu95,r2)*pQuark(3, - q - r2,4)*
+      pgluon(mu1,mu2, - p1 - r1)*d_(i99,i93)*d_(i97,i91) * (  - 1/2*pol(V(mu95
+         ,q))*pol(Qbar2(91,r2,i91))*pol(Qbar2(93,r1,i93))*Gv(ti)*i_*gs^2*Nc^-1
+          )
+
+       + Spin(1,p1,mu1,r1)*Spin(2,p2,mu2,r2,mu95,r2)*pQuark(3, - q - r2,4)*
+      pgluon(mu1,mu2, - p1 - r1)*d_(i99,i91)*d_(i97,i93) * ( 1/2*pol(V(mu95,q)
+         )*pol(Qbar2(91,r2,i91))*pol(Qbar2(93,r1,i93))*Gv(ti)*i_*gs^2 )
+
+       + Spin(1,p1,mu1,r1)*Spin(2,p2,mu2,r2,rho1,rho2,rho3,r2)*pQuark(3, - q
+       - r2,4)*pgluon(mu1,mu2, - p1 - r1)*d_(i99,i93)*d_(i97,i91) * (  - 1/12*
+         pol(V(mu95,q))*pol(Qbar2(91,r2,i91))*pol(Qbar2(93,r1,i93))*eps(mu95,
+         rho1,rho2,rho3)*Ga(ti)*i_*gs^2*Nc^-1 )
+
+       + Spin(1,p1,mu1,r1)*Spin(2,p2,mu2,r2,rho1,rho2,rho3,r2)*pQuark(3, - q
+       - r2,4)*pgluon(mu1,mu2, - p1 - r1)*d_(i99,i91)*d_(i97,i93) * ( 1/12*
+         pol(V(mu95,q))*pol(Qbar2(91,r2,i91))*pol(Qbar2(93,r1,i93))*eps(mu95,
+         rho1,rho2,rho3)*Ga(ti)*i_*gs^2 );
+ 

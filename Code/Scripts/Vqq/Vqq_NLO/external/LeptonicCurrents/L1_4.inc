@@ -1,0 +1,1 @@
+l L1 = 1/6/pi_*(cga(t2)*ga(t1)+cgv(t2)*gv(t1))*(-q.q*d_(mu95,nu95)+ q(mu95)*q(nu95));
