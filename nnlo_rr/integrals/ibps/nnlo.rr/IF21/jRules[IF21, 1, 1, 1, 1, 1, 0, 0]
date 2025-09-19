@@ -1,0 +1,8 @@
+{j[IF21, (n1_)?Positive, (n2_)?Positive, (n3_)?Positive, (n4_)?Positive, 
+   (n5_)?Positive, (n6_)?NonPositive, (n7_)?NonPositive] :> 
+  Expand[j[IF21, n2, n1, n3, n4, n6, n5, 0]/
+    (-(u*j[IF21, -1, 0, 0, 0, 0, 0, 0]) - u*j[IF21, 0, -1, 0, 0, 0, 0, 0] + 
+      2*j[IF21, 0, 0, 0, -1, 0, 0, 0] + (1 + u)*j[IF21, 0, 0, 0, 0, -1, 0, 
+        0] + (1 + u)*j[IF21, 0, 0, 0, 0, 0, -1, 0] - 
+      j[IF21, 0, 0, 0, 0, 0, 0, -1] + 
+      ((m2 + m2*u)*j[IF21, 0, 0, 0, 0, 0, 0, 0])/z)^n7]}

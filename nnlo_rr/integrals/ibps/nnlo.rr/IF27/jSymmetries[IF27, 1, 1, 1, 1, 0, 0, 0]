@@ -1,0 +1,15 @@
+{{j[IF27, (n1_)?Positive, (n2_)?Positive, (n3_)?Positive, (n4_)?Positive, 
+    (n5_)?NonPositive, (n6_)?NonPositive, (n7_)?NonPositive] :> 
+   Expand[j[IF27, n1, n2, n3, n4, n5, n6, n7]]}, 
+ {j[IF27, (n1_)?Positive, (n2_)?Positive, (n3_)?Positive, (n4_)?Positive, 
+    (n5_)?NonPositive, (n6_)?NonPositive, (n7_)?NonPositive] :> 
+   Expand[j[IF27, n2, n1, n3, n4, 0, n6, 0]/
+     ((j[IF27, -1, 0, 0, 0, 0, 0, 0] + j[IF27, 0, -1, 0, 0, 0, 0, 0] + 
+        ((1 + u)*j[IF27, 0, 0, -1, 0, 0, 0, 0])/u - 
+        (2*j[IF27, 0, 0, 0, -1, 0, 0, 0])/u + 
+        ((-1 - u)*j[IF27, 0, 0, 0, 0, 0, -1, 0])/u - j[IF27, 0, 0, 0, 0, 0, 
+         0, -1] + (m2*(1 + u)*j[IF27, 0, 0, 0, 0, 0, 0, 0])/u)^n7*
+      (j[IF27, -1, 0, 0, 0, 0, 0, 0] + j[IF27, 0, -1, 0, 0, 0, 0, 0] + 
+        j[IF27, 0, 0, -1, 0, 0, 0, 0]/u - (2*j[IF27, 0, 0, 0, -1, 0, 0, 0])/
+         u - j[IF27, 0, 0, 0, 0, -1, 0, 0] - j[IF27, 0, 0, 0, 0, 0, -1, 0]/
+         u - (m2*(u - z)*j[IF27, 0, 0, 0, 0, 0, 0, 0])/(u*z))^n5)]}}

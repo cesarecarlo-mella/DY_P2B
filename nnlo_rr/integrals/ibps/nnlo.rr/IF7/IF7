@@ -1,0 +1,255 @@
+BasisDirectory[IF7] = StringDrop[DirectoryName[$Input], -1]
+IF7 /: BasisSectors[IF7] := 
+  Get[FileNameJoin[{BasisDirectory[IF7], "BasisSectors[IF7]"}]]
+IF7 /: CurrentState[IF7] := <|NewDsBasis -> True, GenerateIBP -> True, 
+   AnalyzeSectors -> True, FindSymmetries -> False|>
+IF7 /: CutDs[IF7] := {1, 1, 1, 1, 0, 0, 0}
+IF7 /: Definitions[IF7] := {Hold[MetricTensor[] === d, SetDim[d]], 
+   Hold[VecQ[p4], Declare[p4, Vector]], Hold[VecQ[p5], Declare[p5, Vector]], 
+   Hold[VecQ[p1], Declare[p1, Vector]], Hold[VecQ[p2], Declare[p2, Vector]], 
+   Hold[LiteRed`Private`ExpresionType[m2] === LiteRed`Private`ExpresionType[
+      m2], Declare[m2, LiteRed`Private`ExpresionType[m2]]], 
+   Hold[LiteRed`Private`ExpresionType[p1] === LiteRed`Private`ExpresionType[
+      p1], Declare[p1, LiteRed`Private`ExpresionType[p1]]], 
+   Hold[LiteRed`Private`ExpresionType[p2] === LiteRed`Private`ExpresionType[
+      p2], Declare[p2, LiteRed`Private`ExpresionType[p2]]], 
+   Hold[LiteRed`Private`ExpresionType[z] === LiteRed`Private`ExpresionType[
+      z], Declare[z, LiteRed`Private`ExpresionType[z]]], 
+   Hold[sp[p1, p1] === 0, sp[p1, p1] = 0], Hold[sp[p2, p2] === 0, 
+    sp[p2, p2] = 0], Hold[sp[p1, p2] === m2/(2*z), sp[p1, p2] = m2/(2*z)]}
+IF7 /: Ds[IF7] := {sp[p4, p4], sp[p5, p5], -m2 + m2/z - 2*sp[p1, p4] - 
+    2*sp[p1, p5] - 2*sp[p2, p4] - 2*sp[p2, p5] + sp[p4, p4] + 2*sp[p4, p5] + 
+    sp[p5, p5], m2/(2*z) - (m2*u)/(2*z) - sp[p1, p4] - sp[p1, p5] + 
+    u*sp[p2, p4] + u*sp[p2, p5], -2*sp[p1, p4] + sp[p4, p4], 
+   -2*sp[p2, p5] + sp[p5, p5], -2*sp[p2, p4] - 2*sp[p2, p5] + sp[p4, p4] + 
+    2*sp[p4, p5] + sp[p5, p5]}
+IF7 /: DsBasisQ[IF7] := True
+IF7 /: EMs[IF7] := {p1, p2}
+IF7 /: ExtMappedSectors[IF7] := {}
+IF7 /: ExtSectorsMappings[IF7] := {}
+IF7 /: IBP[IF7] := Get[FileNameJoin[{BasisDirectory[IF7], "IBP[IF7]"}]]
+IF7 /: Information[IF7] := (If[ValueQ[IF7::usage], 
+    Information[IF7, LongForm -> False]]; 
+   Print[Grid[Partition[Union[Replace[Replace[First /@ UpValues[IF7] /. 
+          HoldPattern -> HoldForm, 
+         {HoldPattern[HoldForm[(LiteRed`Private`f$_)[IF7, __]]] :> 
+           HoldForm[LiteRed`Private`f$[IF7, "\[Ellipsis]"]]}, {1}], 
+        {HoldPattern[LiteRed`Private`x$:HoldForm[(LiteRed`Private`f$_)[IF7, 
+              ___]]] :> Button[LiteRed`Private`x$, 
+           (SelectionMove[ButtonNotebook[], All, GeneratedCell]; 
+             NotebookDelete[]; Information[Evaluate[LiteRed`Private`x$[[1,
+                0]]], LongForm -> False]; Print[TableForm[Cases[UpValues[
+                  IF7], HoldPattern[LiteRed`Private`a$_ :> 
+                    LiteRed`Private`b$_] /; MatchQ[LiteRed`Private`a$[[1,0]], 
+                   LiteRed`Private`x$[[1,0]]]] /. HoldPattern -> 
+                 HoldForm]]) & , Appearance -> "Frameless", 
+           BaseStyle -> "InformationLink"]}, {1}]], 5], 
+     DefaultBaseStyle -> "InfoGrid"]])
+IF7 /: jRules[IF7, 1, 1, 1, 1, 0, 0, 0] := 
+  Get[FileNameJoin[{BasisDirectory[IF7], "jRules[IF7, 1, 1, 1, 1, 0, 0, 0]"}]]
+IF7 /: jRules[IF7, 1, 1, 1, 1, 0, 0, 1] := 
+  Get[FileNameJoin[{BasisDirectory[IF7], "jRules[IF7, 1, 1, 1, 1, 0, 0, 1]"}]]
+IF7 /: jRules[IF7, 1, 1, 1, 1, 0, 1, 0] := 
+  Get[FileNameJoin[{BasisDirectory[IF7], "jRules[IF7, 1, 1, 1, 1, 0, 1, 0]"}]]
+IF7 /: jRules[IF7, 1, 1, 1, 1, 0, 1, 1] := 
+  Get[FileNameJoin[{BasisDirectory[IF7], "jRules[IF7, 1, 1, 1, 1, 0, 1, 1]"}]]
+IF7 /: jRules[IF7, 1, 1, 1, 1, 1, 0, 0] := 
+  Get[FileNameJoin[{BasisDirectory[IF7], "jRules[IF7, 1, 1, 1, 1, 1, 0, 0]"}]]
+IF7 /: jRules[IF7, 1, 1, 1, 1, 1, 0, 1] := 
+  Get[FileNameJoin[{BasisDirectory[IF7], "jRules[IF7, 1, 1, 1, 1, 1, 0, 1]"}]]
+IF7 /: jRules[IF7, 1, 1, 1, 1, 1, 1, 0] := 
+  Get[FileNameJoin[{BasisDirectory[IF7], "jRules[IF7, 1, 1, 1, 1, 1, 1, 0]"}]]
+IF7 /: jRules[IF7, 1, 1, 1, 1, 1, 1, 1] := 
+  Get[FileNameJoin[{BasisDirectory[IF7], "jRules[IF7, 1, 1, 1, 1, 1, 1, 1]"}]]
+IF7 /: jsOrder[IF7] := {"np", "cp", "-ds", "-ns"}
+IF7 /: jsOrder[IF7, 0, 1, 1, 1, 0, 0, 0] := {{-1, 1, 1, 1, -1, -1, -1}, 
+   {-1, 0, 0, 0, -1, -1, -1}, {0, -1, 0, 0, 0, 0, 0}, {0, 0, -1, 0, 0, 0, 0}, 
+   {1, 0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 1, 0, 0}, {0, 0, 0, 0, 0, 1, 0}}
+IF7 /: jsOrder[IF7, 0, 1, 1, 1, 0, 0, 1] := {{-1, 1, 1, 1, -1, -1, 1}, 
+   {-1, 0, 0, 0, -1, -1, 0}, {0, 1, 1, 1, 0, 0, 0}, {0, -1, 0, 0, 0, 0, 0}, 
+   {0, 0, -1, 0, 0, 0, 0}, {1, 0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 1, 0, 0}}
+IF7 /: jsOrder[IF7, 0, 1, 1, 1, 0, 1, 0] := {{-1, 1, 1, 1, -1, 1, -1}, 
+   {-1, 0, 0, 0, -1, 0, -1}, {0, 1, 1, 1, 0, 0, 0}, {0, -1, 0, 0, 0, 0, 0}, 
+   {0, 0, -1, 0, 0, 0, 0}, {1, 0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 1, 0, 0}}
+IF7 /: jsOrder[IF7, 0, 1, 1, 1, 0, 1, 1] := {{-1, 1, 1, 1, -1, 1, 1}, 
+   {-1, 0, 0, 0, -1, 0, 0}, {0, 1, 1, 1, 0, 0, 0}, {0, -1, 0, 0, 0, 0, 0}, 
+   {0, 0, -1, 0, 0, 0, 0}, {0, 0, 0, 0, 0, -1, 0}, {1, 0, 0, 0, 0, 0, 0}}
+IF7 /: jsOrder[IF7, 0, 1, 1, 1, 1, 0, 0] := {{-1, 1, 1, 1, 1, -1, -1}, 
+   {-1, 0, 0, 0, 0, -1, -1}, {0, 1, 1, 1, 0, 0, 0}, {0, -1, 0, 0, 0, 0, 0}, 
+   {0, 0, -1, 0, 0, 0, 0}, {1, 0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 1, 0}}
+IF7 /: jsOrder[IF7, 0, 1, 1, 1, 1, 0, 1] := {{-1, 1, 1, 1, 1, -1, 1}, 
+   {-1, 0, 0, 0, 0, -1, 0}, {0, 1, 1, 1, 0, 0, 0}, {0, -1, 0, 0, 0, 0, 0}, 
+   {0, 0, -1, 0, 0, 0, 0}, {0, 0, 0, 0, -1, 0, 0}, {1, 0, 0, 0, 0, 0, 0}}
+IF7 /: jsOrder[IF7, 0, 1, 1, 1, 1, 1, 0] := {{-1, 1, 1, 1, 1, 1, -1}, 
+   {-1, 0, 0, 0, 0, 0, -1}, {0, 1, 1, 1, 0, 0, 0}, {0, -1, 0, 0, 0, 0, 0}, 
+   {0, 0, -1, 0, 0, 0, 0}, {0, 0, 0, 0, -1, 0, 0}, {1, 0, 0, 0, 0, 0, 0}}
+IF7 /: jsOrder[IF7, 0, 1, 1, 1, 1, 1, 1] := {{-1, 1, 1, 1, 1, 1, 1}, 
+   {-1, 0, 0, 0, 0, 0, 0}, {0, 1, 1, 1, 0, 0, 0}, {0, -1, 0, 0, 0, 0, 0}, 
+   {0, 0, -1, 0, 0, 0, 0}, {0, 0, 0, 0, -1, 0, 0}, {0, 0, 0, 0, 0, -1, 0}}
+IF7 /: jsOrder[IF7, 1, 0, 1, 1, 0, 0, 0] := {{1, -1, 1, 1, -1, -1, -1}, 
+   {0, -1, 0, 0, -1, -1, -1}, {-1, 0, 0, 0, 0, 0, 0}, {0, 0, -1, 0, 0, 0, 0}, 
+   {0, 1, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 1, 0, 0}, {0, 0, 0, 0, 0, 1, 0}}
+IF7 /: jsOrder[IF7, 1, 0, 1, 1, 0, 0, 1] := {{1, -1, 1, 1, -1, -1, 1}, 
+   {0, -1, 0, 0, -1, -1, 0}, {1, 0, 1, 1, 0, 0, 0}, {-1, 0, 0, 0, 0, 0, 0}, 
+   {0, 0, -1, 0, 0, 0, 0}, {0, 1, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 1, 0, 0}}
+IF7 /: jsOrder[IF7, 1, 0, 1, 1, 0, 1, 0] := {{1, -1, 1, 1, -1, 1, -1}, 
+   {0, -1, 0, 0, -1, 0, -1}, {1, 0, 1, 1, 0, 0, 0}, {-1, 0, 0, 0, 0, 0, 0}, 
+   {0, 0, -1, 0, 0, 0, 0}, {0, 1, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 1, 0, 0}}
+IF7 /: jsOrder[IF7, 1, 0, 1, 1, 0, 1, 1] := {{1, -1, 1, 1, -1, 1, 1}, 
+   {0, -1, 0, 0, -1, 0, 0}, {1, 0, 1, 1, 0, 0, 0}, {-1, 0, 0, 0, 0, 0, 0}, 
+   {0, 0, -1, 0, 0, 0, 0}, {0, 0, 0, 0, 0, -1, 0}, {0, 1, 0, 0, 0, 0, 0}}
+IF7 /: jsOrder[IF7, 1, 0, 1, 1, 1, 0, 0] := {{1, -1, 1, 1, 1, -1, -1}, 
+   {0, -1, 0, 0, 0, -1, -1}, {1, 0, 1, 1, 0, 0, 0}, {-1, 0, 0, 0, 0, 0, 0}, 
+   {0, 0, -1, 0, 0, 0, 0}, {0, 1, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 1, 0}}
+IF7 /: jsOrder[IF7, 1, 0, 1, 1, 1, 0, 1] := {{1, -1, 1, 1, 1, -1, 1}, 
+   {0, -1, 0, 0, 0, -1, 0}, {1, 0, 1, 1, 0, 0, 0}, {-1, 0, 0, 0, 0, 0, 0}, 
+   {0, 0, -1, 0, 0, 0, 0}, {0, 0, 0, 0, -1, 0, 0}, {0, 1, 0, 0, 0, 0, 0}}
+IF7 /: jsOrder[IF7, 1, 0, 1, 1, 1, 1, 0] := {{1, -1, 1, 1, 1, 1, -1}, 
+   {0, -1, 0, 0, 0, 0, -1}, {1, 0, 1, 1, 0, 0, 0}, {-1, 0, 0, 0, 0, 0, 0}, 
+   {0, 0, -1, 0, 0, 0, 0}, {0, 0, 0, 0, -1, 0, 0}, {0, 1, 0, 0, 0, 0, 0}}
+IF7 /: jsOrder[IF7, 1, 0, 1, 1, 1, 1, 1] := {{1, -1, 1, 1, 1, 1, 1}, 
+   {0, -1, 0, 0, 0, 0, 0}, {1, 0, 1, 1, 0, 0, 0}, {-1, 0, 0, 0, 0, 0, 0}, 
+   {0, 0, -1, 0, 0, 0, 0}, {0, 0, 0, 0, -1, 0, 0}, {0, 0, 0, 0, 0, -1, 0}}
+IF7 /: jsOrder[IF7, 1, 1, 0, 1, 0, 0, 0] := {{1, 1, -1, 1, -1, -1, -1}, 
+   {0, 0, -1, 0, -1, -1, -1}, {-1, 0, 0, 0, 0, 0, 0}, {0, -1, 0, 0, 0, 0, 0}, 
+   {0, 0, 1, 0, 0, 0, 0}, {0, 0, 0, 0, 1, 0, 0}, {0, 0, 0, 0, 0, 1, 0}}
+IF7 /: jsOrder[IF7, 1, 1, 0, 1, 0, 0, 1] := {{1, 1, -1, 1, -1, -1, 1}, 
+   {0, 0, -1, 0, -1, -1, 0}, {1, 1, 0, 1, 0, 0, 0}, {-1, 0, 0, 0, 0, 0, 0}, 
+   {0, -1, 0, 0, 0, 0, 0}, {0, 0, 1, 0, 0, 0, 0}, {0, 0, 0, 0, 1, 0, 0}}
+IF7 /: jsOrder[IF7, 1, 1, 0, 1, 0, 1, 0] := {{1, 1, -1, 1, -1, 1, -1}, 
+   {0, 0, -1, 0, -1, 0, -1}, {1, 1, 0, 1, 0, 0, 0}, {-1, 0, 0, 0, 0, 0, 0}, 
+   {0, -1, 0, 0, 0, 0, 0}, {0, 0, 1, 0, 0, 0, 0}, {0, 0, 0, 0, 1, 0, 0}}
+IF7 /: jsOrder[IF7, 1, 1, 0, 1, 0, 1, 1] := {{1, 1, -1, 1, -1, 1, 1}, 
+   {0, 0, -1, 0, -1, 0, 0}, {1, 1, 0, 1, 0, 0, 0}, {-1, 0, 0, 0, 0, 0, 0}, 
+   {0, -1, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, -1, 0}, {0, 0, 1, 0, 0, 0, 0}}
+IF7 /: jsOrder[IF7, 1, 1, 0, 1, 1, 0, 0] := {{1, 1, -1, 1, 1, -1, -1}, 
+   {0, 0, -1, 0, 0, -1, -1}, {1, 1, 0, 1, 0, 0, 0}, {-1, 0, 0, 0, 0, 0, 0}, 
+   {0, -1, 0, 0, 0, 0, 0}, {0, 0, 1, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 1, 0}}
+IF7 /: jsOrder[IF7, 1, 1, 0, 1, 1, 0, 1] := {{1, 1, -1, 1, 1, -1, 1}, 
+   {0, 0, -1, 0, 0, -1, 0}, {1, 1, 0, 1, 0, 0, 0}, {-1, 0, 0, 0, 0, 0, 0}, 
+   {0, -1, 0, 0, 0, 0, 0}, {0, 0, 0, 0, -1, 0, 0}, {0, 0, 1, 0, 0, 0, 0}}
+IF7 /: jsOrder[IF7, 1, 1, 0, 1, 1, 1, 0] := {{1, 1, -1, 1, 1, 1, -1}, 
+   {0, 0, -1, 0, 0, 0, -1}, {1, 1, 0, 1, 0, 0, 0}, {-1, 0, 0, 0, 0, 0, 0}, 
+   {0, -1, 0, 0, 0, 0, 0}, {0, 0, 0, 0, -1, 0, 0}, {0, 0, 1, 0, 0, 0, 0}}
+IF7 /: jsOrder[IF7, 1, 1, 1, 0, 0, 0, 0] := {{1, 1, 1, -1, -1, -1, -1}, 
+   {0, 0, 0, -1, -1, -1, -1}, {-1, 0, 0, 0, 0, 0, 0}, {0, -1, 0, 0, 0, 0, 0}, 
+   {0, 0, 0, 1, 0, 0, 0}, {0, 0, 0, 0, 1, 0, 0}, {0, 0, 0, 0, 0, 1, 0}}
+IF7 /: jsOrder[IF7, 1, 1, 1, 0, 0, 0, 1] := {{1, 1, 1, -1, -1, -1, 1}, 
+   {0, 0, 0, -1, -1, -1, 0}, {1, 1, 1, 0, 0, 0, 0}, {-1, 0, 0, 0, 0, 0, 0}, 
+   {0, -1, 0, 0, 0, 0, 0}, {0, 0, 0, 1, 0, 0, 0}, {0, 0, 0, 0, 1, 0, 0}}
+IF7 /: jsOrder[IF7, 1, 1, 1, 0, 0, 1, 0] := {{1, 1, 1, -1, -1, 1, -1}, 
+   {0, 0, 0, -1, -1, 0, -1}, {1, 1, 1, 0, 0, 0, 0}, {-1, 0, 0, 0, 0, 0, 0}, 
+   {0, -1, 0, 0, 0, 0, 0}, {0, 0, 0, 1, 0, 0, 0}, {0, 0, 0, 0, 1, 0, 0}}
+IF7 /: jsOrder[IF7, 1, 1, 1, 0, 0, 1, 1] := {{1, 1, 1, -1, -1, 1, 1}, 
+   {0, 0, 0, -1, -1, 0, 0}, {1, 1, 1, 0, 0, 0, 0}, {-1, 0, 0, 0, 0, 0, 0}, 
+   {0, -1, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, -1, 0}, {0, 0, 0, 1, 0, 0, 0}}
+IF7 /: jsOrder[IF7, 1, 1, 1, 0, 1, 0, 0] := {{1, 1, 1, -1, 1, -1, -1}, 
+   {0, 0, 0, -1, 0, -1, -1}, {1, 1, 1, 0, 0, 0, 0}, {-1, 0, 0, 0, 0, 0, 0}, 
+   {0, -1, 0, 0, 0, 0, 0}, {0, 0, 0, 1, 0, 0, 0}, {0, 0, 0, 0, 0, 1, 0}}
+IF7 /: jsOrder[IF7, 1, 1, 1, 0, 1, 0, 1] := {{1, 1, 1, -1, 1, -1, 1}, 
+   {0, 0, 0, -1, 0, -1, 0}, {1, 1, 1, 0, 0, 0, 0}, {-1, 0, 0, 0, 0, 0, 0}, 
+   {0, -1, 0, 0, 0, 0, 0}, {0, 0, 0, 0, -1, 0, 0}, {0, 0, 0, 1, 0, 0, 0}}
+IF7 /: jsOrder[IF7, 1, 1, 1, 0, 1, 1, 0] := {{1, 1, 1, -1, 1, 1, -1}, 
+   {0, 0, 0, -1, 0, 0, -1}, {1, 1, 1, 0, 0, 0, 0}, {-1, 0, 0, 0, 0, 0, 0}, 
+   {0, -1, 0, 0, 0, 0, 0}, {0, 0, 0, 0, -1, 0, 0}, {0, 0, 0, 1, 0, 0, 0}}
+IF7 /: jsOrder[IF7, 1, 1, 1, 0, 1, 1, 1] := {{1, 1, 1, -1, 1, 1, 1}, 
+   {0, 0, 0, -1, 0, 0, 0}, {1, 1, 1, 0, 0, 0, 0}, {-1, 0, 0, 0, 0, 0, 0}, 
+   {0, -1, 0, 0, 0, 0, 0}, {0, 0, 0, 0, -1, 0, 0}, {0, 0, 0, 0, 0, -1, 0}}
+IF7 /: jsOrder[IF7, 1, 1, 1, 1, 0, 0, 0] := {{1, 1, 1, 1, -1, -1, -1}, 
+   {0, 0, 0, 0, -1, -1, -1}, {-1, 0, 0, 0, 0, 0, 0}, {0, -1, 0, 0, 0, 0, 0}, 
+   {0, 0, -1, 0, 0, 0, 0}, {0, 0, 0, 0, 1, 0, 0}, {0, 0, 0, 0, 0, 1, 0}}
+IF7 /: jsOrder[IF7, 1, 1, 1, 1, 0, 0, 1] := {{1, 1, 1, 1, -1, -1, 1}, 
+   {0, 0, 0, 0, -1, -1, 0}, {1, 1, 1, 1, 0, 0, 0}, {-1, 0, 0, 0, 0, 0, 0}, 
+   {0, -1, 0, 0, 0, 0, 0}, {0, 0, -1, 0, 0, 0, 0}, {0, 0, 0, 0, 1, 0, 0}}
+IF7 /: jsOrder[IF7, 1, 1, 1, 1, 0, 1, 0] := {{1, 1, 1, 1, -1, 1, -1}, 
+   {0, 0, 0, 0, -1, 0, -1}, {1, 1, 1, 1, 0, 0, 0}, {-1, 0, 0, 0, 0, 0, 0}, 
+   {0, -1, 0, 0, 0, 0, 0}, {0, 0, -1, 0, 0, 0, 0}, {0, 0, 0, 0, 1, 0, 0}}
+IF7 /: jsOrder[IF7, 1, 1, 1, 1, 0, 1, 1] := {{1, 1, 1, 1, -1, 1, 1}, 
+   {0, 0, 0, 0, -1, 0, 0}, {1, 1, 1, 1, 0, 0, 0}, {-1, 0, 0, 0, 0, 0, 0}, 
+   {0, -1, 0, 0, 0, 0, 0}, {0, 0, -1, 0, 0, 0, 0}, {0, 0, 0, 0, 0, -1, 0}}
+IF7 /: jsOrder[IF7, 1, 1, 1, 1, 1, 0, 0] := {{1, 1, 1, 1, 1, -1, -1}, 
+   {0, 0, 0, 0, 0, -1, -1}, {1, 1, 1, 1, 0, 0, 0}, {-1, 0, 0, 0, 0, 0, 0}, 
+   {0, -1, 0, 0, 0, 0, 0}, {0, 0, -1, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 1, 0}}
+IF7 /: jsOrder[IF7, 1, 1, 1, 1, 1, 0, 1] := {{1, 1, 1, 1, 1, -1, 1}, 
+   {0, 0, 0, 0, 0, -1, 0}, {1, 1, 1, 1, 0, 0, 0}, {-1, 0, 0, 0, 0, 0, 0}, 
+   {0, -1, 0, 0, 0, 0, 0}, {0, 0, -1, 0, 0, 0, 0}, {0, 0, 0, 0, -1, 0, 0}}
+IF7 /: jsOrder[IF7, 1, 1, 1, 1, 1, 1, 0] := {{1, 1, 1, 1, 1, 1, -1}, 
+   {0, 0, 0, 0, 0, 0, -1}, {1, 1, 1, 1, 0, 0, 0}, {-1, 0, 0, 0, 0, 0, 0}, 
+   {0, -1, 0, 0, 0, 0, 0}, {0, 0, -1, 0, 0, 0, 0}, {0, 0, 0, 0, -1, 0, 0}}
+IF7 /: jsOrder[IF7, 1, 1, 1, 1, 1, 1, 1] := {{1, 1, 1, 1, 1, 1, 1}, 
+   {1, 1, 1, 1, 0, 0, 0}, {-1, 0, 0, 0, 0, 0, 0}, {0, -1, 0, 0, 0, 0, 0}, 
+   {0, 0, -1, 0, 0, 0, 0}, {0, 0, 0, 0, -1, 0, 0}, {0, 0, 0, 0, 0, -1, 0}}
+IF7 /: jSymmetries[IF7, 1, 1, 1, 1, 0, 0, 0] := 
+  Get[FileNameJoin[{BasisDirectory[IF7], 
+     "jSymmetries[IF7, 1, 1, 1, 1, 0, 0, 0]"}]]
+IF7 /: jSymmetries[IF7, 1, 1, 1, 1, 0, 0, 1] := 
+  Get[FileNameJoin[{BasisDirectory[IF7], 
+     "jSymmetries[IF7, 1, 1, 1, 1, 0, 0, 1]"}]]
+IF7 /: jSymmetries[IF7, 1, 1, 1, 1, 0, 1, 0] := 
+  Get[FileNameJoin[{BasisDirectory[IF7], 
+     "jSymmetries[IF7, 1, 1, 1, 1, 0, 1, 0]"}]]
+IF7 /: jSymmetries[IF7, 1, 1, 1, 1, 0, 1, 1] := 
+  Get[FileNameJoin[{BasisDirectory[IF7], 
+     "jSymmetries[IF7, 1, 1, 1, 1, 0, 1, 1]"}]]
+IF7 /: jSymmetries[IF7, 1, 1, 1, 1, 1, 0, 0] := 
+  Get[FileNameJoin[{BasisDirectory[IF7], 
+     "jSymmetries[IF7, 1, 1, 1, 1, 1, 0, 0]"}]]
+IF7 /: jSymmetries[IF7, 1, 1, 1, 1, 1, 0, 1] := 
+  Get[FileNameJoin[{BasisDirectory[IF7], 
+     "jSymmetries[IF7, 1, 1, 1, 1, 1, 0, 1]"}]]
+IF7 /: jSymmetries[IF7, 1, 1, 1, 1, 1, 1, 0] := 
+  Get[FileNameJoin[{BasisDirectory[IF7], 
+     "jSymmetries[IF7, 1, 1, 1, 1, 1, 1, 0]"}]]
+IF7 /: jSymmetries[IF7, 1, 1, 1, 1, 1, 1, 1] := 
+  Get[FileNameJoin[{BasisDirectory[IF7], 
+     "jSymmetries[IF7, 1, 1, 1, 1, 1, 1, 1]"}]]
+IF7 /: LI[IF7] := Get[FileNameJoin[{BasisDirectory[IF7], "LI[IF7]"}]]
+IF7 /: LMs[IF7] := {p4, p5}
+IF7 /: MappedSectors[IF7] := 
+  Get[FileNameJoin[{BasisDirectory[IF7], "MappedSectors[IF7]"}]]
+IF7 /: MIs[IF7] := Get[FileNameJoin[{BasisDirectory[IF7], "MIs[IF7]"}]]
+IF7 /: NDs[IF7] := 7
+IF7 /: NonZeroSectors[IF7] := 
+  Get[FileNameJoin[{BasisDirectory[IF7], "NonZeroSectors[IF7]"}]]
+IF7 /: Parameters[IF7] := {m2, u, z, d}
+IF7 /: PowerShifts[IF7] := {0, 0, 0, 0, 0, 0, 0}
+IF7 /: SectorsMappings[IF7] := {}
+IF7 /: SectorsPattern[IF7] := {___}
+IF7 /: SimpleSectors[IF7] := 
+  Get[FileNameJoin[{BasisDirectory[IF7], "SimpleSectors[IF7]"}]]
+IF7 /: SPs[IF7] := {sp[p1, p4], sp[p1, p5], sp[p2, p4], sp[p2, p5], 
+   sp[p4, p4], sp[p4, p5], sp[p5, p5]}
+IF7 /: SR[IF7] := Get[FileNameJoin[{BasisDirectory[IF7], "SR[IF7]"}]]
+IF7 /: Toj[IF7] := {sp[p1, p4] -> (j[IF7, -1, 0, 0, 0, 0, 0, 0] - 
+      j[IF7, 0, 0, 0, 0, -1, 0, 0])/2, sp[p1, p5] -> 
+    -1/2*(-m2 + m2*z + z*j[IF7, -1, 0, 0, 0, 0, 0, 0] + 
+       z*j[IF7, 0, 0, -1, 0, 0, 0, 0] - z*j[IF7, 0, 0, 0, 0, -1, 0, 0] - 
+       z*j[IF7, 0, 0, 0, 0, 0, 0, -1])/z, 
+   sp[p2, p4] -> -1/2*(-(m2*u) + m2*z + u*z*j[IF7, 0, -1, 0, 0, 0, 0, 0] + 
+       z*j[IF7, 0, 0, -1, 0, 0, 0, 0] - 2*z*j[IF7, 0, 0, 0, -1, 0, 0, 0] - 
+       u*z*j[IF7, 0, 0, 0, 0, 0, -1, 0] - z*j[IF7, 0, 0, 0, 0, 0, 0, -1])/
+      (u*z), sp[p2, p5] -> (j[IF7, 0, -1, 0, 0, 0, 0, 0] - 
+      j[IF7, 0, 0, 0, 0, 0, -1, 0])/2, sp[p4, p4] -> 
+    j[IF7, -1, 0, 0, 0, 0, 0, 0], sp[p4, p5] -> 
+    -1/2*(-(m2*u) + m2*z + u*z*j[IF7, -1, 0, 0, 0, 0, 0, 0] + 
+       u*z*j[IF7, 0, -1, 0, 0, 0, 0, 0] + z*j[IF7, 0, 0, -1, 0, 0, 0, 0] - 
+       2*z*j[IF7, 0, 0, 0, -1, 0, 0, 0] - z*j[IF7, 0, 0, 0, 0, 0, 0, -1] - 
+       u*z*j[IF7, 0, 0, 0, 0, 0, 0, -1])/(u*z), 
+   sp[p5, p5] -> j[IF7, 0, -1, 0, 0, 0, 0, 0]}
+IF7 /: UniqueSectors[IF7] := 
+  Get[FileNameJoin[{BasisDirectory[IF7], "UniqueSectors[IF7]"}]]
+IF7 /: ZerojRule[IF7] := LiteRed`Private`jjj:j[IF7, __] :> 
+   0 /; Module[{LiteRed`Private`jjs = 
+       Rest[List @@ jSector[LiteRed`Private`jjj]]}, 
+     Or @@ (BitOr[LiteRed`Private`jjs, #1] === #1 & ) /@ 
+       {{1, 1, 1, 0, 1, 1, 1}, {1, 1, 0, 1, 1, 1, 1}, {1, 0, 1, 1, 1, 1, 1}, 
+        {0, 1, 1, 1, 1, 1, 1}}]
+IF7 /: ZeroSectors[IF7] := 
+  Get[FileNameJoin[{BasisDirectory[IF7], "ZeroSectors[IF7]"}]]
+IF7 /: SectorsMappings[IF7, LiteRed`Private`ns$:(0 | 1)..] := 
+  Cases[SectorsMappings[IF7], HoldPattern[js[IF7, LiteRed`Private`ns$] -> _]]
+IF7::usage = "2-loop basis with 2 external momenta.\nUse Information[IF7] to \
+get basis summary.\nThis string can be redefined by setting \
+IF7::usage=\"\[Ellipsis]\""; Information[IF7, LongForm -> False]; 
+LiteRed`Private`CheckDefs[IF7]
+BasisDirectory[IF7]

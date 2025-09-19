@@ -1,0 +1,16 @@
+{{j[IF8, (n1_)?Positive, (n2_)?Positive, (n3_)?Positive, (n4_)?Positive, 
+    (n5_)?NonPositive, (n6_)?NonPositive, (n7_)?NonPositive] :> 
+   Expand[j[IF8, n1, n2, n3, n4, n5, n6, n7]]}, 
+ {j[IF8, (n1_)?Positive, (n2_)?Positive, (n3_)?Positive, (n4_)?Positive, 
+    (n5_)?NonPositive, (n6_)?NonPositive, (n7_)?NonPositive] :> 
+   Expand[j[IF8, n2, n1, n3, n4, 0, 0, n7]/
+     ((j[IF8, -1, 0, 0, 0, 0, 0, 0] + j[IF8, 0, -1, 0, 0, 0, 0, 0] + 
+        j[IF8, 0, 0, -1, 0, 0, 0, 0]/(1 + u) - 
+        (2*j[IF8, 0, 0, 0, -1, 0, 0, 0])/(1 + u) - j[IF8, 0, 0, 0, 0, 0, -1, 
+         0] + j[IF8, 0, 0, 0, 0, 0, 0, -1]/(-1 - u) + 
+        ((-(m2*u) + m2*z)*j[IF8, 0, 0, 0, 0, 0, 0, 0])/((1 + u)*z))^n6*
+      (j[IF8, -1, 0, 0, 0, 0, 0, 0] + j[IF8, 0, -1, 0, 0, 0, 0, 0] + 
+        (u*j[IF8, 0, 0, -1, 0, 0, 0, 0])/(1 + u) + 
+        (2*j[IF8, 0, 0, 0, -1, 0, 0, 0])/(1 + u) - j[IF8, 0, 0, 0, 0, -1, 0, 
+         0] - (u*j[IF8, 0, 0, 0, 0, 0, 0, -1])/(1 + u) + 
+        ((-m2 + m2*u*z)*j[IF8, 0, 0, 0, 0, 0, 0, 0])/((1 + u)*z))^n5)]}}

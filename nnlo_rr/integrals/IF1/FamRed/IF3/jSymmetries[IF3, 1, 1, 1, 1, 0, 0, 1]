@@ -1,0 +1,14 @@
+{{j[IF3, (n1_)?Positive, (n2_)?Positive, (n3_)?Positive, (n4_)?Positive, 
+    (n5_)?NonPositive, (n6_)?NonPositive, (n7_)?Positive] :> 
+   Expand[j[IF3, n1, n2, n3, n4, n5, n6, n7]]}, 
+ {j[IF3, (n1_)?Positive, (n2_)?Positive, (n3_)?Positive, (n4_)?Positive, 
+    (n5_)?NonPositive, (n6_)?NonPositive, (n7_)?Positive] :> 
+   Expand[j[IF3, n2, n1, n3, n4, 0, 0, n7]/
+     ((j[IF3, -1, 0, 0, 0, 0, 0, 0] + j[IF3, 0, -1, 0, 0, 0, 0, 0] + 
+        j[IF3, 0, 0, -1, 0, 0, 0, 0] - j[IF3, 0, 0, 0, 0, 0, -1, 0] - 
+        j[IF3, 0, 0, 0, 0, 0, 0, -1] + (m2*(-1 + z)*j[IF3, 0, 0, 0, 0, 0, 0, 
+           0])/z)^n6*(j[IF3, -1, 0, 0, 0, 0, 0, 0] + j[IF3, 0, -1, 0, 0, 0, 
+         0, 0] + u*j[IF3, 0, 0, -1, 0, 0, 0, 0] + 
+        2*j[IF3, 0, 0, 0, -1, 0, 0, 0] - j[IF3, 0, 0, 0, 0, -1, 0, 0] - 
+        u*j[IF3, 0, 0, 0, 0, 0, 0, -1] + 
+        ((-m2 + m2*u*z)*j[IF3, 0, 0, 0, 0, 0, 0, 0])/z)^n5)]}}

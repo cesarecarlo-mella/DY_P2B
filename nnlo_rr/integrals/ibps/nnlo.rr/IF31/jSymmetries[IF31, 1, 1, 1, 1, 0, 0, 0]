@@ -1,0 +1,14 @@
+{{j[IF31, (n1_)?Positive, (n2_)?Positive, (n3_)?Positive, (n4_)?Positive, 
+    (n5_)?NonPositive, (n6_)?NonPositive, (n7_)?NonPositive] :> 
+   Expand[j[IF31, n1, n2, n3, n4, n5, n6, n7]]}, 
+ {j[IF31, (n1_)?Positive, (n2_)?Positive, (n3_)?Positive, (n4_)?Positive, 
+    (n5_)?NonPositive, (n6_)?NonPositive, (n7_)?NonPositive] :> 
+   Expand[j[IF31, n2, n1, n3, n4, 0, n6, 0]/
+     ((j[IF31, -1, 0, 0, 0, 0, 0, 0] + j[IF31, 0, -1, 0, 0, 0, 0, 0] + 
+        j[IF31, 0, 0, -1, 0, 0, 0, 0] - j[IF31, 0, 0, 0, 0, 0, -1, 0] - 
+        j[IF31, 0, 0, 0, 0, 0, 0, -1] + (m2*(1 + z)*j[IF31, 0, 0, 0, 0, 0, 0, 
+           0])/z)^n7*(j[IF31, -1, 0, 0, 0, 0, 0, 0] + j[IF31, 0, -1, 0, 0, 0, 
+         0, 0] + j[IF31, 0, 0, -1, 0, 0, 0, 0]/(1 + u) - 
+        (2*j[IF31, 0, 0, 0, -1, 0, 0, 0])/(1 + u) - j[IF31, 0, 0, 0, 0, -1, 
+         0, 0] + j[IF31, 0, 0, 0, 0, 0, -1, 0]/(-1 - u) + 
+        ((-(m2*u) + m2*z)*j[IF31, 0, 0, 0, 0, 0, 0, 0])/((1 + u)*z))^n5)]}}

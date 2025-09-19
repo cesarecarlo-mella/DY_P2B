@@ -1,0 +1,142 @@
+(* Created with the Wolfram Language : www.wolfram.com *)
+{II[RSoftl[1], RSoftl[1]]/8 + II[RSoftl[1], RSoftl[2]]/16 - 
+  (3*II[RSoftl[1], RSoftl[3]])/8 + (3*II[RSoftl[1], RSoftl[7]])/16 + 
+  (3*II[RSoftl[1], RSoftl[8]])/16 - (3*II[RSoftl[1], RSoftl[9]])/8 - 
+  (3*II[RSoftl[1], RSoftl[10]])/8 + II[RSoftl[2], RSoftl[1]]/16 + 
+  II[RSoftl[2], RSoftl[2]]/32 + (3*II[RSoftl[2], RSoftl[7]])/32 + 
+  (3*II[RSoftl[2], RSoftl[8]])/32 - (3*II[RSoftl[2], RSoftl[9]])/32 - 
+  (3*II[RSoftl[2], RSoftl[10]])/32 - (3*II[RSoftl[6], RSoftl[3]])/4 - 
+  (3*II[RSoftl[6], RSoftl[9]])/8 - (3*II[RSoftl[6], RSoftl[10]])/8 + 
+  (3*II[RSoftl[7], RSoftl[1]])/16 + (3*II[RSoftl[7], RSoftl[2]])/32 + 
+  (3*II[RSoftl[7], RSoftl[3]])/8 + (9*II[RSoftl[7], RSoftl[7]])/32 + 
+  (9*II[RSoftl[7], RSoftl[8]])/32 - (3*II[RSoftl[7], RSoftl[9]])/32 - 
+  (3*II[RSoftl[7], RSoftl[10]])/32 + (3*II[RSoftl[8], RSoftl[1]])/16 + 
+  (3*II[RSoftl[8], RSoftl[2]])/32 + (3*II[RSoftl[8], RSoftl[3]])/8 + 
+  (9*II[RSoftl[8], RSoftl[7]])/32 + (9*II[RSoftl[8], RSoftl[8]])/32 - 
+  (3*II[RSoftl[8], RSoftl[9]])/32 - (3*II[RSoftl[8], RSoftl[10]])/32 - 
+  (3*II[RSoftl[9], RSoftl[1]])/16 - (3*II[RSoftl[9], RSoftl[2]])/32 - 
+  (3*II[RSoftl[9], RSoftl[3]])/8 - (9*II[RSoftl[9], RSoftl[7]])/32 - 
+  (9*II[RSoftl[9], RSoftl[8]])/32 + (3*II[RSoftl[9], RSoftl[9]])/32 + 
+  (3*II[RSoftl[9], RSoftl[10]])/32 - (3*II[RSoftl[10], RSoftl[1]])/16 - 
+  (3*II[RSoftl[10], RSoftl[2]])/32 - (3*II[RSoftl[10], RSoftl[3]])/8 - 
+  (9*II[RSoftl[10], RSoftl[7]])/32 - (9*II[RSoftl[10], RSoftl[8]])/32 + 
+  (3*II[RSoftl[10], RSoftl[9]])/32 + (3*II[RSoftl[10], RSoftl[10]])/32 + 
+  (II[RSoftl[1]]*Log[2])/2 + (II[RSoftl[2]]*Log[2])/4 + 
+  (3*II[RSoftl[7]]*Log[2])/4 + (3*II[RSoftl[8]]*Log[2])/4 - 
+  (3*II[RSoftl[9]]*Log[2])/4 - (3*II[RSoftl[10]]*Log[2])/4 + 
+  II[]*(-1/16*Pi^2 + Log[2]^2), -II[RSoftl[1], RSoftl[1]] - 
+  II[RSoftl[1], RSoftl[2]]/4 - II[RSoftl[1], RSoftl[3]]/4 - 
+  II[RSoftl[1], RSoftl[6]] - II[RSoftl[1], RSoftl[7]]/4 - 
+  II[RSoftl[1], RSoftl[8]]/4 + II[RSoftl[1], RSoftl[9]]/8 + 
+  II[RSoftl[1], RSoftl[10]]/8 - II[RSoftl[2], RSoftl[1]]/4 - 
+  II[RSoftl[2], RSoftl[2]]/16 - II[RSoftl[2], RSoftl[6]]/4 - 
+  II[RSoftl[2], RSoftl[7]]/16 - II[RSoftl[2], RSoftl[8]]/16 + 
+  II[RSoftl[2], RSoftl[9]]/16 + II[RSoftl[2], RSoftl[10]]/16 - 
+  II[RSoftl[6], RSoftl[1]] - II[RSoftl[6], RSoftl[2]]/4 - 
+  II[RSoftl[6], RSoftl[3]]/2 - II[RSoftl[6], RSoftl[6]] - 
+  II[RSoftl[6], RSoftl[7]]/4 - II[RSoftl[6], RSoftl[8]]/4 - 
+  II[RSoftl[7], RSoftl[1]]/4 - II[RSoftl[7], RSoftl[2]]/16 + 
+  II[RSoftl[7], RSoftl[3]]/4 - II[RSoftl[7], RSoftl[6]]/4 - 
+  II[RSoftl[7], RSoftl[7]]/16 - II[RSoftl[7], RSoftl[8]]/16 + 
+  (3*II[RSoftl[7], RSoftl[9]])/16 + (3*II[RSoftl[7], RSoftl[10]])/16 - 
+  II[RSoftl[8], RSoftl[1]]/4 - II[RSoftl[8], RSoftl[2]]/16 + 
+  II[RSoftl[8], RSoftl[3]]/4 - II[RSoftl[8], RSoftl[6]]/4 - 
+  II[RSoftl[8], RSoftl[7]]/16 - II[RSoftl[8], RSoftl[8]]/16 + 
+  (3*II[RSoftl[8], RSoftl[9]])/16 + (3*II[RSoftl[8], RSoftl[10]])/16 + 
+  II[RSoftl[9], RSoftl[1]]/4 + II[RSoftl[9], RSoftl[2]]/16 - 
+  II[RSoftl[9], RSoftl[3]]/4 + II[RSoftl[9], RSoftl[6]]/4 + 
+  II[RSoftl[9], RSoftl[7]]/16 + II[RSoftl[9], RSoftl[8]]/16 - 
+  (3*II[RSoftl[9], RSoftl[9]])/16 - (3*II[RSoftl[9], RSoftl[10]])/16 + 
+  II[RSoftl[10], RSoftl[1]]/4 + II[RSoftl[10], RSoftl[2]]/16 - 
+  II[RSoftl[10], RSoftl[3]]/4 + II[RSoftl[10], RSoftl[6]]/4 + 
+  II[RSoftl[10], RSoftl[7]]/16 + II[RSoftl[10], RSoftl[8]]/16 - 
+  (3*II[RSoftl[10], RSoftl[9]])/16 - (3*II[RSoftl[10], RSoftl[10]])/16 - 
+  (II[RSoftl[2]]*Log[2])/2 - (II[RSoftl[7]]*Log[2])/2 - 
+  (II[RSoftl[8]]*Log[2])/2 + (II[RSoftl[9]]*Log[2])/2 + 
+  (II[RSoftl[10]]*Log[2])/2 - II[RSoftl[1]]*Log[4] - II[RSoftl[6]]*Log[4] + 
+  (II[]*(Pi^2 - 4*Log[4]^2))/8, -4*II[RSoftl[1], RSoftl[1]] - 
+  II[RSoftl[1], RSoftl[2]] - II[RSoftl[1], RSoftl[3]]/2 - 
+  6*II[RSoftl[1], RSoftl[6]] - II[RSoftl[1], RSoftl[7]] + 
+  II[RSoftl[1], RSoftl[9]]/2 - II[RSoftl[2], RSoftl[1]] - 
+  II[RSoftl[2], RSoftl[2]]/4 - (3*II[RSoftl[2], RSoftl[6]])/2 - 
+  II[RSoftl[2], RSoftl[7]]/4 + II[RSoftl[2], RSoftl[9]]/4 - 
+  6*II[RSoftl[6], RSoftl[1]] - 3*II[RSoftl[6], RSoftl[2]] - 
+  3*II[RSoftl[6], RSoftl[3]] - 6*II[RSoftl[6], RSoftl[6]] - 
+  3*II[RSoftl[6], RSoftl[7]] - II[RSoftl[7], RSoftl[1]] - 
+  II[RSoftl[7], RSoftl[2]]/4 + II[RSoftl[7], RSoftl[3]]/2 - 
+  (3*II[RSoftl[7], RSoftl[6]])/2 - II[RSoftl[7], RSoftl[7]]/4 + 
+  (3*II[RSoftl[7], RSoftl[9]])/4 + (3*II[RSoftl[8], RSoftl[2]])/4 + 
+  (3*II[RSoftl[8], RSoftl[3]])/2 - (3*II[RSoftl[8], RSoftl[6]])/2 + 
+  (3*II[RSoftl[8], RSoftl[7]])/4 + (3*II[RSoftl[8], RSoftl[9]])/4 + 
+  II[RSoftl[9], RSoftl[1]] + II[RSoftl[9], RSoftl[2]]/4 - 
+  II[RSoftl[9], RSoftl[3]]/2 + (3*II[RSoftl[9], RSoftl[6]])/2 + 
+  II[RSoftl[9], RSoftl[7]]/4 - (3*II[RSoftl[9], RSoftl[9]])/4 - 
+  (3*II[RSoftl[10], RSoftl[2]])/4 - (3*II[RSoftl[10], RSoftl[3]])/2 + 
+  (3*II[RSoftl[10], RSoftl[6]])/2 - (3*II[RSoftl[10], RSoftl[7]])/4 - 
+  (3*II[RSoftl[10], RSoftl[9]])/4 - 12*II[RSoftl[6]]*Log[2] - 
+  4*II[RSoftl[1]]*Log[4] - II[RSoftl[2]]*Log[4] - II[RSoftl[7]]*Log[4] + 
+  II[RSoftl[9]]*Log[4] + (II[]*(Pi^2 - 4*Log[4]^2))/2, 
+ II[RSoftl[1], RSoftl[2]] + II[RSoftl[1], RSoftl[3]]/2 - 
+  2*II[RSoftl[1], RSoftl[6]] + II[RSoftl[1], RSoftl[7]] - 
+  II[RSoftl[1], RSoftl[9]]/2 + II[RSoftl[2], RSoftl[1]] + 
+  II[RSoftl[2], RSoftl[2]]/4 + II[RSoftl[2], RSoftl[3]] - 
+  II[RSoftl[2], RSoftl[6]]/2 + II[RSoftl[2], RSoftl[7]]/4 + 
+  II[RSoftl[2], RSoftl[8]] - II[RSoftl[2], RSoftl[9]]/4 - 
+  2*II[RSoftl[6], RSoftl[1]] + II[RSoftl[6], RSoftl[2]] - 
+  II[RSoftl[6], RSoftl[3]] - 2*II[RSoftl[6], RSoftl[6]] + 
+  II[RSoftl[6], RSoftl[7]] - 2*II[RSoftl[6], RSoftl[8]] + 
+  II[RSoftl[7], RSoftl[1]] + II[RSoftl[7], RSoftl[2]]/4 + 
+  II[RSoftl[7], RSoftl[3]]/2 - II[RSoftl[7], RSoftl[6]]/2 + 
+  II[RSoftl[7], RSoftl[7]]/4 + II[RSoftl[7], RSoftl[8]] - 
+  (3*II[RSoftl[7], RSoftl[9]])/4 + II[RSoftl[8], RSoftl[2]]/4 - 
+  II[RSoftl[8], RSoftl[3]]/2 - II[RSoftl[8], RSoftl[6]]/2 + 
+  II[RSoftl[8], RSoftl[7]]/4 - (3*II[RSoftl[8], RSoftl[9]])/4 - 
+  II[RSoftl[9], RSoftl[1]] - II[RSoftl[9], RSoftl[2]]/4 - 
+  II[RSoftl[9], RSoftl[3]]/2 + II[RSoftl[9], RSoftl[6]]/2 - 
+  II[RSoftl[9], RSoftl[7]]/4 - II[RSoftl[9], RSoftl[8]] + 
+  (3*II[RSoftl[9], RSoftl[9]])/4 - II[RSoftl[10], RSoftl[2]]/4 + 
+  II[RSoftl[10], RSoftl[3]]/2 + II[RSoftl[10], RSoftl[6]]/2 - 
+  II[RSoftl[10], RSoftl[7]]/4 + (3*II[RSoftl[10], RSoftl[9]])/4 - 
+  4*II[RSoftl[6]]*Log[2] + II[RSoftl[2]]*Log[4] + II[RSoftl[7]]*Log[4] - 
+  II[RSoftl[9]]*Log[4], 4*II[RSoftl[1], RSoftl[3]] + 
+  2*II[RSoftl[1], RSoftl[9]] + 2*II[RSoftl[1], RSoftl[10]] + 
+  II[RSoftl[2], RSoftl[3]]/2 + II[RSoftl[2], RSoftl[10]]/2 + 
+  6*II[RSoftl[6], RSoftl[3]] + 3*II[RSoftl[6], RSoftl[9]] + 
+  3*II[RSoftl[6], RSoftl[10]] - (7*II[RSoftl[7], RSoftl[3]])/2 - 
+  2*II[RSoftl[7], RSoftl[7]] - 2*II[RSoftl[7], RSoftl[8]] + 
+  II[RSoftl[7], RSoftl[10]]/2 - (7*II[RSoftl[8], RSoftl[3]])/2 - 
+  2*II[RSoftl[8], RSoftl[7]] - 2*II[RSoftl[8], RSoftl[8]] + 
+  II[RSoftl[8], RSoftl[9]]/2 + (7*II[RSoftl[9], RSoftl[3]])/2 + 
+  2*II[RSoftl[9], RSoftl[7]] + 2*II[RSoftl[9], RSoftl[8]] - 
+  II[RSoftl[9], RSoftl[10]]/2 + (7*II[RSoftl[10], RSoftl[3]])/2 + 
+  2*II[RSoftl[10], RSoftl[7]] + 2*II[RSoftl[10], RSoftl[8]] - 
+  II[RSoftl[10], RSoftl[9]]/2 + II[]*(Pi^2/4 - 4*Log[2]^2) - 
+  2*II[RSoftl[7]]*Log[4] - 2*II[RSoftl[8]]*Log[4] + II[RSoftl[9]]*Log[16] + 
+  II[RSoftl[10]]*Log[16], 6*II[RSoftl[1], RSoftl[1]] + 
+  2*II[RSoftl[1], RSoftl[2]] + 3*II[RSoftl[1], RSoftl[3]] + 
+  4*II[RSoftl[1], RSoftl[6]] + 2*II[RSoftl[1], RSoftl[7]] + 
+  2*II[RSoftl[1], RSoftl[8]] - II[RSoftl[1], RSoftl[9]] + 
+  2*II[RSoftl[2], RSoftl[1]] + II[RSoftl[2], RSoftl[2]]/2 + 
+  II[RSoftl[2], RSoftl[3]]/2 + 2*II[RSoftl[2], RSoftl[6]] + 
+  II[RSoftl[2], RSoftl[7]]/2 + II[RSoftl[2], RSoftl[8]]/2 - 
+  II[RSoftl[2], RSoftl[9]]/2 + 4*II[RSoftl[6], RSoftl[1]] + 
+  II[RSoftl[6], RSoftl[2]] + 4*II[RSoftl[6], RSoftl[3]] + 
+  II[RSoftl[6], RSoftl[7]] + 3*II[RSoftl[6], RSoftl[8]] + 
+  2*II[RSoftl[7], RSoftl[1]] + II[RSoftl[7], RSoftl[2]]/2 - 
+  (5*II[RSoftl[7], RSoftl[3]])/2 + 2*II[RSoftl[7], RSoftl[6]] + 
+  II[RSoftl[7], RSoftl[7]]/2 + II[RSoftl[7], RSoftl[8]]/2 - 
+  (3*II[RSoftl[7], RSoftl[9]])/2 - 2*II[RSoftl[7], RSoftl[10]] + 
+  2*II[RSoftl[8], RSoftl[1]] + II[RSoftl[8], RSoftl[2]] - 
+  (5*II[RSoftl[8], RSoftl[3]])/2 + 2*II[RSoftl[8], RSoftl[6]] + 
+  II[RSoftl[8], RSoftl[7]] - (3*II[RSoftl[8], RSoftl[9]])/2 - 
+  2*II[RSoftl[8], RSoftl[10]] - 2*II[RSoftl[9], RSoftl[1]] - 
+  II[RSoftl[9], RSoftl[2]]/2 + (5*II[RSoftl[9], RSoftl[3]])/2 - 
+  2*II[RSoftl[9], RSoftl[6]] - II[RSoftl[9], RSoftl[7]]/2 - 
+  II[RSoftl[9], RSoftl[8]]/2 + (3*II[RSoftl[9], RSoftl[9]])/2 + 
+  2*II[RSoftl[9], RSoftl[10]] - 2*II[RSoftl[10], RSoftl[1]] - 
+  II[RSoftl[10], RSoftl[2]] + (5*II[RSoftl[10], RSoftl[3]])/2 - 
+  2*II[RSoftl[10], RSoftl[6]] - II[RSoftl[10], RSoftl[7]] + 
+  (3*II[RSoftl[10], RSoftl[9]])/2 + 2*II[RSoftl[10], RSoftl[10]] - 
+  4*II[RSoftl[9]]*Log[2] + II[]*((-3*Pi^2)/4 + 12*Log[2]^2) - 
+  2*II[RSoftl[10]]*Log[4] + II[RSoftl[2]]*Log[16] + II[RSoftl[7]]*Log[16] + 
+  II[RSoftl[8]]*Log[16] + II[RSoftl[6]]*Log[256] + II[RSoftl[1]]*Log[4096]}

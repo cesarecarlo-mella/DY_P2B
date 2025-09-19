@@ -1,0 +1,4 @@
+Module[{LiteRed`Private`jsc$ = jSector[j[IF31, ##1]]}, 
+  If[MemberQ[UniqueSectors[IF31], LiteRed`Private`jsc$], 
+   DeleteCases[DeleteDuplicates[Collectj[j[IF31, ##1] - 
+       (j[IF31, ##1] /. jSymmetries @@ LiteRed`Private`jsc$)]], 0], {}]] & 

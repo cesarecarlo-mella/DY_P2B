@@ -1,0 +1,11 @@
+{{j[IF23, (n1_)?Positive, (n2_)?Positive, (n3_)?Positive, (n4_)?Positive, 
+    (n5_)?NonPositive, (n6_)?NonPositive, (n7_)?NonPositive] :> 
+   Expand[j[IF23, n1, n2, n3, n4, n5, n6, n7]]}, 
+ {j[IF23, (n1_)?Positive, (n2_)?Positive, (n3_)?Positive, (n4_)?Positive, 
+    (n5_)?NonPositive, (n6_)?NonPositive, (n7_)?NonPositive] :> 
+   Expand[j[IF23, n2, n1, n3, n4, 0, n7, n6]/
+     (j[IF23, -1, 0, 0, 0, 0, 0, 0]/(1 + u) + j[IF23, 0, -1, 0, 0, 0, 0, 0]/
+        (1 + u) + (2*j[IF23, 0, 0, 0, -1, 0, 0, 0])/(1 + u) - 
+       j[IF23, 0, 0, 0, 0, -1, 0, 0] + (u*j[IF23, 0, 0, 0, 0, 0, -1, 0])/
+        (1 + u) + (u*j[IF23, 0, 0, 0, 0, 0, 0, -1])/(1 + u) - 
+       (m2*j[IF23, 0, 0, 0, 0, 0, 0, 0])/z)^n5]}}
