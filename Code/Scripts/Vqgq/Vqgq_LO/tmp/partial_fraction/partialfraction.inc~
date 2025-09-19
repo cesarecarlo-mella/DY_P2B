@@ -1,3 +1,0 @@
-repeat;
-id Prop( - p2 - r1) = Num(1 + u)*Den(- s12 + m2*u);
-id Prop(p1 + r1) = Num(1+u)*Den(m2*u - s12);
