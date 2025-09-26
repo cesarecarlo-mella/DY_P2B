@@ -1,0 +1,8 @@
+  Digits = 30:
+
+   z = evalf(0.6803026679053625):
+
+ expression = G({-(1/(-1 + z))},1) - H({0},z) :
+
+ evalf(expression);
+quit:
