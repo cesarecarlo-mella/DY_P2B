@@ -1,8 +1,0 @@
-  Digits = 80:
-
-   z = evalf(0.2576032731040194):
-
- expression = -H({0,1},1 - z) + H({1,0},z) :
-
- evalf(expression);
-quit:
