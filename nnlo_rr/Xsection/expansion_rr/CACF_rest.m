@@ -3952,760 +3952,81 @@
        (64*(1 - 2*y*(-1 + z)^2 + 2*y^2*(-1 + z)^2 + z^2)*Log[1 - y + y*z])/z)*
       P[1 - z, 1] - (32*(1 - 2*y*(-1 + z)^2 + 2*y^2*(-1 + z)^2 + z^2)*
        P[1 - z, 2])/z) + P[1 - y, 0]*
-    (((-36*y^5*(-1 + z)^6*(-78*Sqrt[z] + 115*Sqrt[1 + y*(-1 + z)]*
-           Sqrt[y + z - y*z]) + 12*y^6*(-1 + z)^6*(-78*Sqrt[z] + 
-          115*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z]) + 
-        z^2*(36*Sqrt[z] - 90*z^(3/2) + 196*Sqrt[1 + y*(-1 + z)]*
+    (((36*y^5*(-1 + z)^6*(78*Sqrt[z] + (-115 + 16*Pi^2)*Sqrt[1 + y*(-1 + z)]*
+           Sqrt[y + z - y*z]) - 12*y^6*(-1 + z)^6*(78*Sqrt[z] + 
+          (-115 + 16*Pi^2)*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z]) + 
+        z^2*(36*Sqrt[z] - 90*z^(3/2) + 28*(7 - 3*Pi^2)*Sqrt[1 + y*(-1 + z)]*
            Sqrt[y + z - y*z] + 177*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-          193*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z]) - 
-        4*y^3*(-1 + z)^3*(504*Sqrt[z] - 1260*z^(3/2) + 1359*z^(5/2) - 
-          495*z^(7/2) - 679*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-          2161*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-          2205*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
-          687*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z]) + 
-        2*y^4*(-1 + z)^3*(1674*Sqrt[z] - 4770*z^(3/2) + 4869*z^(5/2) - 
-          1665*z^(7/2) - 2404*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-          7336*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-          7380*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
-          2412*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z]) + 
-        y*(-1 + z)*(504*z^(3/2) - 54*z^(5/2) + 288*z^(7/2) - 522*z^(9/2) - 
-          63*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
-          1033*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-          778*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
-          931*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
-          945*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
-          16*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
-        y^2*(-1 + z)*(540*Sqrt[z] - 2700*z^(3/2) + 4140*z^(5/2) - 
-          4554*z^(7/2) + 2880*z^(9/2) - 522*z^(11/2) - 
-          605*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-          4621*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-          8290*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
-          8547*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
-          4653*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
-          668*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]))*G[-1, t^2])/
+          (193 - 84*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z]) - 
+        2*y^4*(-1 + z)^3*(-1674*Sqrt[z] + 4770*z^(3/2) - 4869*z^(5/2) + 
+          1665*z^(7/2) + 4*(601 - 81*Pi^2)*Sqrt[1 + y*(-1 + z)]*
+           Sqrt[y + z - y*z] + 8*(-917 + 138*Pi^2)*Sqrt[1 + y*(-1 + z)]*z*
+           Sqrt[y + z - y*z] - 12*(-615 + 92*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^2*
+           Sqrt[y + z - y*z] + 36*(-67 + 9*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^3*
+           Sqrt[y + z - y*z]) + 4*y^3*(-1 + z)^3*(-504*Sqrt[z] + 
+          1260*z^(3/2) - 1359*z^(5/2) + 495*z^(7/2) + 7*(97 - 12*Pi^2)*
+           Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + (-2161 + 384*Pi^2)*
+           Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 3*(735 - 128*Pi^2)*
+           Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 3*(-229 + 28*Pi^2)*
+           Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z]) - 
+        y*(-1 + z)*(-504*z^(3/2) + 54*z^(5/2) - 288*z^(7/2) + 522*z^(9/2) + 
+          3*(21 - 2*Pi^2)*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
+          (1033 - 174*Pi^2)*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
+          2*(-389 + 180*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
+          (931 - 360*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
+          3*(-315 + 58*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
+          2*(-8 + 3*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) - 
+        y^2*(-1 + z)*(-540*Sqrt[z] + 2700*z^(3/2) - 4140*z^(5/2) + 
+          4554*z^(7/2) - 2880*z^(9/2) + 522*z^(11/2) + 11*(55 - 6*Pi^2)*
+           Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + (-4621 + 798*Pi^2)*
+           Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 2*(4145 - 936*Pi^2)*
+           Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 3*(-2849 + 624*Pi^2)*
+           Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 3*(1551 - 266*Pi^2)*
+           Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 2*(-334 + 33*Pi^2)*
+           Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]))*G[-1, t^2])/
       (9*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*(y + z - y*z)^(5/2)) + 
-     ((-12*y^5*(-1 + z)^6*(-42*Sqrt[z] + 67*Sqrt[1 + y*(-1 + z)]*
+     ((-12*y^5*(-1 + z)^6*(-42*Sqrt[z] + (67 + 6*Pi^2)*Sqrt[1 + y*(-1 + z)]*
            Sqrt[y + z - y*z]) + 4*y^6*(-1 + z)^6*(-42*Sqrt[z] + 
-          67*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z]) + 
-        z^2*(12*Sqrt[z] - 30*z^(3/2) + 2*Sqrt[1 + y*(-1 + z)]*
+          (67 + 6*Pi^2)*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z]) + 
+        z^2*(12*Sqrt[z] - 30*z^(3/2) + 2*(1 + 3*Pi^2)*Sqrt[1 + y*(-1 + z)]*
            Sqrt[y + z - y*z] + 66*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-          23*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z]) - 
+          (23 + 6*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z]) - 
         4*y^3*(-1 + z)^2*(-84*Sqrt[z] + 300*z^(3/2) - 465*z^(5/2) + 
-          330*z^(7/2) - 81*z^(9/2) + 155*Sqrt[1 + y*(-1 + z)]*
-           Sqrt[y + z - y*z] - 535*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-          736*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
-          487*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
-          149*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z]) + 
-        2*y^4*(-1 + z)^2*(-294*Sqrt[z] + 1140*z^(3/2) - 1725*z^(5/2) + 
-          1170*z^(7/2) - 291*z^(9/2) + 490*Sqrt[1 + y*(-1 + z)]*
-           Sqrt[y + z - y*z] - 1875*Sqrt[1 + y*(-1 + z)]*z*
-           Sqrt[y + z - y*z] + 2746*Sqrt[1 + y*(-1 + z)]*z^2*
-           Sqrt[y + z - y*z] - 1827*Sqrt[1 + y*(-1 + z)]*z^3*
-           Sqrt[y + z - y*z] + 484*Sqrt[1 + y*(-1 + z)]*z^4*
-           Sqrt[y + z - y*z]) + y*(-72*z^(3/2) + 42*z^(5/2) - 18*z^(7/2) + 
-          126*z^(9/2) - 78*z^(11/2) - 63*Sqrt[1 + y*(-1 + z)]*
-           Sqrt[y + z - y*z] + 106*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-          105*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
-          124*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
-          222*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
-          124*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
-        y^2*(-84*Sqrt[z] + 504*z^(3/2) - 1080*z^(5/2) + 1458*z^(7/2) - 
-          1278*z^(9/2) + 558*z^(11/2) - 78*z^(13/2) + 
-          239*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
-          992*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-          2017*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
-          2432*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
-          1930*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 
-          890*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] + 
-          164*Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]))*G[0, t^2])/
-      (9*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*(y + z - y*z)^(5/2)) + 
-     G[0, t]*((24*y^5*(-1 + z)^6*(-21*Sqrt[z] + 103*Sqrt[1 + y*(-1 + z)]*
-            Sqrt[y + z - y*z]) - 8*y^6*(-1 + z)^6*(-21*Sqrt[z] + 
-           103*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z]) - 
-         z^2*(12*Sqrt[z] - 30*z^(3/2) + 86*Sqrt[1 + y*(-1 + z)]*
-            Sqrt[y + z - y*z] + 147*Sqrt[1 + y*(-1 + z)]*z*
-            Sqrt[y + z - y*z] + 116*Sqrt[1 + y*(-1 + z)]*z^2*
-            Sqrt[y + z - y*z]) + 4*y^3*(-1 + z)^2*(-84*Sqrt[z] + 
-           300*z^(3/2) - 465*z^(5/2) + 330*z^(7/2) - 81*z^(9/2) + 
-           416*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
-           1675*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-           2514*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
-           1667*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
-           430*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z]) - 
-         2*y^4*(-1 + z)^2*(-294*Sqrt[z] + 1140*z^(3/2) - 1725*z^(5/2) + 
-           1170*z^(7/2) - 291*z^(9/2) + 1446*Sqrt[1 + y*(-1 + z)]*
-            Sqrt[y + z - y*z] - 5795*Sqrt[1 + y*(-1 + z)]*z*
-            Sqrt[y + z - y*z] + 8694*Sqrt[1 + y*(-1 + z)]*z^2*
-            Sqrt[y + z - y*z] - 5787*Sqrt[1 + y*(-1 + z)]*z^3*
-            Sqrt[y + z - y*z] + 1460*Sqrt[1 + y*(-1 + z)]*z^4*
-            Sqrt[y + z - y*z]) + y*z*(72*Sqrt[z] - 42*z^(3/2) + 18*z^(5/2) - 
-           126*z^(7/2) + 78*z^(9/2) - 540*Sqrt[1 + y*(-1 + z)]*
-            Sqrt[y + z - y*z] + 860*Sqrt[1 + y*(-1 + z)]*z*
-            Sqrt[y + z - y*z] - 757*Sqrt[1 + y*(-1 + z)]*z^2*
-            Sqrt[y + z - y*z] + 1042*Sqrt[1 + y*(-1 + z)]*z^3*
-            Sqrt[y + z - y*z] - 553*Sqrt[1 + y*(-1 + z)]*z^4*
-            Sqrt[y + z - y*z] - 16*Sqrt[1 + y*(-1 + z)]*z^5*
-            Sqrt[y + z - y*z]) + y^2*(84*Sqrt[z] - 504*z^(3/2) + 
-           1080*z^(5/2) - 1458*z^(7/2) + 1278*z^(9/2) - 558*z^(11/2) + 
-           78*z^(13/2) - 420*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-           3082*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-           7240*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
-           9257*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
-           7418*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
-           3135*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] - 
-           432*Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]))/
-        (9*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*(y + z - y*z)^(5/2)) - 
-       (4*(-132*y^5*(-1 + z)^6 + 44*y^6*(-1 + z)^6 - 
-          3*z^2*(5 - 16*z + 5*z^2) - 4*y^3*(-1 + z)^4*(39 + 24*z + 34*z^2) + 
-          2*y^4*(-1 + z)^4*(94 - 86*z + 89*z^2) - y*(-1 + z)^2*
-           (18 + 26*z - 91*z^2 + 26*z^3 + 13*z^4) + y^2*(-1 + z)^2*
-           (74 + 6*z - 173*z^2 + 26*z^3 + 59*z^4))*G[-I, r])/
-        (3*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
-       (4*(-132*y^5*(-1 + z)^6 + 44*y^6*(-1 + z)^6 - 
-          3*z^2*(5 - 16*z + 5*z^2) - 4*y^3*(-1 + z)^4*(39 + 24*z + 34*z^2) + 
-          2*y^4*(-1 + z)^4*(94 - 86*z + 89*z^2) - y*(-1 + z)^2*
-           (18 + 26*z - 91*z^2 + 26*z^3 + 13*z^4) + y^2*(-1 + z)^2*
-           (74 + 6*z - 173*z^2 + 26*z^3 + 59*z^4))*G[I, r])/
-        (3*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2)) + 
-     ((-4*y^7*(-1 + z)^6*(-234*Sqrt[z] + 67*Sqrt[1 + y*(-1 + z)]*
-           Sqrt[y + z - y*z]) + 2*y^6*(-1 + z)^5*(1638*Sqrt[z] - 
-          1638*z^(3/2) - 451*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-          469*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z]) + 
-        z^2*(18*Sqrt[z] - 45*z^(3/2) + 10*Sqrt[1 + y*(-1 + z)]*
-           Sqrt[y + z - y*z] + 60*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-          7*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z]) - 
-        2*y^5*(-1 + z)^3*(2376*Sqrt[z] - 6876*z^(3/2) + 6975*z^(5/2) - 
-          2367*z^(7/2) - 639*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-          1903*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-          1961*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
-          661*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z]) + 
-        y^3*(-1 + z)*(-1548*Sqrt[z] + 7236*z^(3/2) - 12906*z^(5/2) + 
-          13500*z^(7/2) - 7578*z^(9/2) + 1512*z^(11/2) + 
-          751*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
-          1955*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-          3036*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
-          3331*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
-          2329*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 
-          398*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
-        y^4*(-1 + z)*(3690*Sqrt[z] - 17190*z^(3/2) + 33615*z^(5/2) - 
-          34065*z^(7/2) + 17595*z^(9/2) - 3645*z^(11/2) - 
-          1127*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-          4759*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-          8977*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
-          9261*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
-          5028*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
-          968*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) - 
-        y*(252*z^(3/2) - 243*z^(5/2) + 81*z^(7/2) - 405*z^(9/2) + 
-          261*z^(11/2) + 63*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
-          80*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-          193*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
-          106*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 
-          68*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] + 
-          16*Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]) + 
-        y^2*(-270*Sqrt[z] + 2124*z^(3/2) - 3978*z^(5/2) + 4689*z^(7/2) - 
-          4527*z^(9/2) + 2223*z^(11/2) - 261*z^(13/2) + 
-          331*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
-          700*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-          711*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
-          695*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
-          1138*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 
-          703*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] + 
-          98*Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]))*G[-r^(-1), t])/
-      (9*(-1 + 2*y)*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*(y + z - y*z)^(5/2)) + 
-     ((-9*z^2*(-2 + 5*z)*(Sqrt[z] + Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z]) - 
-        4*y^7*(-1 + z)^6*(-234*Sqrt[z] + 67*Sqrt[1 + y*(-1 + z)]*
-           Sqrt[y + z - y*z]) + 2*y^6*(-1 + z)^5*(1638*Sqrt[z] - 
-          1638*z^(3/2) - 487*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-          469*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z]) - 
-        2*y^5*(-1 + z)^3*(2376*Sqrt[z] - 6876*z^(3/2) + 6975*z^(5/2) - 
-          2367*z^(7/2) - 747*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-          2119*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-          2069*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
-          661*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z]) + 
-        y*z*(-252*Sqrt[z] + 243*z^(3/2) - 81*z^(5/2) + 405*z^(7/2) - 
-          261*z^(9/2) + 22*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
-          357*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-          606*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
-          144*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
-          3*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z]) + 
-        y^3*(-1 + z)*(-1548*Sqrt[z] + 7236*z^(3/2) - 12906*z^(5/2) + 
-          13500*z^(7/2) - 7578*z^(9/2) + 1512*z^(11/2) + 
-          363*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
-          2519*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-          5768*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
-          5087*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
-          1697*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 
-          366*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
-        y^4*(-1 + z)*(3690*Sqrt[z] - 17190*z^(3/2) + 33615*z^(5/2) - 
-          34065*z^(7/2) + 17595*z^(9/2) - 3645*z^(11/2) - 
-          1113*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-          5761*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-          11423*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
-          10859*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
-          4892*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
-          952*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
-        y^2*(-270*Sqrt[z] + 2124*z^(3/2) - 3978*z^(5/2) + 4689*z^(7/2) - 
-          4527*z^(9/2) + 2223*z^(11/2) - 261*z^(13/2) + 
-          38*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
-          550*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-          2356*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
-          3378*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
-          1558*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 
-          270*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] + 
-          66*Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]))*G[-r, t])/
-      (9*(-1 + 2*y)*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*(y + z - y*z)^(5/2)) + 
-     G[-I, r]*((1668*y^5*(-1 + z)^6 - 556*y^6*(-1 + z)^6 - 
-         3*z^2*(28 + 27*z + 31*z^2) - 8*y^4*(-1 + z)^4*(239 - 502*z + 
-           244*z^2) + 4*y^3*(-1 + z)^4*(261 - 618*z + 281*z^2) + 
-         y^2*(-181 + 2090*z - 5223*z^2 + 6825*z^3 - 5488*z^4 + 2245*z^5 - 
-           268*z^6) - y*(63 + 434*z - 755*z^2 + 633*z^3 - 820*z^4 + 429*z^5 + 
-           16*z^6))/(9*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
-       ((-1 + y)*(3*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z]*
-           (3 + 8*z + 3*z^2) + 4*y^6*(-1 + z)^6*(-18*Sqrt[z] + 
-            11*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z]) - 
-          2*y^5*(-1 + z)^5*(90*Sqrt[z] - 90*z^(3/2) - 19*Sqrt[1 + y*(-1 + z)]*
-             Sqrt[y + z - y*z] + 55*Sqrt[1 + y*(-1 + z)]*z*
-             Sqrt[y + z - y*z]) + 2*y^4*(-1 + z)^4*(-90*Sqrt[z] + 
-            180*z^(3/2) - 90*z^(5/2) + 24*Sqrt[1 + y*(-1 + z)]*
-             Sqrt[y + z - y*z] + 42*Sqrt[1 + y*(-1 + z)]*z*
-             Sqrt[y + z - y*z] + 91*Sqrt[1 + y*(-1 + z)]*z^2*
-             Sqrt[y + z - y*z]) + y^3*(-1 + z)*(-90*Sqrt[z] + 450*z^(3/2) - 
-            900*z^(5/2) + 900*z^(7/2) - 450*z^(9/2) + 90*z^(11/2) - 
-            2*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
-            38*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-            305*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
-            239*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
-            347*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 
-            97*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
-          2*y^2*(-1 + z)*(9*Sqrt[z] - 63*z^(3/2) + 108*z^(5/2) - 
-            108*z^(7/2) + 63*z^(9/2) - 9*z^(11/2) + 13*Sqrt[1 + y*(-1 + z)]*
-             Sqrt[y + z - y*z] + 24*Sqrt[1 + y*(-1 + z)]*z*
-             Sqrt[y + z - y*z] + 86*Sqrt[1 + y*(-1 + z)]*z^2*
-             Sqrt[y + z - y*z] - 115*Sqrt[1 + y*(-1 + z)]*z^3*
-             Sqrt[y + z - y*z] - 83*Sqrt[1 + y*(-1 + z)]*z^4*
-             Sqrt[y + z - y*z] + 3*Sqrt[1 + y*(-1 + z)]*z^5*
-             Sqrt[y + z - y*z]) + y*(-18*z^(3/2) + 36*z^(5/2) - 36*z^(7/2) + 
-            36*z^(9/2) - 18*z^(11/2) + 6*Sqrt[1 + y*(-1 + z)]*
-             Sqrt[y + z - y*z] + 2*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-            2*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
-            126*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
-            7*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
-            18*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] + 
-            Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]))*G[-r^(-1), t])/
-        (3*(-1 + 2*y)*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*
-         (y + z - y*z)^(5/2)) - ((-1 + y)*(3*Sqrt[1 + y*(-1 + z)]*z^2*
-           Sqrt[y + z - y*z]*(3 + 8*z + 3*z^2) + 4*y^6*(-1 + z)^6*
-           (18*Sqrt[z] + 11*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z]) - 
-          2*y^5*(-1 + z)^5*(-90*Sqrt[z] + 90*z^(3/2) - 
-            19*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-            55*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z]) + 
-          2*y^4*(-1 + z)^4*(90*Sqrt[z] - 180*z^(3/2) + 90*z^(5/2) + 
-            24*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-            42*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-            91*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z]) + 
-          2*y^2*(-1 + z)*(-9*Sqrt[z] + 63*z^(3/2) - 108*z^(5/2) + 
-            108*z^(7/2) - 63*z^(9/2) + 9*z^(11/2) + 13*Sqrt[1 + y*(-1 + z)]*
-             Sqrt[y + z - y*z] + 24*Sqrt[1 + y*(-1 + z)]*z*
-             Sqrt[y + z - y*z] + 86*Sqrt[1 + y*(-1 + z)]*z^2*
-             Sqrt[y + z - y*z] - 115*Sqrt[1 + y*(-1 + z)]*z^3*
-             Sqrt[y + z - y*z] - 83*Sqrt[1 + y*(-1 + z)]*z^4*
-             Sqrt[y + z - y*z] + 3*Sqrt[1 + y*(-1 + z)]*z^5*
-             Sqrt[y + z - y*z]) - y^3*(-1 + z)*(-90*Sqrt[z] + 450*z^(3/2) - 
-            900*z^(5/2) + 900*z^(7/2) - 450*z^(9/2) + 90*z^(11/2) + 
-            2*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-            38*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-            305*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
-            239*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
-            347*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
-            97*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
-          y*(18*z^(3/2) - 36*z^(5/2) + 36*z^(7/2) - 36*z^(9/2) + 
-            18*z^(11/2) + 6*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-            2*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-            2*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
-            126*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
-            7*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
-            18*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] + 
-            Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]))*G[r^(-1), t])/
-        (3*(-1 + 2*y)*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*
-         (y + z - y*z)^(5/2)) - 
-       (y*(4*y^6*(-1 + z)^6*(-18*Sqrt[z] + 11*Sqrt[1 + y*(-1 + z)]*
-             Sqrt[y + z - y*z]) - 2*y^5*(-1 + z)^5*(126*Sqrt[z] - 
-            126*z^(3/2) - 113*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-            77*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z]) + 
-          2*y^4*(-1 + z)^4*(-180*Sqrt[z] + 360*z^(3/2) - 180*z^(5/2) + 
-            259*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
-            248*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-            146*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z]) + 
-          y^3*(-1 + z)*(-270*Sqrt[z] + 1350*z^(3/2) - 2700*z^(5/2) + 
-            2700*z^(7/2) - 1350*z^(9/2) + 270*z^(11/2) + 
-            694*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
-            1982*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-            2721*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
-            2287*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
-            1121*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 
-            411*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
-          y^2*(-1 + z)*(108*Sqrt[z] - 576*z^(3/2) + 1116*z^(5/2) - 
-            1116*z^(7/2) + 576*z^(9/2) - 108*z^(11/2) - 
-            548*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-            974*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-            1107*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
-            1019*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
-            417*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
-            367*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
-          y*(18*Sqrt[z] - 162*z^(3/2) + 378*z^(5/2) - 468*z^(7/2) + 
-            378*z^(9/2) - 162*z^(11/2) + 18*z^(13/2) - 
-            226*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-            450*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-            397*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
-            498*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
-            267*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
-            214*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] - 
-            164*Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]) + 
-          2*(9*z^(3/2) - 18*z^(5/2) + 18*z^(7/2) - 18*z^(9/2) + 9*z^(11/2) + 
-            18*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
-            28*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-            7*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
-            30*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
-            2*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 
-            15*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] + 
-            13*Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]))*G[-r, t])/
-        (3*(-1 + 2*y)*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*
-         (y + z - y*z)^(5/2)) + 
-       (y*(-4*y^6*(-1 + z)^6*(18*Sqrt[z] + 11*Sqrt[1 + y*(-1 + z)]*
-             Sqrt[y + z - y*z]) + 2*y^5*(-1 + z)^5*(-126*Sqrt[z] + 
-            126*z^(3/2) - 113*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-            77*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z]) - 
-          2*y^4*(-1 + z)^4*(180*Sqrt[z] - 360*z^(3/2) + 180*z^(5/2) + 
-            259*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
-            248*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-            146*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z]) - 
-          y^2*(-1 + z)*(-108*Sqrt[z] + 576*z^(3/2) - 1116*z^(5/2) + 
-            1116*z^(7/2) - 576*z^(9/2) + 108*z^(11/2) - 
-            548*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-            974*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-            1107*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
-            1019*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
-            417*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
-            367*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
-          y^3*(-1 + z)*(-270*Sqrt[z] + 1350*z^(3/2) - 2700*z^(5/2) + 
-            2700*z^(7/2) - 1350*z^(9/2) + 270*z^(11/2) - 
-            694*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-            1982*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-            2721*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
-            2287*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
-            1121*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
-            411*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
-          2*(9*z^(3/2) - 18*z^(5/2) + 18*z^(7/2) - 18*z^(9/2) + 9*z^(11/2) - 
-            18*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-            28*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-            7*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
-            30*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
-            2*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
-            15*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] - 
-            13*Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]) + 
-          y*(18*Sqrt[z] - 162*z^(3/2) + 378*z^(5/2) - 468*z^(7/2) + 
-            378*z^(9/2) - 162*z^(11/2) + 18*z^(13/2) + 
-            226*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
-            450*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-            397*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
-            498*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
-            267*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 
-            214*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] + 
-            164*Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]))*G[r, t])/
-        (3*(-1 + 2*y)*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*
-         (y + z - y*z)^(5/2))) + 
-     G[I, r]*((1668*y^5*(-1 + z)^6 - 556*y^6*(-1 + z)^6 - 
-         3*z^2*(28 + 27*z + 31*z^2) - 8*y^4*(-1 + z)^4*(239 - 502*z + 
-           244*z^2) + 4*y^3*(-1 + z)^4*(261 - 618*z + 281*z^2) + 
-         y^2*(-181 + 2090*z - 5223*z^2 + 6825*z^3 - 5488*z^4 + 2245*z^5 - 
-           268*z^6) - y*(63 + 434*z - 755*z^2 + 633*z^3 - 820*z^4 + 429*z^5 + 
-           16*z^6))/(9*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
-       ((-1 + y)*(3*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z]*
-           (3 + 8*z + 3*z^2) + 4*y^6*(-1 + z)^6*(-18*Sqrt[z] + 
-            11*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z]) - 
-          2*y^5*(-1 + z)^5*(90*Sqrt[z] - 90*z^(3/2) - 19*Sqrt[1 + y*(-1 + z)]*
-             Sqrt[y + z - y*z] + 55*Sqrt[1 + y*(-1 + z)]*z*
-             Sqrt[y + z - y*z]) + 2*y^4*(-1 + z)^4*(-90*Sqrt[z] + 
-            180*z^(3/2) - 90*z^(5/2) + 24*Sqrt[1 + y*(-1 + z)]*
-             Sqrt[y + z - y*z] + 42*Sqrt[1 + y*(-1 + z)]*z*
-             Sqrt[y + z - y*z] + 91*Sqrt[1 + y*(-1 + z)]*z^2*
-             Sqrt[y + z - y*z]) + y^3*(-1 + z)*(-90*Sqrt[z] + 450*z^(3/2) - 
-            900*z^(5/2) + 900*z^(7/2) - 450*z^(9/2) + 90*z^(11/2) - 
-            2*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
-            38*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-            305*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
-            239*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
-            347*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 
-            97*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
-          2*y^2*(-1 + z)*(9*Sqrt[z] - 63*z^(3/2) + 108*z^(5/2) - 
-            108*z^(7/2) + 63*z^(9/2) - 9*z^(11/2) + 13*Sqrt[1 + y*(-1 + z)]*
-             Sqrt[y + z - y*z] + 24*Sqrt[1 + y*(-1 + z)]*z*
-             Sqrt[y + z - y*z] + 86*Sqrt[1 + y*(-1 + z)]*z^2*
-             Sqrt[y + z - y*z] - 115*Sqrt[1 + y*(-1 + z)]*z^3*
-             Sqrt[y + z - y*z] - 83*Sqrt[1 + y*(-1 + z)]*z^4*
-             Sqrt[y + z - y*z] + 3*Sqrt[1 + y*(-1 + z)]*z^5*
-             Sqrt[y + z - y*z]) + y*(-18*z^(3/2) + 36*z^(5/2) - 36*z^(7/2) + 
-            36*z^(9/2) - 18*z^(11/2) + 6*Sqrt[1 + y*(-1 + z)]*
-             Sqrt[y + z - y*z] + 2*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-            2*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
-            126*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
-            7*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
-            18*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] + 
-            Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]))*G[-r^(-1), t])/
-        (3*(-1 + 2*y)*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*
-         (y + z - y*z)^(5/2)) - ((-1 + y)*(3*Sqrt[1 + y*(-1 + z)]*z^2*
-           Sqrt[y + z - y*z]*(3 + 8*z + 3*z^2) + 4*y^6*(-1 + z)^6*
-           (18*Sqrt[z] + 11*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z]) - 
-          2*y^5*(-1 + z)^5*(-90*Sqrt[z] + 90*z^(3/2) - 
-            19*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-            55*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z]) + 
-          2*y^4*(-1 + z)^4*(90*Sqrt[z] - 180*z^(3/2) + 90*z^(5/2) + 
-            24*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-            42*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-            91*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z]) + 
-          2*y^2*(-1 + z)*(-9*Sqrt[z] + 63*z^(3/2) - 108*z^(5/2) + 
-            108*z^(7/2) - 63*z^(9/2) + 9*z^(11/2) + 13*Sqrt[1 + y*(-1 + z)]*
-             Sqrt[y + z - y*z] + 24*Sqrt[1 + y*(-1 + z)]*z*
-             Sqrt[y + z - y*z] + 86*Sqrt[1 + y*(-1 + z)]*z^2*
-             Sqrt[y + z - y*z] - 115*Sqrt[1 + y*(-1 + z)]*z^3*
-             Sqrt[y + z - y*z] - 83*Sqrt[1 + y*(-1 + z)]*z^4*
-             Sqrt[y + z - y*z] + 3*Sqrt[1 + y*(-1 + z)]*z^5*
-             Sqrt[y + z - y*z]) - y^3*(-1 + z)*(-90*Sqrt[z] + 450*z^(3/2) - 
-            900*z^(5/2) + 900*z^(7/2) - 450*z^(9/2) + 90*z^(11/2) + 
-            2*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-            38*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-            305*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
-            239*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
-            347*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
-            97*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
-          y*(18*z^(3/2) - 36*z^(5/2) + 36*z^(7/2) - 36*z^(9/2) + 
-            18*z^(11/2) + 6*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-            2*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-            2*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
-            126*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
-            7*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
-            18*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] + 
-            Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]))*G[r^(-1), t])/
-        (3*(-1 + 2*y)*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*
-         (y + z - y*z)^(5/2)) - 
-       (y*(4*y^6*(-1 + z)^6*(-18*Sqrt[z] + 11*Sqrt[1 + y*(-1 + z)]*
-             Sqrt[y + z - y*z]) - 2*y^5*(-1 + z)^5*(126*Sqrt[z] - 
-            126*z^(3/2) - 113*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-            77*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z]) + 
-          2*y^4*(-1 + z)^4*(-180*Sqrt[z] + 360*z^(3/2) - 180*z^(5/2) + 
-            259*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
-            248*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-            146*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z]) + 
-          y^3*(-1 + z)*(-270*Sqrt[z] + 1350*z^(3/2) - 2700*z^(5/2) + 
-            2700*z^(7/2) - 1350*z^(9/2) + 270*z^(11/2) + 
-            694*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
-            1982*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-            2721*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
-            2287*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
-            1121*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 
-            411*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
-          y^2*(-1 + z)*(108*Sqrt[z] - 576*z^(3/2) + 1116*z^(5/2) - 
-            1116*z^(7/2) + 576*z^(9/2) - 108*z^(11/2) - 
-            548*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-            974*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-            1107*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
-            1019*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
-            417*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
-            367*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
-          y*(18*Sqrt[z] - 162*z^(3/2) + 378*z^(5/2) - 468*z^(7/2) + 
-            378*z^(9/2) - 162*z^(11/2) + 18*z^(13/2) - 
-            226*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-            450*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-            397*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
-            498*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
-            267*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
-            214*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] - 
-            164*Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]) + 
-          2*(9*z^(3/2) - 18*z^(5/2) + 18*z^(7/2) - 18*z^(9/2) + 9*z^(11/2) + 
-            18*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
-            28*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-            7*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
-            30*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
-            2*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 
-            15*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] + 
-            13*Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]))*G[-r, t])/
-        (3*(-1 + 2*y)*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*
-         (y + z - y*z)^(5/2)) + 
-       (y*(-4*y^6*(-1 + z)^6*(18*Sqrt[z] + 11*Sqrt[1 + y*(-1 + z)]*
-             Sqrt[y + z - y*z]) + 2*y^5*(-1 + z)^5*(-126*Sqrt[z] + 
-            126*z^(3/2) - 113*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-            77*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z]) - 
-          2*y^4*(-1 + z)^4*(180*Sqrt[z] - 360*z^(3/2) + 180*z^(5/2) + 
-            259*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
-            248*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-            146*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z]) - 
-          y^2*(-1 + z)*(-108*Sqrt[z] + 576*z^(3/2) - 1116*z^(5/2) + 
-            1116*z^(7/2) - 576*z^(9/2) + 108*z^(11/2) - 
-            548*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-            974*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-            1107*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
-            1019*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
-            417*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
-            367*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
-          y^3*(-1 + z)*(-270*Sqrt[z] + 1350*z^(3/2) - 2700*z^(5/2) + 
-            2700*z^(7/2) - 1350*z^(9/2) + 270*z^(11/2) - 
-            694*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-            1982*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-            2721*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
-            2287*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
-            1121*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
-            411*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
-          2*(9*z^(3/2) - 18*z^(5/2) + 18*z^(7/2) - 18*z^(9/2) + 9*z^(11/2) - 
-            18*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-            28*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-            7*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
-            30*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
-            2*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
-            15*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] - 
-            13*Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]) + 
-          y*(18*Sqrt[z] - 162*z^(3/2) + 378*z^(5/2) - 468*z^(7/2) + 
-            378*z^(9/2) - 162*z^(11/2) + 18*z^(13/2) + 
-            226*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
-            450*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-            397*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
-            498*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
-            267*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 
-            214*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] + 
-            164*Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]))*G[r, t])/
-        (3*(-1 + 2*y)*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*
-         (y + z - y*z)^(5/2))) + 
-     G[0, r]*((-4*y^6*(-1 + z)^6*(-138*Sqrt[z] + 67*Sqrt[1 + y*(-1 + z)]*
-            Sqrt[y + z - y*z]) + 12*y^5*(-1 + z)^5*(138*Sqrt[z] - 
-           138*z^(3/2) - 70*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-           67*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z]) + 
-         z^2*(-24*Sqrt[z] + 60*z^(3/2) - 10*Sqrt[1 + y*(-1 + z)]*
-            Sqrt[y + z - y*z] + 39*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-           16*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z]) - 
-         2*y^4*(-1 + z)^3*(984*Sqrt[z] - 2808*z^(3/2) + 2874*z^(5/2) - 
-           978*z^(7/2) - 537*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-           1498*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-           1457*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
-           460*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z]) + 
-         y^2*(-1 + z)*(-312*Sqrt[z] + 1560*z^(3/2) - 2400*z^(5/2) + 
-           2676*z^(7/2) - 1680*z^(9/2) + 300*z^(11/2) + 
-           72*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
-           902*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-           2310*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
-           1867*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
-           555*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 
-           132*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
-         y*z*(288*Sqrt[z] - 300*z^(3/2) + 180*z^(5/2) - 468*z^(7/2) + 
-           300*z^(9/2) - 48*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-           454*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-           821*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
-           290*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
-           17*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
-           16*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
-         2*y^3*(-1 + z)*(588*Sqrt[z] - 2652*z^(3/2) + 5148*z^(5/2) - 
-           5268*z^(7/2) + 2760*z^(9/2) - 576*z^(11/2) - 
-           287*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-           1587*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-           3136*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
-           2918*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
-           1296*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
-           250*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]))/
-        (9*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*(y + z - y*z)^(5/2)) + 
-       (4*(z^2*(-1 + z - z^2) - y*(-1 + z)^2*z*(1 - 3*z + 3*z^2 + z^3) - 
-          2*y^3*(-1 + z)^3*(1 + 2*z + 10*z^2 + 3*z^3) + y^4*(-1 + z)^3*
-           (1 + 2*z + 10*z^2 + 3*z^3) + y^2*(-1 + z)^2*(-1 - 11*z^2 + 
-            10*z^3 + 4*z^4))*G[-1, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*
-         (-1 + z)*z*(y + z - y*z)^2) + 
-       (8*(Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z]*(2 + 11*z^2) + 
-          2*y^5*(-1 + z)^5*(-6*Sqrt[z] + Sqrt[1 + y*(-1 + z)]*
-             Sqrt[y + z - y*z]) - 2*y^4*(-1 + z)^4*(18*Sqrt[z] - 12*z^(3/2) + 
-            3*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 2*Sqrt[1 + y*(-1 + z)]*
-             z*Sqrt[y + z - y*z]) + y^3*(-1 + z)*(-42*Sqrt[z] + 132*z^(3/2) - 
-            156*z^(5/2) + 84*z^(7/2) - 18*z^(9/2) + 4*Sqrt[1 + y*(-1 + z)]*
-             Sqrt[y + z - y*z] + 60*Sqrt[1 + y*(-1 + z)]*z*
-             Sqrt[y + z - y*z] - 105*Sqrt[1 + y*(-1 + z)]*z^2*
-             Sqrt[y + z - y*z] + 32*Sqrt[1 + y*(-1 + z)]*z^3*
-             Sqrt[y + z - y*z] + 3*Sqrt[1 + y*(-1 + z)]*z^4*
-             Sqrt[y + z - y*z]) + y*(6*Sqrt[z] - 12*z^(3/2) + 12*z^(5/2) - 
-            12*z^(7/2) + 6*z^(9/2) - 4*Sqrt[1 + y*(-1 + z)]*
-             Sqrt[y + z - y*z] - 4*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-            53*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
-            58*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
-            16*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z]) + 
-          y^2*(-24*Sqrt[z] + 78*z^(3/2) - 108*z^(5/2) + 84*z^(7/2) - 
-            36*z^(9/2) + 6*z^(11/2) + 16*Sqrt[1 + y*(-1 + z)]*
-             Sqrt[y + z - y*z] + 28*Sqrt[1 + y*(-1 + z)]*z*
-             Sqrt[y + z - y*z] - 167*Sqrt[1 + y*(-1 + z)]*z^2*
-             Sqrt[y + z - y*z] + 164*Sqrt[1 + y*(-1 + z)]*z^3*
-             Sqrt[y + z - y*z] - 34*Sqrt[1 + y*(-1 + z)]*z^4*
-             Sqrt[y + z - y*z] - Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]))*
-         G[0, t])/(3*(1 + y*(-1 + z))^(5/2)*(y*(-1 + z) - z)*(-1 + z)*z*
-         Sqrt[y + z - y*z]) + (4*(z^2*(-1 + z - z^2) - y*(-1 + z)^2*z*
-           (1 - 3*z + 3*z^2 + z^3) - 2*y^3*(-1 + z)^3*(1 + 2*z + 10*z^2 + 
-            3*z^3) + y^4*(-1 + z)^3*(1 + 2*z + 10*z^2 + 3*z^3) + 
-          y^2*(-1 + z)^2*(-1 - 11*z^2 + 10*z^3 + 4*z^4))*G[1, t])/
-        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
-       ((-1 + y)*(Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z]*
-           (-29 + 36*z - 47*z^2) + 24*y^6*(-1 + z)^6*(3*Sqrt[z] + 
-            7*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z]) - 12*y^5*(-1 + z)^5*
-           (-15*Sqrt[z] + 15*z^(3/2) - 33*Sqrt[1 + y*(-1 + z)]*
-             Sqrt[y + z - y*z] + 35*Sqrt[1 + y*(-1 + z)]*z*
-             Sqrt[y + z - y*z]) + 2*y^4*(-1 + z)^2*(90*Sqrt[z] - 
-            360*z^(3/2) + 540*z^(5/2) - 360*z^(7/2) + 90*z^(9/2) + 
-            388*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
-            752*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-            733*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
-            726*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
-            345*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z]) - 
-          y^3*(-1 + z)^2*(90*Sqrt[z] - 360*z^(3/2) + 540*z^(5/2) - 
-            360*z^(7/2) + 90*z^(9/2) + 754*Sqrt[1 + y*(-1 + z)]*
-             Sqrt[y + z - y*z] - 728*Sqrt[1 + y*(-1 + z)]*z*
-             Sqrt[y + z - y*z] - 355*Sqrt[1 + y*(-1 + z)]*z^2*
-             Sqrt[y + z - y*z] - 378*Sqrt[1 + y*(-1 + z)]*z^3*
-             Sqrt[y + z - y*z] + 671*Sqrt[1 + y*(-1 + z)]*z^4*
-             Sqrt[y + z - y*z]) + y*(18*z^(3/2) - 36*z^(5/2) + 36*z^(7/2) - 
-            36*z^(9/2) + 18*z^(11/2) - 66*Sqrt[1 + y*(-1 + z)]*
-             Sqrt[y + z - y*z] + 82*Sqrt[1 + y*(-1 + z)]*z*
-             Sqrt[y + z - y*z] + 134*Sqrt[1 + y*(-1 + z)]*z^2*
-             Sqrt[y + z - y*z] - 406*Sqrt[1 + y*(-1 + z)]*z^3*
-             Sqrt[y + z - y*z] + 305*Sqrt[1 + y*(-1 + z)]*z^4*
-             Sqrt[y + z - y*z] + 26*Sqrt[1 + y*(-1 + z)]*z^5*
-             Sqrt[y + z - y*z] - 63*Sqrt[1 + y*(-1 + z)]*z^6*
-             Sqrt[y + z - y*z]) + 2*y^2*(9*Sqrt[z] - 72*z^(3/2) + 
-            171*z^(5/2) - 216*z^(7/2) + 171*z^(9/2) - 72*z^(11/2) + 
-            9*z^(13/2) + 172*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
-            393*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-            15*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
-            555*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
-            282*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 
-            240*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] + 
-            161*Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]))*G[-r^(-1), t])/
-        (3*(-1 + 2*y)*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*
-         (y + z - y*z)^(5/2)) + ((-1 + y)*(-3*Sqrt[1 + y*(-1 + z)]*z^2*
-           Sqrt[y + z - y*z]*(-5 - 12*z + z^2) + 8*y^6*(-1 + z)^6*
-           (3*Sqrt[z] + 19*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z]) - 
-          20*y^5*(-1 + z)^5*(-3*Sqrt[z] + 3*z^(3/2) - 13*Sqrt[1 + y*(-1 + z)]*
-             Sqrt[y + z - y*z] + 19*Sqrt[1 + y*(-1 + z)]*z*
-             Sqrt[y + z - y*z]) + 2*y^4*(-1 + z)^2*(30*Sqrt[z] - 
-            120*z^(3/2) + 180*z^(5/2) - 120*z^(7/2) + 30*z^(9/2) + 
-            156*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
-            408*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-            625*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
-            614*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
-            229*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z]) - 
-          y^3*(-1 + z)*(-30*Sqrt[z] + 150*z^(3/2) - 300*z^(5/2) + 
-            300*z^(7/2) - 150*z^(9/2) + 30*z^(11/2) - 
-            130*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-            650*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-            505*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
-            403*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
-            869*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
-            259*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
-          y*(6*z^(3/2) - 12*z^(5/2) + 12*z^(7/2) - 12*z^(9/2) + 6*z^(11/2) + 
-            6*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-            26*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-            74*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
-            174*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
-            77*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
-            18*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] - 
-            11*Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]) + 
-          2*y^2*(3*Sqrt[z] - 24*z^(3/2) + 57*z^(5/2) - 72*z^(7/2) + 
-            57*z^(9/2) - 24*z^(11/2) + 3*z^(13/2) - 4*Sqrt[1 + y*(-1 + z)]*
-             Sqrt[y + z - y*z] - 125*Sqrt[1 + y*(-1 + z)]*z*
-             Sqrt[y + z - y*z] + 139*Sqrt[1 + y*(-1 + z)]*z^2*
-             Sqrt[y + z - y*z] + 135*Sqrt[1 + y*(-1 + z)]*z^3*
-             Sqrt[y + z - y*z] - 38*Sqrt[1 + y*(-1 + z)]*z^4*
-             Sqrt[y + z - y*z] - 152*Sqrt[1 + y*(-1 + z)]*z^5*
-             Sqrt[y + z - y*z] + 33*Sqrt[1 + y*(-1 + z)]*z^6*
-             Sqrt[y + z - y*z]))*G[r^(-1), t])/(3*(-1 + 2*y)*
-         (1 + y*(-1 + z))^(5/2)*(-1 + z)*z*(y + z - y*z)^(5/2)) + 
-       (y*(-24*y^6*(-1 + z)^6*(Sqrt[z] + 2*Sqrt[1 + y*(-1 + z)]*
-             Sqrt[y + z - y*z]) + 12*y^5*(-1 + z)^5*(-7*Sqrt[z] + 7*z^(3/2) - 
-            20*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-            14*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z]) + 
-          2*y^4*(-1 + z)^2*(-60*Sqrt[z] + 240*z^(3/2) - 360*z^(5/2) + 
-            240*z^(7/2) - 60*z^(9/2) - 116*Sqrt[1 + y*(-1 + z)]*
-             Sqrt[y + z - y*z] + 832*Sqrt[1 + y*(-1 + z)]*z*
-             Sqrt[y + z - y*z] - 1355*Sqrt[1 + y*(-1 + z)]*z^2*
-             Sqrt[y + z - y*z] + 642*Sqrt[1 + y*(-1 + z)]*z^3*
-             Sqrt[y + z - y*z] + 9*Sqrt[1 + y*(-1 + z)]*z^4*
-             Sqrt[y + z - y*z]) + 2*z*(3*Sqrt[z] - 6*z^(3/2) + 6*z^(5/2) - 
-            6*z^(7/2) + 3*z^(9/2) - 6*Sqrt[1 + y*(-1 + z)]*
-             Sqrt[y + z - y*z] - 29*Sqrt[1 + y*(-1 + z)]*z*
-             Sqrt[y + z - y*z] + 108*Sqrt[1 + y*(-1 + z)]*z^2*
-             Sqrt[y + z - y*z] - 55*Sqrt[1 + y*(-1 + z)]*z^3*
-             Sqrt[y + z - y*z] - 15*Sqrt[1 + y*(-1 + z)]*z^4*
-             Sqrt[y + z - y*z] + 13*Sqrt[1 + y*(-1 + z)]*z^5*
-             Sqrt[y + z - y*z]) - y^3*(-1 + z)*(90*Sqrt[z] - 450*z^(3/2) + 
-            900*z^(5/2) - 900*z^(7/2) + 450*z^(9/2) - 90*z^(11/2) - 
-            22*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
-            1362*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-            4729*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
-            4635*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
-            749*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
-            445*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
-          y*(6*Sqrt[z] - 54*z^(3/2) + 126*z^(5/2) - 156*z^(7/2) + 
-            126*z^(9/2) - 54*z^(11/2) + 6*z^(13/2) - 24*Sqrt[1 + y*(-1 + z)]*
-             Sqrt[y + z - y*z] + 22*Sqrt[1 + y*(-1 + z)]*z*
-             Sqrt[y + z - y*z] + 703*Sqrt[1 + y*(-1 + z)]*z^2*
-             Sqrt[y + z - y*z] - 1746*Sqrt[1 + y*(-1 + z)]*z^3*
-             Sqrt[y + z - y*z] + 935*Sqrt[1 + y*(-1 + z)]*z^4*
-             Sqrt[y + z - y*z] + 190*Sqrt[1 + y*(-1 + z)]*z^5*
-             Sqrt[y + z - y*z] - 188*Sqrt[1 + y*(-1 + z)]*z^6*
-             Sqrt[y + z - y*z]) + y^2*(-36*Sqrt[z] + 228*z^(3/2) - 
-            564*z^(5/2) + 744*z^(7/2) - 564*z^(9/2) + 228*z^(11/2) - 
-            36*z^(13/2) + 86*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-            282*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-            3027*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
-            5658*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
-            3132*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 
-            312*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] + 
-            469*Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]))*G[-r, t])/
-        (3*(-1 + 2*y)*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*
-         (y + z - y*z)^(5/2)) - 
-       (y*(8*y^6*(-1 + z)^6*(-15*Sqrt[z] + 8*Sqrt[1 + y*(-1 + z)]*
-             Sqrt[y + z - y*z]) - 4*y^5*(-1 + z)^5*(105*Sqrt[z] - 
-            105*z^(3/2) - 50*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-            56*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z]) + 
-          2*y^4*(-1 + z)^2*(-300*Sqrt[z] + 1200*z^(3/2) - 1800*z^(5/2) + 
-            1200*z^(7/2) - 300*z^(9/2) + 128*Sqrt[1 + y*(-1 + z)]*
-             Sqrt[y + z - y*z] - 536*Sqrt[1 + y*(-1 + z)]*z*
-             Sqrt[y + z - y*z] + 863*Sqrt[1 + y*(-1 + z)]*z^2*
-             Sqrt[y + z - y*z] - 594*Sqrt[1 + y*(-1 + z)]*z^3*
-             Sqrt[y + z - y*z] + 127*Sqrt[1 + y*(-1 + z)]*z^4*
-             Sqrt[y + z - y*z]) + 2*z*(15*Sqrt[z] - 30*z^(3/2) + 30*z^(5/2) - 
-            30*z^(7/2) + 15*z^(9/2) - 2*Sqrt[1 + y*(-1 + z)]*
-             Sqrt[y + z - y*z] + 5*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-            12*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
-            31*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
-            3*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 
-            13*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
-          y^3*(-1 + z)*(-450*Sqrt[z] + 2250*z^(3/2) - 4500*z^(5/2) + 
-            4500*z^(7/2) - 2250*z^(9/2) + 450*z^(11/2) + 
-            170*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
-            898*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-            1917*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
-            2135*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
-            1033*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
-            9*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
-          y*(30*Sqrt[z] - 270*z^(3/2) + 630*z^(5/2) - 780*z^(7/2) + 
-            630*z^(9/2) - 270*z^(11/2) + 30*z^(13/2) - 8*Sqrt[1 + y*(-1 + z)]*
-             Sqrt[y + z - y*z] + 66*Sqrt[1 + y*(-1 + z)]*z*
-             Sqrt[y + z - y*z] - 179*Sqrt[1 + y*(-1 + z)]*z^2*
-             Sqrt[y + z - y*z] + 330*Sqrt[1 + y*(-1 + z)]*z^3*
-             Sqrt[y + z - y*z] - 411*Sqrt[1 + y*(-1 + z)]*z^4*
-             Sqrt[y + z - y*z] + 26*Sqrt[1 + y*(-1 + z)]*z^5*
-             Sqrt[y + z - y*z] + 140*Sqrt[1 + y*(-1 + z)]*z^6*
-             Sqrt[y + z - y*z]) - y^2*(180*Sqrt[z] - 1140*z^(3/2) + 
-            2820*z^(5/2) - 3720*z^(7/2) + 2820*z^(9/2) - 1140*z^(11/2) + 
-            180*z^(13/2) - 58*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-            386*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-            1015*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
-            1618*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
-            1420*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
-            296*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] + 
-            217*Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]))*G[r, t])/
-        (3*(-1 + 2*y)*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*
-         (y + z - y*z)^(5/2))) + 
+          330*z^(7/2) - 81*z^(9/2) + (155 + 6*Pi^2)*Sqrt[1 + y*(-1 + z)]*
+           Sqrt[y + z - y*z] - (535 + 48*Pi^2)*Sqrt[1 + y*(-1 + z)]*z*
+           Sqrt[y + z - y*z] + 2*(368 + 45*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^2*
+           Sqrt[y + z - y*z] - (487 + 60*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^3*
+           Sqrt[y + z - y*z] + (149 + 12*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^4*
+           Sqrt[y + z - y*z]) + 2*y^4*(-1 + z)^2*(-294*Sqrt[z] + 
+          1140*z^(3/2) - 1725*z^(5/2) + 1170*z^(7/2) - 291*z^(9/2) + 
+          2*(245 + 18*Pi^2)*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
+          3*(625 + 56*Pi^2)*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
+          2*(1373 + 135*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
+          9*(203 + 20*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
+          2*(242 + 21*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z]) + 
+        y*(-72*z^(3/2) + 42*z^(5/2) - 18*z^(7/2) + 126*z^(9/2) - 
+          78*z^(11/2) + 3*(-21 + 2*Pi^2)*Sqrt[1 + y*(-1 + z)]*
+           Sqrt[y + z - y*z] + 2*(53 + 6*Pi^2)*Sqrt[1 + y*(-1 + z)]*z*
+           Sqrt[y + z - y*z] - 3*(35 + 16*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^2*
+           Sqrt[y + z - y*z] + 4*(31 + 15*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^3*
+           Sqrt[y + z - y*z] - 6*(37 + 9*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^4*
+           Sqrt[y + z - y*z] + 4*(31 + 6*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^5*
+           Sqrt[y + z - y*z]) + y^2*(-84*Sqrt[z] + 504*z^(3/2) - 
+          1080*z^(5/2) + 1458*z^(7/2) - 1278*z^(9/2) + 558*z^(11/2) - 
+          78*z^(13/2) + (239 - 6*Pi^2)*Sqrt[1 + y*(-1 + z)]*
+           Sqrt[y + z - y*z] - 4*(248 + 15*Pi^2)*Sqrt[1 + y*(-1 + z)]*z*
+           Sqrt[y + z - y*z] + (2017 + 252*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^2*
+           Sqrt[y + z - y*z] - 4*(608 + 99*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^3*
+           Sqrt[y + z - y*z] + 2*(965 + 159*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^4*
+           Sqrt[y + z - y*z] - 10*(89 + 12*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^5*
+           Sqrt[y + z - y*z] + 4*(41 + 3*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^6*
+           Sqrt[y + z - y*z]))*G[0, t^2])/(9*(1 + y*(-1 + z))^(5/2)*(-1 + z)*
+       z*(y + z - y*z)^(5/2)) + 
+     (Pi^2*(-24*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 - 4*y^3*(-1 + z)^4*
+         (5 - 10*z + 6*z^2) + 2*y^4*(-1 + z)^4*(15 - 30*z + 16*z^2) - 
+        y*(-1 + z)^2*z*(-10 + 7*z - 10*z^2 + z^3) + 5*(z^2 + z^4) + 
+        y^2*(-1 + z)^2*(6 - 34*z + 45*z^2 - 38*z^3 + 9*z^4))*G[1, t^2])/
+      (3*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
      ((Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z]*(-107 + 360*z - 107*z^2) - 
         180*y^5*(-1 + z)^6*(-2*Sqrt[z] + 5*Sqrt[1 + y*(-1 + z)]*
            Sqrt[y + z - y*z]) + 60*y^6*(-1 + z)^6*(-2*Sqrt[z] + 
@@ -5208,6 +4529,50 @@
           892*z^5 + 247*z^6) - 2*y^4*(694 - 2658*z + 4613*z^2 - 4984*z^3 + 
           3570*z^4 - 1586*z^5 + 351*z^6))*G[0, I, r])/
       (3*(-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+     G[-1, t]*((Pi^2*(z^2 + z^4 - 8*y^5*(-1 + z)^4*(1 + 2*z + 2*z^2) + 
+          2*y^4*(-1 + z)^3*(-9 - 7*z + 6*z^2 + 22*z^3) - 
+          4*y^3*(-1 + z)^2*(3 - 4*z - 8*z^2 - 6*z^3 + 11*z^4) - 
+          y*z*(-2 + 9*z + 2*z^2 + 4*z^3 - 8*z^4 + 3*z^5) + 
+          y^2*(2 - 18*z + 17*z^2 + 10*z^3 + 18*z^4 - 48*z^5 + 19*z^6)))/
+        (2*(-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (4*(8*y^5*(-1 + z)^4*(1 + 2*z + 2*z^2) - 2*y^4*(-1 + z)^3*
+           (-11 - 13*z - 6*z^2 + 18*z^3) - 3*(z^2 + z^4) + 
+          4*y^3*(-1 + z)^2*(5 - 2*z^2 - 14*z^3 + 7*z^4) + 
+          y*z*(-6 + 11*z - 10*z^2 + 20*z^3 - 8*z^4 + z^5) + 
+          y^2*(-6 + 22*z - 19*z^2 + 34*z^3 - 70*z^4 + 48*z^5 - 9*z^6))*
+         G[0, 0, r])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (12*(-(z^2*(1 + z^2)) + 
+          y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 4*y^3*(-1 + 8*z^3 - 9*z^4 + 
+            2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 
+          y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*G[0, -I, r])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (12*(-(z^2*(1 + z^2)) + y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 
+          4*y^3*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 
+            2*z^6) + y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*
+         G[0, I, r])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2)) + G[1, t]*
+      ((Pi^2*(z^2 + z^4 - 8*y^5*(-1 + z)^4*(1 + 2*z + 2*z^2) + 
+          2*y^4*(-1 + z)^3*(-9 - 7*z + 6*z^2 + 22*z^3) - 
+          4*y^3*(-1 + z)^2*(3 - 4*z - 8*z^2 - 6*z^3 + 11*z^4) - 
+          y*z*(-2 + 9*z + 2*z^2 + 4*z^3 - 8*z^4 + 3*z^5) + 
+          y^2*(2 - 18*z + 17*z^2 + 10*z^3 + 18*z^4 - 48*z^5 + 19*z^6)))/
+        (2*(-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (4*(8*y^5*(-1 + z)^4*(1 + 2*z + 2*z^2) - 2*y^4*(-1 + z)^3*
+           (-11 - 13*z - 6*z^2 + 18*z^3) - 3*(z^2 + z^4) + 
+          4*y^3*(-1 + z)^2*(5 - 2*z^2 - 14*z^3 + 7*z^4) + 
+          y*z*(-6 + 11*z - 10*z^2 + 20*z^3 - 8*z^4 + z^5) + 
+          y^2*(-6 + 22*z - 19*z^2 + 34*z^3 - 70*z^4 + 48*z^5 - 9*z^6))*
+         G[0, 0, r])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (12*(-(z^2*(1 + z^2)) + 
+          y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 4*y^3*(-1 + 8*z^3 - 9*z^4 + 
+            2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 
+          y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*G[0, -I, r])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (12*(-(z^2*(1 + z^2)) + y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 
+          4*y^3*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 
+            2*z^6) + y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*
+         G[0, I, r])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2)) + 
      ((Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z]*(46 + 55*z^2) + 
         16*y^7*(-1 + z)^6*(-9*Sqrt[z] + Sqrt[1 + y*(-1 + z)]*
            Sqrt[y + z - y*z]) - 8*y^6*(-1 + z)^5*(63*Sqrt[z] - 63*z^(3/2) - 
@@ -5327,6 +4692,431 @@
          (-14 - 102*z + 293*z^2 - 122*z^3 + z^4) + 2*y*(-1 + z)^2*
          (6 + 50*z - 163*z^2 + 50*z^3 + z^4))*G[I, I, r])/
       (3*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+     G[0, t]*((-56*y^6*(-1 + z)^6*(21*Sqrt[z] + (-103 + 12*Pi^2)*
+            Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z]) + 16*y^7*(-1 + z)^6*
+          (21*Sqrt[z] + (-103 + 12*Pi^2)*Sqrt[1 + y*(-1 + z)]*
+            Sqrt[y + z - y*z]) + z^2*(12*Sqrt[z] - 30*z^(3/2) + 
+           2*(43 - 18*Pi^2)*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
+           147*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 4*(-29 + 9*Pi^2)*
+            Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z]) - 
+         2*y^4*(-1 + z)^2*(630*Sqrt[z] - 2340*z^(3/2) + 3585*z^(5/2) - 
+           2490*z^(7/2) + 615*z^(9/2) + 2*(-1555 + 168*Pi^2)*
+            Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 3*(-4165 + 536*Pi^2)*
+            Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 6*(-3125 + 432*Pi^2)*
+            Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 5*(-2491 + 336*Pi^2)*
+            Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 60*(-53 + 6*Pi^2)*
+            Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z]) + 
+         4*y^5*(-1 + z)^2*(420*Sqrt[z] - 1644*z^(3/2) + 2481*z^(5/2) - 
+           1674*z^(7/2) + 417*z^(9/2) + 6*(-344 + 39*Pi^2)*
+            Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + (8267 - 996*Pi^2)*
+            Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 18*(-689 + 85*Pi^2)*
+            Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 3*(2753 - 336*Pi^2)*
+            Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 2*(-1039 + 120*Pi^2)*
+            Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z]) + 
+         y*z*(-72*Sqrt[z] + 18*z^(3/2) + 42*z^(5/2) + 126*z^(7/2) - 
+           78*z^(9/2) + 36*(15 - 2*Pi^2)*Sqrt[1 + y*(-1 + z)]*
+            Sqrt[y + z - y*z] + 12*(-86 + 27*Pi^2)*Sqrt[1 + y*(-1 + z)]*z*
+            Sqrt[y + z - y*z] + (463 - 312*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^2*
+            Sqrt[y + z - y*z] + 2*(-637 + 162*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^3*
+            Sqrt[y + z - y*z] + (553 - 96*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^4*
+            Sqrt[y + z - y*z] + 16*Sqrt[1 + y*(-1 + z)]*z^5*
+            Sqrt[y + z - y*z]) + y^2*(-84*Sqrt[z] + 648*z^(3/2) - 
+           1164*z^(5/2) + 1494*z^(7/2) - 1530*z^(9/2) + 714*z^(11/2) - 
+           78*z^(13/2) + 12*(35 - 3*Pi^2)*Sqrt[1 + y*(-1 + z)]*
+            Sqrt[y + z - y*z] + 2*(-2081 + 288*Pi^2)*Sqrt[1 + y*(-1 + z)]*z*
+            Sqrt[y + z - y*z] - 64*(-140 + 27*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^2*
+            Sqrt[y + z - y*z] + (-10771 + 2400*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^3*
+            Sqrt[y + z - y*z] + 2*(4751 - 918*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^4*
+            Sqrt[y + z - y*z] + (-4241 + 672*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^5*
+            Sqrt[y + z - y*z] + 16*(25 - 3*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^6*
+            Sqrt[y + z - y*z]) + 2*y^3*(252*Sqrt[z] - 1440*z^(3/2) + 
+           3378*z^(5/2) - 4578*z^(7/2) + 3690*z^(9/2) - 1542*z^(11/2) + 
+           240*z^(13/2) + 2*(-626 + 63*Pi^2)*Sqrt[1 + y*(-1 + z)]*
+            Sqrt[y + z - y*z] + 4*(2024 - 261*Pi^2)*Sqrt[1 + y*(-1 + z)]*z*
+            Sqrt[y + z - y*z] + 24*(-825 + 124*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^2*
+            Sqrt[y + z - y*z] + (25997 - 4188*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^3*
+            Sqrt[y + z - y*z] + 6*(-3329 + 523*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^4*
+            Sqrt[y + z - y*z] + (8189 - 1152*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^5*
+            Sqrt[y + z - y*z] + 4*(-323 + 36*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^6*
+            Sqrt[y + z - y*z]))/(9*(-1 + 2*y)*(1 + y*(-1 + z))^(5/2)*(-1 + z)*
+         z*(y + z - y*z)^(5/2)) - (4*(-132*y^5*(-1 + z)^6 + 
+          44*y^6*(-1 + z)^6 - 3*z^2*(5 - 16*z + 5*z^2) - 
+          4*y^3*(-1 + z)^4*(39 + 24*z + 34*z^2) + 2*y^4*(-1 + z)^4*
+           (94 - 86*z + 89*z^2) - y*(-1 + z)^2*(18 + 26*z - 91*z^2 + 26*z^3 + 
+            13*z^4) + y^2*(-1 + z)^2*(74 + 6*z - 173*z^2 + 26*z^3 + 59*z^4))*
+         G[-I, r])/(3*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (4*(-132*y^5*(-1 + z)^6 + 44*y^6*(-1 + z)^6 - 
+          3*z^2*(5 - 16*z + 5*z^2) - 4*y^3*(-1 + z)^4*(39 + 24*z + 34*z^2) + 
+          2*y^4*(-1 + z)^4*(94 - 86*z + 89*z^2) - y*(-1 + z)^2*
+           (18 + 26*z - 91*z^2 + 26*z^3 + 13*z^4) + y^2*(-1 + z)^2*
+           (74 + 6*z - 173*z^2 + 26*z^3 + 59*z^4))*G[I, r])/
+        (3*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+       (32*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 2*z^3 - 
+          2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*(9 - 8*z + 2*z^2) - 
+          y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*G[0, 0, r])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) - 
+       (16*(-56*y^6*(-1 + z)^6 + 16*y^7*(-1 + z)^6 - z^2*(1 + z^2) + 
+          8*y^5*(-1 + z)^4*(9 - 23*z + 9*z^2) - 2*y^4*(-1 + z)^3*
+           (-21 + 107*z - 110*z^2 + 20*z^3) + 2*y^3*(-1 + z)^2*
+           (5 - 58*z + 104*z^2 - 62*z^3 + 3*z^4) - 
+          y*z*(2 - 17*z + 18*z^2 - 16*z^3 + 4*z^4 + z^5) + 
+          y^2*z*(30 - 115*z + 170*z^2 - 120*z^3 + 32*z^4 + 3*z^5))*
+         G[0, -I, r])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (16*(-56*y^6*(-1 + z)^6 + 16*y^7*(-1 + z)^6 - 
+          z^2*(1 + z^2) + 8*y^5*(-1 + z)^4*(9 - 23*z + 9*z^2) - 
+          2*y^4*(-1 + z)^3*(-21 + 107*z - 110*z^2 + 20*z^3) + 
+          2*y^3*(-1 + z)^2*(5 - 58*z + 104*z^2 - 62*z^3 + 3*z^4) - 
+          y*z*(2 - 17*z + 18*z^2 - 16*z^3 + 4*z^4 + z^5) + 
+          y^2*z*(30 - 115*z + 170*z^2 - 120*z^3 + 32*z^4 + 3*z^5))*
+         G[0, I, r])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (16*(-24*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 - 
+          8*y^3*(-1 + z)^4*(1 - 7*z + z^2) + 4*y^4*(-1 + z)^4*
+           (6 - 17*z + 6*z^2) + 2*(z^2 + z^4) + y*(-1 + z)^2*
+           (1 + 6*z - 6*z^2 + 6*z^3 + z^4) - y^2*(-1 + z)^2*
+           (1 + 26*z - 46*z^2 + 26*z^3 + z^4))*G[-I, 0, r])/
+        ((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (16*(-24*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 - 8*y^3*(-1 + z)^4*
+           (3 - 5*z + 3*z^2) + 4*y^4*(-1 + z)^4*(8 - 15*z + 8*z^2) + 
+          6*(z^2 + z^4) - y*(-1 + z)^2*(1 - 10*z + 10*z^2 - 10*z^3 + z^4) + 
+          y^2*(-1 + z)^2*(9 - 38*z + 50*z^2 - 38*z^3 + 9*z^4))*G[-I, -I, r])/
+        ((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (16*(-24*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 - 8*y^3*(-1 + z)^4*
+           (3 - 5*z + 3*z^2) + 4*y^4*(-1 + z)^4*(8 - 15*z + 8*z^2) + 
+          6*(z^2 + z^4) - y*(-1 + z)^2*(1 - 10*z + 10*z^2 - 10*z^3 + z^4) + 
+          y^2*(-1 + z)^2*(9 - 38*z + 50*z^2 - 38*z^3 + 9*z^4))*G[-I, I, r])/
+        ((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (16*(-24*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 - 8*y^3*(-1 + z)^4*
+           (1 - 7*z + z^2) + 4*y^4*(-1 + z)^4*(6 - 17*z + 6*z^2) + 
+          2*(z^2 + z^4) + y*(-1 + z)^2*(1 + 6*z - 6*z^2 + 6*z^3 + z^4) - 
+          y^2*(-1 + z)^2*(1 + 26*z - 46*z^2 + 26*z^3 + z^4))*G[I, 0, r])/
+        ((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (16*(-24*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 - 8*y^3*(-1 + z)^4*
+           (3 - 5*z + 3*z^2) + 4*y^4*(-1 + z)^4*(8 - 15*z + 8*z^2) + 
+          6*(z^2 + z^4) - y*(-1 + z)^2*(1 - 10*z + 10*z^2 - 10*z^3 + z^4) + 
+          y^2*(-1 + z)^2*(9 - 38*z + 50*z^2 - 38*z^3 + 9*z^4))*G[I, -I, r])/
+        ((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (16*(-24*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 - 8*y^3*(-1 + z)^4*
+           (3 - 5*z + 3*z^2) + 4*y^4*(-1 + z)^4*(8 - 15*z + 8*z^2) + 
+          6*(z^2 + z^4) - y*(-1 + z)^2*(1 - 10*z + 10*z^2 - 10*z^3 + z^4) + 
+          y^2*(-1 + z)^2*(9 - 38*z + 50*z^2 - 38*z^3 + 9*z^4))*G[I, I, r])/
+        ((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2)) + 
+     G[r, t]*((2*Pi^2*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 2*z^3 - 
+          2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*(9 - 8*z + 2*z^2) - 
+          y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4)))/(3*(-1 + 2*y)*
+         (1 + y*(-1 + z))^2*(-1 + z)*z) + 
+       (4*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 2*z^3 - 
+          2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*(9 - 8*z + 2*z^2) - 
+          y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*G[0, 0, r])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) - 
+       (4*y*(-70*y^5*(-1 + z)^6 + 20*y^6*(-1 + z)^6 + 2*y^4*(-1 + z)^4*
+           (43 - 122*z + 38*z^2) - y^2*(-1 + z)^3*(-1 - 165*z + 120*z^2 + 
+            16*z^3) - y^3*(-1 + z)^3*(-39 + 303*z - 263*z^2 + 19*z^3) + 
+          z^2*(19 - 22*z + 9*z^2 + 2*z^3 - 2*z^4) + 
+          y*(4 + 30*z - 157*z^2 + 216*z^3 - 102*z^4 - 2*z^5 + 11*z^6))*
+         G[0, -I, r])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (4*y*(-70*y^5*(-1 + z)^6 + 20*y^6*(-1 + z)^6 + 
+          2*y^4*(-1 + z)^4*(43 - 122*z + 38*z^2) - y^2*(-1 + z)^3*
+           (-1 - 165*z + 120*z^2 + 16*z^3) - y^3*(-1 + z)^3*
+           (-39 + 303*z - 263*z^2 + 19*z^3) + z^2*(19 - 22*z + 9*z^2 + 
+            2*z^3 - 2*z^4) + y*(4 + 30*z - 157*z^2 + 216*z^3 - 102*z^4 - 
+            2*z^5 + 11*z^6))*G[0, I, r])/((-1 + 2*y)*(1 + y*(-1 + z))^2*
+         (-1 + z)*z*(y + z - y*z)^2) - 
+       (4*y*(-28*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 2*y^3*(-1 + z)^3*z*
+           (-55 + 58*z + z^2) + 4*y^4*(-1 + z)^4*(7 - 25*z + 7*z^2) - 
+          y^2*(-1 + z)^2*(15 + 42*z - 118*z^2 + 50*z^3 + 19*z^4) + 
+          2*(-1 + z^2 - 5*z^3 + 3*z^4 + z^5 - z^6) + 
+          y*(9 - 6*z - 41*z^2 + 86*z^3 - 51*z^4 - 8*z^5 + 11*z^6))*
+         G[-I, 0, r])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (4*y*(-28*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 
+          4*y^4*(-1 + z)^4*(11 - 21*z + 11*z^2) - 2*y^3*(-1 + z)^3*
+           (-20 + 55*z - 46*z^2 + 23*z^3) + y^2*(-1 + z)^2*
+           (21 - 82*z + 78*z^2 - 58*z^3 + 33*z^4) + 
+          y*(-7 + 34*z - 73*z^2 + 62*z^3 - 43*z^4 + 40*z^5 - 13*z^6) + 
+          2*(1 + 7*z^2 - z^3 + z^4 - 3*z^5 + z^6))*G[-I, -I, r])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (4*y*(-28*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*
+           (11 - 21*z + 11*z^2) - 2*y^3*(-1 + z)^3*(-20 + 55*z - 46*z^2 + 
+            23*z^3) + y^2*(-1 + z)^2*(21 - 82*z + 78*z^2 - 58*z^3 + 33*z^4) + 
+          y*(-7 + 34*z - 73*z^2 + 62*z^3 - 43*z^4 + 40*z^5 - 13*z^6) + 
+          2*(1 + 7*z^2 - z^3 + z^4 - 3*z^5 + z^6))*G[-I, I, r])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (4*y*(-28*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 2*y^3*(-1 + z)^3*z*
+           (-55 + 58*z + z^2) + 4*y^4*(-1 + z)^4*(7 - 25*z + 7*z^2) - 
+          y^2*(-1 + z)^2*(15 + 42*z - 118*z^2 + 50*z^3 + 19*z^4) + 
+          2*(-1 + z^2 - 5*z^3 + 3*z^4 + z^5 - z^6) + 
+          y*(9 - 6*z - 41*z^2 + 86*z^3 - 51*z^4 - 8*z^5 + 11*z^6))*
+         G[I, 0, r])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (4*y*(-28*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 
+          4*y^4*(-1 + z)^4*(11 - 21*z + 11*z^2) - 2*y^3*(-1 + z)^3*
+           (-20 + 55*z - 46*z^2 + 23*z^3) + y^2*(-1 + z)^2*
+           (21 - 82*z + 78*z^2 - 58*z^3 + 33*z^4) + 
+          y*(-7 + 34*z - 73*z^2 + 62*z^3 - 43*z^4 + 40*z^5 - 13*z^6) + 
+          2*(1 + 7*z^2 - z^3 + z^4 - 3*z^5 + z^6))*G[I, -I, r])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (4*y*(-28*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*
+           (11 - 21*z + 11*z^2) - 2*y^3*(-1 + z)^3*(-20 + 55*z - 46*z^2 + 
+            23*z^3) + y^2*(-1 + z)^2*(21 - 82*z + 78*z^2 - 58*z^3 + 33*z^4) + 
+          y*(-7 + 34*z - 73*z^2 + 62*z^3 - 43*z^4 + 40*z^5 - 13*z^6) + 
+          2*(1 + 7*z^2 - z^3 + z^4 - 3*z^5 + z^6))*G[I, I, r])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2)) + 
+     G[-r, t]*((-9*z^2*(-2 + 5*z)*(Sqrt[z] + Sqrt[1 + y*(-1 + z)]*
+            Sqrt[y + z - y*z]) - 4*y^7*(-1 + z)^6*(-234*Sqrt[z] + 
+           (67 + 15*Pi^2)*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z]) + 
+         2*y^6*(-1 + z)^5*(1638*Sqrt[z] - 1638*z^(3/2) - (487 + 105*Pi^2)*
+            Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 7*(67 + 15*Pi^2)*
+            Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z]) - 
+         2*y^5*(-1 + z)^3*(2376*Sqrt[z] - 6876*z^(3/2) + 6975*z^(5/2) - 
+           2367*z^(7/2) - 9*(83 + 15*Pi^2)*Sqrt[1 + y*(-1 + z)]*
+            Sqrt[y + z - y*z] + (2119 + 465*Pi^2)*Sqrt[1 + y*(-1 + z)]*z*
+            Sqrt[y + z - y*z] - (2069 + 480*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^2*
+            Sqrt[y + z - y*z] + (661 + 150*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^3*
+            Sqrt[y + z - y*z]) + y*z*(-252*Sqrt[z] + 243*z^(3/2) - 
+           81*z^(5/2) + 405*z^(7/2) - 261*z^(9/2) + 22*Sqrt[1 + y*(-1 + z)]*
+            Sqrt[y + z - y*z] - 3*(119 + 15*Pi^2)*Sqrt[1 + y*(-1 + z)]*z*
+            Sqrt[y + z - y*z] + 6*(101 + 5*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^2*
+            Sqrt[y + z - y*z] - 9*(16 + 5*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^3*
+            Sqrt[y + z - y*z] + 3*(1 + 10*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^4*
+            Sqrt[y + z - y*z]) + y^3*(-1 + z)*(-1548*Sqrt[z] + 7236*z^(3/2) - 
+           12906*z^(5/2) + 13500*z^(7/2) - 7578*z^(9/2) + 1512*z^(11/2) + 
+           3*(121 + 15*Pi^2)*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
+           (2519 + 405*Pi^2)*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
+           (5768 + 1005*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
+           (5087 + 1185*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
+           (1697 + 630*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 
+           6*(61 + 15*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
+         y^4*(-1 + z)*(3690*Sqrt[z] - 17190*z^(3/2) + 33615*z^(5/2) - 
+           34065*z^(7/2) + 17595*z^(9/2) - 3645*z^(11/2) - 
+           3*(371 + 55*Pi^2)*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
+           (5761 + 1035*Pi^2)*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
+           (11423 + 2400*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
+           (10859 + 2580*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
+           (4892 + 1275*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
+           (952 + 225*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
+         y^2*(-270*Sqrt[z] + 2124*z^(3/2) - 3978*z^(5/2) + 4689*z^(7/2) - 
+           4527*z^(9/2) + 2223*z^(11/2) - 261*z^(13/2) + 
+           38*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 10*(55 + 9*Pi^2)*
+            Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + (2356 + 315*Pi^2)*
+            Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 6*(563 + 80*Pi^2)*
+            Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 2*(779 + 225*Pi^2)*
+            Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 30*(9 + 7*Pi^2)*
+            Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] + 3*(22 + 5*Pi^2)*
+            Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]))/
+        (9*(-1 + 2*y)*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*
+         (y + z - y*z)^(5/2)) + (4*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 
+          2*z^3 - 2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*
+           (9 - 8*z + 2*z^2) - y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*
+         G[0, 0, r])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) - 
+       (4*y*(-70*y^5*(-1 + z)^6 + 20*y^6*(-1 + z)^6 + 2*y^4*(-1 + z)^4*
+           (43 - 122*z + 38*z^2) - y^2*(-1 + z)^3*(-1 - 165*z + 120*z^2 + 
+            16*z^3) - y^3*(-1 + z)^3*(-39 + 303*z - 263*z^2 + 19*z^3) + 
+          z^2*(19 - 22*z + 9*z^2 + 2*z^3 - 2*z^4) + 
+          y*(4 + 30*z - 157*z^2 + 216*z^3 - 102*z^4 - 2*z^5 + 11*z^6))*
+         G[0, -I, r])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (4*y*(-70*y^5*(-1 + z)^6 + 20*y^6*(-1 + z)^6 + 
+          2*y^4*(-1 + z)^4*(43 - 122*z + 38*z^2) - y^2*(-1 + z)^3*
+           (-1 - 165*z + 120*z^2 + 16*z^3) - y^3*(-1 + z)^3*
+           (-39 + 303*z - 263*z^2 + 19*z^3) + z^2*(19 - 22*z + 9*z^2 + 
+            2*z^3 - 2*z^4) + y*(4 + 30*z - 157*z^2 + 216*z^3 - 102*z^4 - 
+            2*z^5 + 11*z^6))*G[0, I, r])/((-1 + 2*y)*(1 + y*(-1 + z))^2*
+         (-1 + z)*z*(y + z - y*z)^2) - 
+       (4*y*(-28*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 2*y^3*(-1 + z)^3*z*
+           (-55 + 58*z + z^2) + 4*y^4*(-1 + z)^4*(7 - 25*z + 7*z^2) - 
+          y^2*(-1 + z)^2*(15 + 42*z - 118*z^2 + 50*z^3 + 19*z^4) + 
+          2*(-1 + z^2 - 5*z^3 + 3*z^4 + z^5 - z^6) + 
+          y*(9 - 6*z - 41*z^2 + 86*z^3 - 51*z^4 - 8*z^5 + 11*z^6))*
+         G[-I, 0, r])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (4*y*(-28*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 
+          4*y^4*(-1 + z)^4*(11 - 21*z + 11*z^2) - 2*y^3*(-1 + z)^3*
+           (-20 + 55*z - 46*z^2 + 23*z^3) + y^2*(-1 + z)^2*
+           (21 - 82*z + 78*z^2 - 58*z^3 + 33*z^4) + 
+          y*(-7 + 34*z - 73*z^2 + 62*z^3 - 43*z^4 + 40*z^5 - 13*z^6) + 
+          2*(1 + 7*z^2 - z^3 + z^4 - 3*z^5 + z^6))*G[-I, -I, r])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (4*y*(-28*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*
+           (11 - 21*z + 11*z^2) - 2*y^3*(-1 + z)^3*(-20 + 55*z - 46*z^2 + 
+            23*z^3) + y^2*(-1 + z)^2*(21 - 82*z + 78*z^2 - 58*z^3 + 33*z^4) + 
+          y*(-7 + 34*z - 73*z^2 + 62*z^3 - 43*z^4 + 40*z^5 - 13*z^6) + 
+          2*(1 + 7*z^2 - z^3 + z^4 - 3*z^5 + z^6))*G[-I, I, r])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (4*y*(-28*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 2*y^3*(-1 + z)^3*z*
+           (-55 + 58*z + z^2) + 4*y^4*(-1 + z)^4*(7 - 25*z + 7*z^2) - 
+          y^2*(-1 + z)^2*(15 + 42*z - 118*z^2 + 50*z^3 + 19*z^4) + 
+          2*(-1 + z^2 - 5*z^3 + 3*z^4 + z^5 - z^6) + 
+          y*(9 - 6*z - 41*z^2 + 86*z^3 - 51*z^4 - 8*z^5 + 11*z^6))*
+         G[I, 0, r])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (4*y*(-28*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 
+          4*y^4*(-1 + z)^4*(11 - 21*z + 11*z^2) - 2*y^3*(-1 + z)^3*
+           (-20 + 55*z - 46*z^2 + 23*z^3) + y^2*(-1 + z)^2*
+           (21 - 82*z + 78*z^2 - 58*z^3 + 33*z^4) + 
+          y*(-7 + 34*z - 73*z^2 + 62*z^3 - 43*z^4 + 40*z^5 - 13*z^6) + 
+          2*(1 + 7*z^2 - z^3 + z^4 - 3*z^5 + z^6))*G[I, -I, r])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (4*y*(-28*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*
+           (11 - 21*z + 11*z^2) - 2*y^3*(-1 + z)^3*(-20 + 55*z - 46*z^2 + 
+            23*z^3) + y^2*(-1 + z)^2*(21 - 82*z + 78*z^2 - 58*z^3 + 33*z^4) + 
+          y*(-7 + 34*z - 73*z^2 + 62*z^3 - 43*z^4 + 40*z^5 - 13*z^6) + 
+          2*(1 + 7*z^2 - z^3 + z^4 - 3*z^5 + z^6))*G[I, I, r])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2)) + 
+     G[r^(-1), t]*(-1/3*(Pi^2*(-1 + y)*(-10*y^5*(-1 + z)^6 + 
+           4*y^6*(-1 + z)^6 - 2*y^4*(-1 + z)^4*(-6 + 18*z + z^2) + 
+           y^3*(-1 + z)^3*(11 - 33*z + 39*z^2 + 19*z^3) + 3*(z^2 + z^4) - 
+           y^2*(-1 + z)^2*(-9 + 6*z - 45*z^2 + 10*z^3 + 14*z^4) + 
+           y*(-2 + 6*z - 11*z^2 + 26*z^3 - 18*z^4 - 4*z^5 + 3*z^6)))/
+         ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+       (4*(-1 + y)*(-30*y^5*(-1 + z)^6 + 12*y^6*(-1 + z)^6 - z^2*(1 + z^2) + 
+          2*y^4*(-1 + z)^4*(8 - 40*z + 11*z^2) + y^3*(-1 + z)^3*
+           (-1 - 39*z + 75*z^2 + z^3) - y^2*(-1 + z)^2*(4 + 6*z - 23*z^2 + 
+            30*z^3 + 7*z^4) + y*(1 - 2*z + 4*z^3 - 7*z^4 + 2*z^5 + 2*z^6))*
+         G[0, 0, r])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) + (4*(-1 + y)*(-10*y^5*(-1 + z)^6 + 
+          4*y^6*(-1 + z)^6 + 2*y^4*(-1 + z)^4*(10 - 12*z + 5*z^2) + 
+          3*y^3*(-1 + z)^3*(7 - 11*z + 15*z^2 + z^3) + 7*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(-12 + 18*z - 55*z^2 + 26*z^3 + 7*z^4) + 
+          y*(-1 + 14*z - 24*z^2 + 44*z^3 - 37*z^4 + 2*z^5 + 2*z^6))*
+         G[0, -I, r])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) + (4*(-1 + y)*(-10*y^5*(-1 + z)^6 + 
+          4*y^6*(-1 + z)^6 + 2*y^4*(-1 + z)^4*(10 - 12*z + 5*z^2) + 
+          3*y^3*(-1 + z)^3*(7 - 11*z + 15*z^2 + z^3) + 7*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(-12 + 18*z - 55*z^2 + 26*z^3 + 7*z^4) + 
+          y*(-1 + 14*z - 24*z^2 + 44*z^3 - 37*z^4 + 2*z^5 + 2*z^6))*
+         G[0, I, r])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (4*(-1 + y)*(-20*y^5*(-1 + z)^6 + 
+          8*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*(2 - 15*z + 2*z^2) + 
+          2*y^3*(-1 + z)^3*(-4 - 21*z + 18*z^2 + 3*z^3) - 2*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(7 + 8*z - 16*z^2 + 4*z^3 + 5*z^4) + 
+          y*(1 - 4*z + z^2 - 2*z^3 + 5*z^4 - 2*z^5 + z^6))*G[-I, 0, r])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (4*(-1 + y)*(-20*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 
+          4*y^4*(-1 + z)^4*(6 - 11*z + 6*z^2) - 2*y^3*(-1 + z)^3*
+           (-8 + 21*z - 30*z^2 + 5*z^3) + 6*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(-5 + 24*z - 48*z^2 + 36*z^3 + z^4) + 
+          y*(1 + 12*z - 23*z^2 + 38*z^3 - 35*z^4 + 6*z^5 + z^6))*
+         G[-I, -I, r])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (4*(-1 + y)*(-20*y^5*(-1 + z)^6 + 
+          8*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*(6 - 11*z + 6*z^2) - 
+          2*y^3*(-1 + z)^3*(-8 + 21*z - 30*z^2 + 5*z^3) + 6*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(-5 + 24*z - 48*z^2 + 36*z^3 + z^4) + 
+          y*(1 + 12*z - 23*z^2 + 38*z^3 - 35*z^4 + 6*z^5 + z^6))*G[-I, I, r])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (4*(-1 + y)*(-20*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 
+          4*y^4*(-1 + z)^4*(2 - 15*z + 2*z^2) + 2*y^3*(-1 + z)^3*
+           (-4 - 21*z + 18*z^2 + 3*z^3) - 2*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(7 + 8*z - 16*z^2 + 4*z^3 + 5*z^4) + 
+          y*(1 - 4*z + z^2 - 2*z^3 + 5*z^4 - 2*z^5 + z^6))*G[I, 0, r])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (4*(-1 + y)*(-20*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 
+          4*y^4*(-1 + z)^4*(6 - 11*z + 6*z^2) - 2*y^3*(-1 + z)^3*
+           (-8 + 21*z - 30*z^2 + 5*z^3) + 6*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(-5 + 24*z - 48*z^2 + 36*z^3 + z^4) + 
+          y*(1 + 12*z - 23*z^2 + 38*z^3 - 35*z^4 + 6*z^5 + z^6))*G[I, -I, r])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (4*(-1 + y)*(-20*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 
+          4*y^4*(-1 + z)^4*(6 - 11*z + 6*z^2) - 2*y^3*(-1 + z)^3*
+           (-8 + 21*z - 30*z^2 + 5*z^3) + 6*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(-5 + 24*z - 48*z^2 + 36*z^3 + z^4) + 
+          y*(1 + 12*z - 23*z^2 + 38*z^3 - 35*z^4 + 6*z^5 + z^6))*G[I, I, r])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2)) + 
+     G[-r^(-1), t]*((-4*y^7*(-1 + z)^6*(-234*Sqrt[z] + (67 + 24*Pi^2)*
+            Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z]) + 2*y^6*(-1 + z)^5*
+          (1638*Sqrt[z] - 1638*z^(3/2) - (451 + 168*Pi^2)*
+            Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 7*(67 + 24*Pi^2)*
+            Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z]) + 
+         z^2*(18*Sqrt[z] - 45*z^(3/2) + 10*(1 + 3*Pi^2)*Sqrt[1 + y*(-1 + z)]*
+            Sqrt[y + z - y*z] + 60*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
+           (7 + 30*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z]) - 
+         2*y^5*(-1 + z)^3*(2376*Sqrt[z] - 6876*z^(3/2) + 6975*z^(5/2) - 
+           2367*z^(7/2) - 3*(213 + 74*Pi^2)*Sqrt[1 + y*(-1 + z)]*
+            Sqrt[y + z - y*z] + (1903 + 768*Pi^2)*Sqrt[1 + y*(-1 + z)]*z*
+            Sqrt[y + z - y*z] - (1961 + 768*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^2*
+            Sqrt[y + z - y*z] + (661 + 222*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^3*
+            Sqrt[y + z - y*z]) + y^3*(-1 + z)*(-1548*Sqrt[z] + 7236*z^(3/2) - 
+           12906*z^(5/2) + 13500*z^(7/2) - 7578*z^(9/2) + 1512*z^(11/2) + 
+           (751 + 39*Pi^2)*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
+           (1955 + 861*Pi^2)*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
+           12*(253 + 194*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
+           (3331 + 2352*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
+           (2329 + 873*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 
+           (398 + 27*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
+         y^4*(-1 + z)*(3690*Sqrt[z] - 17190*z^(3/2) + 33615*z^(5/2) - 
+           34065*z^(7/2) + 17595*z^(9/2) - 3645*z^(11/2) - 
+           (1127 + 258*Pi^2)*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
+           (4759 + 1872*Pi^2)*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
+           (8977 + 4344*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
+           9*(1029 + 484*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
+           6*(838 + 313*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
+           4*(242 + 63*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
+         y*(-252*z^(3/2) + 243*z^(5/2) - 81*z^(7/2) + 405*z^(9/2) - 
+           261*z^(11/2) + 3*(-21 + 5*Pi^2)*Sqrt[1 + y*(-1 + z)]*
+            Sqrt[y + z - y*z] + 20*(4 + 3*Pi^2)*Sqrt[1 + y*(-1 + z)]*z*
+            Sqrt[y + z - y*z] - 189*Pi^2*Sqrt[1 + y*(-1 + z)]*z^2*
+            Sqrt[y + z - y*z] + (-193 + 246*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^3*
+            Sqrt[y + z - y*z] - (106 + 231*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^4*
+            Sqrt[y + z - y*z] + 2*(34 + 15*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^5*
+            Sqrt[y + z - y*z] + (-16 + 9*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^6*
+            Sqrt[y + z - y*z]) - y^2*(270*Sqrt[z] - 2124*z^(3/2) + 
+           3978*z^(5/2) - 4689*z^(7/2) + 4527*z^(9/2) - 2223*z^(11/2) + 
+           261*z^(13/2) + (-331 + 30*Pi^2)*Sqrt[1 + y*(-1 + z)]*
+            Sqrt[y + z - y*z] + 2*(350 + 129*Pi^2)*Sqrt[1 + y*(-1 + z)]*z*
+            Sqrt[y + z - y*z] - 9*(79 + 112*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^2*
+            Sqrt[y + z - y*z] + 5*(139 + 306*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^3*
+            Sqrt[y + z - y*z] - 2*(569 + 534*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^4*
+            Sqrt[y + z - y*z] + 19*(37 + 12*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^5*
+            Sqrt[y + z - y*z] + 2*(-49 + 15*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^6*
+            Sqrt[y + z - y*z]))/(9*(-1 + 2*y)*(1 + y*(-1 + z))^(5/2)*(-1 + z)*
+         z*(y + z - y*z)^(5/2)) + (4*(-1 + y)*(-30*y^5*(-1 + z)^6 + 
+          12*y^6*(-1 + z)^6 - z^2*(1 + z^2) + 2*y^4*(-1 + z)^4*
+           (8 - 40*z + 11*z^2) + y^3*(-1 + z)^3*(-1 - 39*z + 75*z^2 + z^3) - 
+          y^2*(-1 + z)^2*(4 + 6*z - 23*z^2 + 30*z^3 + 7*z^4) + 
+          y*(1 - 2*z + 4*z^3 - 7*z^4 + 2*z^5 + 2*z^6))*G[0, 0, r])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+       (4*(-1 + y)*(-10*y^5*(-1 + z)^6 + 4*y^6*(-1 + z)^6 + 
+          2*y^4*(-1 + z)^4*(10 - 12*z + 5*z^2) + 3*y^3*(-1 + z)^3*
+           (7 - 11*z + 15*z^2 + z^3) + 7*(z^2 + z^4) - y^2*(-1 + z)^2*
+           (-12 + 18*z - 55*z^2 + 26*z^3 + 7*z^4) + 
+          y*(-1 + 14*z - 24*z^2 + 44*z^3 - 37*z^4 + 2*z^5 + 2*z^6))*
+         G[0, -I, r])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) + (4*(-1 + y)*(-10*y^5*(-1 + z)^6 + 
+          4*y^6*(-1 + z)^6 + 2*y^4*(-1 + z)^4*(10 - 12*z + 5*z^2) + 
+          3*y^3*(-1 + z)^3*(7 - 11*z + 15*z^2 + z^3) + 7*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(-12 + 18*z - 55*z^2 + 26*z^3 + 7*z^4) + 
+          y*(-1 + 14*z - 24*z^2 + 44*z^3 - 37*z^4 + 2*z^5 + 2*z^6))*
+         G[0, I, r])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (4*(-1 + y)*(-20*y^5*(-1 + z)^6 + 
+          8*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*(2 - 15*z + 2*z^2) + 
+          2*y^3*(-1 + z)^3*(-4 - 21*z + 18*z^2 + 3*z^3) - 2*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(7 + 8*z - 16*z^2 + 4*z^3 + 5*z^4) + 
+          y*(1 - 4*z + z^2 - 2*z^3 + 5*z^4 - 2*z^5 + z^6))*G[-I, 0, r])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (4*(-1 + y)*(-20*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 
+          4*y^4*(-1 + z)^4*(6 - 11*z + 6*z^2) - 2*y^3*(-1 + z)^3*
+           (-8 + 21*z - 30*z^2 + 5*z^3) + 6*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(-5 + 24*z - 48*z^2 + 36*z^3 + z^4) + 
+          y*(1 + 12*z - 23*z^2 + 38*z^3 - 35*z^4 + 6*z^5 + z^6))*
+         G[-I, -I, r])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (4*(-1 + y)*(-20*y^5*(-1 + z)^6 + 
+          8*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*(6 - 11*z + 6*z^2) - 
+          2*y^3*(-1 + z)^3*(-8 + 21*z - 30*z^2 + 5*z^3) + 6*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(-5 + 24*z - 48*z^2 + 36*z^3 + z^4) + 
+          y*(1 + 12*z - 23*z^2 + 38*z^3 - 35*z^4 + 6*z^5 + z^6))*G[-I, I, r])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (4*(-1 + y)*(-20*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 
+          4*y^4*(-1 + z)^4*(2 - 15*z + 2*z^2) + 2*y^3*(-1 + z)^3*
+           (-4 - 21*z + 18*z^2 + 3*z^3) - 2*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(7 + 8*z - 16*z^2 + 4*z^3 + 5*z^4) + 
+          y*(1 - 4*z + z^2 - 2*z^3 + 5*z^4 - 2*z^5 + z^6))*G[I, 0, r])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (4*(-1 + y)*(-20*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 
+          4*y^4*(-1 + z)^4*(6 - 11*z + 6*z^2) - 2*y^3*(-1 + z)^3*
+           (-8 + 21*z - 30*z^2 + 5*z^3) + 6*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(-5 + 24*z - 48*z^2 + 36*z^3 + z^4) + 
+          y*(1 + 12*z - 23*z^2 + 38*z^3 - 35*z^4 + 6*z^5 + z^6))*G[I, -I, r])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (4*(-1 + y)*(-20*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 
+          4*y^4*(-1 + z)^4*(6 - 11*z + 6*z^2) - 2*y^3*(-1 + z)^3*
+           (-8 + 21*z - 30*z^2 + 5*z^3) + 6*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(-5 + 24*z - 48*z^2 + 36*z^3 + z^4) + 
+          y*(1 + 12*z - 23*z^2 + 38*z^3 - 35*z^4 + 6*z^5 + z^6))*G[I, I, r])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2)) + 
      (2*(Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z]*(5 + 6*z + 5*z^2) - 
         18*y^5*(-1 + z)^6*(-4*Sqrt[z] + 9*Sqrt[1 + y*(-1 + z)]*
            Sqrt[y + z - y*z]) + 6*y^6*(-1 + z)^6*(-4*Sqrt[z] + 
@@ -6020,26 +5810,1193 @@
           355*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 
           198*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] + 
           12*Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]))*G[r, -r, t])/
-      (3*(-1 + 2*y)*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*(y + z - y*z)^(5/2)) - 
+      (3*(-1 + 2*y)*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*(y + z - y*z)^(5/2)) + 
+     G[0, r]*((-8*y^7*(-1 + z)^6*(-138*Sqrt[z] + (67 + 9*Pi^2)*
+            Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z]) + 4*y^6*(-1 + z)^5*
+          (966*Sqrt[z] - 966*z^(3/2) - (487 + 63*Pi^2)*Sqrt[1 + y*(-1 + z)]*
+            Sqrt[y + z - y*z] + 7*(67 + 9*Pi^2)*Sqrt[1 + y*(-1 + z)]*z*
+            Sqrt[y + z - y*z]) + z^2*(24*Sqrt[z] - 60*z^(3/2) + 
+           10*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
+           39*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
+           16*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z]) - 
+         4*y^5*(-1 + z)^3*(1398*Sqrt[z] - 4050*z^(3/2) + 4116*z^(5/2) - 
+           1392*z^(7/2) - 9*(83 + 9*Pi^2)*Sqrt[1 + y*(-1 + z)]*
+            Sqrt[y + z - y*z] + (2119 + 279*Pi^2)*Sqrt[1 + y*(-1 + z)]*z*
+            Sqrt[y + z - y*z] - (2069 + 288*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^2*
+            Sqrt[y + z - y*z] + (661 + 90*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^3*
+            Sqrt[y + z - y*z]) + y*z*(-288*Sqrt[z] + 252*z^(3/2) - 
+           60*z^(5/2) + 468*z^(7/2) - 300*z^(9/2) + 48*Sqrt[1 + y*(-1 + z)]*
+            Sqrt[y + z - y*z] - 6*(79 + 9*Pi^2)*Sqrt[1 + y*(-1 + z)]*z*
+            Sqrt[y + z - y*z] + (899 + 36*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^2*
+            Sqrt[y + z - y*z] - 2*(161 + 27*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^3*
+            Sqrt[y + z - y*z] + (17 + 36*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^4*
+            Sqrt[y + z - y*z] - 16*Sqrt[1 + y*(-1 + z)]*z^5*
+            Sqrt[y + z - y*z]) + 2*y^4*(-1 + z)*(2160*Sqrt[z] - 
+           10080*z^(3/2) + 19770*z^(5/2) - 20070*z^(7/2) + 10350*z^(9/2) - 
+           2130*z^(11/2) - 11*(101 + 9*Pi^2)*Sqrt[1 + y*(-1 + z)]*
+            Sqrt[y + z - y*z] + (5746 + 621*Pi^2)*Sqrt[1 + y*(-1 + z)]*z*
+            Sqrt[y + z - y*z] - 6*(1877 + 240*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^2*
+            Sqrt[y + z - y*z] + 4*(2677 + 387*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^3*
+            Sqrt[y + z - y*z] - (4969 + 765*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^4*
+            Sqrt[y + z - y*z] + 15*(64 + 9*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^5*
+            Sqrt[y + z - y*z]) - 2*y^3*(-1 + z)*(900*Sqrt[z] - 4212*z^(3/2) + 
+           7548*z^(5/2) - 7944*z^(7/2) + 4440*z^(9/2) - 876*z^(11/2) - 
+           (359 + 27*Pi^2)*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
+           (2489 + 243*Pi^2)*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
+           (5446 + 603*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
+           3*(1595 + 237*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
+           3*(617 + 126*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
+           2*(191 + 27*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
+         y^2*(-312*Sqrt[z] + 2448*z^(3/2) - 4560*z^(5/2) + 5436*z^(7/2) - 
+           5292*z^(9/2) + 2580*z^(11/2) - 300*z^(13/2) + 
+           72*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 2*(535 + 54*Pi^2)*
+            Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 2*(2060 + 189*Pi^2)*
+            Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - (5819 + 576*Pi^2)*
+            Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 2*(1501 + 270*Pi^2)*
+            Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 7*(103 + 36*Pi^2)*
+            Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] + 2*(82 + 9*Pi^2)*
+            Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]))/
+        (9*(-1 + 2*y)*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*
+         (y + z - y*z)^(5/2)) + (4*(z^2*(-1 + z - z^2) - 
+          y*(-1 + z)^2*z*(1 - 3*z + 3*z^2 + z^3) - 2*y^3*(-1 + z)^3*
+           (1 + 2*z + 10*z^2 + 3*z^3) + y^4*(-1 + z)^3*(1 + 2*z + 10*z^2 + 
+            3*z^3) + y^2*(-1 + z)^2*(-1 - 11*z^2 + 10*z^3 + 4*z^4))*G[-1, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+       (8*(Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z]*(2 + 11*z^2) + 
+          2*y^5*(-1 + z)^5*(-6*Sqrt[z] + Sqrt[1 + y*(-1 + z)]*
+             Sqrt[y + z - y*z]) - 2*y^4*(-1 + z)^4*(18*Sqrt[z] - 12*z^(3/2) + 
+            3*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 2*Sqrt[1 + y*(-1 + z)]*
+             z*Sqrt[y + z - y*z]) + y^3*(-1 + z)*(-42*Sqrt[z] + 132*z^(3/2) - 
+            156*z^(5/2) + 84*z^(7/2) - 18*z^(9/2) + 4*Sqrt[1 + y*(-1 + z)]*
+             Sqrt[y + z - y*z] + 60*Sqrt[1 + y*(-1 + z)]*z*
+             Sqrt[y + z - y*z] - 105*Sqrt[1 + y*(-1 + z)]*z^2*
+             Sqrt[y + z - y*z] + 32*Sqrt[1 + y*(-1 + z)]*z^3*
+             Sqrt[y + z - y*z] + 3*Sqrt[1 + y*(-1 + z)]*z^4*
+             Sqrt[y + z - y*z]) + y*(6*Sqrt[z] - 12*z^(3/2) + 12*z^(5/2) - 
+            12*z^(7/2) + 6*z^(9/2) - 4*Sqrt[1 + y*(-1 + z)]*
+             Sqrt[y + z - y*z] - 4*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
+            53*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
+            58*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
+            16*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z]) + 
+          y^2*(-24*Sqrt[z] + 78*z^(3/2) - 108*z^(5/2) + 84*z^(7/2) - 
+            36*z^(9/2) + 6*z^(11/2) + 16*Sqrt[1 + y*(-1 + z)]*
+             Sqrt[y + z - y*z] + 28*Sqrt[1 + y*(-1 + z)]*z*
+             Sqrt[y + z - y*z] - 167*Sqrt[1 + y*(-1 + z)]*z^2*
+             Sqrt[y + z - y*z] + 164*Sqrt[1 + y*(-1 + z)]*z^3*
+             Sqrt[y + z - y*z] - 34*Sqrt[1 + y*(-1 + z)]*z^4*
+             Sqrt[y + z - y*z] - Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]))*
+         G[0, t])/(3*(1 + y*(-1 + z))^(5/2)*(y*(-1 + z) - z)*(-1 + z)*z*
+         Sqrt[y + z - y*z]) + (4*(z^2*(-1 + z - z^2) - y*(-1 + z)^2*z*
+           (1 - 3*z + 3*z^2 + z^3) - 2*y^3*(-1 + z)^3*(1 + 2*z + 10*z^2 + 
+            3*z^3) + y^4*(-1 + z)^3*(1 + 2*z + 10*z^2 + 3*z^3) + 
+          y^2*(-1 + z)^2*(-1 - 11*z^2 + 10*z^3 + 4*z^4))*G[1, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+       ((-1 + y)*(Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z]*
+           (-29 + 36*z - 47*z^2) + 24*y^6*(-1 + z)^6*(3*Sqrt[z] + 
+            7*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z]) - 12*y^5*(-1 + z)^5*
+           (-15*Sqrt[z] + 15*z^(3/2) - 33*Sqrt[1 + y*(-1 + z)]*
+             Sqrt[y + z - y*z] + 35*Sqrt[1 + y*(-1 + z)]*z*
+             Sqrt[y + z - y*z]) + 2*y^4*(-1 + z)^2*(90*Sqrt[z] - 
+            360*z^(3/2) + 540*z^(5/2) - 360*z^(7/2) + 90*z^(9/2) + 
+            388*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
+            752*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
+            733*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
+            726*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
+            345*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z]) - 
+          y^3*(-1 + z)^2*(90*Sqrt[z] - 360*z^(3/2) + 540*z^(5/2) - 
+            360*z^(7/2) + 90*z^(9/2) + 754*Sqrt[1 + y*(-1 + z)]*
+             Sqrt[y + z - y*z] - 728*Sqrt[1 + y*(-1 + z)]*z*
+             Sqrt[y + z - y*z] - 355*Sqrt[1 + y*(-1 + z)]*z^2*
+             Sqrt[y + z - y*z] - 378*Sqrt[1 + y*(-1 + z)]*z^3*
+             Sqrt[y + z - y*z] + 671*Sqrt[1 + y*(-1 + z)]*z^4*
+             Sqrt[y + z - y*z]) + y*(18*z^(3/2) - 36*z^(5/2) + 36*z^(7/2) - 
+            36*z^(9/2) + 18*z^(11/2) - 66*Sqrt[1 + y*(-1 + z)]*
+             Sqrt[y + z - y*z] + 82*Sqrt[1 + y*(-1 + z)]*z*
+             Sqrt[y + z - y*z] + 134*Sqrt[1 + y*(-1 + z)]*z^2*
+             Sqrt[y + z - y*z] - 406*Sqrt[1 + y*(-1 + z)]*z^3*
+             Sqrt[y + z - y*z] + 305*Sqrt[1 + y*(-1 + z)]*z^4*
+             Sqrt[y + z - y*z] + 26*Sqrt[1 + y*(-1 + z)]*z^5*
+             Sqrt[y + z - y*z] - 63*Sqrt[1 + y*(-1 + z)]*z^6*
+             Sqrt[y + z - y*z]) + 2*y^2*(9*Sqrt[z] - 72*z^(3/2) + 
+            171*z^(5/2) - 216*z^(7/2) + 171*z^(9/2) - 72*z^(11/2) + 
+            9*z^(13/2) + 172*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
+            393*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
+            15*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
+            555*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
+            282*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 
+            240*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] + 
+            161*Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]))*G[-r^(-1), t])/
+        (3*(-1 + 2*y)*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*
+         (y + z - y*z)^(5/2)) + ((-1 + y)*(-3*Sqrt[1 + y*(-1 + z)]*z^2*
+           Sqrt[y + z - y*z]*(-5 - 12*z + z^2) + 8*y^6*(-1 + z)^6*
+           (3*Sqrt[z] + 19*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z]) - 
+          20*y^5*(-1 + z)^5*(-3*Sqrt[z] + 3*z^(3/2) - 13*Sqrt[1 + y*(-1 + z)]*
+             Sqrt[y + z - y*z] + 19*Sqrt[1 + y*(-1 + z)]*z*
+             Sqrt[y + z - y*z]) + 2*y^4*(-1 + z)^2*(30*Sqrt[z] - 
+            120*z^(3/2) + 180*z^(5/2) - 120*z^(7/2) + 30*z^(9/2) + 
+            156*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
+            408*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
+            625*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
+            614*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
+            229*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z]) - 
+          y^3*(-1 + z)*(-30*Sqrt[z] + 150*z^(3/2) - 300*z^(5/2) + 
+            300*z^(7/2) - 150*z^(9/2) + 30*z^(11/2) - 
+            130*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
+            650*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
+            505*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
+            403*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
+            869*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
+            259*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
+          y*(6*z^(3/2) - 12*z^(5/2) + 12*z^(7/2) - 12*z^(9/2) + 6*z^(11/2) + 
+            6*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
+            26*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
+            74*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
+            174*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
+            77*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
+            18*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] - 
+            11*Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]) + 
+          2*y^2*(3*Sqrt[z] - 24*z^(3/2) + 57*z^(5/2) - 72*z^(7/2) + 
+            57*z^(9/2) - 24*z^(11/2) + 3*z^(13/2) - 4*Sqrt[1 + y*(-1 + z)]*
+             Sqrt[y + z - y*z] - 125*Sqrt[1 + y*(-1 + z)]*z*
+             Sqrt[y + z - y*z] + 139*Sqrt[1 + y*(-1 + z)]*z^2*
+             Sqrt[y + z - y*z] + 135*Sqrt[1 + y*(-1 + z)]*z^3*
+             Sqrt[y + z - y*z] - 38*Sqrt[1 + y*(-1 + z)]*z^4*
+             Sqrt[y + z - y*z] - 152*Sqrt[1 + y*(-1 + z)]*z^5*
+             Sqrt[y + z - y*z] + 33*Sqrt[1 + y*(-1 + z)]*z^6*
+             Sqrt[y + z - y*z]))*G[r^(-1), t])/(3*(-1 + 2*y)*
+         (1 + y*(-1 + z))^(5/2)*(-1 + z)*z*(y + z - y*z)^(5/2)) + 
+       (y*(-24*y^6*(-1 + z)^6*(Sqrt[z] + 2*Sqrt[1 + y*(-1 + z)]*
+             Sqrt[y + z - y*z]) + 12*y^5*(-1 + z)^5*(-7*Sqrt[z] + 7*z^(3/2) - 
+            20*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
+            14*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z]) + 
+          2*y^4*(-1 + z)^2*(-60*Sqrt[z] + 240*z^(3/2) - 360*z^(5/2) + 
+            240*z^(7/2) - 60*z^(9/2) - 116*Sqrt[1 + y*(-1 + z)]*
+             Sqrt[y + z - y*z] + 832*Sqrt[1 + y*(-1 + z)]*z*
+             Sqrt[y + z - y*z] - 1355*Sqrt[1 + y*(-1 + z)]*z^2*
+             Sqrt[y + z - y*z] + 642*Sqrt[1 + y*(-1 + z)]*z^3*
+             Sqrt[y + z - y*z] + 9*Sqrt[1 + y*(-1 + z)]*z^4*
+             Sqrt[y + z - y*z]) + 2*z*(3*Sqrt[z] - 6*z^(3/2) + 6*z^(5/2) - 
+            6*z^(7/2) + 3*z^(9/2) - 6*Sqrt[1 + y*(-1 + z)]*
+             Sqrt[y + z - y*z] - 29*Sqrt[1 + y*(-1 + z)]*z*
+             Sqrt[y + z - y*z] + 108*Sqrt[1 + y*(-1 + z)]*z^2*
+             Sqrt[y + z - y*z] - 55*Sqrt[1 + y*(-1 + z)]*z^3*
+             Sqrt[y + z - y*z] - 15*Sqrt[1 + y*(-1 + z)]*z^4*
+             Sqrt[y + z - y*z] + 13*Sqrt[1 + y*(-1 + z)]*z^5*
+             Sqrt[y + z - y*z]) - y^3*(-1 + z)*(90*Sqrt[z] - 450*z^(3/2) + 
+            900*z^(5/2) - 900*z^(7/2) + 450*z^(9/2) - 90*z^(11/2) - 
+            22*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
+            1362*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
+            4729*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
+            4635*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
+            749*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
+            445*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
+          y*(6*Sqrt[z] - 54*z^(3/2) + 126*z^(5/2) - 156*z^(7/2) + 
+            126*z^(9/2) - 54*z^(11/2) + 6*z^(13/2) - 24*Sqrt[1 + y*(-1 + z)]*
+             Sqrt[y + z - y*z] + 22*Sqrt[1 + y*(-1 + z)]*z*
+             Sqrt[y + z - y*z] + 703*Sqrt[1 + y*(-1 + z)]*z^2*
+             Sqrt[y + z - y*z] - 1746*Sqrt[1 + y*(-1 + z)]*z^3*
+             Sqrt[y + z - y*z] + 935*Sqrt[1 + y*(-1 + z)]*z^4*
+             Sqrt[y + z - y*z] + 190*Sqrt[1 + y*(-1 + z)]*z^5*
+             Sqrt[y + z - y*z] - 188*Sqrt[1 + y*(-1 + z)]*z^6*
+             Sqrt[y + z - y*z]) + y^2*(-36*Sqrt[z] + 228*z^(3/2) - 
+            564*z^(5/2) + 744*z^(7/2) - 564*z^(9/2) + 228*z^(11/2) - 
+            36*z^(13/2) + 86*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
+            282*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
+            3027*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
+            5658*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
+            3132*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 
+            312*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] + 
+            469*Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]))*G[-r, t])/
+        (3*(-1 + 2*y)*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*
+         (y + z - y*z)^(5/2)) - 
+       (y*(8*y^6*(-1 + z)^6*(-15*Sqrt[z] + 8*Sqrt[1 + y*(-1 + z)]*
+             Sqrt[y + z - y*z]) - 4*y^5*(-1 + z)^5*(105*Sqrt[z] - 
+            105*z^(3/2) - 50*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
+            56*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z]) + 
+          2*y^4*(-1 + z)^2*(-300*Sqrt[z] + 1200*z^(3/2) - 1800*z^(5/2) + 
+            1200*z^(7/2) - 300*z^(9/2) + 128*Sqrt[1 + y*(-1 + z)]*
+             Sqrt[y + z - y*z] - 536*Sqrt[1 + y*(-1 + z)]*z*
+             Sqrt[y + z - y*z] + 863*Sqrt[1 + y*(-1 + z)]*z^2*
+             Sqrt[y + z - y*z] - 594*Sqrt[1 + y*(-1 + z)]*z^3*
+             Sqrt[y + z - y*z] + 127*Sqrt[1 + y*(-1 + z)]*z^4*
+             Sqrt[y + z - y*z]) + 2*z*(15*Sqrt[z] - 30*z^(3/2) + 30*z^(5/2) - 
+            30*z^(7/2) + 15*z^(9/2) - 2*Sqrt[1 + y*(-1 + z)]*
+             Sqrt[y + z - y*z] + 5*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
+            12*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
+            31*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
+            3*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 
+            13*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
+          y^3*(-1 + z)*(-450*Sqrt[z] + 2250*z^(3/2) - 4500*z^(5/2) + 
+            4500*z^(7/2) - 2250*z^(9/2) + 450*z^(11/2) + 
+            170*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
+            898*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
+            1917*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
+            2135*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
+            1033*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
+            9*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
+          y*(30*Sqrt[z] - 270*z^(3/2) + 630*z^(5/2) - 780*z^(7/2) + 
+            630*z^(9/2) - 270*z^(11/2) + 30*z^(13/2) - 8*Sqrt[1 + y*(-1 + z)]*
+             Sqrt[y + z - y*z] + 66*Sqrt[1 + y*(-1 + z)]*z*
+             Sqrt[y + z - y*z] - 179*Sqrt[1 + y*(-1 + z)]*z^2*
+             Sqrt[y + z - y*z] + 330*Sqrt[1 + y*(-1 + z)]*z^3*
+             Sqrt[y + z - y*z] - 411*Sqrt[1 + y*(-1 + z)]*z^4*
+             Sqrt[y + z - y*z] + 26*Sqrt[1 + y*(-1 + z)]*z^5*
+             Sqrt[y + z - y*z] + 140*Sqrt[1 + y*(-1 + z)]*z^6*
+             Sqrt[y + z - y*z]) - y^2*(180*Sqrt[z] - 1140*z^(3/2) + 
+            2820*z^(5/2) - 3720*z^(7/2) + 2820*z^(9/2) - 1140*z^(11/2) + 
+            180*z^(13/2) - 58*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
+            386*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
+            1015*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
+            1618*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
+            1420*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
+            296*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] + 
+            217*Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]))*G[r, t])/
+        (3*(-1 + 2*y)*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*
+         (y + z - y*z)^(5/2)) + (16*y*(2 + 2*z - z^2 - 2*z^3 + z^4 + 
+          2*y^2*(-1 + z)^2*(1 + 2*z + 2*z^2) - 2*y*(2 + z - 2*z^2 - 3*z^3 + 
+            2*z^4))*G[-1, 0, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+       (2*(z^2 + z^4 - 4*y^3*(-1 + z)^4*(1 + 2*z + 2*z^2) + 
+          2*y^4*(-1 + z)^4*(1 + 2*z + 2*z^2) - y*(-1 + z)^2*z*
+           (-2 - z - 2*z^2 + z^3) + y^2*(-1 + z)^2*(2 - 2*z - 3*z^2 - 6*z^3 + 
+            5*z^4))*G[-1, -r^(-1), t])/((1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) + (2*(4*y^5*(-1 + z)^4*(1 + 2*z + 2*z^2) - 
+          2*y^4*(-1 + z)^3*(-1 + 7*z + 24*z^2 + 18*z^3) + 3*(z^2 + z^4) + 
+          2*y^3*(-1 + z)^2*(-4 - 18*z - 29*z^2 + 22*z^3 + 25*z^4) + 
+          y*z*(6 + z + 22*z^2 - 26*z^3 - 4*z^4 + 5*z^5) + 
+          y^2*(6 + 2*z - 5*z^2 - 82*z^3 + 82*z^4 + 24*z^5 - 27*z^6))*
+         G[-1, r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) + ((-8*y^5*(-1 + z)^4*(1 + 2*z + 2*z^2) + 
+          4*y^4*(-1 + z)^3*(-7 - 11*z - 12*z^2 + 6*z^3) + 6*(z^2 + z^4) - 
+          4*y^3*(-1 + z)^2*(8 + 6*z + 7*z^2 - 26*z^3 + z^4) + 
+          2*y*z*(6 - 7*z + 14*z^2 - 22*z^3 + 4*z^4 + z^5) - 
+          2*y^2*(-6 + 14*z - 11*z^2 + 50*z^3 - 74*z^4 + 24*z^5 + 3*z^6))*
+         G[-1, -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (2*(z^2 + z^4 + 4*y^5*(-1 + z)^4*
+           (1 + 2*z + 2*z^2) - 2*y^4*(-1 + z)^3*(-3 + z + 12*z^2 + 14*z^3) + 
+          2*y^3*(-1 + z)^2*z*(-10 - 17*z + 6*z^2 + 17*z^3) + 
+          y*z*(2 + 3*z + 10*z^2 - 10*z^3 - 4*z^4 + 3*z^5) + 
+          y^2*(2 + 6*z - 7*z^2 - 38*z^3 + 30*z^4 + 24*z^5 - 17*z^6))*
+         G[-1, r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (8*(-(z^2*(1 + z^2)) + 
+          y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 4*y^3*(-1 + 8*z^3 - 9*z^4 + 
+            2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 
+          y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*G[0, -1, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (8*(-(z^2*(1 + z^2)) + y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 
+          4*y^3*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 
+            2*z^6) + y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*
+         G[0, 1, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) + (8*(-1 + y)*(-30*y^5*(-1 + z)^6 + 
+          12*y^6*(-1 + z)^6 + 2*y^4*(-1 + z)^4*(12 - 40*z + 11*z^2) + 
+          y^3*(-1 + z)^3*(7 - 63*z + 75*z^2 + z^3) - y^2*(-1 + z)^2*z*
+           (22 - 51*z + 30*z^2 + 7*z^3) + 3*(z^2 + z^4) + 
+          y*(1 + 6*z - 16*z^2 + 28*z^3 - 23*z^4 + 2*z^5 + 2*z^6))*
+         G[0, -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) + (8*(-1 + y)*(-30*y^5*(-1 + z)^6 + 
+          12*y^6*(-1 + z)^6 + 2*y^4*(-1 + z)^4*(12 - 40*z + 11*z^2) + 
+          y^3*(-1 + z)^3*(7 - 63*z + 75*z^2 + z^3) - y^2*(-1 + z)^2*z*
+           (22 - 51*z + 30*z^2 + 7*z^3) + 3*(z^2 + z^4) + 
+          y*(1 + 6*z - 16*z^2 + 28*z^3 - 23*z^4 + 2*z^5 + 2*z^6))*
+         G[0, r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) + (8*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 
+          2*z^3 - 2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*
+           (9 - 8*z + 2*z^2) - y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*
+         G[0, -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+       (8*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 2*z^3 - 
+          2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*(9 - 8*z + 2*z^2) - 
+          y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*G[0, r, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+       (16*y*(2 + 2*z - z^2 - 2*z^3 + z^4 + 2*y^2*(-1 + z)^2*
+           (1 + 2*z + 2*z^2) - 2*y*(2 + z - 2*z^2 - 3*z^3 + 2*z^4))*
+         G[1, 0, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+       (2*(z^2 + z^4 - 4*y^3*(-1 + z)^4*(1 + 2*z + 2*z^2) + 
+          2*y^4*(-1 + z)^4*(1 + 2*z + 2*z^2) - y*(-1 + z)^2*z*
+           (-2 - z - 2*z^2 + z^3) + y^2*(-1 + z)^2*(2 - 2*z - 3*z^2 - 6*z^3 + 
+            5*z^4))*G[1, -r^(-1), t])/((1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) + (2*(4*y^5*(-1 + z)^4*(1 + 2*z + 2*z^2) - 
+          2*y^4*(-1 + z)^3*(-1 + 7*z + 24*z^2 + 18*z^3) + 3*(z^2 + z^4) + 
+          2*y^3*(-1 + z)^2*(-4 - 18*z - 29*z^2 + 22*z^3 + 25*z^4) + 
+          y*z*(6 + z + 22*z^2 - 26*z^3 - 4*z^4 + 5*z^5) + 
+          y^2*(6 + 2*z - 5*z^2 - 82*z^3 + 82*z^4 + 24*z^5 - 27*z^6))*
+         G[1, r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) + ((-8*y^5*(-1 + z)^4*(1 + 2*z + 2*z^2) + 
+          4*y^4*(-1 + z)^3*(-7 - 11*z - 12*z^2 + 6*z^3) + 6*(z^2 + z^4) - 
+          4*y^3*(-1 + z)^2*(8 + 6*z + 7*z^2 - 26*z^3 + z^4) + 
+          2*y*z*(6 - 7*z + 14*z^2 - 22*z^3 + 4*z^4 + z^5) - 
+          2*y^2*(-6 + 14*z - 11*z^2 + 50*z^3 - 74*z^4 + 24*z^5 + 3*z^6))*
+         G[1, -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (2*(z^2 + z^4 + 4*y^5*(-1 + z)^4*
+           (1 + 2*z + 2*z^2) - 2*y^4*(-1 + z)^3*(-3 + z + 12*z^2 + 14*z^3) + 
+          2*y^3*(-1 + z)^2*z*(-10 - 17*z + 6*z^2 + 17*z^3) + 
+          y*z*(2 + 3*z + 10*z^2 - 10*z^3 - 4*z^4 + 3*z^5) + 
+          y^2*(2 + 6*z - 7*z^2 - 38*z^3 + 30*z^4 + 24*z^5 - 17*z^6))*
+         G[1, r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (4*(-1 + y)*(z^2 + z^4 + 2*y^2*(-1 + z)^2*
+           (1 + 2*z + 2*z^2) + 2*y*z*(1 + z^2 - 2*z^3))*G[-r^(-1), -1, t])/
+        ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) + 
+       (16*(-1 + y)*(-20*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 
+          4*y^4*(-1 + z)^4*(4 - 13*z + 4*z^2) - 2*y^3*(-1 + z)^3*
+           (-2 + 21*z - 24*z^2 + z^3) + 2*(z^2 + z^4) - y^2*(-1 + z)^2*
+           (1 + 16*z - 32*z^2 + 20*z^3 + 3*z^4) + 
+          y*(1 + 4*z - 11*z^2 + 18*z^3 - 15*z^4 + 2*z^5 + z^6))*
+         G[-r^(-1), 0, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (4*(-1 + y)*(z^2 + z^4 + 2*y^2*(-1 + z)^2*
+           (1 + 2*z + 2*z^2) + 2*y*z*(1 + z^2 - 2*z^3))*G[-r^(-1), 1, t])/
+        ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) + 
+       (4*(-1 + y)*(-30*y^5*(-1 + z)^6 + 12*y^6*(-1 + z)^6 + 
+          2*y^4*(-1 + z)^4*(12 - 40*z + 11*z^2) + y^3*(-1 + z)^3*
+           (7 - 63*z + 75*z^2 + z^3) - y^2*(-1 + z)^2*z*(22 - 51*z + 30*z^2 + 
+            7*z^3) + 3*(z^2 + z^4) + y*(1 + 6*z - 16*z^2 + 28*z^3 - 23*z^4 + 
+            2*z^5 + 2*z^6))*G[-r^(-1), -r^(-1), t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+       (2*(-1 + y)*(-50*y^5*(-1 + z)^6 + 20*y^6*(-1 + z)^6 + 
+          2*y^4*(-1 + z)^4*(20 - 68*z + 17*z^2) + y^3*(-1 + z)^3*
+           (13 - 105*z + 129*z^2 + 7*z^3) + 5*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(-2 + 34*z - 89*z^2 + 50*z^3 + 15*z^4) + 
+          y*(1 + 10*z - 26*z^2 + 48*z^3 - 39*z^4 + 2*z^5 + 4*z^6))*
+         G[-r^(-1), r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) + (2*(-1 + y)*(-50*y^5*(-1 + z)^6 + 
+          20*y^6*(-1 + z)^6 + 2*y^4*(-1 + z)^4*(18 - 66*z + 19*z^2) - 
+          y^3*(-1 + z)^3*(-7 + 93*z - 123*z^2 + z^3) + 3*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(3 + 30*z - 69*z^2 + 50*z^3 + 10*z^4) + 
+          y*(2 + 6*z - 19*z^2 + 34*z^3 - 30*z^4 + 4*z^5 + 3*z^6))*
+         G[-r^(-1), -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (2*(-1 + y)*(-40*y^5*(-1 + z)^6 + 
+          16*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*(9 - 25*z + 9*z^2) - 
+          2*y^3*(-1 + z)^3*(-5 + 48*z - 45*z^2 + 6*z^3) + 6*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(3 + 44*z - 72*z^2 + 40*z^3 + z^4) + 
+          y*(3 + 12*z - 31*z^2 + 46*z^3 - 37*z^4 + 6*z^5 + z^6))*
+         G[-r^(-1), r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (4*(-1 + y)*(z^2 + z^4 + 2*y^2*(-1 + z)^2*
+           (1 + 2*z + 2*z^2) + 2*y*z*(1 + z^2 - 2*z^3))*G[r^(-1), -1, t])/
+        ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) + 
+       (16*(-1 + y)*(1 - 2*y^3*(-5 + z)*(-1 + z)^3 + 4*y^4*(-1 + z)^4 + z^2 + 
+          y*(-1 + z)^3*(3 + z) - 2*y^2*(-1 + z)^2*(-4 + 4*z + z^2))*
+         G[r^(-1), 0, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) - 
+       (4*(-1 + y)*(z^2 + z^4 + 2*y^2*(-1 + z)^2*(1 + 2*z + 2*z^2) + 
+          2*y*z*(1 + z^2 - 2*z^3))*G[r^(-1), 1, t])/((-1 + 2*y)*(-1 + z)*z*
+         (y + z - y*z)^2) + (2*(-1 + y)*(-90*y^5*(-1 + z)^6 + 
+          36*y^6*(-1 + z)^6 + 2*y^4*(-1 + z)^4*(36 - 116*z + 37*z^2) - 
+          y^3*(-1 + z)^3*(-17 + 189*z - 213*z^2 + 13*z^3) + 9*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(6 + 74*z - 141*z^2 + 90*z^3 + 11*z^4) + 
+          y*(5 + 18*z - 50*z^2 + 80*z^3 - 67*z^4 + 10*z^5 + 4*z^6))*
+         G[r^(-1), -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) + (4*(-1 + y)*(-30*y^5*(-1 + z)^6 + 
+          12*y^6*(-1 + z)^6 + 2*y^4*(-1 + z)^4*(12 - 40*z + 11*z^2) + 
+          y^3*(-1 + z)^3*(7 - 63*z + 75*z^2 + z^3) - y^2*(-1 + z)^2*z*
+           (22 - 51*z + 30*z^2 + 7*z^3) + 3*(z^2 + z^4) + 
+          y*(1 + 6*z - 16*z^2 + 28*z^3 - 23*z^4 + 2*z^5 + 2*z^6))*
+         G[r^(-1), r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) + (2*(-1 + y)*(-40*y^5*(-1 + z)^6 + 
+          16*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*(7 - 27*z + 7*z^2) + 
+          2*y^3*(-1 + z)^3*(3 - 36*z + 51*z^2 + 2*z^3) + 2*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(1 + 20*z - 56*z^2 + 40*z^3 + 11*z^4) + 
+          y*(1 + 4*z - 13*z^2 + 26*z^3 - 23*z^4 + 2*z^5 + 3*z^6))*
+         G[r^(-1), -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) + (2*(-1 + y)*(-10*y^5*(-1 + z)^6 + 
+          4*y^6*(-1 + z)^6 - z^2*(1 + z^2) + 2*y^4*(-1 + z)^4*
+           (2 - 10*z + 7*z^2) - y^3*(-1 + z)^3*(5 + 9*z - 15*z^2 + 13*z^3) + 
+          y^2*(-1 + z)^2*(-7 - 6*z - 7*z^2 - 10*z^3 + 6*z^4) + 
+          y*(2 - 2*z + z^2 - 6*z^3 + 2*z^4 + 4*z^5 - z^6))*G[r^(-1), r, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+       (4*y*(2 + 2*z - z^2 - 2*z^3 + z^4 + 2*y^2*(-1 + z)^2*
+           (1 + 2*z + 2*z^2) - 2*y*(2 + z - 2*z^2 - 3*z^3 + 2*z^4))*
+         G[-r, -1, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+       (16*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 2*z^3 - 
+          2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*(9 - 8*z + 2*z^2) - 
+          y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*G[-r, 0, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+       (4*y*(2 + 2*z - z^2 - 2*z^3 + z^4 + 2*y^2*(-1 + z)^2*
+           (1 + 2*z + 2*z^2) - 2*y*(2 + z - 2*z^2 - 3*z^3 + 2*z^4))*
+         G[-r, 1, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+       (2*y*(-2 - 70*y^5*(-1 + z)^6 + 20*y^6*(-1 + z)^6 + 11*z^2 - 24*z^3 + 
+          13*z^4 + 4*z^5 - 4*z^6 + 2*y^4*(-1 + z)^4*(39 - 124*z + 36*z^2) - 
+          y^3*(-1 + z)^3*(-21 + 287*z - 281*z^2 + 3*z^3) - 
+          y^2*(-1 + z)^2*(16 + 130*z - 293*z^2 + 118*z^3 + 37*z^4) + 
+          y*(11 + 8*z - 126*z^2 + 218*z^3 - 119*z^4 - 14*z^5 + 22*z^6))*
+         G[-r, -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (2*y*(2 + 12*z^2 + 6*z^3 - 6*z^4 - 6*z^5 + 
+          4*z^6 + 12*y^4*(-1 + z)^4*(1 + z + z^2) - 2*y^3*(-1 + z)^3*
+           (-13 + 6*z + 15*z^2 + 20*z^3) + y^2*(-1 + z)^3*
+           (-19 + 27*z + 57*z^2 + 47*z^3) + y*(-7 + 30*z - 39*z^2 - 18*z^3 + 
+            21*z^4 + 36*z^5 - 23*z^6))*G[-r, r^(-1), t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+       (4*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 2*z^3 - 
+          2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*(9 - 8*z + 2*z^2) - 
+          y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*G[-r, -r, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) - 
+       (6*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 2*z^3 - 
+          2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*(9 - 8*z + 2*z^2) - 
+          y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*G[-r, r, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+       (4*y*(2 + 2*z - z^2 - 2*z^3 + z^4 + 2*y^2*(-1 + z)^2*
+           (1 + 2*z + 2*z^2) - 2*y*(2 + z - 2*z^2 - 3*z^3 + 2*z^4))*
+         G[r, -1, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+       (4*y*(2 + 2*z - z^2 - 2*z^3 + z^4 + 2*y^2*(-1 + z)^2*
+           (1 + 2*z + 2*z^2) - 2*y*(2 + z - 2*z^2 - 3*z^3 + 2*z^4))*
+         G[r, 1, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+       (2*y*(-112*y^5*(-1 + z)^6 + 32*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*
+           (33 - 95*z + 33*z^2) - 2*y^3*(-1 + z)^3*(-27 + 214*z - 223*z^2 + 
+            24*z^3) - y^2*(-1 + z)^2*(7 + 202*z - 422*z^2 + 226*z^3 + 
+            19*z^4) - 2*(1 - 10*z^2 + 15*z^3 - 11*z^4 + z^5 + 2*z^6) + 
+          y*(11 + 26*z - 189*z^2 + 314*z^3 - 209*z^4 + 28*z^5 + 19*z^6))*
+         G[r, -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) + (2*y*(-2 - 14*y^5*(-1 + z)^6 + 4*y^6*(-1 + z)^6 - 
+          9*z^2 - 8*z^3 + 9*z^4 + 4*z^5 - 4*z^6 + 2*y^4*(-1 + z)^4*
+           (3 - 28*z + 4*z^2) + 5*y^3*(-1 + z)^3*(-3 - 7*z + 17*z^2 + 
+            5*z^3) - y^2*(-1 + z)^2*(16 - 22*z - 73*z^2 + 46*z^3 + 41*z^4) + 
+          y*(7 - 24*z + 18*z^2 + 50*z^3 - 51*z^4 - 22*z^5 + 22*z^6))*
+         G[r, r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) + (2*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 
+          2*z^3 - 2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*
+           (9 - 8*z + 2*z^2) - y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*
+         G[r, -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+       (4*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 2*z^3 - 
+          2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*(9 - 8*z + 2*z^2) - 
+          y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*G[r, r, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z)) + 
+     G[-I, r]*((-12*(-139 + 42*Pi^2)*y^5*(-1 + z)^6 + 4*(-139 + 42*Pi^2)*y^6*
+          (-1 + z)^6 + 3*z^2*(-28 - 27*z - 31*z^2 + 22*Pi^2*(1 + z^2)) + 
+         4*y^4*(-1 + z)^4*(-478 + 1004*z - 488*z^2 + 
+           69*Pi^2*(2 - 5*z + 2*z^2)) - 4*y^3*(-1 + z)^4*
+          (-261 + 618*z - 281*z^2 + 6*Pi^2*(11 - 45*z + 11*z^2)) + 
+         y*(-1 + z)*(63 + 497*z - 258*z^2 + 375*z^3 - 445*z^4 - 16*z^5 + 
+           3*Pi^2*(-3 - 47*z + 100*z^2 - 100*z^3 + 47*z^4 + 3*z^5)) + 
+         y^2*(-1 + z)*(181 - 1909*z + 3314*z^2 - 3511*z^3 + 1977*z^4 - 
+           268*z^5 + 3*Pi^2*(-13 + 219*z - 536*z^2 + 536*z^3 - 219*z^4 + 
+             13*z^5)))/(9*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       ((-1 + y)*(3*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z]*
+           (3 + 8*z + 3*z^2) + 4*y^6*(-1 + z)^6*(-18*Sqrt[z] + 
+            11*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z]) - 
+          2*y^5*(-1 + z)^5*(90*Sqrt[z] - 90*z^(3/2) - 19*Sqrt[1 + y*(-1 + z)]*
+             Sqrt[y + z - y*z] + 55*Sqrt[1 + y*(-1 + z)]*z*
+             Sqrt[y + z - y*z]) + 2*y^4*(-1 + z)^4*(-90*Sqrt[z] + 
+            180*z^(3/2) - 90*z^(5/2) + 24*Sqrt[1 + y*(-1 + z)]*
+             Sqrt[y + z - y*z] + 42*Sqrt[1 + y*(-1 + z)]*z*
+             Sqrt[y + z - y*z] + 91*Sqrt[1 + y*(-1 + z)]*z^2*
+             Sqrt[y + z - y*z]) + y^3*(-1 + z)*(-90*Sqrt[z] + 450*z^(3/2) - 
+            900*z^(5/2) + 900*z^(7/2) - 450*z^(9/2) + 90*z^(11/2) - 
+            2*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
+            38*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
+            305*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
+            239*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
+            347*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 
+            97*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
+          2*y^2*(-1 + z)*(9*Sqrt[z] - 63*z^(3/2) + 108*z^(5/2) - 
+            108*z^(7/2) + 63*z^(9/2) - 9*z^(11/2) + 13*Sqrt[1 + y*(-1 + z)]*
+             Sqrt[y + z - y*z] + 24*Sqrt[1 + y*(-1 + z)]*z*
+             Sqrt[y + z - y*z] + 86*Sqrt[1 + y*(-1 + z)]*z^2*
+             Sqrt[y + z - y*z] - 115*Sqrt[1 + y*(-1 + z)]*z^3*
+             Sqrt[y + z - y*z] - 83*Sqrt[1 + y*(-1 + z)]*z^4*
+             Sqrt[y + z - y*z] + 3*Sqrt[1 + y*(-1 + z)]*z^5*
+             Sqrt[y + z - y*z]) + y*(-18*z^(3/2) + 36*z^(5/2) - 36*z^(7/2) + 
+            36*z^(9/2) - 18*z^(11/2) + 6*Sqrt[1 + y*(-1 + z)]*
+             Sqrt[y + z - y*z] + 2*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
+            2*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
+            126*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
+            7*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
+            18*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] + 
+            Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]))*G[-r^(-1), t])/
+        (3*(-1 + 2*y)*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*
+         (y + z - y*z)^(5/2)) - ((-1 + y)*(3*Sqrt[1 + y*(-1 + z)]*z^2*
+           Sqrt[y + z - y*z]*(3 + 8*z + 3*z^2) + 4*y^6*(-1 + z)^6*
+           (18*Sqrt[z] + 11*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z]) - 
+          2*y^5*(-1 + z)^5*(-90*Sqrt[z] + 90*z^(3/2) - 
+            19*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
+            55*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z]) + 
+          2*y^4*(-1 + z)^4*(90*Sqrt[z] - 180*z^(3/2) + 90*z^(5/2) + 
+            24*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
+            42*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
+            91*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z]) + 
+          2*y^2*(-1 + z)*(-9*Sqrt[z] + 63*z^(3/2) - 108*z^(5/2) + 
+            108*z^(7/2) - 63*z^(9/2) + 9*z^(11/2) + 13*Sqrt[1 + y*(-1 + z)]*
+             Sqrt[y + z - y*z] + 24*Sqrt[1 + y*(-1 + z)]*z*
+             Sqrt[y + z - y*z] + 86*Sqrt[1 + y*(-1 + z)]*z^2*
+             Sqrt[y + z - y*z] - 115*Sqrt[1 + y*(-1 + z)]*z^3*
+             Sqrt[y + z - y*z] - 83*Sqrt[1 + y*(-1 + z)]*z^4*
+             Sqrt[y + z - y*z] + 3*Sqrt[1 + y*(-1 + z)]*z^5*
+             Sqrt[y + z - y*z]) - y^3*(-1 + z)*(-90*Sqrt[z] + 450*z^(3/2) - 
+            900*z^(5/2) + 900*z^(7/2) - 450*z^(9/2) + 90*z^(11/2) + 
+            2*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
+            38*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
+            305*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
+            239*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
+            347*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
+            97*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
+          y*(18*z^(3/2) - 36*z^(5/2) + 36*z^(7/2) - 36*z^(9/2) + 
+            18*z^(11/2) + 6*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
+            2*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
+            2*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
+            126*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
+            7*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
+            18*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] + 
+            Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]))*G[r^(-1), t])/
+        (3*(-1 + 2*y)*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*
+         (y + z - y*z)^(5/2)) - 
+       (y*(4*y^6*(-1 + z)^6*(-18*Sqrt[z] + 11*Sqrt[1 + y*(-1 + z)]*
+             Sqrt[y + z - y*z]) - 2*y^5*(-1 + z)^5*(126*Sqrt[z] - 
+            126*z^(3/2) - 113*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
+            77*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z]) + 
+          2*y^4*(-1 + z)^4*(-180*Sqrt[z] + 360*z^(3/2) - 180*z^(5/2) + 
+            259*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
+            248*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
+            146*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z]) + 
+          y^3*(-1 + z)*(-270*Sqrt[z] + 1350*z^(3/2) - 2700*z^(5/2) + 
+            2700*z^(7/2) - 1350*z^(9/2) + 270*z^(11/2) + 
+            694*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
+            1982*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
+            2721*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
+            2287*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
+            1121*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 
+            411*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
+          y^2*(-1 + z)*(108*Sqrt[z] - 576*z^(3/2) + 1116*z^(5/2) - 
+            1116*z^(7/2) + 576*z^(9/2) - 108*z^(11/2) - 
+            548*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
+            974*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
+            1107*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
+            1019*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
+            417*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
+            367*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
+          y*(18*Sqrt[z] - 162*z^(3/2) + 378*z^(5/2) - 468*z^(7/2) + 
+            378*z^(9/2) - 162*z^(11/2) + 18*z^(13/2) - 
+            226*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
+            450*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
+            397*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
+            498*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
+            267*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
+            214*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] - 
+            164*Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]) + 
+          2*(9*z^(3/2) - 18*z^(5/2) + 18*z^(7/2) - 18*z^(9/2) + 9*z^(11/2) + 
+            18*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
+            28*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
+            7*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
+            30*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
+            2*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 
+            15*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] + 
+            13*Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]))*G[-r, t])/
+        (3*(-1 + 2*y)*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*
+         (y + z - y*z)^(5/2)) + 
+       (y*(-4*y^6*(-1 + z)^6*(18*Sqrt[z] + 11*Sqrt[1 + y*(-1 + z)]*
+             Sqrt[y + z - y*z]) + 2*y^5*(-1 + z)^5*(-126*Sqrt[z] + 
+            126*z^(3/2) - 113*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
+            77*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z]) - 
+          2*y^4*(-1 + z)^4*(180*Sqrt[z] - 360*z^(3/2) + 180*z^(5/2) + 
+            259*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
+            248*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
+            146*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z]) - 
+          y^2*(-1 + z)*(-108*Sqrt[z] + 576*z^(3/2) - 1116*z^(5/2) + 
+            1116*z^(7/2) - 576*z^(9/2) + 108*z^(11/2) - 
+            548*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
+            974*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
+            1107*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
+            1019*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
+            417*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
+            367*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
+          y^3*(-1 + z)*(-270*Sqrt[z] + 1350*z^(3/2) - 2700*z^(5/2) + 
+            2700*z^(7/2) - 1350*z^(9/2) + 270*z^(11/2) - 
+            694*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
+            1982*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
+            2721*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
+            2287*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
+            1121*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
+            411*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
+          2*(9*z^(3/2) - 18*z^(5/2) + 18*z^(7/2) - 18*z^(9/2) + 9*z^(11/2) - 
+            18*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
+            28*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
+            7*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
+            30*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
+            2*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
+            15*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] - 
+            13*Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]) + 
+          y*(18*Sqrt[z] - 162*z^(3/2) + 378*z^(5/2) - 468*z^(7/2) + 
+            378*z^(9/2) - 162*z^(11/2) + 18*z^(13/2) + 
+            226*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
+            450*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
+            397*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
+            498*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
+            267*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 
+            214*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] + 
+            164*Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]))*G[r, t])/
+        (3*(-1 + 2*y)*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*
+         (y + z - y*z)^(5/2)) + (6*(-(z^2*(1 + z^2)) + 
+          y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 4*y^3*(-1 + 8*z^3 - 9*z^4 + 
+            2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 
+          y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*G[-1, -r^(-1), t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+       (6*(-(z^2*(1 + z^2)) + y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 
+          4*y^3*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 
+            2*z^6) + y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*
+         G[-1, r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (6*(-(z^2*(1 + z^2)) + 
+          y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 4*y^3*(-1 + 8*z^3 - 9*z^4 + 
+            2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 
+          y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*G[-1, -r, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (6*(-(z^2*(1 + z^2)) + y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 
+          4*y^3*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 
+            2*z^6) + y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*
+         G[-1, r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (128*(1 - 2*y*(-1 + z)^2 + 2*y^2*(-1 + z)^2 + 
+          z^2)*G[0, 0, t])/((-1 + z)*z) - 
+       (8*(-1 + y)*(-20*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 
+          4*y^4*(-1 + z)^4*(4 - 13*z + 4*z^2) - 2*y^3*(-1 + z)^3*
+           (-2 + 21*z - 24*z^2 + z^3) + 2*(z^2 + z^4) - y^2*(-1 + z)^2*
+           (1 + 16*z - 32*z^2 + 20*z^3 + 3*z^4) + 
+          y*(1 + 4*z - 11*z^2 + 18*z^3 - 15*z^4 + 2*z^5 + z^6))*
+         G[0, -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (8*(-1 + y)*(-20*y^5*(-1 + z)^6 + 
+          8*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*(4 - 13*z + 4*z^2) - 
+          2*y^3*(-1 + z)^3*(-2 + 21*z - 24*z^2 + z^3) + 2*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(1 + 16*z - 32*z^2 + 20*z^3 + 3*z^4) + 
+          y*(1 + 4*z - 11*z^2 + 18*z^3 - 15*z^4 + 2*z^5 + z^6))*
+         G[0, r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (8*y*(-28*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 
+          4*y^4*(-1 + z)^4*(9 - 23*z + 9*z^2) - 2*z^2*(-4 + 3*z - 2*z^2 + 
+            z^3) - 2*y^3*(-1 + z)^3*(-10 + 55*z - 52*z^2 + 11*z^3) + 
+          y^2*(-1 + z)^2*(3 - 62*z + 98*z^2 - 54*z^3 + 7*z^4) + 
+          y*(1 + 14*z - 57*z^2 + 74*z^3 - 47*z^4 + 16*z^5 - z^6))*
+         G[0, -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (8*y*(-28*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 
+          4*y^4*(-1 + z)^4*(9 - 23*z + 9*z^2) - 2*z^2*(-4 + 3*z - 2*z^2 + 
+            z^3) - 2*y^3*(-1 + z)^3*(-10 + 55*z - 52*z^2 + 11*z^3) + 
+          y^2*(-1 + z)^2*(3 - 62*z + 98*z^2 - 54*z^3 + 7*z^4) + 
+          y*(1 + 14*z - 57*z^2 + 74*z^3 - 47*z^4 + 16*z^5 - z^6))*G[0, r, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+       (6*(-(z^2*(1 + z^2)) + y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 
+          4*y^3*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 
+            2*z^6) + y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*
+         G[1, -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) + (6*(-(z^2*(1 + z^2)) + 
+          y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 4*y^3*(-1 + 8*z^3 - 9*z^4 + 
+            2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 
+          y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*G[1, r^(-1), t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (6*(-(z^2*(1 + z^2)) + y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 
+          4*y^3*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 
+            2*z^6) + y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*
+         G[1, -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (6*(-(z^2*(1 + z^2)) + 
+          y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 4*y^3*(-1 + 8*z^3 - 9*z^4 + 
+            2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 
+          y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*G[1, r, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (8*(-1 + y)*(-20*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 
+          4*y^4*(-1 + z)^4*(4 - 13*z + 4*z^2) - 2*y^3*(-1 + z)^3*
+           (-2 + 21*z - 24*z^2 + z^3) + 2*(z^2 + z^4) - y^2*(-1 + z)^2*
+           (1 + 16*z - 32*z^2 + 20*z^3 + 3*z^4) + 
+          y*(1 + 4*z - 11*z^2 + 18*z^3 - 15*z^4 + 2*z^5 + z^6))*
+         G[-r^(-1), 0, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (4*(-1 + y)*(-20*y^5*(-1 + z)^6 + 
+          8*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*(4 - 13*z + 4*z^2) - 
+          2*y^3*(-1 + z)^3*(-2 + 21*z - 24*z^2 + z^3) + 2*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(1 + 16*z - 32*z^2 + 20*z^3 + 3*z^4) + 
+          y*(1 + 4*z - 11*z^2 + 18*z^3 - 15*z^4 + 2*z^5 + z^6))*
+         G[-r^(-1), -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (2*(-1 + y)*(-10*y^5*(-1 + z)^6 + 
+          4*y^6*(-1 + z)^6 + z^2 + z^4 + 2*y^4*(-1 + z)^4*(4 - 16*z + z^2) + 
+          y^3*(-1 + z)^3*(5 - 21*z + 33*z^2 + 11*z^3) - y^2*(-1 + z)^2*
+           (-4 + 2*z - 25*z^2 + 10*z^3 + 9*z^4) + 
+          y*(-1 + 2*z - 4*z^2 + 12*z^3 - 9*z^4 - 2*z^5 + 2*z^6))*
+         G[-r^(-1), r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (2*(-1 + y)*(-10*y^5*(-1 + z)^6 + 
+          4*y^6*(-1 + z)^6 + 2*y^4*(-1 + z)^4*z*(-14 + 3*z) - 
+          y^3*(-1 + z)^3*(13 + 21*z - 3*z^2 + 5*z^3) - 3*(z^2 + z^4) + 
+          y^2*(-1 + z)^2*(-11 - 6*z - 9*z^2 + 6*z^3 + 4*z^4) - 
+          y*(-2 + 6*z - 5*z^2 + 14*z^3 - 14*z^4 + z^6))*G[-r^(-1), -r, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+       (2*(-1 + y)*(-20*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 
+          4*y^4*(-1 + z)^4*(6 - 11*z + 6*z^2) - 2*y^3*(-1 + z)^3*
+           (-8 + 21*z - 30*z^2 + 5*z^3) + 6*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(-5 + 24*z - 48*z^2 + 36*z^3 + z^4) + 
+          y*(1 + 12*z - 23*z^2 + 38*z^3 - 35*z^4 + 6*z^5 + z^6))*
+         G[-r^(-1), r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (8*(-1 + y)*(-20*y^5*(-1 + z)^6 + 
+          8*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*(4 - 13*z + 4*z^2) - 
+          2*y^3*(-1 + z)^3*(-2 + 21*z - 24*z^2 + z^3) + 2*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(1 + 16*z - 32*z^2 + 20*z^3 + 3*z^4) + 
+          y*(1 + 4*z - 11*z^2 + 18*z^3 - 15*z^4 + 2*z^5 + z^6))*
+         G[r^(-1), 0, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (2*(-1 + y)*(-10*y^5*(-1 + z)^6 + 
+          4*y^6*(-1 + z)^6 + z^2 + z^4 + 2*y^4*(-1 + z)^4*(4 - 16*z + z^2) + 
+          y^3*(-1 + z)^3*(5 - 21*z + 33*z^2 + 11*z^3) - y^2*(-1 + z)^2*
+           (-4 + 2*z - 25*z^2 + 10*z^3 + 9*z^4) + 
+          y*(-1 + 2*z - 4*z^2 + 12*z^3 - 9*z^4 - 2*z^5 + 2*z^6))*
+         G[r^(-1), -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (4*(-1 + y)*(-20*y^5*(-1 + z)^6 + 
+          8*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*(4 - 13*z + 4*z^2) - 
+          2*y^3*(-1 + z)^3*(-2 + 21*z - 24*z^2 + z^3) + 2*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(1 + 16*z - 32*z^2 + 20*z^3 + 3*z^4) + 
+          y*(1 + 4*z - 11*z^2 + 18*z^3 - 15*z^4 + 2*z^5 + z^6))*
+         G[r^(-1), r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) + (2*(-1 + y)*(-20*y^5*(-1 + z)^6 + 
+          8*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*(6 - 11*z + 6*z^2) - 
+          2*y^3*(-1 + z)^3*(-8 + 21*z - 30*z^2 + 5*z^3) + 6*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(-5 + 24*z - 48*z^2 + 36*z^3 + z^4) + 
+          y*(1 + 12*z - 23*z^2 + 38*z^3 - 35*z^4 + 6*z^5 + z^6))*
+         G[r^(-1), -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (2*(-1 + y)*(-10*y^5*(-1 + z)^6 + 
+          4*y^6*(-1 + z)^6 + 2*y^4*(-1 + z)^4*z*(-14 + 3*z) - 
+          y^3*(-1 + z)^3*(13 + 21*z - 3*z^2 + 5*z^3) - 3*(z^2 + z^4) + 
+          y^2*(-1 + z)^2*(-11 - 6*z - 9*z^2 + 6*z^3 + 4*z^4) - 
+          y*(-2 + 6*z - 5*z^2 + 14*z^3 - 14*z^4 + z^6))*G[r^(-1), r, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (8*y*(-28*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*
+           (9 - 23*z + 9*z^2) - 2*z^2*(-4 + 3*z - 2*z^2 + z^3) - 
+          2*y^3*(-1 + z)^3*(-10 + 55*z - 52*z^2 + 11*z^3) + 
+          y^2*(-1 + z)^2*(3 - 62*z + 98*z^2 - 54*z^3 + 7*z^4) + 
+          y*(1 + 14*z - 57*z^2 + 74*z^3 - 47*z^4 + 16*z^5 - z^6))*
+         G[-r, 0, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (2*y*(-2 - 14*y^5*(-1 + z)^6 + 4*y^6*(-1 + z)^6 - 
+          5*z^2 - 4*z^3 + 7*z^4 - 2*z^6 + 2*y^4*(-1 + z)^4*
+           (5 - 24*z + 8*z^2) + y^3*(-1 + z)^3*(-7 - 31*z + 73*z^2 + z^3) - 
+          y^2*(-1 + z)^2*(12 - 10*z - 51*z^2 + 50*z^3 + 15*z^4) + 
+          y*(7 - 16*z + 10*z^2 + 34*z^3 - 47*z^4 + 2*z^5 + 10*z^6))*
+         G[-r, -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) + (2*y*(-28*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 
+          4*y^4*(-1 + z)^4*(11 - 21*z + 11*z^2) - 2*y^3*(-1 + z)^3*
+           (-20 + 55*z - 46*z^2 + 23*z^3) + y^2*(-1 + z)^2*
+           (21 - 82*z + 78*z^2 - 58*z^3 + 33*z^4) + 
+          y*(-7 + 34*z - 73*z^2 + 62*z^3 - 43*z^4 + 40*z^5 - 13*z^6) + 
+          2*(1 + 7*z^2 - z^3 + z^4 - 3*z^5 + z^6))*G[-r, r^(-1), t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (4*y*(-28*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*
+           (9 - 23*z + 9*z^2) - 2*z^2*(-4 + 3*z - 2*z^2 + z^3) - 
+          2*y^3*(-1 + z)^3*(-10 + 55*z - 52*z^2 + 11*z^3) + 
+          y^2*(-1 + z)^2*(3 - 62*z + 98*z^2 - 54*z^3 + 7*z^4) + 
+          y*(1 + 14*z - 57*z^2 + 74*z^3 - 47*z^4 + 16*z^5 - z^6))*
+         G[-r, -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (2*y*(-14*y^5*(-1 + z)^6 + 4*y^6*(-1 + z)^6 + 
+          2*y^4*(-1 + z)^4*(9 - 26*z + 6*z^2) + y^3*(-1 + z)^3*
+           (7 - 79*z + 43*z^2 + z^3) + z^2*(7 - 6*z - z^2 + 2*z^3) - 
+          y^2*(-1 + z)^2*(3 + 52*z - 67*z^2 + 4*z^4) + 
+          y*(2 + 10*z - 51*z^2 + 52*z^3 - 4*z^4 - 10*z^5 + z^6))*G[-r, r, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (8*y*(-28*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*
+           (9 - 23*z + 9*z^2) - 2*z^2*(-4 + 3*z - 2*z^2 + z^3) - 
+          2*y^3*(-1 + z)^3*(-10 + 55*z - 52*z^2 + 11*z^3) + 
+          y^2*(-1 + z)^2*(3 - 62*z + 98*z^2 - 54*z^3 + 7*z^4) + 
+          y*(1 + 14*z - 57*z^2 + 74*z^3 - 47*z^4 + 16*z^5 - z^6))*G[r, 0, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+       (2*y*(-28*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*
+           (11 - 21*z + 11*z^2) - 2*y^3*(-1 + z)^3*(-20 + 55*z - 46*z^2 + 
+            23*z^3) + y^2*(-1 + z)^2*(21 - 82*z + 78*z^2 - 58*z^3 + 33*z^4) + 
+          y*(-7 + 34*z - 73*z^2 + 62*z^3 - 43*z^4 + 40*z^5 - 13*z^6) + 
+          2*(1 + 7*z^2 - z^3 + z^4 - 3*z^5 + z^6))*G[r, -r^(-1), t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (2*y*(-2 - 14*y^5*(-1 + z)^6 + 4*y^6*(-1 + z)^6 - 5*z^2 - 4*z^3 + 
+          7*z^4 - 2*z^6 + 2*y^4*(-1 + z)^4*(5 - 24*z + 8*z^2) + 
+          y^3*(-1 + z)^3*(-7 - 31*z + 73*z^2 + z^3) - y^2*(-1 + z)^2*
+           (12 - 10*z - 51*z^2 + 50*z^3 + 15*z^4) + 
+          y*(7 - 16*z + 10*z^2 + 34*z^3 - 47*z^4 + 2*z^5 + 10*z^6))*
+         G[r, r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (2*y*(-14*y^5*(-1 + z)^6 + 4*y^6*(-1 + z)^6 + 
+          2*y^4*(-1 + z)^4*(9 - 26*z + 6*z^2) + y^3*(-1 + z)^3*
+           (7 - 79*z + 43*z^2 + z^3) + z^2*(7 - 6*z - z^2 + 2*z^3) - 
+          y^2*(-1 + z)^2*(3 + 52*z - 67*z^2 + 4*z^4) + 
+          y*(2 + 10*z - 51*z^2 + 52*z^3 - 4*z^4 - 10*z^5 + z^6))*G[r, -r, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (4*y*(-28*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*
+           (9 - 23*z + 9*z^2) - 2*z^2*(-4 + 3*z - 2*z^2 + z^3) - 
+          2*y^3*(-1 + z)^3*(-10 + 55*z - 52*z^2 + 11*z^3) + 
+          y^2*(-1 + z)^2*(3 - 62*z + 98*z^2 - 54*z^3 + 7*z^4) + 
+          y*(1 + 14*z - 57*z^2 + 74*z^3 - 47*z^4 + 16*z^5 - z^6))*G[r, r, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2)) + 
+     G[I, r]*((-12*(-139 + 42*Pi^2)*y^5*(-1 + z)^6 + 4*(-139 + 42*Pi^2)*y^6*
+          (-1 + z)^6 + 3*z^2*(-28 - 27*z - 31*z^2 + 22*Pi^2*(1 + z^2)) + 
+         4*y^4*(-1 + z)^4*(-478 + 1004*z - 488*z^2 + 
+           69*Pi^2*(2 - 5*z + 2*z^2)) - 4*y^3*(-1 + z)^4*
+          (-261 + 618*z - 281*z^2 + 6*Pi^2*(11 - 45*z + 11*z^2)) + 
+         y*(-1 + z)*(63 + 497*z - 258*z^2 + 375*z^3 - 445*z^4 - 16*z^5 + 
+           3*Pi^2*(-3 - 47*z + 100*z^2 - 100*z^3 + 47*z^4 + 3*z^5)) + 
+         y^2*(-1 + z)*(181 - 1909*z + 3314*z^2 - 3511*z^3 + 1977*z^4 - 
+           268*z^5 + 3*Pi^2*(-13 + 219*z - 536*z^2 + 536*z^3 - 219*z^4 + 
+             13*z^5)))/(9*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       ((-1 + y)*(3*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z]*
+           (3 + 8*z + 3*z^2) + 4*y^6*(-1 + z)^6*(-18*Sqrt[z] + 
+            11*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z]) - 
+          2*y^5*(-1 + z)^5*(90*Sqrt[z] - 90*z^(3/2) - 19*Sqrt[1 + y*(-1 + z)]*
+             Sqrt[y + z - y*z] + 55*Sqrt[1 + y*(-1 + z)]*z*
+             Sqrt[y + z - y*z]) + 2*y^4*(-1 + z)^4*(-90*Sqrt[z] + 
+            180*z^(3/2) - 90*z^(5/2) + 24*Sqrt[1 + y*(-1 + z)]*
+             Sqrt[y + z - y*z] + 42*Sqrt[1 + y*(-1 + z)]*z*
+             Sqrt[y + z - y*z] + 91*Sqrt[1 + y*(-1 + z)]*z^2*
+             Sqrt[y + z - y*z]) + y^3*(-1 + z)*(-90*Sqrt[z] + 450*z^(3/2) - 
+            900*z^(5/2) + 900*z^(7/2) - 450*z^(9/2) + 90*z^(11/2) - 
+            2*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
+            38*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
+            305*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
+            239*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
+            347*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 
+            97*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
+          2*y^2*(-1 + z)*(9*Sqrt[z] - 63*z^(3/2) + 108*z^(5/2) - 
+            108*z^(7/2) + 63*z^(9/2) - 9*z^(11/2) + 13*Sqrt[1 + y*(-1 + z)]*
+             Sqrt[y + z - y*z] + 24*Sqrt[1 + y*(-1 + z)]*z*
+             Sqrt[y + z - y*z] + 86*Sqrt[1 + y*(-1 + z)]*z^2*
+             Sqrt[y + z - y*z] - 115*Sqrt[1 + y*(-1 + z)]*z^3*
+             Sqrt[y + z - y*z] - 83*Sqrt[1 + y*(-1 + z)]*z^4*
+             Sqrt[y + z - y*z] + 3*Sqrt[1 + y*(-1 + z)]*z^5*
+             Sqrt[y + z - y*z]) + y*(-18*z^(3/2) + 36*z^(5/2) - 36*z^(7/2) + 
+            36*z^(9/2) - 18*z^(11/2) + 6*Sqrt[1 + y*(-1 + z)]*
+             Sqrt[y + z - y*z] + 2*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
+            2*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
+            126*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
+            7*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
+            18*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] + 
+            Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]))*G[-r^(-1), t])/
+        (3*(-1 + 2*y)*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*
+         (y + z - y*z)^(5/2)) - ((-1 + y)*(3*Sqrt[1 + y*(-1 + z)]*z^2*
+           Sqrt[y + z - y*z]*(3 + 8*z + 3*z^2) + 4*y^6*(-1 + z)^6*
+           (18*Sqrt[z] + 11*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z]) - 
+          2*y^5*(-1 + z)^5*(-90*Sqrt[z] + 90*z^(3/2) - 
+            19*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
+            55*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z]) + 
+          2*y^4*(-1 + z)^4*(90*Sqrt[z] - 180*z^(3/2) + 90*z^(5/2) + 
+            24*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
+            42*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
+            91*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z]) + 
+          2*y^2*(-1 + z)*(-9*Sqrt[z] + 63*z^(3/2) - 108*z^(5/2) + 
+            108*z^(7/2) - 63*z^(9/2) + 9*z^(11/2) + 13*Sqrt[1 + y*(-1 + z)]*
+             Sqrt[y + z - y*z] + 24*Sqrt[1 + y*(-1 + z)]*z*
+             Sqrt[y + z - y*z] + 86*Sqrt[1 + y*(-1 + z)]*z^2*
+             Sqrt[y + z - y*z] - 115*Sqrt[1 + y*(-1 + z)]*z^3*
+             Sqrt[y + z - y*z] - 83*Sqrt[1 + y*(-1 + z)]*z^4*
+             Sqrt[y + z - y*z] + 3*Sqrt[1 + y*(-1 + z)]*z^5*
+             Sqrt[y + z - y*z]) - y^3*(-1 + z)*(-90*Sqrt[z] + 450*z^(3/2) - 
+            900*z^(5/2) + 900*z^(7/2) - 450*z^(9/2) + 90*z^(11/2) + 
+            2*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
+            38*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
+            305*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
+            239*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
+            347*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
+            97*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
+          y*(18*z^(3/2) - 36*z^(5/2) + 36*z^(7/2) - 36*z^(9/2) + 
+            18*z^(11/2) + 6*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
+            2*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
+            2*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
+            126*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
+            7*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
+            18*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] + 
+            Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]))*G[r^(-1), t])/
+        (3*(-1 + 2*y)*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*
+         (y + z - y*z)^(5/2)) - 
+       (y*(4*y^6*(-1 + z)^6*(-18*Sqrt[z] + 11*Sqrt[1 + y*(-1 + z)]*
+             Sqrt[y + z - y*z]) - 2*y^5*(-1 + z)^5*(126*Sqrt[z] - 
+            126*z^(3/2) - 113*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
+            77*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z]) + 
+          2*y^4*(-1 + z)^4*(-180*Sqrt[z] + 360*z^(3/2) - 180*z^(5/2) + 
+            259*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
+            248*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
+            146*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z]) + 
+          y^3*(-1 + z)*(-270*Sqrt[z] + 1350*z^(3/2) - 2700*z^(5/2) + 
+            2700*z^(7/2) - 1350*z^(9/2) + 270*z^(11/2) + 
+            694*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
+            1982*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
+            2721*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
+            2287*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
+            1121*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 
+            411*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
+          y^2*(-1 + z)*(108*Sqrt[z] - 576*z^(3/2) + 1116*z^(5/2) - 
+            1116*z^(7/2) + 576*z^(9/2) - 108*z^(11/2) - 
+            548*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
+            974*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
+            1107*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
+            1019*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
+            417*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
+            367*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
+          y*(18*Sqrt[z] - 162*z^(3/2) + 378*z^(5/2) - 468*z^(7/2) + 
+            378*z^(9/2) - 162*z^(11/2) + 18*z^(13/2) - 
+            226*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
+            450*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
+            397*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
+            498*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
+            267*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
+            214*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] - 
+            164*Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]) + 
+          2*(9*z^(3/2) - 18*z^(5/2) + 18*z^(7/2) - 18*z^(9/2) + 9*z^(11/2) + 
+            18*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
+            28*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
+            7*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
+            30*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
+            2*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 
+            15*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] + 
+            13*Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]))*G[-r, t])/
+        (3*(-1 + 2*y)*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*
+         (y + z - y*z)^(5/2)) + 
+       (y*(-4*y^6*(-1 + z)^6*(18*Sqrt[z] + 11*Sqrt[1 + y*(-1 + z)]*
+             Sqrt[y + z - y*z]) + 2*y^5*(-1 + z)^5*(-126*Sqrt[z] + 
+            126*z^(3/2) - 113*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
+            77*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z]) - 
+          2*y^4*(-1 + z)^4*(180*Sqrt[z] - 360*z^(3/2) + 180*z^(5/2) + 
+            259*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
+            248*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
+            146*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z]) - 
+          y^2*(-1 + z)*(-108*Sqrt[z] + 576*z^(3/2) - 1116*z^(5/2) + 
+            1116*z^(7/2) - 576*z^(9/2) + 108*z^(11/2) - 
+            548*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
+            974*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
+            1107*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
+            1019*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
+            417*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
+            367*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
+          y^3*(-1 + z)*(-270*Sqrt[z] + 1350*z^(3/2) - 2700*z^(5/2) + 
+            2700*z^(7/2) - 1350*z^(9/2) + 270*z^(11/2) - 
+            694*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
+            1982*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
+            2721*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
+            2287*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
+            1121*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
+            411*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
+          2*(9*z^(3/2) - 18*z^(5/2) + 18*z^(7/2) - 18*z^(9/2) + 9*z^(11/2) - 
+            18*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
+            28*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
+            7*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
+            30*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
+            2*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
+            15*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] - 
+            13*Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]) + 
+          y*(18*Sqrt[z] - 162*z^(3/2) + 378*z^(5/2) - 468*z^(7/2) + 
+            378*z^(9/2) - 162*z^(11/2) + 18*z^(13/2) + 
+            226*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
+            450*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
+            397*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
+            498*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
+            267*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 
+            214*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] + 
+            164*Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]))*G[r, t])/
+        (3*(-1 + 2*y)*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*
+         (y + z - y*z)^(5/2)) + (6*(-(z^2*(1 + z^2)) + 
+          y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 4*y^3*(-1 + 8*z^3 - 9*z^4 + 
+            2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 
+          y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*G[-1, -r^(-1), t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+       (6*(-(z^2*(1 + z^2)) + y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 
+          4*y^3*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 
+            2*z^6) + y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*
+         G[-1, r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (6*(-(z^2*(1 + z^2)) + 
+          y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 4*y^3*(-1 + 8*z^3 - 9*z^4 + 
+            2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 
+          y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*G[-1, -r, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (6*(-(z^2*(1 + z^2)) + y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 
+          4*y^3*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 
+            2*z^6) + y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*
+         G[-1, r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (128*(1 - 2*y*(-1 + z)^2 + 2*y^2*(-1 + z)^2 + 
+          z^2)*G[0, 0, t])/((-1 + z)*z) - 
+       (8*(-1 + y)*(-20*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 
+          4*y^4*(-1 + z)^4*(4 - 13*z + 4*z^2) - 2*y^3*(-1 + z)^3*
+           (-2 + 21*z - 24*z^2 + z^3) + 2*(z^2 + z^4) - y^2*(-1 + z)^2*
+           (1 + 16*z - 32*z^2 + 20*z^3 + 3*z^4) + 
+          y*(1 + 4*z - 11*z^2 + 18*z^3 - 15*z^4 + 2*z^5 + z^6))*
+         G[0, -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (8*(-1 + y)*(-20*y^5*(-1 + z)^6 + 
+          8*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*(4 - 13*z + 4*z^2) - 
+          2*y^3*(-1 + z)^3*(-2 + 21*z - 24*z^2 + z^3) + 2*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(1 + 16*z - 32*z^2 + 20*z^3 + 3*z^4) + 
+          y*(1 + 4*z - 11*z^2 + 18*z^3 - 15*z^4 + 2*z^5 + z^6))*
+         G[0, r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (8*y*(-28*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 
+          4*y^4*(-1 + z)^4*(9 - 23*z + 9*z^2) - 2*z^2*(-4 + 3*z - 2*z^2 + 
+            z^3) - 2*y^3*(-1 + z)^3*(-10 + 55*z - 52*z^2 + 11*z^3) + 
+          y^2*(-1 + z)^2*(3 - 62*z + 98*z^2 - 54*z^3 + 7*z^4) + 
+          y*(1 + 14*z - 57*z^2 + 74*z^3 - 47*z^4 + 16*z^5 - z^6))*
+         G[0, -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (8*y*(-28*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 
+          4*y^4*(-1 + z)^4*(9 - 23*z + 9*z^2) - 2*z^2*(-4 + 3*z - 2*z^2 + 
+            z^3) - 2*y^3*(-1 + z)^3*(-10 + 55*z - 52*z^2 + 11*z^3) + 
+          y^2*(-1 + z)^2*(3 - 62*z + 98*z^2 - 54*z^3 + 7*z^4) + 
+          y*(1 + 14*z - 57*z^2 + 74*z^3 - 47*z^4 + 16*z^5 - z^6))*G[0, r, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+       (6*(-(z^2*(1 + z^2)) + y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 
+          4*y^3*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 
+            2*z^6) + y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*
+         G[1, -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) + (6*(-(z^2*(1 + z^2)) + 
+          y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 4*y^3*(-1 + 8*z^3 - 9*z^4 + 
+            2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 
+          y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*G[1, r^(-1), t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (6*(-(z^2*(1 + z^2)) + y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 
+          4*y^3*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 
+            2*z^6) + y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*
+         G[1, -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (6*(-(z^2*(1 + z^2)) + 
+          y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 4*y^3*(-1 + 8*z^3 - 9*z^4 + 
+            2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 
+          y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*G[1, r, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (8*(-1 + y)*(-20*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 
+          4*y^4*(-1 + z)^4*(4 - 13*z + 4*z^2) - 2*y^3*(-1 + z)^3*
+           (-2 + 21*z - 24*z^2 + z^3) + 2*(z^2 + z^4) - y^2*(-1 + z)^2*
+           (1 + 16*z - 32*z^2 + 20*z^3 + 3*z^4) + 
+          y*(1 + 4*z - 11*z^2 + 18*z^3 - 15*z^4 + 2*z^5 + z^6))*
+         G[-r^(-1), 0, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (4*(-1 + y)*(-20*y^5*(-1 + z)^6 + 
+          8*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*(4 - 13*z + 4*z^2) - 
+          2*y^3*(-1 + z)^3*(-2 + 21*z - 24*z^2 + z^3) + 2*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(1 + 16*z - 32*z^2 + 20*z^3 + 3*z^4) + 
+          y*(1 + 4*z - 11*z^2 + 18*z^3 - 15*z^4 + 2*z^5 + z^6))*
+         G[-r^(-1), -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (2*(-1 + y)*(-10*y^5*(-1 + z)^6 + 
+          4*y^6*(-1 + z)^6 + z^2 + z^4 + 2*y^4*(-1 + z)^4*(4 - 16*z + z^2) + 
+          y^3*(-1 + z)^3*(5 - 21*z + 33*z^2 + 11*z^3) - y^2*(-1 + z)^2*
+           (-4 + 2*z - 25*z^2 + 10*z^3 + 9*z^4) + 
+          y*(-1 + 2*z - 4*z^2 + 12*z^3 - 9*z^4 - 2*z^5 + 2*z^6))*
+         G[-r^(-1), r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (2*(-1 + y)*(-10*y^5*(-1 + z)^6 + 
+          4*y^6*(-1 + z)^6 + 2*y^4*(-1 + z)^4*z*(-14 + 3*z) - 
+          y^3*(-1 + z)^3*(13 + 21*z - 3*z^2 + 5*z^3) - 3*(z^2 + z^4) + 
+          y^2*(-1 + z)^2*(-11 - 6*z - 9*z^2 + 6*z^3 + 4*z^4) - 
+          y*(-2 + 6*z - 5*z^2 + 14*z^3 - 14*z^4 + z^6))*G[-r^(-1), -r, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+       (2*(-1 + y)*(-20*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 
+          4*y^4*(-1 + z)^4*(6 - 11*z + 6*z^2) - 2*y^3*(-1 + z)^3*
+           (-8 + 21*z - 30*z^2 + 5*z^3) + 6*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(-5 + 24*z - 48*z^2 + 36*z^3 + z^4) + 
+          y*(1 + 12*z - 23*z^2 + 38*z^3 - 35*z^4 + 6*z^5 + z^6))*
+         G[-r^(-1), r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (8*(-1 + y)*(-20*y^5*(-1 + z)^6 + 
+          8*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*(4 - 13*z + 4*z^2) - 
+          2*y^3*(-1 + z)^3*(-2 + 21*z - 24*z^2 + z^3) + 2*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(1 + 16*z - 32*z^2 + 20*z^3 + 3*z^4) + 
+          y*(1 + 4*z - 11*z^2 + 18*z^3 - 15*z^4 + 2*z^5 + z^6))*
+         G[r^(-1), 0, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (2*(-1 + y)*(-10*y^5*(-1 + z)^6 + 
+          4*y^6*(-1 + z)^6 + z^2 + z^4 + 2*y^4*(-1 + z)^4*(4 - 16*z + z^2) + 
+          y^3*(-1 + z)^3*(5 - 21*z + 33*z^2 + 11*z^3) - y^2*(-1 + z)^2*
+           (-4 + 2*z - 25*z^2 + 10*z^3 + 9*z^4) + 
+          y*(-1 + 2*z - 4*z^2 + 12*z^3 - 9*z^4 - 2*z^5 + 2*z^6))*
+         G[r^(-1), -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (4*(-1 + y)*(-20*y^5*(-1 + z)^6 + 
+          8*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*(4 - 13*z + 4*z^2) - 
+          2*y^3*(-1 + z)^3*(-2 + 21*z - 24*z^2 + z^3) + 2*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(1 + 16*z - 32*z^2 + 20*z^3 + 3*z^4) + 
+          y*(1 + 4*z - 11*z^2 + 18*z^3 - 15*z^4 + 2*z^5 + z^6))*
+         G[r^(-1), r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) + (2*(-1 + y)*(-20*y^5*(-1 + z)^6 + 
+          8*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*(6 - 11*z + 6*z^2) - 
+          2*y^3*(-1 + z)^3*(-8 + 21*z - 30*z^2 + 5*z^3) + 6*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(-5 + 24*z - 48*z^2 + 36*z^3 + z^4) + 
+          y*(1 + 12*z - 23*z^2 + 38*z^3 - 35*z^4 + 6*z^5 + z^6))*
+         G[r^(-1), -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (2*(-1 + y)*(-10*y^5*(-1 + z)^6 + 
+          4*y^6*(-1 + z)^6 + 2*y^4*(-1 + z)^4*z*(-14 + 3*z) - 
+          y^3*(-1 + z)^3*(13 + 21*z - 3*z^2 + 5*z^3) - 3*(z^2 + z^4) + 
+          y^2*(-1 + z)^2*(-11 - 6*z - 9*z^2 + 6*z^3 + 4*z^4) - 
+          y*(-2 + 6*z - 5*z^2 + 14*z^3 - 14*z^4 + z^6))*G[r^(-1), r, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (8*y*(-28*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*
+           (9 - 23*z + 9*z^2) - 2*z^2*(-4 + 3*z - 2*z^2 + z^3) - 
+          2*y^3*(-1 + z)^3*(-10 + 55*z - 52*z^2 + 11*z^3) + 
+          y^2*(-1 + z)^2*(3 - 62*z + 98*z^2 - 54*z^3 + 7*z^4) + 
+          y*(1 + 14*z - 57*z^2 + 74*z^3 - 47*z^4 + 16*z^5 - z^6))*
+         G[-r, 0, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (2*y*(-2 - 14*y^5*(-1 + z)^6 + 4*y^6*(-1 + z)^6 - 
+          5*z^2 - 4*z^3 + 7*z^4 - 2*z^6 + 2*y^4*(-1 + z)^4*
+           (5 - 24*z + 8*z^2) + y^3*(-1 + z)^3*(-7 - 31*z + 73*z^2 + z^3) - 
+          y^2*(-1 + z)^2*(12 - 10*z - 51*z^2 + 50*z^3 + 15*z^4) + 
+          y*(7 - 16*z + 10*z^2 + 34*z^3 - 47*z^4 + 2*z^5 + 10*z^6))*
+         G[-r, -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) + (2*y*(-28*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 
+          4*y^4*(-1 + z)^4*(11 - 21*z + 11*z^2) - 2*y^3*(-1 + z)^3*
+           (-20 + 55*z - 46*z^2 + 23*z^3) + y^2*(-1 + z)^2*
+           (21 - 82*z + 78*z^2 - 58*z^3 + 33*z^4) + 
+          y*(-7 + 34*z - 73*z^2 + 62*z^3 - 43*z^4 + 40*z^5 - 13*z^6) + 
+          2*(1 + 7*z^2 - z^3 + z^4 - 3*z^5 + z^6))*G[-r, r^(-1), t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (4*y*(-28*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*
+           (9 - 23*z + 9*z^2) - 2*z^2*(-4 + 3*z - 2*z^2 + z^3) - 
+          2*y^3*(-1 + z)^3*(-10 + 55*z - 52*z^2 + 11*z^3) + 
+          y^2*(-1 + z)^2*(3 - 62*z + 98*z^2 - 54*z^3 + 7*z^4) + 
+          y*(1 + 14*z - 57*z^2 + 74*z^3 - 47*z^4 + 16*z^5 - z^6))*
+         G[-r, -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (2*y*(-14*y^5*(-1 + z)^6 + 4*y^6*(-1 + z)^6 + 
+          2*y^4*(-1 + z)^4*(9 - 26*z + 6*z^2) + y^3*(-1 + z)^3*
+           (7 - 79*z + 43*z^2 + z^3) + z^2*(7 - 6*z - z^2 + 2*z^3) - 
+          y^2*(-1 + z)^2*(3 + 52*z - 67*z^2 + 4*z^4) + 
+          y*(2 + 10*z - 51*z^2 + 52*z^3 - 4*z^4 - 10*z^5 + z^6))*G[-r, r, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (8*y*(-28*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*
+           (9 - 23*z + 9*z^2) - 2*z^2*(-4 + 3*z - 2*z^2 + z^3) - 
+          2*y^3*(-1 + z)^3*(-10 + 55*z - 52*z^2 + 11*z^3) + 
+          y^2*(-1 + z)^2*(3 - 62*z + 98*z^2 - 54*z^3 + 7*z^4) + 
+          y*(1 + 14*z - 57*z^2 + 74*z^3 - 47*z^4 + 16*z^5 - z^6))*G[r, 0, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+       (2*y*(-28*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*
+           (11 - 21*z + 11*z^2) - 2*y^3*(-1 + z)^3*(-20 + 55*z - 46*z^2 + 
+            23*z^3) + y^2*(-1 + z)^2*(21 - 82*z + 78*z^2 - 58*z^3 + 33*z^4) + 
+          y*(-7 + 34*z - 73*z^2 + 62*z^3 - 43*z^4 + 40*z^5 - 13*z^6) + 
+          2*(1 + 7*z^2 - z^3 + z^4 - 3*z^5 + z^6))*G[r, -r^(-1), t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (2*y*(-2 - 14*y^5*(-1 + z)^6 + 4*y^6*(-1 + z)^6 - 5*z^2 - 4*z^3 + 
+          7*z^4 - 2*z^6 + 2*y^4*(-1 + z)^4*(5 - 24*z + 8*z^2) + 
+          y^3*(-1 + z)^3*(-7 - 31*z + 73*z^2 + z^3) - y^2*(-1 + z)^2*
+           (12 - 10*z - 51*z^2 + 50*z^3 + 15*z^4) + 
+          y*(7 - 16*z + 10*z^2 + 34*z^3 - 47*z^4 + 2*z^5 + 10*z^6))*
+         G[r, r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (2*y*(-14*y^5*(-1 + z)^6 + 4*y^6*(-1 + z)^6 + 
+          2*y^4*(-1 + z)^4*(9 - 26*z + 6*z^2) + y^3*(-1 + z)^3*
+           (7 - 79*z + 43*z^2 + z^3) + z^2*(7 - 6*z - z^2 + 2*z^3) - 
+          y^2*(-1 + z)^2*(3 + 52*z - 67*z^2 + 4*z^4) + 
+          y*(2 + 10*z - 51*z^2 + 52*z^3 - 4*z^4 - 10*z^5 + z^6))*G[r, -r, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (4*y*(-28*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*
+           (9 - 23*z + 9*z^2) - 2*z^2*(-4 + 3*z - 2*z^2 + z^3) - 
+          2*y^3*(-1 + z)^3*(-10 + 55*z - 52*z^2 + 11*z^3) + 
+          y^2*(-1 + z)^2*(3 - 62*z + 98*z^2 - 54*z^3 + 7*z^4) + 
+          y*(1 + 14*z - 57*z^2 + 74*z^3 - 47*z^4 + 16*z^5 - z^6))*G[r, r, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2)) + 
      (2*(-552*y^5*(-1 + z)^6 + 184*y^6*(-1 + z)^6 - 8*y^3*(-1 + z)^4*
          (53 - 131*z + 53*z^2) + 4*y^4*(-1 + z)^4*(168 - 361*z + 168*z^2) + 
         106*(z^2 + z^4) - y*(-1 + z)^2*(7 - 198*z + 198*z^2 - 198*z^3 + 
           7*z^4) + y^2*(-1 + z)^2*(127 - 778*z + 1118*z^2 - 778*z^3 + 
-          127*z^4))*G[-1, -1, -1, z])/((1 + y*(-1 + z))^2*(-1 + z)*z*
-       (y + z - y*z)^2) - (2*(-280*y^6*(-1 + z)^6 + 80*y^7*(-1 + z)^6 + 
-        8*y^5*(-1 + z)^4*(47 - 113*z + 47*z^2) - 4*y^4*(-1 + z)^3*
-         (-60 + 275*z - 281*z^2 + 58*z^3) - 18*(z^2 + z^4) + 
-        2*y^3*(-1 + z)^2*(33 - 330*z + 578*z^2 - 346*z^3 + 25*z^4) - 
-        y*(5 + 36*z - 137*z^2 + 160*z^3 - 153*z^4 + 28*z^5 + 5*z^6) + 
-        y^2*(3 + 216*z - 755*z^2 + 1112*z^3 - 795*z^4 + 208*z^5 + 11*z^6))*
-       G[-1, -1, 0, z])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
-       (y + z - y*z)^2) - (2*(-280*y^6*(-1 + z)^6 + 80*y^7*(-1 + z)^6 + 
-        8*y^5*(-1 + z)^4*(46 - 113*z + 47*z^2) - 4*y^4*(-1 + z)^3*
-         (-55 + 270*z - 281*z^2 + 58*z^3) - 16*(z^2 + z^4) + 
-        2*y^3*(-1 + z)^2*(23 - 314*z + 564*z^2 - 346*z^3 + 25*z^4) - 
-        y*(7 + 32*z - 125*z^2 + 148*z^3 - 143*z^4 + 28*z^5 + 5*z^6) + 
-        y^2*(13 + 188*z - 707*z^2 + 1060*z^3 - 773*z^4 + 208*z^5 + 11*z^6))*
-       G[-1, 0, -1, z])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+          127*z^4))*G[-1, -1, -1, t^2])/((1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) - (2*(-552*y^5*(-1 + z)^6 + 184*y^6*(-1 + z)^6 - 
+        8*y^3*(-1 + z)^4*(53 - 131*z + 53*z^2) + 4*y^4*(-1 + z)^4*
+         (168 - 361*z + 168*z^2) + 106*(z^2 + z^4) - 
+        y*(-1 + z)^2*(7 - 198*z + 198*z^2 - 198*z^3 + 7*z^4) + 
+        y^2*(-1 + z)^2*(127 - 778*z + 1118*z^2 - 778*z^3 + 127*z^4))*
+       G[-1, -1, -1, z])/((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+     (2*(-280*y^6*(-1 + z)^6 + 80*y^7*(-1 + z)^6 + 8*y^5*(-1 + z)^4*
+         (47 - 113*z + 47*z^2) - 4*y^4*(-1 + z)^3*(-60 + 275*z - 281*z^2 + 
+          58*z^3) - 18*(z^2 + z^4) + 2*y^3*(-1 + z)^2*(33 - 330*z + 578*z^2 - 
+          346*z^3 + 25*z^4) - y*(5 + 36*z - 137*z^2 + 160*z^3 - 153*z^4 + 
+          28*z^5 + 5*z^6) + y^2*(3 + 216*z - 755*z^2 + 1112*z^3 - 795*z^4 + 
+          208*z^5 + 11*z^6))*G[-1, -1, 0, t^2])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+     (2*(-280*y^6*(-1 + z)^6 + 80*y^7*(-1 + z)^6 + 8*y^5*(-1 + z)^4*
+         (47 - 113*z + 47*z^2) - 4*y^4*(-1 + z)^3*(-60 + 275*z - 281*z^2 + 
+          58*z^3) - 18*(z^2 + z^4) + 2*y^3*(-1 + z)^2*(33 - 330*z + 578*z^2 - 
+          346*z^3 + 25*z^4) - y*(5 + 36*z - 137*z^2 + 160*z^3 - 153*z^4 + 
+          28*z^5 + 5*z^6) + y^2*(3 + 216*z - 755*z^2 + 1112*z^3 - 795*z^4 + 
+          208*z^5 + 11*z^6))*G[-1, -1, 0, z])/((-1 + 2*y)*(1 + y*(-1 + z))^2*
+       (-1 + z)*z*(y + z - y*z)^2) + 
+     (2*(-280*y^6*(-1 + z)^6 + 80*y^7*(-1 + z)^6 + 8*y^5*(-1 + z)^4*
+         (46 - 113*z + 47*z^2) - 4*y^4*(-1 + z)^3*(-55 + 270*z - 281*z^2 + 
+          58*z^3) - 16*(z^2 + z^4) + 2*y^3*(-1 + z)^2*(23 - 314*z + 564*z^2 - 
+          346*z^3 + 25*z^4) - y*(7 + 32*z - 125*z^2 + 148*z^3 - 143*z^4 + 
+          28*z^5 + 5*z^6) + y^2*(13 + 188*z - 707*z^2 + 1060*z^3 - 773*z^4 + 
+          208*z^5 + 11*z^6))*G[-1, 0, -1, t^2])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+     (2*(-280*y^6*(-1 + z)^6 + 80*y^7*(-1 + z)^6 + 8*y^5*(-1 + z)^4*
+         (46 - 113*z + 47*z^2) - 4*y^4*(-1 + z)^3*(-55 + 270*z - 281*z^2 + 
+          58*z^3) - 16*(z^2 + z^4) + 2*y^3*(-1 + z)^2*(23 - 314*z + 564*z^2 - 
+          346*z^3 + 25*z^4) - y*(7 + 32*z - 125*z^2 + 148*z^3 - 143*z^4 + 
+          28*z^5 + 5*z^6) + y^2*(13 + 188*z - 707*z^2 + 1060*z^3 - 773*z^4 + 
+          208*z^5 + 11*z^6))*G[-1, 0, -1, z])/((-1 + 2*y)*(1 + y*(-1 + z))^2*
+       (-1 + z)*z*(y + z - y*z)^2) + 
+     (12*(z^2 + z^4 - 4*y^3*(-1 + z)^4*(1 + 2*z + 2*z^2) + 
+        2*y^4*(-1 + z)^4*(1 + 2*z + 2*z^2) - y*(-1 + z)^2*z*
+         (-2 - z - 2*z^2 + z^3) + y^2*(-1 + z)^2*(2 - 2*z - 3*z^2 - 6*z^3 + 
+          5*z^4))*G[-1, 0, 0, t])/((1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + (2*(-392*y^6*(-1 + z)^6 + 112*y^7*(-1 + z)^6 + 
+        8*y^5*(-1 + z)^4*(70 - 155*z + 69*z^2) - 4*y^4*(-1 + z)^3*
+         (-105 + 390*z - 373*z^2 + 104*z^3) - 20*(z^2 + z^4) + 
+        2*y^3*(-1 + z)^2*(85 - 510*z + 748*z^2 - 462*z^3 + 91*z^4) + 
+        y^2*(-35 + 380*z - 1095*z^2 + 1412*z^3 - 989*z^4 + 368*z^5 - 
+          41*z^6) + y*(5 - 40*z + 205*z^2 - 180*z^3 + 171*z^4 - 52*z^5 + 
+          3*z^6))*G[-1, 0, 0, t^2])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
        (y + z - y*z)^2) - (2*(-392*y^6*(-1 + z)^6 + 112*y^7*(-1 + z)^6 + 
         8*y^5*(-1 + z)^4*(70 - 155*z + 69*z^2) - 4*y^4*(-1 + z)^3*
          (-105 + 390*z - 373*z^2 + 104*z^3) - 20*(z^2 + z^4) + 
@@ -6047,12 +7004,92 @@
         y^2*(-35 + 380*z - 1095*z^2 + 1412*z^3 - 989*z^4 + 368*z^5 - 
           41*z^6) + y*(5 - 40*z + 205*z^2 - 180*z^3 + 171*z^4 - 52*z^5 + 
           3*z^6))*G[-1, 0, 0, z])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
-       (y + z - y*z)^2) - (4*(-4*y^3*(-1 + z)^4 + 2*y^4*(-1 + z)^4 + z^2 + 
+       (y + z - y*z)^2) + (2*(8*y^5*(-1 + z)^4*(1 + 2*z + 2*z^2) - 
+        2*y^4*(-1 + z)^3*(-13 - 19*z - 18*z^2 + 14*z^3) - 5*(z^2 + z^4) + 
+        4*y^3*(-1 + z)^2*(7 + 4*z + 4*z^2 - 22*z^3 + 3*z^4) - 
+        y*z*(10 - 13*z + 22*z^2 - 36*z^3 + 8*z^4 + z^5) + 
+        y^2*(-10 + 26*z - 21*z^2 + 78*z^3 - 122*z^4 + 48*z^5 + z^6))*
+       G[-1, 0, -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + 
+     (2*(z^2 + z^4 + 8*y^5*(-1 + z)^4*(1 + 2*z + 2*z^2) - 
+        2*y^4*(-1 + z)^3*(-7 - z + 18*z^2 + 26*z^3) + 4*y^3*(-1 + z)^2*
+         (1 - 8*z - 14*z^2 + 2*z^3 + 15*z^4) + 
+        y*z*(2 + 7*z + 14*z^2 - 12*z^3 - 8*z^4 + 5*z^5) + 
+        y^2*(2 + 14*z - 15*z^2 - 54*z^3 + 34*z^4 + 48*z^5 - 29*z^6))*
+       G[-1, 0, -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + (4*(-4*y^3*(-1 + z)^4 + 2*y^4*(-1 + z)^4 + z^2 + 
         z^4 - y*(-1 + z)^2*(1 + 3*z^2) + y^2*(-1 + z)^2*(3 - 4*z + 5*z^2))*
-       G[-1, 1, -1, z])/((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+       G[-1, 1, -1, t^2])/((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+     (4*(-4*y^3*(-1 + z)^4 + 2*y^4*(-1 + z)^4 + z^2 + z^4 - 
+        y*(-1 + z)^2*(1 + 3*z^2) + y^2*(-1 + z)^2*(3 - 4*z + 5*z^2))*
+       G[-1, 1, -1, z])/((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
      (4*(-(y*(-1 + z)^4*(1 + z^2)) - 8*y^3*(-1 + z)^4*(1 + z + z^2) + 
         4*y^4*(-1 + z)^4*(1 + z + z^2) + y^2*(-1 + z)^4*(5 + 4*z + 5*z^2) + 
-        2*(z^2 + z^4))*G[-1, 1, 0, z])/((1 + y*(-1 + z))^2*(-1 + z)*z*
+        2*(z^2 + z^4))*G[-1, 1, 0, t^2])/((1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + (4*(-(y*(-1 + z)^4*(1 + z^2)) - 
+        8*y^3*(-1 + z)^4*(1 + z + z^2) + 4*y^4*(-1 + z)^4*(1 + z + z^2) + 
+        y^2*(-1 + z)^4*(5 + 4*z + 5*z^2) + 2*(z^2 + z^4))*G[-1, 1, 0, z])/
+      ((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+     (2*(4*y^5*(-1 + z)^4*(1 + 2*z + 2*z^2) - 2*y^4*(-1 + z)^3*
+         (-9 - 17*z - 24*z^2 + 2*z^3) - 5*(z^2 + z^4) - 
+        2*y^3*(-1 + z)^2*(-12 - 14*z - 19*z^2 + 42*z^3 + 7*z^4) - 
+        y*z*(10 - 9*z + 26*z^2 - 38*z^3 + 4*z^4 + 3*z^5) + 
+        y^2*(-10 + 18*z - 13*z^2 + 94*z^3 - 126*z^4 + 24*z^5 + 13*z^6))*
+       G[-1, -r^(-1), 0, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + 
+     (4*(-(z^2*(1 + z^2)) + y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 
+        4*y^3*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 
+          2*z^6) + y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*
+       G[-1, -r^(-1), -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + ((8*y^5*(-1 + z)^4*(1 + 2*z + 2*z^2) - 
+        4*y^4*(-1 + z)^3*(-7 - 11*z - 12*z^2 + 6*z^3) - 6*(z^2 + z^4) + 
+        4*y^3*(-1 + z)^2*(8 + 6*z + 7*z^2 - 26*z^3 + z^4) - 
+        2*y*z*(6 - 7*z + 14*z^2 - 22*z^3 + 4*z^4 + z^5) + 
+        2*y^2*(-6 + 14*z - 11*z^2 + 50*z^3 - 74*z^4 + 24*z^5 + 3*z^6))*
+       G[-1, r^(-1), 0, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + (2*(z^2 + z^4 + y*z*(2 - z + 6*z^2 - 8*z^3 + z^5) + 
+        y^2*(2 - 2*z + z^2 - 22*z^3 + 26*z^4 - 5*z^6) + 
+        4*y^3*(-1 + 8*z^3 - 9*z^4 + 2*z^6) - 2*y^4*(-1 + 8*z^3 - 9*z^4 + 
+          2*z^6))*G[-1, r^(-1), -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*
+       (-1 + z)*z*(y + z - y*z)^2) - 
+     (6*(-(z^2*(1 + z^2)) + y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 
+        4*y^3*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 
+          2*z^6) + y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*
+       G[-1, r^(-1), -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + (2*(4*y^5*(-1 + z)^4*(1 + 2*z + 2*z^2) - 
+        2*y^4*(-1 + z)^3*(-1 + 7*z + 24*z^2 + 18*z^3) + 3*(z^2 + z^4) + 
+        2*y^3*(-1 + z)^2*(-4 - 18*z - 29*z^2 + 22*z^3 + 25*z^4) + 
+        y*z*(6 + z + 22*z^2 - 26*z^3 - 4*z^4 + 5*z^5) + 
+        y^2*(6 + 2*z - 5*z^2 - 82*z^3 + 82*z^4 + 24*z^5 - 27*z^6))*
+       G[-1, -r, 0, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) - 
+     (4*(-(z^2*(1 + z^2)) + y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 
+        4*y^3*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 
+          2*z^6) + y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*
+       G[-1, -r, -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + 
+     (2*(z^2 + z^4 + 4*y^5*(-1 + z)^4*(1 + 2*z + 2*z^2) - 
+        2*y^4*(-1 + z)^3*(-3 + z + 12*z^2 + 14*z^3) + 2*y^3*(-1 + z)^2*z*
+         (-10 - 17*z + 6*z^2 + 17*z^3) + y*z*(2 + 3*z + 10*z^2 - 10*z^3 - 
+          4*z^4 + 3*z^5) + y^2*(2 + 6*z - 7*z^2 - 38*z^3 + 30*z^4 + 24*z^5 - 
+          17*z^6))*G[-1, r, 0, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + 
+     (6*(-(z^2*(1 + z^2)) + y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 
+        4*y^3*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 
+          2*z^6) + y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*
+       G[-1, r, -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + 
+     (2*(-(z^2*(1 + z^2)) + y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 
+        4*y^3*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 
+          2*z^6) + y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*
+       G[-1, r, -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + ((-280*y^6*(-1 + z)^6 + 80*y^7*(-1 + z)^6 + 
+        8*y^5*(-1 + z)^4*(47 - 106*z + 54*z^2) - 4*y^4*(-1 + z)^3*
+         (-60 + 240*z - 287*z^2 + 91*z^3) - 22*(z^2 + z^4) + 
+        4*y^3*(-1 + z)^2*(13 - 144*z + 259*z^2 - 216*z^3 + 40*z^4) - 
+        2*y*(7 + 22*z - 70*z^2 + 78*z^3 - 93*z^4 + 28*z^5) + 
+        2*y^2*(13 + 98*z - 342*z^2 + 530*z^3 - 473*z^4 + 188*z^5 - 14*z^6))*
+       G[0, -1, -1, t^2])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
        (y + z - y*z)^2) + ((280*y^6*(-1 + z)^6 - 80*y^7*(-1 + z)^6 - 
         8*y^5*(-1 + z)^4*(47 - 106*z + 54*z^2) + 4*y^4*(-1 + z)^3*
          (-60 + 240*z - 287*z^2 + 91*z^3) + 22*(z^2 + z^4) - 
@@ -6060,54 +7097,318 @@
         2*y*(7 + 22*z - 70*z^2 + 78*z^3 - 93*z^4 + 28*z^5) + 
         2*y^2*(-13 - 98*z + 342*z^2 - 530*z^3 + 473*z^4 - 188*z^5 + 14*z^6))*
        G[0, -1, -1, z])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
-       (y + z - y*z)^2) - (2*(-420*y^6*(-1 + z)^6 + 120*y^7*(-1 + z)^6 + 
+       (y + z - y*z)^2) + 
+     (8*(z^2 + z^4 - 4*y^3*(-1 + z)^4*(1 + 2*z + 2*z^2) + 
+        2*y^4*(-1 + z)^4*(1 + 2*z + 2*z^2) - y*(-1 + z)^2*z*
+         (-2 - z - 2*z^2 + z^3) + y^2*(-1 + z)^2*(2 - 2*z - 3*z^2 - 6*z^3 + 
+          5*z^4))*G[0, -1, 0, t])/((1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + (2*(-420*y^6*(-1 + z)^6 + 120*y^7*(-1 + z)^6 + 
+        4*y^5*(-1 + z)^4*(149 - 334*z + 146*z^2) - 2*y^4*(-1 + z)^3*
+         (-222 + 834*z - 813*z^2 + 209*z^3) - 23*(z^2 + z^4) + 
+        2*y^3*(-1 + z)^2*(91 - 536*z + 821*z^2 - 504*z^3 + 80*z^4) + 
+        y*(5 - 46*z + 218*z^2 - 206*z^3 + 197*z^4 - 52*z^5) + 
+        y^2*(-39 + 402*z - 1170*z^2 + 1562*z^3 - 1101*z^4 + 372*z^5 - 
+          26*z^6))*G[0, -1, 0, t^2])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*
+       z*(y + z - y*z)^2) - (2*(-420*y^6*(-1 + z)^6 + 120*y^7*(-1 + z)^6 + 
         4*y^5*(-1 + z)^4*(149 - 334*z + 146*z^2) - 2*y^4*(-1 + z)^3*
          (-222 + 834*z - 813*z^2 + 209*z^3) - 23*(z^2 + z^4) + 
         2*y^3*(-1 + z)^2*(91 - 536*z + 821*z^2 - 504*z^3 + 80*z^4) + 
         y*(5 - 46*z + 218*z^2 - 206*z^3 + 197*z^4 - 52*z^5) + 
         y^2*(-39 + 402*z - 1170*z^2 + 1562*z^3 - 1101*z^4 + 372*z^5 - 
           26*z^6))*G[0, -1, 0, z])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
-       (y + z - y*z)^2) - (2*(-364*y^6*(-1 + z)^6 + 104*y^7*(-1 + z)^6 + 
+       (y + z - y*z)^2) + 
+     (8*(-(z^2*(1 + z^2)) + y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 
+        4*y^3*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 
+          2*z^6) + y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*
+       G[0, -1, -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) - 
+     (8*(-(z^2*(1 + z^2)) + y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 
+        4*y^3*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 
+          2*z^6) + y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*
+       G[0, -1, -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + (2*(-364*y^6*(-1 + z)^6 + 104*y^7*(-1 + z)^6 + 
+        4*y^5*(-1 + z)^4*(133 - 286*z + 130*z^2) - 2*y^4*(-1 + z)^3*
+         (-214 + 718*z - 715*z^2 + 195*z^3) - 25*(z^2 + z^4) + 
+        2*y^3*(-1 + z)^2*(101 - 476*z + 725*z^2 - 468*z^3 + 78*z^4) + 
+        y*(7 - 50*z + 210*z^2 - 202*z^3 + 203*z^4 - 52*z^5) + 
+        y^2*(-53 + 398*z - 1074*z^2 + 1446*z^3 - 1055*z^4 + 364*z^5 - 
+          26*z^6))*G[0, 0, -1, t^2])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*
+       z*(y + z - y*z)^2) - (2*(-364*y^6*(-1 + z)^6 + 104*y^7*(-1 + z)^6 + 
         4*y^5*(-1 + z)^4*(133 - 286*z + 130*z^2) - 2*y^4*(-1 + z)^3*
          (-214 + 718*z - 715*z^2 + 195*z^3) - 25*(z^2 + z^4) + 
         2*y^3*(-1 + z)^2*(101 - 476*z + 725*z^2 - 468*z^3 + 78*z^4) + 
         y*(7 - 50*z + 210*z^2 - 202*z^3 + 203*z^4 - 52*z^5) + 
         y^2*(-53 + 398*z - 1074*z^2 + 1446*z^3 - 1055*z^4 + 364*z^5 - 
           26*z^6))*G[0, 0, -1, z])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
-       (y + z - y*z)^2) + (2*(-636*y^5*(-1 + z)^6 + 212*y^6*(-1 + z)^6 - 
-        4*y^3*(-1 + z)^4*(117 - 318*z + 106*z^2) + 2*y^4*(-1 + z)^4*
-         (382 - 848*z + 371*z^2) + y*(-1 + z)^2*(-11 + 212*z - 245*z^2 + 
-          212*z^3) + 117*(z^2 + z^4) + y^2*(-1 + z)^2*(139 - 892*z + 
-          1327*z^2 - 848*z^3 + 106*z^4))*G[0, 0, 0, 2])/
-      ((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
-     (2*(-28*y^6*(-1 + z)^6 + 8*y^7*(-1 + z)^6 + 4*y^5*(-1 + z)^4*
-         (9 - 22*z + 10*z^2) - 2*y^4*(-1 + z)^3*(-16 + 32*z - 55*z^2 + 
-          15*z^3) + 5*(z^2 + z^4) + 2*y^3*(-1 + z)^2*(13 - 4*z + 13*z^2 - 
-          36*z^3 + 6*z^4) + y*(5 + 10*z - 14*z^2 + 26*z^3 - 19*z^4 - 4*z^5) + 
+       (y + z - y*z)^2) + (16*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 2*z^3 - 
+        2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*(9 - 8*z + 2*z^2) - 
+        y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*G[0, 0, 0, r])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) - 
+     (128*(1 - 2*y*(-1 + z)^2 + 2*y^2*(-1 + z)^2 + z^2)*G[0, 0, 0, t])/
+      ((-1 + z)*z) - (2*(-28*y^6*(-1 + z)^6 + 8*y^7*(-1 + z)^6 + 
+        4*y^5*(-1 + z)^4*(9 - 22*z + 10*z^2) - 2*y^4*(-1 + z)^3*
+         (-16 + 32*z - 55*z^2 + 15*z^3) + 5*(z^2 + z^4) + 
+        2*y^3*(-1 + z)^2*(13 - 4*z + 13*z^2 - 36*z^3 + 6*z^4) + 
+        y*(5 + 10*z - 14*z^2 + 26*z^3 - 19*z^4 - 4*z^5) + 
+        y^2*(-15 + 2*z + 38*z^2 - 46*z^3 - 5*z^4 + 28*z^5 - 2*z^6))*
+       G[0, 0, 0, t^2])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + (2*(-28*y^6*(-1 + z)^6 + 8*y^7*(-1 + z)^6 + 
+        4*y^5*(-1 + z)^4*(9 - 22*z + 10*z^2) - 2*y^4*(-1 + z)^3*
+         (-16 + 32*z - 55*z^2 + 15*z^3) + 5*(z^2 + z^4) + 
+        2*y^3*(-1 + z)^2*(13 - 4*z + 13*z^2 - 36*z^3 + 6*z^4) + 
+        y*(5 + 10*z - 14*z^2 + 26*z^3 - 19*z^4 - 4*z^5) + 
         y^2*(-15 + 2*z + 38*z^2 - 46*z^3 - 5*z^4 + 28*z^5 - 2*z^6))*
        G[0, 0, 0, z])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
-       (y + z - y*z)^2) - (4*(-28*y^6*(-1 + z)^6 + 8*y^7*(-1 + z)^6 + z^2 + 
-        z^4 + 32*y^5*(-1 + z)^4*(1 - 3*z + z^2) - y*(1 + z)^2*
-         (1 - 4*z + 3*z^2) - 2*y^4*(-1 + z)^3*(-4 + 58*z - 49*z^2 + 7*z^3) + 
+       (y + z - y*z)^2) - (16*(-70*y^6*(-1 + z)^6 + 20*y^7*(-1 + z)^6 - 
+        z^2*(1 + z^2) + 2*y^5*(-1 + z)^4*(43 - 122*z + 38*z^2) - 
+        3*y^3*(-1 + z)^3*(1 - 51*z + 48*z^2 + 8*z^3) - 
+        y^4*(-1 + z)^3*(-41 + 297*z - 275*z^2 + 15*z^3) + 
+        y*z*(-2 + 20*z - 28*z^2 + 17*z^3 + 2*z^4 - 3*z^5) + 
+        2*y^2*(1 + 16*z - 79*z^2 + 119*z^3 - 64*z^4 - z^5 + 8*z^6))*
+       G[0, 0, -I, r])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) - (16*(-70*y^6*(-1 + z)^6 + 20*y^7*(-1 + z)^6 - 
+        z^2*(1 + z^2) + 2*y^5*(-1 + z)^4*(43 - 122*z + 38*z^2) - 
+        3*y^3*(-1 + z)^3*(1 - 51*z + 48*z^2 + 8*z^3) - 
+        y^4*(-1 + z)^3*(-41 + 297*z - 275*z^2 + 15*z^3) + 
+        y*z*(-2 + 20*z - 28*z^2 + 17*z^3 + 2*z^4 - 3*z^5) + 
+        2*y^2*(1 + 16*z - 79*z^2 + 119*z^3 - 64*z^4 - z^5 + 8*z^6))*
+       G[0, 0, I, r])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) - (8*(-56*y^6*(-1 + z)^6 + 16*y^7*(-1 + z)^6 + z^2 + 
+        z^4 + 8*y^5*(-1 + z)^4*(7 - 25*z + 7*z^2) + 2*y^4*(-1 + z)^3*
+         (-1 - 113*z + 110*z^2) - 2*y^3*(-1 + z)^2*(17 + 46*z - 112*z^2 + 
+          42*z^3 + 15*z^4) + y*(-4 + 2*z + 3*z^2 - 14*z^3 + 4*z^4 + 4*z^5 - 
+          3*z^6) + y^2*(20 - 14*z - 81*z^2 + 150*z^3 - 76*z^4 - 16*z^5 + 
+          17*z^6))*G[0, -I, 0, r])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) - (8*(-56*y^6*(-1 + z)^6 + 16*y^7*(-1 + z)^6 + 
+        8*y^5*(-1 + z)^4*(11 - 21*z + 11*z^2) - 2*y^4*(-1 + z)^3*
+         (-43 + 101*z - 110*z^2 + 40*z^3) - 3*(z^2 + z^4) + 
+        2*y^3*(-1 + z)^2*(27 - 70*z + 96*z^2 - 82*z^3 + 21*z^4) + 
+        y^2*(-20 + 74*z - 149*z^2 + 190*z^3 - 164*z^4 + 80*z^5 - 11*z^6) + 
+        y*(4 - 6*z + 31*z^2 - 22*z^3 + 28*z^4 - 12*z^5 + z^6))*
+       G[0, -I, -I, r])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) - (8*(-56*y^6*(-1 + z)^6 + 16*y^7*(-1 + z)^6 + 
+        8*y^5*(-1 + z)^4*(11 - 21*z + 11*z^2) - 2*y^4*(-1 + z)^3*
+         (-43 + 101*z - 110*z^2 + 40*z^3) - 3*(z^2 + z^4) + 
+        2*y^3*(-1 + z)^2*(27 - 70*z + 96*z^2 - 82*z^3 + 21*z^4) + 
+        y^2*(-20 + 74*z - 149*z^2 + 190*z^3 - 164*z^4 + 80*z^5 - 11*z^6) + 
+        y*(4 - 6*z + 31*z^2 - 22*z^3 + 28*z^4 - 12*z^5 + z^6))*
+       G[0, -I, I, r])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) - (8*(-56*y^6*(-1 + z)^6 + 16*y^7*(-1 + z)^6 + z^2 + 
+        z^4 + 8*y^5*(-1 + z)^4*(7 - 25*z + 7*z^2) + 2*y^4*(-1 + z)^3*
+         (-1 - 113*z + 110*z^2) - 2*y^3*(-1 + z)^2*(17 + 46*z - 112*z^2 + 
+          42*z^3 + 15*z^4) + y*(-4 + 2*z + 3*z^2 - 14*z^3 + 4*z^4 + 4*z^5 - 
+          3*z^6) + y^2*(20 - 14*z - 81*z^2 + 150*z^3 - 76*z^4 - 16*z^5 + 
+          17*z^6))*G[0, I, 0, r])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) - (8*(-56*y^6*(-1 + z)^6 + 16*y^7*(-1 + z)^6 + 
+        8*y^5*(-1 + z)^4*(11 - 21*z + 11*z^2) - 2*y^4*(-1 + z)^3*
+         (-43 + 101*z - 110*z^2 + 40*z^3) - 3*(z^2 + z^4) + 
+        2*y^3*(-1 + z)^2*(27 - 70*z + 96*z^2 - 82*z^3 + 21*z^4) + 
+        y^2*(-20 + 74*z - 149*z^2 + 190*z^3 - 164*z^4 + 80*z^5 - 11*z^6) + 
+        y*(4 - 6*z + 31*z^2 - 22*z^3 + 28*z^4 - 12*z^5 + z^6))*
+       G[0, I, -I, r])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) - (8*(-56*y^6*(-1 + z)^6 + 16*y^7*(-1 + z)^6 + 
+        8*y^5*(-1 + z)^4*(11 - 21*z + 11*z^2) - 2*y^4*(-1 + z)^3*
+         (-43 + 101*z - 110*z^2 + 40*z^3) - 3*(z^2 + z^4) + 
+        2*y^3*(-1 + z)^2*(27 - 70*z + 96*z^2 - 82*z^3 + 21*z^4) + 
+        y^2*(-20 + 74*z - 149*z^2 + 190*z^3 - 164*z^4 + 80*z^5 - 11*z^6) + 
+        y*(4 - 6*z + 31*z^2 - 22*z^3 + 28*z^4 - 12*z^5 + z^6))*G[0, I, I, r])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+     (4*(-28*y^6*(-1 + z)^6 + 8*y^7*(-1 + z)^6 + z^2 + z^4 + 
+        32*y^5*(-1 + z)^4*(1 - 3*z + z^2) - y*(1 + z)^2*(1 - 4*z + 3*z^2) - 
+        2*y^4*(-1 + z)^3*(-4 + 58*z - 49*z^2 + 7*z^3) + 
+        2*y^3*(-1 + z)^2*(-5 - 30*z + 48*z^2 - 18*z^3 + z^4) + 
+        y^2*(7 + 2*z - 48*z^2 + 58*z^3 - 23*z^4 + 4*z^5))*G[0, 1, -1, t^2])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+     (4*(-28*y^6*(-1 + z)^6 + 8*y^7*(-1 + z)^6 + z^2 + z^4 + 
+        32*y^5*(-1 + z)^4*(1 - 3*z + z^2) - y*(1 + z)^2*(1 - 4*z + 3*z^2) - 
+        2*y^4*(-1 + z)^3*(-4 + 58*z - 49*z^2 + 7*z^3) + 
         2*y^3*(-1 + z)^2*(-5 - 30*z + 48*z^2 - 18*z^3 + z^4) + 
         y^2*(7 + 2*z - 48*z^2 + 58*z^3 - 23*z^4 + 4*z^5))*G[0, 1, -1, z])/
       ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+     (8*(z^2 + z^4 - 4*y^3*(-1 + z)^4*(1 + 2*z + 2*z^2) + 
+        2*y^4*(-1 + z)^4*(1 + 2*z + 2*z^2) - y*(-1 + z)^2*z*
+         (-2 - z - 2*z^2 + z^3) + y^2*(-1 + z)^2*(2 - 2*z - 3*z^2 - 6*z^3 + 
+          5*z^4))*G[0, 1, 0, t])/((1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) - (4*(-12*y^5*(-1 + z)^6 + 4*y^6*(-1 + z)^6 + z^2 + 
+        z^4 - 4*y^3*(-1 + z)^4*(1 - 6*z + 2*z^2) + 2*y^4*(-1 + z)^4*
+         (6 - 16*z + 7*z^2) + y*(-1 + z)^2*(1 + 4*z - z^2 + 4*z^3) + 
+        y^2*(-1 + z)^2*(-1 - 12*z + 19*z^2 - 16*z^3 + 2*z^4))*
+       G[0, 1, 0, t^2])/((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
      (4*(-12*y^5*(-1 + z)^6 + 4*y^6*(-1 + z)^6 + z^2 + z^4 - 
         4*y^3*(-1 + z)^4*(1 - 6*z + 2*z^2) + 2*y^4*(-1 + z)^4*
          (6 - 16*z + 7*z^2) + y*(-1 + z)^2*(1 + 4*z - z^2 + 4*z^3) + 
         y^2*(-1 + z)^2*(-1 - 12*z + 19*z^2 - 16*z^3 + 2*z^4))*G[0, 1, 0, z])/
+      ((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+     (8*(-(z^2*(1 + z^2)) + y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 
+        4*y^3*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 
+          2*z^6) + y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*
+       G[0, 1, -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) - 
+     (8*(-(z^2*(1 + z^2)) + y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 
+        4*y^3*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 
+          2*z^6) + y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*
+       G[0, 1, -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + (8*(-1 + y)*(4*y^4*(-1 + z)^4 + z^2 + z^4 + 
+        2*y^2*(-1 + z)^2*z*(-2 + 5*z) - 2*y^3*(-1 + z)^3*(-1 + 5*z) + 
+        y*(1 + 2*z - 4*z^2 + 6*z^3 - 5*z^4))*G[0, -r^(-1), 0, t])/
+      ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) + 
+     (8*(-1 + y)*(1 - 2*y^3*(-5 + z)*(-1 + z)^3 + 4*y^4*(-1 + z)^4 + z^2 + 
+        y*(-1 + z)^3*(3 + z) - 2*y^2*(-1 + z)^2*(-4 + 4*z + z^2))*
+       G[0, -r^(-1), -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) - 
+     (8*(-1 + y)*(4*y^4*(-1 + z)^4 + z^2 + z^4 + 2*y^2*(-1 + z)^2*z*
+         (-2 + 5*z) - 2*y^3*(-1 + z)^3*(-1 + 5*z) + 
+        y*(1 + 2*z - 4*z^2 + 6*z^3 - 5*z^4))*G[0, r^(-1), 0, t])/
+      ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) + 
+     (8*(-1 + y)*(4*y^4*(-1 + z)^4 + z^2 + z^4 + 2*y^2*(-1 + z)^2*z*
+         (-2 + 5*z) - 2*y^3*(-1 + z)^3*(-1 + 5*z) + 
+        y*(1 + 2*z - 4*z^2 + 6*z^3 - 5*z^4))*G[0, r^(-1), -r^(-1), t])/
+      ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) + 
+     (8*(-1 + y)*(-20*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 
+        4*y^4*(-1 + z)^4*(4 - 13*z + 4*z^2) - 2*y^3*(-1 + z)^3*
+         (-2 + 21*z - 24*z^2 + z^3) + 2*(z^2 + z^4) - 
+        y^2*(-1 + z)^2*(1 + 16*z - 32*z^2 + 20*z^3 + 3*z^4) + 
+        y*(1 + 4*z - 11*z^2 + 18*z^3 - 15*z^4 + 2*z^5 + z^6))*
+       G[0, r^(-1), -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + (8*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 2*z^3 - 
+        2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*(9 - 8*z + 2*z^2) - 
+        y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*G[0, -r, 0, t])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+     (8*y*(4*y^4*(-1 + z)^4 - 2*y^3*(-1 + z)^3*(-3 + 7*z) + 
+        z^2*(5 - 4*z + z^2) - y*(-1 + z)^2*(-1 - 10*z + 7*z^2) + 
+        2*y^2*(-1 + z)^2*(1 - 10*z + 8*z^2))*G[0, -r, -r^(-1), t])/
+      ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) - 
+     (8*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 2*z^3 - 
+        2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*(9 - 8*z + 2*z^2) - 
+        y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*G[0, r, 0, t])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+     (8*y*(-28*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*
+         (9 - 23*z + 9*z^2) - 2*z^2*(-4 + 3*z - 2*z^2 + z^3) - 
+        2*y^3*(-1 + z)^3*(-10 + 55*z - 52*z^2 + 11*z^3) + 
+        y^2*(-1 + z)^2*(3 - 62*z + 98*z^2 - 54*z^3 + 7*z^4) + 
+        y*(1 + 14*z - 57*z^2 + 74*z^3 - 47*z^4 + 16*z^5 - z^6))*
+       G[0, r, -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + (8*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 2*z^3 - 
+        2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*(9 - 8*z + 2*z^2) - 
+        y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*G[0, r, -r, t])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+     (8*(-(y*(-1 + z)^4*(1 + z^2)) - 8*y^3*(-1 + z)^4*(1 + z + z^2) + 
+        4*y^4*(-1 + z)^4*(1 + z + z^2) + y^2*(-1 + z)^4*(5 + 4*z + 5*z^2) + 
+        2*(z^2 + z^4))*G[-I, 0, 0, r])/((1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) - (8*(-24*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 - 
+        8*y^3*(-1 + z)^4*(3 - 5*z + 3*z^2) + 4*y^4*(-1 + z)^4*
+         (8 - 15*z + 8*z^2) + 6*(z^2 + z^4) - y*(-1 + z)^2*
+         (1 - 10*z + 10*z^2 - 10*z^3 + z^4) + y^2*(-1 + z)^2*
+         (9 - 38*z + 50*z^2 - 38*z^3 + 9*z^4))*G[-I, 0, -I, r])/
+      ((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+     (8*(-24*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 - 8*y^3*(-1 + z)^4*
+         (3 - 5*z + 3*z^2) + 4*y^4*(-1 + z)^4*(8 - 15*z + 8*z^2) + 
+        6*(z^2 + z^4) - y*(-1 + z)^2*(1 - 10*z + 10*z^2 - 10*z^3 + z^4) + 
+        y^2*(-1 + z)^2*(9 - 38*z + 50*z^2 - 38*z^3 + 9*z^4))*G[-I, 0, I, r])/
+      ((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+     (8*(-24*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 - 8*y^3*(-1 + z)^4*
+         (3 - 5*z + 3*z^2) + 4*y^4*(-1 + z)^4*(8 - 15*z + 8*z^2) + 
+        6*(z^2 + z^4) - y*(-1 + z)^2*(1 - 10*z + 10*z^2 - 10*z^3 + z^4) + 
+        y^2*(-1 + z)^2*(9 - 38*z + 50*z^2 - 38*z^3 + 9*z^4))*G[-I, -I, 0, r])/
+      ((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+     (8*(-24*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 - 8*y^3*(-1 + z)^4*
+         (3 - 5*z + 3*z^2) + 4*y^4*(-1 + z)^4*(8 - 15*z + 8*z^2) + 
+        6*(z^2 + z^4) - y*(-1 + z)^2*(1 - 10*z + 10*z^2 - 10*z^3 + z^4) + 
+        y^2*(-1 + z)^2*(9 - 38*z + 50*z^2 - 38*z^3 + 9*z^4))*
+       G[-I, -I, -I, r])/((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+     (8*(-24*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 - 8*y^3*(-1 + z)^4*
+         (3 - 5*z + 3*z^2) + 4*y^4*(-1 + z)^4*(8 - 15*z + 8*z^2) + 
+        6*(z^2 + z^4) - y*(-1 + z)^2*(1 - 10*z + 10*z^2 - 10*z^3 + z^4) + 
+        y^2*(-1 + z)^2*(9 - 38*z + 50*z^2 - 38*z^3 + 9*z^4))*G[-I, -I, I, r])/
+      ((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+     (8*(-24*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 - 8*y^3*(-1 + z)^4*
+         (3 - 5*z + 3*z^2) + 4*y^4*(-1 + z)^4*(8 - 15*z + 8*z^2) + 
+        6*(z^2 + z^4) - y*(-1 + z)^2*(1 - 10*z + 10*z^2 - 10*z^3 + z^4) + 
+        y^2*(-1 + z)^2*(9 - 38*z + 50*z^2 - 38*z^3 + 9*z^4))*G[-I, I, 0, r])/
+      ((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+     (8*(-24*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 - 8*y^3*(-1 + z)^4*
+         (3 - 5*z + 3*z^2) + 4*y^4*(-1 + z)^4*(8 - 15*z + 8*z^2) + 
+        6*(z^2 + z^4) - y*(-1 + z)^2*(1 - 10*z + 10*z^2 - 10*z^3 + z^4) + 
+        y^2*(-1 + z)^2*(9 - 38*z + 50*z^2 - 38*z^3 + 9*z^4))*G[-I, I, -I, r])/
+      ((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+     (8*(-24*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 - 8*y^3*(-1 + z)^4*
+         (3 - 5*z + 3*z^2) + 4*y^4*(-1 + z)^4*(8 - 15*z + 8*z^2) + 
+        6*(z^2 + z^4) - y*(-1 + z)^2*(1 - 10*z + 10*z^2 - 10*z^3 + z^4) + 
+        y^2*(-1 + z)^2*(9 - 38*z + 50*z^2 - 38*z^3 + 9*z^4))*G[-I, I, I, r])/
+      ((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+     (8*(-(y*(-1 + z)^4*(1 + z^2)) - 8*y^3*(-1 + z)^4*(1 + z + z^2) + 
+        4*y^4*(-1 + z)^4*(1 + z + z^2) + y^2*(-1 + z)^4*(5 + 4*z + 5*z^2) + 
+        2*(z^2 + z^4))*G[I, 0, 0, r])/((1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) - (8*(-24*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 - 
+        8*y^3*(-1 + z)^4*(3 - 5*z + 3*z^2) + 4*y^4*(-1 + z)^4*
+         (8 - 15*z + 8*z^2) + 6*(z^2 + z^4) - y*(-1 + z)^2*
+         (1 - 10*z + 10*z^2 - 10*z^3 + z^4) + y^2*(-1 + z)^2*
+         (9 - 38*z + 50*z^2 - 38*z^3 + 9*z^4))*G[I, 0, -I, r])/
+      ((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+     (8*(-24*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 - 8*y^3*(-1 + z)^4*
+         (3 - 5*z + 3*z^2) + 4*y^4*(-1 + z)^4*(8 - 15*z + 8*z^2) + 
+        6*(z^2 + z^4) - y*(-1 + z)^2*(1 - 10*z + 10*z^2 - 10*z^3 + z^4) + 
+        y^2*(-1 + z)^2*(9 - 38*z + 50*z^2 - 38*z^3 + 9*z^4))*G[I, 0, I, r])/
+      ((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+     (8*(-24*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 - 8*y^3*(-1 + z)^4*
+         (3 - 5*z + 3*z^2) + 4*y^4*(-1 + z)^4*(8 - 15*z + 8*z^2) + 
+        6*(z^2 + z^4) - y*(-1 + z)^2*(1 - 10*z + 10*z^2 - 10*z^3 + z^4) + 
+        y^2*(-1 + z)^2*(9 - 38*z + 50*z^2 - 38*z^3 + 9*z^4))*G[I, -I, 0, r])/
+      ((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+     (8*(-24*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 - 8*y^3*(-1 + z)^4*
+         (3 - 5*z + 3*z^2) + 4*y^4*(-1 + z)^4*(8 - 15*z + 8*z^2) + 
+        6*(z^2 + z^4) - y*(-1 + z)^2*(1 - 10*z + 10*z^2 - 10*z^3 + z^4) + 
+        y^2*(-1 + z)^2*(9 - 38*z + 50*z^2 - 38*z^3 + 9*z^4))*G[I, -I, -I, r])/
+      ((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+     (8*(-24*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 - 8*y^3*(-1 + z)^4*
+         (3 - 5*z + 3*z^2) + 4*y^4*(-1 + z)^4*(8 - 15*z + 8*z^2) + 
+        6*(z^2 + z^4) - y*(-1 + z)^2*(1 - 10*z + 10*z^2 - 10*z^3 + z^4) + 
+        y^2*(-1 + z)^2*(9 - 38*z + 50*z^2 - 38*z^3 + 9*z^4))*G[I, -I, I, r])/
+      ((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+     (8*(-24*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 - 8*y^3*(-1 + z)^4*
+         (3 - 5*z + 3*z^2) + 4*y^4*(-1 + z)^4*(8 - 15*z + 8*z^2) + 
+        6*(z^2 + z^4) - y*(-1 + z)^2*(1 - 10*z + 10*z^2 - 10*z^3 + z^4) + 
+        y^2*(-1 + z)^2*(9 - 38*z + 50*z^2 - 38*z^3 + 9*z^4))*G[I, I, 0, r])/
+      ((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+     (8*(-24*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 - 8*y^3*(-1 + z)^4*
+         (3 - 5*z + 3*z^2) + 4*y^4*(-1 + z)^4*(8 - 15*z + 8*z^2) + 
+        6*(z^2 + z^4) - y*(-1 + z)^2*(1 - 10*z + 10*z^2 - 10*z^3 + z^4) + 
+        y^2*(-1 + z)^2*(9 - 38*z + 50*z^2 - 38*z^3 + 9*z^4))*G[I, I, -I, r])/
+      ((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+     (8*(-24*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 - 8*y^3*(-1 + z)^4*
+         (3 - 5*z + 3*z^2) + 4*y^4*(-1 + z)^4*(8 - 15*z + 8*z^2) + 
+        6*(z^2 + z^4) - y*(-1 + z)^2*(1 - 10*z + 10*z^2 - 10*z^3 + z^4) + 
+        y^2*(-1 + z)^2*(9 - 38*z + 50*z^2 - 38*z^3 + 9*z^4))*G[I, I, I, r])/
+      ((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+     (2*(-60*y^5*(-1 + z)^6 + 20*y^6*(-1 + z)^6 - 4*y^3*(-1 + z)^4*
+         (9 - 36*z + 4*z^2) + 2*y^4*(-1 + z)^4*(34 - 86*z + 29*z^2) + 
+        y*(-1 + z)^3*(2 - 12*z + 17*z^2 + 3*z^3) - y^2*(-1 + z)^3*
+         (10 - 72*z + 67*z^2 + 5*z^3) + 9*(z^2 + z^4))*G[1, -1, -1, t^2])/
       ((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
      (2*(-60*y^5*(-1 + z)^6 + 20*y^6*(-1 + z)^6 - 4*y^3*(-1 + z)^4*
          (9 - 36*z + 4*z^2) + 2*y^4*(-1 + z)^4*(34 - 86*z + 29*z^2) + 
         y*(-1 + z)^3*(2 - 12*z + 17*z^2 + 3*z^3) - y^2*(-1 + z)^3*
          (10 - 72*z + 67*z^2 + 5*z^3) + 9*(z^2 + z^4))*G[1, -1, -1, z])/
-      ((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+      ((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+     (2*(-28*y^6*(-1 + z)^6 + 8*y^7*(-1 + z)^6 + 4*y^5*(-1 + z)^4*
+         (15 - 16*z + 16*z^2) - 2*y^4*(-1 + z)^3*(-42 + 44*z - 67*z^2 + 
+          41*z^3) - 9*(z^2 + z^4) + 2*y^3*(-1 + z)^2*(32 - 50*z + 67*z^2 - 
+          82*z^3 + 25*z^4) + y^2*(-22 + 90*z - 159*z^2 + 226*z^3 - 222*z^4 + 
+          100*z^5 - 13*z^6) + y*(2 - 18*z + 45*z^2 - 46*z^3 + 60*z^4 - 
+          16*z^5 + z^6))*G[1, -1, 0, t^2])/((-1 + 2*y)*(1 + y*(-1 + z))^2*
+       (-1 + z)*z*(y + z - y*z)^2) + 
      (2*(-28*y^6*(-1 + z)^6 + 8*y^7*(-1 + z)^6 + 4*y^5*(-1 + z)^4*
          (15 - 16*z + 16*z^2) - 2*y^4*(-1 + z)^3*(-42 + 44*z - 67*z^2 + 
           41*z^3) - 9*(z^2 + z^4) + 2*y^3*(-1 + z)^2*(32 - 50*z + 67*z^2 - 
           82*z^3 + 25*z^4) + y^2*(-22 + 90*z - 159*z^2 + 226*z^3 - 222*z^4 + 
           100*z^5 - 13*z^6) + y*(2 - 18*z + 45*z^2 - 46*z^3 + 60*z^4 - 
           16*z^5 + z^6))*G[1, -1, 0, z])/((-1 + 2*y)*(1 + y*(-1 + z))^2*
+       (-1 + z)*z*(y + z - y*z)^2) + 
+     (2*(84*y^6*(-1 + z)^6 - 24*y^7*(-1 + z)^6 - 4*y^5*(-1 + z)^4*
+         (33 - 64*z + 32*z^2) + 2*y^4*(-1 + z)^3*(-62 + 164*z - 177*z^2 + 
+          51*z^3) + 11*(z^2 + z^4) - 2*y^3*(-1 + z)^2*(36 - 118*z + 189*z^2 - 
+          134*z^3 + 19*z^4) + y*(-2 + 22*z - 67*z^2 + 74*z^3 - 80*z^4 + 
+          16*z^5 + z^6) + y^2*(22 - 126*z + 305*z^2 - 438*z^3 + 342*z^4 - 
+          108*z^5 + 3*z^6))*G[1, 0, -1, t^2])/((-1 + 2*y)*(1 + y*(-1 + z))^2*
        (-1 + z)*z*(y + z - y*z)^2) + 
      (2*(-84*y^6*(-1 + z)^6 + 24*y^7*(-1 + z)^6 + 4*y^5*(-1 + z)^4*
          (33 - 64*z + 32*z^2) - 2*y^4*(-1 + z)^3*(-62 + 164*z - 177*z^2 + 
@@ -6116,24 +7417,470 @@
           342*z^4 + 108*z^5 - 3*z^6) - y*(-2 + 22*z - 67*z^2 + 74*z^3 - 
           80*z^4 + 16*z^5 + z^6))*G[1, 0, -1, z])/
       ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+     (12*(z^2 + z^4 - 4*y^3*(-1 + z)^4*(1 + 2*z + 2*z^2) + 
+        2*y^4*(-1 + z)^4*(1 + 2*z + 2*z^2) - y*(-1 + z)^2*z*
+         (-2 - z - 2*z^2 + z^3) + y^2*(-1 + z)^2*(2 - 2*z - 3*z^2 - 6*z^3 + 
+          5*z^4))*G[1, 0, 0, t])/((1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) - (4*(-1 + y)*y*(-1 + z)*(-1 - 4*y^3*(-1 + z)^4 + 
+        2*y^4*(-1 + z)^4 - 2*z - z^2 - 2*z^3 - y*(-1 + z)^2*
+         (-1 - 4*z + z^2) + y^2*(-1 + z)^2*(1 - 8*z + 3*z^2))*
+       G[1, 0, 0, t^2])/((1 + y*(-1 + z))^2*z*(y + z - y*z)^2) + 
      (4*(-1 + y)*y*(-1 + z)*(-1 - 4*y^3*(-1 + z)^4 + 2*y^4*(-1 + z)^4 - 2*z - 
         z^2 - 2*z^3 - y*(-1 + z)^2*(-1 - 4*z + z^2) + 
         y^2*(-1 + z)^2*(1 - 8*z + 3*z^2))*G[1, 0, 0, z])/
-      ((1 + y*(-1 + z))^2*z*(y + z - y*z)^2) - 
+      ((1 + y*(-1 + z))^2*z*(y + z - y*z)^2) + 
+     (2*(8*y^5*(-1 + z)^4*(1 + 2*z + 2*z^2) - 2*y^4*(-1 + z)^3*
+         (-13 - 19*z - 18*z^2 + 14*z^3) - 5*(z^2 + z^4) + 
+        4*y^3*(-1 + z)^2*(7 + 4*z + 4*z^2 - 22*z^3 + 3*z^4) - 
+        y*z*(10 - 13*z + 22*z^2 - 36*z^3 + 8*z^4 + z^5) + 
+        y^2*(-10 + 26*z - 21*z^2 + 78*z^3 - 122*z^4 + 48*z^5 + z^6))*
+       G[1, 0, -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + 
+     (2*(z^2 + z^4 + 8*y^5*(-1 + z)^4*(1 + 2*z + 2*z^2) - 
+        2*y^4*(-1 + z)^3*(-7 - z + 18*z^2 + 26*z^3) + 4*y^3*(-1 + z)^2*
+         (1 - 8*z - 14*z^2 + 2*z^3 + 15*z^4) + 
+        y*z*(2 + 7*z + 14*z^2 - 12*z^3 - 8*z^4 + 5*z^5) + 
+        y^2*(2 + 14*z - 15*z^2 - 54*z^3 + 34*z^4 + 48*z^5 - 29*z^6))*
+       G[1, 0, -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + (8*(-1 + y)*y*(-1 + z)*(-4*y^3*(-1 + z)^4 + 
+        2*y^4*(-1 + z)^4 - z^2*(-3 + z^2) - y^2*(-1 + z)^2*
+         (-1 + 12*z + z^2) + y*(-1 + z)^2*(1 + 8*z + 3*z^2))*
+       G[1, 1, -1, t^2])/((1 + y*(-1 + z))^2*z*(y + z - y*z)^2) - 
      (8*(-1 + y)*y*(-1 + z)*(-4*y^3*(-1 + z)^4 + 2*y^4*(-1 + z)^4 - 
         z^2*(-3 + z^2) - y^2*(-1 + z)^2*(-1 + 12*z + z^2) + 
         y*(-1 + z)^2*(1 + 8*z + 3*z^2))*G[1, 1, -1, z])/
+      ((1 + y*(-1 + z))^2*z*(y + z - y*z)^2) - 
+     (8*(1 - 2*y*(-1 + z)^2 + 2*y^2*(-1 + z)^2 + z^2)*G[1, 1, 0, t^2])/
+      ((-1 + z)*z) + (8*(1 - 2*y*(-1 + z)^2 + 2*y^2*(-1 + z)^2 + z^2)*
+       G[1, 1, 0, z])/((-1 + z)*z) + 
+     (2*(4*y^5*(-1 + z)^4*(1 + 2*z + 2*z^2) - 2*y^4*(-1 + z)^3*
+         (-9 - 17*z - 24*z^2 + 2*z^3) - 5*(z^2 + z^4) - 
+        2*y^3*(-1 + z)^2*(-12 - 14*z - 19*z^2 + 42*z^3 + 7*z^4) - 
+        y*z*(10 - 9*z + 26*z^2 - 38*z^3 + 4*z^4 + 3*z^5) + 
+        y^2*(-10 + 18*z - 13*z^2 + 94*z^3 - 126*z^4 + 24*z^5 + 13*z^6))*
+       G[1, -r^(-1), 0, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + 
+     (4*(-(z^2*(1 + z^2)) + y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 
+        4*y^3*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 
+          2*z^6) + y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*
+       G[1, -r^(-1), -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + ((8*y^5*(-1 + z)^4*(1 + 2*z + 2*z^2) - 
+        4*y^4*(-1 + z)^3*(-7 - 11*z - 12*z^2 + 6*z^3) - 6*(z^2 + z^4) + 
+        4*y^3*(-1 + z)^2*(8 + 6*z + 7*z^2 - 26*z^3 + z^4) - 
+        2*y*z*(6 - 7*z + 14*z^2 - 22*z^3 + 4*z^4 + z^5) + 
+        2*y^2*(-6 + 14*z - 11*z^2 + 50*z^3 - 74*z^4 + 24*z^5 + 3*z^6))*
+       G[1, r^(-1), 0, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + (2*(z^2 + z^4 + y*z*(2 - z + 6*z^2 - 8*z^3 + z^5) + 
+        y^2*(2 - 2*z + z^2 - 22*z^3 + 26*z^4 - 5*z^6) + 
+        4*y^3*(-1 + 8*z^3 - 9*z^4 + 2*z^6) - 2*y^4*(-1 + 8*z^3 - 9*z^4 + 
+          2*z^6))*G[1, r^(-1), -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*
+       (-1 + z)*z*(y + z - y*z)^2) - 
+     (6*(-(z^2*(1 + z^2)) + y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 
+        4*y^3*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 
+          2*z^6) + y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*
+       G[1, r^(-1), -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + (2*(4*y^5*(-1 + z)^4*(1 + 2*z + 2*z^2) - 
+        2*y^4*(-1 + z)^3*(-1 + 7*z + 24*z^2 + 18*z^3) + 3*(z^2 + z^4) + 
+        2*y^3*(-1 + z)^2*(-4 - 18*z - 29*z^2 + 22*z^3 + 25*z^4) + 
+        y*z*(6 + z + 22*z^2 - 26*z^3 - 4*z^4 + 5*z^5) + 
+        y^2*(6 + 2*z - 5*z^2 - 82*z^3 + 82*z^4 + 24*z^5 - 27*z^6))*
+       G[1, -r, 0, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) - 
+     (4*(-(z^2*(1 + z^2)) + y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 
+        4*y^3*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 
+          2*z^6) + y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*
+       G[1, -r, -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + 
+     (2*(z^2 + z^4 + 4*y^5*(-1 + z)^4*(1 + 2*z + 2*z^2) - 
+        2*y^4*(-1 + z)^3*(-3 + z + 12*z^2 + 14*z^3) + 2*y^3*(-1 + z)^2*z*
+         (-10 - 17*z + 6*z^2 + 17*z^3) + y*z*(2 + 3*z + 10*z^2 - 10*z^3 - 
+          4*z^4 + 3*z^5) + y^2*(2 + 6*z - 7*z^2 - 38*z^3 + 30*z^4 + 24*z^5 - 
+          17*z^6))*G[1, r, 0, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + 
+     (6*(-(z^2*(1 + z^2)) + y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 
+        4*y^3*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 
+          2*z^6) + y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*
+       G[1, r, -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + 
+     (2*(-(z^2*(1 + z^2)) + y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 
+        4*y^3*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 
+          2*z^6) + y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*
+       G[1, r, -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + (4*(-1 + y)*(z^2 + z^4 + 2*y^2*(-1 + z)^2*
+         (1 + 2*z + 2*z^2) + 2*y*z*(1 + z^2 - 2*z^3))*G[-r^(-1), -1, 0, t])/
+      ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) + 
+     (4*(-1 + y)*(z^2 + z^4 + 2*y^2*(-1 + z)^2*(1 + 2*z + 2*z^2) + 
+        2*y*z*(1 + z^2 - 2*z^3))*G[-r^(-1), -1, -r^(-1), t])/
+      ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) - 
+     (4*(-1 + y)*(z^2 + z^4 + 2*y^2*(-1 + z)^2*(1 + 2*z + 2*z^2) + 
+        2*y*z*(1 + z^2 - 2*z^3))*G[-r^(-1), -1, -r, t])/
+      ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) + 
+     (4*(-1 + y)*(4*y^4*(-1 + z)^4 + z^2 + z^4 + 2*y^2*(-1 + z)^2*z*
+         (-2 + 5*z) - 2*y^3*(-1 + z)^3*(-1 + 5*z) + 
+        y*(1 + 2*z - 4*z^2 + 6*z^3 - 5*z^4))*G[-r^(-1), 0, 0, t])/
+      ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) + 
+     (10*(-1 + y)*(4*y^4*(-1 + z)^4 + z^2 + z^4 + 2*y^2*(-1 + z)^2*z*
+         (-2 + 5*z) - 2*y^3*(-1 + z)^3*(-1 + 5*z) + 
+        y*(1 + 2*z - 4*z^2 + 6*z^3 - 5*z^4))*G[-r^(-1), 0, -r^(-1), t])/
+      ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) + 
+     (2*(-1 + y)*(-90*y^5*(-1 + z)^6 + 36*y^6*(-1 + z)^6 + 
+        2*y^4*(-1 + z)^4*(36 - 116*z + 37*z^2) - y^3*(-1 + z)^3*
+         (-17 + 189*z - 213*z^2 + 13*z^3) + 9*(z^2 + z^4) - 
+        y^2*(-1 + z)^2*(6 + 74*z - 141*z^2 + 90*z^3 + 11*z^4) + 
+        y*(5 + 18*z - 50*z^2 + 80*z^3 - 67*z^4 + 10*z^5 + 4*z^6))*
+       G[-r^(-1), 0, -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + (4*(-1 + y)*(z^2 + z^4 + 2*y^2*(-1 + z)^2*
+         (1 + 2*z + 2*z^2) + 2*y*z*(1 + z^2 - 2*z^3))*G[-r^(-1), 1, 0, t])/
+      ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) + 
+     (4*(-1 + y)*(z^2 + z^4 + 2*y^2*(-1 + z)^2*(1 + 2*z + 2*z^2) + 
+        2*y*z*(1 + z^2 - 2*z^3))*G[-r^(-1), 1, -r^(-1), t])/
+      ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) - 
+     (4*(-1 + y)*(z^2 + z^4 + 2*y^2*(-1 + z)^2*(1 + 2*z + 2*z^2) + 
+        2*y*z*(1 + z^2 - 2*z^3))*G[-r^(-1), 1, -r, t])/
+      ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) + 
+     (4*(-1 + y)*(4*y^4*(-1 + z)^4 + z^2 + z^4 + 2*y^2*(-1 + z)^2*z*
+         (-2 + 5*z) - 2*y^3*(-1 + z)^3*(-1 + 5*z) + 
+        y*(1 + 2*z - 4*z^2 + 6*z^3 - 5*z^4))*G[-r^(-1), -r^(-1), 0, t])/
+      ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) + 
+     (4*(-1 + y)*(1 - 2*y^3*(-5 + z)*(-1 + z)^3 + 4*y^4*(-1 + z)^4 + z^2 + 
+        y*(-1 + z)^3*(3 + z) - 2*y^2*(-1 + z)^2*(-4 + 4*z + z^2))*
+       G[-r^(-1), -r^(-1), -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*
+       z) + (6*(-1 + y)*(4*y^4*(-1 + z)^4 + z^2 + z^4 + 
+        2*y^2*(-1 + z)^2*z*(-2 + 5*z) - 2*y^3*(-1 + z)^3*(-1 + 5*z) + 
+        y*(1 + 2*z - 4*z^2 + 6*z^3 - 5*z^4))*G[-r^(-1), r^(-1), 0, t])/
+      ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) - 
+     (6*(-1 + y)*(4*y^4*(-1 + z)^4 + z^2 + z^4 + 2*y^2*(-1 + z)^2*z*
+         (-2 + 5*z) - 2*y^3*(-1 + z)^3*(-1 + 5*z) + 
+        y*(1 + 2*z - 4*z^2 + 6*z^3 - 5*z^4))*G[-r^(-1), r^(-1), -r^(-1), t])/
+      ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) + 
+     (2*(-1 + y)*(-10*y^5*(-1 + z)^6 + 4*y^6*(-1 + z)^6 + z^2 + z^4 + 
+        2*y^4*(-1 + z)^4*(4 - 16*z + z^2) + y^3*(-1 + z)^3*
+         (5 - 21*z + 33*z^2 + 11*z^3) - y^2*(-1 + z)^2*(-4 + 2*z - 25*z^2 + 
+          10*z^3 + 9*z^4) + y*(-1 + 2*z - 4*z^2 + 12*z^3 - 9*z^4 - 2*z^5 + 
+          2*z^6))*G[-r^(-1), r^(-1), -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*
+       (-1 + z)*z*(y + z - y*z)^2) + 
+     (2*(-1 + y)*(-50*y^5*(-1 + z)^6 + 20*y^6*(-1 + z)^6 + 
+        2*y^4*(-1 + z)^4*(18 - 66*z + 19*z^2) - y^3*(-1 + z)^3*
+         (-7 + 93*z - 123*z^2 + z^3) + 3*(z^2 + z^4) - 
+        y^2*(-1 + z)^2*(3 + 30*z - 69*z^2 + 50*z^3 + 10*z^4) + 
+        y*(2 + 6*z - 19*z^2 + 34*z^3 - 30*z^4 + 4*z^5 + 3*z^6))*
+       G[-r^(-1), -r, 0, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + (4*(-1 + y)*y*(-1 + z)*(-4*y^3*(-1 + z)^4 + 
+        2*y^4*(-1 + z)^4 - z^2*(-3 + z^2) - y^2*(-1 + z)^2*
+         (-1 + 12*z + z^2) + y*(-1 + z)^2*(1 + 8*z + 3*z^2))*
+       G[-r^(-1), -r, -r^(-1), t])/((1 + y*(-1 + z))^2*z*(y + z - y*z)^2) + 
+     (4*(-1 + y)*(1 - 2*y^3*(-5 + z)*(-1 + z)^3 + 4*y^4*(-1 + z)^4 + z^2 + 
+        y*(-1 + z)^3*(3 + z) - 2*y^2*(-1 + z)^2*(-4 + 4*z + z^2))*
+       G[-r^(-1), -r, -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+     (2*(-1 + y)*(-40*y^5*(-1 + z)^6 + 16*y^6*(-1 + z)^6 + 
+        4*y^4*(-1 + z)^4*(9 - 25*z + 9*z^2) - 2*y^3*(-1 + z)^3*
+         (-5 + 48*z - 45*z^2 + 6*z^3) + 6*(z^2 + z^4) - 
+        y^2*(-1 + z)^2*(3 + 44*z - 72*z^2 + 40*z^3 + z^4) + 
+        y*(3 + 12*z - 31*z^2 + 46*z^3 - 37*z^4 + 6*z^5 + z^6))*
+       G[-r^(-1), r, 0, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) - (2*(-1 + y)*(-20*y^5*(-1 + z)^6 + 
+        8*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*(6 - 11*z + 6*z^2) - 
+        2*y^3*(-1 + z)^3*(-8 + 21*z - 30*z^2 + 5*z^3) + 6*(z^2 + z^4) - 
+        y^2*(-1 + z)^2*(-5 + 24*z - 48*z^2 + 36*z^3 + z^4) + 
+        y*(1 + 12*z - 23*z^2 + 38*z^3 - 35*z^4 + 6*z^5 + z^6))*
+       G[-r^(-1), r, -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) - (2*(-1 + y)*(-40*y^5*(-1 + z)^6 + 
+        16*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*(9 - 25*z + 9*z^2) - 
+        2*y^3*(-1 + z)^3*(-5 + 48*z - 45*z^2 + 6*z^3) + 6*(z^2 + z^4) - 
+        y^2*(-1 + z)^2*(3 + 44*z - 72*z^2 + 40*z^3 + z^4) + 
+        y*(3 + 12*z - 31*z^2 + 46*z^3 - 37*z^4 + 6*z^5 + z^6))*
+       G[-r^(-1), r, -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + (4*(-1 + y)*(z^2 + z^4 + 2*y^2*(-1 + z)^2*
+         (1 + 2*z + 2*z^2) + 2*y*z*(1 + z^2 - 2*z^3))*G[r^(-1), -1, 0, t])/
+      ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) + 
+     (4*(-1 + y)*(z^2 + z^4 + 2*y^2*(-1 + z)^2*(1 + 2*z + 2*z^2) + 
+        2*y*z*(1 + z^2 - 2*z^3))*G[r^(-1), -1, -r^(-1), t])/
+      ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) - 
+     (4*(-1 + y)*(z^2 + z^4 + 2*y^2*(-1 + z)^2*(1 + 2*z + 2*z^2) + 
+        2*y*z*(1 + z^2 - 2*z^3))*G[r^(-1), -1, -r, t])/
+      ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) - 
+     (4*(-1 + y)*(4*y^4*(-1 + z)^4 + z^2 + z^4 + 2*y^2*(-1 + z)^2*z*
+         (-2 + 5*z) - 2*y^3*(-1 + z)^3*(-1 + 5*z) + 
+        y*(1 + 2*z - 4*z^2 + 6*z^3 - 5*z^4))*G[r^(-1), 0, 0, t])/
+      ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) - 
+     (2*(-1 + y)*(4*y^4*(-1 + z)^4 + z^2 + z^4 + 2*y^2*(-1 + z)^2*z*
+         (-2 + 5*z) - 2*y^3*(-1 + z)^3*(-1 + 5*z) + 
+        y*(1 + 2*z - 4*z^2 + 6*z^3 - 5*z^4))*G[r^(-1), 0, -r^(-1), t])/
+      ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) + 
+     (2*(-1 + y)*(-30*y^5*(-1 + z)^6 + 12*y^6*(-1 + z)^6 + 
+        2*y^4*(-1 + z)^4*(12 - 44*z + 7*z^2) + y^3*(-1 + z)^3*
+         (11 - 63*z + 87*z^2 + 17*z^3) + 3*(z^2 + z^4) - 
+        y^2*(-1 + z)^2*(-6 + 14*z - 63*z^2 + 30*z^3 + 17*z^4) + 
+        y*(-1 + 6*z - 14*z^2 + 32*z^3 - 25*z^4 - 2*z^5 + 4*z^6))*
+       G[r^(-1), 0, -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + (4*(-1 + y)*(z^2 + z^4 + 2*y^2*(-1 + z)^2*
+         (1 + 2*z + 2*z^2) + 2*y*z*(1 + z^2 - 2*z^3))*G[r^(-1), 1, 0, t])/
+      ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) + 
+     (4*(-1 + y)*(z^2 + z^4 + 2*y^2*(-1 + z)^2*(1 + 2*z + 2*z^2) + 
+        2*y*z*(1 + z^2 - 2*z^3))*G[r^(-1), 1, -r^(-1), t])/
+      ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) - 
+     (4*(-1 + y)*(z^2 + z^4 + 2*y^2*(-1 + z)^2*(1 + 2*z + 2*z^2) + 
+        2*y*z*(1 + z^2 - 2*z^3))*G[r^(-1), 1, -r, t])/
+      ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) + 
+     (2*(-1 + y)*(4*y^4*(-1 + z)^4 + z^2 + z^4 + 2*y^2*(-1 + z)^2*z*
+         (-2 + 5*z) - 2*y^3*(-1 + z)^3*(-1 + 5*z) + 
+        y*(1 + 2*z - 4*z^2 + 6*z^3 - 5*z^4))*G[r^(-1), -r^(-1), 0, t])/
+      ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) + 
+     (4*(-1 + y)*(4*y^4*(-1 + z)^4 + z^2 + z^4 + 2*y^2*(-1 + z)^2*z*
+         (-2 + 5*z) - 2*y^3*(-1 + z)^3*(-1 + 5*z) + 
+        y*(1 + 2*z - 4*z^2 + 6*z^3 - 5*z^4))*G[r^(-1), -r^(-1), -r^(-1), t])/
+      ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) + 
+     (4*(-1 + y)*(-30*y^5*(-1 + z)^6 + 12*y^6*(-1 + z)^6 + 
+        2*y^4*(-1 + z)^4*(12 - 38*z + 13*z^2) - y^3*(-1 + z)^3*
+         (-5 + 63*z - 69*z^2 + 7*z^3) + 3*(z^2 + z^4) - 
+        y^2*(-1 + z)^2*(3 + 26*z - 45*z^2 + 30*z^3 + 2*z^4) + 
+        y*(2 + 6*z - 17*z^2 + 26*z^3 - 22*z^4 + 4*z^5 + z^6))*
+       G[r^(-1), -r^(-1), -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) - (4*(-1 + y)*(4*y^4*(-1 + z)^4 + z^2 + z^4 + 
+        2*y^2*(-1 + z)^2*z*(-2 + 5*z) - 2*y^3*(-1 + z)^3*(-1 + 5*z) + 
+        y*(1 + 2*z - 4*z^2 + 6*z^3 - 5*z^4))*G[r^(-1), r^(-1), 0, t])/
+      ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) + 
+     (4*(-1 + y)*(4*y^4*(-1 + z)^4 + z^2 + z^4 + 2*y^2*(-1 + z)^2*z*
+         (-2 + 5*z) - 2*y^3*(-1 + z)^3*(-1 + 5*z) + 
+        y*(1 + 2*z - 4*z^2 + 6*z^3 - 5*z^4))*G[r^(-1), r^(-1), -r^(-1), t])/
+      ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) + 
+     (4*(-1 + y)*(-20*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 
+        4*y^4*(-1 + z)^4*(4 - 13*z + 4*z^2) - 2*y^3*(-1 + z)^3*
+         (-2 + 21*z - 24*z^2 + z^3) + 2*(z^2 + z^4) - 
+        y^2*(-1 + z)^2*(1 + 16*z - 32*z^2 + 20*z^3 + 3*z^4) + 
+        y*(1 + 4*z - 11*z^2 + 18*z^3 - 15*z^4 + 2*z^5 + z^6))*
+       G[r^(-1), r^(-1), -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + (2*(-1 + y)*(-40*y^5*(-1 + z)^6 + 
+        16*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*(7 - 27*z + 7*z^2) + 
+        2*y^3*(-1 + z)^3*(3 - 36*z + 51*z^2 + 2*z^3) + 2*(z^2 + z^4) - 
+        y^2*(-1 + z)^2*(1 + 20*z - 56*z^2 + 40*z^3 + 11*z^4) + 
+        y*(1 + 4*z - 13*z^2 + 26*z^3 - 23*z^4 + 2*z^5 + 3*z^6))*
+       G[r^(-1), -r, 0, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + (4*(-1 + y)*(-30*y^5*(-1 + z)^6 + 
+        12*y^6*(-1 + z)^6 + 2*y^4*(-1 + z)^4*(11 - 40*z + 11*z^2) - 
+        y^3*(-1 + z)^3*(-1 + 69*z - 63*z^2 + 3*z^3) + 2*(z^2 + z^4) - 
+        y^2*(-1 + z)^2*(5 + 26*z - 44*z^2 + 22*z^3 + 3*z^4) + 
+        y*(2 + 4*z - 15*z^2 + 22*z^3 - 16*z^4 + 2*z^5 + z^6))*
+       G[r^(-1), -r, -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + (4*(-1 + y)*(-20*y^5*(-1 + z)^6 + 
+        8*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*(4 - 13*z + 4*z^2) - 
+        2*y^3*(-1 + z)^3*(-2 + 21*z - 24*z^2 + z^3) + 2*(z^2 + z^4) - 
+        y^2*(-1 + z)^2*(1 + 16*z - 32*z^2 + 20*z^3 + 3*z^4) + 
+        y*(1 + 4*z - 11*z^2 + 18*z^3 - 15*z^4 + 2*z^5 + z^6))*
+       G[r^(-1), -r, -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) - (2*(-1 + y)*(-10*y^5*(-1 + z)^6 + 
+        4*y^6*(-1 + z)^6 - z^2*(1 + z^2) + 2*y^4*(-1 + z)^4*
+         (2 - 10*z + 7*z^2) - y^3*(-1 + z)^3*(5 + 9*z - 15*z^2 + 13*z^3) + 
+        y^2*(-1 + z)^2*(-7 - 6*z - 7*z^2 - 10*z^3 + 6*z^4) + 
+        y*(2 - 2*z + z^2 - 6*z^3 + 2*z^4 + 4*z^5 - z^6))*G[r^(-1), r, 0, t])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+     (2*(-1 + y)*(-10*y^5*(-1 + z)^6 + 4*y^6*(-1 + z)^6 + 
+        2*y^4*(-1 + z)^4*z*(-14 + 3*z) - y^3*(-1 + z)^3*(13 + 21*z - 3*z^2 + 
+          5*z^3) - 3*(z^2 + z^4) + y^2*(-1 + z)^2*(-11 - 6*z - 9*z^2 + 
+          6*z^3 + 4*z^4) - y*(-2 + 6*z - 5*z^2 + 14*z^3 - 14*z^4 + z^6))*
+       G[r^(-1), r, -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + (2*(-1 + y)*(-10*y^5*(-1 + z)^6 + 
+        4*y^6*(-1 + z)^6 - z^2*(1 + z^2) + 2*y^4*(-1 + z)^4*
+         (2 - 10*z + 7*z^2) - y^3*(-1 + z)^3*(5 + 9*z - 15*z^2 + 13*z^3) + 
+        y^2*(-1 + z)^2*(-7 - 6*z - 7*z^2 - 10*z^3 + 6*z^4) + 
+        y*(2 - 2*z + z^2 - 6*z^3 + 2*z^4 + 4*z^5 - z^6))*G[r^(-1), r, -r, t])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+     (4*y*(2 + 2*z - z^2 - 2*z^3 + z^4 + 2*y^2*(-1 + z)^2*(1 + 2*z + 2*z^2) - 
+        2*y*(2 + z - 2*z^2 - 3*z^3 + 2*z^4))*G[-r, -1, 0, t])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) - 
+     (4*y*(2 + 2*z - z^2 - 2*z^3 + z^4 + 2*y^2*(-1 + z)^2*(1 + 2*z + 2*z^2) - 
+        2*y*(2 + z - 2*z^2 - 3*z^3 + 2*z^4))*G[-r, -1, -r^(-1), t])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+     (4*y*(2 + 2*z - z^2 - 2*z^3 + z^4 + 2*y^2*(-1 + z)^2*(1 + 2*z + 2*z^2) - 
+        2*y*(2 + z - 2*z^2 - 3*z^3 + 2*z^4))*G[-r, -1, -r, t])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+     (4*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 2*z^3 - 
+        2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*(9 - 8*z + 2*z^2) - 
+        y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*G[-r, 0, 0, t])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+     (2*y*(-126*y^5*(-1 + z)^6 + 36*y^6*(-1 + z)^6 + 2*y^4*(-1 + z)^4*
+         (81 - 206*z + 82*z^2) + z^2*(35 - 26*z + 19*z^2 - 10*z^3) - 
+        y^3*(-1 + z)^3*(-91 + 487*z - 471*z^2 + 103*z^3) + 
+        y^2*(-1 + z)^2*(15 - 272*z + 435*z^2 - 252*z^3 + 34*z^4) + 
+        y*(4 + 62*z - 249*z^2 + 328*z^3 - 218*z^4 + 78*z^5 - 5*z^6))*
+       G[-r, 0, -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + (10*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 2*z^3 - 
+        2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*(9 - 8*z + 2*z^2) - 
+        y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*G[-r, 0, -r, t])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+     (4*y*(2 + 2*z - z^2 - 2*z^3 + z^4 + 2*y^2*(-1 + z)^2*(1 + 2*z + 2*z^2) - 
+        2*y*(2 + z - 2*z^2 - 3*z^3 + 2*z^4))*G[-r, 1, 0, t])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) - 
+     (4*y*(2 + 2*z - z^2 - 2*z^3 + z^4 + 2*y^2*(-1 + z)^2*(1 + 2*z + 2*z^2) - 
+        2*y*(2 + z - 2*z^2 - 3*z^3 + 2*z^4))*G[-r, 1, -r^(-1), t])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+     (4*y*(2 + 2*z - z^2 - 2*z^3 + z^4 + 2*y^2*(-1 + z)^2*(1 + 2*z + 2*z^2) - 
+        2*y*(2 + z - 2*z^2 - 3*z^3 + 2*z^4))*G[-r, 1, -r, t])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+     (2*y*(-2 - 70*y^5*(-1 + z)^6 + 20*y^6*(-1 + z)^6 + 19*z^2 - 16*z^3 + 
+        9*z^4 - 4*z^5 + 2*y^4*(-1 + z)^4*(43 - 116*z + 44*z^2) - 
+        y^3*(-1 + z)^3*(-37 + 279*z - 257*z^2 + 51*z^3) + 
+        y^2*(-1 + z)^2*(-8 - 154*z + 249*z^2 - 126*z^3 + 15*z^4) + 
+        y*(11 + 24*z - 142*z^2 + 186*z^3 - 111*z^4 + 34*z^5 - 2*z^6))*
+       G[-r, -r^(-1), 0, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + (4*y*(4*y^4*(-1 + z)^4 - 2*y^3*(-1 + z)^3*
+         (-3 + 7*z) + z^2*(5 - 4*z + z^2) - y*(-1 + z)^2*
+         (-1 - 10*z + 7*z^2) + 2*y^2*(-1 + z)^2*(1 - 10*z + 8*z^2))*
+       G[-r, -r^(-1), -r^(-1), t])/((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) + 
+     (4*(-1 + y)*y*(-1 + z)*(-4*y^3*(-1 + z)^4 + 2*y^4*(-1 + z)^4 - 
+        z^2*(-3 + z^2) - y^2*(-1 + z)^2*(-1 + 12*z + z^2) + 
+        y*(-1 + z)^2*(1 + 8*z + 3*z^2))*G[-r, -r^(-1), -r, t])/
       ((1 + y*(-1 + z))^2*z*(y + z - y*z)^2) + 
-     (8*(1 - 2*y*(-1 + z)^2 + 2*y^2*(-1 + z)^2 + z^2)*G[1, 1, 0, z])/
-      ((-1 + z)*z) + ((128*(1 - 2*y*(-1 + z)^2 + 2*y^2*(-1 + z)^2 + z^2)*
-         G[-1, t^2])/((-1 + z)*z) - 
-       (128*(1 - 2*y*(-1 + z)^2 + 2*y^2*(-1 + z)^2 + z^2)*G[-1, z])/
-        ((-1 + z)*z) + (128*(1 - 2*y*(-1 + z)^2 + 2*y^2*(-1 + z)^2 + z^2)*
-         G[0, 2])/((-1 + z)*z) - (64*(1 - 2*y*(-1 + z)^2 + 2*y^2*(-1 + z)^2 + 
-          z^2)*G[0, t])/((-1 + z)*z) - 
-       (64*(1 - 2*y*(-1 + z)^2 + 2*y^2*(-1 + z)^2 + z^2)*G[-I, r])/
+     (2*y*(-56*y^5*(-1 + z)^6 + 16*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*
+         (19 - 45*z + 19*z^2) - 2*y^3*(-1 + z)^3*(-27 + 104*z - 107*z^2 + 
+          26*z^3) + y^2*(-1 + z)^2*(23 - 118*z + 186*z^2 - 126*z^3 + 
+          19*z^4) + 2*(1 + 8*z^2 - 5*z^3 + 5*z^4 - 3*z^5) + 
+        y*(-7 + 38*z - 107*z^2 + 142*z^3 - 107*z^4 + 44*z^5 - 3*z^6))*
+       G[-r, r^(-1), 0, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) - (2*y*(-56*y^5*(-1 + z)^6 + 16*y^6*(-1 + z)^6 + 
+        4*y^4*(-1 + z)^4*(19 - 45*z + 19*z^2) - 2*y^3*(-1 + z)^3*
+         (-27 + 104*z - 107*z^2 + 26*z^3) + y^2*(-1 + z)^2*
+         (23 - 118*z + 186*z^2 - 126*z^3 + 19*z^4) + 
+        2*(1 + 8*z^2 - 5*z^3 + 5*z^4 - 3*z^5) + 
+        y*(-7 + 38*z - 107*z^2 + 142*z^3 - 107*z^4 + 44*z^5 - 3*z^6))*
+       G[-r, r^(-1), -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) - (2*y*(-28*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 
+        4*y^4*(-1 + z)^4*(11 - 21*z + 11*z^2) - 2*y^3*(-1 + z)^3*
+         (-20 + 55*z - 46*z^2 + 23*z^3) + y^2*(-1 + z)^2*
+         (21 - 82*z + 78*z^2 - 58*z^3 + 33*z^4) + 
+        y*(-7 + 34*z - 73*z^2 + 62*z^3 - 43*z^4 + 40*z^5 - 13*z^6) + 
+        2*(1 + 7*z^2 - z^3 + z^4 - 3*z^5 + z^6))*G[-r, r^(-1), -r, t])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+     (4*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 2*z^3 - 
+        2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*(9 - 8*z + 2*z^2) - 
+        y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*G[-r, -r, 0, t])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+     (4*y*(4*y^4*(-1 + z)^4 - 2*y^3*(-1 + z)^3*(-3 + 7*z) + 
+        z^2*(5 - 4*z + z^2) - y*(-1 + z)^2*(-1 - 10*z + 7*z^2) + 
+        2*y^2*(-1 + z)^2*(1 - 10*z + 8*z^2))*G[-r, -r, -r^(-1), t])/
+      ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) + 
+     (6*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 2*z^3 - 
+        2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*(9 - 8*z + 2*z^2) - 
+        y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*G[-r, r, 0, t])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+     (2*y*(-14*y^5*(-1 + z)^6 + 4*y^6*(-1 + z)^6 + 2*y^4*(-1 + z)^4*
+         (9 - 26*z + 6*z^2) + y^3*(-1 + z)^3*(7 - 79*z + 43*z^2 + z^3) + 
+        z^2*(7 - 6*z - z^2 + 2*z^3) - y^2*(-1 + z)^2*(3 + 52*z - 67*z^2 + 
+          4*z^4) + y*(2 + 10*z - 51*z^2 + 52*z^3 - 4*z^4 - 10*z^5 + z^6))*
+       G[-r, r, -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) - (6*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 2*z^3 - 
+        2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*(9 - 8*z + 2*z^2) - 
+        y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*G[-r, r, -r, t])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+     (4*y*(2 + 2*z - z^2 - 2*z^3 + z^4 + 2*y^2*(-1 + z)^2*(1 + 2*z + 2*z^2) - 
+        2*y*(2 + z - 2*z^2 - 3*z^3 + 2*z^4))*G[r, -1, 0, t])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) - 
+     (4*y*(2 + 2*z - z^2 - 2*z^3 + z^4 + 2*y^2*(-1 + z)^2*(1 + 2*z + 2*z^2) - 
+        2*y*(2 + z - 2*z^2 - 3*z^3 + 2*z^4))*G[r, -1, -r^(-1), t])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+     (4*y*(2 + 2*z - z^2 - 2*z^3 + z^4 + 2*y^2*(-1 + z)^2*(1 + 2*z + 2*z^2) - 
+        2*y*(2 + z - 2*z^2 - 3*z^3 + 2*z^4))*G[r, -1, -r, t])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) - 
+     (4*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 2*z^3 - 
+        2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*(9 - 8*z + 2*z^2) - 
+        y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*G[r, 0, 0, t])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+     (2*y*(-42*y^5*(-1 + z)^6 + 12*y^6*(-1 + z)^6 + 2*y^4*(-1 + z)^4*
+         (27 - 74*z + 22*z^2) + z^2*(17 - 14*z + z^2 + 2*z^3) - 
+        y^3*(-1 + z)^3*(-25 + 205*z - 141*z^2 + 13*z^3) - 
+        y^2*(-1 + z)^2*(3 + 128*z - 177*z^2 + 36*z^3 + 2*z^4) + 
+        y*(4 + 26*z - 123*z^2 + 136*z^3 - 38*z^4 - 6*z^5 + z^6))*
+       G[r, 0, -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) - (2*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 2*z^3 - 
+        2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*(9 - 8*z + 2*z^2) - 
+        y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*G[r, 0, -r, t])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+     (4*y*(2 + 2*z - z^2 - 2*z^3 + z^4 + 2*y^2*(-1 + z)^2*(1 + 2*z + 2*z^2) - 
+        2*y*(2 + z - 2*z^2 - 3*z^3 + 2*z^4))*G[r, 1, 0, t])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) - 
+     (4*y*(2 + 2*z - z^2 - 2*z^3 + z^4 + 2*y^2*(-1 + z)^2*(1 + 2*z + 2*z^2) - 
+        2*y*(2 + z - 2*z^2 - 3*z^3 + 2*z^4))*G[r, 1, -r^(-1), t])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+     (4*y*(2 + 2*z - z^2 - 2*z^3 + z^4 + 2*y^2*(-1 + z)^2*(1 + 2*z + 2*z^2) - 
+        2*y*(2 + z - 2*z^2 - 3*z^3 + 2*z^4))*G[r, 1, -r, t])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+     (2*y*(-56*y^5*(-1 + z)^6 + 16*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*
+         (17 - 47*z + 17*z^2) - 2*y^3*(-1 + z)^3*(-13 + 116*z - 101*z^2 + 
+          18*z^3) + y^2*(-1 + z)^2*(-11 - 130*z + 206*z^2 - 90*z^3 + 9*z^4) - 
+        2*(1 - 8*z^2 + 7*z^3 - 3*z^4 + z^5) + 
+        y*(11 + 18*z - 121*z^2 + 154*z^3 - 81*z^4 + 20*z^5 - z^6))*
+       G[r, -r^(-1), 0, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + (4*y*(-28*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 
+        4*y^4*(-1 + z)^4*(9 - 23*z + 9*z^2) - 2*z^2*(-4 + 3*z - 2*z^2 + 
+          z^3) - 2*y^3*(-1 + z)^3*(-10 + 55*z - 52*z^2 + 11*z^3) + 
+        y^2*(-1 + z)^2*(3 - 62*z + 98*z^2 - 54*z^3 + 7*z^4) + 
+        y*(1 + 14*z - 57*z^2 + 74*z^3 - 47*z^4 + 16*z^5 - z^6))*
+       G[r, -r^(-1), -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + (4*y*(-42*y^5*(-1 + z)^6 + 12*y^6*(-1 + z)^6 + 
+        4*y^4*(-1 + z)^4*(13 - 35*z + 13*z^2) - 4*y^2*(-1 + z)^2*
+         (-1 + 20*z - 38*z^2 + 22*z^3) - y^3*(-1 + z)^3*
+         (-27 + 159*z - 165*z^2 + 25*z^3) - z^2*(-9 + 10*z - 8*z^2 + 2*z^3 + 
+          z^4) + y*(1 + 16*z - 74*z^2 + 114*z^3 - 79*z^4 + 18*z^5 + 4*z^6))*
+       G[r, -r^(-1), -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) - (2*y*(-2 - 14*y^5*(-1 + z)^6 + 4*y^6*(-1 + z)^6 - 
+        z^2 + 5*z^4 - 4*z^5 + 2*y^4*(-1 + z)^4*(7 - 20*z + 12*z^2) - 
+        y^3*(-1 + z)^3*(-1 + 27*z - 61*z^2 + 23*z^3) + 
+        y^2*(-1 + z)^2*(-8 - 2*z + 29*z^2 - 54*z^3 + 11*z^4) + 
+        y*(7 - 8*z + 2*z^2 + 18*z^3 - 43*z^4 + 26*z^5 - 2*z^6))*
+       G[r, r^(-1), 0, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + (2*y*(-2 - 14*y^5*(-1 + z)^6 + 4*y^6*(-1 + z)^6 - 
+        z^2 + 5*z^4 - 4*z^5 + 2*y^4*(-1 + z)^4*(7 - 20*z + 12*z^2) - 
+        y^3*(-1 + z)^3*(-1 + 27*z - 61*z^2 + 23*z^3) + 
+        y^2*(-1 + z)^2*(-8 - 2*z + 29*z^2 - 54*z^3 + 11*z^4) + 
+        y*(7 - 8*z + 2*z^2 + 18*z^3 - 43*z^4 + 26*z^5 - 2*z^6))*
+       G[r, r^(-1), -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + (2*y*(-2 - 14*y^5*(-1 + z)^6 + 4*y^6*(-1 + z)^6 - 
+        5*z^2 - 4*z^3 + 7*z^4 - 2*z^6 + 2*y^4*(-1 + z)^4*(5 - 24*z + 8*z^2) + 
+        y^3*(-1 + z)^3*(-7 - 31*z + 73*z^2 + z^3) - y^2*(-1 + z)^2*
+         (12 - 10*z - 51*z^2 + 50*z^3 + 15*z^4) + 
+        y*(7 - 16*z + 10*z^2 + 34*z^3 - 47*z^4 + 2*z^5 + 10*z^6))*
+       G[r, r^(-1), -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + (2*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 2*z^3 - 
+        2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*(9 - 8*z + 2*z^2) - 
+        y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*G[r, -r, 0, t])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+     (4*y*(-42*y^5*(-1 + z)^6 + 12*y^6*(-1 + z)^6 + 2*y^4*(-1 + z)^4*
+         (27 - 68*z + 28*z^2) + z^2*(11 - 8*z + 7*z^2 - 4*z^3) - 
+        y^3*(-1 + z)^3*(-31 + 157*z - 159*z^2 + 37*z^3) + 
+        y^2*(-1 + z)^2*(6 - 86*z + 141*z^2 - 90*z^3 + 13*z^4) + 
+        y*(1 + 20*z - 78*z^2 + 106*z^3 - 77*z^4 + 30*z^5 - 2*z^6))*
+       G[r, -r, -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + (4*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 2*z^3 - 
+        2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*(9 - 8*z + 2*z^2) - 
+        y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*G[r, -r, -r, t])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) - 
+     (4*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 2*z^3 - 
+        2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*(9 - 8*z + 2*z^2) - 
+        y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*G[r, r, 0, t])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+     (4*y*(-28*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*
+         (9 - 23*z + 9*z^2) - 2*z^2*(-4 + 3*z - 2*z^2 + z^3) - 
+        2*y^3*(-1 + z)^3*(-10 + 55*z - 52*z^2 + 11*z^3) + 
+        y^2*(-1 + z)^2*(3 - 62*z + 98*z^2 - 54*z^3 + 7*z^4) + 
+        y*(1 + 14*z - 57*z^2 + 74*z^3 - 47*z^4 + 16*z^5 - z^6))*
+       G[r, r, -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + (4*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 2*z^3 - 
+        2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*(9 - 8*z + 2*z^2) - 
+        y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*G[r, r, -r, t])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+     (4*(-60*y^5*(-1 + z)^6 + 20*y^6*(-1 + z)^6 - 4*y^3*(-1 + z)^4*
+         (13 - 30*z + 10*z^2) + 2*y^4*(-1 + z)^4*(38 - 80*z + 35*z^2) + 
+        y*(-1 + z)^2*(-3 + 20*z - 29*z^2 + 20*z^3) + 13*(z^2 + z^4) + 
+        y^2*(-1 + z)^2*(19 - 92*z + 135*z^2 - 80*z^3 + 10*z^4))*Log[2]^3)/
+      (3*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+     ((128*(1 - 2*y*(-1 + z)^2 + 2*y^2*(-1 + z)^2 + z^2)*G[-1, t^2])/
+        ((-1 + z)*z) - (128*(1 - 2*y*(-1 + z)^2 + 2*y^2*(-1 + z)^2 + z^2)*
+         G[-1, z])/((-1 + z)*z) + (128*(1 - 2*y*(-1 + z)^2 + 
+          2*y^2*(-1 + z)^2 + z^2)*G[0, 2])/((-1 + z)*z) - 
+       (64*(1 - 2*y*(-1 + z)^2 + 2*y^2*(-1 + z)^2 + z^2)*G[0, t])/
         ((-1 + z)*z) - (64*(1 - 2*y*(-1 + z)^2 + 2*y^2*(-1 + z)^2 + z^2)*
-         G[I, r])/((-1 + z)*z))*Log[1 - z]^2 + 
+         G[-I, r])/((-1 + z)*z) - (64*(1 - 2*y*(-1 + z)^2 + 
+          2*y^2*(-1 + z)^2 + z^2)*G[I, r])/((-1 + z)*z))*Log[1 - z]^2 + 
      ((128*(1 - 2*y*(-1 + z)^2 + 2*y^2*(-1 + z)^2 + z^2)*G[-1, t^2])/
         ((-1 + z)*z) - (128*(1 - 2*y*(-1 + z)^2 + 2*y^2*(-1 + z)^2 + z^2)*
          G[-1, z])/((-1 + z)*z) + (128*(1 - 2*y*(-1 + z)^2 + 
@@ -6709,13 +8456,45 @@
            331*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
            86*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
            13*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z]))/
-        (6*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*(y + z - y*z)^(5/2)) - 
+        (6*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*(y + z - y*z)^(5/2)) + 
+       ((24*y^5*(-1 + z)^6 - 8*y^6*(-1 + z)^6 + 8*y^3*(-1 + z)^5*(-2 + 3*z) - 
+          4*y^4*(-1 + z)^5*(-7 + 8*z) - 4*(z^2 + z^4) + 
+          y*(-1 + z)^2*(-1 - 10*z + 4*z^2 - 10*z^3 + z^4) - 
+          y^2*(-1 + z)^2*(3 - 30*z + 40*z^2 - 38*z^3 + 9*z^4))*G[-1, t^2])/
+        ((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
        (128*(1 - 2*y*(-1 + z)^2 + 2*y^2*(-1 + z)^2 + z^2)*G[-1, z])/
         ((-1 + z)*z) + (128*(1 - 2*y*(-1 + z)^2 + 2*y^2*(-1 + z)^2 + z^2)*
-         G[0, 2])/((-1 + z)*z) + (4*(-108*y^5*(-1 + z)^6 + 
-          36*y^6*(-1 + z)^6 - 4*y^3*(-1 + z)^4*(17 - 54*z + 18*z^2) + 
-          2*y^4*(-1 + z)^4*(62 - 144*z + 63*z^2) + y*(-1 + z)^2*
-           (1 + 36*z - 33*z^2 + 36*z^3) + 17*(z^2 + z^4) + 
+         G[0, 2])/((-1 + z)*z) + ((28*y^6*(-1 + z)^6 - 8*y^7*(-1 + z)^6 - 
+          z^2*(1 + z^2) - 4*y^5*(-1 + z)^4*(9 - 22*z + 10*z^2) + 
+          2*y^4*(-1 + z)^3*(-12 + 44*z - 55*z^2 + 15*z^3) - 
+          2*y^3*(-1 + z)^2*(5 - 20*z + 37*z^2 - 36*z^3 + 6*z^4) + 
+          y*(-1 - 2*z - 2*z^2 - 2*z^3 - z^4 + 4*z^5) + 
+          y^2*(3 - 10*z + 26*z^2 - 42*z^3 + 49*z^4 - 28*z^5 + 2*z^6))*
+         G[0, t^2])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) + ((12*y^5*(-1 + z)^6 - 4*y^6*(-1 + z)^6 + z^2 + 
+          z^4 - 4*y^3*(-1 + z)^4*(1 + 8*z) - 2*y^4*(-1 + z)^4*
+           (4 - 18*z + 5*z^2) - y*(-1 + z)^2*(2 + 2*z + z^2 + 2*z^3 + z^4) + 
+          y^2*(-1 + z)^2*(6 + 6*z - 17*z^2 + 10*z^3 + 3*z^4))*G[1, t^2])/
+        ((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (6*(-1 + y)*(4*y^4*(-1 + z)^4 + z^2 + z^4 + 2*y^2*(-1 + z)^2*z*
+           (-2 + 5*z) - 2*y^3*(-1 + z)^3*(-1 + 5*z) + 
+          y*(1 + 2*z - 4*z^2 + 6*z^3 - 5*z^4))*G[-r^(-1), t])/
+        ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) + 
+       (6*(-1 + y)*(4*y^4*(-1 + z)^4 + z^2 + z^4 + 2*y^2*(-1 + z)^2*z*
+           (-2 + 5*z) - 2*y^3*(-1 + z)^3*(-1 + 5*z) + 
+          y*(1 + 2*z - 4*z^2 + 6*z^3 - 5*z^4))*G[r^(-1), t])/
+        ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) - 
+       (6*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 2*z^3 - 
+          2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*(9 - 8*z + 2*z^2) - 
+          y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*G[-r, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+       (6*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 2*z^3 - 
+          2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*(9 - 8*z + 2*z^2) - 
+          y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*G[r, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+       (4*(-108*y^5*(-1 + z)^6 + 36*y^6*(-1 + z)^6 - 4*y^3*(-1 + z)^4*
+           (17 - 54*z + 18*z^2) + 2*y^4*(-1 + z)^4*(62 - 144*z + 63*z^2) + 
+          y*(-1 + z)^2*(1 + 36*z - 33*z^2 + 36*z^3) + 17*(z^2 + z^4) + 
           y^2*(-1 + z)^2*(15 - 140*z + 211*z^2 - 144*z^3 + 18*z^4))*
          Log[1 - z])/((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
        (4*(-108*y^5*(-1 + z)^6 + 36*y^6*(-1 + z)^6 - 4*y^3*(-1 + z)^4*
@@ -7821,17 +9600,16 @@
           ((-1 + z)*z) + (128*(1 - 2*y*(-1 + z)^2 + 2*y^2*(-1 + z)^2 + z^2)*
            G[-I, r])/((-1 + z)*z) + (128*(1 - 2*y*(-1 + z)^2 + 
             2*y^2*(-1 + z)^2 + z^2)*G[I, r])/((-1 + z)*z))*
-        Log[1 - y + y*z]) + 
-     Log[2]*(-1/9*(-12*(139 + 12*Pi^2)*y^5*(-1 + z)^6 + 4*(139 + 12*Pi^2)*y^6*
-           (-1 + z)^6 + y*(-1 + z)*(-63 - (497 + 48*Pi^2)*z + 
-            6*(43 + 16*Pi^2)*z^2 - 3*(125 + 32*Pi^2)*z^3 + 
-            (445 + 48*Pi^2)*z^4 + 16*z^5) + 3*z^2*(28 + 27*z + 31*z^2 + 
-            8*Pi^2*(1 + z^2)) - 4*y^3*(-1 + z)^4*(261 - 618*z + 281*z^2 + 
-            24*Pi^2*(1 - 3*z + z^2)) + 8*y^4*(-1 + z)^4*(239 - 502*z + 
-            244*z^2 + 3*Pi^2*(7 - 16*z + 7*z^2)) + y^2*(-1 + z)*
-           (-181 + 1909*z - 3314*z^2 + 3511*z^3 - 1977*z^4 + 268*z^5 + 
-            24*Pi^2*(-1 + 9*z - 20*z^2 + 20*z^3 - 9*z^4 + z^5)))/
-         ((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+        Log[1 - y + y*z]) + Log[2]*((-12*(-139 + 18*Pi^2)*y^5*(-1 + z)^6 + 
+         4*(-139 + 18*Pi^2)*y^6*(-1 + z)^6 + 3*z^2*(-28 - 27*z - 31*z^2 + 
+           10*Pi^2*(1 + z^2)) - 4*y^3*(-1 + z)^4*(-261 + 618*z - 281*z^2 + 
+           6*Pi^2*(5 - 18*z + 6*z^2)) + 4*y^4*(-1 + z)^4*
+          (-478 + 1004*z - 488*z^2 + 3*Pi^2*(20 - 48*z + 21*z^2)) + 
+         y*(-1 + z)*(63 + 497*z - 258*z^2 + 375*z^3 - 445*z^4 - 16*z^5 + 
+           6*Pi^2*(-1 - 11*z + 21*z^2 - 21*z^3 + 12*z^4)) + 
+         y^2*(-1 + z)*(181 - 1909*z + 3314*z^2 - 3511*z^3 + 1977*z^4 - 
+           268*z^5 + 6*Pi^2*(-3 + 47*z - 111*z^2 + 115*z^3 - 54*z^4 + 
+             6*z^5)))/(9*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
        ((Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z]*(31 + 24*z + 31*z^2) - 
           36*y^5*(-1 + z)^6*(2*Sqrt[z] + 3*Sqrt[1 + y*(-1 + z)]*
              Sqrt[y + z - y*z]) + 12*y^6*(-1 + z)^6*(2*Sqrt[z] + 
@@ -7885,12 +9663,10 @@
             4*y^4*(-1 + z)^4*(50 - 111*z + 50*z^2) + 30*(z^2 + z^4) - 
             y*(-1 + z)^2*(1 - 58*z + 58*z^2 - 58*z^3 + z^4) + 
             y^2*(-1 + z)^2*(33 - 230*z + 338*z^2 - 230*z^3 + 33*z^4))*
-           G[0, 2])/((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2)) - 
-       (16*(-1 + y)*y*(-1 + z)*(1 - 2*y*(-1 + z)^2 + 2*y^2*(-1 + z)^2 + z^2)*
-         G[0, r])/((1 + y*(-1 + z))^(3/2)*(y*(-1 + z) - z)*Sqrt[z]*
-         Sqrt[y + z - y*z]) + (8*(-1 + y)*y*(-1 + z)*(1 - 2*y*(-1 + z)^2 + 
-          2*y^2*(-1 + z)^2 + z^2)*G[0, t])/((1 + y*(-1 + z))^(3/2)*
-         (y*(-1 + z) - z)*Sqrt[z]*Sqrt[y + z - y*z]) + 
+           G[0, 2])/((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2)) + 
+       (8*(-1 + y)*y*(-1 + z)*(1 - 2*y*(-1 + z)^2 + 2*y^2*(-1 + z)^2 + z^2)*
+         G[0, t])/((1 + y*(-1 + z))^(3/2)*(y*(-1 + z) - z)*Sqrt[z]*
+         Sqrt[y + z - y*z]) + 
        ((-(Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z]*(1 - 12*z + z^2)) + 
           16*y^7*(-1 + z)^6*(3*Sqrt[z] + 7*Sqrt[1 + y*(-1 + z)]*
              Sqrt[y + z - y*z]) - 8*y^6*(-1 + z)^5*(-21*Sqrt[z] + 
@@ -8172,19 +9948,77 @@
              Sqrt[y + z - y*z] + 198*Sqrt[1 + y*(-1 + z)]*z^5*
              Sqrt[y + z - y*z] - 12*Sqrt[1 + y*(-1 + z)]*z^6*
              Sqrt[y + z - y*z]))*G[r, t])/(3*(-1 + 2*y)*
-         (1 + y*(-1 + z))^(5/2)*(-1 + z)*z*(y + z - y*z)^(5/2)) - 
+         (1 + y*(-1 + z))^(5/2)*(-1 + z)*z*(y + z - y*z)^(5/2)) + 
+       G[0, r]*((-16*(-1 + y)*y*(-1 + z)*(1 - 2*y*(-1 + z)^2 + 
+            2*y^2*(-1 + z)^2 + z^2))/((1 + y*(-1 + z))^(3/2)*(y*(-1 + z) - z)*
+           Sqrt[z]*Sqrt[y + z - y*z]) + (8*(-1 + y)*(4*y^4*(-1 + z)^4 + z^2 + 
+            z^4 + 2*y^2*(-1 + z)^2*z*(-2 + 5*z) - 2*y^3*(-1 + z)^3*
+             (-1 + 5*z) + y*(1 + 2*z - 4*z^2 + 6*z^3 - 5*z^4))*G[-r^(-1), t])/
+          ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) - 
+         (8*(-1 + y)*(4*y^4*(-1 + z)^4 + z^2 + z^4 + 2*y^2*(-1 + z)^2*z*
+             (-2 + 5*z) - 2*y^3*(-1 + z)^3*(-1 + 5*z) + 
+            y*(1 + 2*z - 4*z^2 + 6*z^3 - 5*z^4))*G[r^(-1), t])/
+          ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) + 
+         (8*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 2*z^3 - 
+            2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*
+             (9 - 8*z + 2*z^2) - y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*
+           G[-r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) - 
+         (8*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 2*z^3 - 
+            2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*
+             (9 - 8*z + 2*z^2) - y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*
+           G[r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z)) + 
+       (2*(-120*y^5*(-1 + z)^6 + 40*y^6*(-1 + z)^6 - 8*y^3*(-1 + z)^4*
+           (7 - 33*z + 7*z^2) + 4*y^4*(-1 + z)^4*(32 - 83*z + 32*z^2) + 
+          14*(z^2 + z^4) + y*(-1 + z)^2*(3 + 34*z - 34*z^2 + 34*z^3 + 
+            3*z^4) + y^2*(-1 + z)^2*(5 - 142*z + 234*z^2 - 142*z^3 + 5*z^4))*
+         G[-1, -1, t^2])/((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
        (8*(-168*y^5*(-1 + z)^6 + 56*y^6*(-1 + z)^6 - 8*y^3*(-1 + z)^4*
            (15 - 41*z + 15*z^2) + 4*y^4*(-1 + z)^4*(50 - 111*z + 50*z^2) + 
           30*(z^2 + z^4) - y*(-1 + z)^2*(1 - 58*z + 58*z^2 - 58*z^3 + z^4) + 
           y^2*(-1 + z)^2*(33 - 230*z + 338*z^2 - 230*z^3 + 33*z^4))*
          G[-1, -1, z])/((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
-       (8*(-24*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 - 8*y^3*(-1 + z)^4*
-           (1 - 7*z + z^2) + 4*y^4*(-1 + z)^4*(6 - 17*z + 6*z^2) + 
-          2*(z^2 + z^4) + y*(-1 + z)^2*(1 + 6*z - 6*z^2 + 6*z^3 + z^4) - 
-          y^2*(-1 + z)^2*(1 + 26*z - 46*z^2 + 26*z^3 + z^4))*G[-1, 0, z])/
+       (2*(-1 + y)*(-40*y^5*(-1 + z)^6 + 16*y^6*(-1 + z)^6 + 
+          8*y^4*(-1 + z)^5*(-5 + 6*z) - 4*y^3*(-1 + z)^3*
+           (-5 + 18*z - 27*z^2 + 6*z^3) + 8*(z^2 + z^4) + 
+          2*y^2*(-1 + z)^2*(1 - 20*z + 34*z^2 - 32*z^3 + z^4) + 
+          y*(3 + 16*z - 33*z^2 + 52*z^3 - 51*z^4 + 12*z^5 + z^6))*
+         G[-1, 0, t^2])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (8*(-24*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 - 
+          8*y^3*(-1 + z)^4*(1 - 7*z + z^2) + 4*y^4*(-1 + z)^4*
+           (6 - 17*z + 6*z^2) + 2*(z^2 + z^4) + y*(-1 + z)^2*
+           (1 + 6*z - 6*z^2 + 6*z^3 + z^4) - y^2*(-1 + z)^2*
+           (1 + 26*z - 46*z^2 + 26*z^3 + z^4))*G[-1, 0, z])/
         ((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
-       (8*(-12*y^5*(-1 + z)^6 + 4*y^6*(-1 + z)^6 + z^2 + z^4 - 
-          4*y^3*(-1 + z)^4*(1 - 6*z + 2*z^2) + 2*y^4*(-1 + z)^4*
+       (4*(-4*y^3*(-1 + z)^4 + 2*y^4*(-1 + z)^4 + z^2 + z^4 - 
+          y*(-1 + z)^2*(1 + 3*z^2) + y^2*(-1 + z)^2*(3 - 4*z + 5*z^2))*
+         G[-1, 1, t^2])/((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+       (2*(z^2 + z^4 + y*z*(2 - z + 6*z^2 - 8*z^3 + z^5) + 
+          y^2*(2 - 2*z + z^2 - 22*z^3 + 26*z^4 - 5*z^6) + 
+          4*y^3*(-1 + 8*z^3 - 9*z^4 + 2*z^6) - 2*y^4*(-1 + 8*z^3 - 9*z^4 + 
+            2*z^6))*G[-1, -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*
+         (-1 + z)*z*(y + z - y*z)^2) + 
+       (2*(-(z^2*(1 + z^2)) + y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 
+          4*y^3*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 
+            2*z^6) + y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*
+         G[-1, r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) + (2*(-(z^2*(1 + z^2)) + 
+          y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 4*y^3*(-1 + 8*z^3 - 9*z^4 + 
+            2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 
+          y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*G[-1, -r, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+       (2*(z^2 + z^4 + y*z*(2 - z + 6*z^2 - 8*z^3 + z^5) + 
+          y^2*(2 - 2*z + z^2 - 22*z^3 + 26*z^4 - 5*z^6) + 
+          4*y^3*(-1 + 8*z^3 - 9*z^4 + 2*z^6) - 2*y^4*(-1 + 8*z^3 - 9*z^4 + 
+            2*z^6))*G[-1, r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (2*(-28*y^6*(-1 + z)^6 + 8*y^7*(-1 + z)^6 + 
+          4*y^5*(-1 + z)^4*(11 - 18*z + 14*z^2) - 2*y^4*(-1 + z)^3*
+           (-20 + 40*z - 67*z^2 + 31*z^3) - 7*(z^2 + z^4) + 
+          2*y^3*(-1 + z)^2*(9 - 32*z + 63*z^2 - 72*z^3 + 16*z^4) - 
+          y*(3 + 14*z - 30*z^2 + 38*z^3 - 49*z^4 + 12*z^5) + 
+          y^2*(1 + 42*z - 110*z^2 + 186*z^3 - 189*z^4 + 76*z^5 - 6*z^6))*
+         G[0, -1, t^2])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (8*(-12*y^5*(-1 + z)^6 + 4*y^6*(-1 + z)^6 + z^2 + 
+          z^4 - 4*y^3*(-1 + z)^4*(1 - 6*z + 2*z^2) + 2*y^4*(-1 + z)^4*
            (6 - 16*z + 7*z^2) + y*(-1 + z)^2*(1 + 4*z - z^2 + 4*z^3) + 
           y^2*(-1 + z)^2*(-1 - 12*z + 19*z^2 - 16*z^3 + 2*z^4))*G[0, -1, z])/
         ((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
@@ -8193,17 +10027,173 @@
           y*(-1 + z)^2*(-1 + 60*z - 63*z^2 + 60*z^3) + 31*(z^2 + z^4) + 
           y^2*(-1 + z)^2*(33 - 244*z + 365*z^2 - 240*z^3 + 30*z^4))*
          G[0, 0, 2])/((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
-       (8*(-36*y^5*(-1 + z)^6 + 12*y^6*(-1 + z)^6 - 4*y^3*(-1 + z)^4*
-           (7 - 18*z + 6*z^2) + 2*y^4*(-1 + z)^4*(22 - 48*z + 21*z^2) + 
-          y*(-1 + z)^2*(-1 + 12*z - 15*z^2 + 12*z^3) + 7*(z^2 + z^4) + 
-          y^2*(-1 + z)^2*(9 - 52*z + 77*z^2 - 48*z^3 + 6*z^4))*G[0, 0, z])/
+       (2*(-28*y^6*(-1 + z)^6 + 8*y^7*(-1 + z)^6 + 4*y^5*(-1 + z)^4*
+           (9 - 22*z + 10*z^2) - 2*y^4*(-1 + z)^3*(-14 + 38*z - 55*z^2 + 
+            15*z^3) + 3*(z^2 + z^4) + 2*y^3*(-1 + z)^2*(9 - 12*z + 25*z^2 - 
+            36*z^3 + 6*z^4) + y*(3 + 6*z - 6*z^2 + 14*z^3 - 9*z^4 - 4*z^5) + 
+          y^2*(-9 + 6*z + 6*z^2 - 2*z^3 - 27*z^4 + 28*z^5 - 2*z^6))*
+         G[0, 0, t^2])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (8*(-36*y^5*(-1 + z)^6 + 12*y^6*(-1 + z)^6 - 
+          4*y^3*(-1 + z)^4*(7 - 18*z + 6*z^2) + 2*y^4*(-1 + z)^4*
+           (22 - 48*z + 21*z^2) + y*(-1 + z)^2*(-1 + 12*z - 15*z^2 + 
+            12*z^3) + 7*(z^2 + z^4) + y^2*(-1 + z)^2*(9 - 52*z + 77*z^2 - 
+            48*z^3 + 6*z^4))*G[0, 0, z])/((1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (4*(-28*y^6*(-1 + z)^6 + 8*y^7*(-1 + z)^6 + z^2 + 
+          z^4 + 32*y^5*(-1 + z)^4*(1 - 3*z + z^2) - y*(1 + z)^2*
+           (1 - 4*z + 3*z^2) - 2*y^4*(-1 + z)^3*(-4 + 58*z - 49*z^2 + 
+            7*z^3) + 2*y^3*(-1 + z)^2*(-5 - 30*z + 48*z^2 - 18*z^3 + z^4) + 
+          y^2*(7 + 2*z - 48*z^2 + 58*z^3 - 23*z^4 + 4*z^5))*G[0, 1, t^2])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+       (8*(-1 + y)*(4*y^4*(-1 + z)^4 + z^2 + z^4 + 2*y^2*(-1 + z)^2*z*
+           (-2 + 5*z) - 2*y^3*(-1 + z)^3*(-1 + 5*z) + 
+          y*(1 + 2*z - 4*z^2 + 6*z^3 - 5*z^4))*G[0, -r^(-1), t])/
+        ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) - 
+       (8*(-1 + y)*(4*y^4*(-1 + z)^4 + z^2 + z^4 + 2*y^2*(-1 + z)^2*z*
+           (-2 + 5*z) - 2*y^3*(-1 + z)^3*(-1 + 5*z) + 
+          y*(1 + 2*z - 4*z^2 + 6*z^3 - 5*z^4))*G[0, r^(-1), t])/
+        ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) + 
+       (8*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 2*z^3 - 
+          2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*(9 - 8*z + 2*z^2) - 
+          y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*G[0, -r, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) - 
+       (8*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 2*z^3 - 
+          2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*(9 - 8*z + 2*z^2) - 
+          y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*G[0, r, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) - 
+       (2*(-12*y^5*(-1 + z)^6 + 4*y^6*(-1 + z)^6 - 4*y^3*(-1 + z)^4*
+           (5 - 4*z + 4*z^2) + 2*y^4*(-1 + z)^4*(10 - 14*z + 9*z^2) - 
+          y*(-1 + z)^3*(-2 + 4*z - 5*z^2 + z^3) + y^2*(-1 + z)^3*
+           (-10 + 16*z - 15*z^2 + 7*z^3) + 5*(z^2 + z^4))*G[1, -1, t^2])/
         ((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
        (8*(-12*y^5*(-1 + z)^6 + 4*y^6*(-1 + z)^6 + z^2 + z^4 + 
           4*y^3*(-1 + z)^4*(-1 + 8*z) + y*(-1 + z)^3*z*(-2 + 3*z + z^2) - 
           y^2*(-1 + z)^3*z*(-14 + 13*z + 3*z^2) + 2*y^4*(-1 + z)^4*
            (6 - 18*z + 5*z^2))*G[1, -1, z])/((1 + y*(-1 + z))^2*(-1 + z)*z*
-         (y + z - y*z)^2) + (16*(1 - 2*y*(-1 + z)^2 + 2*y^2*(-1 + z)^2 + z^2)*
-         G[1, 0, z])/((-1 + z)*z) - 
+         (y + z - y*z)^2) - (2*(-28*y^6*(-1 + z)^6 + 8*y^7*(-1 + z)^6 + 
+          4*y^5*(-1 + z)^4*(7 - 24*z + 8*z^2) - 2*y^4*(-1 + z)^3*
+           (2 + 56*z - 43*z^2 + 9*z^3) + 3*(z^2 + z^4) + 
+          2*y^3*(-1 + z)^2*(-12 - 26*z + 35*z^2 - 10*z^3 + 5*z^4) + 
+          y^2*(14 - 14*z - 23*z^2 + 10*z^3 + 14*z^4 + 4*z^5 - 5*z^6) + 
+          y*(-2 + 6*z - 3*z^2 + 10*z^3 - 16*z^4 + z^6))*G[1, 0, t^2])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+       (16*(1 - 2*y*(-1 + z)^2 + 2*y^2*(-1 + z)^2 + z^2)*G[1, 0, z])/
+        ((-1 + z)*z) - (8*(-1 + y)*y*(-1 + z)*(-4*y^3*(-1 + z)^4 + 
+          2*y^4*(-1 + z)^4 - z^2*(-3 + z^2) - y^2*(-1 + z)^2*
+           (-1 + 12*z + z^2) + y*(-1 + z)^2*(1 + 8*z + 3*z^2))*G[1, 1, t^2])/
+        ((1 + y*(-1 + z))^2*z*(y + z - y*z)^2) + 
+       (2*(z^2 + z^4 + y*z*(2 - z + 6*z^2 - 8*z^3 + z^5) + 
+          y^2*(2 - 2*z + z^2 - 22*z^3 + 26*z^4 - 5*z^6) + 
+          4*y^3*(-1 + 8*z^3 - 9*z^4 + 2*z^6) - 2*y^4*(-1 + 8*z^3 - 9*z^4 + 
+            2*z^6))*G[1, -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*
+         z*(y + z - y*z)^2) + (2*(-(z^2*(1 + z^2)) + 
+          y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 4*y^3*(-1 + 8*z^3 - 9*z^4 + 
+            2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 
+          y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*G[1, r^(-1), t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+       (2*(-(z^2*(1 + z^2)) + y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 
+          4*y^3*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 
+            2*z^6) + y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*
+         G[1, -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) + (2*(z^2 + z^4 + y*z*(2 - z + 6*z^2 - 8*z^3 + 
+            z^5) + y^2*(2 - 2*z + z^2 - 22*z^3 + 26*z^4 - 5*z^6) + 
+          4*y^3*(-1 + 8*z^3 - 9*z^4 + 2*z^6) - 2*y^4*(-1 + 8*z^3 - 9*z^4 + 
+            2*z^6))*G[1, r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (4*(-1 + y)*(4*y^4*(-1 + z)^4 + z^2 + z^4 + 
+          2*y^2*(-1 + z)^2*z*(-2 + 5*z) - 2*y^3*(-1 + z)^3*(-1 + 5*z) + 
+          y*(1 + 2*z - 4*z^2 + 6*z^3 - 5*z^4))*G[-r^(-1), 0, t])/
+        ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) + 
+       (4*(-1 + y)*(4*y^4*(-1 + z)^4 + z^2 + z^4 + 2*y^2*(-1 + z)^2*z*
+           (-2 + 5*z) - 2*y^3*(-1 + z)^3*(-1 + 5*z) + 
+          y*(1 + 2*z - 4*z^2 + 6*z^3 - 5*z^4))*G[-r^(-1), -r^(-1), t])/
+        ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) + 
+       (6*(-1 + y)*(4*y^4*(-1 + z)^4 + z^2 + z^4 + 2*y^2*(-1 + z)^2*z*
+           (-2 + 5*z) - 2*y^3*(-1 + z)^3*(-1 + 5*z) + 
+          y*(1 + 2*z - 4*z^2 + 6*z^3 - 5*z^4))*G[-r^(-1), r^(-1), t])/
+        ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) + 
+       (2*(-1 + y)*(-10*y^5*(-1 + z)^6 + 4*y^6*(-1 + z)^6 - z^2*(1 + z^2) + 
+          2*y^4*(-1 + z)^4*(2 - 10*z + 7*z^2) - y^3*(-1 + z)^3*
+           (5 + 9*z - 15*z^2 + 13*z^3) + y^2*(-1 + z)^2*(-7 - 6*z - 7*z^2 - 
+            10*z^3 + 6*z^4) + y*(2 - 2*z + z^2 - 6*z^3 + 2*z^4 + 4*z^5 - 
+            z^6))*G[-r^(-1), -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*
+         z*(y + z - y*z)^2) + (2*(-1 + y)*(-40*y^5*(-1 + z)^6 + 
+          16*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*(9 - 25*z + 9*z^2) - 
+          2*y^3*(-1 + z)^3*(-5 + 48*z - 45*z^2 + 6*z^3) + 6*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(3 + 44*z - 72*z^2 + 40*z^3 + z^4) + 
+          y*(3 + 12*z - 31*z^2 + 46*z^3 - 37*z^4 + 6*z^5 + z^6))*
+         G[-r^(-1), r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) + (4*(-1 + y)*(4*y^4*(-1 + z)^4 + z^2 + z^4 + 
+          2*y^2*(-1 + z)^2*z*(-2 + 5*z) - 2*y^3*(-1 + z)^3*(-1 + 5*z) + 
+          y*(1 + 2*z - 4*z^2 + 6*z^3 - 5*z^4))*G[r^(-1), 0, t])/
+        ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) - 
+       (6*(-1 + y)*(4*y^4*(-1 + z)^4 + z^2 + z^4 + 2*y^2*(-1 + z)^2*z*
+           (-2 + 5*z) - 2*y^3*(-1 + z)^3*(-1 + 5*z) + 
+          y*(1 + 2*z - 4*z^2 + 6*z^3 - 5*z^4))*G[r^(-1), -r^(-1), t])/
+        ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) - 
+       (4*(-1 + y)*(4*y^4*(-1 + z)^4 + z^2 + z^4 + 2*y^2*(-1 + z)^2*z*
+           (-2 + 5*z) - 2*y^3*(-1 + z)^3*(-1 + 5*z) + 
+          y*(1 + 2*z - 4*z^2 + 6*z^3 - 5*z^4))*G[r^(-1), r^(-1), t])/
+        ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) - 
+       (2*(-1 + y)*(-40*y^5*(-1 + z)^6 + 16*y^6*(-1 + z)^6 + 
+          4*y^4*(-1 + z)^4*(9 - 25*z + 9*z^2) - 2*y^3*(-1 + z)^3*
+           (-5 + 48*z - 45*z^2 + 6*z^3) + 6*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(3 + 44*z - 72*z^2 + 40*z^3 + z^4) + 
+          y*(3 + 12*z - 31*z^2 + 46*z^3 - 37*z^4 + 6*z^5 + z^6))*
+         G[r^(-1), -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (2*(-1 + y)*(-10*y^5*(-1 + z)^6 + 
+          4*y^6*(-1 + z)^6 - z^2*(1 + z^2) + 2*y^4*(-1 + z)^4*
+           (2 - 10*z + 7*z^2) - y^3*(-1 + z)^3*(5 + 9*z - 15*z^2 + 13*z^3) + 
+          y^2*(-1 + z)^2*(-7 - 6*z - 7*z^2 - 10*z^3 + 6*z^4) + 
+          y*(2 - 2*z + z^2 - 6*z^3 + 2*z^4 + 4*z^5 - z^6))*G[r^(-1), r, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (4*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 2*z^3 - 
+          2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*(9 - 8*z + 2*z^2) - 
+          y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*G[-r, 0, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+       (2*y*(-2 - 14*y^5*(-1 + z)^6 + 4*y^6*(-1 + z)^6 - z^2 + 5*z^4 - 
+          4*z^5 + 2*y^4*(-1 + z)^4*(7 - 20*z + 12*z^2) - 
+          y^3*(-1 + z)^3*(-1 + 27*z - 61*z^2 + 23*z^3) + 
+          y^2*(-1 + z)^2*(-8 - 2*z + 29*z^2 - 54*z^3 + 11*z^4) + 
+          y*(7 - 8*z + 2*z^2 + 18*z^3 - 43*z^4 + 26*z^5 - 2*z^6))*
+         G[-r, -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) + (2*y*(-56*y^5*(-1 + z)^6 + 16*y^6*(-1 + z)^6 + 
+          4*y^4*(-1 + z)^4*(19 - 45*z + 19*z^2) - 2*y^3*(-1 + z)^3*
+           (-27 + 104*z - 107*z^2 + 26*z^3) + y^2*(-1 + z)^2*
+           (23 - 118*z + 186*z^2 - 126*z^3 + 19*z^4) + 
+          2*(1 + 8*z^2 - 5*z^3 + 5*z^4 - 3*z^5) + 
+          y*(-7 + 38*z - 107*z^2 + 142*z^3 - 107*z^4 + 44*z^5 - 3*z^6))*
+         G[-r, r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) + (4*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 
+          2*z^3 - 2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*
+           (9 - 8*z + 2*z^2) - y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*
+         G[-r, -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+       (6*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 2*z^3 - 
+          2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*(9 - 8*z + 2*z^2) - 
+          y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*G[-r, r, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+       (4*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 2*z^3 - 
+          2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*(9 - 8*z + 2*z^2) - 
+          y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*G[r, 0, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) - 
+       (2*y*(-56*y^5*(-1 + z)^6 + 16*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*
+           (19 - 45*z + 19*z^2) - 2*y^3*(-1 + z)^3*(-27 + 104*z - 107*z^2 + 
+            26*z^3) + y^2*(-1 + z)^2*(23 - 118*z + 186*z^2 - 126*z^3 + 
+            19*z^4) + 2*(1 + 8*z^2 - 5*z^3 + 5*z^4 - 3*z^5) + 
+          y*(-7 + 38*z - 107*z^2 + 142*z^3 - 107*z^4 + 44*z^5 - 3*z^6))*
+         G[r, -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (2*y*(-2 - 14*y^5*(-1 + z)^6 + 4*y^6*(-1 + z)^6 - 
+          z^2 + 5*z^4 - 4*z^5 + 2*y^4*(-1 + z)^4*(7 - 20*z + 12*z^2) - 
+          y^3*(-1 + z)^3*(-1 + 27*z - 61*z^2 + 23*z^3) + 
+          y^2*(-1 + z)^2*(-8 - 2*z + 29*z^2 - 54*z^3 + 11*z^4) + 
+          y*(7 - 8*z + 2*z^2 + 18*z^3 - 43*z^4 + 26*z^5 - 2*z^6))*
+         G[r, r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (6*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 
+          2*z^3 - 2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*
+           (9 - 8*z + 2*z^2) - y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*
+         G[r, -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) - 
+       (4*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 2*z^3 - 
+          2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*(9 - 8*z + 2*z^2) - 
+          y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*G[r, r, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) - 
        (64*(1 - 2*y*(-1 + z)^2 + 2*y^2*(-1 + z)^2 + z^2)*Log[1 - z]^2)/
         ((-1 + z)*z) - (64*(1 - 2*y*(-1 + z)^2 + 2*y^2*(-1 + z)^2 + z^2)*
          Log[1 + z]^2)/((-1 + z)*z) + 
@@ -8410,17 +10400,15 @@
            502*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
            695*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 
            494*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] + 
-           235*Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z])) - 
-       144*(-1 + 2*y)*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z]*
-        (-30*y^5*(-1 + z)^6 + 10*y^6*(-1 + z)^6 - 4*y^3*(-1 + z)^4*
-          (4 - 15*z + 5*z^2) + y^4*(-1 + z)^4*(33 - 80*z + 35*z^2) + 
-         y*(-1 + z)^2*(1 + 10*z - 7*z^2 + 10*z^3) + 4*(z^2 + z^4) + 
-         y^2*(-1 + z)^2*(2 - 36*z + 55*z^2 - 40*z^3 + 5*z^4))*Zeta[3])/
-      (36*(-1 + 2*y)*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*(y + z - y*z)^(5/2)) + 
-     P[1 - z, 0]*((64*(1 - 2*y*(-1 + z)^2 + 2*y^2*(-1 + z)^2 + z^2)*Log[2]^3)/
-        (3*z) - (64*(1 - 2*y*(-1 + z)^2 + 2*y^2*(-1 + z)^2 + z^2)*
-         Log[1 + z]^3)/(3*z) - 
-       (4*(-4*y^3*(-1 + z)^4*(69*Sqrt[z] + (-103 + 12*Pi^2)*
+           235*Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z])) + 
+       216*Sqrt[1 + y*(-1 + z)]*(y + z - y*z)^(5/2)*(1 + 4*y^5*(-1 + z)^4 + 
+         z^2 - 2*y^4*(-1 + z)^3*(-7 + 3*z) - 2*y*z*(-1 + z^2) + 
+         4*y^3*(2 - 3*z + z^2)^2 - y^2*(7 - 14*z + 16*z^2 - 10*z^3 + z^4))*
+        Zeta[3])/(36*(-1 + 2*y)*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*
+       (y + z - y*z)^(5/2)) + P[1 - z, 0]*
+      ((64*(1 - 2*y*(-1 + z)^2 + 2*y^2*(-1 + z)^2 + z^2)*Log[2]^3)/(3*z) - 
+       (64*(1 - 2*y*(-1 + z)^2 + 2*y^2*(-1 + z)^2 + z^2)*Log[1 + z]^3)/
+        (3*z) - (4*(-4*y^3*(-1 + z)^4*(69*Sqrt[z] + (-103 + 12*Pi^2)*
              Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z]) + 2*y^4*(-1 + z)^4*
            (69*Sqrt[z] + (-103 + 12*Pi^2)*Sqrt[1 + y*(-1 + z)]*
              Sqrt[y + z - y*z]) + z*(6*Sqrt[z] - 15*z^(3/2) + 
@@ -8517,760 +10505,82 @@
             (610 + 5*Pi^2 - 348*Zeta[3]) + Sqrt[1 + y*(-1 + z)]*
             Sqrt[y + z - y*z]*(-1826 - 15*Pi^2 + 1044*Zeta[3])))/
         (54*(1 + y*(-1 + z))^(3/2)*(y*(-1 + z) - z)*z*Sqrt[y + z - y*z]))) + 
-   P[y, 0]*(((-36*y^5*(-1 + z)^6*(-78*Sqrt[z] + 115*Sqrt[1 + y*(-1 + z)]*
-           Sqrt[y + z - y*z]) + 12*y^6*(-1 + z)^6*(-78*Sqrt[z] + 
-          115*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z]) + 
-        z^2*(36*Sqrt[z] - 90*z^(3/2) + 196*Sqrt[1 + y*(-1 + z)]*
-           Sqrt[y + z - y*z] + 177*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-          193*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z]) - 
-        4*y^3*(-1 + z)^3*(504*Sqrt[z] - 1260*z^(3/2) + 1359*z^(5/2) - 
-          495*z^(7/2) - 679*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-          2161*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-          2205*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
-          687*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z]) + 
-        2*y^4*(-1 + z)^3*(1674*Sqrt[z] - 4770*z^(3/2) + 4869*z^(5/2) - 
-          1665*z^(7/2) - 2404*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-          7336*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-          7380*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
-          2412*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z]) + 
-        y*(-1 + z)*(504*z^(3/2) - 54*z^(5/2) + 288*z^(7/2) - 522*z^(9/2) - 
-          63*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
-          1033*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-          778*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
-          931*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
-          945*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
-          16*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
-        y^2*(-1 + z)*(540*Sqrt[z] - 2700*z^(3/2) + 4140*z^(5/2) - 
-          4554*z^(7/2) + 2880*z^(9/2) - 522*z^(11/2) - 
-          605*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-          4621*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-          8290*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
-          8547*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
-          4653*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
-          668*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]))*G[-1, t^2])/
+   P[y, 0]*(((36*y^5*(-1 + z)^6*(78*Sqrt[z] + (-115 + 16*Pi^2)*
+           Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z]) - 12*y^6*(-1 + z)^6*
+         (78*Sqrt[z] + (-115 + 16*Pi^2)*Sqrt[1 + y*(-1 + z)]*
+           Sqrt[y + z - y*z]) + z^2*(36*Sqrt[z] - 90*z^(3/2) + 
+          28*(7 - 3*Pi^2)*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
+          177*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
+          (193 - 84*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z]) - 
+        2*y^4*(-1 + z)^3*(-1674*Sqrt[z] + 4770*z^(3/2) - 4869*z^(5/2) + 
+          1665*z^(7/2) + 4*(601 - 81*Pi^2)*Sqrt[1 + y*(-1 + z)]*
+           Sqrt[y + z - y*z] + 8*(-917 + 138*Pi^2)*Sqrt[1 + y*(-1 + z)]*z*
+           Sqrt[y + z - y*z] - 12*(-615 + 92*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^2*
+           Sqrt[y + z - y*z] + 36*(-67 + 9*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^3*
+           Sqrt[y + z - y*z]) + 4*y^3*(-1 + z)^3*(-504*Sqrt[z] + 
+          1260*z^(3/2) - 1359*z^(5/2) + 495*z^(7/2) + 7*(97 - 12*Pi^2)*
+           Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + (-2161 + 384*Pi^2)*
+           Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 3*(735 - 128*Pi^2)*
+           Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 3*(-229 + 28*Pi^2)*
+           Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z]) - 
+        y*(-1 + z)*(-504*z^(3/2) + 54*z^(5/2) - 288*z^(7/2) + 522*z^(9/2) + 
+          3*(21 - 2*Pi^2)*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
+          (1033 - 174*Pi^2)*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
+          2*(-389 + 180*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
+          (931 - 360*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
+          3*(-315 + 58*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
+          2*(-8 + 3*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) - 
+        y^2*(-1 + z)*(-540*Sqrt[z] + 2700*z^(3/2) - 4140*z^(5/2) + 
+          4554*z^(7/2) - 2880*z^(9/2) + 522*z^(11/2) + 11*(55 - 6*Pi^2)*
+           Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + (-4621 + 798*Pi^2)*
+           Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 2*(4145 - 936*Pi^2)*
+           Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 3*(-2849 + 624*Pi^2)*
+           Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 3*(1551 - 266*Pi^2)*
+           Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 2*(-334 + 33*Pi^2)*
+           Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]))*G[-1, t^2])/
       (9*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*(y + z - y*z)^(5/2)) + 
-     ((-12*y^5*(-1 + z)^6*(-42*Sqrt[z] + 67*Sqrt[1 + y*(-1 + z)]*
+     ((-12*y^5*(-1 + z)^6*(-42*Sqrt[z] + (67 + 6*Pi^2)*Sqrt[1 + y*(-1 + z)]*
            Sqrt[y + z - y*z]) + 4*y^6*(-1 + z)^6*(-42*Sqrt[z] + 
-          67*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z]) + 
-        z^2*(12*Sqrt[z] - 30*z^(3/2) + 2*Sqrt[1 + y*(-1 + z)]*
+          (67 + 6*Pi^2)*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z]) + 
+        z^2*(12*Sqrt[z] - 30*z^(3/2) + 2*(1 + 3*Pi^2)*Sqrt[1 + y*(-1 + z)]*
            Sqrt[y + z - y*z] + 66*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-          23*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z]) - 
+          (23 + 6*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z]) - 
         4*y^3*(-1 + z)^2*(-84*Sqrt[z] + 300*z^(3/2) - 465*z^(5/2) + 
-          330*z^(7/2) - 81*z^(9/2) + 155*Sqrt[1 + y*(-1 + z)]*
-           Sqrt[y + z - y*z] - 535*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-          736*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
-          487*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
-          149*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z]) + 
-        2*y^4*(-1 + z)^2*(-294*Sqrt[z] + 1140*z^(3/2) - 1725*z^(5/2) + 
-          1170*z^(7/2) - 291*z^(9/2) + 490*Sqrt[1 + y*(-1 + z)]*
-           Sqrt[y + z - y*z] - 1875*Sqrt[1 + y*(-1 + z)]*z*
-           Sqrt[y + z - y*z] + 2746*Sqrt[1 + y*(-1 + z)]*z^2*
-           Sqrt[y + z - y*z] - 1827*Sqrt[1 + y*(-1 + z)]*z^3*
-           Sqrt[y + z - y*z] + 484*Sqrt[1 + y*(-1 + z)]*z^4*
-           Sqrt[y + z - y*z]) + y*(-72*z^(3/2) + 42*z^(5/2) - 18*z^(7/2) + 
-          126*z^(9/2) - 78*z^(11/2) - 63*Sqrt[1 + y*(-1 + z)]*
-           Sqrt[y + z - y*z] + 106*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-          105*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
-          124*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
-          222*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
-          124*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
-        y^2*(-84*Sqrt[z] + 504*z^(3/2) - 1080*z^(5/2) + 1458*z^(7/2) - 
-          1278*z^(9/2) + 558*z^(11/2) - 78*z^(13/2) + 
-          239*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
-          992*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-          2017*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
-          2432*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
-          1930*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 
-          890*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] + 
-          164*Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]))*G[0, t^2])/
-      (9*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*(y + z - y*z)^(5/2)) + 
-     G[0, t]*((24*y^5*(-1 + z)^6*(-21*Sqrt[z] + 103*Sqrt[1 + y*(-1 + z)]*
-            Sqrt[y + z - y*z]) - 8*y^6*(-1 + z)^6*(-21*Sqrt[z] + 
-           103*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z]) - 
-         z^2*(12*Sqrt[z] - 30*z^(3/2) + 86*Sqrt[1 + y*(-1 + z)]*
-            Sqrt[y + z - y*z] + 147*Sqrt[1 + y*(-1 + z)]*z*
-            Sqrt[y + z - y*z] + 116*Sqrt[1 + y*(-1 + z)]*z^2*
-            Sqrt[y + z - y*z]) + 4*y^3*(-1 + z)^2*(-84*Sqrt[z] + 
-           300*z^(3/2) - 465*z^(5/2) + 330*z^(7/2) - 81*z^(9/2) + 
-           416*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
-           1675*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-           2514*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
-           1667*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
-           430*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z]) - 
-         2*y^4*(-1 + z)^2*(-294*Sqrt[z] + 1140*z^(3/2) - 1725*z^(5/2) + 
-           1170*z^(7/2) - 291*z^(9/2) + 1446*Sqrt[1 + y*(-1 + z)]*
-            Sqrt[y + z - y*z] - 5795*Sqrt[1 + y*(-1 + z)]*z*
-            Sqrt[y + z - y*z] + 8694*Sqrt[1 + y*(-1 + z)]*z^2*
-            Sqrt[y + z - y*z] - 5787*Sqrt[1 + y*(-1 + z)]*z^3*
-            Sqrt[y + z - y*z] + 1460*Sqrt[1 + y*(-1 + z)]*z^4*
-            Sqrt[y + z - y*z]) + y*z*(72*Sqrt[z] - 42*z^(3/2) + 18*z^(5/2) - 
-           126*z^(7/2) + 78*z^(9/2) - 540*Sqrt[1 + y*(-1 + z)]*
-            Sqrt[y + z - y*z] + 860*Sqrt[1 + y*(-1 + z)]*z*
-            Sqrt[y + z - y*z] - 757*Sqrt[1 + y*(-1 + z)]*z^2*
-            Sqrt[y + z - y*z] + 1042*Sqrt[1 + y*(-1 + z)]*z^3*
-            Sqrt[y + z - y*z] - 553*Sqrt[1 + y*(-1 + z)]*z^4*
-            Sqrt[y + z - y*z] - 16*Sqrt[1 + y*(-1 + z)]*z^5*
-            Sqrt[y + z - y*z]) + y^2*(84*Sqrt[z] - 504*z^(3/2) + 
-           1080*z^(5/2) - 1458*z^(7/2) + 1278*z^(9/2) - 558*z^(11/2) + 
-           78*z^(13/2) - 420*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-           3082*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-           7240*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
-           9257*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
-           7418*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
-           3135*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] - 
-           432*Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]))/
-        (9*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*(y + z - y*z)^(5/2)) - 
-       (4*(-132*y^5*(-1 + z)^6 + 44*y^6*(-1 + z)^6 - 
-          3*z^2*(5 - 16*z + 5*z^2) - 4*y^3*(-1 + z)^4*(39 + 24*z + 34*z^2) + 
-          2*y^4*(-1 + z)^4*(94 - 86*z + 89*z^2) - y*(-1 + z)^2*
-           (18 + 26*z - 91*z^2 + 26*z^3 + 13*z^4) + y^2*(-1 + z)^2*
-           (74 + 6*z - 173*z^2 + 26*z^3 + 59*z^4))*G[-I, r])/
-        (3*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
-       (4*(-132*y^5*(-1 + z)^6 + 44*y^6*(-1 + z)^6 - 
-          3*z^2*(5 - 16*z + 5*z^2) - 4*y^3*(-1 + z)^4*(39 + 24*z + 34*z^2) + 
-          2*y^4*(-1 + z)^4*(94 - 86*z + 89*z^2) - y*(-1 + z)^2*
-           (18 + 26*z - 91*z^2 + 26*z^3 + 13*z^4) + y^2*(-1 + z)^2*
-           (74 + 6*z - 173*z^2 + 26*z^3 + 59*z^4))*G[I, r])/
-        (3*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2)) + 
-     ((-4*y^7*(-1 + z)^6*(-234*Sqrt[z] + 67*Sqrt[1 + y*(-1 + z)]*
-           Sqrt[y + z - y*z]) + 2*y^6*(-1 + z)^5*(1638*Sqrt[z] - 
-          1638*z^(3/2) - 451*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-          469*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z]) + 
-        z^2*(18*Sqrt[z] - 45*z^(3/2) + 10*Sqrt[1 + y*(-1 + z)]*
-           Sqrt[y + z - y*z] + 60*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-          7*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z]) - 
-        2*y^5*(-1 + z)^3*(2376*Sqrt[z] - 6876*z^(3/2) + 6975*z^(5/2) - 
-          2367*z^(7/2) - 639*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-          1903*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-          1961*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
-          661*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z]) + 
-        y^3*(-1 + z)*(-1548*Sqrt[z] + 7236*z^(3/2) - 12906*z^(5/2) + 
-          13500*z^(7/2) - 7578*z^(9/2) + 1512*z^(11/2) + 
-          751*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
-          1955*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-          3036*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
-          3331*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
-          2329*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 
-          398*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
-        y^4*(-1 + z)*(3690*Sqrt[z] - 17190*z^(3/2) + 33615*z^(5/2) - 
-          34065*z^(7/2) + 17595*z^(9/2) - 3645*z^(11/2) - 
-          1127*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-          4759*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-          8977*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
-          9261*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
-          5028*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
-          968*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) - 
-        y*(252*z^(3/2) - 243*z^(5/2) + 81*z^(7/2) - 405*z^(9/2) + 
-          261*z^(11/2) + 63*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
-          80*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-          193*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
-          106*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 
-          68*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] + 
-          16*Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]) + 
-        y^2*(-270*Sqrt[z] + 2124*z^(3/2) - 3978*z^(5/2) + 4689*z^(7/2) - 
-          4527*z^(9/2) + 2223*z^(11/2) - 261*z^(13/2) + 
-          331*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
-          700*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-          711*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
-          695*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
-          1138*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 
-          703*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] + 
-          98*Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]))*G[-r^(-1), t])/
-      (9*(-1 + 2*y)*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*(y + z - y*z)^(5/2)) + 
-     ((-9*z^2*(-2 + 5*z)*(Sqrt[z] + Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z]) - 
-        4*y^7*(-1 + z)^6*(-234*Sqrt[z] + 67*Sqrt[1 + y*(-1 + z)]*
-           Sqrt[y + z - y*z]) + 2*y^6*(-1 + z)^5*(1638*Sqrt[z] - 
-          1638*z^(3/2) - 487*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-          469*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z]) - 
-        2*y^5*(-1 + z)^3*(2376*Sqrt[z] - 6876*z^(3/2) + 6975*z^(5/2) - 
-          2367*z^(7/2) - 747*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-          2119*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-          2069*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
-          661*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z]) + 
-        y*z*(-252*Sqrt[z] + 243*z^(3/2) - 81*z^(5/2) + 405*z^(7/2) - 
-          261*z^(9/2) + 22*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
-          357*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-          606*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
-          144*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
-          3*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z]) + 
-        y^3*(-1 + z)*(-1548*Sqrt[z] + 7236*z^(3/2) - 12906*z^(5/2) + 
-          13500*z^(7/2) - 7578*z^(9/2) + 1512*z^(11/2) + 
-          363*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
-          2519*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-          5768*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
-          5087*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
-          1697*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 
-          366*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
-        y^4*(-1 + z)*(3690*Sqrt[z] - 17190*z^(3/2) + 33615*z^(5/2) - 
-          34065*z^(7/2) + 17595*z^(9/2) - 3645*z^(11/2) - 
-          1113*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-          5761*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-          11423*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
-          10859*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
-          4892*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
-          952*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
-        y^2*(-270*Sqrt[z] + 2124*z^(3/2) - 3978*z^(5/2) + 4689*z^(7/2) - 
-          4527*z^(9/2) + 2223*z^(11/2) - 261*z^(13/2) + 
-          38*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
-          550*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-          2356*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
-          3378*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
-          1558*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 
-          270*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] + 
-          66*Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]))*G[-r, t])/
-      (9*(-1 + 2*y)*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*(y + z - y*z)^(5/2)) + 
-     G[-I, r]*((1668*y^5*(-1 + z)^6 - 556*y^6*(-1 + z)^6 - 
-         3*z^2*(28 + 27*z + 31*z^2) - 8*y^4*(-1 + z)^4*(239 - 502*z + 
-           244*z^2) + 4*y^3*(-1 + z)^4*(261 - 618*z + 281*z^2) + 
-         y^2*(-181 + 2090*z - 5223*z^2 + 6825*z^3 - 5488*z^4 + 2245*z^5 - 
-           268*z^6) - y*(63 + 434*z - 755*z^2 + 633*z^3 - 820*z^4 + 429*z^5 + 
-           16*z^6))/(9*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
-       ((-1 + y)*(3*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z]*
-           (3 + 8*z + 3*z^2) + 4*y^6*(-1 + z)^6*(-18*Sqrt[z] + 
-            11*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z]) - 
-          2*y^5*(-1 + z)^5*(90*Sqrt[z] - 90*z^(3/2) - 19*Sqrt[1 + y*(-1 + z)]*
-             Sqrt[y + z - y*z] + 55*Sqrt[1 + y*(-1 + z)]*z*
-             Sqrt[y + z - y*z]) + 2*y^4*(-1 + z)^4*(-90*Sqrt[z] + 
-            180*z^(3/2) - 90*z^(5/2) + 24*Sqrt[1 + y*(-1 + z)]*
-             Sqrt[y + z - y*z] + 42*Sqrt[1 + y*(-1 + z)]*z*
-             Sqrt[y + z - y*z] + 91*Sqrt[1 + y*(-1 + z)]*z^2*
-             Sqrt[y + z - y*z]) + y^3*(-1 + z)*(-90*Sqrt[z] + 450*z^(3/2) - 
-            900*z^(5/2) + 900*z^(7/2) - 450*z^(9/2) + 90*z^(11/2) - 
-            2*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
-            38*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-            305*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
-            239*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
-            347*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 
-            97*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
-          2*y^2*(-1 + z)*(9*Sqrt[z] - 63*z^(3/2) + 108*z^(5/2) - 
-            108*z^(7/2) + 63*z^(9/2) - 9*z^(11/2) + 13*Sqrt[1 + y*(-1 + z)]*
-             Sqrt[y + z - y*z] + 24*Sqrt[1 + y*(-1 + z)]*z*
-             Sqrt[y + z - y*z] + 86*Sqrt[1 + y*(-1 + z)]*z^2*
-             Sqrt[y + z - y*z] - 115*Sqrt[1 + y*(-1 + z)]*z^3*
-             Sqrt[y + z - y*z] - 83*Sqrt[1 + y*(-1 + z)]*z^4*
-             Sqrt[y + z - y*z] + 3*Sqrt[1 + y*(-1 + z)]*z^5*
-             Sqrt[y + z - y*z]) + y*(-18*z^(3/2) + 36*z^(5/2) - 36*z^(7/2) + 
-            36*z^(9/2) - 18*z^(11/2) + 6*Sqrt[1 + y*(-1 + z)]*
-             Sqrt[y + z - y*z] + 2*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-            2*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
-            126*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
-            7*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
-            18*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] + 
-            Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]))*G[-r^(-1), t])/
-        (3*(-1 + 2*y)*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*
-         (y + z - y*z)^(5/2)) - ((-1 + y)*(3*Sqrt[1 + y*(-1 + z)]*z^2*
-           Sqrt[y + z - y*z]*(3 + 8*z + 3*z^2) + 4*y^6*(-1 + z)^6*
-           (18*Sqrt[z] + 11*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z]) - 
-          2*y^5*(-1 + z)^5*(-90*Sqrt[z] + 90*z^(3/2) - 
-            19*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-            55*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z]) + 
-          2*y^4*(-1 + z)^4*(90*Sqrt[z] - 180*z^(3/2) + 90*z^(5/2) + 
-            24*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-            42*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-            91*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z]) + 
-          2*y^2*(-1 + z)*(-9*Sqrt[z] + 63*z^(3/2) - 108*z^(5/2) + 
-            108*z^(7/2) - 63*z^(9/2) + 9*z^(11/2) + 13*Sqrt[1 + y*(-1 + z)]*
-             Sqrt[y + z - y*z] + 24*Sqrt[1 + y*(-1 + z)]*z*
-             Sqrt[y + z - y*z] + 86*Sqrt[1 + y*(-1 + z)]*z^2*
-             Sqrt[y + z - y*z] - 115*Sqrt[1 + y*(-1 + z)]*z^3*
-             Sqrt[y + z - y*z] - 83*Sqrt[1 + y*(-1 + z)]*z^4*
-             Sqrt[y + z - y*z] + 3*Sqrt[1 + y*(-1 + z)]*z^5*
-             Sqrt[y + z - y*z]) - y^3*(-1 + z)*(-90*Sqrt[z] + 450*z^(3/2) - 
-            900*z^(5/2) + 900*z^(7/2) - 450*z^(9/2) + 90*z^(11/2) + 
-            2*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-            38*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-            305*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
-            239*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
-            347*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
-            97*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
-          y*(18*z^(3/2) - 36*z^(5/2) + 36*z^(7/2) - 36*z^(9/2) + 
-            18*z^(11/2) + 6*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-            2*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-            2*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
-            126*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
-            7*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
-            18*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] + 
-            Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]))*G[r^(-1), t])/
-        (3*(-1 + 2*y)*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*
-         (y + z - y*z)^(5/2)) - 
-       (y*(4*y^6*(-1 + z)^6*(-18*Sqrt[z] + 11*Sqrt[1 + y*(-1 + z)]*
-             Sqrt[y + z - y*z]) - 2*y^5*(-1 + z)^5*(126*Sqrt[z] - 
-            126*z^(3/2) - 113*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-            77*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z]) + 
-          2*y^4*(-1 + z)^4*(-180*Sqrt[z] + 360*z^(3/2) - 180*z^(5/2) + 
-            259*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
-            248*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-            146*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z]) + 
-          y^3*(-1 + z)*(-270*Sqrt[z] + 1350*z^(3/2) - 2700*z^(5/2) + 
-            2700*z^(7/2) - 1350*z^(9/2) + 270*z^(11/2) + 
-            694*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
-            1982*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-            2721*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
-            2287*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
-            1121*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 
-            411*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
-          y^2*(-1 + z)*(108*Sqrt[z] - 576*z^(3/2) + 1116*z^(5/2) - 
-            1116*z^(7/2) + 576*z^(9/2) - 108*z^(11/2) - 
-            548*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-            974*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-            1107*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
-            1019*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
-            417*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
-            367*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
-          y*(18*Sqrt[z] - 162*z^(3/2) + 378*z^(5/2) - 468*z^(7/2) + 
-            378*z^(9/2) - 162*z^(11/2) + 18*z^(13/2) - 
-            226*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-            450*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-            397*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
-            498*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
-            267*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
-            214*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] - 
-            164*Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]) + 
-          2*(9*z^(3/2) - 18*z^(5/2) + 18*z^(7/2) - 18*z^(9/2) + 9*z^(11/2) + 
-            18*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
-            28*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-            7*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
-            30*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
-            2*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 
-            15*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] + 
-            13*Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]))*G[-r, t])/
-        (3*(-1 + 2*y)*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*
-         (y + z - y*z)^(5/2)) + 
-       (y*(-4*y^6*(-1 + z)^6*(18*Sqrt[z] + 11*Sqrt[1 + y*(-1 + z)]*
-             Sqrt[y + z - y*z]) + 2*y^5*(-1 + z)^5*(-126*Sqrt[z] + 
-            126*z^(3/2) - 113*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-            77*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z]) - 
-          2*y^4*(-1 + z)^4*(180*Sqrt[z] - 360*z^(3/2) + 180*z^(5/2) + 
-            259*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
-            248*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-            146*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z]) - 
-          y^2*(-1 + z)*(-108*Sqrt[z] + 576*z^(3/2) - 1116*z^(5/2) + 
-            1116*z^(7/2) - 576*z^(9/2) + 108*z^(11/2) - 
-            548*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-            974*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-            1107*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
-            1019*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
-            417*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
-            367*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
-          y^3*(-1 + z)*(-270*Sqrt[z] + 1350*z^(3/2) - 2700*z^(5/2) + 
-            2700*z^(7/2) - 1350*z^(9/2) + 270*z^(11/2) - 
-            694*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-            1982*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-            2721*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
-            2287*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
-            1121*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
-            411*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
-          2*(9*z^(3/2) - 18*z^(5/2) + 18*z^(7/2) - 18*z^(9/2) + 9*z^(11/2) - 
-            18*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-            28*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-            7*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
-            30*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
-            2*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
-            15*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] - 
-            13*Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]) + 
-          y*(18*Sqrt[z] - 162*z^(3/2) + 378*z^(5/2) - 468*z^(7/2) + 
-            378*z^(9/2) - 162*z^(11/2) + 18*z^(13/2) + 
-            226*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
-            450*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-            397*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
-            498*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
-            267*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 
-            214*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] + 
-            164*Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]))*G[r, t])/
-        (3*(-1 + 2*y)*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*
-         (y + z - y*z)^(5/2))) + 
-     G[I, r]*((1668*y^5*(-1 + z)^6 - 556*y^6*(-1 + z)^6 - 
-         3*z^2*(28 + 27*z + 31*z^2) - 8*y^4*(-1 + z)^4*(239 - 502*z + 
-           244*z^2) + 4*y^3*(-1 + z)^4*(261 - 618*z + 281*z^2) + 
-         y^2*(-181 + 2090*z - 5223*z^2 + 6825*z^3 - 5488*z^4 + 2245*z^5 - 
-           268*z^6) - y*(63 + 434*z - 755*z^2 + 633*z^3 - 820*z^4 + 429*z^5 + 
-           16*z^6))/(9*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
-       ((-1 + y)*(3*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z]*
-           (3 + 8*z + 3*z^2) + 4*y^6*(-1 + z)^6*(-18*Sqrt[z] + 
-            11*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z]) - 
-          2*y^5*(-1 + z)^5*(90*Sqrt[z] - 90*z^(3/2) - 19*Sqrt[1 + y*(-1 + z)]*
-             Sqrt[y + z - y*z] + 55*Sqrt[1 + y*(-1 + z)]*z*
-             Sqrt[y + z - y*z]) + 2*y^4*(-1 + z)^4*(-90*Sqrt[z] + 
-            180*z^(3/2) - 90*z^(5/2) + 24*Sqrt[1 + y*(-1 + z)]*
-             Sqrt[y + z - y*z] + 42*Sqrt[1 + y*(-1 + z)]*z*
-             Sqrt[y + z - y*z] + 91*Sqrt[1 + y*(-1 + z)]*z^2*
-             Sqrt[y + z - y*z]) + y^3*(-1 + z)*(-90*Sqrt[z] + 450*z^(3/2) - 
-            900*z^(5/2) + 900*z^(7/2) - 450*z^(9/2) + 90*z^(11/2) - 
-            2*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
-            38*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-            305*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
-            239*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
-            347*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 
-            97*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
-          2*y^2*(-1 + z)*(9*Sqrt[z] - 63*z^(3/2) + 108*z^(5/2) - 
-            108*z^(7/2) + 63*z^(9/2) - 9*z^(11/2) + 13*Sqrt[1 + y*(-1 + z)]*
-             Sqrt[y + z - y*z] + 24*Sqrt[1 + y*(-1 + z)]*z*
-             Sqrt[y + z - y*z] + 86*Sqrt[1 + y*(-1 + z)]*z^2*
-             Sqrt[y + z - y*z] - 115*Sqrt[1 + y*(-1 + z)]*z^3*
-             Sqrt[y + z - y*z] - 83*Sqrt[1 + y*(-1 + z)]*z^4*
-             Sqrt[y + z - y*z] + 3*Sqrt[1 + y*(-1 + z)]*z^5*
-             Sqrt[y + z - y*z]) + y*(-18*z^(3/2) + 36*z^(5/2) - 36*z^(7/2) + 
-            36*z^(9/2) - 18*z^(11/2) + 6*Sqrt[1 + y*(-1 + z)]*
-             Sqrt[y + z - y*z] + 2*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-            2*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
-            126*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
-            7*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
-            18*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] + 
-            Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]))*G[-r^(-1), t])/
-        (3*(-1 + 2*y)*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*
-         (y + z - y*z)^(5/2)) - ((-1 + y)*(3*Sqrt[1 + y*(-1 + z)]*z^2*
-           Sqrt[y + z - y*z]*(3 + 8*z + 3*z^2) + 4*y^6*(-1 + z)^6*
-           (18*Sqrt[z] + 11*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z]) - 
-          2*y^5*(-1 + z)^5*(-90*Sqrt[z] + 90*z^(3/2) - 
-            19*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-            55*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z]) + 
-          2*y^4*(-1 + z)^4*(90*Sqrt[z] - 180*z^(3/2) + 90*z^(5/2) + 
-            24*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-            42*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-            91*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z]) + 
-          2*y^2*(-1 + z)*(-9*Sqrt[z] + 63*z^(3/2) - 108*z^(5/2) + 
-            108*z^(7/2) - 63*z^(9/2) + 9*z^(11/2) + 13*Sqrt[1 + y*(-1 + z)]*
-             Sqrt[y + z - y*z] + 24*Sqrt[1 + y*(-1 + z)]*z*
-             Sqrt[y + z - y*z] + 86*Sqrt[1 + y*(-1 + z)]*z^2*
-             Sqrt[y + z - y*z] - 115*Sqrt[1 + y*(-1 + z)]*z^3*
-             Sqrt[y + z - y*z] - 83*Sqrt[1 + y*(-1 + z)]*z^4*
-             Sqrt[y + z - y*z] + 3*Sqrt[1 + y*(-1 + z)]*z^5*
-             Sqrt[y + z - y*z]) - y^3*(-1 + z)*(-90*Sqrt[z] + 450*z^(3/2) - 
-            900*z^(5/2) + 900*z^(7/2) - 450*z^(9/2) + 90*z^(11/2) + 
-            2*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-            38*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-            305*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
-            239*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
-            347*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
-            97*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
-          y*(18*z^(3/2) - 36*z^(5/2) + 36*z^(7/2) - 36*z^(9/2) + 
-            18*z^(11/2) + 6*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-            2*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-            2*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
-            126*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
-            7*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
-            18*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] + 
-            Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]))*G[r^(-1), t])/
-        (3*(-1 + 2*y)*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*
-         (y + z - y*z)^(5/2)) - 
-       (y*(4*y^6*(-1 + z)^6*(-18*Sqrt[z] + 11*Sqrt[1 + y*(-1 + z)]*
-             Sqrt[y + z - y*z]) - 2*y^5*(-1 + z)^5*(126*Sqrt[z] - 
-            126*z^(3/2) - 113*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-            77*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z]) + 
-          2*y^4*(-1 + z)^4*(-180*Sqrt[z] + 360*z^(3/2) - 180*z^(5/2) + 
-            259*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
-            248*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-            146*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z]) + 
-          y^3*(-1 + z)*(-270*Sqrt[z] + 1350*z^(3/2) - 2700*z^(5/2) + 
-            2700*z^(7/2) - 1350*z^(9/2) + 270*z^(11/2) + 
-            694*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
-            1982*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-            2721*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
-            2287*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
-            1121*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 
-            411*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
-          y^2*(-1 + z)*(108*Sqrt[z] - 576*z^(3/2) + 1116*z^(5/2) - 
-            1116*z^(7/2) + 576*z^(9/2) - 108*z^(11/2) - 
-            548*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-            974*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-            1107*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
-            1019*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
-            417*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
-            367*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
-          y*(18*Sqrt[z] - 162*z^(3/2) + 378*z^(5/2) - 468*z^(7/2) + 
-            378*z^(9/2) - 162*z^(11/2) + 18*z^(13/2) - 
-            226*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-            450*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-            397*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
-            498*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
-            267*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
-            214*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] - 
-            164*Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]) + 
-          2*(9*z^(3/2) - 18*z^(5/2) + 18*z^(7/2) - 18*z^(9/2) + 9*z^(11/2) + 
-            18*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
-            28*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-            7*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
-            30*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
-            2*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 
-            15*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] + 
-            13*Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]))*G[-r, t])/
-        (3*(-1 + 2*y)*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*
-         (y + z - y*z)^(5/2)) + 
-       (y*(-4*y^6*(-1 + z)^6*(18*Sqrt[z] + 11*Sqrt[1 + y*(-1 + z)]*
-             Sqrt[y + z - y*z]) + 2*y^5*(-1 + z)^5*(-126*Sqrt[z] + 
-            126*z^(3/2) - 113*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-            77*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z]) - 
-          2*y^4*(-1 + z)^4*(180*Sqrt[z] - 360*z^(3/2) + 180*z^(5/2) + 
-            259*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
-            248*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-            146*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z]) - 
-          y^2*(-1 + z)*(-108*Sqrt[z] + 576*z^(3/2) - 1116*z^(5/2) + 
-            1116*z^(7/2) - 576*z^(9/2) + 108*z^(11/2) - 
-            548*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-            974*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-            1107*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
-            1019*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
-            417*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
-            367*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
-          y^3*(-1 + z)*(-270*Sqrt[z] + 1350*z^(3/2) - 2700*z^(5/2) + 
-            2700*z^(7/2) - 1350*z^(9/2) + 270*z^(11/2) - 
-            694*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-            1982*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-            2721*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
-            2287*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
-            1121*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
-            411*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
-          2*(9*z^(3/2) - 18*z^(5/2) + 18*z^(7/2) - 18*z^(9/2) + 9*z^(11/2) - 
-            18*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-            28*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-            7*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
-            30*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
-            2*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
-            15*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] - 
-            13*Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]) + 
-          y*(18*Sqrt[z] - 162*z^(3/2) + 378*z^(5/2) - 468*z^(7/2) + 
-            378*z^(9/2) - 162*z^(11/2) + 18*z^(13/2) + 
-            226*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
-            450*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-            397*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
-            498*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
-            267*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 
-            214*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] + 
-            164*Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]))*G[r, t])/
-        (3*(-1 + 2*y)*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*
-         (y + z - y*z)^(5/2))) + 
-     G[0, r]*((-4*y^6*(-1 + z)^6*(-138*Sqrt[z] + 67*Sqrt[1 + y*(-1 + z)]*
-            Sqrt[y + z - y*z]) + 12*y^5*(-1 + z)^5*(138*Sqrt[z] - 
-           138*z^(3/2) - 70*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-           67*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z]) + 
-         z^2*(-24*Sqrt[z] + 60*z^(3/2) - 10*Sqrt[1 + y*(-1 + z)]*
-            Sqrt[y + z - y*z] + 39*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-           16*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z]) - 
-         2*y^4*(-1 + z)^3*(984*Sqrt[z] - 2808*z^(3/2) + 2874*z^(5/2) - 
-           978*z^(7/2) - 537*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-           1498*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-           1457*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
-           460*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z]) + 
-         y^2*(-1 + z)*(-312*Sqrt[z] + 1560*z^(3/2) - 2400*z^(5/2) + 
-           2676*z^(7/2) - 1680*z^(9/2) + 300*z^(11/2) + 
-           72*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
-           902*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-           2310*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
-           1867*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
-           555*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 
-           132*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
-         y*z*(288*Sqrt[z] - 300*z^(3/2) + 180*z^(5/2) - 468*z^(7/2) + 
-           300*z^(9/2) - 48*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-           454*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-           821*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
-           290*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
-           17*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
-           16*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
-         2*y^3*(-1 + z)*(588*Sqrt[z] - 2652*z^(3/2) + 5148*z^(5/2) - 
-           5268*z^(7/2) + 2760*z^(9/2) - 576*z^(11/2) - 
-           287*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-           1587*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-           3136*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
-           2918*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
-           1296*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
-           250*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]))/
-        (9*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*(y + z - y*z)^(5/2)) + 
-       (4*(z^2*(-1 + z - z^2) - y*(-1 + z)^2*z*(1 - 3*z + 3*z^2 + z^3) - 
-          2*y^3*(-1 + z)^3*(1 + 2*z + 10*z^2 + 3*z^3) + y^4*(-1 + z)^3*
-           (1 + 2*z + 10*z^2 + 3*z^3) + y^2*(-1 + z)^2*(-1 - 11*z^2 + 
-            10*z^3 + 4*z^4))*G[-1, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*
-         (-1 + z)*z*(y + z - y*z)^2) + 
-       (8*(Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z]*(2 + 11*z^2) + 
-          2*y^5*(-1 + z)^5*(-6*Sqrt[z] + Sqrt[1 + y*(-1 + z)]*
-             Sqrt[y + z - y*z]) - 2*y^4*(-1 + z)^4*(18*Sqrt[z] - 12*z^(3/2) + 
-            3*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 2*Sqrt[1 + y*(-1 + z)]*
-             z*Sqrt[y + z - y*z]) + y^3*(-1 + z)*(-42*Sqrt[z] + 132*z^(3/2) - 
-            156*z^(5/2) + 84*z^(7/2) - 18*z^(9/2) + 4*Sqrt[1 + y*(-1 + z)]*
-             Sqrt[y + z - y*z] + 60*Sqrt[1 + y*(-1 + z)]*z*
-             Sqrt[y + z - y*z] - 105*Sqrt[1 + y*(-1 + z)]*z^2*
-             Sqrt[y + z - y*z] + 32*Sqrt[1 + y*(-1 + z)]*z^3*
-             Sqrt[y + z - y*z] + 3*Sqrt[1 + y*(-1 + z)]*z^4*
-             Sqrt[y + z - y*z]) + y*(6*Sqrt[z] - 12*z^(3/2) + 12*z^(5/2) - 
-            12*z^(7/2) + 6*z^(9/2) - 4*Sqrt[1 + y*(-1 + z)]*
-             Sqrt[y + z - y*z] - 4*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-            53*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
-            58*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
-            16*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z]) + 
-          y^2*(-24*Sqrt[z] + 78*z^(3/2) - 108*z^(5/2) + 84*z^(7/2) - 
-            36*z^(9/2) + 6*z^(11/2) + 16*Sqrt[1 + y*(-1 + z)]*
-             Sqrt[y + z - y*z] + 28*Sqrt[1 + y*(-1 + z)]*z*
-             Sqrt[y + z - y*z] - 167*Sqrt[1 + y*(-1 + z)]*z^2*
-             Sqrt[y + z - y*z] + 164*Sqrt[1 + y*(-1 + z)]*z^3*
-             Sqrt[y + z - y*z] - 34*Sqrt[1 + y*(-1 + z)]*z^4*
-             Sqrt[y + z - y*z] - Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]))*
-         G[0, t])/(3*(1 + y*(-1 + z))^(5/2)*(y*(-1 + z) - z)*(-1 + z)*z*
-         Sqrt[y + z - y*z]) + (4*(z^2*(-1 + z - z^2) - y*(-1 + z)^2*z*
-           (1 - 3*z + 3*z^2 + z^3) - 2*y^3*(-1 + z)^3*(1 + 2*z + 10*z^2 + 
-            3*z^3) + y^4*(-1 + z)^3*(1 + 2*z + 10*z^2 + 3*z^3) + 
-          y^2*(-1 + z)^2*(-1 - 11*z^2 + 10*z^3 + 4*z^4))*G[1, t])/
-        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
-       ((-1 + y)*(Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z]*
-           (-29 + 36*z - 47*z^2) + 24*y^6*(-1 + z)^6*(3*Sqrt[z] + 
-            7*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z]) - 12*y^5*(-1 + z)^5*
-           (-15*Sqrt[z] + 15*z^(3/2) - 33*Sqrt[1 + y*(-1 + z)]*
-             Sqrt[y + z - y*z] + 35*Sqrt[1 + y*(-1 + z)]*z*
-             Sqrt[y + z - y*z]) + 2*y^4*(-1 + z)^2*(90*Sqrt[z] - 
-            360*z^(3/2) + 540*z^(5/2) - 360*z^(7/2) + 90*z^(9/2) + 
-            388*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
-            752*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-            733*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
-            726*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
-            345*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z]) - 
-          y^3*(-1 + z)^2*(90*Sqrt[z] - 360*z^(3/2) + 540*z^(5/2) - 
-            360*z^(7/2) + 90*z^(9/2) + 754*Sqrt[1 + y*(-1 + z)]*
-             Sqrt[y + z - y*z] - 728*Sqrt[1 + y*(-1 + z)]*z*
-             Sqrt[y + z - y*z] - 355*Sqrt[1 + y*(-1 + z)]*z^2*
-             Sqrt[y + z - y*z] - 378*Sqrt[1 + y*(-1 + z)]*z^3*
-             Sqrt[y + z - y*z] + 671*Sqrt[1 + y*(-1 + z)]*z^4*
-             Sqrt[y + z - y*z]) + y*(18*z^(3/2) - 36*z^(5/2) + 36*z^(7/2) - 
-            36*z^(9/2) + 18*z^(11/2) - 66*Sqrt[1 + y*(-1 + z)]*
-             Sqrt[y + z - y*z] + 82*Sqrt[1 + y*(-1 + z)]*z*
-             Sqrt[y + z - y*z] + 134*Sqrt[1 + y*(-1 + z)]*z^2*
-             Sqrt[y + z - y*z] - 406*Sqrt[1 + y*(-1 + z)]*z^3*
-             Sqrt[y + z - y*z] + 305*Sqrt[1 + y*(-1 + z)]*z^4*
-             Sqrt[y + z - y*z] + 26*Sqrt[1 + y*(-1 + z)]*z^5*
-             Sqrt[y + z - y*z] - 63*Sqrt[1 + y*(-1 + z)]*z^6*
-             Sqrt[y + z - y*z]) + 2*y^2*(9*Sqrt[z] - 72*z^(3/2) + 
-            171*z^(5/2) - 216*z^(7/2) + 171*z^(9/2) - 72*z^(11/2) + 
-            9*z^(13/2) + 172*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
-            393*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-            15*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
-            555*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
-            282*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 
-            240*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] + 
-            161*Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]))*G[-r^(-1), t])/
-        (3*(-1 + 2*y)*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*
-         (y + z - y*z)^(5/2)) + ((-1 + y)*(-3*Sqrt[1 + y*(-1 + z)]*z^2*
-           Sqrt[y + z - y*z]*(-5 - 12*z + z^2) + 8*y^6*(-1 + z)^6*
-           (3*Sqrt[z] + 19*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z]) - 
-          20*y^5*(-1 + z)^5*(-3*Sqrt[z] + 3*z^(3/2) - 13*Sqrt[1 + y*(-1 + z)]*
-             Sqrt[y + z - y*z] + 19*Sqrt[1 + y*(-1 + z)]*z*
-             Sqrt[y + z - y*z]) + 2*y^4*(-1 + z)^2*(30*Sqrt[z] - 
-            120*z^(3/2) + 180*z^(5/2) - 120*z^(7/2) + 30*z^(9/2) + 
-            156*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
-            408*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-            625*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
-            614*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
-            229*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z]) - 
-          y^3*(-1 + z)*(-30*Sqrt[z] + 150*z^(3/2) - 300*z^(5/2) + 
-            300*z^(7/2) - 150*z^(9/2) + 30*z^(11/2) - 
-            130*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-            650*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-            505*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
-            403*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
-            869*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
-            259*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
-          y*(6*z^(3/2) - 12*z^(5/2) + 12*z^(7/2) - 12*z^(9/2) + 6*z^(11/2) + 
-            6*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-            26*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-            74*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
-            174*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
-            77*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
-            18*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] - 
-            11*Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]) + 
-          2*y^2*(3*Sqrt[z] - 24*z^(3/2) + 57*z^(5/2) - 72*z^(7/2) + 
-            57*z^(9/2) - 24*z^(11/2) + 3*z^(13/2) - 4*Sqrt[1 + y*(-1 + z)]*
-             Sqrt[y + z - y*z] - 125*Sqrt[1 + y*(-1 + z)]*z*
-             Sqrt[y + z - y*z] + 139*Sqrt[1 + y*(-1 + z)]*z^2*
-             Sqrt[y + z - y*z] + 135*Sqrt[1 + y*(-1 + z)]*z^3*
-             Sqrt[y + z - y*z] - 38*Sqrt[1 + y*(-1 + z)]*z^4*
-             Sqrt[y + z - y*z] - 152*Sqrt[1 + y*(-1 + z)]*z^5*
-             Sqrt[y + z - y*z] + 33*Sqrt[1 + y*(-1 + z)]*z^6*
-             Sqrt[y + z - y*z]))*G[r^(-1), t])/(3*(-1 + 2*y)*
-         (1 + y*(-1 + z))^(5/2)*(-1 + z)*z*(y + z - y*z)^(5/2)) + 
-       (y*(-24*y^6*(-1 + z)^6*(Sqrt[z] + 2*Sqrt[1 + y*(-1 + z)]*
-             Sqrt[y + z - y*z]) + 12*y^5*(-1 + z)^5*(-7*Sqrt[z] + 7*z^(3/2) - 
-            20*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-            14*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z]) + 
-          2*y^4*(-1 + z)^2*(-60*Sqrt[z] + 240*z^(3/2) - 360*z^(5/2) + 
-            240*z^(7/2) - 60*z^(9/2) - 116*Sqrt[1 + y*(-1 + z)]*
-             Sqrt[y + z - y*z] + 832*Sqrt[1 + y*(-1 + z)]*z*
-             Sqrt[y + z - y*z] - 1355*Sqrt[1 + y*(-1 + z)]*z^2*
-             Sqrt[y + z - y*z] + 642*Sqrt[1 + y*(-1 + z)]*z^3*
-             Sqrt[y + z - y*z] + 9*Sqrt[1 + y*(-1 + z)]*z^4*
-             Sqrt[y + z - y*z]) + 2*z*(3*Sqrt[z] - 6*z^(3/2) + 6*z^(5/2) - 
-            6*z^(7/2) + 3*z^(9/2) - 6*Sqrt[1 + y*(-1 + z)]*
-             Sqrt[y + z - y*z] - 29*Sqrt[1 + y*(-1 + z)]*z*
-             Sqrt[y + z - y*z] + 108*Sqrt[1 + y*(-1 + z)]*z^2*
-             Sqrt[y + z - y*z] - 55*Sqrt[1 + y*(-1 + z)]*z^3*
-             Sqrt[y + z - y*z] - 15*Sqrt[1 + y*(-1 + z)]*z^4*
-             Sqrt[y + z - y*z] + 13*Sqrt[1 + y*(-1 + z)]*z^5*
-             Sqrt[y + z - y*z]) - y^3*(-1 + z)*(90*Sqrt[z] - 450*z^(3/2) + 
-            900*z^(5/2) - 900*z^(7/2) + 450*z^(9/2) - 90*z^(11/2) - 
-            22*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
-            1362*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-            4729*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
-            4635*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
-            749*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
-            445*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
-          y*(6*Sqrt[z] - 54*z^(3/2) + 126*z^(5/2) - 156*z^(7/2) + 
-            126*z^(9/2) - 54*z^(11/2) + 6*z^(13/2) - 24*Sqrt[1 + y*(-1 + z)]*
-             Sqrt[y + z - y*z] + 22*Sqrt[1 + y*(-1 + z)]*z*
-             Sqrt[y + z - y*z] + 703*Sqrt[1 + y*(-1 + z)]*z^2*
-             Sqrt[y + z - y*z] - 1746*Sqrt[1 + y*(-1 + z)]*z^3*
-             Sqrt[y + z - y*z] + 935*Sqrt[1 + y*(-1 + z)]*z^4*
-             Sqrt[y + z - y*z] + 190*Sqrt[1 + y*(-1 + z)]*z^5*
-             Sqrt[y + z - y*z] - 188*Sqrt[1 + y*(-1 + z)]*z^6*
-             Sqrt[y + z - y*z]) + y^2*(-36*Sqrt[z] + 228*z^(3/2) - 
-            564*z^(5/2) + 744*z^(7/2) - 564*z^(9/2) + 228*z^(11/2) - 
-            36*z^(13/2) + 86*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-            282*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-            3027*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
-            5658*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
-            3132*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 
-            312*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] + 
-            469*Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]))*G[-r, t])/
-        (3*(-1 + 2*y)*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*
-         (y + z - y*z)^(5/2)) - 
-       (y*(8*y^6*(-1 + z)^6*(-15*Sqrt[z] + 8*Sqrt[1 + y*(-1 + z)]*
-             Sqrt[y + z - y*z]) - 4*y^5*(-1 + z)^5*(105*Sqrt[z] - 
-            105*z^(3/2) - 50*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-            56*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z]) + 
-          2*y^4*(-1 + z)^2*(-300*Sqrt[z] + 1200*z^(3/2) - 1800*z^(5/2) + 
-            1200*z^(7/2) - 300*z^(9/2) + 128*Sqrt[1 + y*(-1 + z)]*
-             Sqrt[y + z - y*z] - 536*Sqrt[1 + y*(-1 + z)]*z*
-             Sqrt[y + z - y*z] + 863*Sqrt[1 + y*(-1 + z)]*z^2*
-             Sqrt[y + z - y*z] - 594*Sqrt[1 + y*(-1 + z)]*z^3*
-             Sqrt[y + z - y*z] + 127*Sqrt[1 + y*(-1 + z)]*z^4*
-             Sqrt[y + z - y*z]) + 2*z*(15*Sqrt[z] - 30*z^(3/2) + 30*z^(5/2) - 
-            30*z^(7/2) + 15*z^(9/2) - 2*Sqrt[1 + y*(-1 + z)]*
-             Sqrt[y + z - y*z] + 5*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-            12*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
-            31*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
-            3*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 
-            13*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
-          y^3*(-1 + z)*(-450*Sqrt[z] + 2250*z^(3/2) - 4500*z^(5/2) + 
-            4500*z^(7/2) - 2250*z^(9/2) + 450*z^(11/2) + 
-            170*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
-            898*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
-            1917*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
-            2135*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
-            1033*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
-            9*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
-          y*(30*Sqrt[z] - 270*z^(3/2) + 630*z^(5/2) - 780*z^(7/2) + 
-            630*z^(9/2) - 270*z^(11/2) + 30*z^(13/2) - 8*Sqrt[1 + y*(-1 + z)]*
-             Sqrt[y + z - y*z] + 66*Sqrt[1 + y*(-1 + z)]*z*
-             Sqrt[y + z - y*z] - 179*Sqrt[1 + y*(-1 + z)]*z^2*
-             Sqrt[y + z - y*z] + 330*Sqrt[1 + y*(-1 + z)]*z^3*
-             Sqrt[y + z - y*z] - 411*Sqrt[1 + y*(-1 + z)]*z^4*
-             Sqrt[y + z - y*z] + 26*Sqrt[1 + y*(-1 + z)]*z^5*
-             Sqrt[y + z - y*z] + 140*Sqrt[1 + y*(-1 + z)]*z^6*
-             Sqrt[y + z - y*z]) - y^2*(180*Sqrt[z] - 1140*z^(3/2) + 
-            2820*z^(5/2) - 3720*z^(7/2) + 2820*z^(9/2) - 1140*z^(11/2) + 
-            180*z^(13/2) - 58*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
-            386*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
-            1015*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
-            1618*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
-            1420*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
-            296*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] + 
-            217*Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]))*G[r, t])/
-        (3*(-1 + 2*y)*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*
-         (y + z - y*z)^(5/2))) + 
+          330*z^(7/2) - 81*z^(9/2) + (155 + 6*Pi^2)*Sqrt[1 + y*(-1 + z)]*
+           Sqrt[y + z - y*z] - (535 + 48*Pi^2)*Sqrt[1 + y*(-1 + z)]*z*
+           Sqrt[y + z - y*z] + 2*(368 + 45*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^2*
+           Sqrt[y + z - y*z] - (487 + 60*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^3*
+           Sqrt[y + z - y*z] + (149 + 12*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^4*
+           Sqrt[y + z - y*z]) + 2*y^4*(-1 + z)^2*(-294*Sqrt[z] + 
+          1140*z^(3/2) - 1725*z^(5/2) + 1170*z^(7/2) - 291*z^(9/2) + 
+          2*(245 + 18*Pi^2)*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
+          3*(625 + 56*Pi^2)*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
+          2*(1373 + 135*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
+          9*(203 + 20*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
+          2*(242 + 21*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z]) + 
+        y*(-72*z^(3/2) + 42*z^(5/2) - 18*z^(7/2) + 126*z^(9/2) - 
+          78*z^(11/2) + 3*(-21 + 2*Pi^2)*Sqrt[1 + y*(-1 + z)]*
+           Sqrt[y + z - y*z] + 2*(53 + 6*Pi^2)*Sqrt[1 + y*(-1 + z)]*z*
+           Sqrt[y + z - y*z] - 3*(35 + 16*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^2*
+           Sqrt[y + z - y*z] + 4*(31 + 15*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^3*
+           Sqrt[y + z - y*z] - 6*(37 + 9*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^4*
+           Sqrt[y + z - y*z] + 4*(31 + 6*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^5*
+           Sqrt[y + z - y*z]) + y^2*(-84*Sqrt[z] + 504*z^(3/2) - 
+          1080*z^(5/2) + 1458*z^(7/2) - 1278*z^(9/2) + 558*z^(11/2) - 
+          78*z^(13/2) + (239 - 6*Pi^2)*Sqrt[1 + y*(-1 + z)]*
+           Sqrt[y + z - y*z] - 4*(248 + 15*Pi^2)*Sqrt[1 + y*(-1 + z)]*z*
+           Sqrt[y + z - y*z] + (2017 + 252*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^2*
+           Sqrt[y + z - y*z] - 4*(608 + 99*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^3*
+           Sqrt[y + z - y*z] + 2*(965 + 159*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^4*
+           Sqrt[y + z - y*z] - 10*(89 + 12*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^5*
+           Sqrt[y + z - y*z] + 4*(41 + 3*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^6*
+           Sqrt[y + z - y*z]))*G[0, t^2])/(9*(1 + y*(-1 + z))^(5/2)*(-1 + z)*
+       z*(y + z - y*z)^(5/2)) + 
+     (Pi^2*(-24*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 - 4*y^3*(-1 + z)^4*
+         (5 - 10*z + 6*z^2) + 2*y^4*(-1 + z)^4*(15 - 30*z + 16*z^2) - 
+        y*(-1 + z)^2*z*(-10 + 7*z - 10*z^2 + z^3) + 5*(z^2 + z^4) + 
+        y^2*(-1 + z)^2*(6 - 34*z + 45*z^2 - 38*z^3 + 9*z^4))*G[1, t^2])/
+      (3*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
      ((Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z]*(-107 + 360*z - 107*z^2) - 
         180*y^5*(-1 + z)^6*(-2*Sqrt[z] + 5*Sqrt[1 + y*(-1 + z)]*
            Sqrt[y + z - y*z]) + 60*y^6*(-1 + z)^6*(-2*Sqrt[z] + 
@@ -9773,6 +11083,50 @@
           892*z^5 + 247*z^6) - 2*y^4*(694 - 2658*z + 4613*z^2 - 4984*z^3 + 
           3570*z^4 - 1586*z^5 + 351*z^6))*G[0, I, r])/
       (3*(-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+     G[-1, t]*((Pi^2*(z^2 + z^4 - 8*y^5*(-1 + z)^4*(1 + 2*z + 2*z^2) + 
+          2*y^4*(-1 + z)^3*(-9 - 7*z + 6*z^2 + 22*z^3) - 
+          4*y^3*(-1 + z)^2*(3 - 4*z - 8*z^2 - 6*z^3 + 11*z^4) - 
+          y*z*(-2 + 9*z + 2*z^2 + 4*z^3 - 8*z^4 + 3*z^5) + 
+          y^2*(2 - 18*z + 17*z^2 + 10*z^3 + 18*z^4 - 48*z^5 + 19*z^6)))/
+        (2*(-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (4*(8*y^5*(-1 + z)^4*(1 + 2*z + 2*z^2) - 2*y^4*(-1 + z)^3*
+           (-11 - 13*z - 6*z^2 + 18*z^3) - 3*(z^2 + z^4) + 
+          4*y^3*(-1 + z)^2*(5 - 2*z^2 - 14*z^3 + 7*z^4) + 
+          y*z*(-6 + 11*z - 10*z^2 + 20*z^3 - 8*z^4 + z^5) + 
+          y^2*(-6 + 22*z - 19*z^2 + 34*z^3 - 70*z^4 + 48*z^5 - 9*z^6))*
+         G[0, 0, r])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (12*(-(z^2*(1 + z^2)) + 
+          y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 4*y^3*(-1 + 8*z^3 - 9*z^4 + 
+            2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 
+          y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*G[0, -I, r])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (12*(-(z^2*(1 + z^2)) + y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 
+          4*y^3*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 
+            2*z^6) + y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*
+         G[0, I, r])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2)) + G[1, t]*
+      ((Pi^2*(z^2 + z^4 - 8*y^5*(-1 + z)^4*(1 + 2*z + 2*z^2) + 
+          2*y^4*(-1 + z)^3*(-9 - 7*z + 6*z^2 + 22*z^3) - 
+          4*y^3*(-1 + z)^2*(3 - 4*z - 8*z^2 - 6*z^3 + 11*z^4) - 
+          y*z*(-2 + 9*z + 2*z^2 + 4*z^3 - 8*z^4 + 3*z^5) + 
+          y^2*(2 - 18*z + 17*z^2 + 10*z^3 + 18*z^4 - 48*z^5 + 19*z^6)))/
+        (2*(-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (4*(8*y^5*(-1 + z)^4*(1 + 2*z + 2*z^2) - 2*y^4*(-1 + z)^3*
+           (-11 - 13*z - 6*z^2 + 18*z^3) - 3*(z^2 + z^4) + 
+          4*y^3*(-1 + z)^2*(5 - 2*z^2 - 14*z^3 + 7*z^4) + 
+          y*z*(-6 + 11*z - 10*z^2 + 20*z^3 - 8*z^4 + z^5) + 
+          y^2*(-6 + 22*z - 19*z^2 + 34*z^3 - 70*z^4 + 48*z^5 - 9*z^6))*
+         G[0, 0, r])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (12*(-(z^2*(1 + z^2)) + 
+          y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 4*y^3*(-1 + 8*z^3 - 9*z^4 + 
+            2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 
+          y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*G[0, -I, r])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (12*(-(z^2*(1 + z^2)) + y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 
+          4*y^3*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 
+            2*z^6) + y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*
+         G[0, I, r])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2)) + 
      ((Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z]*(46 + 55*z^2) + 
         16*y^7*(-1 + z)^6*(-9*Sqrt[z] + Sqrt[1 + y*(-1 + z)]*
            Sqrt[y + z - y*z]) - 8*y^6*(-1 + z)^5*(63*Sqrt[z] - 63*z^(3/2) - 
@@ -9892,6 +11246,431 @@
          (-14 - 102*z + 293*z^2 - 122*z^3 + z^4) + 2*y*(-1 + z)^2*
          (6 + 50*z - 163*z^2 + 50*z^3 + z^4))*G[I, I, r])/
       (3*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+     G[0, t]*((-56*y^6*(-1 + z)^6*(21*Sqrt[z] + (-103 + 12*Pi^2)*
+            Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z]) + 16*y^7*(-1 + z)^6*
+          (21*Sqrt[z] + (-103 + 12*Pi^2)*Sqrt[1 + y*(-1 + z)]*
+            Sqrt[y + z - y*z]) + z^2*(12*Sqrt[z] - 30*z^(3/2) + 
+           2*(43 - 18*Pi^2)*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
+           147*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 4*(-29 + 9*Pi^2)*
+            Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z]) - 
+         2*y^4*(-1 + z)^2*(630*Sqrt[z] - 2340*z^(3/2) + 3585*z^(5/2) - 
+           2490*z^(7/2) + 615*z^(9/2) + 2*(-1555 + 168*Pi^2)*
+            Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 3*(-4165 + 536*Pi^2)*
+            Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 6*(-3125 + 432*Pi^2)*
+            Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 5*(-2491 + 336*Pi^2)*
+            Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 60*(-53 + 6*Pi^2)*
+            Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z]) + 
+         4*y^5*(-1 + z)^2*(420*Sqrt[z] - 1644*z^(3/2) + 2481*z^(5/2) - 
+           1674*z^(7/2) + 417*z^(9/2) + 6*(-344 + 39*Pi^2)*
+            Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + (8267 - 996*Pi^2)*
+            Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 18*(-689 + 85*Pi^2)*
+            Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 3*(2753 - 336*Pi^2)*
+            Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 2*(-1039 + 120*Pi^2)*
+            Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z]) + 
+         y*z*(-72*Sqrt[z] + 18*z^(3/2) + 42*z^(5/2) + 126*z^(7/2) - 
+           78*z^(9/2) + 36*(15 - 2*Pi^2)*Sqrt[1 + y*(-1 + z)]*
+            Sqrt[y + z - y*z] + 12*(-86 + 27*Pi^2)*Sqrt[1 + y*(-1 + z)]*z*
+            Sqrt[y + z - y*z] + (463 - 312*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^2*
+            Sqrt[y + z - y*z] + 2*(-637 + 162*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^3*
+            Sqrt[y + z - y*z] + (553 - 96*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^4*
+            Sqrt[y + z - y*z] + 16*Sqrt[1 + y*(-1 + z)]*z^5*
+            Sqrt[y + z - y*z]) + y^2*(-84*Sqrt[z] + 648*z^(3/2) - 
+           1164*z^(5/2) + 1494*z^(7/2) - 1530*z^(9/2) + 714*z^(11/2) - 
+           78*z^(13/2) + 12*(35 - 3*Pi^2)*Sqrt[1 + y*(-1 + z)]*
+            Sqrt[y + z - y*z] + 2*(-2081 + 288*Pi^2)*Sqrt[1 + y*(-1 + z)]*z*
+            Sqrt[y + z - y*z] - 64*(-140 + 27*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^2*
+            Sqrt[y + z - y*z] + (-10771 + 2400*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^3*
+            Sqrt[y + z - y*z] + 2*(4751 - 918*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^4*
+            Sqrt[y + z - y*z] + (-4241 + 672*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^5*
+            Sqrt[y + z - y*z] + 16*(25 - 3*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^6*
+            Sqrt[y + z - y*z]) + 2*y^3*(252*Sqrt[z] - 1440*z^(3/2) + 
+           3378*z^(5/2) - 4578*z^(7/2) + 3690*z^(9/2) - 1542*z^(11/2) + 
+           240*z^(13/2) + 2*(-626 + 63*Pi^2)*Sqrt[1 + y*(-1 + z)]*
+            Sqrt[y + z - y*z] + 4*(2024 - 261*Pi^2)*Sqrt[1 + y*(-1 + z)]*z*
+            Sqrt[y + z - y*z] + 24*(-825 + 124*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^2*
+            Sqrt[y + z - y*z] + (25997 - 4188*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^3*
+            Sqrt[y + z - y*z] + 6*(-3329 + 523*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^4*
+            Sqrt[y + z - y*z] + (8189 - 1152*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^5*
+            Sqrt[y + z - y*z] + 4*(-323 + 36*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^6*
+            Sqrt[y + z - y*z]))/(9*(-1 + 2*y)*(1 + y*(-1 + z))^(5/2)*(-1 + z)*
+         z*(y + z - y*z)^(5/2)) - (4*(-132*y^5*(-1 + z)^6 + 
+          44*y^6*(-1 + z)^6 - 3*z^2*(5 - 16*z + 5*z^2) - 
+          4*y^3*(-1 + z)^4*(39 + 24*z + 34*z^2) + 2*y^4*(-1 + z)^4*
+           (94 - 86*z + 89*z^2) - y*(-1 + z)^2*(18 + 26*z - 91*z^2 + 26*z^3 + 
+            13*z^4) + y^2*(-1 + z)^2*(74 + 6*z - 173*z^2 + 26*z^3 + 59*z^4))*
+         G[-I, r])/(3*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (4*(-132*y^5*(-1 + z)^6 + 44*y^6*(-1 + z)^6 - 
+          3*z^2*(5 - 16*z + 5*z^2) - 4*y^3*(-1 + z)^4*(39 + 24*z + 34*z^2) + 
+          2*y^4*(-1 + z)^4*(94 - 86*z + 89*z^2) - y*(-1 + z)^2*
+           (18 + 26*z - 91*z^2 + 26*z^3 + 13*z^4) + y^2*(-1 + z)^2*
+           (74 + 6*z - 173*z^2 + 26*z^3 + 59*z^4))*G[I, r])/
+        (3*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+       (32*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 2*z^3 - 
+          2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*(9 - 8*z + 2*z^2) - 
+          y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*G[0, 0, r])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) - 
+       (16*(-56*y^6*(-1 + z)^6 + 16*y^7*(-1 + z)^6 - z^2*(1 + z^2) + 
+          8*y^5*(-1 + z)^4*(9 - 23*z + 9*z^2) - 2*y^4*(-1 + z)^3*
+           (-21 + 107*z - 110*z^2 + 20*z^3) + 2*y^3*(-1 + z)^2*
+           (5 - 58*z + 104*z^2 - 62*z^3 + 3*z^4) - 
+          y*z*(2 - 17*z + 18*z^2 - 16*z^3 + 4*z^4 + z^5) + 
+          y^2*z*(30 - 115*z + 170*z^2 - 120*z^3 + 32*z^4 + 3*z^5))*
+         G[0, -I, r])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (16*(-56*y^6*(-1 + z)^6 + 16*y^7*(-1 + z)^6 - 
+          z^2*(1 + z^2) + 8*y^5*(-1 + z)^4*(9 - 23*z + 9*z^2) - 
+          2*y^4*(-1 + z)^3*(-21 + 107*z - 110*z^2 + 20*z^3) + 
+          2*y^3*(-1 + z)^2*(5 - 58*z + 104*z^2 - 62*z^3 + 3*z^4) - 
+          y*z*(2 - 17*z + 18*z^2 - 16*z^3 + 4*z^4 + z^5) + 
+          y^2*z*(30 - 115*z + 170*z^2 - 120*z^3 + 32*z^4 + 3*z^5))*
+         G[0, I, r])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (16*(-24*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 - 
+          8*y^3*(-1 + z)^4*(1 - 7*z + z^2) + 4*y^4*(-1 + z)^4*
+           (6 - 17*z + 6*z^2) + 2*(z^2 + z^4) + y*(-1 + z)^2*
+           (1 + 6*z - 6*z^2 + 6*z^3 + z^4) - y^2*(-1 + z)^2*
+           (1 + 26*z - 46*z^2 + 26*z^3 + z^4))*G[-I, 0, r])/
+        ((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (16*(-24*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 - 8*y^3*(-1 + z)^4*
+           (3 - 5*z + 3*z^2) + 4*y^4*(-1 + z)^4*(8 - 15*z + 8*z^2) + 
+          6*(z^2 + z^4) - y*(-1 + z)^2*(1 - 10*z + 10*z^2 - 10*z^3 + z^4) + 
+          y^2*(-1 + z)^2*(9 - 38*z + 50*z^2 - 38*z^3 + 9*z^4))*G[-I, -I, r])/
+        ((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (16*(-24*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 - 8*y^3*(-1 + z)^4*
+           (3 - 5*z + 3*z^2) + 4*y^4*(-1 + z)^4*(8 - 15*z + 8*z^2) + 
+          6*(z^2 + z^4) - y*(-1 + z)^2*(1 - 10*z + 10*z^2 - 10*z^3 + z^4) + 
+          y^2*(-1 + z)^2*(9 - 38*z + 50*z^2 - 38*z^3 + 9*z^4))*G[-I, I, r])/
+        ((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (16*(-24*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 - 8*y^3*(-1 + z)^4*
+           (1 - 7*z + z^2) + 4*y^4*(-1 + z)^4*(6 - 17*z + 6*z^2) + 
+          2*(z^2 + z^4) + y*(-1 + z)^2*(1 + 6*z - 6*z^2 + 6*z^3 + z^4) - 
+          y^2*(-1 + z)^2*(1 + 26*z - 46*z^2 + 26*z^3 + z^4))*G[I, 0, r])/
+        ((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (16*(-24*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 - 8*y^3*(-1 + z)^4*
+           (3 - 5*z + 3*z^2) + 4*y^4*(-1 + z)^4*(8 - 15*z + 8*z^2) + 
+          6*(z^2 + z^4) - y*(-1 + z)^2*(1 - 10*z + 10*z^2 - 10*z^3 + z^4) + 
+          y^2*(-1 + z)^2*(9 - 38*z + 50*z^2 - 38*z^3 + 9*z^4))*G[I, -I, r])/
+        ((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (16*(-24*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 - 8*y^3*(-1 + z)^4*
+           (3 - 5*z + 3*z^2) + 4*y^4*(-1 + z)^4*(8 - 15*z + 8*z^2) + 
+          6*(z^2 + z^4) - y*(-1 + z)^2*(1 - 10*z + 10*z^2 - 10*z^3 + z^4) + 
+          y^2*(-1 + z)^2*(9 - 38*z + 50*z^2 - 38*z^3 + 9*z^4))*G[I, I, r])/
+        ((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2)) + 
+     G[r, t]*((2*Pi^2*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 2*z^3 - 
+          2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*(9 - 8*z + 2*z^2) - 
+          y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4)))/(3*(-1 + 2*y)*
+         (1 + y*(-1 + z))^2*(-1 + z)*z) + 
+       (4*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 2*z^3 - 
+          2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*(9 - 8*z + 2*z^2) - 
+          y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*G[0, 0, r])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) - 
+       (4*y*(-70*y^5*(-1 + z)^6 + 20*y^6*(-1 + z)^6 + 2*y^4*(-1 + z)^4*
+           (43 - 122*z + 38*z^2) - y^2*(-1 + z)^3*(-1 - 165*z + 120*z^2 + 
+            16*z^3) - y^3*(-1 + z)^3*(-39 + 303*z - 263*z^2 + 19*z^3) + 
+          z^2*(19 - 22*z + 9*z^2 + 2*z^3 - 2*z^4) + 
+          y*(4 + 30*z - 157*z^2 + 216*z^3 - 102*z^4 - 2*z^5 + 11*z^6))*
+         G[0, -I, r])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (4*y*(-70*y^5*(-1 + z)^6 + 20*y^6*(-1 + z)^6 + 
+          2*y^4*(-1 + z)^4*(43 - 122*z + 38*z^2) - y^2*(-1 + z)^3*
+           (-1 - 165*z + 120*z^2 + 16*z^3) - y^3*(-1 + z)^3*
+           (-39 + 303*z - 263*z^2 + 19*z^3) + z^2*(19 - 22*z + 9*z^2 + 
+            2*z^3 - 2*z^4) + y*(4 + 30*z - 157*z^2 + 216*z^3 - 102*z^4 - 
+            2*z^5 + 11*z^6))*G[0, I, r])/((-1 + 2*y)*(1 + y*(-1 + z))^2*
+         (-1 + z)*z*(y + z - y*z)^2) - 
+       (4*y*(-28*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 2*y^3*(-1 + z)^3*z*
+           (-55 + 58*z + z^2) + 4*y^4*(-1 + z)^4*(7 - 25*z + 7*z^2) - 
+          y^2*(-1 + z)^2*(15 + 42*z - 118*z^2 + 50*z^3 + 19*z^4) + 
+          2*(-1 + z^2 - 5*z^3 + 3*z^4 + z^5 - z^6) + 
+          y*(9 - 6*z - 41*z^2 + 86*z^3 - 51*z^4 - 8*z^5 + 11*z^6))*
+         G[-I, 0, r])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (4*y*(-28*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 
+          4*y^4*(-1 + z)^4*(11 - 21*z + 11*z^2) - 2*y^3*(-1 + z)^3*
+           (-20 + 55*z - 46*z^2 + 23*z^3) + y^2*(-1 + z)^2*
+           (21 - 82*z + 78*z^2 - 58*z^3 + 33*z^4) + 
+          y*(-7 + 34*z - 73*z^2 + 62*z^3 - 43*z^4 + 40*z^5 - 13*z^6) + 
+          2*(1 + 7*z^2 - z^3 + z^4 - 3*z^5 + z^6))*G[-I, -I, r])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (4*y*(-28*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*
+           (11 - 21*z + 11*z^2) - 2*y^3*(-1 + z)^3*(-20 + 55*z - 46*z^2 + 
+            23*z^3) + y^2*(-1 + z)^2*(21 - 82*z + 78*z^2 - 58*z^3 + 33*z^4) + 
+          y*(-7 + 34*z - 73*z^2 + 62*z^3 - 43*z^4 + 40*z^5 - 13*z^6) + 
+          2*(1 + 7*z^2 - z^3 + z^4 - 3*z^5 + z^6))*G[-I, I, r])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (4*y*(-28*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 2*y^3*(-1 + z)^3*z*
+           (-55 + 58*z + z^2) + 4*y^4*(-1 + z)^4*(7 - 25*z + 7*z^2) - 
+          y^2*(-1 + z)^2*(15 + 42*z - 118*z^2 + 50*z^3 + 19*z^4) + 
+          2*(-1 + z^2 - 5*z^3 + 3*z^4 + z^5 - z^6) + 
+          y*(9 - 6*z - 41*z^2 + 86*z^3 - 51*z^4 - 8*z^5 + 11*z^6))*
+         G[I, 0, r])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (4*y*(-28*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 
+          4*y^4*(-1 + z)^4*(11 - 21*z + 11*z^2) - 2*y^3*(-1 + z)^3*
+           (-20 + 55*z - 46*z^2 + 23*z^3) + y^2*(-1 + z)^2*
+           (21 - 82*z + 78*z^2 - 58*z^3 + 33*z^4) + 
+          y*(-7 + 34*z - 73*z^2 + 62*z^3 - 43*z^4 + 40*z^5 - 13*z^6) + 
+          2*(1 + 7*z^2 - z^3 + z^4 - 3*z^5 + z^6))*G[I, -I, r])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (4*y*(-28*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*
+           (11 - 21*z + 11*z^2) - 2*y^3*(-1 + z)^3*(-20 + 55*z - 46*z^2 + 
+            23*z^3) + y^2*(-1 + z)^2*(21 - 82*z + 78*z^2 - 58*z^3 + 33*z^4) + 
+          y*(-7 + 34*z - 73*z^2 + 62*z^3 - 43*z^4 + 40*z^5 - 13*z^6) + 
+          2*(1 + 7*z^2 - z^3 + z^4 - 3*z^5 + z^6))*G[I, I, r])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2)) + 
+     G[-r, t]*((-9*z^2*(-2 + 5*z)*(Sqrt[z] + Sqrt[1 + y*(-1 + z)]*
+            Sqrt[y + z - y*z]) - 4*y^7*(-1 + z)^6*(-234*Sqrt[z] + 
+           (67 + 15*Pi^2)*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z]) + 
+         2*y^6*(-1 + z)^5*(1638*Sqrt[z] - 1638*z^(3/2) - (487 + 105*Pi^2)*
+            Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 7*(67 + 15*Pi^2)*
+            Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z]) - 
+         2*y^5*(-1 + z)^3*(2376*Sqrt[z] - 6876*z^(3/2) + 6975*z^(5/2) - 
+           2367*z^(7/2) - 9*(83 + 15*Pi^2)*Sqrt[1 + y*(-1 + z)]*
+            Sqrt[y + z - y*z] + (2119 + 465*Pi^2)*Sqrt[1 + y*(-1 + z)]*z*
+            Sqrt[y + z - y*z] - (2069 + 480*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^2*
+            Sqrt[y + z - y*z] + (661 + 150*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^3*
+            Sqrt[y + z - y*z]) + y*z*(-252*Sqrt[z] + 243*z^(3/2) - 
+           81*z^(5/2) + 405*z^(7/2) - 261*z^(9/2) + 22*Sqrt[1 + y*(-1 + z)]*
+            Sqrt[y + z - y*z] - 3*(119 + 15*Pi^2)*Sqrt[1 + y*(-1 + z)]*z*
+            Sqrt[y + z - y*z] + 6*(101 + 5*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^2*
+            Sqrt[y + z - y*z] - 9*(16 + 5*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^3*
+            Sqrt[y + z - y*z] + 3*(1 + 10*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^4*
+            Sqrt[y + z - y*z]) + y^3*(-1 + z)*(-1548*Sqrt[z] + 7236*z^(3/2) - 
+           12906*z^(5/2) + 13500*z^(7/2) - 7578*z^(9/2) + 1512*z^(11/2) + 
+           3*(121 + 15*Pi^2)*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
+           (2519 + 405*Pi^2)*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
+           (5768 + 1005*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
+           (5087 + 1185*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
+           (1697 + 630*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 
+           6*(61 + 15*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
+         y^4*(-1 + z)*(3690*Sqrt[z] - 17190*z^(3/2) + 33615*z^(5/2) - 
+           34065*z^(7/2) + 17595*z^(9/2) - 3645*z^(11/2) - 
+           3*(371 + 55*Pi^2)*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
+           (5761 + 1035*Pi^2)*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
+           (11423 + 2400*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
+           (10859 + 2580*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
+           (4892 + 1275*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
+           (952 + 225*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
+         y^2*(-270*Sqrt[z] + 2124*z^(3/2) - 3978*z^(5/2) + 4689*z^(7/2) - 
+           4527*z^(9/2) + 2223*z^(11/2) - 261*z^(13/2) + 
+           38*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 10*(55 + 9*Pi^2)*
+            Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + (2356 + 315*Pi^2)*
+            Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 6*(563 + 80*Pi^2)*
+            Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 2*(779 + 225*Pi^2)*
+            Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 30*(9 + 7*Pi^2)*
+            Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] + 3*(22 + 5*Pi^2)*
+            Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]))/
+        (9*(-1 + 2*y)*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*
+         (y + z - y*z)^(5/2)) + (4*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 
+          2*z^3 - 2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*
+           (9 - 8*z + 2*z^2) - y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*
+         G[0, 0, r])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) - 
+       (4*y*(-70*y^5*(-1 + z)^6 + 20*y^6*(-1 + z)^6 + 2*y^4*(-1 + z)^4*
+           (43 - 122*z + 38*z^2) - y^2*(-1 + z)^3*(-1 - 165*z + 120*z^2 + 
+            16*z^3) - y^3*(-1 + z)^3*(-39 + 303*z - 263*z^2 + 19*z^3) + 
+          z^2*(19 - 22*z + 9*z^2 + 2*z^3 - 2*z^4) + 
+          y*(4 + 30*z - 157*z^2 + 216*z^3 - 102*z^4 - 2*z^5 + 11*z^6))*
+         G[0, -I, r])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (4*y*(-70*y^5*(-1 + z)^6 + 20*y^6*(-1 + z)^6 + 
+          2*y^4*(-1 + z)^4*(43 - 122*z + 38*z^2) - y^2*(-1 + z)^3*
+           (-1 - 165*z + 120*z^2 + 16*z^3) - y^3*(-1 + z)^3*
+           (-39 + 303*z - 263*z^2 + 19*z^3) + z^2*(19 - 22*z + 9*z^2 + 
+            2*z^3 - 2*z^4) + y*(4 + 30*z - 157*z^2 + 216*z^3 - 102*z^4 - 
+            2*z^5 + 11*z^6))*G[0, I, r])/((-1 + 2*y)*(1 + y*(-1 + z))^2*
+         (-1 + z)*z*(y + z - y*z)^2) - 
+       (4*y*(-28*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 2*y^3*(-1 + z)^3*z*
+           (-55 + 58*z + z^2) + 4*y^4*(-1 + z)^4*(7 - 25*z + 7*z^2) - 
+          y^2*(-1 + z)^2*(15 + 42*z - 118*z^2 + 50*z^3 + 19*z^4) + 
+          2*(-1 + z^2 - 5*z^3 + 3*z^4 + z^5 - z^6) + 
+          y*(9 - 6*z - 41*z^2 + 86*z^3 - 51*z^4 - 8*z^5 + 11*z^6))*
+         G[-I, 0, r])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (4*y*(-28*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 
+          4*y^4*(-1 + z)^4*(11 - 21*z + 11*z^2) - 2*y^3*(-1 + z)^3*
+           (-20 + 55*z - 46*z^2 + 23*z^3) + y^2*(-1 + z)^2*
+           (21 - 82*z + 78*z^2 - 58*z^3 + 33*z^4) + 
+          y*(-7 + 34*z - 73*z^2 + 62*z^3 - 43*z^4 + 40*z^5 - 13*z^6) + 
+          2*(1 + 7*z^2 - z^3 + z^4 - 3*z^5 + z^6))*G[-I, -I, r])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (4*y*(-28*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*
+           (11 - 21*z + 11*z^2) - 2*y^3*(-1 + z)^3*(-20 + 55*z - 46*z^2 + 
+            23*z^3) + y^2*(-1 + z)^2*(21 - 82*z + 78*z^2 - 58*z^3 + 33*z^4) + 
+          y*(-7 + 34*z - 73*z^2 + 62*z^3 - 43*z^4 + 40*z^5 - 13*z^6) + 
+          2*(1 + 7*z^2 - z^3 + z^4 - 3*z^5 + z^6))*G[-I, I, r])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (4*y*(-28*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 2*y^3*(-1 + z)^3*z*
+           (-55 + 58*z + z^2) + 4*y^4*(-1 + z)^4*(7 - 25*z + 7*z^2) - 
+          y^2*(-1 + z)^2*(15 + 42*z - 118*z^2 + 50*z^3 + 19*z^4) + 
+          2*(-1 + z^2 - 5*z^3 + 3*z^4 + z^5 - z^6) + 
+          y*(9 - 6*z - 41*z^2 + 86*z^3 - 51*z^4 - 8*z^5 + 11*z^6))*
+         G[I, 0, r])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (4*y*(-28*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 
+          4*y^4*(-1 + z)^4*(11 - 21*z + 11*z^2) - 2*y^3*(-1 + z)^3*
+           (-20 + 55*z - 46*z^2 + 23*z^3) + y^2*(-1 + z)^2*
+           (21 - 82*z + 78*z^2 - 58*z^3 + 33*z^4) + 
+          y*(-7 + 34*z - 73*z^2 + 62*z^3 - 43*z^4 + 40*z^5 - 13*z^6) + 
+          2*(1 + 7*z^2 - z^3 + z^4 - 3*z^5 + z^6))*G[I, -I, r])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (4*y*(-28*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*
+           (11 - 21*z + 11*z^2) - 2*y^3*(-1 + z)^3*(-20 + 55*z - 46*z^2 + 
+            23*z^3) + y^2*(-1 + z)^2*(21 - 82*z + 78*z^2 - 58*z^3 + 33*z^4) + 
+          y*(-7 + 34*z - 73*z^2 + 62*z^3 - 43*z^4 + 40*z^5 - 13*z^6) + 
+          2*(1 + 7*z^2 - z^3 + z^4 - 3*z^5 + z^6))*G[I, I, r])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2)) + 
+     G[r^(-1), t]*(-1/3*(Pi^2*(-1 + y)*(-10*y^5*(-1 + z)^6 + 
+           4*y^6*(-1 + z)^6 - 2*y^4*(-1 + z)^4*(-6 + 18*z + z^2) + 
+           y^3*(-1 + z)^3*(11 - 33*z + 39*z^2 + 19*z^3) + 3*(z^2 + z^4) - 
+           y^2*(-1 + z)^2*(-9 + 6*z - 45*z^2 + 10*z^3 + 14*z^4) + 
+           y*(-2 + 6*z - 11*z^2 + 26*z^3 - 18*z^4 - 4*z^5 + 3*z^6)))/
+         ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+       (4*(-1 + y)*(-30*y^5*(-1 + z)^6 + 12*y^6*(-1 + z)^6 - z^2*(1 + z^2) + 
+          2*y^4*(-1 + z)^4*(8 - 40*z + 11*z^2) + y^3*(-1 + z)^3*
+           (-1 - 39*z + 75*z^2 + z^3) - y^2*(-1 + z)^2*(4 + 6*z - 23*z^2 + 
+            30*z^3 + 7*z^4) + y*(1 - 2*z + 4*z^3 - 7*z^4 + 2*z^5 + 2*z^6))*
+         G[0, 0, r])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) + (4*(-1 + y)*(-10*y^5*(-1 + z)^6 + 
+          4*y^6*(-1 + z)^6 + 2*y^4*(-1 + z)^4*(10 - 12*z + 5*z^2) + 
+          3*y^3*(-1 + z)^3*(7 - 11*z + 15*z^2 + z^3) + 7*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(-12 + 18*z - 55*z^2 + 26*z^3 + 7*z^4) + 
+          y*(-1 + 14*z - 24*z^2 + 44*z^3 - 37*z^4 + 2*z^5 + 2*z^6))*
+         G[0, -I, r])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) + (4*(-1 + y)*(-10*y^5*(-1 + z)^6 + 
+          4*y^6*(-1 + z)^6 + 2*y^4*(-1 + z)^4*(10 - 12*z + 5*z^2) + 
+          3*y^3*(-1 + z)^3*(7 - 11*z + 15*z^2 + z^3) + 7*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(-12 + 18*z - 55*z^2 + 26*z^3 + 7*z^4) + 
+          y*(-1 + 14*z - 24*z^2 + 44*z^3 - 37*z^4 + 2*z^5 + 2*z^6))*
+         G[0, I, r])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (4*(-1 + y)*(-20*y^5*(-1 + z)^6 + 
+          8*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*(2 - 15*z + 2*z^2) + 
+          2*y^3*(-1 + z)^3*(-4 - 21*z + 18*z^2 + 3*z^3) - 2*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(7 + 8*z - 16*z^2 + 4*z^3 + 5*z^4) + 
+          y*(1 - 4*z + z^2 - 2*z^3 + 5*z^4 - 2*z^5 + z^6))*G[-I, 0, r])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (4*(-1 + y)*(-20*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 
+          4*y^4*(-1 + z)^4*(6 - 11*z + 6*z^2) - 2*y^3*(-1 + z)^3*
+           (-8 + 21*z - 30*z^2 + 5*z^3) + 6*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(-5 + 24*z - 48*z^2 + 36*z^3 + z^4) + 
+          y*(1 + 12*z - 23*z^2 + 38*z^3 - 35*z^4 + 6*z^5 + z^6))*
+         G[-I, -I, r])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (4*(-1 + y)*(-20*y^5*(-1 + z)^6 + 
+          8*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*(6 - 11*z + 6*z^2) - 
+          2*y^3*(-1 + z)^3*(-8 + 21*z - 30*z^2 + 5*z^3) + 6*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(-5 + 24*z - 48*z^2 + 36*z^3 + z^4) + 
+          y*(1 + 12*z - 23*z^2 + 38*z^3 - 35*z^4 + 6*z^5 + z^6))*G[-I, I, r])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (4*(-1 + y)*(-20*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 
+          4*y^4*(-1 + z)^4*(2 - 15*z + 2*z^2) + 2*y^3*(-1 + z)^3*
+           (-4 - 21*z + 18*z^2 + 3*z^3) - 2*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(7 + 8*z - 16*z^2 + 4*z^3 + 5*z^4) + 
+          y*(1 - 4*z + z^2 - 2*z^3 + 5*z^4 - 2*z^5 + z^6))*G[I, 0, r])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (4*(-1 + y)*(-20*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 
+          4*y^4*(-1 + z)^4*(6 - 11*z + 6*z^2) - 2*y^3*(-1 + z)^3*
+           (-8 + 21*z - 30*z^2 + 5*z^3) + 6*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(-5 + 24*z - 48*z^2 + 36*z^3 + z^4) + 
+          y*(1 + 12*z - 23*z^2 + 38*z^3 - 35*z^4 + 6*z^5 + z^6))*G[I, -I, r])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (4*(-1 + y)*(-20*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 
+          4*y^4*(-1 + z)^4*(6 - 11*z + 6*z^2) - 2*y^3*(-1 + z)^3*
+           (-8 + 21*z - 30*z^2 + 5*z^3) + 6*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(-5 + 24*z - 48*z^2 + 36*z^3 + z^4) + 
+          y*(1 + 12*z - 23*z^2 + 38*z^3 - 35*z^4 + 6*z^5 + z^6))*G[I, I, r])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2)) + 
+     G[-r^(-1), t]*((-4*y^7*(-1 + z)^6*(-234*Sqrt[z] + (67 + 24*Pi^2)*
+            Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z]) + 2*y^6*(-1 + z)^5*
+          (1638*Sqrt[z] - 1638*z^(3/2) - (451 + 168*Pi^2)*
+            Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 7*(67 + 24*Pi^2)*
+            Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z]) + 
+         z^2*(18*Sqrt[z] - 45*z^(3/2) + 10*(1 + 3*Pi^2)*Sqrt[1 + y*(-1 + z)]*
+            Sqrt[y + z - y*z] + 60*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
+           (7 + 30*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z]) - 
+         2*y^5*(-1 + z)^3*(2376*Sqrt[z] - 6876*z^(3/2) + 6975*z^(5/2) - 
+           2367*z^(7/2) - 3*(213 + 74*Pi^2)*Sqrt[1 + y*(-1 + z)]*
+            Sqrt[y + z - y*z] + (1903 + 768*Pi^2)*Sqrt[1 + y*(-1 + z)]*z*
+            Sqrt[y + z - y*z] - (1961 + 768*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^2*
+            Sqrt[y + z - y*z] + (661 + 222*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^3*
+            Sqrt[y + z - y*z]) + y^3*(-1 + z)*(-1548*Sqrt[z] + 7236*z^(3/2) - 
+           12906*z^(5/2) + 13500*z^(7/2) - 7578*z^(9/2) + 1512*z^(11/2) + 
+           (751 + 39*Pi^2)*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
+           (1955 + 861*Pi^2)*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
+           12*(253 + 194*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
+           (3331 + 2352*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
+           (2329 + 873*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 
+           (398 + 27*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
+         y^4*(-1 + z)*(3690*Sqrt[z] - 17190*z^(3/2) + 33615*z^(5/2) - 
+           34065*z^(7/2) + 17595*z^(9/2) - 3645*z^(11/2) - 
+           (1127 + 258*Pi^2)*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
+           (4759 + 1872*Pi^2)*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
+           (8977 + 4344*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
+           9*(1029 + 484*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
+           6*(838 + 313*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
+           4*(242 + 63*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
+         y*(-252*z^(3/2) + 243*z^(5/2) - 81*z^(7/2) + 405*z^(9/2) - 
+           261*z^(11/2) + 3*(-21 + 5*Pi^2)*Sqrt[1 + y*(-1 + z)]*
+            Sqrt[y + z - y*z] + 20*(4 + 3*Pi^2)*Sqrt[1 + y*(-1 + z)]*z*
+            Sqrt[y + z - y*z] - 189*Pi^2*Sqrt[1 + y*(-1 + z)]*z^2*
+            Sqrt[y + z - y*z] + (-193 + 246*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^3*
+            Sqrt[y + z - y*z] - (106 + 231*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^4*
+            Sqrt[y + z - y*z] + 2*(34 + 15*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^5*
+            Sqrt[y + z - y*z] + (-16 + 9*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^6*
+            Sqrt[y + z - y*z]) - y^2*(270*Sqrt[z] - 2124*z^(3/2) + 
+           3978*z^(5/2) - 4689*z^(7/2) + 4527*z^(9/2) - 2223*z^(11/2) + 
+           261*z^(13/2) + (-331 + 30*Pi^2)*Sqrt[1 + y*(-1 + z)]*
+            Sqrt[y + z - y*z] + 2*(350 + 129*Pi^2)*Sqrt[1 + y*(-1 + z)]*z*
+            Sqrt[y + z - y*z] - 9*(79 + 112*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^2*
+            Sqrt[y + z - y*z] + 5*(139 + 306*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^3*
+            Sqrt[y + z - y*z] - 2*(569 + 534*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^4*
+            Sqrt[y + z - y*z] + 19*(37 + 12*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^5*
+            Sqrt[y + z - y*z] + 2*(-49 + 15*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^6*
+            Sqrt[y + z - y*z]))/(9*(-1 + 2*y)*(1 + y*(-1 + z))^(5/2)*(-1 + z)*
+         z*(y + z - y*z)^(5/2)) + (4*(-1 + y)*(-30*y^5*(-1 + z)^6 + 
+          12*y^6*(-1 + z)^6 - z^2*(1 + z^2) + 2*y^4*(-1 + z)^4*
+           (8 - 40*z + 11*z^2) + y^3*(-1 + z)^3*(-1 - 39*z + 75*z^2 + z^3) - 
+          y^2*(-1 + z)^2*(4 + 6*z - 23*z^2 + 30*z^3 + 7*z^4) + 
+          y*(1 - 2*z + 4*z^3 - 7*z^4 + 2*z^5 + 2*z^6))*G[0, 0, r])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+       (4*(-1 + y)*(-10*y^5*(-1 + z)^6 + 4*y^6*(-1 + z)^6 + 
+          2*y^4*(-1 + z)^4*(10 - 12*z + 5*z^2) + 3*y^3*(-1 + z)^3*
+           (7 - 11*z + 15*z^2 + z^3) + 7*(z^2 + z^4) - y^2*(-1 + z)^2*
+           (-12 + 18*z - 55*z^2 + 26*z^3 + 7*z^4) + 
+          y*(-1 + 14*z - 24*z^2 + 44*z^3 - 37*z^4 + 2*z^5 + 2*z^6))*
+         G[0, -I, r])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) + (4*(-1 + y)*(-10*y^5*(-1 + z)^6 + 
+          4*y^6*(-1 + z)^6 + 2*y^4*(-1 + z)^4*(10 - 12*z + 5*z^2) + 
+          3*y^3*(-1 + z)^3*(7 - 11*z + 15*z^2 + z^3) + 7*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(-12 + 18*z - 55*z^2 + 26*z^3 + 7*z^4) + 
+          y*(-1 + 14*z - 24*z^2 + 44*z^3 - 37*z^4 + 2*z^5 + 2*z^6))*
+         G[0, I, r])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (4*(-1 + y)*(-20*y^5*(-1 + z)^6 + 
+          8*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*(2 - 15*z + 2*z^2) + 
+          2*y^3*(-1 + z)^3*(-4 - 21*z + 18*z^2 + 3*z^3) - 2*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(7 + 8*z - 16*z^2 + 4*z^3 + 5*z^4) + 
+          y*(1 - 4*z + z^2 - 2*z^3 + 5*z^4 - 2*z^5 + z^6))*G[-I, 0, r])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (4*(-1 + y)*(-20*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 
+          4*y^4*(-1 + z)^4*(6 - 11*z + 6*z^2) - 2*y^3*(-1 + z)^3*
+           (-8 + 21*z - 30*z^2 + 5*z^3) + 6*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(-5 + 24*z - 48*z^2 + 36*z^3 + z^4) + 
+          y*(1 + 12*z - 23*z^2 + 38*z^3 - 35*z^4 + 6*z^5 + z^6))*
+         G[-I, -I, r])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (4*(-1 + y)*(-20*y^5*(-1 + z)^6 + 
+          8*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*(6 - 11*z + 6*z^2) - 
+          2*y^3*(-1 + z)^3*(-8 + 21*z - 30*z^2 + 5*z^3) + 6*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(-5 + 24*z - 48*z^2 + 36*z^3 + z^4) + 
+          y*(1 + 12*z - 23*z^2 + 38*z^3 - 35*z^4 + 6*z^5 + z^6))*G[-I, I, r])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (4*(-1 + y)*(-20*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 
+          4*y^4*(-1 + z)^4*(2 - 15*z + 2*z^2) + 2*y^3*(-1 + z)^3*
+           (-4 - 21*z + 18*z^2 + 3*z^3) - 2*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(7 + 8*z - 16*z^2 + 4*z^3 + 5*z^4) + 
+          y*(1 - 4*z + z^2 - 2*z^3 + 5*z^4 - 2*z^5 + z^6))*G[I, 0, r])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (4*(-1 + y)*(-20*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 
+          4*y^4*(-1 + z)^4*(6 - 11*z + 6*z^2) - 2*y^3*(-1 + z)^3*
+           (-8 + 21*z - 30*z^2 + 5*z^3) + 6*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(-5 + 24*z - 48*z^2 + 36*z^3 + z^4) + 
+          y*(1 + 12*z - 23*z^2 + 38*z^3 - 35*z^4 + 6*z^5 + z^6))*G[I, -I, r])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (4*(-1 + y)*(-20*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 
+          4*y^4*(-1 + z)^4*(6 - 11*z + 6*z^2) - 2*y^3*(-1 + z)^3*
+           (-8 + 21*z - 30*z^2 + 5*z^3) + 6*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(-5 + 24*z - 48*z^2 + 36*z^3 + z^4) + 
+          y*(1 + 12*z - 23*z^2 + 38*z^3 - 35*z^4 + 6*z^5 + z^6))*G[I, I, r])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2)) + 
      (2*(Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z]*(5 + 6*z + 5*z^2) - 
         18*y^5*(-1 + z)^6*(-4*Sqrt[z] + 9*Sqrt[1 + y*(-1 + z)]*
            Sqrt[y + z - y*z]) + 6*y^6*(-1 + z)^6*(-4*Sqrt[z] + 
@@ -10585,26 +12364,1193 @@
           355*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 
           198*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] + 
           12*Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]))*G[r, -r, t])/
-      (3*(-1 + 2*y)*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*(y + z - y*z)^(5/2)) - 
+      (3*(-1 + 2*y)*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*(y + z - y*z)^(5/2)) + 
+     G[0, r]*((-8*y^7*(-1 + z)^6*(-138*Sqrt[z] + (67 + 9*Pi^2)*
+            Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z]) + 4*y^6*(-1 + z)^5*
+          (966*Sqrt[z] - 966*z^(3/2) - (487 + 63*Pi^2)*Sqrt[1 + y*(-1 + z)]*
+            Sqrt[y + z - y*z] + 7*(67 + 9*Pi^2)*Sqrt[1 + y*(-1 + z)]*z*
+            Sqrt[y + z - y*z]) + z^2*(24*Sqrt[z] - 60*z^(3/2) + 
+           10*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
+           39*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
+           16*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z]) - 
+         4*y^5*(-1 + z)^3*(1398*Sqrt[z] - 4050*z^(3/2) + 4116*z^(5/2) - 
+           1392*z^(7/2) - 9*(83 + 9*Pi^2)*Sqrt[1 + y*(-1 + z)]*
+            Sqrt[y + z - y*z] + (2119 + 279*Pi^2)*Sqrt[1 + y*(-1 + z)]*z*
+            Sqrt[y + z - y*z] - (2069 + 288*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^2*
+            Sqrt[y + z - y*z] + (661 + 90*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^3*
+            Sqrt[y + z - y*z]) + y*z*(-288*Sqrt[z] + 252*z^(3/2) - 
+           60*z^(5/2) + 468*z^(7/2) - 300*z^(9/2) + 48*Sqrt[1 + y*(-1 + z)]*
+            Sqrt[y + z - y*z] - 6*(79 + 9*Pi^2)*Sqrt[1 + y*(-1 + z)]*z*
+            Sqrt[y + z - y*z] + (899 + 36*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^2*
+            Sqrt[y + z - y*z] - 2*(161 + 27*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^3*
+            Sqrt[y + z - y*z] + (17 + 36*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^4*
+            Sqrt[y + z - y*z] - 16*Sqrt[1 + y*(-1 + z)]*z^5*
+            Sqrt[y + z - y*z]) + 2*y^4*(-1 + z)*(2160*Sqrt[z] - 
+           10080*z^(3/2) + 19770*z^(5/2) - 20070*z^(7/2) + 10350*z^(9/2) - 
+           2130*z^(11/2) - 11*(101 + 9*Pi^2)*Sqrt[1 + y*(-1 + z)]*
+            Sqrt[y + z - y*z] + (5746 + 621*Pi^2)*Sqrt[1 + y*(-1 + z)]*z*
+            Sqrt[y + z - y*z] - 6*(1877 + 240*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^2*
+            Sqrt[y + z - y*z] + 4*(2677 + 387*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^3*
+            Sqrt[y + z - y*z] - (4969 + 765*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^4*
+            Sqrt[y + z - y*z] + 15*(64 + 9*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^5*
+            Sqrt[y + z - y*z]) - 2*y^3*(-1 + z)*(900*Sqrt[z] - 4212*z^(3/2) + 
+           7548*z^(5/2) - 7944*z^(7/2) + 4440*z^(9/2) - 876*z^(11/2) - 
+           (359 + 27*Pi^2)*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
+           (2489 + 243*Pi^2)*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
+           (5446 + 603*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
+           3*(1595 + 237*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
+           3*(617 + 126*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
+           2*(191 + 27*Pi^2)*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
+         y^2*(-312*Sqrt[z] + 2448*z^(3/2) - 4560*z^(5/2) + 5436*z^(7/2) - 
+           5292*z^(9/2) + 2580*z^(11/2) - 300*z^(13/2) + 
+           72*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 2*(535 + 54*Pi^2)*
+            Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 2*(2060 + 189*Pi^2)*
+            Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - (5819 + 576*Pi^2)*
+            Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 2*(1501 + 270*Pi^2)*
+            Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 7*(103 + 36*Pi^2)*
+            Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] + 2*(82 + 9*Pi^2)*
+            Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]))/
+        (9*(-1 + 2*y)*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*
+         (y + z - y*z)^(5/2)) + (4*(z^2*(-1 + z - z^2) - 
+          y*(-1 + z)^2*z*(1 - 3*z + 3*z^2 + z^3) - 2*y^3*(-1 + z)^3*
+           (1 + 2*z + 10*z^2 + 3*z^3) + y^4*(-1 + z)^3*(1 + 2*z + 10*z^2 + 
+            3*z^3) + y^2*(-1 + z)^2*(-1 - 11*z^2 + 10*z^3 + 4*z^4))*G[-1, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+       (8*(Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z]*(2 + 11*z^2) + 
+          2*y^5*(-1 + z)^5*(-6*Sqrt[z] + Sqrt[1 + y*(-1 + z)]*
+             Sqrt[y + z - y*z]) - 2*y^4*(-1 + z)^4*(18*Sqrt[z] - 12*z^(3/2) + 
+            3*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 2*Sqrt[1 + y*(-1 + z)]*
+             z*Sqrt[y + z - y*z]) + y^3*(-1 + z)*(-42*Sqrt[z] + 132*z^(3/2) - 
+            156*z^(5/2) + 84*z^(7/2) - 18*z^(9/2) + 4*Sqrt[1 + y*(-1 + z)]*
+             Sqrt[y + z - y*z] + 60*Sqrt[1 + y*(-1 + z)]*z*
+             Sqrt[y + z - y*z] - 105*Sqrt[1 + y*(-1 + z)]*z^2*
+             Sqrt[y + z - y*z] + 32*Sqrt[1 + y*(-1 + z)]*z^3*
+             Sqrt[y + z - y*z] + 3*Sqrt[1 + y*(-1 + z)]*z^4*
+             Sqrt[y + z - y*z]) + y*(6*Sqrt[z] - 12*z^(3/2) + 12*z^(5/2) - 
+            12*z^(7/2) + 6*z^(9/2) - 4*Sqrt[1 + y*(-1 + z)]*
+             Sqrt[y + z - y*z] - 4*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
+            53*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
+            58*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
+            16*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z]) + 
+          y^2*(-24*Sqrt[z] + 78*z^(3/2) - 108*z^(5/2) + 84*z^(7/2) - 
+            36*z^(9/2) + 6*z^(11/2) + 16*Sqrt[1 + y*(-1 + z)]*
+             Sqrt[y + z - y*z] + 28*Sqrt[1 + y*(-1 + z)]*z*
+             Sqrt[y + z - y*z] - 167*Sqrt[1 + y*(-1 + z)]*z^2*
+             Sqrt[y + z - y*z] + 164*Sqrt[1 + y*(-1 + z)]*z^3*
+             Sqrt[y + z - y*z] - 34*Sqrt[1 + y*(-1 + z)]*z^4*
+             Sqrt[y + z - y*z] - Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]))*
+         G[0, t])/(3*(1 + y*(-1 + z))^(5/2)*(y*(-1 + z) - z)*(-1 + z)*z*
+         Sqrt[y + z - y*z]) + (4*(z^2*(-1 + z - z^2) - y*(-1 + z)^2*z*
+           (1 - 3*z + 3*z^2 + z^3) - 2*y^3*(-1 + z)^3*(1 + 2*z + 10*z^2 + 
+            3*z^3) + y^4*(-1 + z)^3*(1 + 2*z + 10*z^2 + 3*z^3) + 
+          y^2*(-1 + z)^2*(-1 - 11*z^2 + 10*z^3 + 4*z^4))*G[1, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+       ((-1 + y)*(Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z]*
+           (-29 + 36*z - 47*z^2) + 24*y^6*(-1 + z)^6*(3*Sqrt[z] + 
+            7*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z]) - 12*y^5*(-1 + z)^5*
+           (-15*Sqrt[z] + 15*z^(3/2) - 33*Sqrt[1 + y*(-1 + z)]*
+             Sqrt[y + z - y*z] + 35*Sqrt[1 + y*(-1 + z)]*z*
+             Sqrt[y + z - y*z]) + 2*y^4*(-1 + z)^2*(90*Sqrt[z] - 
+            360*z^(3/2) + 540*z^(5/2) - 360*z^(7/2) + 90*z^(9/2) + 
+            388*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
+            752*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
+            733*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
+            726*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
+            345*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z]) - 
+          y^3*(-1 + z)^2*(90*Sqrt[z] - 360*z^(3/2) + 540*z^(5/2) - 
+            360*z^(7/2) + 90*z^(9/2) + 754*Sqrt[1 + y*(-1 + z)]*
+             Sqrt[y + z - y*z] - 728*Sqrt[1 + y*(-1 + z)]*z*
+             Sqrt[y + z - y*z] - 355*Sqrt[1 + y*(-1 + z)]*z^2*
+             Sqrt[y + z - y*z] - 378*Sqrt[1 + y*(-1 + z)]*z^3*
+             Sqrt[y + z - y*z] + 671*Sqrt[1 + y*(-1 + z)]*z^4*
+             Sqrt[y + z - y*z]) + y*(18*z^(3/2) - 36*z^(5/2) + 36*z^(7/2) - 
+            36*z^(9/2) + 18*z^(11/2) - 66*Sqrt[1 + y*(-1 + z)]*
+             Sqrt[y + z - y*z] + 82*Sqrt[1 + y*(-1 + z)]*z*
+             Sqrt[y + z - y*z] + 134*Sqrt[1 + y*(-1 + z)]*z^2*
+             Sqrt[y + z - y*z] - 406*Sqrt[1 + y*(-1 + z)]*z^3*
+             Sqrt[y + z - y*z] + 305*Sqrt[1 + y*(-1 + z)]*z^4*
+             Sqrt[y + z - y*z] + 26*Sqrt[1 + y*(-1 + z)]*z^5*
+             Sqrt[y + z - y*z] - 63*Sqrt[1 + y*(-1 + z)]*z^6*
+             Sqrt[y + z - y*z]) + 2*y^2*(9*Sqrt[z] - 72*z^(3/2) + 
+            171*z^(5/2) - 216*z^(7/2) + 171*z^(9/2) - 72*z^(11/2) + 
+            9*z^(13/2) + 172*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
+            393*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
+            15*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
+            555*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
+            282*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 
+            240*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] + 
+            161*Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]))*G[-r^(-1), t])/
+        (3*(-1 + 2*y)*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*
+         (y + z - y*z)^(5/2)) + ((-1 + y)*(-3*Sqrt[1 + y*(-1 + z)]*z^2*
+           Sqrt[y + z - y*z]*(-5 - 12*z + z^2) + 8*y^6*(-1 + z)^6*
+           (3*Sqrt[z] + 19*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z]) - 
+          20*y^5*(-1 + z)^5*(-3*Sqrt[z] + 3*z^(3/2) - 13*Sqrt[1 + y*(-1 + z)]*
+             Sqrt[y + z - y*z] + 19*Sqrt[1 + y*(-1 + z)]*z*
+             Sqrt[y + z - y*z]) + 2*y^4*(-1 + z)^2*(30*Sqrt[z] - 
+            120*z^(3/2) + 180*z^(5/2) - 120*z^(7/2) + 30*z^(9/2) + 
+            156*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
+            408*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
+            625*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
+            614*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
+            229*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z]) - 
+          y^3*(-1 + z)*(-30*Sqrt[z] + 150*z^(3/2) - 300*z^(5/2) + 
+            300*z^(7/2) - 150*z^(9/2) + 30*z^(11/2) - 
+            130*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
+            650*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
+            505*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
+            403*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
+            869*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
+            259*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
+          y*(6*z^(3/2) - 12*z^(5/2) + 12*z^(7/2) - 12*z^(9/2) + 6*z^(11/2) + 
+            6*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
+            26*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
+            74*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
+            174*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
+            77*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
+            18*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] - 
+            11*Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]) + 
+          2*y^2*(3*Sqrt[z] - 24*z^(3/2) + 57*z^(5/2) - 72*z^(7/2) + 
+            57*z^(9/2) - 24*z^(11/2) + 3*z^(13/2) - 4*Sqrt[1 + y*(-1 + z)]*
+             Sqrt[y + z - y*z] - 125*Sqrt[1 + y*(-1 + z)]*z*
+             Sqrt[y + z - y*z] + 139*Sqrt[1 + y*(-1 + z)]*z^2*
+             Sqrt[y + z - y*z] + 135*Sqrt[1 + y*(-1 + z)]*z^3*
+             Sqrt[y + z - y*z] - 38*Sqrt[1 + y*(-1 + z)]*z^4*
+             Sqrt[y + z - y*z] - 152*Sqrt[1 + y*(-1 + z)]*z^5*
+             Sqrt[y + z - y*z] + 33*Sqrt[1 + y*(-1 + z)]*z^6*
+             Sqrt[y + z - y*z]))*G[r^(-1), t])/(3*(-1 + 2*y)*
+         (1 + y*(-1 + z))^(5/2)*(-1 + z)*z*(y + z - y*z)^(5/2)) + 
+       (y*(-24*y^6*(-1 + z)^6*(Sqrt[z] + 2*Sqrt[1 + y*(-1 + z)]*
+             Sqrt[y + z - y*z]) + 12*y^5*(-1 + z)^5*(-7*Sqrt[z] + 7*z^(3/2) - 
+            20*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
+            14*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z]) + 
+          2*y^4*(-1 + z)^2*(-60*Sqrt[z] + 240*z^(3/2) - 360*z^(5/2) + 
+            240*z^(7/2) - 60*z^(9/2) - 116*Sqrt[1 + y*(-1 + z)]*
+             Sqrt[y + z - y*z] + 832*Sqrt[1 + y*(-1 + z)]*z*
+             Sqrt[y + z - y*z] - 1355*Sqrt[1 + y*(-1 + z)]*z^2*
+             Sqrt[y + z - y*z] + 642*Sqrt[1 + y*(-1 + z)]*z^3*
+             Sqrt[y + z - y*z] + 9*Sqrt[1 + y*(-1 + z)]*z^4*
+             Sqrt[y + z - y*z]) + 2*z*(3*Sqrt[z] - 6*z^(3/2) + 6*z^(5/2) - 
+            6*z^(7/2) + 3*z^(9/2) - 6*Sqrt[1 + y*(-1 + z)]*
+             Sqrt[y + z - y*z] - 29*Sqrt[1 + y*(-1 + z)]*z*
+             Sqrt[y + z - y*z] + 108*Sqrt[1 + y*(-1 + z)]*z^2*
+             Sqrt[y + z - y*z] - 55*Sqrt[1 + y*(-1 + z)]*z^3*
+             Sqrt[y + z - y*z] - 15*Sqrt[1 + y*(-1 + z)]*z^4*
+             Sqrt[y + z - y*z] + 13*Sqrt[1 + y*(-1 + z)]*z^5*
+             Sqrt[y + z - y*z]) - y^3*(-1 + z)*(90*Sqrt[z] - 450*z^(3/2) + 
+            900*z^(5/2) - 900*z^(7/2) + 450*z^(9/2) - 90*z^(11/2) - 
+            22*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
+            1362*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
+            4729*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
+            4635*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
+            749*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
+            445*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
+          y*(6*Sqrt[z] - 54*z^(3/2) + 126*z^(5/2) - 156*z^(7/2) + 
+            126*z^(9/2) - 54*z^(11/2) + 6*z^(13/2) - 24*Sqrt[1 + y*(-1 + z)]*
+             Sqrt[y + z - y*z] + 22*Sqrt[1 + y*(-1 + z)]*z*
+             Sqrt[y + z - y*z] + 703*Sqrt[1 + y*(-1 + z)]*z^2*
+             Sqrt[y + z - y*z] - 1746*Sqrt[1 + y*(-1 + z)]*z^3*
+             Sqrt[y + z - y*z] + 935*Sqrt[1 + y*(-1 + z)]*z^4*
+             Sqrt[y + z - y*z] + 190*Sqrt[1 + y*(-1 + z)]*z^5*
+             Sqrt[y + z - y*z] - 188*Sqrt[1 + y*(-1 + z)]*z^6*
+             Sqrt[y + z - y*z]) + y^2*(-36*Sqrt[z] + 228*z^(3/2) - 
+            564*z^(5/2) + 744*z^(7/2) - 564*z^(9/2) + 228*z^(11/2) - 
+            36*z^(13/2) + 86*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
+            282*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
+            3027*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
+            5658*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
+            3132*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 
+            312*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] + 
+            469*Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]))*G[-r, t])/
+        (3*(-1 + 2*y)*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*
+         (y + z - y*z)^(5/2)) - 
+       (y*(8*y^6*(-1 + z)^6*(-15*Sqrt[z] + 8*Sqrt[1 + y*(-1 + z)]*
+             Sqrt[y + z - y*z]) - 4*y^5*(-1 + z)^5*(105*Sqrt[z] - 
+            105*z^(3/2) - 50*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
+            56*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z]) + 
+          2*y^4*(-1 + z)^2*(-300*Sqrt[z] + 1200*z^(3/2) - 1800*z^(5/2) + 
+            1200*z^(7/2) - 300*z^(9/2) + 128*Sqrt[1 + y*(-1 + z)]*
+             Sqrt[y + z - y*z] - 536*Sqrt[1 + y*(-1 + z)]*z*
+             Sqrt[y + z - y*z] + 863*Sqrt[1 + y*(-1 + z)]*z^2*
+             Sqrt[y + z - y*z] - 594*Sqrt[1 + y*(-1 + z)]*z^3*
+             Sqrt[y + z - y*z] + 127*Sqrt[1 + y*(-1 + z)]*z^4*
+             Sqrt[y + z - y*z]) + 2*z*(15*Sqrt[z] - 30*z^(3/2) + 30*z^(5/2) - 
+            30*z^(7/2) + 15*z^(9/2) - 2*Sqrt[1 + y*(-1 + z)]*
+             Sqrt[y + z - y*z] + 5*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
+            12*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
+            31*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
+            3*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 
+            13*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
+          y^3*(-1 + z)*(-450*Sqrt[z] + 2250*z^(3/2) - 4500*z^(5/2) + 
+            4500*z^(7/2) - 2250*z^(9/2) + 450*z^(11/2) + 
+            170*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
+            898*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
+            1917*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
+            2135*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
+            1033*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
+            9*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
+          y*(30*Sqrt[z] - 270*z^(3/2) + 630*z^(5/2) - 780*z^(7/2) + 
+            630*z^(9/2) - 270*z^(11/2) + 30*z^(13/2) - 8*Sqrt[1 + y*(-1 + z)]*
+             Sqrt[y + z - y*z] + 66*Sqrt[1 + y*(-1 + z)]*z*
+             Sqrt[y + z - y*z] - 179*Sqrt[1 + y*(-1 + z)]*z^2*
+             Sqrt[y + z - y*z] + 330*Sqrt[1 + y*(-1 + z)]*z^3*
+             Sqrt[y + z - y*z] - 411*Sqrt[1 + y*(-1 + z)]*z^4*
+             Sqrt[y + z - y*z] + 26*Sqrt[1 + y*(-1 + z)]*z^5*
+             Sqrt[y + z - y*z] + 140*Sqrt[1 + y*(-1 + z)]*z^6*
+             Sqrt[y + z - y*z]) - y^2*(180*Sqrt[z] - 1140*z^(3/2) + 
+            2820*z^(5/2) - 3720*z^(7/2) + 2820*z^(9/2) - 1140*z^(11/2) + 
+            180*z^(13/2) - 58*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
+            386*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
+            1015*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
+            1618*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
+            1420*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
+            296*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] + 
+            217*Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]))*G[r, t])/
+        (3*(-1 + 2*y)*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*
+         (y + z - y*z)^(5/2)) + (16*y*(2 + 2*z - z^2 - 2*z^3 + z^4 + 
+          2*y^2*(-1 + z)^2*(1 + 2*z + 2*z^2) - 2*y*(2 + z - 2*z^2 - 3*z^3 + 
+            2*z^4))*G[-1, 0, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+       (2*(z^2 + z^4 - 4*y^3*(-1 + z)^4*(1 + 2*z + 2*z^2) + 
+          2*y^4*(-1 + z)^4*(1 + 2*z + 2*z^2) - y*(-1 + z)^2*z*
+           (-2 - z - 2*z^2 + z^3) + y^2*(-1 + z)^2*(2 - 2*z - 3*z^2 - 6*z^3 + 
+            5*z^4))*G[-1, -r^(-1), t])/((1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) + (2*(4*y^5*(-1 + z)^4*(1 + 2*z + 2*z^2) - 
+          2*y^4*(-1 + z)^3*(-1 + 7*z + 24*z^2 + 18*z^3) + 3*(z^2 + z^4) + 
+          2*y^3*(-1 + z)^2*(-4 - 18*z - 29*z^2 + 22*z^3 + 25*z^4) + 
+          y*z*(6 + z + 22*z^2 - 26*z^3 - 4*z^4 + 5*z^5) + 
+          y^2*(6 + 2*z - 5*z^2 - 82*z^3 + 82*z^4 + 24*z^5 - 27*z^6))*
+         G[-1, r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) + ((-8*y^5*(-1 + z)^4*(1 + 2*z + 2*z^2) + 
+          4*y^4*(-1 + z)^3*(-7 - 11*z - 12*z^2 + 6*z^3) + 6*(z^2 + z^4) - 
+          4*y^3*(-1 + z)^2*(8 + 6*z + 7*z^2 - 26*z^3 + z^4) + 
+          2*y*z*(6 - 7*z + 14*z^2 - 22*z^3 + 4*z^4 + z^5) - 
+          2*y^2*(-6 + 14*z - 11*z^2 + 50*z^3 - 74*z^4 + 24*z^5 + 3*z^6))*
+         G[-1, -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (2*(z^2 + z^4 + 4*y^5*(-1 + z)^4*
+           (1 + 2*z + 2*z^2) - 2*y^4*(-1 + z)^3*(-3 + z + 12*z^2 + 14*z^3) + 
+          2*y^3*(-1 + z)^2*z*(-10 - 17*z + 6*z^2 + 17*z^3) + 
+          y*z*(2 + 3*z + 10*z^2 - 10*z^3 - 4*z^4 + 3*z^5) + 
+          y^2*(2 + 6*z - 7*z^2 - 38*z^3 + 30*z^4 + 24*z^5 - 17*z^6))*
+         G[-1, r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (8*(-(z^2*(1 + z^2)) + 
+          y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 4*y^3*(-1 + 8*z^3 - 9*z^4 + 
+            2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 
+          y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*G[0, -1, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (8*(-(z^2*(1 + z^2)) + y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 
+          4*y^3*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 
+            2*z^6) + y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*
+         G[0, 1, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) + (8*(-1 + y)*(-30*y^5*(-1 + z)^6 + 
+          12*y^6*(-1 + z)^6 + 2*y^4*(-1 + z)^4*(12 - 40*z + 11*z^2) + 
+          y^3*(-1 + z)^3*(7 - 63*z + 75*z^2 + z^3) - y^2*(-1 + z)^2*z*
+           (22 - 51*z + 30*z^2 + 7*z^3) + 3*(z^2 + z^4) + 
+          y*(1 + 6*z - 16*z^2 + 28*z^3 - 23*z^4 + 2*z^5 + 2*z^6))*
+         G[0, -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) + (8*(-1 + y)*(-30*y^5*(-1 + z)^6 + 
+          12*y^6*(-1 + z)^6 + 2*y^4*(-1 + z)^4*(12 - 40*z + 11*z^2) + 
+          y^3*(-1 + z)^3*(7 - 63*z + 75*z^2 + z^3) - y^2*(-1 + z)^2*z*
+           (22 - 51*z + 30*z^2 + 7*z^3) + 3*(z^2 + z^4) + 
+          y*(1 + 6*z - 16*z^2 + 28*z^3 - 23*z^4 + 2*z^5 + 2*z^6))*
+         G[0, r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) + (8*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 
+          2*z^3 - 2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*
+           (9 - 8*z + 2*z^2) - y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*
+         G[0, -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+       (8*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 2*z^3 - 
+          2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*(9 - 8*z + 2*z^2) - 
+          y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*G[0, r, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+       (16*y*(2 + 2*z - z^2 - 2*z^3 + z^4 + 2*y^2*(-1 + z)^2*
+           (1 + 2*z + 2*z^2) - 2*y*(2 + z - 2*z^2 - 3*z^3 + 2*z^4))*
+         G[1, 0, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+       (2*(z^2 + z^4 - 4*y^3*(-1 + z)^4*(1 + 2*z + 2*z^2) + 
+          2*y^4*(-1 + z)^4*(1 + 2*z + 2*z^2) - y*(-1 + z)^2*z*
+           (-2 - z - 2*z^2 + z^3) + y^2*(-1 + z)^2*(2 - 2*z - 3*z^2 - 6*z^3 + 
+            5*z^4))*G[1, -r^(-1), t])/((1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) + (2*(4*y^5*(-1 + z)^4*(1 + 2*z + 2*z^2) - 
+          2*y^4*(-1 + z)^3*(-1 + 7*z + 24*z^2 + 18*z^3) + 3*(z^2 + z^4) + 
+          2*y^3*(-1 + z)^2*(-4 - 18*z - 29*z^2 + 22*z^3 + 25*z^4) + 
+          y*z*(6 + z + 22*z^2 - 26*z^3 - 4*z^4 + 5*z^5) + 
+          y^2*(6 + 2*z - 5*z^2 - 82*z^3 + 82*z^4 + 24*z^5 - 27*z^6))*
+         G[1, r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) + ((-8*y^5*(-1 + z)^4*(1 + 2*z + 2*z^2) + 
+          4*y^4*(-1 + z)^3*(-7 - 11*z - 12*z^2 + 6*z^3) + 6*(z^2 + z^4) - 
+          4*y^3*(-1 + z)^2*(8 + 6*z + 7*z^2 - 26*z^3 + z^4) + 
+          2*y*z*(6 - 7*z + 14*z^2 - 22*z^3 + 4*z^4 + z^5) - 
+          2*y^2*(-6 + 14*z - 11*z^2 + 50*z^3 - 74*z^4 + 24*z^5 + 3*z^6))*
+         G[1, -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (2*(z^2 + z^4 + 4*y^5*(-1 + z)^4*
+           (1 + 2*z + 2*z^2) - 2*y^4*(-1 + z)^3*(-3 + z + 12*z^2 + 14*z^3) + 
+          2*y^3*(-1 + z)^2*z*(-10 - 17*z + 6*z^2 + 17*z^3) + 
+          y*z*(2 + 3*z + 10*z^2 - 10*z^3 - 4*z^4 + 3*z^5) + 
+          y^2*(2 + 6*z - 7*z^2 - 38*z^3 + 30*z^4 + 24*z^5 - 17*z^6))*
+         G[1, r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (4*(-1 + y)*(z^2 + z^4 + 2*y^2*(-1 + z)^2*
+           (1 + 2*z + 2*z^2) + 2*y*z*(1 + z^2 - 2*z^3))*G[-r^(-1), -1, t])/
+        ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) + 
+       (16*(-1 + y)*(-20*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 
+          4*y^4*(-1 + z)^4*(4 - 13*z + 4*z^2) - 2*y^3*(-1 + z)^3*
+           (-2 + 21*z - 24*z^2 + z^3) + 2*(z^2 + z^4) - y^2*(-1 + z)^2*
+           (1 + 16*z - 32*z^2 + 20*z^3 + 3*z^4) + 
+          y*(1 + 4*z - 11*z^2 + 18*z^3 - 15*z^4 + 2*z^5 + z^6))*
+         G[-r^(-1), 0, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (4*(-1 + y)*(z^2 + z^4 + 2*y^2*(-1 + z)^2*
+           (1 + 2*z + 2*z^2) + 2*y*z*(1 + z^2 - 2*z^3))*G[-r^(-1), 1, t])/
+        ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) + 
+       (4*(-1 + y)*(-30*y^5*(-1 + z)^6 + 12*y^6*(-1 + z)^6 + 
+          2*y^4*(-1 + z)^4*(12 - 40*z + 11*z^2) + y^3*(-1 + z)^3*
+           (7 - 63*z + 75*z^2 + z^3) - y^2*(-1 + z)^2*z*(22 - 51*z + 30*z^2 + 
+            7*z^3) + 3*(z^2 + z^4) + y*(1 + 6*z - 16*z^2 + 28*z^3 - 23*z^4 + 
+            2*z^5 + 2*z^6))*G[-r^(-1), -r^(-1), t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+       (2*(-1 + y)*(-50*y^5*(-1 + z)^6 + 20*y^6*(-1 + z)^6 + 
+          2*y^4*(-1 + z)^4*(20 - 68*z + 17*z^2) + y^3*(-1 + z)^3*
+           (13 - 105*z + 129*z^2 + 7*z^3) + 5*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(-2 + 34*z - 89*z^2 + 50*z^3 + 15*z^4) + 
+          y*(1 + 10*z - 26*z^2 + 48*z^3 - 39*z^4 + 2*z^5 + 4*z^6))*
+         G[-r^(-1), r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) + (2*(-1 + y)*(-50*y^5*(-1 + z)^6 + 
+          20*y^6*(-1 + z)^6 + 2*y^4*(-1 + z)^4*(18 - 66*z + 19*z^2) - 
+          y^3*(-1 + z)^3*(-7 + 93*z - 123*z^2 + z^3) + 3*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(3 + 30*z - 69*z^2 + 50*z^3 + 10*z^4) + 
+          y*(2 + 6*z - 19*z^2 + 34*z^3 - 30*z^4 + 4*z^5 + 3*z^6))*
+         G[-r^(-1), -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (2*(-1 + y)*(-40*y^5*(-1 + z)^6 + 
+          16*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*(9 - 25*z + 9*z^2) - 
+          2*y^3*(-1 + z)^3*(-5 + 48*z - 45*z^2 + 6*z^3) + 6*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(3 + 44*z - 72*z^2 + 40*z^3 + z^4) + 
+          y*(3 + 12*z - 31*z^2 + 46*z^3 - 37*z^4 + 6*z^5 + z^6))*
+         G[-r^(-1), r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (4*(-1 + y)*(z^2 + z^4 + 2*y^2*(-1 + z)^2*
+           (1 + 2*z + 2*z^2) + 2*y*z*(1 + z^2 - 2*z^3))*G[r^(-1), -1, t])/
+        ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) + 
+       (16*(-1 + y)*(1 - 2*y^3*(-5 + z)*(-1 + z)^3 + 4*y^4*(-1 + z)^4 + z^2 + 
+          y*(-1 + z)^3*(3 + z) - 2*y^2*(-1 + z)^2*(-4 + 4*z + z^2))*
+         G[r^(-1), 0, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) - 
+       (4*(-1 + y)*(z^2 + z^4 + 2*y^2*(-1 + z)^2*(1 + 2*z + 2*z^2) + 
+          2*y*z*(1 + z^2 - 2*z^3))*G[r^(-1), 1, t])/((-1 + 2*y)*(-1 + z)*z*
+         (y + z - y*z)^2) + (2*(-1 + y)*(-90*y^5*(-1 + z)^6 + 
+          36*y^6*(-1 + z)^6 + 2*y^4*(-1 + z)^4*(36 - 116*z + 37*z^2) - 
+          y^3*(-1 + z)^3*(-17 + 189*z - 213*z^2 + 13*z^3) + 9*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(6 + 74*z - 141*z^2 + 90*z^3 + 11*z^4) + 
+          y*(5 + 18*z - 50*z^2 + 80*z^3 - 67*z^4 + 10*z^5 + 4*z^6))*
+         G[r^(-1), -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) + (4*(-1 + y)*(-30*y^5*(-1 + z)^6 + 
+          12*y^6*(-1 + z)^6 + 2*y^4*(-1 + z)^4*(12 - 40*z + 11*z^2) + 
+          y^3*(-1 + z)^3*(7 - 63*z + 75*z^2 + z^3) - y^2*(-1 + z)^2*z*
+           (22 - 51*z + 30*z^2 + 7*z^3) + 3*(z^2 + z^4) + 
+          y*(1 + 6*z - 16*z^2 + 28*z^3 - 23*z^4 + 2*z^5 + 2*z^6))*
+         G[r^(-1), r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) + (2*(-1 + y)*(-40*y^5*(-1 + z)^6 + 
+          16*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*(7 - 27*z + 7*z^2) + 
+          2*y^3*(-1 + z)^3*(3 - 36*z + 51*z^2 + 2*z^3) + 2*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(1 + 20*z - 56*z^2 + 40*z^3 + 11*z^4) + 
+          y*(1 + 4*z - 13*z^2 + 26*z^3 - 23*z^4 + 2*z^5 + 3*z^6))*
+         G[r^(-1), -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) + (2*(-1 + y)*(-10*y^5*(-1 + z)^6 + 
+          4*y^6*(-1 + z)^6 - z^2*(1 + z^2) + 2*y^4*(-1 + z)^4*
+           (2 - 10*z + 7*z^2) - y^3*(-1 + z)^3*(5 + 9*z - 15*z^2 + 13*z^3) + 
+          y^2*(-1 + z)^2*(-7 - 6*z - 7*z^2 - 10*z^3 + 6*z^4) + 
+          y*(2 - 2*z + z^2 - 6*z^3 + 2*z^4 + 4*z^5 - z^6))*G[r^(-1), r, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+       (4*y*(2 + 2*z - z^2 - 2*z^3 + z^4 + 2*y^2*(-1 + z)^2*
+           (1 + 2*z + 2*z^2) - 2*y*(2 + z - 2*z^2 - 3*z^3 + 2*z^4))*
+         G[-r, -1, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+       (16*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 2*z^3 - 
+          2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*(9 - 8*z + 2*z^2) - 
+          y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*G[-r, 0, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+       (4*y*(2 + 2*z - z^2 - 2*z^3 + z^4 + 2*y^2*(-1 + z)^2*
+           (1 + 2*z + 2*z^2) - 2*y*(2 + z - 2*z^2 - 3*z^3 + 2*z^4))*
+         G[-r, 1, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+       (2*y*(-2 - 70*y^5*(-1 + z)^6 + 20*y^6*(-1 + z)^6 + 11*z^2 - 24*z^3 + 
+          13*z^4 + 4*z^5 - 4*z^6 + 2*y^4*(-1 + z)^4*(39 - 124*z + 36*z^2) - 
+          y^3*(-1 + z)^3*(-21 + 287*z - 281*z^2 + 3*z^3) - 
+          y^2*(-1 + z)^2*(16 + 130*z - 293*z^2 + 118*z^3 + 37*z^4) + 
+          y*(11 + 8*z - 126*z^2 + 218*z^3 - 119*z^4 - 14*z^5 + 22*z^6))*
+         G[-r, -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (2*y*(2 + 12*z^2 + 6*z^3 - 6*z^4 - 6*z^5 + 
+          4*z^6 + 12*y^4*(-1 + z)^4*(1 + z + z^2) - 2*y^3*(-1 + z)^3*
+           (-13 + 6*z + 15*z^2 + 20*z^3) + y^2*(-1 + z)^3*
+           (-19 + 27*z + 57*z^2 + 47*z^3) + y*(-7 + 30*z - 39*z^2 - 18*z^3 + 
+            21*z^4 + 36*z^5 - 23*z^6))*G[-r, r^(-1), t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+       (4*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 2*z^3 - 
+          2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*(9 - 8*z + 2*z^2) - 
+          y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*G[-r, -r, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) - 
+       (6*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 2*z^3 - 
+          2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*(9 - 8*z + 2*z^2) - 
+          y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*G[-r, r, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+       (4*y*(2 + 2*z - z^2 - 2*z^3 + z^4 + 2*y^2*(-1 + z)^2*
+           (1 + 2*z + 2*z^2) - 2*y*(2 + z - 2*z^2 - 3*z^3 + 2*z^4))*
+         G[r, -1, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+       (4*y*(2 + 2*z - z^2 - 2*z^3 + z^4 + 2*y^2*(-1 + z)^2*
+           (1 + 2*z + 2*z^2) - 2*y*(2 + z - 2*z^2 - 3*z^3 + 2*z^4))*
+         G[r, 1, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+       (2*y*(-112*y^5*(-1 + z)^6 + 32*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*
+           (33 - 95*z + 33*z^2) - 2*y^3*(-1 + z)^3*(-27 + 214*z - 223*z^2 + 
+            24*z^3) - y^2*(-1 + z)^2*(7 + 202*z - 422*z^2 + 226*z^3 + 
+            19*z^4) - 2*(1 - 10*z^2 + 15*z^3 - 11*z^4 + z^5 + 2*z^6) + 
+          y*(11 + 26*z - 189*z^2 + 314*z^3 - 209*z^4 + 28*z^5 + 19*z^6))*
+         G[r, -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) + (2*y*(-2 - 14*y^5*(-1 + z)^6 + 4*y^6*(-1 + z)^6 - 
+          9*z^2 - 8*z^3 + 9*z^4 + 4*z^5 - 4*z^6 + 2*y^4*(-1 + z)^4*
+           (3 - 28*z + 4*z^2) + 5*y^3*(-1 + z)^3*(-3 - 7*z + 17*z^2 + 
+            5*z^3) - y^2*(-1 + z)^2*(16 - 22*z - 73*z^2 + 46*z^3 + 41*z^4) + 
+          y*(7 - 24*z + 18*z^2 + 50*z^3 - 51*z^4 - 22*z^5 + 22*z^6))*
+         G[r, r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) + (2*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 
+          2*z^3 - 2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*
+           (9 - 8*z + 2*z^2) - y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*
+         G[r, -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+       (4*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 2*z^3 - 
+          2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*(9 - 8*z + 2*z^2) - 
+          y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*G[r, r, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z)) + 
+     G[-I, r]*((-12*(-139 + 42*Pi^2)*y^5*(-1 + z)^6 + 4*(-139 + 42*Pi^2)*y^6*
+          (-1 + z)^6 + 3*z^2*(-28 - 27*z - 31*z^2 + 22*Pi^2*(1 + z^2)) + 
+         4*y^4*(-1 + z)^4*(-478 + 1004*z - 488*z^2 + 
+           69*Pi^2*(2 - 5*z + 2*z^2)) - 4*y^3*(-1 + z)^4*
+          (-261 + 618*z - 281*z^2 + 6*Pi^2*(11 - 45*z + 11*z^2)) + 
+         y*(-1 + z)*(63 + 497*z - 258*z^2 + 375*z^3 - 445*z^4 - 16*z^5 + 
+           3*Pi^2*(-3 - 47*z + 100*z^2 - 100*z^3 + 47*z^4 + 3*z^5)) + 
+         y^2*(-1 + z)*(181 - 1909*z + 3314*z^2 - 3511*z^3 + 1977*z^4 - 
+           268*z^5 + 3*Pi^2*(-13 + 219*z - 536*z^2 + 536*z^3 - 219*z^4 + 
+             13*z^5)))/(9*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       ((-1 + y)*(3*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z]*
+           (3 + 8*z + 3*z^2) + 4*y^6*(-1 + z)^6*(-18*Sqrt[z] + 
+            11*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z]) - 
+          2*y^5*(-1 + z)^5*(90*Sqrt[z] - 90*z^(3/2) - 19*Sqrt[1 + y*(-1 + z)]*
+             Sqrt[y + z - y*z] + 55*Sqrt[1 + y*(-1 + z)]*z*
+             Sqrt[y + z - y*z]) + 2*y^4*(-1 + z)^4*(-90*Sqrt[z] + 
+            180*z^(3/2) - 90*z^(5/2) + 24*Sqrt[1 + y*(-1 + z)]*
+             Sqrt[y + z - y*z] + 42*Sqrt[1 + y*(-1 + z)]*z*
+             Sqrt[y + z - y*z] + 91*Sqrt[1 + y*(-1 + z)]*z^2*
+             Sqrt[y + z - y*z]) + y^3*(-1 + z)*(-90*Sqrt[z] + 450*z^(3/2) - 
+            900*z^(5/2) + 900*z^(7/2) - 450*z^(9/2) + 90*z^(11/2) - 
+            2*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
+            38*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
+            305*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
+            239*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
+            347*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 
+            97*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
+          2*y^2*(-1 + z)*(9*Sqrt[z] - 63*z^(3/2) + 108*z^(5/2) - 
+            108*z^(7/2) + 63*z^(9/2) - 9*z^(11/2) + 13*Sqrt[1 + y*(-1 + z)]*
+             Sqrt[y + z - y*z] + 24*Sqrt[1 + y*(-1 + z)]*z*
+             Sqrt[y + z - y*z] + 86*Sqrt[1 + y*(-1 + z)]*z^2*
+             Sqrt[y + z - y*z] - 115*Sqrt[1 + y*(-1 + z)]*z^3*
+             Sqrt[y + z - y*z] - 83*Sqrt[1 + y*(-1 + z)]*z^4*
+             Sqrt[y + z - y*z] + 3*Sqrt[1 + y*(-1 + z)]*z^5*
+             Sqrt[y + z - y*z]) + y*(-18*z^(3/2) + 36*z^(5/2) - 36*z^(7/2) + 
+            36*z^(9/2) - 18*z^(11/2) + 6*Sqrt[1 + y*(-1 + z)]*
+             Sqrt[y + z - y*z] + 2*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
+            2*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
+            126*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
+            7*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
+            18*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] + 
+            Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]))*G[-r^(-1), t])/
+        (3*(-1 + 2*y)*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*
+         (y + z - y*z)^(5/2)) - ((-1 + y)*(3*Sqrt[1 + y*(-1 + z)]*z^2*
+           Sqrt[y + z - y*z]*(3 + 8*z + 3*z^2) + 4*y^6*(-1 + z)^6*
+           (18*Sqrt[z] + 11*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z]) - 
+          2*y^5*(-1 + z)^5*(-90*Sqrt[z] + 90*z^(3/2) - 
+            19*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
+            55*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z]) + 
+          2*y^4*(-1 + z)^4*(90*Sqrt[z] - 180*z^(3/2) + 90*z^(5/2) + 
+            24*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
+            42*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
+            91*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z]) + 
+          2*y^2*(-1 + z)*(-9*Sqrt[z] + 63*z^(3/2) - 108*z^(5/2) + 
+            108*z^(7/2) - 63*z^(9/2) + 9*z^(11/2) + 13*Sqrt[1 + y*(-1 + z)]*
+             Sqrt[y + z - y*z] + 24*Sqrt[1 + y*(-1 + z)]*z*
+             Sqrt[y + z - y*z] + 86*Sqrt[1 + y*(-1 + z)]*z^2*
+             Sqrt[y + z - y*z] - 115*Sqrt[1 + y*(-1 + z)]*z^3*
+             Sqrt[y + z - y*z] - 83*Sqrt[1 + y*(-1 + z)]*z^4*
+             Sqrt[y + z - y*z] + 3*Sqrt[1 + y*(-1 + z)]*z^5*
+             Sqrt[y + z - y*z]) - y^3*(-1 + z)*(-90*Sqrt[z] + 450*z^(3/2) - 
+            900*z^(5/2) + 900*z^(7/2) - 450*z^(9/2) + 90*z^(11/2) + 
+            2*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
+            38*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
+            305*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
+            239*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
+            347*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
+            97*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
+          y*(18*z^(3/2) - 36*z^(5/2) + 36*z^(7/2) - 36*z^(9/2) + 
+            18*z^(11/2) + 6*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
+            2*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
+            2*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
+            126*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
+            7*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
+            18*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] + 
+            Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]))*G[r^(-1), t])/
+        (3*(-1 + 2*y)*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*
+         (y + z - y*z)^(5/2)) - 
+       (y*(4*y^6*(-1 + z)^6*(-18*Sqrt[z] + 11*Sqrt[1 + y*(-1 + z)]*
+             Sqrt[y + z - y*z]) - 2*y^5*(-1 + z)^5*(126*Sqrt[z] - 
+            126*z^(3/2) - 113*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
+            77*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z]) + 
+          2*y^4*(-1 + z)^4*(-180*Sqrt[z] + 360*z^(3/2) - 180*z^(5/2) + 
+            259*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
+            248*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
+            146*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z]) + 
+          y^3*(-1 + z)*(-270*Sqrt[z] + 1350*z^(3/2) - 2700*z^(5/2) + 
+            2700*z^(7/2) - 1350*z^(9/2) + 270*z^(11/2) + 
+            694*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
+            1982*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
+            2721*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
+            2287*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
+            1121*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 
+            411*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
+          y^2*(-1 + z)*(108*Sqrt[z] - 576*z^(3/2) + 1116*z^(5/2) - 
+            1116*z^(7/2) + 576*z^(9/2) - 108*z^(11/2) - 
+            548*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
+            974*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
+            1107*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
+            1019*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
+            417*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
+            367*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
+          y*(18*Sqrt[z] - 162*z^(3/2) + 378*z^(5/2) - 468*z^(7/2) + 
+            378*z^(9/2) - 162*z^(11/2) + 18*z^(13/2) - 
+            226*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
+            450*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
+            397*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
+            498*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
+            267*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
+            214*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] - 
+            164*Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]) + 
+          2*(9*z^(3/2) - 18*z^(5/2) + 18*z^(7/2) - 18*z^(9/2) + 9*z^(11/2) + 
+            18*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
+            28*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
+            7*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
+            30*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
+            2*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 
+            15*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] + 
+            13*Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]))*G[-r, t])/
+        (3*(-1 + 2*y)*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*
+         (y + z - y*z)^(5/2)) + 
+       (y*(-4*y^6*(-1 + z)^6*(18*Sqrt[z] + 11*Sqrt[1 + y*(-1 + z)]*
+             Sqrt[y + z - y*z]) + 2*y^5*(-1 + z)^5*(-126*Sqrt[z] + 
+            126*z^(3/2) - 113*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
+            77*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z]) - 
+          2*y^4*(-1 + z)^4*(180*Sqrt[z] - 360*z^(3/2) + 180*z^(5/2) + 
+            259*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
+            248*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
+            146*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z]) - 
+          y^2*(-1 + z)*(-108*Sqrt[z] + 576*z^(3/2) - 1116*z^(5/2) + 
+            1116*z^(7/2) - 576*z^(9/2) + 108*z^(11/2) - 
+            548*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
+            974*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
+            1107*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
+            1019*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
+            417*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
+            367*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
+          y^3*(-1 + z)*(-270*Sqrt[z] + 1350*z^(3/2) - 2700*z^(5/2) + 
+            2700*z^(7/2) - 1350*z^(9/2) + 270*z^(11/2) - 
+            694*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
+            1982*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
+            2721*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
+            2287*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
+            1121*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
+            411*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
+          2*(9*z^(3/2) - 18*z^(5/2) + 18*z^(7/2) - 18*z^(9/2) + 9*z^(11/2) - 
+            18*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
+            28*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
+            7*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
+            30*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
+            2*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
+            15*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] - 
+            13*Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]) + 
+          y*(18*Sqrt[z] - 162*z^(3/2) + 378*z^(5/2) - 468*z^(7/2) + 
+            378*z^(9/2) - 162*z^(11/2) + 18*z^(13/2) + 
+            226*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
+            450*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
+            397*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
+            498*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
+            267*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 
+            214*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] + 
+            164*Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]))*G[r, t])/
+        (3*(-1 + 2*y)*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*
+         (y + z - y*z)^(5/2)) + (6*(-(z^2*(1 + z^2)) + 
+          y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 4*y^3*(-1 + 8*z^3 - 9*z^4 + 
+            2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 
+          y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*G[-1, -r^(-1), t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+       (6*(-(z^2*(1 + z^2)) + y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 
+          4*y^3*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 
+            2*z^6) + y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*
+         G[-1, r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (6*(-(z^2*(1 + z^2)) + 
+          y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 4*y^3*(-1 + 8*z^3 - 9*z^4 + 
+            2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 
+          y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*G[-1, -r, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (6*(-(z^2*(1 + z^2)) + y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 
+          4*y^3*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 
+            2*z^6) + y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*
+         G[-1, r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (128*(1 - 2*y*(-1 + z)^2 + 2*y^2*(-1 + z)^2 + 
+          z^2)*G[0, 0, t])/((-1 + z)*z) - 
+       (8*(-1 + y)*(-20*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 
+          4*y^4*(-1 + z)^4*(4 - 13*z + 4*z^2) - 2*y^3*(-1 + z)^3*
+           (-2 + 21*z - 24*z^2 + z^3) + 2*(z^2 + z^4) - y^2*(-1 + z)^2*
+           (1 + 16*z - 32*z^2 + 20*z^3 + 3*z^4) + 
+          y*(1 + 4*z - 11*z^2 + 18*z^3 - 15*z^4 + 2*z^5 + z^6))*
+         G[0, -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (8*(-1 + y)*(-20*y^5*(-1 + z)^6 + 
+          8*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*(4 - 13*z + 4*z^2) - 
+          2*y^3*(-1 + z)^3*(-2 + 21*z - 24*z^2 + z^3) + 2*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(1 + 16*z - 32*z^2 + 20*z^3 + 3*z^4) + 
+          y*(1 + 4*z - 11*z^2 + 18*z^3 - 15*z^4 + 2*z^5 + z^6))*
+         G[0, r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (8*y*(-28*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 
+          4*y^4*(-1 + z)^4*(9 - 23*z + 9*z^2) - 2*z^2*(-4 + 3*z - 2*z^2 + 
+            z^3) - 2*y^3*(-1 + z)^3*(-10 + 55*z - 52*z^2 + 11*z^3) + 
+          y^2*(-1 + z)^2*(3 - 62*z + 98*z^2 - 54*z^3 + 7*z^4) + 
+          y*(1 + 14*z - 57*z^2 + 74*z^3 - 47*z^4 + 16*z^5 - z^6))*
+         G[0, -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (8*y*(-28*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 
+          4*y^4*(-1 + z)^4*(9 - 23*z + 9*z^2) - 2*z^2*(-4 + 3*z - 2*z^2 + 
+            z^3) - 2*y^3*(-1 + z)^3*(-10 + 55*z - 52*z^2 + 11*z^3) + 
+          y^2*(-1 + z)^2*(3 - 62*z + 98*z^2 - 54*z^3 + 7*z^4) + 
+          y*(1 + 14*z - 57*z^2 + 74*z^3 - 47*z^4 + 16*z^5 - z^6))*G[0, r, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+       (6*(-(z^2*(1 + z^2)) + y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 
+          4*y^3*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 
+            2*z^6) + y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*
+         G[1, -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) + (6*(-(z^2*(1 + z^2)) + 
+          y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 4*y^3*(-1 + 8*z^3 - 9*z^4 + 
+            2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 
+          y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*G[1, r^(-1), t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (6*(-(z^2*(1 + z^2)) + y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 
+          4*y^3*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 
+            2*z^6) + y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*
+         G[1, -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (6*(-(z^2*(1 + z^2)) + 
+          y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 4*y^3*(-1 + 8*z^3 - 9*z^4 + 
+            2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 
+          y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*G[1, r, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (8*(-1 + y)*(-20*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 
+          4*y^4*(-1 + z)^4*(4 - 13*z + 4*z^2) - 2*y^3*(-1 + z)^3*
+           (-2 + 21*z - 24*z^2 + z^3) + 2*(z^2 + z^4) - y^2*(-1 + z)^2*
+           (1 + 16*z - 32*z^2 + 20*z^3 + 3*z^4) + 
+          y*(1 + 4*z - 11*z^2 + 18*z^3 - 15*z^4 + 2*z^5 + z^6))*
+         G[-r^(-1), 0, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (4*(-1 + y)*(-20*y^5*(-1 + z)^6 + 
+          8*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*(4 - 13*z + 4*z^2) - 
+          2*y^3*(-1 + z)^3*(-2 + 21*z - 24*z^2 + z^3) + 2*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(1 + 16*z - 32*z^2 + 20*z^3 + 3*z^4) + 
+          y*(1 + 4*z - 11*z^2 + 18*z^3 - 15*z^4 + 2*z^5 + z^6))*
+         G[-r^(-1), -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (2*(-1 + y)*(-10*y^5*(-1 + z)^6 + 
+          4*y^6*(-1 + z)^6 + z^2 + z^4 + 2*y^4*(-1 + z)^4*(4 - 16*z + z^2) + 
+          y^3*(-1 + z)^3*(5 - 21*z + 33*z^2 + 11*z^3) - y^2*(-1 + z)^2*
+           (-4 + 2*z - 25*z^2 + 10*z^3 + 9*z^4) + 
+          y*(-1 + 2*z - 4*z^2 + 12*z^3 - 9*z^4 - 2*z^5 + 2*z^6))*
+         G[-r^(-1), r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (2*(-1 + y)*(-10*y^5*(-1 + z)^6 + 
+          4*y^6*(-1 + z)^6 + 2*y^4*(-1 + z)^4*z*(-14 + 3*z) - 
+          y^3*(-1 + z)^3*(13 + 21*z - 3*z^2 + 5*z^3) - 3*(z^2 + z^4) + 
+          y^2*(-1 + z)^2*(-11 - 6*z - 9*z^2 + 6*z^3 + 4*z^4) - 
+          y*(-2 + 6*z - 5*z^2 + 14*z^3 - 14*z^4 + z^6))*G[-r^(-1), -r, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+       (2*(-1 + y)*(-20*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 
+          4*y^4*(-1 + z)^4*(6 - 11*z + 6*z^2) - 2*y^3*(-1 + z)^3*
+           (-8 + 21*z - 30*z^2 + 5*z^3) + 6*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(-5 + 24*z - 48*z^2 + 36*z^3 + z^4) + 
+          y*(1 + 12*z - 23*z^2 + 38*z^3 - 35*z^4 + 6*z^5 + z^6))*
+         G[-r^(-1), r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (8*(-1 + y)*(-20*y^5*(-1 + z)^6 + 
+          8*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*(4 - 13*z + 4*z^2) - 
+          2*y^3*(-1 + z)^3*(-2 + 21*z - 24*z^2 + z^3) + 2*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(1 + 16*z - 32*z^2 + 20*z^3 + 3*z^4) + 
+          y*(1 + 4*z - 11*z^2 + 18*z^3 - 15*z^4 + 2*z^5 + z^6))*
+         G[r^(-1), 0, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (2*(-1 + y)*(-10*y^5*(-1 + z)^6 + 
+          4*y^6*(-1 + z)^6 + z^2 + z^4 + 2*y^4*(-1 + z)^4*(4 - 16*z + z^2) + 
+          y^3*(-1 + z)^3*(5 - 21*z + 33*z^2 + 11*z^3) - y^2*(-1 + z)^2*
+           (-4 + 2*z - 25*z^2 + 10*z^3 + 9*z^4) + 
+          y*(-1 + 2*z - 4*z^2 + 12*z^3 - 9*z^4 - 2*z^5 + 2*z^6))*
+         G[r^(-1), -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (4*(-1 + y)*(-20*y^5*(-1 + z)^6 + 
+          8*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*(4 - 13*z + 4*z^2) - 
+          2*y^3*(-1 + z)^3*(-2 + 21*z - 24*z^2 + z^3) + 2*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(1 + 16*z - 32*z^2 + 20*z^3 + 3*z^4) + 
+          y*(1 + 4*z - 11*z^2 + 18*z^3 - 15*z^4 + 2*z^5 + z^6))*
+         G[r^(-1), r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) + (2*(-1 + y)*(-20*y^5*(-1 + z)^6 + 
+          8*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*(6 - 11*z + 6*z^2) - 
+          2*y^3*(-1 + z)^3*(-8 + 21*z - 30*z^2 + 5*z^3) + 6*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(-5 + 24*z - 48*z^2 + 36*z^3 + z^4) + 
+          y*(1 + 12*z - 23*z^2 + 38*z^3 - 35*z^4 + 6*z^5 + z^6))*
+         G[r^(-1), -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (2*(-1 + y)*(-10*y^5*(-1 + z)^6 + 
+          4*y^6*(-1 + z)^6 + 2*y^4*(-1 + z)^4*z*(-14 + 3*z) - 
+          y^3*(-1 + z)^3*(13 + 21*z - 3*z^2 + 5*z^3) - 3*(z^2 + z^4) + 
+          y^2*(-1 + z)^2*(-11 - 6*z - 9*z^2 + 6*z^3 + 4*z^4) - 
+          y*(-2 + 6*z - 5*z^2 + 14*z^3 - 14*z^4 + z^6))*G[r^(-1), r, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (8*y*(-28*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*
+           (9 - 23*z + 9*z^2) - 2*z^2*(-4 + 3*z - 2*z^2 + z^3) - 
+          2*y^3*(-1 + z)^3*(-10 + 55*z - 52*z^2 + 11*z^3) + 
+          y^2*(-1 + z)^2*(3 - 62*z + 98*z^2 - 54*z^3 + 7*z^4) + 
+          y*(1 + 14*z - 57*z^2 + 74*z^3 - 47*z^4 + 16*z^5 - z^6))*
+         G[-r, 0, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (2*y*(-2 - 14*y^5*(-1 + z)^6 + 4*y^6*(-1 + z)^6 - 
+          5*z^2 - 4*z^3 + 7*z^4 - 2*z^6 + 2*y^4*(-1 + z)^4*
+           (5 - 24*z + 8*z^2) + y^3*(-1 + z)^3*(-7 - 31*z + 73*z^2 + z^3) - 
+          y^2*(-1 + z)^2*(12 - 10*z - 51*z^2 + 50*z^3 + 15*z^4) + 
+          y*(7 - 16*z + 10*z^2 + 34*z^3 - 47*z^4 + 2*z^5 + 10*z^6))*
+         G[-r, -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) + (2*y*(-28*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 
+          4*y^4*(-1 + z)^4*(11 - 21*z + 11*z^2) - 2*y^3*(-1 + z)^3*
+           (-20 + 55*z - 46*z^2 + 23*z^3) + y^2*(-1 + z)^2*
+           (21 - 82*z + 78*z^2 - 58*z^3 + 33*z^4) + 
+          y*(-7 + 34*z - 73*z^2 + 62*z^3 - 43*z^4 + 40*z^5 - 13*z^6) + 
+          2*(1 + 7*z^2 - z^3 + z^4 - 3*z^5 + z^6))*G[-r, r^(-1), t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (4*y*(-28*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*
+           (9 - 23*z + 9*z^2) - 2*z^2*(-4 + 3*z - 2*z^2 + z^3) - 
+          2*y^3*(-1 + z)^3*(-10 + 55*z - 52*z^2 + 11*z^3) + 
+          y^2*(-1 + z)^2*(3 - 62*z + 98*z^2 - 54*z^3 + 7*z^4) + 
+          y*(1 + 14*z - 57*z^2 + 74*z^3 - 47*z^4 + 16*z^5 - z^6))*
+         G[-r, -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (2*y*(-14*y^5*(-1 + z)^6 + 4*y^6*(-1 + z)^6 + 
+          2*y^4*(-1 + z)^4*(9 - 26*z + 6*z^2) + y^3*(-1 + z)^3*
+           (7 - 79*z + 43*z^2 + z^3) + z^2*(7 - 6*z - z^2 + 2*z^3) - 
+          y^2*(-1 + z)^2*(3 + 52*z - 67*z^2 + 4*z^4) + 
+          y*(2 + 10*z - 51*z^2 + 52*z^3 - 4*z^4 - 10*z^5 + z^6))*G[-r, r, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (8*y*(-28*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*
+           (9 - 23*z + 9*z^2) - 2*z^2*(-4 + 3*z - 2*z^2 + z^3) - 
+          2*y^3*(-1 + z)^3*(-10 + 55*z - 52*z^2 + 11*z^3) + 
+          y^2*(-1 + z)^2*(3 - 62*z + 98*z^2 - 54*z^3 + 7*z^4) + 
+          y*(1 + 14*z - 57*z^2 + 74*z^3 - 47*z^4 + 16*z^5 - z^6))*G[r, 0, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+       (2*y*(-28*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*
+           (11 - 21*z + 11*z^2) - 2*y^3*(-1 + z)^3*(-20 + 55*z - 46*z^2 + 
+            23*z^3) + y^2*(-1 + z)^2*(21 - 82*z + 78*z^2 - 58*z^3 + 33*z^4) + 
+          y*(-7 + 34*z - 73*z^2 + 62*z^3 - 43*z^4 + 40*z^5 - 13*z^6) + 
+          2*(1 + 7*z^2 - z^3 + z^4 - 3*z^5 + z^6))*G[r, -r^(-1), t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (2*y*(-2 - 14*y^5*(-1 + z)^6 + 4*y^6*(-1 + z)^6 - 5*z^2 - 4*z^3 + 
+          7*z^4 - 2*z^6 + 2*y^4*(-1 + z)^4*(5 - 24*z + 8*z^2) + 
+          y^3*(-1 + z)^3*(-7 - 31*z + 73*z^2 + z^3) - y^2*(-1 + z)^2*
+           (12 - 10*z - 51*z^2 + 50*z^3 + 15*z^4) + 
+          y*(7 - 16*z + 10*z^2 + 34*z^3 - 47*z^4 + 2*z^5 + 10*z^6))*
+         G[r, r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (2*y*(-14*y^5*(-1 + z)^6 + 4*y^6*(-1 + z)^6 + 
+          2*y^4*(-1 + z)^4*(9 - 26*z + 6*z^2) + y^3*(-1 + z)^3*
+           (7 - 79*z + 43*z^2 + z^3) + z^2*(7 - 6*z - z^2 + 2*z^3) - 
+          y^2*(-1 + z)^2*(3 + 52*z - 67*z^2 + 4*z^4) + 
+          y*(2 + 10*z - 51*z^2 + 52*z^3 - 4*z^4 - 10*z^5 + z^6))*G[r, -r, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (4*y*(-28*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*
+           (9 - 23*z + 9*z^2) - 2*z^2*(-4 + 3*z - 2*z^2 + z^3) - 
+          2*y^3*(-1 + z)^3*(-10 + 55*z - 52*z^2 + 11*z^3) + 
+          y^2*(-1 + z)^2*(3 - 62*z + 98*z^2 - 54*z^3 + 7*z^4) + 
+          y*(1 + 14*z - 57*z^2 + 74*z^3 - 47*z^4 + 16*z^5 - z^6))*G[r, r, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2)) + 
+     G[I, r]*((-12*(-139 + 42*Pi^2)*y^5*(-1 + z)^6 + 4*(-139 + 42*Pi^2)*y^6*
+          (-1 + z)^6 + 3*z^2*(-28 - 27*z - 31*z^2 + 22*Pi^2*(1 + z^2)) + 
+         4*y^4*(-1 + z)^4*(-478 + 1004*z - 488*z^2 + 
+           69*Pi^2*(2 - 5*z + 2*z^2)) - 4*y^3*(-1 + z)^4*
+          (-261 + 618*z - 281*z^2 + 6*Pi^2*(11 - 45*z + 11*z^2)) + 
+         y*(-1 + z)*(63 + 497*z - 258*z^2 + 375*z^3 - 445*z^4 - 16*z^5 + 
+           3*Pi^2*(-3 - 47*z + 100*z^2 - 100*z^3 + 47*z^4 + 3*z^5)) + 
+         y^2*(-1 + z)*(181 - 1909*z + 3314*z^2 - 3511*z^3 + 1977*z^4 - 
+           268*z^5 + 3*Pi^2*(-13 + 219*z - 536*z^2 + 536*z^3 - 219*z^4 + 
+             13*z^5)))/(9*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       ((-1 + y)*(3*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z]*
+           (3 + 8*z + 3*z^2) + 4*y^6*(-1 + z)^6*(-18*Sqrt[z] + 
+            11*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z]) - 
+          2*y^5*(-1 + z)^5*(90*Sqrt[z] - 90*z^(3/2) - 19*Sqrt[1 + y*(-1 + z)]*
+             Sqrt[y + z - y*z] + 55*Sqrt[1 + y*(-1 + z)]*z*
+             Sqrt[y + z - y*z]) + 2*y^4*(-1 + z)^4*(-90*Sqrt[z] + 
+            180*z^(3/2) - 90*z^(5/2) + 24*Sqrt[1 + y*(-1 + z)]*
+             Sqrt[y + z - y*z] + 42*Sqrt[1 + y*(-1 + z)]*z*
+             Sqrt[y + z - y*z] + 91*Sqrt[1 + y*(-1 + z)]*z^2*
+             Sqrt[y + z - y*z]) + y^3*(-1 + z)*(-90*Sqrt[z] + 450*z^(3/2) - 
+            900*z^(5/2) + 900*z^(7/2) - 450*z^(9/2) + 90*z^(11/2) - 
+            2*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
+            38*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
+            305*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
+            239*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
+            347*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 
+            97*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
+          2*y^2*(-1 + z)*(9*Sqrt[z] - 63*z^(3/2) + 108*z^(5/2) - 
+            108*z^(7/2) + 63*z^(9/2) - 9*z^(11/2) + 13*Sqrt[1 + y*(-1 + z)]*
+             Sqrt[y + z - y*z] + 24*Sqrt[1 + y*(-1 + z)]*z*
+             Sqrt[y + z - y*z] + 86*Sqrt[1 + y*(-1 + z)]*z^2*
+             Sqrt[y + z - y*z] - 115*Sqrt[1 + y*(-1 + z)]*z^3*
+             Sqrt[y + z - y*z] - 83*Sqrt[1 + y*(-1 + z)]*z^4*
+             Sqrt[y + z - y*z] + 3*Sqrt[1 + y*(-1 + z)]*z^5*
+             Sqrt[y + z - y*z]) + y*(-18*z^(3/2) + 36*z^(5/2) - 36*z^(7/2) + 
+            36*z^(9/2) - 18*z^(11/2) + 6*Sqrt[1 + y*(-1 + z)]*
+             Sqrt[y + z - y*z] + 2*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
+            2*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
+            126*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
+            7*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
+            18*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] + 
+            Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]))*G[-r^(-1), t])/
+        (3*(-1 + 2*y)*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*
+         (y + z - y*z)^(5/2)) - ((-1 + y)*(3*Sqrt[1 + y*(-1 + z)]*z^2*
+           Sqrt[y + z - y*z]*(3 + 8*z + 3*z^2) + 4*y^6*(-1 + z)^6*
+           (18*Sqrt[z] + 11*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z]) - 
+          2*y^5*(-1 + z)^5*(-90*Sqrt[z] + 90*z^(3/2) - 
+            19*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
+            55*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z]) + 
+          2*y^4*(-1 + z)^4*(90*Sqrt[z] - 180*z^(3/2) + 90*z^(5/2) + 
+            24*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
+            42*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
+            91*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z]) + 
+          2*y^2*(-1 + z)*(-9*Sqrt[z] + 63*z^(3/2) - 108*z^(5/2) + 
+            108*z^(7/2) - 63*z^(9/2) + 9*z^(11/2) + 13*Sqrt[1 + y*(-1 + z)]*
+             Sqrt[y + z - y*z] + 24*Sqrt[1 + y*(-1 + z)]*z*
+             Sqrt[y + z - y*z] + 86*Sqrt[1 + y*(-1 + z)]*z^2*
+             Sqrt[y + z - y*z] - 115*Sqrt[1 + y*(-1 + z)]*z^3*
+             Sqrt[y + z - y*z] - 83*Sqrt[1 + y*(-1 + z)]*z^4*
+             Sqrt[y + z - y*z] + 3*Sqrt[1 + y*(-1 + z)]*z^5*
+             Sqrt[y + z - y*z]) - y^3*(-1 + z)*(-90*Sqrt[z] + 450*z^(3/2) - 
+            900*z^(5/2) + 900*z^(7/2) - 450*z^(9/2) + 90*z^(11/2) + 
+            2*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
+            38*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
+            305*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
+            239*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
+            347*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
+            97*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
+          y*(18*z^(3/2) - 36*z^(5/2) + 36*z^(7/2) - 36*z^(9/2) + 
+            18*z^(11/2) + 6*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
+            2*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
+            2*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
+            126*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
+            7*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
+            18*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] + 
+            Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]))*G[r^(-1), t])/
+        (3*(-1 + 2*y)*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*
+         (y + z - y*z)^(5/2)) - 
+       (y*(4*y^6*(-1 + z)^6*(-18*Sqrt[z] + 11*Sqrt[1 + y*(-1 + z)]*
+             Sqrt[y + z - y*z]) - 2*y^5*(-1 + z)^5*(126*Sqrt[z] - 
+            126*z^(3/2) - 113*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
+            77*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z]) + 
+          2*y^4*(-1 + z)^4*(-180*Sqrt[z] + 360*z^(3/2) - 180*z^(5/2) + 
+            259*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
+            248*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
+            146*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z]) + 
+          y^3*(-1 + z)*(-270*Sqrt[z] + 1350*z^(3/2) - 2700*z^(5/2) + 
+            2700*z^(7/2) - 1350*z^(9/2) + 270*z^(11/2) + 
+            694*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
+            1982*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
+            2721*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
+            2287*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
+            1121*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 
+            411*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
+          y^2*(-1 + z)*(108*Sqrt[z] - 576*z^(3/2) + 1116*z^(5/2) - 
+            1116*z^(7/2) + 576*z^(9/2) - 108*z^(11/2) - 
+            548*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
+            974*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
+            1107*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
+            1019*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
+            417*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
+            367*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
+          y*(18*Sqrt[z] - 162*z^(3/2) + 378*z^(5/2) - 468*z^(7/2) + 
+            378*z^(9/2) - 162*z^(11/2) + 18*z^(13/2) - 
+            226*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
+            450*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
+            397*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
+            498*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
+            267*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
+            214*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] - 
+            164*Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]) + 
+          2*(9*z^(3/2) - 18*z^(5/2) + 18*z^(7/2) - 18*z^(9/2) + 9*z^(11/2) + 
+            18*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
+            28*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
+            7*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
+            30*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
+            2*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 
+            15*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] + 
+            13*Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]))*G[-r, t])/
+        (3*(-1 + 2*y)*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*
+         (y + z - y*z)^(5/2)) + 
+       (y*(-4*y^6*(-1 + z)^6*(18*Sqrt[z] + 11*Sqrt[1 + y*(-1 + z)]*
+             Sqrt[y + z - y*z]) + 2*y^5*(-1 + z)^5*(-126*Sqrt[z] + 
+            126*z^(3/2) - 113*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
+            77*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z]) - 
+          2*y^4*(-1 + z)^4*(180*Sqrt[z] - 360*z^(3/2) + 180*z^(5/2) + 
+            259*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
+            248*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
+            146*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z]) - 
+          y^2*(-1 + z)*(-108*Sqrt[z] + 576*z^(3/2) - 1116*z^(5/2) + 
+            1116*z^(7/2) - 576*z^(9/2) + 108*z^(11/2) - 
+            548*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
+            974*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
+            1107*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
+            1019*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
+            417*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
+            367*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
+          y^3*(-1 + z)*(-270*Sqrt[z] + 1350*z^(3/2) - 2700*z^(5/2) + 
+            2700*z^(7/2) - 1350*z^(9/2) + 270*z^(11/2) - 
+            694*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
+            1982*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
+            2721*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
+            2287*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
+            1121*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
+            411*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z]) + 
+          2*(9*z^(3/2) - 18*z^(5/2) + 18*z^(7/2) - 18*z^(9/2) + 9*z^(11/2) - 
+            18*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] + 
+            28*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] - 
+            7*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
+            30*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] - 
+            2*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] + 
+            15*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] - 
+            13*Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]) + 
+          y*(18*Sqrt[z] - 162*z^(3/2) + 378*z^(5/2) - 468*z^(7/2) + 
+            378*z^(9/2) - 162*z^(11/2) + 18*z^(13/2) + 
+            226*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z] - 
+            450*Sqrt[1 + y*(-1 + z)]*z*Sqrt[y + z - y*z] + 
+            397*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] - 
+            498*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
+            267*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 
+            214*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] + 
+            164*Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z]))*G[r, t])/
+        (3*(-1 + 2*y)*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*
+         (y + z - y*z)^(5/2)) + (6*(-(z^2*(1 + z^2)) + 
+          y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 4*y^3*(-1 + 8*z^3 - 9*z^4 + 
+            2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 
+          y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*G[-1, -r^(-1), t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+       (6*(-(z^2*(1 + z^2)) + y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 
+          4*y^3*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 
+            2*z^6) + y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*
+         G[-1, r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (6*(-(z^2*(1 + z^2)) + 
+          y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 4*y^3*(-1 + 8*z^3 - 9*z^4 + 
+            2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 
+          y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*G[-1, -r, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (6*(-(z^2*(1 + z^2)) + y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 
+          4*y^3*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 
+            2*z^6) + y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*
+         G[-1, r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (128*(1 - 2*y*(-1 + z)^2 + 2*y^2*(-1 + z)^2 + 
+          z^2)*G[0, 0, t])/((-1 + z)*z) - 
+       (8*(-1 + y)*(-20*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 
+          4*y^4*(-1 + z)^4*(4 - 13*z + 4*z^2) - 2*y^3*(-1 + z)^3*
+           (-2 + 21*z - 24*z^2 + z^3) + 2*(z^2 + z^4) - y^2*(-1 + z)^2*
+           (1 + 16*z - 32*z^2 + 20*z^3 + 3*z^4) + 
+          y*(1 + 4*z - 11*z^2 + 18*z^3 - 15*z^4 + 2*z^5 + z^6))*
+         G[0, -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (8*(-1 + y)*(-20*y^5*(-1 + z)^6 + 
+          8*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*(4 - 13*z + 4*z^2) - 
+          2*y^3*(-1 + z)^3*(-2 + 21*z - 24*z^2 + z^3) + 2*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(1 + 16*z - 32*z^2 + 20*z^3 + 3*z^4) + 
+          y*(1 + 4*z - 11*z^2 + 18*z^3 - 15*z^4 + 2*z^5 + z^6))*
+         G[0, r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (8*y*(-28*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 
+          4*y^4*(-1 + z)^4*(9 - 23*z + 9*z^2) - 2*z^2*(-4 + 3*z - 2*z^2 + 
+            z^3) - 2*y^3*(-1 + z)^3*(-10 + 55*z - 52*z^2 + 11*z^3) + 
+          y^2*(-1 + z)^2*(3 - 62*z + 98*z^2 - 54*z^3 + 7*z^4) + 
+          y*(1 + 14*z - 57*z^2 + 74*z^3 - 47*z^4 + 16*z^5 - z^6))*
+         G[0, -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (8*y*(-28*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 
+          4*y^4*(-1 + z)^4*(9 - 23*z + 9*z^2) - 2*z^2*(-4 + 3*z - 2*z^2 + 
+            z^3) - 2*y^3*(-1 + z)^3*(-10 + 55*z - 52*z^2 + 11*z^3) + 
+          y^2*(-1 + z)^2*(3 - 62*z + 98*z^2 - 54*z^3 + 7*z^4) + 
+          y*(1 + 14*z - 57*z^2 + 74*z^3 - 47*z^4 + 16*z^5 - z^6))*G[0, r, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+       (6*(-(z^2*(1 + z^2)) + y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 
+          4*y^3*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 
+            2*z^6) + y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*
+         G[1, -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) + (6*(-(z^2*(1 + z^2)) + 
+          y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 4*y^3*(-1 + 8*z^3 - 9*z^4 + 
+            2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 
+          y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*G[1, r^(-1), t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (6*(-(z^2*(1 + z^2)) + y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 
+          4*y^3*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 
+            2*z^6) + y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*
+         G[1, -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (6*(-(z^2*(1 + z^2)) + 
+          y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 4*y^3*(-1 + 8*z^3 - 9*z^4 + 
+            2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 
+          y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*G[1, r, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (8*(-1 + y)*(-20*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 
+          4*y^4*(-1 + z)^4*(4 - 13*z + 4*z^2) - 2*y^3*(-1 + z)^3*
+           (-2 + 21*z - 24*z^2 + z^3) + 2*(z^2 + z^4) - y^2*(-1 + z)^2*
+           (1 + 16*z - 32*z^2 + 20*z^3 + 3*z^4) + 
+          y*(1 + 4*z - 11*z^2 + 18*z^3 - 15*z^4 + 2*z^5 + z^6))*
+         G[-r^(-1), 0, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (4*(-1 + y)*(-20*y^5*(-1 + z)^6 + 
+          8*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*(4 - 13*z + 4*z^2) - 
+          2*y^3*(-1 + z)^3*(-2 + 21*z - 24*z^2 + z^3) + 2*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(1 + 16*z - 32*z^2 + 20*z^3 + 3*z^4) + 
+          y*(1 + 4*z - 11*z^2 + 18*z^3 - 15*z^4 + 2*z^5 + z^6))*
+         G[-r^(-1), -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (2*(-1 + y)*(-10*y^5*(-1 + z)^6 + 
+          4*y^6*(-1 + z)^6 + z^2 + z^4 + 2*y^4*(-1 + z)^4*(4 - 16*z + z^2) + 
+          y^3*(-1 + z)^3*(5 - 21*z + 33*z^2 + 11*z^3) - y^2*(-1 + z)^2*
+           (-4 + 2*z - 25*z^2 + 10*z^3 + 9*z^4) + 
+          y*(-1 + 2*z - 4*z^2 + 12*z^3 - 9*z^4 - 2*z^5 + 2*z^6))*
+         G[-r^(-1), r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (2*(-1 + y)*(-10*y^5*(-1 + z)^6 + 
+          4*y^6*(-1 + z)^6 + 2*y^4*(-1 + z)^4*z*(-14 + 3*z) - 
+          y^3*(-1 + z)^3*(13 + 21*z - 3*z^2 + 5*z^3) - 3*(z^2 + z^4) + 
+          y^2*(-1 + z)^2*(-11 - 6*z - 9*z^2 + 6*z^3 + 4*z^4) - 
+          y*(-2 + 6*z - 5*z^2 + 14*z^3 - 14*z^4 + z^6))*G[-r^(-1), -r, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+       (2*(-1 + y)*(-20*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 
+          4*y^4*(-1 + z)^4*(6 - 11*z + 6*z^2) - 2*y^3*(-1 + z)^3*
+           (-8 + 21*z - 30*z^2 + 5*z^3) + 6*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(-5 + 24*z - 48*z^2 + 36*z^3 + z^4) + 
+          y*(1 + 12*z - 23*z^2 + 38*z^3 - 35*z^4 + 6*z^5 + z^6))*
+         G[-r^(-1), r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (8*(-1 + y)*(-20*y^5*(-1 + z)^6 + 
+          8*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*(4 - 13*z + 4*z^2) - 
+          2*y^3*(-1 + z)^3*(-2 + 21*z - 24*z^2 + z^3) + 2*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(1 + 16*z - 32*z^2 + 20*z^3 + 3*z^4) + 
+          y*(1 + 4*z - 11*z^2 + 18*z^3 - 15*z^4 + 2*z^5 + z^6))*
+         G[r^(-1), 0, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (2*(-1 + y)*(-10*y^5*(-1 + z)^6 + 
+          4*y^6*(-1 + z)^6 + z^2 + z^4 + 2*y^4*(-1 + z)^4*(4 - 16*z + z^2) + 
+          y^3*(-1 + z)^3*(5 - 21*z + 33*z^2 + 11*z^3) - y^2*(-1 + z)^2*
+           (-4 + 2*z - 25*z^2 + 10*z^3 + 9*z^4) + 
+          y*(-1 + 2*z - 4*z^2 + 12*z^3 - 9*z^4 - 2*z^5 + 2*z^6))*
+         G[r^(-1), -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (4*(-1 + y)*(-20*y^5*(-1 + z)^6 + 
+          8*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*(4 - 13*z + 4*z^2) - 
+          2*y^3*(-1 + z)^3*(-2 + 21*z - 24*z^2 + z^3) + 2*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(1 + 16*z - 32*z^2 + 20*z^3 + 3*z^4) + 
+          y*(1 + 4*z - 11*z^2 + 18*z^3 - 15*z^4 + 2*z^5 + z^6))*
+         G[r^(-1), r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) + (2*(-1 + y)*(-20*y^5*(-1 + z)^6 + 
+          8*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*(6 - 11*z + 6*z^2) - 
+          2*y^3*(-1 + z)^3*(-8 + 21*z - 30*z^2 + 5*z^3) + 6*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(-5 + 24*z - 48*z^2 + 36*z^3 + z^4) + 
+          y*(1 + 12*z - 23*z^2 + 38*z^3 - 35*z^4 + 6*z^5 + z^6))*
+         G[r^(-1), -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (2*(-1 + y)*(-10*y^5*(-1 + z)^6 + 
+          4*y^6*(-1 + z)^6 + 2*y^4*(-1 + z)^4*z*(-14 + 3*z) - 
+          y^3*(-1 + z)^3*(13 + 21*z - 3*z^2 + 5*z^3) - 3*(z^2 + z^4) + 
+          y^2*(-1 + z)^2*(-11 - 6*z - 9*z^2 + 6*z^3 + 4*z^4) - 
+          y*(-2 + 6*z - 5*z^2 + 14*z^3 - 14*z^4 + z^6))*G[r^(-1), r, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (8*y*(-28*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*
+           (9 - 23*z + 9*z^2) - 2*z^2*(-4 + 3*z - 2*z^2 + z^3) - 
+          2*y^3*(-1 + z)^3*(-10 + 55*z - 52*z^2 + 11*z^3) + 
+          y^2*(-1 + z)^2*(3 - 62*z + 98*z^2 - 54*z^3 + 7*z^4) + 
+          y*(1 + 14*z - 57*z^2 + 74*z^3 - 47*z^4 + 16*z^5 - z^6))*
+         G[-r, 0, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (2*y*(-2 - 14*y^5*(-1 + z)^6 + 4*y^6*(-1 + z)^6 - 
+          5*z^2 - 4*z^3 + 7*z^4 - 2*z^6 + 2*y^4*(-1 + z)^4*
+           (5 - 24*z + 8*z^2) + y^3*(-1 + z)^3*(-7 - 31*z + 73*z^2 + z^3) - 
+          y^2*(-1 + z)^2*(12 - 10*z - 51*z^2 + 50*z^3 + 15*z^4) + 
+          y*(7 - 16*z + 10*z^2 + 34*z^3 - 47*z^4 + 2*z^5 + 10*z^6))*
+         G[-r, -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) + (2*y*(-28*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 
+          4*y^4*(-1 + z)^4*(11 - 21*z + 11*z^2) - 2*y^3*(-1 + z)^3*
+           (-20 + 55*z - 46*z^2 + 23*z^3) + y^2*(-1 + z)^2*
+           (21 - 82*z + 78*z^2 - 58*z^3 + 33*z^4) + 
+          y*(-7 + 34*z - 73*z^2 + 62*z^3 - 43*z^4 + 40*z^5 - 13*z^6) + 
+          2*(1 + 7*z^2 - z^3 + z^4 - 3*z^5 + z^6))*G[-r, r^(-1), t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (4*y*(-28*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*
+           (9 - 23*z + 9*z^2) - 2*z^2*(-4 + 3*z - 2*z^2 + z^3) - 
+          2*y^3*(-1 + z)^3*(-10 + 55*z - 52*z^2 + 11*z^3) + 
+          y^2*(-1 + z)^2*(3 - 62*z + 98*z^2 - 54*z^3 + 7*z^4) + 
+          y*(1 + 14*z - 57*z^2 + 74*z^3 - 47*z^4 + 16*z^5 - z^6))*
+         G[-r, -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (2*y*(-14*y^5*(-1 + z)^6 + 4*y^6*(-1 + z)^6 + 
+          2*y^4*(-1 + z)^4*(9 - 26*z + 6*z^2) + y^3*(-1 + z)^3*
+           (7 - 79*z + 43*z^2 + z^3) + z^2*(7 - 6*z - z^2 + 2*z^3) - 
+          y^2*(-1 + z)^2*(3 + 52*z - 67*z^2 + 4*z^4) + 
+          y*(2 + 10*z - 51*z^2 + 52*z^3 - 4*z^4 - 10*z^5 + z^6))*G[-r, r, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (8*y*(-28*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*
+           (9 - 23*z + 9*z^2) - 2*z^2*(-4 + 3*z - 2*z^2 + z^3) - 
+          2*y^3*(-1 + z)^3*(-10 + 55*z - 52*z^2 + 11*z^3) + 
+          y^2*(-1 + z)^2*(3 - 62*z + 98*z^2 - 54*z^3 + 7*z^4) + 
+          y*(1 + 14*z - 57*z^2 + 74*z^3 - 47*z^4 + 16*z^5 - z^6))*G[r, 0, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+       (2*y*(-28*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*
+           (11 - 21*z + 11*z^2) - 2*y^3*(-1 + z)^3*(-20 + 55*z - 46*z^2 + 
+            23*z^3) + y^2*(-1 + z)^2*(21 - 82*z + 78*z^2 - 58*z^3 + 33*z^4) + 
+          y*(-7 + 34*z - 73*z^2 + 62*z^3 - 43*z^4 + 40*z^5 - 13*z^6) + 
+          2*(1 + 7*z^2 - z^3 + z^4 - 3*z^5 + z^6))*G[r, -r^(-1), t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (2*y*(-2 - 14*y^5*(-1 + z)^6 + 4*y^6*(-1 + z)^6 - 5*z^2 - 4*z^3 + 
+          7*z^4 - 2*z^6 + 2*y^4*(-1 + z)^4*(5 - 24*z + 8*z^2) + 
+          y^3*(-1 + z)^3*(-7 - 31*z + 73*z^2 + z^3) - y^2*(-1 + z)^2*
+           (12 - 10*z - 51*z^2 + 50*z^3 + 15*z^4) + 
+          y*(7 - 16*z + 10*z^2 + 34*z^3 - 47*z^4 + 2*z^5 + 10*z^6))*
+         G[r, r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (2*y*(-14*y^5*(-1 + z)^6 + 4*y^6*(-1 + z)^6 + 
+          2*y^4*(-1 + z)^4*(9 - 26*z + 6*z^2) + y^3*(-1 + z)^3*
+           (7 - 79*z + 43*z^2 + z^3) + z^2*(7 - 6*z - z^2 + 2*z^3) - 
+          y^2*(-1 + z)^2*(3 + 52*z - 67*z^2 + 4*z^4) + 
+          y*(2 + 10*z - 51*z^2 + 52*z^3 - 4*z^4 - 10*z^5 + z^6))*G[r, -r, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (4*y*(-28*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*
+           (9 - 23*z + 9*z^2) - 2*z^2*(-4 + 3*z - 2*z^2 + z^3) - 
+          2*y^3*(-1 + z)^3*(-10 + 55*z - 52*z^2 + 11*z^3) + 
+          y^2*(-1 + z)^2*(3 - 62*z + 98*z^2 - 54*z^3 + 7*z^4) + 
+          y*(1 + 14*z - 57*z^2 + 74*z^3 - 47*z^4 + 16*z^5 - z^6))*G[r, r, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2)) + 
      (2*(-552*y^5*(-1 + z)^6 + 184*y^6*(-1 + z)^6 - 8*y^3*(-1 + z)^4*
          (53 - 131*z + 53*z^2) + 4*y^4*(-1 + z)^4*(168 - 361*z + 168*z^2) + 
         106*(z^2 + z^4) - y*(-1 + z)^2*(7 - 198*z + 198*z^2 - 198*z^3 + 
           7*z^4) + y^2*(-1 + z)^2*(127 - 778*z + 1118*z^2 - 778*z^3 + 
-          127*z^4))*G[-1, -1, -1, z])/((1 + y*(-1 + z))^2*(-1 + z)*z*
-       (y + z - y*z)^2) - (2*(-280*y^6*(-1 + z)^6 + 80*y^7*(-1 + z)^6 + 
-        8*y^5*(-1 + z)^4*(47 - 113*z + 47*z^2) - 4*y^4*(-1 + z)^3*
-         (-60 + 275*z - 281*z^2 + 58*z^3) - 18*(z^2 + z^4) + 
-        2*y^3*(-1 + z)^2*(33 - 330*z + 578*z^2 - 346*z^3 + 25*z^4) - 
-        y*(5 + 36*z - 137*z^2 + 160*z^3 - 153*z^4 + 28*z^5 + 5*z^6) + 
-        y^2*(3 + 216*z - 755*z^2 + 1112*z^3 - 795*z^4 + 208*z^5 + 11*z^6))*
-       G[-1, -1, 0, z])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
-       (y + z - y*z)^2) - (2*(-280*y^6*(-1 + z)^6 + 80*y^7*(-1 + z)^6 + 
-        8*y^5*(-1 + z)^4*(46 - 113*z + 47*z^2) - 4*y^4*(-1 + z)^3*
-         (-55 + 270*z - 281*z^2 + 58*z^3) - 16*(z^2 + z^4) + 
-        2*y^3*(-1 + z)^2*(23 - 314*z + 564*z^2 - 346*z^3 + 25*z^4) - 
-        y*(7 + 32*z - 125*z^2 + 148*z^3 - 143*z^4 + 28*z^5 + 5*z^6) + 
-        y^2*(13 + 188*z - 707*z^2 + 1060*z^3 - 773*z^4 + 208*z^5 + 11*z^6))*
-       G[-1, 0, -1, z])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+          127*z^4))*G[-1, -1, -1, t^2])/((1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) - (2*(-552*y^5*(-1 + z)^6 + 184*y^6*(-1 + z)^6 - 
+        8*y^3*(-1 + z)^4*(53 - 131*z + 53*z^2) + 4*y^4*(-1 + z)^4*
+         (168 - 361*z + 168*z^2) + 106*(z^2 + z^4) - 
+        y*(-1 + z)^2*(7 - 198*z + 198*z^2 - 198*z^3 + 7*z^4) + 
+        y^2*(-1 + z)^2*(127 - 778*z + 1118*z^2 - 778*z^3 + 127*z^4))*
+       G[-1, -1, -1, z])/((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+     (2*(-280*y^6*(-1 + z)^6 + 80*y^7*(-1 + z)^6 + 8*y^5*(-1 + z)^4*
+         (47 - 113*z + 47*z^2) - 4*y^4*(-1 + z)^3*(-60 + 275*z - 281*z^2 + 
+          58*z^3) - 18*(z^2 + z^4) + 2*y^3*(-1 + z)^2*(33 - 330*z + 578*z^2 - 
+          346*z^3 + 25*z^4) - y*(5 + 36*z - 137*z^2 + 160*z^3 - 153*z^4 + 
+          28*z^5 + 5*z^6) + y^2*(3 + 216*z - 755*z^2 + 1112*z^3 - 795*z^4 + 
+          208*z^5 + 11*z^6))*G[-1, -1, 0, t^2])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+     (2*(-280*y^6*(-1 + z)^6 + 80*y^7*(-1 + z)^6 + 8*y^5*(-1 + z)^4*
+         (47 - 113*z + 47*z^2) - 4*y^4*(-1 + z)^3*(-60 + 275*z - 281*z^2 + 
+          58*z^3) - 18*(z^2 + z^4) + 2*y^3*(-1 + z)^2*(33 - 330*z + 578*z^2 - 
+          346*z^3 + 25*z^4) - y*(5 + 36*z - 137*z^2 + 160*z^3 - 153*z^4 + 
+          28*z^5 + 5*z^6) + y^2*(3 + 216*z - 755*z^2 + 1112*z^3 - 795*z^4 + 
+          208*z^5 + 11*z^6))*G[-1, -1, 0, z])/((-1 + 2*y)*(1 + y*(-1 + z))^2*
+       (-1 + z)*z*(y + z - y*z)^2) + 
+     (2*(-280*y^6*(-1 + z)^6 + 80*y^7*(-1 + z)^6 + 8*y^5*(-1 + z)^4*
+         (46 - 113*z + 47*z^2) - 4*y^4*(-1 + z)^3*(-55 + 270*z - 281*z^2 + 
+          58*z^3) - 16*(z^2 + z^4) + 2*y^3*(-1 + z)^2*(23 - 314*z + 564*z^2 - 
+          346*z^3 + 25*z^4) - y*(7 + 32*z - 125*z^2 + 148*z^3 - 143*z^4 + 
+          28*z^5 + 5*z^6) + y^2*(13 + 188*z - 707*z^2 + 1060*z^3 - 773*z^4 + 
+          208*z^5 + 11*z^6))*G[-1, 0, -1, t^2])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+     (2*(-280*y^6*(-1 + z)^6 + 80*y^7*(-1 + z)^6 + 8*y^5*(-1 + z)^4*
+         (46 - 113*z + 47*z^2) - 4*y^4*(-1 + z)^3*(-55 + 270*z - 281*z^2 + 
+          58*z^3) - 16*(z^2 + z^4) + 2*y^3*(-1 + z)^2*(23 - 314*z + 564*z^2 - 
+          346*z^3 + 25*z^4) - y*(7 + 32*z - 125*z^2 + 148*z^3 - 143*z^4 + 
+          28*z^5 + 5*z^6) + y^2*(13 + 188*z - 707*z^2 + 1060*z^3 - 773*z^4 + 
+          208*z^5 + 11*z^6))*G[-1, 0, -1, z])/((-1 + 2*y)*(1 + y*(-1 + z))^2*
+       (-1 + z)*z*(y + z - y*z)^2) + 
+     (12*(z^2 + z^4 - 4*y^3*(-1 + z)^4*(1 + 2*z + 2*z^2) + 
+        2*y^4*(-1 + z)^4*(1 + 2*z + 2*z^2) - y*(-1 + z)^2*z*
+         (-2 - z - 2*z^2 + z^3) + y^2*(-1 + z)^2*(2 - 2*z - 3*z^2 - 6*z^3 + 
+          5*z^4))*G[-1, 0, 0, t])/((1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + (2*(-392*y^6*(-1 + z)^6 + 112*y^7*(-1 + z)^6 + 
+        8*y^5*(-1 + z)^4*(70 - 155*z + 69*z^2) - 4*y^4*(-1 + z)^3*
+         (-105 + 390*z - 373*z^2 + 104*z^3) - 20*(z^2 + z^4) + 
+        2*y^3*(-1 + z)^2*(85 - 510*z + 748*z^2 - 462*z^3 + 91*z^4) + 
+        y^2*(-35 + 380*z - 1095*z^2 + 1412*z^3 - 989*z^4 + 368*z^5 - 
+          41*z^6) + y*(5 - 40*z + 205*z^2 - 180*z^3 + 171*z^4 - 52*z^5 + 
+          3*z^6))*G[-1, 0, 0, t^2])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
        (y + z - y*z)^2) - (2*(-392*y^6*(-1 + z)^6 + 112*y^7*(-1 + z)^6 + 
         8*y^5*(-1 + z)^4*(70 - 155*z + 69*z^2) - 4*y^4*(-1 + z)^3*
          (-105 + 390*z - 373*z^2 + 104*z^3) - 20*(z^2 + z^4) + 
@@ -10612,12 +13558,92 @@
         y^2*(-35 + 380*z - 1095*z^2 + 1412*z^3 - 989*z^4 + 368*z^5 - 
           41*z^6) + y*(5 - 40*z + 205*z^2 - 180*z^3 + 171*z^4 - 52*z^5 + 
           3*z^6))*G[-1, 0, 0, z])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
-       (y + z - y*z)^2) - (4*(-4*y^3*(-1 + z)^4 + 2*y^4*(-1 + z)^4 + z^2 + 
+       (y + z - y*z)^2) + (2*(8*y^5*(-1 + z)^4*(1 + 2*z + 2*z^2) - 
+        2*y^4*(-1 + z)^3*(-13 - 19*z - 18*z^2 + 14*z^3) - 5*(z^2 + z^4) + 
+        4*y^3*(-1 + z)^2*(7 + 4*z + 4*z^2 - 22*z^3 + 3*z^4) - 
+        y*z*(10 - 13*z + 22*z^2 - 36*z^3 + 8*z^4 + z^5) + 
+        y^2*(-10 + 26*z - 21*z^2 + 78*z^3 - 122*z^4 + 48*z^5 + z^6))*
+       G[-1, 0, -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + 
+     (2*(z^2 + z^4 + 8*y^5*(-1 + z)^4*(1 + 2*z + 2*z^2) - 
+        2*y^4*(-1 + z)^3*(-7 - z + 18*z^2 + 26*z^3) + 4*y^3*(-1 + z)^2*
+         (1 - 8*z - 14*z^2 + 2*z^3 + 15*z^4) + 
+        y*z*(2 + 7*z + 14*z^2 - 12*z^3 - 8*z^4 + 5*z^5) + 
+        y^2*(2 + 14*z - 15*z^2 - 54*z^3 + 34*z^4 + 48*z^5 - 29*z^6))*
+       G[-1, 0, -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + (4*(-4*y^3*(-1 + z)^4 + 2*y^4*(-1 + z)^4 + z^2 + 
         z^4 - y*(-1 + z)^2*(1 + 3*z^2) + y^2*(-1 + z)^2*(3 - 4*z + 5*z^2))*
-       G[-1, 1, -1, z])/((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+       G[-1, 1, -1, t^2])/((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+     (4*(-4*y^3*(-1 + z)^4 + 2*y^4*(-1 + z)^4 + z^2 + z^4 - 
+        y*(-1 + z)^2*(1 + 3*z^2) + y^2*(-1 + z)^2*(3 - 4*z + 5*z^2))*
+       G[-1, 1, -1, z])/((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
      (4*(-(y*(-1 + z)^4*(1 + z^2)) - 8*y^3*(-1 + z)^4*(1 + z + z^2) + 
         4*y^4*(-1 + z)^4*(1 + z + z^2) + y^2*(-1 + z)^4*(5 + 4*z + 5*z^2) + 
-        2*(z^2 + z^4))*G[-1, 1, 0, z])/((1 + y*(-1 + z))^2*(-1 + z)*z*
+        2*(z^2 + z^4))*G[-1, 1, 0, t^2])/((1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + (4*(-(y*(-1 + z)^4*(1 + z^2)) - 
+        8*y^3*(-1 + z)^4*(1 + z + z^2) + 4*y^4*(-1 + z)^4*(1 + z + z^2) + 
+        y^2*(-1 + z)^4*(5 + 4*z + 5*z^2) + 2*(z^2 + z^4))*G[-1, 1, 0, z])/
+      ((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+     (2*(4*y^5*(-1 + z)^4*(1 + 2*z + 2*z^2) - 2*y^4*(-1 + z)^3*
+         (-9 - 17*z - 24*z^2 + 2*z^3) - 5*(z^2 + z^4) - 
+        2*y^3*(-1 + z)^2*(-12 - 14*z - 19*z^2 + 42*z^3 + 7*z^4) - 
+        y*z*(10 - 9*z + 26*z^2 - 38*z^3 + 4*z^4 + 3*z^5) + 
+        y^2*(-10 + 18*z - 13*z^2 + 94*z^3 - 126*z^4 + 24*z^5 + 13*z^6))*
+       G[-1, -r^(-1), 0, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + 
+     (4*(-(z^2*(1 + z^2)) + y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 
+        4*y^3*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 
+          2*z^6) + y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*
+       G[-1, -r^(-1), -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + ((8*y^5*(-1 + z)^4*(1 + 2*z + 2*z^2) - 
+        4*y^4*(-1 + z)^3*(-7 - 11*z - 12*z^2 + 6*z^3) - 6*(z^2 + z^4) + 
+        4*y^3*(-1 + z)^2*(8 + 6*z + 7*z^2 - 26*z^3 + z^4) - 
+        2*y*z*(6 - 7*z + 14*z^2 - 22*z^3 + 4*z^4 + z^5) + 
+        2*y^2*(-6 + 14*z - 11*z^2 + 50*z^3 - 74*z^4 + 24*z^5 + 3*z^6))*
+       G[-1, r^(-1), 0, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + (2*(z^2 + z^4 + y*z*(2 - z + 6*z^2 - 8*z^3 + z^5) + 
+        y^2*(2 - 2*z + z^2 - 22*z^3 + 26*z^4 - 5*z^6) + 
+        4*y^3*(-1 + 8*z^3 - 9*z^4 + 2*z^6) - 2*y^4*(-1 + 8*z^3 - 9*z^4 + 
+          2*z^6))*G[-1, r^(-1), -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*
+       (-1 + z)*z*(y + z - y*z)^2) - 
+     (6*(-(z^2*(1 + z^2)) + y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 
+        4*y^3*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 
+          2*z^6) + y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*
+       G[-1, r^(-1), -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + (2*(4*y^5*(-1 + z)^4*(1 + 2*z + 2*z^2) - 
+        2*y^4*(-1 + z)^3*(-1 + 7*z + 24*z^2 + 18*z^3) + 3*(z^2 + z^4) + 
+        2*y^3*(-1 + z)^2*(-4 - 18*z - 29*z^2 + 22*z^3 + 25*z^4) + 
+        y*z*(6 + z + 22*z^2 - 26*z^3 - 4*z^4 + 5*z^5) + 
+        y^2*(6 + 2*z - 5*z^2 - 82*z^3 + 82*z^4 + 24*z^5 - 27*z^6))*
+       G[-1, -r, 0, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) - 
+     (4*(-(z^2*(1 + z^2)) + y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 
+        4*y^3*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 
+          2*z^6) + y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*
+       G[-1, -r, -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + 
+     (2*(z^2 + z^4 + 4*y^5*(-1 + z)^4*(1 + 2*z + 2*z^2) - 
+        2*y^4*(-1 + z)^3*(-3 + z + 12*z^2 + 14*z^3) + 2*y^3*(-1 + z)^2*z*
+         (-10 - 17*z + 6*z^2 + 17*z^3) + y*z*(2 + 3*z + 10*z^2 - 10*z^3 - 
+          4*z^4 + 3*z^5) + y^2*(2 + 6*z - 7*z^2 - 38*z^3 + 30*z^4 + 24*z^5 - 
+          17*z^6))*G[-1, r, 0, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + 
+     (6*(-(z^2*(1 + z^2)) + y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 
+        4*y^3*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 
+          2*z^6) + y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*
+       G[-1, r, -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + 
+     (2*(-(z^2*(1 + z^2)) + y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 
+        4*y^3*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 
+          2*z^6) + y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*
+       G[-1, r, -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + ((-280*y^6*(-1 + z)^6 + 80*y^7*(-1 + z)^6 + 
+        8*y^5*(-1 + z)^4*(47 - 106*z + 54*z^2) - 4*y^4*(-1 + z)^3*
+         (-60 + 240*z - 287*z^2 + 91*z^3) - 22*(z^2 + z^4) + 
+        4*y^3*(-1 + z)^2*(13 - 144*z + 259*z^2 - 216*z^3 + 40*z^4) - 
+        2*y*(7 + 22*z - 70*z^2 + 78*z^3 - 93*z^4 + 28*z^5) + 
+        2*y^2*(13 + 98*z - 342*z^2 + 530*z^3 - 473*z^4 + 188*z^5 - 14*z^6))*
+       G[0, -1, -1, t^2])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
        (y + z - y*z)^2) + ((280*y^6*(-1 + z)^6 - 80*y^7*(-1 + z)^6 - 
         8*y^5*(-1 + z)^4*(47 - 106*z + 54*z^2) + 4*y^4*(-1 + z)^3*
          (-60 + 240*z - 287*z^2 + 91*z^3) + 22*(z^2 + z^4) - 
@@ -10625,54 +13651,318 @@
         2*y*(7 + 22*z - 70*z^2 + 78*z^3 - 93*z^4 + 28*z^5) + 
         2*y^2*(-13 - 98*z + 342*z^2 - 530*z^3 + 473*z^4 - 188*z^5 + 14*z^6))*
        G[0, -1, -1, z])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
-       (y + z - y*z)^2) - (2*(-420*y^6*(-1 + z)^6 + 120*y^7*(-1 + z)^6 + 
+       (y + z - y*z)^2) + 
+     (8*(z^2 + z^4 - 4*y^3*(-1 + z)^4*(1 + 2*z + 2*z^2) + 
+        2*y^4*(-1 + z)^4*(1 + 2*z + 2*z^2) - y*(-1 + z)^2*z*
+         (-2 - z - 2*z^2 + z^3) + y^2*(-1 + z)^2*(2 - 2*z - 3*z^2 - 6*z^3 + 
+          5*z^4))*G[0, -1, 0, t])/((1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + (2*(-420*y^6*(-1 + z)^6 + 120*y^7*(-1 + z)^6 + 
+        4*y^5*(-1 + z)^4*(149 - 334*z + 146*z^2) - 2*y^4*(-1 + z)^3*
+         (-222 + 834*z - 813*z^2 + 209*z^3) - 23*(z^2 + z^4) + 
+        2*y^3*(-1 + z)^2*(91 - 536*z + 821*z^2 - 504*z^3 + 80*z^4) + 
+        y*(5 - 46*z + 218*z^2 - 206*z^3 + 197*z^4 - 52*z^5) + 
+        y^2*(-39 + 402*z - 1170*z^2 + 1562*z^3 - 1101*z^4 + 372*z^5 - 
+          26*z^6))*G[0, -1, 0, t^2])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*
+       z*(y + z - y*z)^2) - (2*(-420*y^6*(-1 + z)^6 + 120*y^7*(-1 + z)^6 + 
         4*y^5*(-1 + z)^4*(149 - 334*z + 146*z^2) - 2*y^4*(-1 + z)^3*
          (-222 + 834*z - 813*z^2 + 209*z^3) - 23*(z^2 + z^4) + 
         2*y^3*(-1 + z)^2*(91 - 536*z + 821*z^2 - 504*z^3 + 80*z^4) + 
         y*(5 - 46*z + 218*z^2 - 206*z^3 + 197*z^4 - 52*z^5) + 
         y^2*(-39 + 402*z - 1170*z^2 + 1562*z^3 - 1101*z^4 + 372*z^5 - 
           26*z^6))*G[0, -1, 0, z])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
-       (y + z - y*z)^2) - (2*(-364*y^6*(-1 + z)^6 + 104*y^7*(-1 + z)^6 + 
+       (y + z - y*z)^2) + 
+     (8*(-(z^2*(1 + z^2)) + y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 
+        4*y^3*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 
+          2*z^6) + y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*
+       G[0, -1, -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) - 
+     (8*(-(z^2*(1 + z^2)) + y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 
+        4*y^3*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 
+          2*z^6) + y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*
+       G[0, -1, -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + (2*(-364*y^6*(-1 + z)^6 + 104*y^7*(-1 + z)^6 + 
+        4*y^5*(-1 + z)^4*(133 - 286*z + 130*z^2) - 2*y^4*(-1 + z)^3*
+         (-214 + 718*z - 715*z^2 + 195*z^3) - 25*(z^2 + z^4) + 
+        2*y^3*(-1 + z)^2*(101 - 476*z + 725*z^2 - 468*z^3 + 78*z^4) + 
+        y*(7 - 50*z + 210*z^2 - 202*z^3 + 203*z^4 - 52*z^5) + 
+        y^2*(-53 + 398*z - 1074*z^2 + 1446*z^3 - 1055*z^4 + 364*z^5 - 
+          26*z^6))*G[0, 0, -1, t^2])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*
+       z*(y + z - y*z)^2) - (2*(-364*y^6*(-1 + z)^6 + 104*y^7*(-1 + z)^6 + 
         4*y^5*(-1 + z)^4*(133 - 286*z + 130*z^2) - 2*y^4*(-1 + z)^3*
          (-214 + 718*z - 715*z^2 + 195*z^3) - 25*(z^2 + z^4) + 
         2*y^3*(-1 + z)^2*(101 - 476*z + 725*z^2 - 468*z^3 + 78*z^4) + 
         y*(7 - 50*z + 210*z^2 - 202*z^3 + 203*z^4 - 52*z^5) + 
         y^2*(-53 + 398*z - 1074*z^2 + 1446*z^3 - 1055*z^4 + 364*z^5 - 
           26*z^6))*G[0, 0, -1, z])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
-       (y + z - y*z)^2) + (2*(-636*y^5*(-1 + z)^6 + 212*y^6*(-1 + z)^6 - 
-        4*y^3*(-1 + z)^4*(117 - 318*z + 106*z^2) + 2*y^4*(-1 + z)^4*
-         (382 - 848*z + 371*z^2) + y*(-1 + z)^2*(-11 + 212*z - 245*z^2 + 
-          212*z^3) + 117*(z^2 + z^4) + y^2*(-1 + z)^2*(139 - 892*z + 
-          1327*z^2 - 848*z^3 + 106*z^4))*G[0, 0, 0, 2])/
-      ((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
-     (2*(-28*y^6*(-1 + z)^6 + 8*y^7*(-1 + z)^6 + 4*y^5*(-1 + z)^4*
-         (9 - 22*z + 10*z^2) - 2*y^4*(-1 + z)^3*(-16 + 32*z - 55*z^2 + 
-          15*z^3) + 5*(z^2 + z^4) + 2*y^3*(-1 + z)^2*(13 - 4*z + 13*z^2 - 
-          36*z^3 + 6*z^4) + y*(5 + 10*z - 14*z^2 + 26*z^3 - 19*z^4 - 4*z^5) + 
+       (y + z - y*z)^2) + (16*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 2*z^3 - 
+        2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*(9 - 8*z + 2*z^2) - 
+        y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*G[0, 0, 0, r])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) - 
+     (128*(1 - 2*y*(-1 + z)^2 + 2*y^2*(-1 + z)^2 + z^2)*G[0, 0, 0, t])/
+      ((-1 + z)*z) - (2*(-28*y^6*(-1 + z)^6 + 8*y^7*(-1 + z)^6 + 
+        4*y^5*(-1 + z)^4*(9 - 22*z + 10*z^2) - 2*y^4*(-1 + z)^3*
+         (-16 + 32*z - 55*z^2 + 15*z^3) + 5*(z^2 + z^4) + 
+        2*y^3*(-1 + z)^2*(13 - 4*z + 13*z^2 - 36*z^3 + 6*z^4) + 
+        y*(5 + 10*z - 14*z^2 + 26*z^3 - 19*z^4 - 4*z^5) + 
+        y^2*(-15 + 2*z + 38*z^2 - 46*z^3 - 5*z^4 + 28*z^5 - 2*z^6))*
+       G[0, 0, 0, t^2])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + (2*(-28*y^6*(-1 + z)^6 + 8*y^7*(-1 + z)^6 + 
+        4*y^5*(-1 + z)^4*(9 - 22*z + 10*z^2) - 2*y^4*(-1 + z)^3*
+         (-16 + 32*z - 55*z^2 + 15*z^3) + 5*(z^2 + z^4) + 
+        2*y^3*(-1 + z)^2*(13 - 4*z + 13*z^2 - 36*z^3 + 6*z^4) + 
+        y*(5 + 10*z - 14*z^2 + 26*z^3 - 19*z^4 - 4*z^5) + 
         y^2*(-15 + 2*z + 38*z^2 - 46*z^3 - 5*z^4 + 28*z^5 - 2*z^6))*
        G[0, 0, 0, z])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
-       (y + z - y*z)^2) - (4*(-28*y^6*(-1 + z)^6 + 8*y^7*(-1 + z)^6 + z^2 + 
-        z^4 + 32*y^5*(-1 + z)^4*(1 - 3*z + z^2) - y*(1 + z)^2*
-         (1 - 4*z + 3*z^2) - 2*y^4*(-1 + z)^3*(-4 + 58*z - 49*z^2 + 7*z^3) + 
+       (y + z - y*z)^2) - (16*(-70*y^6*(-1 + z)^6 + 20*y^7*(-1 + z)^6 - 
+        z^2*(1 + z^2) + 2*y^5*(-1 + z)^4*(43 - 122*z + 38*z^2) - 
+        3*y^3*(-1 + z)^3*(1 - 51*z + 48*z^2 + 8*z^3) - 
+        y^4*(-1 + z)^3*(-41 + 297*z - 275*z^2 + 15*z^3) + 
+        y*z*(-2 + 20*z - 28*z^2 + 17*z^3 + 2*z^4 - 3*z^5) + 
+        2*y^2*(1 + 16*z - 79*z^2 + 119*z^3 - 64*z^4 - z^5 + 8*z^6))*
+       G[0, 0, -I, r])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) - (16*(-70*y^6*(-1 + z)^6 + 20*y^7*(-1 + z)^6 - 
+        z^2*(1 + z^2) + 2*y^5*(-1 + z)^4*(43 - 122*z + 38*z^2) - 
+        3*y^3*(-1 + z)^3*(1 - 51*z + 48*z^2 + 8*z^3) - 
+        y^4*(-1 + z)^3*(-41 + 297*z - 275*z^2 + 15*z^3) + 
+        y*z*(-2 + 20*z - 28*z^2 + 17*z^3 + 2*z^4 - 3*z^5) + 
+        2*y^2*(1 + 16*z - 79*z^2 + 119*z^3 - 64*z^4 - z^5 + 8*z^6))*
+       G[0, 0, I, r])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) - (8*(-56*y^6*(-1 + z)^6 + 16*y^7*(-1 + z)^6 + z^2 + 
+        z^4 + 8*y^5*(-1 + z)^4*(7 - 25*z + 7*z^2) + 2*y^4*(-1 + z)^3*
+         (-1 - 113*z + 110*z^2) - 2*y^3*(-1 + z)^2*(17 + 46*z - 112*z^2 + 
+          42*z^3 + 15*z^4) + y*(-4 + 2*z + 3*z^2 - 14*z^3 + 4*z^4 + 4*z^5 - 
+          3*z^6) + y^2*(20 - 14*z - 81*z^2 + 150*z^3 - 76*z^4 - 16*z^5 + 
+          17*z^6))*G[0, -I, 0, r])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) - (8*(-56*y^6*(-1 + z)^6 + 16*y^7*(-1 + z)^6 + 
+        8*y^5*(-1 + z)^4*(11 - 21*z + 11*z^2) - 2*y^4*(-1 + z)^3*
+         (-43 + 101*z - 110*z^2 + 40*z^3) - 3*(z^2 + z^4) + 
+        2*y^3*(-1 + z)^2*(27 - 70*z + 96*z^2 - 82*z^3 + 21*z^4) + 
+        y^2*(-20 + 74*z - 149*z^2 + 190*z^3 - 164*z^4 + 80*z^5 - 11*z^6) + 
+        y*(4 - 6*z + 31*z^2 - 22*z^3 + 28*z^4 - 12*z^5 + z^6))*
+       G[0, -I, -I, r])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) - (8*(-56*y^6*(-1 + z)^6 + 16*y^7*(-1 + z)^6 + 
+        8*y^5*(-1 + z)^4*(11 - 21*z + 11*z^2) - 2*y^4*(-1 + z)^3*
+         (-43 + 101*z - 110*z^2 + 40*z^3) - 3*(z^2 + z^4) + 
+        2*y^3*(-1 + z)^2*(27 - 70*z + 96*z^2 - 82*z^3 + 21*z^4) + 
+        y^2*(-20 + 74*z - 149*z^2 + 190*z^3 - 164*z^4 + 80*z^5 - 11*z^6) + 
+        y*(4 - 6*z + 31*z^2 - 22*z^3 + 28*z^4 - 12*z^5 + z^6))*
+       G[0, -I, I, r])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) - (8*(-56*y^6*(-1 + z)^6 + 16*y^7*(-1 + z)^6 + z^2 + 
+        z^4 + 8*y^5*(-1 + z)^4*(7 - 25*z + 7*z^2) + 2*y^4*(-1 + z)^3*
+         (-1 - 113*z + 110*z^2) - 2*y^3*(-1 + z)^2*(17 + 46*z - 112*z^2 + 
+          42*z^3 + 15*z^4) + y*(-4 + 2*z + 3*z^2 - 14*z^3 + 4*z^4 + 4*z^5 - 
+          3*z^6) + y^2*(20 - 14*z - 81*z^2 + 150*z^3 - 76*z^4 - 16*z^5 + 
+          17*z^6))*G[0, I, 0, r])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) - (8*(-56*y^6*(-1 + z)^6 + 16*y^7*(-1 + z)^6 + 
+        8*y^5*(-1 + z)^4*(11 - 21*z + 11*z^2) - 2*y^4*(-1 + z)^3*
+         (-43 + 101*z - 110*z^2 + 40*z^3) - 3*(z^2 + z^4) + 
+        2*y^3*(-1 + z)^2*(27 - 70*z + 96*z^2 - 82*z^3 + 21*z^4) + 
+        y^2*(-20 + 74*z - 149*z^2 + 190*z^3 - 164*z^4 + 80*z^5 - 11*z^6) + 
+        y*(4 - 6*z + 31*z^2 - 22*z^3 + 28*z^4 - 12*z^5 + z^6))*
+       G[0, I, -I, r])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) - (8*(-56*y^6*(-1 + z)^6 + 16*y^7*(-1 + z)^6 + 
+        8*y^5*(-1 + z)^4*(11 - 21*z + 11*z^2) - 2*y^4*(-1 + z)^3*
+         (-43 + 101*z - 110*z^2 + 40*z^3) - 3*(z^2 + z^4) + 
+        2*y^3*(-1 + z)^2*(27 - 70*z + 96*z^2 - 82*z^3 + 21*z^4) + 
+        y^2*(-20 + 74*z - 149*z^2 + 190*z^3 - 164*z^4 + 80*z^5 - 11*z^6) + 
+        y*(4 - 6*z + 31*z^2 - 22*z^3 + 28*z^4 - 12*z^5 + z^6))*G[0, I, I, r])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+     (4*(-28*y^6*(-1 + z)^6 + 8*y^7*(-1 + z)^6 + z^2 + z^4 + 
+        32*y^5*(-1 + z)^4*(1 - 3*z + z^2) - y*(1 + z)^2*(1 - 4*z + 3*z^2) - 
+        2*y^4*(-1 + z)^3*(-4 + 58*z - 49*z^2 + 7*z^3) + 
+        2*y^3*(-1 + z)^2*(-5 - 30*z + 48*z^2 - 18*z^3 + z^4) + 
+        y^2*(7 + 2*z - 48*z^2 + 58*z^3 - 23*z^4 + 4*z^5))*G[0, 1, -1, t^2])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+     (4*(-28*y^6*(-1 + z)^6 + 8*y^7*(-1 + z)^6 + z^2 + z^4 + 
+        32*y^5*(-1 + z)^4*(1 - 3*z + z^2) - y*(1 + z)^2*(1 - 4*z + 3*z^2) - 
+        2*y^4*(-1 + z)^3*(-4 + 58*z - 49*z^2 + 7*z^3) + 
         2*y^3*(-1 + z)^2*(-5 - 30*z + 48*z^2 - 18*z^3 + z^4) + 
         y^2*(7 + 2*z - 48*z^2 + 58*z^3 - 23*z^4 + 4*z^5))*G[0, 1, -1, z])/
       ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+     (8*(z^2 + z^4 - 4*y^3*(-1 + z)^4*(1 + 2*z + 2*z^2) + 
+        2*y^4*(-1 + z)^4*(1 + 2*z + 2*z^2) - y*(-1 + z)^2*z*
+         (-2 - z - 2*z^2 + z^3) + y^2*(-1 + z)^2*(2 - 2*z - 3*z^2 - 6*z^3 + 
+          5*z^4))*G[0, 1, 0, t])/((1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) - (4*(-12*y^5*(-1 + z)^6 + 4*y^6*(-1 + z)^6 + z^2 + 
+        z^4 - 4*y^3*(-1 + z)^4*(1 - 6*z + 2*z^2) + 2*y^4*(-1 + z)^4*
+         (6 - 16*z + 7*z^2) + y*(-1 + z)^2*(1 + 4*z - z^2 + 4*z^3) + 
+        y^2*(-1 + z)^2*(-1 - 12*z + 19*z^2 - 16*z^3 + 2*z^4))*
+       G[0, 1, 0, t^2])/((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
      (4*(-12*y^5*(-1 + z)^6 + 4*y^6*(-1 + z)^6 + z^2 + z^4 - 
         4*y^3*(-1 + z)^4*(1 - 6*z + 2*z^2) + 2*y^4*(-1 + z)^4*
          (6 - 16*z + 7*z^2) + y*(-1 + z)^2*(1 + 4*z - z^2 + 4*z^3) + 
         y^2*(-1 + z)^2*(-1 - 12*z + 19*z^2 - 16*z^3 + 2*z^4))*G[0, 1, 0, z])/
+      ((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+     (8*(-(z^2*(1 + z^2)) + y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 
+        4*y^3*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 
+          2*z^6) + y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*
+       G[0, 1, -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) - 
+     (8*(-(z^2*(1 + z^2)) + y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 
+        4*y^3*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 
+          2*z^6) + y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*
+       G[0, 1, -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + (8*(-1 + y)*(4*y^4*(-1 + z)^4 + z^2 + z^4 + 
+        2*y^2*(-1 + z)^2*z*(-2 + 5*z) - 2*y^3*(-1 + z)^3*(-1 + 5*z) + 
+        y*(1 + 2*z - 4*z^2 + 6*z^3 - 5*z^4))*G[0, -r^(-1), 0, t])/
+      ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) + 
+     (8*(-1 + y)*(1 - 2*y^3*(-5 + z)*(-1 + z)^3 + 4*y^4*(-1 + z)^4 + z^2 + 
+        y*(-1 + z)^3*(3 + z) - 2*y^2*(-1 + z)^2*(-4 + 4*z + z^2))*
+       G[0, -r^(-1), -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) - 
+     (8*(-1 + y)*(4*y^4*(-1 + z)^4 + z^2 + z^4 + 2*y^2*(-1 + z)^2*z*
+         (-2 + 5*z) - 2*y^3*(-1 + z)^3*(-1 + 5*z) + 
+        y*(1 + 2*z - 4*z^2 + 6*z^3 - 5*z^4))*G[0, r^(-1), 0, t])/
+      ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) + 
+     (8*(-1 + y)*(4*y^4*(-1 + z)^4 + z^2 + z^4 + 2*y^2*(-1 + z)^2*z*
+         (-2 + 5*z) - 2*y^3*(-1 + z)^3*(-1 + 5*z) + 
+        y*(1 + 2*z - 4*z^2 + 6*z^3 - 5*z^4))*G[0, r^(-1), -r^(-1), t])/
+      ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) + 
+     (8*(-1 + y)*(-20*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 
+        4*y^4*(-1 + z)^4*(4 - 13*z + 4*z^2) - 2*y^3*(-1 + z)^3*
+         (-2 + 21*z - 24*z^2 + z^3) + 2*(z^2 + z^4) - 
+        y^2*(-1 + z)^2*(1 + 16*z - 32*z^2 + 20*z^3 + 3*z^4) + 
+        y*(1 + 4*z - 11*z^2 + 18*z^3 - 15*z^4 + 2*z^5 + z^6))*
+       G[0, r^(-1), -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + (8*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 2*z^3 - 
+        2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*(9 - 8*z + 2*z^2) - 
+        y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*G[0, -r, 0, t])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+     (8*y*(4*y^4*(-1 + z)^4 - 2*y^3*(-1 + z)^3*(-3 + 7*z) + 
+        z^2*(5 - 4*z + z^2) - y*(-1 + z)^2*(-1 - 10*z + 7*z^2) + 
+        2*y^2*(-1 + z)^2*(1 - 10*z + 8*z^2))*G[0, -r, -r^(-1), t])/
+      ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) - 
+     (8*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 2*z^3 - 
+        2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*(9 - 8*z + 2*z^2) - 
+        y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*G[0, r, 0, t])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+     (8*y*(-28*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*
+         (9 - 23*z + 9*z^2) - 2*z^2*(-4 + 3*z - 2*z^2 + z^3) - 
+        2*y^3*(-1 + z)^3*(-10 + 55*z - 52*z^2 + 11*z^3) + 
+        y^2*(-1 + z)^2*(3 - 62*z + 98*z^2 - 54*z^3 + 7*z^4) + 
+        y*(1 + 14*z - 57*z^2 + 74*z^3 - 47*z^4 + 16*z^5 - z^6))*
+       G[0, r, -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + (8*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 2*z^3 - 
+        2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*(9 - 8*z + 2*z^2) - 
+        y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*G[0, r, -r, t])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+     (8*(-(y*(-1 + z)^4*(1 + z^2)) - 8*y^3*(-1 + z)^4*(1 + z + z^2) + 
+        4*y^4*(-1 + z)^4*(1 + z + z^2) + y^2*(-1 + z)^4*(5 + 4*z + 5*z^2) + 
+        2*(z^2 + z^4))*G[-I, 0, 0, r])/((1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) - (8*(-24*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 - 
+        8*y^3*(-1 + z)^4*(3 - 5*z + 3*z^2) + 4*y^4*(-1 + z)^4*
+         (8 - 15*z + 8*z^2) + 6*(z^2 + z^4) - y*(-1 + z)^2*
+         (1 - 10*z + 10*z^2 - 10*z^3 + z^4) + y^2*(-1 + z)^2*
+         (9 - 38*z + 50*z^2 - 38*z^3 + 9*z^4))*G[-I, 0, -I, r])/
+      ((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+     (8*(-24*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 - 8*y^3*(-1 + z)^4*
+         (3 - 5*z + 3*z^2) + 4*y^4*(-1 + z)^4*(8 - 15*z + 8*z^2) + 
+        6*(z^2 + z^4) - y*(-1 + z)^2*(1 - 10*z + 10*z^2 - 10*z^3 + z^4) + 
+        y^2*(-1 + z)^2*(9 - 38*z + 50*z^2 - 38*z^3 + 9*z^4))*G[-I, 0, I, r])/
+      ((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+     (8*(-24*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 - 8*y^3*(-1 + z)^4*
+         (3 - 5*z + 3*z^2) + 4*y^4*(-1 + z)^4*(8 - 15*z + 8*z^2) + 
+        6*(z^2 + z^4) - y*(-1 + z)^2*(1 - 10*z + 10*z^2 - 10*z^3 + z^4) + 
+        y^2*(-1 + z)^2*(9 - 38*z + 50*z^2 - 38*z^3 + 9*z^4))*G[-I, -I, 0, r])/
+      ((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+     (8*(-24*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 - 8*y^3*(-1 + z)^4*
+         (3 - 5*z + 3*z^2) + 4*y^4*(-1 + z)^4*(8 - 15*z + 8*z^2) + 
+        6*(z^2 + z^4) - y*(-1 + z)^2*(1 - 10*z + 10*z^2 - 10*z^3 + z^4) + 
+        y^2*(-1 + z)^2*(9 - 38*z + 50*z^2 - 38*z^3 + 9*z^4))*
+       G[-I, -I, -I, r])/((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+     (8*(-24*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 - 8*y^3*(-1 + z)^4*
+         (3 - 5*z + 3*z^2) + 4*y^4*(-1 + z)^4*(8 - 15*z + 8*z^2) + 
+        6*(z^2 + z^4) - y*(-1 + z)^2*(1 - 10*z + 10*z^2 - 10*z^3 + z^4) + 
+        y^2*(-1 + z)^2*(9 - 38*z + 50*z^2 - 38*z^3 + 9*z^4))*G[-I, -I, I, r])/
+      ((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+     (8*(-24*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 - 8*y^3*(-1 + z)^4*
+         (3 - 5*z + 3*z^2) + 4*y^4*(-1 + z)^4*(8 - 15*z + 8*z^2) + 
+        6*(z^2 + z^4) - y*(-1 + z)^2*(1 - 10*z + 10*z^2 - 10*z^3 + z^4) + 
+        y^2*(-1 + z)^2*(9 - 38*z + 50*z^2 - 38*z^3 + 9*z^4))*G[-I, I, 0, r])/
+      ((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+     (8*(-24*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 - 8*y^3*(-1 + z)^4*
+         (3 - 5*z + 3*z^2) + 4*y^4*(-1 + z)^4*(8 - 15*z + 8*z^2) + 
+        6*(z^2 + z^4) - y*(-1 + z)^2*(1 - 10*z + 10*z^2 - 10*z^3 + z^4) + 
+        y^2*(-1 + z)^2*(9 - 38*z + 50*z^2 - 38*z^3 + 9*z^4))*G[-I, I, -I, r])/
+      ((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+     (8*(-24*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 - 8*y^3*(-1 + z)^4*
+         (3 - 5*z + 3*z^2) + 4*y^4*(-1 + z)^4*(8 - 15*z + 8*z^2) + 
+        6*(z^2 + z^4) - y*(-1 + z)^2*(1 - 10*z + 10*z^2 - 10*z^3 + z^4) + 
+        y^2*(-1 + z)^2*(9 - 38*z + 50*z^2 - 38*z^3 + 9*z^4))*G[-I, I, I, r])/
+      ((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+     (8*(-(y*(-1 + z)^4*(1 + z^2)) - 8*y^3*(-1 + z)^4*(1 + z + z^2) + 
+        4*y^4*(-1 + z)^4*(1 + z + z^2) + y^2*(-1 + z)^4*(5 + 4*z + 5*z^2) + 
+        2*(z^2 + z^4))*G[I, 0, 0, r])/((1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) - (8*(-24*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 - 
+        8*y^3*(-1 + z)^4*(3 - 5*z + 3*z^2) + 4*y^4*(-1 + z)^4*
+         (8 - 15*z + 8*z^2) + 6*(z^2 + z^4) - y*(-1 + z)^2*
+         (1 - 10*z + 10*z^2 - 10*z^3 + z^4) + y^2*(-1 + z)^2*
+         (9 - 38*z + 50*z^2 - 38*z^3 + 9*z^4))*G[I, 0, -I, r])/
+      ((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+     (8*(-24*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 - 8*y^3*(-1 + z)^4*
+         (3 - 5*z + 3*z^2) + 4*y^4*(-1 + z)^4*(8 - 15*z + 8*z^2) + 
+        6*(z^2 + z^4) - y*(-1 + z)^2*(1 - 10*z + 10*z^2 - 10*z^3 + z^4) + 
+        y^2*(-1 + z)^2*(9 - 38*z + 50*z^2 - 38*z^3 + 9*z^4))*G[I, 0, I, r])/
+      ((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+     (8*(-24*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 - 8*y^3*(-1 + z)^4*
+         (3 - 5*z + 3*z^2) + 4*y^4*(-1 + z)^4*(8 - 15*z + 8*z^2) + 
+        6*(z^2 + z^4) - y*(-1 + z)^2*(1 - 10*z + 10*z^2 - 10*z^3 + z^4) + 
+        y^2*(-1 + z)^2*(9 - 38*z + 50*z^2 - 38*z^3 + 9*z^4))*G[I, -I, 0, r])/
+      ((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+     (8*(-24*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 - 8*y^3*(-1 + z)^4*
+         (3 - 5*z + 3*z^2) + 4*y^4*(-1 + z)^4*(8 - 15*z + 8*z^2) + 
+        6*(z^2 + z^4) - y*(-1 + z)^2*(1 - 10*z + 10*z^2 - 10*z^3 + z^4) + 
+        y^2*(-1 + z)^2*(9 - 38*z + 50*z^2 - 38*z^3 + 9*z^4))*G[I, -I, -I, r])/
+      ((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+     (8*(-24*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 - 8*y^3*(-1 + z)^4*
+         (3 - 5*z + 3*z^2) + 4*y^4*(-1 + z)^4*(8 - 15*z + 8*z^2) + 
+        6*(z^2 + z^4) - y*(-1 + z)^2*(1 - 10*z + 10*z^2 - 10*z^3 + z^4) + 
+        y^2*(-1 + z)^2*(9 - 38*z + 50*z^2 - 38*z^3 + 9*z^4))*G[I, -I, I, r])/
+      ((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+     (8*(-24*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 - 8*y^3*(-1 + z)^4*
+         (3 - 5*z + 3*z^2) + 4*y^4*(-1 + z)^4*(8 - 15*z + 8*z^2) + 
+        6*(z^2 + z^4) - y*(-1 + z)^2*(1 - 10*z + 10*z^2 - 10*z^3 + z^4) + 
+        y^2*(-1 + z)^2*(9 - 38*z + 50*z^2 - 38*z^3 + 9*z^4))*G[I, I, 0, r])/
+      ((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+     (8*(-24*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 - 8*y^3*(-1 + z)^4*
+         (3 - 5*z + 3*z^2) + 4*y^4*(-1 + z)^4*(8 - 15*z + 8*z^2) + 
+        6*(z^2 + z^4) - y*(-1 + z)^2*(1 - 10*z + 10*z^2 - 10*z^3 + z^4) + 
+        y^2*(-1 + z)^2*(9 - 38*z + 50*z^2 - 38*z^3 + 9*z^4))*G[I, I, -I, r])/
+      ((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+     (8*(-24*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 - 8*y^3*(-1 + z)^4*
+         (3 - 5*z + 3*z^2) + 4*y^4*(-1 + z)^4*(8 - 15*z + 8*z^2) + 
+        6*(z^2 + z^4) - y*(-1 + z)^2*(1 - 10*z + 10*z^2 - 10*z^3 + z^4) + 
+        y^2*(-1 + z)^2*(9 - 38*z + 50*z^2 - 38*z^3 + 9*z^4))*G[I, I, I, r])/
+      ((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+     (2*(-60*y^5*(-1 + z)^6 + 20*y^6*(-1 + z)^6 - 4*y^3*(-1 + z)^4*
+         (9 - 36*z + 4*z^2) + 2*y^4*(-1 + z)^4*(34 - 86*z + 29*z^2) + 
+        y*(-1 + z)^3*(2 - 12*z + 17*z^2 + 3*z^3) - y^2*(-1 + z)^3*
+         (10 - 72*z + 67*z^2 + 5*z^3) + 9*(z^2 + z^4))*G[1, -1, -1, t^2])/
       ((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
      (2*(-60*y^5*(-1 + z)^6 + 20*y^6*(-1 + z)^6 - 4*y^3*(-1 + z)^4*
          (9 - 36*z + 4*z^2) + 2*y^4*(-1 + z)^4*(34 - 86*z + 29*z^2) + 
         y*(-1 + z)^3*(2 - 12*z + 17*z^2 + 3*z^3) - y^2*(-1 + z)^3*
          (10 - 72*z + 67*z^2 + 5*z^3) + 9*(z^2 + z^4))*G[1, -1, -1, z])/
-      ((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+      ((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+     (2*(-28*y^6*(-1 + z)^6 + 8*y^7*(-1 + z)^6 + 4*y^5*(-1 + z)^4*
+         (15 - 16*z + 16*z^2) - 2*y^4*(-1 + z)^3*(-42 + 44*z - 67*z^2 + 
+          41*z^3) - 9*(z^2 + z^4) + 2*y^3*(-1 + z)^2*(32 - 50*z + 67*z^2 - 
+          82*z^3 + 25*z^4) + y^2*(-22 + 90*z - 159*z^2 + 226*z^3 - 222*z^4 + 
+          100*z^5 - 13*z^6) + y*(2 - 18*z + 45*z^2 - 46*z^3 + 60*z^4 - 
+          16*z^5 + z^6))*G[1, -1, 0, t^2])/((-1 + 2*y)*(1 + y*(-1 + z))^2*
+       (-1 + z)*z*(y + z - y*z)^2) + 
      (2*(-28*y^6*(-1 + z)^6 + 8*y^7*(-1 + z)^6 + 4*y^5*(-1 + z)^4*
          (15 - 16*z + 16*z^2) - 2*y^4*(-1 + z)^3*(-42 + 44*z - 67*z^2 + 
           41*z^3) - 9*(z^2 + z^4) + 2*y^3*(-1 + z)^2*(32 - 50*z + 67*z^2 - 
           82*z^3 + 25*z^4) + y^2*(-22 + 90*z - 159*z^2 + 226*z^3 - 222*z^4 + 
           100*z^5 - 13*z^6) + y*(2 - 18*z + 45*z^2 - 46*z^3 + 60*z^4 - 
           16*z^5 + z^6))*G[1, -1, 0, z])/((-1 + 2*y)*(1 + y*(-1 + z))^2*
+       (-1 + z)*z*(y + z - y*z)^2) + 
+     (2*(84*y^6*(-1 + z)^6 - 24*y^7*(-1 + z)^6 - 4*y^5*(-1 + z)^4*
+         (33 - 64*z + 32*z^2) + 2*y^4*(-1 + z)^3*(-62 + 164*z - 177*z^2 + 
+          51*z^3) + 11*(z^2 + z^4) - 2*y^3*(-1 + z)^2*(36 - 118*z + 189*z^2 - 
+          134*z^3 + 19*z^4) + y*(-2 + 22*z - 67*z^2 + 74*z^3 - 80*z^4 + 
+          16*z^5 + z^6) + y^2*(22 - 126*z + 305*z^2 - 438*z^3 + 342*z^4 - 
+          108*z^5 + 3*z^6))*G[1, 0, -1, t^2])/((-1 + 2*y)*(1 + y*(-1 + z))^2*
        (-1 + z)*z*(y + z - y*z)^2) + 
      (2*(-84*y^6*(-1 + z)^6 + 24*y^7*(-1 + z)^6 + 4*y^5*(-1 + z)^4*
          (33 - 64*z + 32*z^2) - 2*y^4*(-1 + z)^3*(-62 + 164*z - 177*z^2 + 
@@ -10681,24 +13971,470 @@
           342*z^4 + 108*z^5 - 3*z^6) - y*(-2 + 22*z - 67*z^2 + 74*z^3 - 
           80*z^4 + 16*z^5 + z^6))*G[1, 0, -1, z])/
       ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+     (12*(z^2 + z^4 - 4*y^3*(-1 + z)^4*(1 + 2*z + 2*z^2) + 
+        2*y^4*(-1 + z)^4*(1 + 2*z + 2*z^2) - y*(-1 + z)^2*z*
+         (-2 - z - 2*z^2 + z^3) + y^2*(-1 + z)^2*(2 - 2*z - 3*z^2 - 6*z^3 + 
+          5*z^4))*G[1, 0, 0, t])/((1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) - (4*(-1 + y)*y*(-1 + z)*(-1 - 4*y^3*(-1 + z)^4 + 
+        2*y^4*(-1 + z)^4 - 2*z - z^2 - 2*z^3 - y*(-1 + z)^2*
+         (-1 - 4*z + z^2) + y^2*(-1 + z)^2*(1 - 8*z + 3*z^2))*
+       G[1, 0, 0, t^2])/((1 + y*(-1 + z))^2*z*(y + z - y*z)^2) + 
      (4*(-1 + y)*y*(-1 + z)*(-1 - 4*y^3*(-1 + z)^4 + 2*y^4*(-1 + z)^4 - 2*z - 
         z^2 - 2*z^3 - y*(-1 + z)^2*(-1 - 4*z + z^2) + 
         y^2*(-1 + z)^2*(1 - 8*z + 3*z^2))*G[1, 0, 0, z])/
-      ((1 + y*(-1 + z))^2*z*(y + z - y*z)^2) - 
+      ((1 + y*(-1 + z))^2*z*(y + z - y*z)^2) + 
+     (2*(8*y^5*(-1 + z)^4*(1 + 2*z + 2*z^2) - 2*y^4*(-1 + z)^3*
+         (-13 - 19*z - 18*z^2 + 14*z^3) - 5*(z^2 + z^4) + 
+        4*y^3*(-1 + z)^2*(7 + 4*z + 4*z^2 - 22*z^3 + 3*z^4) - 
+        y*z*(10 - 13*z + 22*z^2 - 36*z^3 + 8*z^4 + z^5) + 
+        y^2*(-10 + 26*z - 21*z^2 + 78*z^3 - 122*z^4 + 48*z^5 + z^6))*
+       G[1, 0, -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + 
+     (2*(z^2 + z^4 + 8*y^5*(-1 + z)^4*(1 + 2*z + 2*z^2) - 
+        2*y^4*(-1 + z)^3*(-7 - z + 18*z^2 + 26*z^3) + 4*y^3*(-1 + z)^2*
+         (1 - 8*z - 14*z^2 + 2*z^3 + 15*z^4) + 
+        y*z*(2 + 7*z + 14*z^2 - 12*z^3 - 8*z^4 + 5*z^5) + 
+        y^2*(2 + 14*z - 15*z^2 - 54*z^3 + 34*z^4 + 48*z^5 - 29*z^6))*
+       G[1, 0, -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + (8*(-1 + y)*y*(-1 + z)*(-4*y^3*(-1 + z)^4 + 
+        2*y^4*(-1 + z)^4 - z^2*(-3 + z^2) - y^2*(-1 + z)^2*
+         (-1 + 12*z + z^2) + y*(-1 + z)^2*(1 + 8*z + 3*z^2))*
+       G[1, 1, -1, t^2])/((1 + y*(-1 + z))^2*z*(y + z - y*z)^2) - 
      (8*(-1 + y)*y*(-1 + z)*(-4*y^3*(-1 + z)^4 + 2*y^4*(-1 + z)^4 - 
         z^2*(-3 + z^2) - y^2*(-1 + z)^2*(-1 + 12*z + z^2) + 
         y*(-1 + z)^2*(1 + 8*z + 3*z^2))*G[1, 1, -1, z])/
+      ((1 + y*(-1 + z))^2*z*(y + z - y*z)^2) - 
+     (8*(1 - 2*y*(-1 + z)^2 + 2*y^2*(-1 + z)^2 + z^2)*G[1, 1, 0, t^2])/
+      ((-1 + z)*z) + (8*(1 - 2*y*(-1 + z)^2 + 2*y^2*(-1 + z)^2 + z^2)*
+       G[1, 1, 0, z])/((-1 + z)*z) + 
+     (2*(4*y^5*(-1 + z)^4*(1 + 2*z + 2*z^2) - 2*y^4*(-1 + z)^3*
+         (-9 - 17*z - 24*z^2 + 2*z^3) - 5*(z^2 + z^4) - 
+        2*y^3*(-1 + z)^2*(-12 - 14*z - 19*z^2 + 42*z^3 + 7*z^4) - 
+        y*z*(10 - 9*z + 26*z^2 - 38*z^3 + 4*z^4 + 3*z^5) + 
+        y^2*(-10 + 18*z - 13*z^2 + 94*z^3 - 126*z^4 + 24*z^5 + 13*z^6))*
+       G[1, -r^(-1), 0, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + 
+     (4*(-(z^2*(1 + z^2)) + y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 
+        4*y^3*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 
+          2*z^6) + y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*
+       G[1, -r^(-1), -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + ((8*y^5*(-1 + z)^4*(1 + 2*z + 2*z^2) - 
+        4*y^4*(-1 + z)^3*(-7 - 11*z - 12*z^2 + 6*z^3) - 6*(z^2 + z^4) + 
+        4*y^3*(-1 + z)^2*(8 + 6*z + 7*z^2 - 26*z^3 + z^4) - 
+        2*y*z*(6 - 7*z + 14*z^2 - 22*z^3 + 4*z^4 + z^5) + 
+        2*y^2*(-6 + 14*z - 11*z^2 + 50*z^3 - 74*z^4 + 24*z^5 + 3*z^6))*
+       G[1, r^(-1), 0, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + (2*(z^2 + z^4 + y*z*(2 - z + 6*z^2 - 8*z^3 + z^5) + 
+        y^2*(2 - 2*z + z^2 - 22*z^3 + 26*z^4 - 5*z^6) + 
+        4*y^3*(-1 + 8*z^3 - 9*z^4 + 2*z^6) - 2*y^4*(-1 + 8*z^3 - 9*z^4 + 
+          2*z^6))*G[1, r^(-1), -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*
+       (-1 + z)*z*(y + z - y*z)^2) - 
+     (6*(-(z^2*(1 + z^2)) + y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 
+        4*y^3*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 
+          2*z^6) + y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*
+       G[1, r^(-1), -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + (2*(4*y^5*(-1 + z)^4*(1 + 2*z + 2*z^2) - 
+        2*y^4*(-1 + z)^3*(-1 + 7*z + 24*z^2 + 18*z^3) + 3*(z^2 + z^4) + 
+        2*y^3*(-1 + z)^2*(-4 - 18*z - 29*z^2 + 22*z^3 + 25*z^4) + 
+        y*z*(6 + z + 22*z^2 - 26*z^3 - 4*z^4 + 5*z^5) + 
+        y^2*(6 + 2*z - 5*z^2 - 82*z^3 + 82*z^4 + 24*z^5 - 27*z^6))*
+       G[1, -r, 0, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) - 
+     (4*(-(z^2*(1 + z^2)) + y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 
+        4*y^3*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 
+          2*z^6) + y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*
+       G[1, -r, -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + 
+     (2*(z^2 + z^4 + 4*y^5*(-1 + z)^4*(1 + 2*z + 2*z^2) - 
+        2*y^4*(-1 + z)^3*(-3 + z + 12*z^2 + 14*z^3) + 2*y^3*(-1 + z)^2*z*
+         (-10 - 17*z + 6*z^2 + 17*z^3) + y*z*(2 + 3*z + 10*z^2 - 10*z^3 - 
+          4*z^4 + 3*z^5) + y^2*(2 + 6*z - 7*z^2 - 38*z^3 + 30*z^4 + 24*z^5 - 
+          17*z^6))*G[1, r, 0, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + 
+     (6*(-(z^2*(1 + z^2)) + y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 
+        4*y^3*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 
+          2*z^6) + y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*
+       G[1, r, -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + 
+     (2*(-(z^2*(1 + z^2)) + y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 
+        4*y^3*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 
+          2*z^6) + y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*
+       G[1, r, -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + (4*(-1 + y)*(z^2 + z^4 + 2*y^2*(-1 + z)^2*
+         (1 + 2*z + 2*z^2) + 2*y*z*(1 + z^2 - 2*z^3))*G[-r^(-1), -1, 0, t])/
+      ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) + 
+     (4*(-1 + y)*(z^2 + z^4 + 2*y^2*(-1 + z)^2*(1 + 2*z + 2*z^2) + 
+        2*y*z*(1 + z^2 - 2*z^3))*G[-r^(-1), -1, -r^(-1), t])/
+      ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) - 
+     (4*(-1 + y)*(z^2 + z^4 + 2*y^2*(-1 + z)^2*(1 + 2*z + 2*z^2) + 
+        2*y*z*(1 + z^2 - 2*z^3))*G[-r^(-1), -1, -r, t])/
+      ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) + 
+     (4*(-1 + y)*(4*y^4*(-1 + z)^4 + z^2 + z^4 + 2*y^2*(-1 + z)^2*z*
+         (-2 + 5*z) - 2*y^3*(-1 + z)^3*(-1 + 5*z) + 
+        y*(1 + 2*z - 4*z^2 + 6*z^3 - 5*z^4))*G[-r^(-1), 0, 0, t])/
+      ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) + 
+     (10*(-1 + y)*(4*y^4*(-1 + z)^4 + z^2 + z^4 + 2*y^2*(-1 + z)^2*z*
+         (-2 + 5*z) - 2*y^3*(-1 + z)^3*(-1 + 5*z) + 
+        y*(1 + 2*z - 4*z^2 + 6*z^3 - 5*z^4))*G[-r^(-1), 0, -r^(-1), t])/
+      ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) + 
+     (2*(-1 + y)*(-90*y^5*(-1 + z)^6 + 36*y^6*(-1 + z)^6 + 
+        2*y^4*(-1 + z)^4*(36 - 116*z + 37*z^2) - y^3*(-1 + z)^3*
+         (-17 + 189*z - 213*z^2 + 13*z^3) + 9*(z^2 + z^4) - 
+        y^2*(-1 + z)^2*(6 + 74*z - 141*z^2 + 90*z^3 + 11*z^4) + 
+        y*(5 + 18*z - 50*z^2 + 80*z^3 - 67*z^4 + 10*z^5 + 4*z^6))*
+       G[-r^(-1), 0, -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + (4*(-1 + y)*(z^2 + z^4 + 2*y^2*(-1 + z)^2*
+         (1 + 2*z + 2*z^2) + 2*y*z*(1 + z^2 - 2*z^3))*G[-r^(-1), 1, 0, t])/
+      ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) + 
+     (4*(-1 + y)*(z^2 + z^4 + 2*y^2*(-1 + z)^2*(1 + 2*z + 2*z^2) + 
+        2*y*z*(1 + z^2 - 2*z^3))*G[-r^(-1), 1, -r^(-1), t])/
+      ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) - 
+     (4*(-1 + y)*(z^2 + z^4 + 2*y^2*(-1 + z)^2*(1 + 2*z + 2*z^2) + 
+        2*y*z*(1 + z^2 - 2*z^3))*G[-r^(-1), 1, -r, t])/
+      ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) + 
+     (4*(-1 + y)*(4*y^4*(-1 + z)^4 + z^2 + z^4 + 2*y^2*(-1 + z)^2*z*
+         (-2 + 5*z) - 2*y^3*(-1 + z)^3*(-1 + 5*z) + 
+        y*(1 + 2*z - 4*z^2 + 6*z^3 - 5*z^4))*G[-r^(-1), -r^(-1), 0, t])/
+      ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) + 
+     (4*(-1 + y)*(1 - 2*y^3*(-5 + z)*(-1 + z)^3 + 4*y^4*(-1 + z)^4 + z^2 + 
+        y*(-1 + z)^3*(3 + z) - 2*y^2*(-1 + z)^2*(-4 + 4*z + z^2))*
+       G[-r^(-1), -r^(-1), -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*
+       z) + (6*(-1 + y)*(4*y^4*(-1 + z)^4 + z^2 + z^4 + 
+        2*y^2*(-1 + z)^2*z*(-2 + 5*z) - 2*y^3*(-1 + z)^3*(-1 + 5*z) + 
+        y*(1 + 2*z - 4*z^2 + 6*z^3 - 5*z^4))*G[-r^(-1), r^(-1), 0, t])/
+      ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) - 
+     (6*(-1 + y)*(4*y^4*(-1 + z)^4 + z^2 + z^4 + 2*y^2*(-1 + z)^2*z*
+         (-2 + 5*z) - 2*y^3*(-1 + z)^3*(-1 + 5*z) + 
+        y*(1 + 2*z - 4*z^2 + 6*z^3 - 5*z^4))*G[-r^(-1), r^(-1), -r^(-1), t])/
+      ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) + 
+     (2*(-1 + y)*(-10*y^5*(-1 + z)^6 + 4*y^6*(-1 + z)^6 + z^2 + z^4 + 
+        2*y^4*(-1 + z)^4*(4 - 16*z + z^2) + y^3*(-1 + z)^3*
+         (5 - 21*z + 33*z^2 + 11*z^3) - y^2*(-1 + z)^2*(-4 + 2*z - 25*z^2 + 
+          10*z^3 + 9*z^4) + y*(-1 + 2*z - 4*z^2 + 12*z^3 - 9*z^4 - 2*z^5 + 
+          2*z^6))*G[-r^(-1), r^(-1), -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*
+       (-1 + z)*z*(y + z - y*z)^2) + 
+     (2*(-1 + y)*(-50*y^5*(-1 + z)^6 + 20*y^6*(-1 + z)^6 + 
+        2*y^4*(-1 + z)^4*(18 - 66*z + 19*z^2) - y^3*(-1 + z)^3*
+         (-7 + 93*z - 123*z^2 + z^3) + 3*(z^2 + z^4) - 
+        y^2*(-1 + z)^2*(3 + 30*z - 69*z^2 + 50*z^3 + 10*z^4) + 
+        y*(2 + 6*z - 19*z^2 + 34*z^3 - 30*z^4 + 4*z^5 + 3*z^6))*
+       G[-r^(-1), -r, 0, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + (4*(-1 + y)*y*(-1 + z)*(-4*y^3*(-1 + z)^4 + 
+        2*y^4*(-1 + z)^4 - z^2*(-3 + z^2) - y^2*(-1 + z)^2*
+         (-1 + 12*z + z^2) + y*(-1 + z)^2*(1 + 8*z + 3*z^2))*
+       G[-r^(-1), -r, -r^(-1), t])/((1 + y*(-1 + z))^2*z*(y + z - y*z)^2) + 
+     (4*(-1 + y)*(1 - 2*y^3*(-5 + z)*(-1 + z)^3 + 4*y^4*(-1 + z)^4 + z^2 + 
+        y*(-1 + z)^3*(3 + z) - 2*y^2*(-1 + z)^2*(-4 + 4*z + z^2))*
+       G[-r^(-1), -r, -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+     (2*(-1 + y)*(-40*y^5*(-1 + z)^6 + 16*y^6*(-1 + z)^6 + 
+        4*y^4*(-1 + z)^4*(9 - 25*z + 9*z^2) - 2*y^3*(-1 + z)^3*
+         (-5 + 48*z - 45*z^2 + 6*z^3) + 6*(z^2 + z^4) - 
+        y^2*(-1 + z)^2*(3 + 44*z - 72*z^2 + 40*z^3 + z^4) + 
+        y*(3 + 12*z - 31*z^2 + 46*z^3 - 37*z^4 + 6*z^5 + z^6))*
+       G[-r^(-1), r, 0, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) - (2*(-1 + y)*(-20*y^5*(-1 + z)^6 + 
+        8*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*(6 - 11*z + 6*z^2) - 
+        2*y^3*(-1 + z)^3*(-8 + 21*z - 30*z^2 + 5*z^3) + 6*(z^2 + z^4) - 
+        y^2*(-1 + z)^2*(-5 + 24*z - 48*z^2 + 36*z^3 + z^4) + 
+        y*(1 + 12*z - 23*z^2 + 38*z^3 - 35*z^4 + 6*z^5 + z^6))*
+       G[-r^(-1), r, -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) - (2*(-1 + y)*(-40*y^5*(-1 + z)^6 + 
+        16*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*(9 - 25*z + 9*z^2) - 
+        2*y^3*(-1 + z)^3*(-5 + 48*z - 45*z^2 + 6*z^3) + 6*(z^2 + z^4) - 
+        y^2*(-1 + z)^2*(3 + 44*z - 72*z^2 + 40*z^3 + z^4) + 
+        y*(3 + 12*z - 31*z^2 + 46*z^3 - 37*z^4 + 6*z^5 + z^6))*
+       G[-r^(-1), r, -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + (4*(-1 + y)*(z^2 + z^4 + 2*y^2*(-1 + z)^2*
+         (1 + 2*z + 2*z^2) + 2*y*z*(1 + z^2 - 2*z^3))*G[r^(-1), -1, 0, t])/
+      ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) + 
+     (4*(-1 + y)*(z^2 + z^4 + 2*y^2*(-1 + z)^2*(1 + 2*z + 2*z^2) + 
+        2*y*z*(1 + z^2 - 2*z^3))*G[r^(-1), -1, -r^(-1), t])/
+      ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) - 
+     (4*(-1 + y)*(z^2 + z^4 + 2*y^2*(-1 + z)^2*(1 + 2*z + 2*z^2) + 
+        2*y*z*(1 + z^2 - 2*z^3))*G[r^(-1), -1, -r, t])/
+      ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) - 
+     (4*(-1 + y)*(4*y^4*(-1 + z)^4 + z^2 + z^4 + 2*y^2*(-1 + z)^2*z*
+         (-2 + 5*z) - 2*y^3*(-1 + z)^3*(-1 + 5*z) + 
+        y*(1 + 2*z - 4*z^2 + 6*z^3 - 5*z^4))*G[r^(-1), 0, 0, t])/
+      ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) - 
+     (2*(-1 + y)*(4*y^4*(-1 + z)^4 + z^2 + z^4 + 2*y^2*(-1 + z)^2*z*
+         (-2 + 5*z) - 2*y^3*(-1 + z)^3*(-1 + 5*z) + 
+        y*(1 + 2*z - 4*z^2 + 6*z^3 - 5*z^4))*G[r^(-1), 0, -r^(-1), t])/
+      ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) + 
+     (2*(-1 + y)*(-30*y^5*(-1 + z)^6 + 12*y^6*(-1 + z)^6 + 
+        2*y^4*(-1 + z)^4*(12 - 44*z + 7*z^2) + y^3*(-1 + z)^3*
+         (11 - 63*z + 87*z^2 + 17*z^3) + 3*(z^2 + z^4) - 
+        y^2*(-1 + z)^2*(-6 + 14*z - 63*z^2 + 30*z^3 + 17*z^4) + 
+        y*(-1 + 6*z - 14*z^2 + 32*z^3 - 25*z^4 - 2*z^5 + 4*z^6))*
+       G[r^(-1), 0, -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + (4*(-1 + y)*(z^2 + z^4 + 2*y^2*(-1 + z)^2*
+         (1 + 2*z + 2*z^2) + 2*y*z*(1 + z^2 - 2*z^3))*G[r^(-1), 1, 0, t])/
+      ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) + 
+     (4*(-1 + y)*(z^2 + z^4 + 2*y^2*(-1 + z)^2*(1 + 2*z + 2*z^2) + 
+        2*y*z*(1 + z^2 - 2*z^3))*G[r^(-1), 1, -r^(-1), t])/
+      ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) - 
+     (4*(-1 + y)*(z^2 + z^4 + 2*y^2*(-1 + z)^2*(1 + 2*z + 2*z^2) + 
+        2*y*z*(1 + z^2 - 2*z^3))*G[r^(-1), 1, -r, t])/
+      ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) + 
+     (2*(-1 + y)*(4*y^4*(-1 + z)^4 + z^2 + z^4 + 2*y^2*(-1 + z)^2*z*
+         (-2 + 5*z) - 2*y^3*(-1 + z)^3*(-1 + 5*z) + 
+        y*(1 + 2*z - 4*z^2 + 6*z^3 - 5*z^4))*G[r^(-1), -r^(-1), 0, t])/
+      ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) + 
+     (4*(-1 + y)*(4*y^4*(-1 + z)^4 + z^2 + z^4 + 2*y^2*(-1 + z)^2*z*
+         (-2 + 5*z) - 2*y^3*(-1 + z)^3*(-1 + 5*z) + 
+        y*(1 + 2*z - 4*z^2 + 6*z^3 - 5*z^4))*G[r^(-1), -r^(-1), -r^(-1), t])/
+      ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) + 
+     (4*(-1 + y)*(-30*y^5*(-1 + z)^6 + 12*y^6*(-1 + z)^6 + 
+        2*y^4*(-1 + z)^4*(12 - 38*z + 13*z^2) - y^3*(-1 + z)^3*
+         (-5 + 63*z - 69*z^2 + 7*z^3) + 3*(z^2 + z^4) - 
+        y^2*(-1 + z)^2*(3 + 26*z - 45*z^2 + 30*z^3 + 2*z^4) + 
+        y*(2 + 6*z - 17*z^2 + 26*z^3 - 22*z^4 + 4*z^5 + z^6))*
+       G[r^(-1), -r^(-1), -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) - (4*(-1 + y)*(4*y^4*(-1 + z)^4 + z^2 + z^4 + 
+        2*y^2*(-1 + z)^2*z*(-2 + 5*z) - 2*y^3*(-1 + z)^3*(-1 + 5*z) + 
+        y*(1 + 2*z - 4*z^2 + 6*z^3 - 5*z^4))*G[r^(-1), r^(-1), 0, t])/
+      ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) + 
+     (4*(-1 + y)*(4*y^4*(-1 + z)^4 + z^2 + z^4 + 2*y^2*(-1 + z)^2*z*
+         (-2 + 5*z) - 2*y^3*(-1 + z)^3*(-1 + 5*z) + 
+        y*(1 + 2*z - 4*z^2 + 6*z^3 - 5*z^4))*G[r^(-1), r^(-1), -r^(-1), t])/
+      ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) + 
+     (4*(-1 + y)*(-20*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 
+        4*y^4*(-1 + z)^4*(4 - 13*z + 4*z^2) - 2*y^3*(-1 + z)^3*
+         (-2 + 21*z - 24*z^2 + z^3) + 2*(z^2 + z^4) - 
+        y^2*(-1 + z)^2*(1 + 16*z - 32*z^2 + 20*z^3 + 3*z^4) + 
+        y*(1 + 4*z - 11*z^2 + 18*z^3 - 15*z^4 + 2*z^5 + z^6))*
+       G[r^(-1), r^(-1), -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + (2*(-1 + y)*(-40*y^5*(-1 + z)^6 + 
+        16*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*(7 - 27*z + 7*z^2) + 
+        2*y^3*(-1 + z)^3*(3 - 36*z + 51*z^2 + 2*z^3) + 2*(z^2 + z^4) - 
+        y^2*(-1 + z)^2*(1 + 20*z - 56*z^2 + 40*z^3 + 11*z^4) + 
+        y*(1 + 4*z - 13*z^2 + 26*z^3 - 23*z^4 + 2*z^5 + 3*z^6))*
+       G[r^(-1), -r, 0, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + (4*(-1 + y)*(-30*y^5*(-1 + z)^6 + 
+        12*y^6*(-1 + z)^6 + 2*y^4*(-1 + z)^4*(11 - 40*z + 11*z^2) - 
+        y^3*(-1 + z)^3*(-1 + 69*z - 63*z^2 + 3*z^3) + 2*(z^2 + z^4) - 
+        y^2*(-1 + z)^2*(5 + 26*z - 44*z^2 + 22*z^3 + 3*z^4) + 
+        y*(2 + 4*z - 15*z^2 + 22*z^3 - 16*z^4 + 2*z^5 + z^6))*
+       G[r^(-1), -r, -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + (4*(-1 + y)*(-20*y^5*(-1 + z)^6 + 
+        8*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*(4 - 13*z + 4*z^2) - 
+        2*y^3*(-1 + z)^3*(-2 + 21*z - 24*z^2 + z^3) + 2*(z^2 + z^4) - 
+        y^2*(-1 + z)^2*(1 + 16*z - 32*z^2 + 20*z^3 + 3*z^4) + 
+        y*(1 + 4*z - 11*z^2 + 18*z^3 - 15*z^4 + 2*z^5 + z^6))*
+       G[r^(-1), -r, -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) - (2*(-1 + y)*(-10*y^5*(-1 + z)^6 + 
+        4*y^6*(-1 + z)^6 - z^2*(1 + z^2) + 2*y^4*(-1 + z)^4*
+         (2 - 10*z + 7*z^2) - y^3*(-1 + z)^3*(5 + 9*z - 15*z^2 + 13*z^3) + 
+        y^2*(-1 + z)^2*(-7 - 6*z - 7*z^2 - 10*z^3 + 6*z^4) + 
+        y*(2 - 2*z + z^2 - 6*z^3 + 2*z^4 + 4*z^5 - z^6))*G[r^(-1), r, 0, t])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+     (2*(-1 + y)*(-10*y^5*(-1 + z)^6 + 4*y^6*(-1 + z)^6 + 
+        2*y^4*(-1 + z)^4*z*(-14 + 3*z) - y^3*(-1 + z)^3*(13 + 21*z - 3*z^2 + 
+          5*z^3) - 3*(z^2 + z^4) + y^2*(-1 + z)^2*(-11 - 6*z - 9*z^2 + 
+          6*z^3 + 4*z^4) - y*(-2 + 6*z - 5*z^2 + 14*z^3 - 14*z^4 + z^6))*
+       G[r^(-1), r, -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + (2*(-1 + y)*(-10*y^5*(-1 + z)^6 + 
+        4*y^6*(-1 + z)^6 - z^2*(1 + z^2) + 2*y^4*(-1 + z)^4*
+         (2 - 10*z + 7*z^2) - y^3*(-1 + z)^3*(5 + 9*z - 15*z^2 + 13*z^3) + 
+        y^2*(-1 + z)^2*(-7 - 6*z - 7*z^2 - 10*z^3 + 6*z^4) + 
+        y*(2 - 2*z + z^2 - 6*z^3 + 2*z^4 + 4*z^5 - z^6))*G[r^(-1), r, -r, t])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+     (4*y*(2 + 2*z - z^2 - 2*z^3 + z^4 + 2*y^2*(-1 + z)^2*(1 + 2*z + 2*z^2) - 
+        2*y*(2 + z - 2*z^2 - 3*z^3 + 2*z^4))*G[-r, -1, 0, t])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) - 
+     (4*y*(2 + 2*z - z^2 - 2*z^3 + z^4 + 2*y^2*(-1 + z)^2*(1 + 2*z + 2*z^2) - 
+        2*y*(2 + z - 2*z^2 - 3*z^3 + 2*z^4))*G[-r, -1, -r^(-1), t])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+     (4*y*(2 + 2*z - z^2 - 2*z^3 + z^4 + 2*y^2*(-1 + z)^2*(1 + 2*z + 2*z^2) - 
+        2*y*(2 + z - 2*z^2 - 3*z^3 + 2*z^4))*G[-r, -1, -r, t])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+     (4*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 2*z^3 - 
+        2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*(9 - 8*z + 2*z^2) - 
+        y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*G[-r, 0, 0, t])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+     (2*y*(-126*y^5*(-1 + z)^6 + 36*y^6*(-1 + z)^6 + 2*y^4*(-1 + z)^4*
+         (81 - 206*z + 82*z^2) + z^2*(35 - 26*z + 19*z^2 - 10*z^3) - 
+        y^3*(-1 + z)^3*(-91 + 487*z - 471*z^2 + 103*z^3) + 
+        y^2*(-1 + z)^2*(15 - 272*z + 435*z^2 - 252*z^3 + 34*z^4) + 
+        y*(4 + 62*z - 249*z^2 + 328*z^3 - 218*z^4 + 78*z^5 - 5*z^6))*
+       G[-r, 0, -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + (10*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 2*z^3 - 
+        2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*(9 - 8*z + 2*z^2) - 
+        y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*G[-r, 0, -r, t])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+     (4*y*(2 + 2*z - z^2 - 2*z^3 + z^4 + 2*y^2*(-1 + z)^2*(1 + 2*z + 2*z^2) - 
+        2*y*(2 + z - 2*z^2 - 3*z^3 + 2*z^4))*G[-r, 1, 0, t])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) - 
+     (4*y*(2 + 2*z - z^2 - 2*z^3 + z^4 + 2*y^2*(-1 + z)^2*(1 + 2*z + 2*z^2) - 
+        2*y*(2 + z - 2*z^2 - 3*z^3 + 2*z^4))*G[-r, 1, -r^(-1), t])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+     (4*y*(2 + 2*z - z^2 - 2*z^3 + z^4 + 2*y^2*(-1 + z)^2*(1 + 2*z + 2*z^2) - 
+        2*y*(2 + z - 2*z^2 - 3*z^3 + 2*z^4))*G[-r, 1, -r, t])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+     (2*y*(-2 - 70*y^5*(-1 + z)^6 + 20*y^6*(-1 + z)^6 + 19*z^2 - 16*z^3 + 
+        9*z^4 - 4*z^5 + 2*y^4*(-1 + z)^4*(43 - 116*z + 44*z^2) - 
+        y^3*(-1 + z)^3*(-37 + 279*z - 257*z^2 + 51*z^3) + 
+        y^2*(-1 + z)^2*(-8 - 154*z + 249*z^2 - 126*z^3 + 15*z^4) + 
+        y*(11 + 24*z - 142*z^2 + 186*z^3 - 111*z^4 + 34*z^5 - 2*z^6))*
+       G[-r, -r^(-1), 0, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + (4*y*(4*y^4*(-1 + z)^4 - 2*y^3*(-1 + z)^3*
+         (-3 + 7*z) + z^2*(5 - 4*z + z^2) - y*(-1 + z)^2*
+         (-1 - 10*z + 7*z^2) + 2*y^2*(-1 + z)^2*(1 - 10*z + 8*z^2))*
+       G[-r, -r^(-1), -r^(-1), t])/((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) + 
+     (4*(-1 + y)*y*(-1 + z)*(-4*y^3*(-1 + z)^4 + 2*y^4*(-1 + z)^4 - 
+        z^2*(-3 + z^2) - y^2*(-1 + z)^2*(-1 + 12*z + z^2) + 
+        y*(-1 + z)^2*(1 + 8*z + 3*z^2))*G[-r, -r^(-1), -r, t])/
       ((1 + y*(-1 + z))^2*z*(y + z - y*z)^2) + 
-     (8*(1 - 2*y*(-1 + z)^2 + 2*y^2*(-1 + z)^2 + z^2)*G[1, 1, 0, z])/
-      ((-1 + z)*z) + ((128*(1 - 2*y*(-1 + z)^2 + 2*y^2*(-1 + z)^2 + z^2)*
-         G[-1, t^2])/((-1 + z)*z) - 
-       (128*(1 - 2*y*(-1 + z)^2 + 2*y^2*(-1 + z)^2 + z^2)*G[-1, z])/
-        ((-1 + z)*z) + (128*(1 - 2*y*(-1 + z)^2 + 2*y^2*(-1 + z)^2 + z^2)*
-         G[0, 2])/((-1 + z)*z) - (64*(1 - 2*y*(-1 + z)^2 + 2*y^2*(-1 + z)^2 + 
-          z^2)*G[0, t])/((-1 + z)*z) - 
-       (64*(1 - 2*y*(-1 + z)^2 + 2*y^2*(-1 + z)^2 + z^2)*G[-I, r])/
+     (2*y*(-56*y^5*(-1 + z)^6 + 16*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*
+         (19 - 45*z + 19*z^2) - 2*y^3*(-1 + z)^3*(-27 + 104*z - 107*z^2 + 
+          26*z^3) + y^2*(-1 + z)^2*(23 - 118*z + 186*z^2 - 126*z^3 + 
+          19*z^4) + 2*(1 + 8*z^2 - 5*z^3 + 5*z^4 - 3*z^5) + 
+        y*(-7 + 38*z - 107*z^2 + 142*z^3 - 107*z^4 + 44*z^5 - 3*z^6))*
+       G[-r, r^(-1), 0, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) - (2*y*(-56*y^5*(-1 + z)^6 + 16*y^6*(-1 + z)^6 + 
+        4*y^4*(-1 + z)^4*(19 - 45*z + 19*z^2) - 2*y^3*(-1 + z)^3*
+         (-27 + 104*z - 107*z^2 + 26*z^3) + y^2*(-1 + z)^2*
+         (23 - 118*z + 186*z^2 - 126*z^3 + 19*z^4) + 
+        2*(1 + 8*z^2 - 5*z^3 + 5*z^4 - 3*z^5) + 
+        y*(-7 + 38*z - 107*z^2 + 142*z^3 - 107*z^4 + 44*z^5 - 3*z^6))*
+       G[-r, r^(-1), -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) - (2*y*(-28*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 
+        4*y^4*(-1 + z)^4*(11 - 21*z + 11*z^2) - 2*y^3*(-1 + z)^3*
+         (-20 + 55*z - 46*z^2 + 23*z^3) + y^2*(-1 + z)^2*
+         (21 - 82*z + 78*z^2 - 58*z^3 + 33*z^4) + 
+        y*(-7 + 34*z - 73*z^2 + 62*z^3 - 43*z^4 + 40*z^5 - 13*z^6) + 
+        2*(1 + 7*z^2 - z^3 + z^4 - 3*z^5 + z^6))*G[-r, r^(-1), -r, t])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+     (4*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 2*z^3 - 
+        2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*(9 - 8*z + 2*z^2) - 
+        y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*G[-r, -r, 0, t])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+     (4*y*(4*y^4*(-1 + z)^4 - 2*y^3*(-1 + z)^3*(-3 + 7*z) + 
+        z^2*(5 - 4*z + z^2) - y*(-1 + z)^2*(-1 - 10*z + 7*z^2) + 
+        2*y^2*(-1 + z)^2*(1 - 10*z + 8*z^2))*G[-r, -r, -r^(-1), t])/
+      ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) + 
+     (6*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 2*z^3 - 
+        2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*(9 - 8*z + 2*z^2) - 
+        y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*G[-r, r, 0, t])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+     (2*y*(-14*y^5*(-1 + z)^6 + 4*y^6*(-1 + z)^6 + 2*y^4*(-1 + z)^4*
+         (9 - 26*z + 6*z^2) + y^3*(-1 + z)^3*(7 - 79*z + 43*z^2 + z^3) + 
+        z^2*(7 - 6*z - z^2 + 2*z^3) - y^2*(-1 + z)^2*(3 + 52*z - 67*z^2 + 
+          4*z^4) + y*(2 + 10*z - 51*z^2 + 52*z^3 - 4*z^4 - 10*z^5 + z^6))*
+       G[-r, r, -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) - (6*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 2*z^3 - 
+        2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*(9 - 8*z + 2*z^2) - 
+        y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*G[-r, r, -r, t])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+     (4*y*(2 + 2*z - z^2 - 2*z^3 + z^4 + 2*y^2*(-1 + z)^2*(1 + 2*z + 2*z^2) - 
+        2*y*(2 + z - 2*z^2 - 3*z^3 + 2*z^4))*G[r, -1, 0, t])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) - 
+     (4*y*(2 + 2*z - z^2 - 2*z^3 + z^4 + 2*y^2*(-1 + z)^2*(1 + 2*z + 2*z^2) - 
+        2*y*(2 + z - 2*z^2 - 3*z^3 + 2*z^4))*G[r, -1, -r^(-1), t])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+     (4*y*(2 + 2*z - z^2 - 2*z^3 + z^4 + 2*y^2*(-1 + z)^2*(1 + 2*z + 2*z^2) - 
+        2*y*(2 + z - 2*z^2 - 3*z^3 + 2*z^4))*G[r, -1, -r, t])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) - 
+     (4*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 2*z^3 - 
+        2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*(9 - 8*z + 2*z^2) - 
+        y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*G[r, 0, 0, t])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+     (2*y*(-42*y^5*(-1 + z)^6 + 12*y^6*(-1 + z)^6 + 2*y^4*(-1 + z)^4*
+         (27 - 74*z + 22*z^2) + z^2*(17 - 14*z + z^2 + 2*z^3) - 
+        y^3*(-1 + z)^3*(-25 + 205*z - 141*z^2 + 13*z^3) - 
+        y^2*(-1 + z)^2*(3 + 128*z - 177*z^2 + 36*z^3 + 2*z^4) + 
+        y*(4 + 26*z - 123*z^2 + 136*z^3 - 38*z^4 - 6*z^5 + z^6))*
+       G[r, 0, -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) - (2*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 2*z^3 - 
+        2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*(9 - 8*z + 2*z^2) - 
+        y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*G[r, 0, -r, t])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+     (4*y*(2 + 2*z - z^2 - 2*z^3 + z^4 + 2*y^2*(-1 + z)^2*(1 + 2*z + 2*z^2) - 
+        2*y*(2 + z - 2*z^2 - 3*z^3 + 2*z^4))*G[r, 1, 0, t])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) - 
+     (4*y*(2 + 2*z - z^2 - 2*z^3 + z^4 + 2*y^2*(-1 + z)^2*(1 + 2*z + 2*z^2) - 
+        2*y*(2 + z - 2*z^2 - 3*z^3 + 2*z^4))*G[r, 1, -r^(-1), t])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+     (4*y*(2 + 2*z - z^2 - 2*z^3 + z^4 + 2*y^2*(-1 + z)^2*(1 + 2*z + 2*z^2) - 
+        2*y*(2 + z - 2*z^2 - 3*z^3 + 2*z^4))*G[r, 1, -r, t])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+     (2*y*(-56*y^5*(-1 + z)^6 + 16*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*
+         (17 - 47*z + 17*z^2) - 2*y^3*(-1 + z)^3*(-13 + 116*z - 101*z^2 + 
+          18*z^3) + y^2*(-1 + z)^2*(-11 - 130*z + 206*z^2 - 90*z^3 + 9*z^4) - 
+        2*(1 - 8*z^2 + 7*z^3 - 3*z^4 + z^5) + 
+        y*(11 + 18*z - 121*z^2 + 154*z^3 - 81*z^4 + 20*z^5 - z^6))*
+       G[r, -r^(-1), 0, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + (4*y*(-28*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 
+        4*y^4*(-1 + z)^4*(9 - 23*z + 9*z^2) - 2*z^2*(-4 + 3*z - 2*z^2 + 
+          z^3) - 2*y^3*(-1 + z)^3*(-10 + 55*z - 52*z^2 + 11*z^3) + 
+        y^2*(-1 + z)^2*(3 - 62*z + 98*z^2 - 54*z^3 + 7*z^4) + 
+        y*(1 + 14*z - 57*z^2 + 74*z^3 - 47*z^4 + 16*z^5 - z^6))*
+       G[r, -r^(-1), -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + (4*y*(-42*y^5*(-1 + z)^6 + 12*y^6*(-1 + z)^6 + 
+        4*y^4*(-1 + z)^4*(13 - 35*z + 13*z^2) - 4*y^2*(-1 + z)^2*
+         (-1 + 20*z - 38*z^2 + 22*z^3) - y^3*(-1 + z)^3*
+         (-27 + 159*z - 165*z^2 + 25*z^3) - z^2*(-9 + 10*z - 8*z^2 + 2*z^3 + 
+          z^4) + y*(1 + 16*z - 74*z^2 + 114*z^3 - 79*z^4 + 18*z^5 + 4*z^6))*
+       G[r, -r^(-1), -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) - (2*y*(-2 - 14*y^5*(-1 + z)^6 + 4*y^6*(-1 + z)^6 - 
+        z^2 + 5*z^4 - 4*z^5 + 2*y^4*(-1 + z)^4*(7 - 20*z + 12*z^2) - 
+        y^3*(-1 + z)^3*(-1 + 27*z - 61*z^2 + 23*z^3) + 
+        y^2*(-1 + z)^2*(-8 - 2*z + 29*z^2 - 54*z^3 + 11*z^4) + 
+        y*(7 - 8*z + 2*z^2 + 18*z^3 - 43*z^4 + 26*z^5 - 2*z^6))*
+       G[r, r^(-1), 0, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + (2*y*(-2 - 14*y^5*(-1 + z)^6 + 4*y^6*(-1 + z)^6 - 
+        z^2 + 5*z^4 - 4*z^5 + 2*y^4*(-1 + z)^4*(7 - 20*z + 12*z^2) - 
+        y^3*(-1 + z)^3*(-1 + 27*z - 61*z^2 + 23*z^3) + 
+        y^2*(-1 + z)^2*(-8 - 2*z + 29*z^2 - 54*z^3 + 11*z^4) + 
+        y*(7 - 8*z + 2*z^2 + 18*z^3 - 43*z^4 + 26*z^5 - 2*z^6))*
+       G[r, r^(-1), -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + (2*y*(-2 - 14*y^5*(-1 + z)^6 + 4*y^6*(-1 + z)^6 - 
+        5*z^2 - 4*z^3 + 7*z^4 - 2*z^6 + 2*y^4*(-1 + z)^4*(5 - 24*z + 8*z^2) + 
+        y^3*(-1 + z)^3*(-7 - 31*z + 73*z^2 + z^3) - y^2*(-1 + z)^2*
+         (12 - 10*z - 51*z^2 + 50*z^3 + 15*z^4) + 
+        y*(7 - 16*z + 10*z^2 + 34*z^3 - 47*z^4 + 2*z^5 + 10*z^6))*
+       G[r, r^(-1), -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + (2*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 2*z^3 - 
+        2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*(9 - 8*z + 2*z^2) - 
+        y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*G[r, -r, 0, t])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+     (4*y*(-42*y^5*(-1 + z)^6 + 12*y^6*(-1 + z)^6 + 2*y^4*(-1 + z)^4*
+         (27 - 68*z + 28*z^2) + z^2*(11 - 8*z + 7*z^2 - 4*z^3) - 
+        y^3*(-1 + z)^3*(-31 + 157*z - 159*z^2 + 37*z^3) + 
+        y^2*(-1 + z)^2*(6 - 86*z + 141*z^2 - 90*z^3 + 13*z^4) + 
+        y*(1 + 20*z - 78*z^2 + 106*z^3 - 77*z^4 + 30*z^5 - 2*z^6))*
+       G[r, -r, -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + (4*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 2*z^3 - 
+        2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*(9 - 8*z + 2*z^2) - 
+        y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*G[r, -r, -r, t])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) - 
+     (4*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 2*z^3 - 
+        2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*(9 - 8*z + 2*z^2) - 
+        y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*G[r, r, 0, t])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+     (4*y*(-28*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*
+         (9 - 23*z + 9*z^2) - 2*z^2*(-4 + 3*z - 2*z^2 + z^3) - 
+        2*y^3*(-1 + z)^3*(-10 + 55*z - 52*z^2 + 11*z^3) + 
+        y^2*(-1 + z)^2*(3 - 62*z + 98*z^2 - 54*z^3 + 7*z^4) + 
+        y*(1 + 14*z - 57*z^2 + 74*z^3 - 47*z^4 + 16*z^5 - z^6))*
+       G[r, r, -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+       (y + z - y*z)^2) + (4*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 2*z^3 - 
+        2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*(9 - 8*z + 2*z^2) - 
+        y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*G[r, r, -r, t])/
+      ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+     (4*(-60*y^5*(-1 + z)^6 + 20*y^6*(-1 + z)^6 - 4*y^3*(-1 + z)^4*
+         (13 - 30*z + 10*z^2) + 2*y^4*(-1 + z)^4*(38 - 80*z + 35*z^2) + 
+        y*(-1 + z)^2*(-3 + 20*z - 29*z^2 + 20*z^3) + 13*(z^2 + z^4) + 
+        y^2*(-1 + z)^2*(19 - 92*z + 135*z^2 - 80*z^3 + 10*z^4))*Log[2]^3)/
+      (3*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+     ((128*(1 - 2*y*(-1 + z)^2 + 2*y^2*(-1 + z)^2 + z^2)*G[-1, t^2])/
+        ((-1 + z)*z) - (128*(1 - 2*y*(-1 + z)^2 + 2*y^2*(-1 + z)^2 + z^2)*
+         G[-1, z])/((-1 + z)*z) + (128*(1 - 2*y*(-1 + z)^2 + 
+          2*y^2*(-1 + z)^2 + z^2)*G[0, 2])/((-1 + z)*z) - 
+       (64*(1 - 2*y*(-1 + z)^2 + 2*y^2*(-1 + z)^2 + z^2)*G[0, t])/
         ((-1 + z)*z) - (64*(1 - 2*y*(-1 + z)^2 + 2*y^2*(-1 + z)^2 + z^2)*
-         G[I, r])/((-1 + z)*z))*Log[1 - z]^2 + 
+         G[-I, r])/((-1 + z)*z) - (64*(1 - 2*y*(-1 + z)^2 + 
+          2*y^2*(-1 + z)^2 + z^2)*G[I, r])/((-1 + z)*z))*Log[1 - z]^2 + 
      ((128*(1 - 2*y*(-1 + z)^2 + 2*y^2*(-1 + z)^2 + z^2)*G[-1, t^2])/
         ((-1 + z)*z) - (128*(1 - 2*y*(-1 + z)^2 + 2*y^2*(-1 + z)^2 + z^2)*
          G[-1, z])/((-1 + z)*z) + (128*(1 - 2*y*(-1 + z)^2 + 
@@ -11274,13 +15010,45 @@
            331*Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z] + 
            86*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
            13*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z]))/
-        (6*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*(y + z - y*z)^(5/2)) - 
+        (6*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*(y + z - y*z)^(5/2)) + 
+       ((24*y^5*(-1 + z)^6 - 8*y^6*(-1 + z)^6 + 8*y^3*(-1 + z)^5*(-2 + 3*z) - 
+          4*y^4*(-1 + z)^5*(-7 + 8*z) - 4*(z^2 + z^4) + 
+          y*(-1 + z)^2*(-1 - 10*z + 4*z^2 - 10*z^3 + z^4) - 
+          y^2*(-1 + z)^2*(3 - 30*z + 40*z^2 - 38*z^3 + 9*z^4))*G[-1, t^2])/
+        ((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
        (128*(1 - 2*y*(-1 + z)^2 + 2*y^2*(-1 + z)^2 + z^2)*G[-1, z])/
         ((-1 + z)*z) + (128*(1 - 2*y*(-1 + z)^2 + 2*y^2*(-1 + z)^2 + z^2)*
-         G[0, 2])/((-1 + z)*z) + (4*(-108*y^5*(-1 + z)^6 + 
-          36*y^6*(-1 + z)^6 - 4*y^3*(-1 + z)^4*(17 - 54*z + 18*z^2) + 
-          2*y^4*(-1 + z)^4*(62 - 144*z + 63*z^2) + y*(-1 + z)^2*
-           (1 + 36*z - 33*z^2 + 36*z^3) + 17*(z^2 + z^4) + 
+         G[0, 2])/((-1 + z)*z) + ((28*y^6*(-1 + z)^6 - 8*y^7*(-1 + z)^6 - 
+          z^2*(1 + z^2) - 4*y^5*(-1 + z)^4*(9 - 22*z + 10*z^2) + 
+          2*y^4*(-1 + z)^3*(-12 + 44*z - 55*z^2 + 15*z^3) - 
+          2*y^3*(-1 + z)^2*(5 - 20*z + 37*z^2 - 36*z^3 + 6*z^4) + 
+          y*(-1 - 2*z - 2*z^2 - 2*z^3 - z^4 + 4*z^5) + 
+          y^2*(3 - 10*z + 26*z^2 - 42*z^3 + 49*z^4 - 28*z^5 + 2*z^6))*
+         G[0, t^2])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) + ((12*y^5*(-1 + z)^6 - 4*y^6*(-1 + z)^6 + z^2 + 
+          z^4 - 4*y^3*(-1 + z)^4*(1 + 8*z) - 2*y^4*(-1 + z)^4*
+           (4 - 18*z + 5*z^2) - y*(-1 + z)^2*(2 + 2*z + z^2 + 2*z^3 + z^4) + 
+          y^2*(-1 + z)^2*(6 + 6*z - 17*z^2 + 10*z^3 + 3*z^4))*G[1, t^2])/
+        ((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (6*(-1 + y)*(4*y^4*(-1 + z)^4 + z^2 + z^4 + 2*y^2*(-1 + z)^2*z*
+           (-2 + 5*z) - 2*y^3*(-1 + z)^3*(-1 + 5*z) + 
+          y*(1 + 2*z - 4*z^2 + 6*z^3 - 5*z^4))*G[-r^(-1), t])/
+        ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) + 
+       (6*(-1 + y)*(4*y^4*(-1 + z)^4 + z^2 + z^4 + 2*y^2*(-1 + z)^2*z*
+           (-2 + 5*z) - 2*y^3*(-1 + z)^3*(-1 + 5*z) + 
+          y*(1 + 2*z - 4*z^2 + 6*z^3 - 5*z^4))*G[r^(-1), t])/
+        ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) - 
+       (6*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 2*z^3 - 
+          2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*(9 - 8*z + 2*z^2) - 
+          y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*G[-r, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+       (6*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 2*z^3 - 
+          2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*(9 - 8*z + 2*z^2) - 
+          y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*G[r, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+       (4*(-108*y^5*(-1 + z)^6 + 36*y^6*(-1 + z)^6 - 4*y^3*(-1 + z)^4*
+           (17 - 54*z + 18*z^2) + 2*y^4*(-1 + z)^4*(62 - 144*z + 63*z^2) + 
+          y*(-1 + z)^2*(1 + 36*z - 33*z^2 + 36*z^3) + 17*(z^2 + z^4) + 
           y^2*(-1 + z)^2*(15 - 140*z + 211*z^2 - 144*z^3 + 18*z^4))*
          Log[1 - z])/((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
        (4*(-108*y^5*(-1 + z)^6 + 36*y^6*(-1 + z)^6 - 4*y^3*(-1 + z)^4*
@@ -12386,17 +16154,16 @@
           ((-1 + z)*z) + (128*(1 - 2*y*(-1 + z)^2 + 2*y^2*(-1 + z)^2 + z^2)*
            G[-I, r])/((-1 + z)*z) + (128*(1 - 2*y*(-1 + z)^2 + 
             2*y^2*(-1 + z)^2 + z^2)*G[I, r])/((-1 + z)*z))*
-        Log[1 - y + y*z]) + 
-     Log[2]*(-1/9*(-12*(139 + 12*Pi^2)*y^5*(-1 + z)^6 + 4*(139 + 12*Pi^2)*y^6*
-           (-1 + z)^6 + y*(-1 + z)*(-63 - (497 + 48*Pi^2)*z + 
-            6*(43 + 16*Pi^2)*z^2 - 3*(125 + 32*Pi^2)*z^3 + 
-            (445 + 48*Pi^2)*z^4 + 16*z^5) + 3*z^2*(28 + 27*z + 31*z^2 + 
-            8*Pi^2*(1 + z^2)) - 4*y^3*(-1 + z)^4*(261 - 618*z + 281*z^2 + 
-            24*Pi^2*(1 - 3*z + z^2)) + 8*y^4*(-1 + z)^4*(239 - 502*z + 
-            244*z^2 + 3*Pi^2*(7 - 16*z + 7*z^2)) + y^2*(-1 + z)*
-           (-181 + 1909*z - 3314*z^2 + 3511*z^3 - 1977*z^4 + 268*z^5 + 
-            24*Pi^2*(-1 + 9*z - 20*z^2 + 20*z^3 - 9*z^4 + z^5)))/
-         ((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+        Log[1 - y + y*z]) + Log[2]*((-12*(-139 + 18*Pi^2)*y^5*(-1 + z)^6 + 
+         4*(-139 + 18*Pi^2)*y^6*(-1 + z)^6 + 3*z^2*(-28 - 27*z - 31*z^2 + 
+           10*Pi^2*(1 + z^2)) - 4*y^3*(-1 + z)^4*(-261 + 618*z - 281*z^2 + 
+           6*Pi^2*(5 - 18*z + 6*z^2)) + 4*y^4*(-1 + z)^4*
+          (-478 + 1004*z - 488*z^2 + 3*Pi^2*(20 - 48*z + 21*z^2)) + 
+         y*(-1 + z)*(63 + 497*z - 258*z^2 + 375*z^3 - 445*z^4 - 16*z^5 + 
+           6*Pi^2*(-1 - 11*z + 21*z^2 - 21*z^3 + 12*z^4)) + 
+         y^2*(-1 + z)*(181 - 1909*z + 3314*z^2 - 3511*z^3 + 1977*z^4 - 
+           268*z^5 + 6*Pi^2*(-3 + 47*z - 111*z^2 + 115*z^3 - 54*z^4 + 
+             6*z^5)))/(9*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
        ((Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z]*(31 + 24*z + 31*z^2) - 
           36*y^5*(-1 + z)^6*(2*Sqrt[z] + 3*Sqrt[1 + y*(-1 + z)]*
              Sqrt[y + z - y*z]) + 12*y^6*(-1 + z)^6*(2*Sqrt[z] + 
@@ -12450,12 +16217,10 @@
             4*y^4*(-1 + z)^4*(50 - 111*z + 50*z^2) + 30*(z^2 + z^4) - 
             y*(-1 + z)^2*(1 - 58*z + 58*z^2 - 58*z^3 + z^4) + 
             y^2*(-1 + z)^2*(33 - 230*z + 338*z^2 - 230*z^3 + 33*z^4))*
-           G[0, 2])/((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2)) - 
-       (16*(-1 + y)*y*(-1 + z)*(1 - 2*y*(-1 + z)^2 + 2*y^2*(-1 + z)^2 + z^2)*
-         G[0, r])/((1 + y*(-1 + z))^(3/2)*(y*(-1 + z) - z)*Sqrt[z]*
-         Sqrt[y + z - y*z]) + (8*(-1 + y)*y*(-1 + z)*(1 - 2*y*(-1 + z)^2 + 
-          2*y^2*(-1 + z)^2 + z^2)*G[0, t])/((1 + y*(-1 + z))^(3/2)*
-         (y*(-1 + z) - z)*Sqrt[z]*Sqrt[y + z - y*z]) + 
+           G[0, 2])/((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2)) + 
+       (8*(-1 + y)*y*(-1 + z)*(1 - 2*y*(-1 + z)^2 + 2*y^2*(-1 + z)^2 + z^2)*
+         G[0, t])/((1 + y*(-1 + z))^(3/2)*(y*(-1 + z) - z)*Sqrt[z]*
+         Sqrt[y + z - y*z]) + 
        ((-(Sqrt[1 + y*(-1 + z)]*z^2*Sqrt[y + z - y*z]*(1 - 12*z + z^2)) + 
           16*y^7*(-1 + z)^6*(3*Sqrt[z] + 7*Sqrt[1 + y*(-1 + z)]*
              Sqrt[y + z - y*z]) - 8*y^6*(-1 + z)^5*(-21*Sqrt[z] + 
@@ -12737,19 +16502,77 @@
              Sqrt[y + z - y*z] + 198*Sqrt[1 + y*(-1 + z)]*z^5*
              Sqrt[y + z - y*z] - 12*Sqrt[1 + y*(-1 + z)]*z^6*
              Sqrt[y + z - y*z]))*G[r, t])/(3*(-1 + 2*y)*
-         (1 + y*(-1 + z))^(5/2)*(-1 + z)*z*(y + z - y*z)^(5/2)) - 
+         (1 + y*(-1 + z))^(5/2)*(-1 + z)*z*(y + z - y*z)^(5/2)) + 
+       G[0, r]*((-16*(-1 + y)*y*(-1 + z)*(1 - 2*y*(-1 + z)^2 + 
+            2*y^2*(-1 + z)^2 + z^2))/((1 + y*(-1 + z))^(3/2)*(y*(-1 + z) - z)*
+           Sqrt[z]*Sqrt[y + z - y*z]) + (8*(-1 + y)*(4*y^4*(-1 + z)^4 + z^2 + 
+            z^4 + 2*y^2*(-1 + z)^2*z*(-2 + 5*z) - 2*y^3*(-1 + z)^3*
+             (-1 + 5*z) + y*(1 + 2*z - 4*z^2 + 6*z^3 - 5*z^4))*G[-r^(-1), t])/
+          ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) - 
+         (8*(-1 + y)*(4*y^4*(-1 + z)^4 + z^2 + z^4 + 2*y^2*(-1 + z)^2*z*
+             (-2 + 5*z) - 2*y^3*(-1 + z)^3*(-1 + 5*z) + 
+            y*(1 + 2*z - 4*z^2 + 6*z^3 - 5*z^4))*G[r^(-1), t])/
+          ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) + 
+         (8*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 2*z^3 - 
+            2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*
+             (9 - 8*z + 2*z^2) - y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*
+           G[-r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) - 
+         (8*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 2*z^3 - 
+            2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*
+             (9 - 8*z + 2*z^2) - y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*
+           G[r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z)) + 
+       (2*(-120*y^5*(-1 + z)^6 + 40*y^6*(-1 + z)^6 - 8*y^3*(-1 + z)^4*
+           (7 - 33*z + 7*z^2) + 4*y^4*(-1 + z)^4*(32 - 83*z + 32*z^2) + 
+          14*(z^2 + z^4) + y*(-1 + z)^2*(3 + 34*z - 34*z^2 + 34*z^3 + 
+            3*z^4) + y^2*(-1 + z)^2*(5 - 142*z + 234*z^2 - 142*z^3 + 5*z^4))*
+         G[-1, -1, t^2])/((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
        (8*(-168*y^5*(-1 + z)^6 + 56*y^6*(-1 + z)^6 - 8*y^3*(-1 + z)^4*
            (15 - 41*z + 15*z^2) + 4*y^4*(-1 + z)^4*(50 - 111*z + 50*z^2) + 
           30*(z^2 + z^4) - y*(-1 + z)^2*(1 - 58*z + 58*z^2 - 58*z^3 + z^4) + 
           y^2*(-1 + z)^2*(33 - 230*z + 338*z^2 - 230*z^3 + 33*z^4))*
          G[-1, -1, z])/((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
-       (8*(-24*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 - 8*y^3*(-1 + z)^4*
-           (1 - 7*z + z^2) + 4*y^4*(-1 + z)^4*(6 - 17*z + 6*z^2) + 
-          2*(z^2 + z^4) + y*(-1 + z)^2*(1 + 6*z - 6*z^2 + 6*z^3 + z^4) - 
-          y^2*(-1 + z)^2*(1 + 26*z - 46*z^2 + 26*z^3 + z^4))*G[-1, 0, z])/
+       (2*(-1 + y)*(-40*y^5*(-1 + z)^6 + 16*y^6*(-1 + z)^6 + 
+          8*y^4*(-1 + z)^5*(-5 + 6*z) - 4*y^3*(-1 + z)^3*
+           (-5 + 18*z - 27*z^2 + 6*z^3) + 8*(z^2 + z^4) + 
+          2*y^2*(-1 + z)^2*(1 - 20*z + 34*z^2 - 32*z^3 + z^4) + 
+          y*(3 + 16*z - 33*z^2 + 52*z^3 - 51*z^4 + 12*z^5 + z^6))*
+         G[-1, 0, t^2])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (8*(-24*y^5*(-1 + z)^6 + 8*y^6*(-1 + z)^6 - 
+          8*y^3*(-1 + z)^4*(1 - 7*z + z^2) + 4*y^4*(-1 + z)^4*
+           (6 - 17*z + 6*z^2) + 2*(z^2 + z^4) + y*(-1 + z)^2*
+           (1 + 6*z - 6*z^2 + 6*z^3 + z^4) - y^2*(-1 + z)^2*
+           (1 + 26*z - 46*z^2 + 26*z^3 + z^4))*G[-1, 0, z])/
         ((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
-       (8*(-12*y^5*(-1 + z)^6 + 4*y^6*(-1 + z)^6 + z^2 + z^4 - 
-          4*y^3*(-1 + z)^4*(1 - 6*z + 2*z^2) + 2*y^4*(-1 + z)^4*
+       (4*(-4*y^3*(-1 + z)^4 + 2*y^4*(-1 + z)^4 + z^2 + z^4 - 
+          y*(-1 + z)^2*(1 + 3*z^2) + y^2*(-1 + z)^2*(3 - 4*z + 5*z^2))*
+         G[-1, 1, t^2])/((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+       (2*(z^2 + z^4 + y*z*(2 - z + 6*z^2 - 8*z^3 + z^5) + 
+          y^2*(2 - 2*z + z^2 - 22*z^3 + 26*z^4 - 5*z^6) + 
+          4*y^3*(-1 + 8*z^3 - 9*z^4 + 2*z^6) - 2*y^4*(-1 + 8*z^3 - 9*z^4 + 
+            2*z^6))*G[-1, -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*
+         (-1 + z)*z*(y + z - y*z)^2) + 
+       (2*(-(z^2*(1 + z^2)) + y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 
+          4*y^3*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 
+            2*z^6) + y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*
+         G[-1, r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) + (2*(-(z^2*(1 + z^2)) + 
+          y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 4*y^3*(-1 + 8*z^3 - 9*z^4 + 
+            2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 
+          y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*G[-1, -r, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+       (2*(z^2 + z^4 + y*z*(2 - z + 6*z^2 - 8*z^3 + z^5) + 
+          y^2*(2 - 2*z + z^2 - 22*z^3 + 26*z^4 - 5*z^6) + 
+          4*y^3*(-1 + 8*z^3 - 9*z^4 + 2*z^6) - 2*y^4*(-1 + 8*z^3 - 9*z^4 + 
+            2*z^6))*G[-1, r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (2*(-28*y^6*(-1 + z)^6 + 8*y^7*(-1 + z)^6 + 
+          4*y^5*(-1 + z)^4*(11 - 18*z + 14*z^2) - 2*y^4*(-1 + z)^3*
+           (-20 + 40*z - 67*z^2 + 31*z^3) - 7*(z^2 + z^4) + 
+          2*y^3*(-1 + z)^2*(9 - 32*z + 63*z^2 - 72*z^3 + 16*z^4) - 
+          y*(3 + 14*z - 30*z^2 + 38*z^3 - 49*z^4 + 12*z^5) + 
+          y^2*(1 + 42*z - 110*z^2 + 186*z^3 - 189*z^4 + 76*z^5 - 6*z^6))*
+         G[0, -1, t^2])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (8*(-12*y^5*(-1 + z)^6 + 4*y^6*(-1 + z)^6 + z^2 + 
+          z^4 - 4*y^3*(-1 + z)^4*(1 - 6*z + 2*z^2) + 2*y^4*(-1 + z)^4*
            (6 - 16*z + 7*z^2) + y*(-1 + z)^2*(1 + 4*z - z^2 + 4*z^3) + 
           y^2*(-1 + z)^2*(-1 - 12*z + 19*z^2 - 16*z^3 + 2*z^4))*G[0, -1, z])/
         ((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
@@ -12758,17 +16581,173 @@
           y*(-1 + z)^2*(-1 + 60*z - 63*z^2 + 60*z^3) + 31*(z^2 + z^4) + 
           y^2*(-1 + z)^2*(33 - 244*z + 365*z^2 - 240*z^3 + 30*z^4))*
          G[0, 0, 2])/((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
-       (8*(-36*y^5*(-1 + z)^6 + 12*y^6*(-1 + z)^6 - 4*y^3*(-1 + z)^4*
-           (7 - 18*z + 6*z^2) + 2*y^4*(-1 + z)^4*(22 - 48*z + 21*z^2) + 
-          y*(-1 + z)^2*(-1 + 12*z - 15*z^2 + 12*z^3) + 7*(z^2 + z^4) + 
-          y^2*(-1 + z)^2*(9 - 52*z + 77*z^2 - 48*z^3 + 6*z^4))*G[0, 0, z])/
+       (2*(-28*y^6*(-1 + z)^6 + 8*y^7*(-1 + z)^6 + 4*y^5*(-1 + z)^4*
+           (9 - 22*z + 10*z^2) - 2*y^4*(-1 + z)^3*(-14 + 38*z - 55*z^2 + 
+            15*z^3) + 3*(z^2 + z^4) + 2*y^3*(-1 + z)^2*(9 - 12*z + 25*z^2 - 
+            36*z^3 + 6*z^4) + y*(3 + 6*z - 6*z^2 + 14*z^3 - 9*z^4 - 4*z^5) + 
+          y^2*(-9 + 6*z + 6*z^2 - 2*z^3 - 27*z^4 + 28*z^5 - 2*z^6))*
+         G[0, 0, t^2])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (8*(-36*y^5*(-1 + z)^6 + 12*y^6*(-1 + z)^6 - 
+          4*y^3*(-1 + z)^4*(7 - 18*z + 6*z^2) + 2*y^4*(-1 + z)^4*
+           (22 - 48*z + 21*z^2) + y*(-1 + z)^2*(-1 + 12*z - 15*z^2 + 
+            12*z^3) + 7*(z^2 + z^4) + y^2*(-1 + z)^2*(9 - 52*z + 77*z^2 - 
+            48*z^3 + 6*z^4))*G[0, 0, z])/((1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (4*(-28*y^6*(-1 + z)^6 + 8*y^7*(-1 + z)^6 + z^2 + 
+          z^4 + 32*y^5*(-1 + z)^4*(1 - 3*z + z^2) - y*(1 + z)^2*
+           (1 - 4*z + 3*z^2) - 2*y^4*(-1 + z)^3*(-4 + 58*z - 49*z^2 + 
+            7*z^3) + 2*y^3*(-1 + z)^2*(-5 - 30*z + 48*z^2 - 18*z^3 + z^4) + 
+          y^2*(7 + 2*z - 48*z^2 + 58*z^3 - 23*z^4 + 4*z^5))*G[0, 1, t^2])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+       (8*(-1 + y)*(4*y^4*(-1 + z)^4 + z^2 + z^4 + 2*y^2*(-1 + z)^2*z*
+           (-2 + 5*z) - 2*y^3*(-1 + z)^3*(-1 + 5*z) + 
+          y*(1 + 2*z - 4*z^2 + 6*z^3 - 5*z^4))*G[0, -r^(-1), t])/
+        ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) - 
+       (8*(-1 + y)*(4*y^4*(-1 + z)^4 + z^2 + z^4 + 2*y^2*(-1 + z)^2*z*
+           (-2 + 5*z) - 2*y^3*(-1 + z)^3*(-1 + 5*z) + 
+          y*(1 + 2*z - 4*z^2 + 6*z^3 - 5*z^4))*G[0, r^(-1), t])/
+        ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) + 
+       (8*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 2*z^3 - 
+          2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*(9 - 8*z + 2*z^2) - 
+          y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*G[0, -r, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) - 
+       (8*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 2*z^3 - 
+          2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*(9 - 8*z + 2*z^2) - 
+          y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*G[0, r, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) - 
+       (2*(-12*y^5*(-1 + z)^6 + 4*y^6*(-1 + z)^6 - 4*y^3*(-1 + z)^4*
+           (5 - 4*z + 4*z^2) + 2*y^4*(-1 + z)^4*(10 - 14*z + 9*z^2) - 
+          y*(-1 + z)^3*(-2 + 4*z - 5*z^2 + z^3) + y^2*(-1 + z)^3*
+           (-10 + 16*z - 15*z^2 + 7*z^3) + 5*(z^2 + z^4))*G[1, -1, t^2])/
         ((1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
        (8*(-12*y^5*(-1 + z)^6 + 4*y^6*(-1 + z)^6 + z^2 + z^4 + 
           4*y^3*(-1 + z)^4*(-1 + 8*z) + y*(-1 + z)^3*z*(-2 + 3*z + z^2) - 
           y^2*(-1 + z)^3*z*(-14 + 13*z + 3*z^2) + 2*y^4*(-1 + z)^4*
            (6 - 18*z + 5*z^2))*G[1, -1, z])/((1 + y*(-1 + z))^2*(-1 + z)*z*
-         (y + z - y*z)^2) + (16*(1 - 2*y*(-1 + z)^2 + 2*y^2*(-1 + z)^2 + z^2)*
-         G[1, 0, z])/((-1 + z)*z) - 
+         (y + z - y*z)^2) - (2*(-28*y^6*(-1 + z)^6 + 8*y^7*(-1 + z)^6 + 
+          4*y^5*(-1 + z)^4*(7 - 24*z + 8*z^2) - 2*y^4*(-1 + z)^3*
+           (2 + 56*z - 43*z^2 + 9*z^3) + 3*(z^2 + z^4) + 
+          2*y^3*(-1 + z)^2*(-12 - 26*z + 35*z^2 - 10*z^3 + 5*z^4) + 
+          y^2*(14 - 14*z - 23*z^2 + 10*z^3 + 14*z^4 + 4*z^5 - 5*z^6) + 
+          y*(-2 + 6*z - 3*z^2 + 10*z^3 - 16*z^4 + z^6))*G[1, 0, t^2])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+       (16*(1 - 2*y*(-1 + z)^2 + 2*y^2*(-1 + z)^2 + z^2)*G[1, 0, z])/
+        ((-1 + z)*z) - (8*(-1 + y)*y*(-1 + z)*(-4*y^3*(-1 + z)^4 + 
+          2*y^4*(-1 + z)^4 - z^2*(-3 + z^2) - y^2*(-1 + z)^2*
+           (-1 + 12*z + z^2) + y*(-1 + z)^2*(1 + 8*z + 3*z^2))*G[1, 1, t^2])/
+        ((1 + y*(-1 + z))^2*z*(y + z - y*z)^2) + 
+       (2*(z^2 + z^4 + y*z*(2 - z + 6*z^2 - 8*z^3 + z^5) + 
+          y^2*(2 - 2*z + z^2 - 22*z^3 + 26*z^4 - 5*z^6) + 
+          4*y^3*(-1 + 8*z^3 - 9*z^4 + 2*z^6) - 2*y^4*(-1 + 8*z^3 - 9*z^4 + 
+            2*z^6))*G[1, -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*
+         z*(y + z - y*z)^2) + (2*(-(z^2*(1 + z^2)) + 
+          y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 4*y^3*(-1 + 8*z^3 - 9*z^4 + 
+            2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 
+          y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*G[1, r^(-1), t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) + 
+       (2*(-(z^2*(1 + z^2)) + y*z*(-2 + z - 6*z^2 + 8*z^3 - z^5) - 
+          4*y^3*(-1 + 8*z^3 - 9*z^4 + 2*z^6) + 2*y^4*(-1 + 8*z^3 - 9*z^4 + 
+            2*z^6) + y^2*(-2 + 2*z - z^2 + 22*z^3 - 26*z^4 + 5*z^6))*
+         G[1, -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) + (2*(z^2 + z^4 + y*z*(2 - z + 6*z^2 - 8*z^3 + 
+            z^5) + y^2*(2 - 2*z + z^2 - 22*z^3 + 26*z^4 - 5*z^6) + 
+          4*y^3*(-1 + 8*z^3 - 9*z^4 + 2*z^6) - 2*y^4*(-1 + 8*z^3 - 9*z^4 + 
+            2*z^6))*G[1, r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (4*(-1 + y)*(4*y^4*(-1 + z)^4 + z^2 + z^4 + 
+          2*y^2*(-1 + z)^2*z*(-2 + 5*z) - 2*y^3*(-1 + z)^3*(-1 + 5*z) + 
+          y*(1 + 2*z - 4*z^2 + 6*z^3 - 5*z^4))*G[-r^(-1), 0, t])/
+        ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) + 
+       (4*(-1 + y)*(4*y^4*(-1 + z)^4 + z^2 + z^4 + 2*y^2*(-1 + z)^2*z*
+           (-2 + 5*z) - 2*y^3*(-1 + z)^3*(-1 + 5*z) + 
+          y*(1 + 2*z - 4*z^2 + 6*z^3 - 5*z^4))*G[-r^(-1), -r^(-1), t])/
+        ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) + 
+       (6*(-1 + y)*(4*y^4*(-1 + z)^4 + z^2 + z^4 + 2*y^2*(-1 + z)^2*z*
+           (-2 + 5*z) - 2*y^3*(-1 + z)^3*(-1 + 5*z) + 
+          y*(1 + 2*z - 4*z^2 + 6*z^3 - 5*z^4))*G[-r^(-1), r^(-1), t])/
+        ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) + 
+       (2*(-1 + y)*(-10*y^5*(-1 + z)^6 + 4*y^6*(-1 + z)^6 - z^2*(1 + z^2) + 
+          2*y^4*(-1 + z)^4*(2 - 10*z + 7*z^2) - y^3*(-1 + z)^3*
+           (5 + 9*z - 15*z^2 + 13*z^3) + y^2*(-1 + z)^2*(-7 - 6*z - 7*z^2 - 
+            10*z^3 + 6*z^4) + y*(2 - 2*z + z^2 - 6*z^3 + 2*z^4 + 4*z^5 - 
+            z^6))*G[-r^(-1), -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*
+         z*(y + z - y*z)^2) + (2*(-1 + y)*(-40*y^5*(-1 + z)^6 + 
+          16*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*(9 - 25*z + 9*z^2) - 
+          2*y^3*(-1 + z)^3*(-5 + 48*z - 45*z^2 + 6*z^3) + 6*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(3 + 44*z - 72*z^2 + 40*z^3 + z^4) + 
+          y*(3 + 12*z - 31*z^2 + 46*z^3 - 37*z^4 + 6*z^5 + z^6))*
+         G[-r^(-1), r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) + (4*(-1 + y)*(4*y^4*(-1 + z)^4 + z^2 + z^4 + 
+          2*y^2*(-1 + z)^2*z*(-2 + 5*z) - 2*y^3*(-1 + z)^3*(-1 + 5*z) + 
+          y*(1 + 2*z - 4*z^2 + 6*z^3 - 5*z^4))*G[r^(-1), 0, t])/
+        ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) - 
+       (6*(-1 + y)*(4*y^4*(-1 + z)^4 + z^2 + z^4 + 2*y^2*(-1 + z)^2*z*
+           (-2 + 5*z) - 2*y^3*(-1 + z)^3*(-1 + 5*z) + 
+          y*(1 + 2*z - 4*z^2 + 6*z^3 - 5*z^4))*G[r^(-1), -r^(-1), t])/
+        ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) - 
+       (4*(-1 + y)*(4*y^4*(-1 + z)^4 + z^2 + z^4 + 2*y^2*(-1 + z)^2*z*
+           (-2 + 5*z) - 2*y^3*(-1 + z)^3*(-1 + 5*z) + 
+          y*(1 + 2*z - 4*z^2 + 6*z^3 - 5*z^4))*G[r^(-1), r^(-1), t])/
+        ((-1 + 2*y)*(-1 + z)*z*(y + z - y*z)^2) - 
+       (2*(-1 + y)*(-40*y^5*(-1 + z)^6 + 16*y^6*(-1 + z)^6 + 
+          4*y^4*(-1 + z)^4*(9 - 25*z + 9*z^2) - 2*y^3*(-1 + z)^3*
+           (-5 + 48*z - 45*z^2 + 6*z^3) + 6*(z^2 + z^4) - 
+          y^2*(-1 + z)^2*(3 + 44*z - 72*z^2 + 40*z^3 + z^4) + 
+          y*(3 + 12*z - 31*z^2 + 46*z^3 - 37*z^4 + 6*z^5 + z^6))*
+         G[r^(-1), -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (2*(-1 + y)*(-10*y^5*(-1 + z)^6 + 
+          4*y^6*(-1 + z)^6 - z^2*(1 + z^2) + 2*y^4*(-1 + z)^4*
+           (2 - 10*z + 7*z^2) - y^3*(-1 + z)^3*(5 + 9*z - 15*z^2 + 13*z^3) + 
+          y^2*(-1 + z)^2*(-7 - 6*z - 7*z^2 - 10*z^3 + 6*z^4) + 
+          y*(2 - 2*z + z^2 - 6*z^3 + 2*z^4 + 4*z^5 - z^6))*G[r^(-1), r, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*(y + z - y*z)^2) - 
+       (4*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 2*z^3 - 
+          2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*(9 - 8*z + 2*z^2) - 
+          y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*G[-r, 0, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+       (2*y*(-2 - 14*y^5*(-1 + z)^6 + 4*y^6*(-1 + z)^6 - z^2 + 5*z^4 - 
+          4*z^5 + 2*y^4*(-1 + z)^4*(7 - 20*z + 12*z^2) - 
+          y^3*(-1 + z)^3*(-1 + 27*z - 61*z^2 + 23*z^3) + 
+          y^2*(-1 + z)^2*(-8 - 2*z + 29*z^2 - 54*z^3 + 11*z^4) + 
+          y*(7 - 8*z + 2*z^2 + 18*z^3 - 43*z^4 + 26*z^5 - 2*z^6))*
+         G[-r, -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) + (2*y*(-56*y^5*(-1 + z)^6 + 16*y^6*(-1 + z)^6 + 
+          4*y^4*(-1 + z)^4*(19 - 45*z + 19*z^2) - 2*y^3*(-1 + z)^3*
+           (-27 + 104*z - 107*z^2 + 26*z^3) + y^2*(-1 + z)^2*
+           (23 - 118*z + 186*z^2 - 126*z^3 + 19*z^4) + 
+          2*(1 + 8*z^2 - 5*z^3 + 5*z^4 - 3*z^5) + 
+          y*(-7 + 38*z - 107*z^2 + 142*z^3 - 107*z^4 + 44*z^5 - 3*z^6))*
+         G[-r, r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) + (4*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 
+          2*z^3 - 2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*
+           (9 - 8*z + 2*z^2) - y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*
+         G[-r, -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+       (6*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 2*z^3 - 
+          2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*(9 - 8*z + 2*z^2) - 
+          y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*G[-r, r, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) + 
+       (4*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 2*z^3 - 
+          2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*(9 - 8*z + 2*z^2) - 
+          y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*G[r, 0, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) - 
+       (2*y*(-56*y^5*(-1 + z)^6 + 16*y^6*(-1 + z)^6 + 4*y^4*(-1 + z)^4*
+           (19 - 45*z + 19*z^2) - 2*y^3*(-1 + z)^3*(-27 + 104*z - 107*z^2 + 
+            26*z^3) + y^2*(-1 + z)^2*(23 - 118*z + 186*z^2 - 126*z^3 + 
+            19*z^4) + 2*(1 + 8*z^2 - 5*z^3 + 5*z^4 - 3*z^5) + 
+          y*(-7 + 38*z - 107*z^2 + 142*z^3 - 107*z^4 + 44*z^5 - 3*z^6))*
+         G[r, -r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (2*y*(-2 - 14*y^5*(-1 + z)^6 + 4*y^6*(-1 + z)^6 - 
+          z^2 + 5*z^4 - 4*z^5 + 2*y^4*(-1 + z)^4*(7 - 20*z + 12*z^2) - 
+          y^3*(-1 + z)^3*(-1 + 27*z - 61*z^2 + 23*z^3) + 
+          y^2*(-1 + z)^2*(-8 - 2*z + 29*z^2 - 54*z^3 + 11*z^4) + 
+          y*(7 - 8*z + 2*z^2 + 18*z^3 - 43*z^4 + 26*z^5 - 2*z^6))*
+         G[r, r^(-1), t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z*
+         (y + z - y*z)^2) - (6*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 
+          2*z^3 - 2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*
+           (9 - 8*z + 2*z^2) - y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*
+         G[r, -r, t])/((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) - 
+       (4*y*(3 + 4*y^4*(-1 + z)^4 - 2*z + 3*z^2 - 2*z^3 - 
+          2*y^3*(-1 + z)^3*(-7 + 3*z) + 2*y^2*(-1 + z)^2*(9 - 8*z + 2*z^2) - 
+          y*(11 - 22*z + 20*z^2 - 10*z^3 + z^4))*G[r, r, t])/
+        ((-1 + 2*y)*(1 + y*(-1 + z))^2*(-1 + z)*z) - 
        (64*(1 - 2*y*(-1 + z)^2 + 2*y^2*(-1 + z)^2 + z^2)*Log[1 - z]^2)/
         ((-1 + z)*z) - (64*(1 - 2*y*(-1 + z)^2 + 2*y^2*(-1 + z)^2 + z^2)*
          Log[1 + z]^2)/((-1 + z)*z) + 
@@ -12975,17 +16954,15 @@
            502*Sqrt[1 + y*(-1 + z)]*z^3*Sqrt[y + z - y*z] + 
            695*Sqrt[1 + y*(-1 + z)]*z^4*Sqrt[y + z - y*z] - 
            494*Sqrt[1 + y*(-1 + z)]*z^5*Sqrt[y + z - y*z] + 
-           235*Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z])) - 
-       144*(-1 + 2*y)*Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z]*
-        (-30*y^5*(-1 + z)^6 + 10*y^6*(-1 + z)^6 - 4*y^3*(-1 + z)^4*
-          (4 - 15*z + 5*z^2) + y^4*(-1 + z)^4*(33 - 80*z + 35*z^2) + 
-         y*(-1 + z)^2*(1 + 10*z - 7*z^2 + 10*z^3) + 4*(z^2 + z^4) + 
-         y^2*(-1 + z)^2*(2 - 36*z + 55*z^2 - 40*z^3 + 5*z^4))*Zeta[3])/
-      (36*(-1 + 2*y)*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*(y + z - y*z)^(5/2)) + 
-     P[1 - z, 0]*((64*(1 - 2*y*(-1 + z)^2 + 2*y^2*(-1 + z)^2 + z^2)*Log[2]^3)/
-        (3*z) - (64*(1 - 2*y*(-1 + z)^2 + 2*y^2*(-1 + z)^2 + z^2)*
-         Log[1 + z]^3)/(3*z) - 
-       (4*(-4*y^3*(-1 + z)^4*(69*Sqrt[z] + (-103 + 12*Pi^2)*
+           235*Sqrt[1 + y*(-1 + z)]*z^6*Sqrt[y + z - y*z])) + 
+       216*Sqrt[1 + y*(-1 + z)]*(y + z - y*z)^(5/2)*(1 + 4*y^5*(-1 + z)^4 + 
+         z^2 - 2*y^4*(-1 + z)^3*(-7 + 3*z) - 2*y*z*(-1 + z^2) + 
+         4*y^3*(2 - 3*z + z^2)^2 - y^2*(7 - 14*z + 16*z^2 - 10*z^3 + z^4))*
+        Zeta[3])/(36*(-1 + 2*y)*(1 + y*(-1 + z))^(5/2)*(-1 + z)*z*
+       (y + z - y*z)^(5/2)) + P[1 - z, 0]*
+      ((64*(1 - 2*y*(-1 + z)^2 + 2*y^2*(-1 + z)^2 + z^2)*Log[2]^3)/(3*z) - 
+       (64*(1 - 2*y*(-1 + z)^2 + 2*y^2*(-1 + z)^2 + z^2)*Log[1 + z]^3)/
+        (3*z) - (4*(-4*y^3*(-1 + z)^4*(69*Sqrt[z] + (-103 + 12*Pi^2)*
              Sqrt[1 + y*(-1 + z)]*Sqrt[y + z - y*z]) + 2*y^4*(-1 + z)^4*
            (69*Sqrt[z] + (-103 + 12*Pi^2)*Sqrt[1 + y*(-1 + z)]*
              Sqrt[y + z - y*z]) + z*(6*Sqrt[z] - 15*z^(3/2) + 
