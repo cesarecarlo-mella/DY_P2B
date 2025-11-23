@@ -1,0 +1,1452 @@
+{
+  {-q, r1, r2, r3, q + p1, p1 + r3, - p2 - r2, - r1 - r2, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r3, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r2, - p2 - r3, - r1 - r3, - q - p2 - r2, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - p2 - r2, - p2 - r3, - r1 - r2, q
+       + p1 + r1, - q.p1 + q.p2*u},
+  {- p2 - r2, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - p2 - r2, - q - p1 - p2, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - r1 - r2, - r1 - r3, - q - p2 - r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - p2 - r3, q + p1 + r2, - q.p1 + 
+      q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - p2 - r1, - p2 - r3, - r2 - r3, q
+       + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r3, - r1 - r2, - r1 - r3, - q - p1 - p2, - q - p2 - r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - r1 - r2, - q - p2 - r3, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r3, - r1 - r2, - q - p1 - p2, - 
+      q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - r1 - r2, - q - p1 - p2, p1 + r1 + 
+      r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - r1 - r2, q + p1 + r3, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, p1 + r2, - p2 - r3, p1 + r1 + r2, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - p2 - r2, - r2 - r3, q + p1 + r1, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, p1 + r3, - r1 - r3, q + p1 + r2, p1
+       + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, - r1 - r2, - q - p2 - r3, p1 + r1 + 
+      r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r1, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - p2 - r1, - r2 - r3, - q - p2 - r1, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, p1 + r3, - p2 - r3, p1 + r1 + r2, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - r1 - r3, - r2 - r3, - q - p1 - p2, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, p1 + r1, p1 + r2, - p2 - r1, - p2 - r3, q + p1 + r1, q
+       + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, - p2 - r3, - r1 - r2, - r2 - r3, - q - p1 - p2, - q - p2 - r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r3, - r1 - r2, - r1 - r3, - q - p2 - r3, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - p2 - r2, - p2 - r3, q + p1 + r1, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - p2 - r1, - r2 - r3, q + p1 + r1, q
+       + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - p2 - r1, q + p1 + r2, - q.p1 + 
+      q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - p2 - r3, - q - p1 - p2, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r1, - p2 - r3, q + p1 + r1, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r2, - q - p1 - p2, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - p2 - r3, - r1 - r2, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, p1 + r1, p1 + r3, - p2 - r3, - r1 - r2, q + p1 + r1, q
+       + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, - p2 - r3, - r1 - r2, - q - p2 - r3, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r2, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - p2 - r3, - r2 - r3, q + p1 + r1, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - r1 - r2, - r2 - r3, - q - p1 - p2, - 
+      q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - p2 - r3, p1 + r1 + r2, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, p1 + r3, - p2 - r1, p1 + r1 + r3, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - p2 - r2, - r2 - r3, - q - p2 - r1, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - p2 - r1, - p2 - r2, q + p1 + r3, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, p1 + r2, - p2 - r3, q + p1 + r1, p1
+       + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - r2 - r3, - q - p2 - r1, p1 + r1 + 
+      r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - p2 - r2, q + p1 + r1, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - r1 - r3, - q - p1 - p2, - q.p1
+       + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r2, - p2 - r3, - r1 - r3, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - p2 - r2, - r1 - r2, q + p1 + r3, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r2, - p2 - r3, - r1 - r2, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - p2 - r2, q + p1 + r1, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r1, - r2 - r3, - q - p1 - p2, - q - p2
+       - r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, - r1 - r3, q + p1 + r2, - q.p1
+       + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - p2 - r2, - r1 - r3, - q - p2 - r2, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r1, - q - p1 - p2, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r1, - p2 - r3, - r2 - r3, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, p1 + r2, p1 + r1 + r3, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, p1 + r2, p1 + r3, - p2 - r1, - p2 - r3, p1 + r1 + r2, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r1, - p2 - r2, - r1 - r3, p1
+       + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r2, - r1 - r2, - r1 - r3, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - p2 - r1, - p2 - r2, q + p1 + r1, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - r1 - r3, - q - p2 - r2, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - r2 - r3, - q - p2 - r1, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - r1 - r3, - r2 - r3, - q - p1 - p2, - q - p2 - r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - r1 - r2, - r2 - r3, - q - p2 - r1, q + p1 + r3, - q.p1 + q.p2*u},
+  {- p2 - r3, - r1 - r3, q + p1 + r2, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - r1 - r2, - r1 - r3, - q - p2 - r2, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - r1 - r2, p1 + r2 + r3, - q.p1
+       + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - p2 - r1, - r1 - r3, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, p1 + r2, - p2 - r1, - p2 - r2, - r1 - r3, - q - p2 - r2, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, p1 + r2, p1 + r3, - p2 - r1, - p2 - r3, q + p1 + r2, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - r1 - r2, - r1 - r3, - q - p1 - p2, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r3, - r2 - r3, - q - p1 - p2, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - p2 - r3, - r1 - r3, q + p1 + r2, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r2, - r1 - r2, - r1 - r3, - q
+       - p1 - p2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r1, - r1 - r2, q + p1 + r3, p1
+       + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, p1 + r2, - p2 - r1, - p2 - r3, - r2 - r3, - q - p2 - r1, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, p1 + r1, - p2 - r3, - r1 - r2, - r2 - r3, - q - p2 - r3, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - p2 - r1, - r1 - r2, - q - p2 - r3, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - p2 - r3, - r1 - r2, q + p1 + r3, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - r1 - r2, - q - p1 - p2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, - r1 - r3, - r2 - r3, - q - p1 - p2, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - p2 - r1, - p2 - r3, q + p1 + r3, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - p2 - r2, - r1 - r3, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r1, - p2 - r3, - r1 - r2, p1
+       + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r3, - p2 - r3, q + p1 + r2, p1
+       + r1 + r3, - q.p1 + q.p2*u},
+  {- p2 - r2, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - p2 - r2, q + p1 + r3, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r3, - r1 - r2, - q - p1 - p2, q + p1 + r1, - q.p1 + q.p2*u},
+  {- r1 - r2, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - p2 - r3, - r1 - r2, - r2 - r3, q
+       + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, - p2 - r1, - r1 - r3, - q - p1 - p2, q + p1 + r2, - q.p1 + q.p2*u},
+  {- p2 - r3, - r2 - r3, q + p1 + r1, - q.p1
+       + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r2, - p2 - r2, - r1 - r3, - q.p1 + q.p2*u},
+  {- p2 - r2, q + p1 + r1, p1 + r1 + r3, - 
+      q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - p2 - r3, - r1 - r3, - q - p2 - r2, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r2, - r1 - r3, - q - p1 - p2, - q - p2
+       - r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - r1 - r3, - q - p2 - r2, p1 + r1 + 
+      r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - r2 - r3, - q - p2 - r1, p1 + r1 + 
+      r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, p1 + r3, - p2 - r2, - r1 - r3, - q - p2 - r2, p1 + r1 + 
+      r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - r1 - r2, - r2 - r3, - q - p1 - p2, - q - p2 - r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - p2 - r2, - p2 - r3, q + p1 + r2, q
+       + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - p2 - r2, p1 + r1 + r3, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, - r2 - r3, - q - p1 - p2, p1 + r2 + 
+      r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - q - p1 - p2, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r1, - p2 - r1, q + p1 + r2, p1
+       + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r3, - p2 - r2, - r1 - r3, p1
+       + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - p2 - r2, - r1 - r2, - r1 - r3, - q - p1 - p2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, - p2 - r3, - r1 - r2, - q - p2 - r3, - 
+      q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r2, - r1 - r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - r1 - r2, - r2 - r3, - q - p2 - r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - p2 - r2, - r1 - r2, - q - p2 - r3, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - p2 - r2, - r1 - r3, - q - p1 - p2, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, - p2 - r3, - r2 - r3, - q - p2 - r1, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, p1 + r3, - r2 - r3, p1 + r1
+       + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, - r1 - r3, - r2 - r3, - q - p2 - r1, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r3, - p2 - r1, q + p1 + r2, p1
+       + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - r1 - r2, - q - p1 - p2, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - r2 - r3, - q - p1 - p2, - q - p2 - r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, - p2 - r3, - r2 - r3, - q - p2 - r1, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - p2 - r1, - r2 - r3, - q - p2 - r1, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - p2 - r3, - r1 - r3, - q - p1 - p2, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - p2 - r3, - r2 - r3, - q - p1 - p2, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - p2 - r2, - r2 - r3, - q - p2 - r1, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r1, - p2 - r2, q + p1 + r3, p1
+       + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - p2 - r1, - r2 - r3, - q - p1 - p2, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r2, - r1 - r3, q + p1 + r2, p1
+       + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, - p2 - r3, - r1 - r3, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, p1 + r2, p1 + r3, - p2 - r2, - r1 - r3, q + p1 + r2, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - p2 - r2, q + p1 + r3, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r3, q + p1 + r1, q + p1 + r2, - q.p1
+       + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - p2 - r3, - q - p1 - p2, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, - p2 - r3, - q - p1 - p2, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - r1 - r2, - r2 - r3, - q - p1 - p2, - q - p2 - r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r2, - r1 - r3, - q - p2 - r2, q + p1 + 
+      r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, - p2 - r3, - r1 - r3, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, p1 + r2, - r2 - r3, q + p1 + r1, p1
+       + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r2, - r1 - r2, q + p1 + r3, - q.p1
+       + q.p2*u},
+  {-q, r1, r2, r3, p1 + r3, - p2 - r1, - p2 - r2, - r2 - r3, - q - p2 - r1, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r2, - r1 - r3, - q - p1 - p2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, - p2 - r1, - r1 - r3, - r2 - r3, - q - p2 - r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r3, - r1 - r2, q + p1 + r2, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, - p2 - r1, - r2 - r3, - q - p1 - p2, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r1, q + p1 + r2, q + p1 + r3, - q.p1
+       + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r3, - r1 - r3, q + p1 + r1, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - r2 - r3, - q - p1 - p2, q + p1 + r1, - 
+      q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, - p2 - r3, - r1 - r2, - r1 - r3, - q - p1 - p2, - q - p2 - r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r1, - p2 - r3, q + p1 + r1, p1
+       + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r1, - p2 - r3, - r1 - r2, - 
+      r2 - r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - p2 - r2, - r1 - r3, - q - p2 - r2, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - p2 - r3, - r1 - r3, - q - p1 - p2, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - p2 - r2, - r2 - r3, - q - p1 - p2, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - p2 - r3, p1 + r1 + r2, - q.p1
+       + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - p2 - r1, - r2 - r3, q + p1 + r1, q
+       + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r2, - r2 - r3, - q - p1 - p2, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r1, - p2 - r2, q + p1 + r1, p1
+       + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, p1 + r3, - p2 - r1, - r1 - r3, p1
+       + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - p2 - r1, - r1 - r2, q + p1 + r3, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, - r1 - r3, - r2 - r3, - q - p1 - p2, - q - 
+      p2 - r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, - r1 - r3, - r2 - r3, - q - p1 - p2, - 
+      q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - p2 - r2, - r2 - r3, - q - p1 - p2, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - p2 - r2, - r1 - r3, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - r1 - r3, - q - p1 - p2, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, p1 + r3, - p2 - r1, - p2 - r2, - r1 - r3, - q - p2 - r2, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, - p2 - r1, - q - p1 - p2, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - p2 - r3, - r1 - r2, - q - p1 - p2, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - r1 - r3, - q - p1 - p2, q + p1 + r2, - 
+      q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r1, - r2 - r3, q + p1 + r1, p1
+       + r1 + r3, - q.p1 + q.p2*u},
+  {- r1 - r3, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - r1 - r3, - r2 - r3, - q - p2 - r2, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - r1 - r2, q + p1 + r3, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - p2 - r3, - r2 - r3, q + p1 + r1, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - r1 - r2, - q - p1 - p2, - 
+      q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r1, - r2 - r3, q + p1 + r3, - q.p1
+       + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - r1 - r2, - r1 - r3, - q - p2 - r2, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - p2 - r1, - r1 - r2, - q - p2 - r3, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - p2 - r1, - r2 - r3, - q - p2 - r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, p1 + r2, - p2 - r3, - r1 - r2, - q - p2 - r3, p1 + r1 + 
+      r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r1, - r1 - r3, - r2 - r3, - q - p1 - p2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - p2 - r1, - p2 - r3, q + p1 + r2, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, p1 + r2, p1 + r3, - p2 - r2, - p2 - r3, p1 + r1 + r2, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - p2 - r2, - r1 - r3, - q - p1 - p2, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - p2 - r1, - r1 - r3, - r2 - r3, - q - p1 - p2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - p2 - r1, - p2 - r3, - r1 - r2, p1
+       + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r1, - q - p1 - p2, q + p1 + r3, - q.p1
+       + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - p2 - r3, - r1 - r2, - q - p1 - p2, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - p2 - r2, - p2 - r3, q + p1 + r1, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - p2 - r2, - r1 - r2, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - p2 - r2, - r2 - r3, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - p2 - r2, - r1 - r2, - q - p1
+       - p2, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - p2 - r1, - p2 - r2, - r2 - r3, q
+       + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, p1 + r2, - p2 - r3, - r2 - r3, p1
+       + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - p2 - r3, q + p1 + r1, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - r1 - r3, - q - p1 - p2, - q - p2 - 
+      r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r1, - r2 - r3, - q - p2 - r1, q + p1 + 
+      r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r2, - p2 - r3, - r1 - r2, - q - p2 - r3, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - p2 - r1, - p2 - r3, q + p1 + r2, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - r1 - r2, - r1 - r3, - q - p1 - p2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - r1 - r2, - r2 - r3, - q - p2 - r3, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, p1 + r3, - p2 - r1, - p2 - r2, - r1 - r3, - q - p2 - r2, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - p2 - r3, - r1 - r2, - q - p2 - r3, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r1, - p2 - r2, - r1 - r3, - q - p2 - r2, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, p1 + r2, - p2 - r2, p1 + r1 + r3, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - r1 - r3, - q - p1 - p2, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r2, - r1 - r3, q + p1 + r1, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, p1 + r2, - p2 - r3, - r2 - r3, q
+       + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - p2 - r1, - p2 - r3, q + p1 + r2, q
+       + p1 + r3, - q.p1 + q.p2*u},
+  {- p2 - r2, - r1 - r2, q + p1 + r3, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - r2 - r3, - q - p1 - p2, - 
+      q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - p2 - r2, - r1 - r2, - q - p2 - r3, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - p2 - r2, - r1 - r3, - q - p2 - r2, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - p2 - r2, - r1 - r3, - r2 - r3, - q - p2 - r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - r1 - r2, - r1 - r3, - q - p1 - p2, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, p1 + r3, - r2 - r3, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - p2 - r3, - r1 - r2, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, - p2 - r1, - r2 - r3, - q - p1 - p2, - q - p2
+       - r1, - q.p1 + q.p2*u},
+  {- p2 - r1, - p2 - r2, p1 + r1 + r3, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r2, - r1 - r3, q + p1 + r2, - q.p1
+       + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r1, - p2 - r1, - r2 - r3, p1
+       + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, - p2 - r2, - r1 - r3, - q - p2 - r2, - 
+      q.p1 + q.p2*u},
+  {-q, r1, r2, r3, p1 + r1, p1 + r2, - p2 - r1, - r2 - r3, q + p1 + r1, q
+       + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - p2 - r2, - p2 - r3, q + p1 + r3, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - p2 - r2, q + p1 + r3, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - r1 - r2, - r1 - r3, - q - p2 - r3, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - p2 - r1, - p2 - r2, q + p1 + r2, q
+       + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - p2 - r1, - p2 - r2, q + p1 + r1, q
+       + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - p2 - r3, - q - p1 - p2, q + p1 + r2, - q.p1 + q.p2*u},
+  {- p2 - r1, - r1 - r3, q + p1 + r2, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {- p2 - r2, - p2 - r3, q + p1 + r1, - q.p1
+       + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r1, - q - p1 - p2, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r1, - p2 - r2, - r2 - r3, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, p1 + r3, - p2 - r3, p1 + r1 + r2, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {- p2 - r1, - r1 - r2, q + p1 + r3, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - p2 - r1, q + p1 + r2, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - p2 - r2, q + p1 + r1, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r2, - r1 - r3, - q - p1 - p2, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, - p2 - r1, - r2 - r3, - q - p2 - r1, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - r1 - r2, - r2 - r3, - q - p1 - p2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, p1 + r2, p1 + r1 + r2, - q.p1 + 
+      q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, - r1 - r2, - r1 - r3, - q - p2 - r3, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r2, - p2 - r3, q + p1 + r1, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - r1 - r3, - r2 - r3, - q - p1 - p2, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - p2 - r2, - r2 - r3, - q - p2 - r1, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, - r2 - r3, - q - p1 - p2, - q - p2 - r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r1, - r1 - r3, q + p1 + r2, p1
+       + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, p1 + r2, - p2 - r3, - r1 - r3, q
+       + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, p1 + r3, - r1 - r2, q + p1 + r3, p1
+       + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r3, - p2 - r1, - r1 - r2, q + 
+      p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - r2 - r3, q + p1 + r1, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - p2 - r2, - p2 - r3, q + p1 + r2, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - p2 - r1, p1 + r2 + r3, - q.p1
+       + q.p2*u},
+  {- p2 - r1, - p2 - r2, q + p1 + r3, - q.p1
+       + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - p2 - r3, - r1 - r2, - q - p2 - r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, - p2 - r1, - r1 - r2, - q - p2 - r3, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - p2 - r3, - r2 - r3, - q - p1 - p2, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, - p2 - r1, - r2 - r3, - q - p2 - r1, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - p2 - r3, - r1 - r2, - r2 - r3, - q - p2 - r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r1, - r1 - r2, q + p1 + r3, p1
+       + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, p1 + r3, - p2 - r1, - p2 - r2, - r2 - r3, - q - p2 - r1, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - p2 - r2, - r1 - r2, - r1 - r3, q
+       + p1 + r3, - q.p1 + q.p2*u},
+  {- p2 - r2, - r2 - r3, q + p1 + r1, - q.p1
+       + q.p2*u},
+  {- p2 - r3, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r2, - r2 - r3, q + p1 + r1, p1
+       + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - p2 - r3, - r1 - r2, - q - p2 - r3, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r3, - r1 - r2, - r1 - r3, - q - p1 - p2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r3, - p2 - r3, - r1 - r2, q + 
+      p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - p2 - r3, - r1 - r2, - q - p1 - p2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, p1 + r3, - p2 - r3, - r1 - r2, q
+       + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, - p2 - r2, - r1 - r3, - q - p2 - r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, - p2 - r3, - r1 - r2, - q - p1 - p2, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, - p2 - r3, - r1 - r2, - r1 - r3, - q - p2 - r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - p2 - r1, - q - p1 - p2, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r3, - r1 - r3, - q - p1 - p2, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - p2 - r2, - r1 - r3, q + p1 + r1, q
+       + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r1, - p2 - r2, - r1 - r3, - q - p2 - r2, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r2, - p2 - r3, - r1 - r3, q + 
+      p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, - q - p1 - p2, p1 + r2 + r3, - 
+      q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, p1 + r2, - p2 - r3, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r3, - p2 - r3, - r1 - r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - r1 - r3, - r2 - r3, - q - p1 - p2, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, p1 + r1, - p2 - r1, - p2 - r3, - r2 - r3, - q - p2 - r1, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r2, - r1 - r2, - r1 - r3, - q - p2 - r2, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - p2 - r1, - r1 - r2, - q - p2 - r3, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - p2 - r1, - r2 - r3, - q - p1 - p2, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r2, - p2 - r2, q + p1 + r3, p1
+       + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - r1 - r2, - q - p1 - p2, q + p1 + r3, - 
+      q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r2, - p2 - r3, - r1 - r2, - q - p2 - r3, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - p2 - r2, - r1 - r3, - q - p2 - r2, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r1, - r1 - r2, q + p1 + r3, - q.p1
+       + q.p2*u},
+  {- p2 - r2, - r2 - r3, q + p1 + r1, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r3, - p2 - r1, q + p1 + r3, p1
+       + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r2, - p2 - r3, q + p1 + r1, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - p2 - r1, - r2 - r3, - q - p2 - r1, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r3, - r1 - r2, - q - p1 - p2, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - p2 - r1, - p2 - r2, q + p1 + r1, q
+       + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - r1 - r3, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, - r1 - r2, - r1 - r3, - q - p1 - p2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r3, - p2 - r2, - r1 - r2, - 
+      r1 - r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, p1 + r2, p1 + r3, - p2 - r1, - p2 - r3, q + p1 + r2, q
+       + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, - r1 - r3, - r2 - r3, - q - p1 - p2, - q - 
+      p2 - r1, - q.p1 + q.p2*u},
+  {- p2 - r2, - p2 - r3, q + p1 + r1, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, - p2 - r1, - r2 - r3, - q - p1 - p2, - q - 
+      p2 - r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r2, - r2 - r3, q + p1 + r1, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, p1 + r3, - p2 - r2, - r1 - r3, p1
+       + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r3, - r1 - r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, p1 + r3, - p2 - r1, - r2 - r3, - q - p2 - r1, q + p1 + 
+      r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - r1 - r3, q + p1 + r2, - q.p1 + 
+      q.p2*u},
+  {-q, r1, r2, r3, p1 + r1, p1 + r3, - p2 - r2, - r1 - r2, q + p1 + r1, q
+       + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, p1 + r2, - p2 - r2, q + p1 + r1, p1
+       + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r1, - p2 - r2, - r2 - r3, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - p2 - r1, q + p1 + r2, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - p2 - r3, q + p1 + r1, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r3, - p2 - r2, q + p1 + r1, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {- p2 - r1, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - p2 - r1, - p2 - r3, - r1 - r2, q
+       + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - r1 - r2, - q - p2 - r3, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r2, q + p1 + r1, q + p1 + r3, - q.p1
+       + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r3, - r1 - r2, - q - p1 - p2, - q.p1
+       + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - p2 - r1, - p2 - r3, q + p1 + r2, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - p2 - r1, - r2 - r3, - q - p1 - p2, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r2, - r1 - r3, q + p1 + r2, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - r1 - r2, - q - p1 - p2, p1
+       + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, p1 + r3, - r1 - r3, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - p2 - r2, - r1 - r3, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - r1 - r2, - r1 - r3, - q - p1 - p2, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - p2 - r1, - r2 - r3, - q - p1 - p2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r3, - r2 - r3, q + p1 + r1, p1
+       + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r2, - p2 - r1, - r1 - r3, q + 
+      p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, - r1 - r2, - r1 - r3, - q - p1 - p2, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - r2 - r3, - q - p2 - r1, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r1, - r2 - r3, q + p1 + r1, p1
+       + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - p2 - r3, - r1 - r2, - q - p2 - r3, q + p1 + r1, - q.p1 + q.p2*u},
+  {- p2 - r2, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, p1 + r3, - p2 - r3, - r1 - r2, - q - p2 - r3, q + p1 + 
+      r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r1, - r1 - r3, - r2 - r3, - q - p2 - r1, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, - r1 - r2, - r1 - r3, - q - p1 - p2, - q - 
+      p2 - r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - p2 - r1, - r1 - r2, - q - p1 - p2, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - p2 - 
+      r1, - r2 - r3, - q - p2 - r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - p2 - r2, - p2 - r3, q + p1 + r1, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - q - p1 - p2, p1 + r1 + r3, - 
+      q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - p2 - r3, - r1 - r2, - q - p1 - p2, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - p2 - r2, q + p1 + r1, - q.p1 + 
+      q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - r2 - r3, p1 + r1 + r2, - q.p1
+       + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, p1 + r2, - p2 - r1, - r2 - r3, p1
+       + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - q - p1 - p2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - p2 - r2, - r1 - r3, - r2 - r3, q
+       + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, - p2 - r1, - r1 - r3, - q - p2 - r2, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - p2 - r2, - r1 - r3, - q - p1 - p2, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - p2 - r2, - r1 - r2, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, p1 + r1 + r2, - q.p1 + q.p2
+      *u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - p2 - r1, - p2 - r3, q + p1 + r1, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r1, - r1 - r3, q + p1 + r2, - q.p1
+       + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - p2 - r3, - r1 - r2, q + p1 + r1, q
+       + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, p1 + r3, - p2 - r2, - r1 - r3, - q - p2 - r2, q + p1 + 
+      r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - p2 - r1, - q - p1 - p2, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - r1 - r3, - r2 - r3, - q - p2 - r1, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, p1 + r2, - p2 - r2, - r1 - r3, q
+       + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - p2 - r1, q + p1 + r3, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r1, - r2 - r3, q + p1 + r1, - q.p1
+       + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, p1 + r3, - p2 - r3, q + p1 + r2, p1
+       + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - p2 - r1, - r2 - r3, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, p1 + r3, - p2 - r1, - r2 - r3, p1
+       + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, p1 + r1, p1 + r3, - p2 - r3, - r1 - r2, q + p1 + r3, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r1, - r2 - r3, q + p1 + r1, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - p2 - r1, - r2 - r3, - q - p1 - p2, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r1, - p2 - r2, - r2 - r3, q + 
+      p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r3, - p2 - r2, q + p1 + r3, p1
+       + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r3, - r1 - r2, - q - p1 - p2, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - p2 - r1, - p2 - r3, q + p1 + r1, q
+       + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - r1 - r2, - r2 - r3, - q - p2 - r1, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, - r1 - r3, - r2 - r3, - q - p1 - p2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, p1 + r1, p1 + r3, - p2 - r2, - r1 - r2, q + p1 + r3, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {- p2 - r3, - r2 - r3, q + p1 + r1, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r1, - p2 - r2, q + p1 + r3, p1
+       + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - r1 - r2, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - p2 - r1, - p2 - r2, - r1 - r3, p1
+       + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, - r1 - r3, - q - p1 - p2, p1 + r1 + 
+      r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - p2 - r1, - r1 - r2, - q - p1 - p2, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - p2 - r2, p1 + r1 + r3, - q.p1
+       + q.p2*u},
+  {- p2 - r1, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - r1 - r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - p2 - r3, - q - p1 - p2, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, - r1 - r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, p1 + r3, - p2 - r2, - r2 - r3, q
+       + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, p1 + r2, - p2 - r2, - r1 - r3, p1
+       + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - p2 - r1, - r1 - r3, q + p1 + r2, q
+       + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r3, - r1 - r2, - q - p2 - r3, - 
+      q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - p2 - r1, - p2 - r3, q + p1 + r1, q
+       + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, p1 + r3, - r1 - r3, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - p2 - r2, - r1 - r3, q + p1 + r2, q
+       + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, p1 + r2, p1 + r3, - p2 - r1, - r1 - r3, q + p1 + r2, q
+       + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, p1 + r1, - p2 - r2, - p2 - r3, - r1 - r3, - q - p2 - r2, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r1, - r1 - r3, q + p1 + r2, p1
+       + r1 + r2, - q.p1 + q.p2*u},
+  {- p2 - r1, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, p1 + r2, - r1 - r3, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - p2 - r2, - r2 - r3, - q - p1 - p2, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, p1 + r2, - p2 - r1, q + p1 + r2, p1
+       + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, - r1 - r3, - q - p2 - r2, - 
+      q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - r1 - r3, - q - p2 - r2, p1 + r1 + 
+      r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - p2 - r2, q + p1 + r1, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - p2 - r1, - r1 - r2, - r2 - r3, - q - p1 - p2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, p1 + r2, p1 + r3, - p2 - r1, q + p1 + r3, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - p2 - r1, - q - p1 - p2, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, p1 + r3, - p2 - r1, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - r1 - r2, - q - p1 - p2, p1 + r1 + 
+      r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r3, - p2 - r3, - r1 - r2, p1
+       + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, p1 + r3, - r2 - r3, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - r1 - r2, - q - p2 - r3, p1 + r2 + 
+      r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - p2 - r1, - r1 - r3, q + p1 + r2, q
+       + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r3, - q - p1 - p2, q + p1 + r1, - q.p1
+       + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, p1 + r3, - p2 - r2, - r1 - r3, q
+       + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r2, - p2 - r2, q + p1 + r1, p1
+       + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r3, - r1 - r3, q + p1 + r2, p1
+       + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, - p2 - r1, - r1 - r3, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - p2 - r1, - p2 - r2, q + p1 + r2, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - p2 - r1, - p2 - r3, - r2 - r3, q
+       + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r1, - p2 - r3, q + p1 + r2, p1
+       + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, - r1 - r3, - q - p1 - p2, p1 + r2 + 
+      r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - p2 - r1, - r1 - r2, - q - p1 - p2, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - p2 - r3, - r1 - r2, - q - p2 - r3, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, - p2 - r1, - r2 - r3, - q - p2 - r1, - 
+      q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, p1 + r3, - p2 - r1, - r1 - r2, p1
+       + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r3, - r1 - r2, - r2 - r3, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r2, - p2 - r3, - r1 - r2, p1
+       + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - p2 - r1, - p2 - r3, q + p1 + r3, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - p2 - r1, - r1 - r2, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - r1 - r2, - q - p1 - p2, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r1, - r1 - r3, q + p1 + r2, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r3, - p2 - r2, q + p1 + r1, p1
+       + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, p1 + r2, - p2 - r3, - r1 - r3, p1
+       + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, - p2 - r1, - r1 - r3, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, - r1 - r2, - r2 - r3, - q - p1 - p2, - q - 
+      p2 - r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - p2 - r2, - r1 - r3, - q - p2 - r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - p2 - r3, q + p1 + r1, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, p1 + r1 + r3, p1 + r2 + r3, - 
+      q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, - p2 - r1, q + p1 + r2, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - r1 - r2, - r2 - r3, - q - p2 - r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r1, - q - p1 - p2, q + p1 + r2, - q.p1
+       + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r1, - r2 - r3, - q - p2 - r1, q + p1 + 
+      r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - p2 - r3, - r2 - r3, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r2, - p2 - r2, - r1 - r3, p1
+       + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r2, - r1 - r3, - q - p1 - p2, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, - r1 - r3, - q - p2 - r2, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, p1 + r3, - p2 - r1, - p2 - r3, - r1 - r2, - q - p2 - r3, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - r2 - r3, - q - p1 - p2, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, p1 + r2, - r2 - r3, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r2, - r1 - r3, q + p1 + r2, p1
+       + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r1, - r1 - r2, - r2 - r3, - q - p1 - p2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r1, - p2 - r2, - r2 - r3, q + 
+      p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, p1 + r2, p1 + r3, - p2 - r1, - p2 - r2, q + p1 + r3, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - p2 - r1, - p2 - r2, - r2 - r3, q
+       + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - p2 - r3, - q - p1 - p2, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r2, - r1 - r3, - r2 - r3, - q - p1 - p2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, p1 + r2, p1 + r1 + r2, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, p1 + r2, - p2 - r1, - p2 - r3, - r2 - r3, - q - p2 - r1, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {- p2 - r1, - p2 - r3, p1 + r1 + r2, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - r1 - r2, - r2 - r3, - q - p1 - p2, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, p1 + r2, - r2 - r3, q + p1 + r1, p1
+       + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r3, - p2 - r3, q + p1 + r1, p1
+       + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, p1 + r1, - p2 - r2, - r1 - r3, - q - p2 - r2, q + p1 + 
+      r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - p2 - r3, - q - p1 - p2, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - p2 - r2, - r1 - r2, - q - p2 - r3, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - p2 - r1, - p2 - r3, q + p1 + r2, q
+       + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, - r1 - r3, - q - p1 - p2, - q.p1
+       + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - r1 - r2, - q - p2 - r3, - 
+      q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r2, - p2 - r1, - r1 - r3, - 
+      r2 - r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - p2 - r3, - r2 - r3, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r1, - r2 - r3, - q - p1 - p2, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - r1 - r2, - r2 - r3, - q
+       - p1 - p2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - p2 - r3, - r2 - r3, q + p1 + r1, q
+       + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - r2 - r3, - q - p1 - p2, - q - p2 - 
+      r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - p2 - r2, - r2 - r3, - q - p1 - p2, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - r1 - r2, - r1 - r3, - q - p1 - p2, - q - p2 - r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r1, - p2 - r3, q + p1 + r2, - q.p1
+       + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r1, - r2 - r3, - q - p1 - p2, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - r1 - r3, - r2 - r3, - q - p1 - p2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - p2 - r1, - r1 - r3, - q - p1 - p2, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - p2 - r3, - r1 - r3, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - p2 - r2, - p2 - r3, q + p1 + r1, q
+       + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, p1 + r1, - p2 - r2, - p2 - r3, - r1 - r2, - q - p2 - r3, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - p2 - r1, q + p1 + r3, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - r2 - r3, - q - p2 - r1, - 
+      q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - p2 - r2, - r2 - r3, q + p1 + r1, q
+       + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r2, - p2 - r3, - r1 - r3, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - r2 - r3, - q - p1 - p2, p1 + r2 + 
+      r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - p2 - r1, - r2 - r3, - q - p1 - p2, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - r1 - r2, - r1 - r3, - q - p1 - p2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r2, - r1 - r3, - q - p2 - r2, - 
+      q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - p2 - r1, q + p1 + r2, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r3, - p2 - r1, - r2 - r3, p1
+       + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, - q - p1 - p2, p1 + r1 + r2, - 
+      q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - p2 - r1, - q - p1 - p2, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, - p2 - r1, - r1 - r2, - q - p2 - r3, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - p2 - r3, q + p1 + r2, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - p2 - r1, - p2 - r2, - r2 - r3, p1
+       + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, p1 + r2, - p2 - r2, q + p1 + r1, p1
+       + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r3, - r1 - r2, - q - p2 - r3, q + p1 + 
+      r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q
+       + p1, - p2 - r2, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r2, - r1 - r3, - q - p2 - r2, q + p1 + 
+      r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, p1 + r2, p1 + r3, - p2 - r1, - p2 - r2, p1 + r1 + r3, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, p1 + r2, p1 + r3, - p2 - r1, - r1 - r2, q + p1 + r2, q
+       + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - p2 - r1, - r1 - r3, q + p1 + r2, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, - p2 - r2, - r1 - r3, - q - p2 - r2, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - p2 - r3, - r1 - r3, - q - p2 - r2, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - r1 - r2, - q - p1 - p2, - q - p2 - 
+      r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r1, - r2 - r3, q + p1 + r2, - q.p1
+       + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r2, - p2 - r3, q + p1 + r2, p1
+       + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r2, - r1 - r3, - r2 - r3, - q - p1 - p2, - q - p2 - r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - p2 - r1, - p2 - r2, - r1 - r3, q
+       + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, p1 + r2, - p2 - r1, - r2 - r3, - q - p2 - r1, q + p1 + 
+      r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r2, - p2 - r1, q + p1 + r2, p1
+       + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, - p2 - r3, - q - p1 - p2, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r2, - q - p1 - p2, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r2, - p2 - r1, q + p1 + r2, p1
+       + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - p2 - r2, - q - p1 - p2, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r2, - r1 - r2, - q - p1 - p2, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r3, - r1 - r2, - q - p2 - r3, q + p1 + 
+      r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - r1 - r2, - q - p1 - p2, - q - p2 - r3, - q.p1 + q.p2*u},
+  {- r2 - r3, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, p1 + r3, - r1 - r2, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r3, - r1 - r2, - q - p1 - p2, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r1, - p2 - r2, q + p1 + r1, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, p1 + r1, p1 + r2, - p2 - r1, - p2 - r2, q + p1 + r1, q
+       + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - r1 - r3, - r2 - r3, - q - p1 - p2, - 
+      q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - p2 - r1, - r1 - r3, q + p1 + r2, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - p2 - r3, - r2 - r3, - q - p1 - p2, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - r1 - r2, - q - p2 - r3, p1 + r1 + 
+      r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, p1 + r2, p1 + r3, - p2 - r2, - p2 - r3, q + p1 + r2, q
+       + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - p2 - r3, - r1 - r2, q + p1 + r2, q
+       + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - p2 - 
+      r3, - r1 - r2, - q - p2 - r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - p2 - r2, - r1 - r2, - q - p2 - r3, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, p1 + r1 + r3, - q.p1 + q.p2
+      *u},
+  {-q, r1, r2, r3, p1 + r3, - p2 - r1, - p2 - r3, - r1 - r2, - q - p2 - r3, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, - r1 - r2, - q - p1 - p2, p1 + r1 + 
+      r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r1, - r1 - r2, q + p1 + r2, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r2, - p2 - r1, - r2 - r3, p1
+       + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r2, - p2 - r2, q + p1 + r3, p1
+       + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, p1 + r3, - p2 - r1, - r1 - r2, - r2 - r3, - q - p2 - r1, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - r1 - r2, - r1 - r3, - q - p1 - p2, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r2, - p2 - r1, - r2 - r3, p1
+       + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r1, - p2 - r3, - r2 - r3, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - r1 - r2, - r2 - r3, - q - p1 - p2, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r1, - p2 - r1, - r2 - r3, q + 
+      p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - p2 - r1, - p2 - r3, - r1 - r2, p1
+       + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - p2 - r3, - r1 - r2, - r1 - r3, q
+       + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r2, - r1 - r3, - q - p1 - p2, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, - p2 - r2, - r1 - r3, - q - p1 - p2, - q - p2
+       - r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - p2 - r3, - r2 - r3, - q - p2 - r1, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, p1 + r2, - r1 - r3, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - p2 - r3, - r2 - r3, - q - p2 - r1, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r3, - r1 - r2, - r1 - r3, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - p2 - r2, q + p1 + r1, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r1, - p2 - r1, q + p1 + r3, p1
+       + r1 + r2, - q.p1 + q.p2*u},
+  {- p2 - r3, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - p2 - r2, - p2 - r3, - r1 - r2, p1
+       + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r1, - p2 - r2, - r1 - r3, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r2, - r1 - r3, - q - p1 - p2, - q.p1
+       + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, p1 + r2, p1 + r3, - p2 - r1, p1 + r2 + r3, - q.p1 + 
+      q.p2*u},
+  {-q, r1, r2, r3, - q - p2, - r1 - r2, - r1 - r3, - q - p1 - p2, - q - 
+      p2 - r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - p2 - r2, - p2 - r3, q + p1 + r1, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, - p2 - r3, - r1 - r2, - q - p1 - p2, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, p1 + r2, p1 + r3, - p2 - r3, - r1 - r2, q + p1 + r3, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r2, - p2 - r1, q + p1 + r3, p1
+       + r1 + r2, - q.p1 + q.p2*u},
+  {- p2 - r1, q + p1 + r3, p1 + r2 + r3, - 
+      q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - p2 - r1, - q - p1 - p2, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - p2 - r1, - r1 - r3, - q - p1 - p2, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r3, - r1 - r2, - q - p1 - p2, - q - p2 - 
+      r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - r1 - r2, - r1 - r3, - q - p1 - p2, - 
+      q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - p2 - r1, - r1 - r2, q + p1 + r2, q
+       + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - p2 - r3, - r1 - r3, - q - p2 - r2, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, p1 + r3, - p2 - r2, - r1 - r2, - r1 - r3, - q - p2 - r2, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - p2 - r3, - r1 - r2, - q - p2 - r3, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r2, - r2 - r3, q + p1 + r1, p1
+       + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - p2 - r3, - r2 - r3, - q - p2 - r1, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - p2 - r1, q + p1 + r2, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r1, - r1 - r2, - q - p1 - p2, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, p1 + r3, - r1 - r3, q + p1 + r2, p1
+       + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - p2 - r1, - p2 - r3, q + p1 + r2, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - p2 - r1, - p2 - r3, q + p1 + r1, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, p1 + r2, - p2 - r1, - p2 - r3, - r1 - r2, - q - p2 - r3, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - p2 - r2, - p2 - r3, q + p1 + r1, - q.p1 + q.p2*u},
+  {- p2 - r2, - p2 - r3, p1 + r1 + r2, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, p1 + r2, p1 + r1 + r2, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, p1 + r3, - r1 - r2, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - r1 - r3, - q - p2 - r2, p1 + r1 + 
+      r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, - p2 - r1, - r1 - r3, - q - p2 - r2, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, p1 + r2, - p2 - r2, p1 + r1 + r2, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - r2 - r3, - q - p1 - p2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r1, - p2 - r3, - r2 - r3, - q - p2 - r1, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - p2 - r1, - r1 - r2, q + p1 + r2, q
+       + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r2, - p2 - r3, q + p1 + r1, p1
+       + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, p1 + r1, - p2 - r3, - r1 - r2, - q - p2 - r3, q + p1 + 
+      r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - r1 - r2, - r1 - r3, - q - p1 - p2, - q - p2 - r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, - r1 - r2, - r2 - r3, - q - p1 - p2, - q - 
+      p2 - r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - p2 - r2, - p2 - r3, - r1 - r2, q
+       + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r2, - p2 - r3, q + p1 + r1, p1
+       + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, p1 + r2, - p2 - r2, - r1 - r3, - q - p2 - r2, q + p1 + 
+      r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, - p2 - r3, - r1 - r3, - q - p2 - r2, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - p2 - r2, - p2 - r3, q + p1 + r2, q
+       + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - p2 - r2, - r1 - r3, q + p1 + r2, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r2, - p2 - r3, - r1 - r2, - 
+      r1 - r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, - p2 - r2, - r1 - r3, - r2 - r3, - q - p1 - p2, - q - p2 - r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - p2 - r1, - r2 - r3, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r3, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - p2 - r1, - r2 - r3, - q - p1 - p2, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - p2 - r2, - q - p1 - p2, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r1, - r1 - r2, - q - p1 - p2, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r2, - p2 - r3, - r1 - r3, - q - p2 - r2, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r1, - p2 - r1, - r2 - r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - p2 - r1, - p2 - r3, - r2 - r3, p1
+       + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r1, - r2 - r3, - q - p1 - p2, - 
+      q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - p2 - r1, - q - p1 - p2, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - p2 - r1, - p2 - r2, q + p1 + r2, q
+       + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - p2 - r1, q + p1 + r3, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - r1 - r3, - r2 - r3, - q - p1 - p2, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r1, - r2 - r3, - q - p1 - p2, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - p2 - r2, - r2 - r3, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - p2 - r2, p1 + r1 + r2, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - p2 - r2, - r1 - r3, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - p2 - r1, - r1 - r2, - r2 - r3, q
+       + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r1, - r2 - r3, q + p1 + r1, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - p2 - r1, - r1 - r3, - q - p2 - r2, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - p2 - r1, - q - p1 - p2, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r3, - r1 - r2, - r1 - r3, - q
+       - p1 - p2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - p2 - r2, - r1 - r2, - q - p1 - p2, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - p2 - r2, - r1 - r2, - q - p2 - r3, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - r1 - r2, - q - p1 - p2, p1
+       + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r1, - p2 - r2, q + p1 + r3, - q.p1
+       + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r2, - r1 - r3, - q - p1 - p2, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r1, - r1 - r3, - q - p1 - p2, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - p2 - r2, - r1 - r3, q + p1 + r2, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, - q - p1 - p2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, p1 + r1, p1 + r2, - p2 - r1, - p2 - r3, q + p1 + r2, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - p2 - r1, - r1 - r3, - r2 - r3, q
+       + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - r1 - r3, - r2 - r3, - q - p1 - p2, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - p2 - r3, - r2 - r3, - q - p1 - p2, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r2, - r1 - r2, - r1 - r3, - q - p1 - p2, - q - p2 - r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, - r1 - r3, - q - p1 - p2, - q - p2 - r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r3, - p2 - r2, - r1 - r3, p1
+       + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r2, - r1 - r2, q + p1 + r3, p1
+       + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - r1 - r2, - r1 - r3, - q - p1 - p2, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - p2 - r1, - r2 - r3, - q - p2 - r1, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - p2 - r1, - r2 - r3, - q - p1 - p2, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r1, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r2, - r1 - r2, q + p1 + r3, p1
+       + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r2, - r1 - r3, - r2 - r3, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - r1 - r2, - r2 - r3, - q - p1 - p2, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, - p2 - r3, - r1 - r2, - q - p1 - p2, - q - p2
+       - r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, - r1 - r2, - r2 - r3, - q - p1 - p2, - 
+      q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r1, - p2 - r3, - r1 - r2, - q - p2 - r3, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, p1 + r1, - p2 - r1, - r2 - r3, - q - p2 - r1, q + p1 + 
+      r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - q - p1 - p2, p1 + r2 + r3, - 
+      q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - r1 - r3, - r2 - r3, - q - p1 - p2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - p2 - r2, - p2 - r3, - r1 - r3, p1
+       + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, p1 + r3, - p2 - r1, - r2 - r3, - q - p2 - r1, p1 + r2 + 
+      r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, p1 + r2, p1 + r3, - p2 - r2, - p2 - r3, q + p1 + r2, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - r2 - r3, - q - p1 - p2, p1 + r1 + 
+      r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, p1 + r3, - p2 - r3, - r1 - r2, q
+       + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - p2 - r3, - r1 - r3, q + p1 + r2, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - p2 - r2, - r1 - r3, - q - p2 - r2, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, p1 + r1, - p2 - r1, - p2 - r3, - r2 - r3, - q - p2 - r1, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r3, - r1 - r2, q + p1 + r3, - q.p1
+       + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r3, - r1 - r2, - q - p1 - p2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r1, - p2 - r3, - r1 - r2, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - p2 - r2, - r2 - r3, - q - p2 - r1, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r1, - r1 - r3, - r2 - r3, - q - p1 - p2, - q - p2 - r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - p2 - r2, - p2 - r3, - r1 - r3, q
+       + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r3, - p2 - r2, - r1 - r2, q + 
+      p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - p2 - r2, - r1 - r3, - q - p2 - r2, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - p2 - r2, - r1 - r3, - q - p1 - p2, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r3, - r1 - r2, - q - p2 - r3, q + p1 + 
+      r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r3, - r1 - r2, - r2 - r3, - q - p1 - p2, - q - p2 - r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r2, - p2 - r2, q + p1 + r1, p1
+       + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, - p2 - r3, - r1 - r3, - q - p2 - r2, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - p2 - r2, - q - p1 - p2, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - p2 - 
+      r2, - r1 - r3, - q - p2 - r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - p2 - r3, - r1 - r2, - q - p2 - r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r1, - p2 - r3, - r2 - r3, q + 
+      p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - p2 - r3, - r1 - r2, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r2, - r1 - r2, - q - p1 - p2, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - r1 - r2, - r2 - r3, - q - p1 - p2, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - p2 - r3, - r1 - r2, - r2 - r3, - q - p1 - p2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r2, - p2 - r3, - r1 - r2, p1
+       + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - r2 - r3, - q - p1 - p2, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - r1 - r3, - q - p1 - p2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r3, - r1 - r2, - r2 - r3, - q - p2 - r3, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r1, - p2 - r1, - r2 - r3, q + 
+      p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - p2 - r2, - r1 - r3, - q - p1 - p2, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r2, - r1 - r3, - q - p2 - r2, q + p1 + 
+      r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r1, - r2 - r3, - q - p1 - p2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, p1 + r1 + r2, p1 + r2 + r3, - 
+      q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - r1 - r2, - r2 - r3, - q - p1 - p2, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r2, - p2 - r2, - r1 - r3, p1
+       + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r3, - r2 - r3, q + p1 + r1, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - r2 - r3, q + p1 + r1, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - r1 - r3, - q - p1 - p2, p1 + r1 + 
+      r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, - r2 - r3, - q - p2 - r1, p1 + r2 + 
+      r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - p2 - r2, - q - p1 - p2, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r1, - p2 - r2, q + p1 + r1, p1
+       + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - p2 - r2, - r2 - r3, - q - p1 - p2, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - p2 - r2, - r1 - r2, - q - p1 - p2, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - p2 - r1, - r2 - r3, q + p1 + r1, q
+       + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - p2 - r3, - r1 - r2, q + p1 + r1, q
+       + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, p1 + r1, - p2 - r2, - p2 - r3, - r1 - r2, - q - p2 - r3, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r1, - p2 - r3, q + p1 + r1, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, - r2 - r3, - q - p2 - r1, p1 + r1 + 
+      r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - p2 - r1, - r1 - r3, - q - p2 - r2, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - p2 - r3, - r1 - r2, - q - p1 - p2, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r2, - p2 - r3, q + p1 + r1, - q.p1
+       + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, - p2 - r2, - r1 - r3, - q - p2 - r2, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - p2 - r3, - r1 - r2, - q - p2 - r3, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - p2 - r1, - p2 - r2, q + p1 + r3, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - p2 - r1, - p2 - r3, - r2 - r3, p1
+       + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r3, - r1 - r2, - q - p1 - p2, - q - p2
+       - r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, - p2 - r3, - r1 - r3, - q - p1 - p2, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - p2 - r2, - r1 - r2, - q - p1 - p2, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r2, - r1 - r3, - r2 - r3, - q
+       - p1 - p2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r2, - r1 - r2, - r1 - r3, - q - p1 - p2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r3, - r1 - r3, q + p1 + r2, - q.p1
+       + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - p2 - r3, - r1 - r2, - q - p1 - p2, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - p2 - r2, - r1 - r3, - q - p1 - p2, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r1, - r1 - r2, - r2 - r3, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - p2 - r3, - r2 - r3, - q - p1 - p2, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - p2 - r2, - r1 - r3, - q - p1 - p2, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - p2 - r3, q + p1 + r1, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - p2 - r2, - r2 - r3, q + p1 + r1, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, - r1 - r2, - q - p1 - p2, - q.p1
+       + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r3, - r2 - r3, q + p1 + r1, - q.p1
+       + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, p1 + r3, - r1 - r2, q + p1 + r3, p1
+       + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r3, - r1 - r2, q + p1 + r3, p1
+       + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - r1 - r2, - q - p2 - r3, p1 + r1 + 
+      r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - r1 - r2, q + p1 + r3, - q.p1
+       + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - p2 - r1, - p2 - r3, - r1 - r2, q
+       + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r1, - p2 - r3, - r2 - r3, - q - p2 - r1, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - p2 - r1, q + p1 + r3, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, - p2 - r3, - r1 - r2, - q - p2 - r3, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - p2 - r2, - r1 - r3, - q - p1 - p2, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r2, - r1 - r3, q + p1 + r1, - q.p1
+       + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - p2 - r2, - r1 - r3, - q - p2 - r2, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - p2 - r2, - r2 - r3, - q - p2 - r1, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - p2 - r1, - p2 - r2, q + p1 + r1, q
+       + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, p1 + r2, - p2 - r3, q + p1 + r1, p1
+       + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - p2 - r2, - p2 - r3, - r1 - r3, q
+       + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - p2 - r2, - q - p1 - p2, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - r2 - r3, - q - p1 - p2, q + p1 + r1, - q.p1
+       + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r2, - r1 - r3, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r3, - p2 - r1, - r1 - r2, q + 
+      p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - p2 - r2, - q - p1 - p2, q + p1 + r3, - q.p1 + q.p2*u},
+  {- p2 - r2, - p2 - r3, q + p1 + r1, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - r1 - r2, - r2 - r3, - q - p1 - p2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r3, - p2 - r2, - r1 - r2, q + 
+      p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - r1 - r2, - q - p1 - p2, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - r1 - r3, - r2 - r3, - q - p2 - r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r2, - p2 - r2, - r1 - r3, q + 
+      p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r1, - r1 - r2, - r2 - r3, - q
+       - p1 - p2, - q.p1 + q.p2*u},
+  {- p2 - r3, q + p1 + r1, p1 + r1 + r2, - 
+      q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, - p2 - r3, - r1 - r3, - q - p1 - p2, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - r1 - r3, - q - p1 - p2, q + p1 + r2, - q.p1
+       + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, - r1 - r3, p1 + r2 + r3, - q.p1
+       + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - r1 - r2, - q - p1 - p2, - q.p1
+       + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, p1 + r2, - p2 - r1, - r2 - r3, q
+       + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r1, - p2 - r2, q + p1 + r1, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r1, - p2 - r2, - r2 - r3, - q - p2 - r1, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - p2 - r3, - r1 - r2, - q - p1 - p2, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, p1 + r2, - p2 - r3, - r1 - r2, - q - p2 - r3, q + p1 + 
+      r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - p2 - r1, - p2 - r2, q + p1 + r1, q
+       + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - r2 - r3, - q - p1 - p2, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - r2 - r3, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - p2 - r1, - r2 - r3, - q - p2 - r1, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - r1 - r2, - r2 - r3, - q - p1 - p2, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, p1 + r3, - p2 - r1, - r1 - r3, q
+       + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - r1 - r2, - r2 - r3, - q - p2 - r3, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - p2 - r3, - r1 - r2, - q - p2 - r3, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r1, - r1 - r3, - r2 - r3, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - r1 - r2, - r2 - r3, - q - p1 - p2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r1, - p2 - r2, - r1 - r3, p1
+       + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r1, - r1 - r2, - r2 - r3, - q - p2 - r1, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - p2 - r1, - r2 - r3, - q - p2 - r1, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r1, - p2 - r3, q + p1 + r2, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, p1 + r3, - p2 - r2, - r1 - r2, p1
+       + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - q - p1 - p2, p1 + r1 + r3, - 
+      q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - p2 - r2, - p2 - r3, q + p1 + r2, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r1, - r1 - r3, - q - p1 - p2, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - p2 - r1, p1 + r1 + r3, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - q - p1 - p2, p1 + r1 + r2, - 
+      q.p1 + q.p2*u},
+  {- p2 - r1, - p2 - r3, q + p1 + r2, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - p2 - r2, - r1 - r3, - q - p1 - p2, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, p1 + r3, - r1 - r2, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - p2 - r1, - r1 - r3, - q - p2 - r2, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r3, - q - p1 - p2, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - p2 - r1, - p2 - r3, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - r2 - r3, - q - p1 - p2, - q.p1
+       + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, - p2 - r1, - r1 - r3, - q - p1 - p2, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r2, - p2 - r1, - r1 - r3, q + 
+      p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, p1 + r3, - p2 - r3, q + p1 + r2, p1
+       + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - r2 - r3, - q - p1 - p2, p1 + r1 + 
+      r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - p2 - r1, - r1 - r2, - q - p1 - p2, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - p2 - r3, - r1 - r3, q + p1 + r1, q
+       + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - p2 - r1, - r1 - r2, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - r1 - r2, - r2 - r3, - q - p1 - p2, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, p1 + r3, - p2 - r2, - r1 - r2, q
+       + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - p2 - r1, - p2 - r2, q + p1 + r2, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r2, - p2 - r3, q + p1 + r2, p1
+       + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - r1 - r3, - q - p1 - p2, - q - p2 - r2, - q.p1 + q.p2*u},
+  {- p2 - r3, - r1 - r3, q + p1 + r2, - q.p1
+       + q.p2*u},
+  {-q, r1, r2, r3, p1 + r1, - p2 - r2, - r1 - r3, - q - p2 - r2, p1 + r1 + 
+      r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - p2 - r2, - r1 - r3, - q - p2 - r2, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r3, - p2 - r2, q + p1 + r3, p1
+       + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, - p2 - r2, - r1 - r3, - q - p1 - p2, - q - 
+      p2 - r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r1, - r2 - r3, - q - p1 - p2, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, p1 + r2, p1 + r3, - p2 - r1, - r1 - r2, q + p1 + r3, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, p1 + r2, - p2 - r1, - r2 - r3, - q - p2 - r1, p1 + r2 + 
+      r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r3, - q - p1 - p2, q + p1 + r2, - q.p1
+       + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - p2 - r1, - p2 - r2, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - p2 - r2, - r1 - r3, - q - p1 - p2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r2, - r1 - r3, q + p1 + r3, - q.p1
+       + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - r2 - r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - p2 - r3, q + p1 + r2, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, - p2 - r3, - r1 - r2, - q - p2 - r3, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, - p2 - r1, q + p1 + r2, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r3, - r1 - r3, - q - p1 - p2, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - p2 - r1, q + p1 + r3, - q.p1 + 
+      q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - p2 - r1, - p2 - r2, - r2 - r3, p1
+       + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r3, - p2 - r1, q + p1 + r3, p1
+       + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - p2 - r2, - r1 - r2, q + p1 + r1, q
+       + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - r2 - r3, q + p1 + r1, - q.p1 + 
+      q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - p2 - r3, - r2 - r3, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r1, - r2 - r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - p2 - r1, - q - p1 - p2, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r1, - r2 - r3, - q - p1 - p2, - q - p2 - 
+      r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - r1 - r2, - q - p2 - r3, p1 + r1 + 
+      r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - p2 - r1, - r1 - r2, q + p1 + r3, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - r1 - r3, - r2 - r3, - q - p1 - p2, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - p2 - r1, - r2 - r3, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - p2 - r2, - r1 - r2, - q - p2 - r3, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, p1 + r3, - p2 - r3, - r1 - r2, p1
+       + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - p2 - r1, - r1 - r2, - q - p1 - p2, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - p2 - r2, - r2 - r3, q + p1 + r1, q
+       + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - p2 - r3, q + p1 + r1, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - p2 - r3, - q - p1 - p2, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {- p2 - r2, - r1 - r2, q + p1 + r3, - q.p1
+       + q.p2*u},
+  {-q, r1, r2, r3, p1 + r1, - p2 - r3, - r1 - r2, - q - p2 - r3, p1 + r1 + 
+      r2, - q.p1 + q.p2*u},
+  {- p2 - r3, q + p1 + r2, p1 + r1 + r2, - 
+      q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, - p2 - r1, - r2 - r3, - q - p1 - p2, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r1, - r1 - r2, - r2 - r3, - q - p1 - p2, - q - p2 - r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, p1 + r2, - p2 - r1, q + p1 + r2, p1
+       + r1 + r3, - q.p1 + q.p2*u},
+  {- p2 - r1, - p2 - r2, q + p1 + r3, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r3, - r2 - r3, q + p1 + r1, p1
+       + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - p2 - r2, - p2 - r3, q + p1 + r1, q
+       + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - p2 - r1, - r1 - r3, - q - p1 - p2, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - p2 - r2, - r1 - r3, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - r1 - r2, - q - p1 - p2, p1 + r2 + 
+      r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r3, - r2 - r3, - q - p1 - p2, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, p1 + r2, - p2 - r1, - p2 - r2, - r1 - r3, - q - p2 - r2, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - p2 - r2, - q - p1 - p2, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r1, - p2 - r2, - r2 - r3, - q - p2 - r1, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, p1 + r3, - p2 - r1, - r1 - r2, q
+       + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - r1 - r3, - r2 - r3, - q - p2 - r2, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - p2 - r1, - p2 - r3, q + p1 + r1, q
+       + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, - r1 - r3, - q - p1 - p2, - 
+      q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, - r1 - r2, - q - p1 - p2, - q - p2 - r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - p2 - r2, - q - p1 - p2, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, p1 + r1 + r2, p1 + r1 + r3, - 
+      q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r2, - p2 - r1, q + p1 + r3, p1
+       + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - p2 - r3, q + p1 + r1, - q.p1 + 
+      q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, - p2 - r1, - q - p1 - p2, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, p1 + r2, - p2 - r2, - p2 - r3, - r1 - r3, - q - p2 - r2, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, p1 + r2, - p2 - r1, - p2 - r3, - r1 - r2, - q - p2 - r3, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - p2 - r2, - r2 - r3, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - r2 - r3, p1 + r1 + r3, - q.p1
+       + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - r2 - r3, - q - p1 - p2, - q.p1
+       + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - p2 - r2, q + p1 + r3, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r2, - r1 - r3, - q - p1 - p2, - q - p2 - 
+      r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r1, - p2 - r2, - r1 - r3, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - p2 - r2, - r1 - r3, q + p1 + r2, q
+       + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - r1 - r2, - q - p1 - p2, q + p1 + r3, - q.p1
+       + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - p2 - r1, - p2 - r2, - r1 - r3, p1
+       + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - p2 - r1, - p2 - r2, - r1 - r3, q
+       + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - p2 - r3, q + p1 + r1, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r1, - p2 - r1, q + p1 + r2, p1
+       + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - p2 - r2, q + p1 + r3, - q.p1 + 
+      q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - r1 - r2, q + p1 + r3, - q.p1 + 
+      q.p2*u},
+  {-q, r1, r2, r3, q + p1, - q - p1 - p2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - p2 - r1, - r2 - r3, - q - p2 - r1, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - r1 - r2, - r2 - r3, - q - p1 - p2, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r1, - r2 - r3, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - p2 - r3, - r1 - r3, - q - p1 - p2, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - p2 - r2, - r1 - r3, - q - p1 - p2, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, - r1 - r2, - r1 - r3, - q - p1 - p2, - 
+      q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r3, - p2 - r1, - r1 - r2, - 
+      r2 - r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, p1 + r2, p1 + r3, - p2 - r1, - r1 - r3, q + p1 + r2, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - p2 - r2, p1 + r1 + r3, - q.p1
+       + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r3, - r1 - r2, q + p1 + r1, - q.p1
+       + q.p2*u},
+  {-q, r1, r2, r3, p1 + r2, - p2 - r2, - p2 - r3, - r1 - r3, - q - p2 - r2, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, - r1 - r3, - q - p2 - r2, p1 + r2 + 
+      r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r1, - r2 - r3, - q - p2 - r1, q + p1 + 
+      r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - r1 - r2, p1 + r1 + r3, - q.p1
+       + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r1, - r2 - r3, - q - p1 - p2, - q.p1
+       + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - p2 - r1, - r2 - r3, q + p1 + r1, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - p2 - r1, - r2 - r3, - q - p1 - p2, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - p2 - r1, - r1 - r2, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r2, - r2 - r3, q + p1 + r1, - q.p1
+       + q.p2*u},
+  {- p2 - r1, - r1 - r2, q + p1 + r3, - q.p1
+       + q.p2*u},
+  {-q, r1, r2, r3, p1 + r3, - p2 - r2, - p2 - r3, - r1 - r2, - q - p2 - r3, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, p1 + r2, - p2 - r3, - r1 - r2, - r1 - r3, - q - p2 - r3, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - p2 - r1, - r2 - r3, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, - r1 - r3, - q - p2 - r2, p1 + r1 + 
+      r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - p2 - r1, - p2 - r2, q + p1 + r3, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, - p2 - r2, - r1 - r2, - r1 - r3, - q - p1 - p2, - q - p2 - r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, - p2 - r1, - r1 - r2, - r2 - r3, - q - p1 - p2, - q - p2 - r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - p2 - r2, q + p1 + r1, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, p1 + r3, - p2 - r1, - r2 - r3, q
+       + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, p1 + r2, - r2 - r3, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, p1 + r2, p1 + r3, - p2 - r1, - p2 - r3, q + p1 + r3, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - r1 - r3, - r2 - r3, - q - p1 - p2, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r2, - q - p1 - p2, q + p1 + r1, - q.p1
+       + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - p2 - r1, - r2 - r3, q + p1 + r1, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - p2 - r1, - r1 - r2, - q - p2 - r3, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - p2 - r3, - r1 - r2, - q - p1 - p2, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r1, - p2 - r2, q + p1 + r1, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r3, - r1 - r2, q + p1 + r1, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - p2 - r3, - q - p1 - p2, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r3, - r1 - r2, q + p1 + r2, - q.p1
+       + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - r1 - r3, - q - p1 - p2, p1 + r1 + 
+      r3, - q.p1 + q.p2*u},
+  {- p2 - r1, - p2 - r2, q + p1 + r3, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, p1 + r3, - r1 - r2, q + p1 + r3, p1
+       + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r3, - r1 - r3, q + p1 + r2, p1
+       + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r3, - r1 - r2, q + p1 + r3, p1
+       + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - p2 - r3, - r1 - r3, q + p1 + r1, q
+       + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, p1 + r1, - p2 - r1, - p2 - r2, - r2 - r3, - q - p2 - r1, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r2, - r2 - r3, - q - p1 - p2, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - p2 - r2, - r1 - r3, q + p1 + r1, q
+       + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r3, - p2 - r1, q + p1 + r2, p1
+       + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - p2 - r1, - p2 - r2, q + p1 + r1, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r2, - p2 - r3, q + p1 + r2, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, p1 + r2, - p2 - r1, - r1 - r3, - r2 - r3, - q - p2 - r1, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, p1 + r2, p1 + r3, - p2 - r3, - r1 - r2, q + p1 + r2, q
+       + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - p2 - r1, - r2 - r3, q + p1 + r1, q
+       + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - p2 - r1, - r2 - r3, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - p2 - r3, - r2 - r3, - q - p2 - r1, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - p2 - r2, - q - p1 - p2, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r1, - p2 - r3, - r1 - r2, p1
+       + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r3, - r1 - r2, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r1, - p2 - r2, q + p1 + r2, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - p2 - r2, - r1 - r2, - q - p1 - p2, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {- p2 - r3, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, - r1 - r2, - q - p2 - r3, p1 + r2 + 
+      r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r2, - r1 - r3, - q - p1 - p2, - 
+      q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - p2 - r1, - r1 - r3, - q - p2 - r2, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - r2 - r3, q + p1 + r1, - q.p1
+       + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, p1 + r3, - r1 - r2, q + p1 + r3, p1
+       + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - p2 - r2, - r1 - r2, q + p1 + r3, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - p2 - r2, - p2 - r3, - r1 - r3, p1
+       + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r3, - p2 - r3, - r1 - r2, p1
+       + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r1, - r2 - r3, - q - p2 - r1, - 
+      q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - r2 - r3, - q - p2 - r1, p1 + r2 + 
+      r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r2, - r1 - r3, - r2 - r3, - q - p2 - r2, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, p1 + r1, - p2 - r2, - r1 - r3, - r2 - r3, - q - p2 - r2, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, - r2 - r3, - q - p2 - r1, p1 + r1 + 
+      r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, p1 + r3, - p2 - r2, - r2 - r3, p1
+       + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, p1 + r2, p1 + r3, - p2 - r2, - r1 - r3, q + p1 + r2, q
+       + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r3, - p2 - r2, q + p1 + r1, p1
+       + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r3, - p2 - r1, - r2 - r3, p1
+       + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - r1 - r2, - r1 - r3, - q - p1 - p2, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - p2 - r1, - r1 - r2, - r2 - r3, - q - p2 - r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r3, - p2 - r3, q + p1 + r2, p1
+       + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, p1 + r3, - p2 - r3, - r1 - r2, p1
+       + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r3, - p2 - r3, - r1 - r2, q + 
+      p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r1, - p2 - r3, q + p1 + r2, p1
+       + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, - p2 - r3, - r1 - r2, - q - p1 - p2, - q - 
+      p2 - r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, - r1 - r3, - q - p1 - p2, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - p2 - r3, - r1 - r2, - q - p1 - p2, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r3, - r1 - r2, - r2 - r3, - q - p1 - p2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - p2 - r3, - r2 - r3, q + p1 + r1, q
+       + p1 + r2, - q.p1 + q.p2*u},
+  {- p2 - r2, q + p1 + r3, p1 + r1 + r3, - 
+      q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r2, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - p2 - r3, - r1 - r2, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r1, - p2 - r3, - r2 - r3, q + 
+      p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r1, - p2 - r2, - r2 - r3, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - r1 - r3, - q - p2 - r2, p1 + r2 + 
+      r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, - r1 - r2, - r1 - r3, - q - p2 - r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - p2 - r3, - r1 - r2, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r2, - p2 - r3, - r1 - r3, q + 
+      p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r2, - r1 - r2, q + p1 + r1, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - r1 - r2, - r1 - r3, - q - p1 - p2, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, p1 + r2, p1 + r3, - p2 - r2, - p2 - r3, q + p1 + r3, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - p2 - r3, - r1 - r2, q + p1 + r3, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r1, p1 + r3, - r1 - r2, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - p2 - r3, - r1 - r3, - q - p2 - r2, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - p2 - r1, - p2 - r3, q + p1 + r1, q
+       + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r1, - p2 - r3, - r1 - r2, - q - p2 - r3, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - p2 - r1, - r2 - r3, - q - p2 - r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r1, - p2 - r1, - r2 - r3, p1
+       + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - p2 - r2, - p2 - r3, - r1 - r2, p1
+       + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - r1 - r3, - r2 - r3, - q - p1 - p2, - q - p2 - r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - p2 - r2, - r1 - r2, - r1 - r3, - q - p2 - r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - p2 - r2, - p2 - r3, q + p1 + r1, q
+       + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - r1 - r2, - q - p1 - p2, - q.p1
+       + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - p2 - r2, - p2 - r3, q + p1 + r1, q
+       + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r1, - r1 - r3, - r2 - r3, - q
+       - p1 - p2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r2, - p2 - r3, - r1 - r2, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - p2 - r2, - r1 - r3, - r2 - r3, - q - p1 - p2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, p1 + r1, p1 + r2, - p2 - r1, - p2 - r2, q + p1 + r2, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - p2 - r3, - r1 - r2, q + p1 + r2, q
+       + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r2, - p2 - r2, - r1 - r3, q + 
+      p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r1, - p2 - r3, q + p1 + r1, p1
+       + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - p2 - r2, - r1 - r2, - q - p1 - p2, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r3, - r1 - r2, - r2 - r3, - q
+       - p1 - p2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r1, - p2 - r2, - p2 - r3, q + p1 + r3, p1 + r1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, - r1 - r3, p1 + r1 + r2, - q.p1
+       + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r1, - p2 - r3, - r1 - r2, q + p1 + r2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, - p2 - r2, - q - p1 - p2, q + p1 + r3, - q.p1
+       + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, - p2 - r3, - r1 - r2, - r1 - r3, - q - p1 - p2, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r1, - p2 - r1, q + p1 + r3, p1
+       + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r3, - p2 - r3, q + p1 + r1, p1
+       + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r3, - p2 - r2, - r2 - r3, - q - p2 - r1, q + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, p1 + r1, - p2 - r1, - p2 - r2, - r2 - r3, - q - p2 - r1, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, - p2 - r1, - r2 - r3, - q - p2 - r1, p1 + r2 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r3, - q - p1 - p2, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, p1 + r1, - p2 - r2, - p2 - r3, - r1 - r3, - q - p2 - r2, q + p1 + r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, p1 + r3, - p2 - r2, - p2 - r3, - r1 - r2, - q - p2 - r3, p1 + r1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, p1 + r2, - r1 - r3, - r2 - r3, - q - p2 - r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, q + p1, p1 + r1, - p2 - r2, - r1 - r3, - 
+      r2 - r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r3, - p2 - r2, - r1 - r2, q + p1 + r1, q
+       + p1 + r3, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, - q - p2, - p2 - r1, - r1 - r3, - r2 - r3, - q - p1 - p2, - q - p2 - r1, - q.p1 + q.p2*u},
+  {-q, r1, r2, r3, q + p1, p1 + r2, - p2 - r1, - p2 - r2, q + p1 + r3, p1 + r2 + r3, - q.p1 + q.p2*u}
+}

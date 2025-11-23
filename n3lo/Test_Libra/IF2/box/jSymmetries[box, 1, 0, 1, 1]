@@ -1,0 +1,2 @@
+{{j[box, (n1_)?Positive, (n2_)?NonPositive, (n3_)?Positive, 
+    (n4_)?Positive] :> Expand[j[box, n1, n2, n3, n4]]}}

@@ -1,0 +1,8 @@
+{{j[box, (n1_)?Positive, (n2_)?NonPositive, (n3_)?Positive, 
+    (n4_)?NonPositive] :> Expand[j[box, n1, n2, n3, n4]]}, 
+ {j[box, (n1_)?Positive, (n2_)?NonPositive, (n3_)?Positive, 
+    (n4_)?NonPositive] :> Expand[j[box, n3, 0, n1, 0]/
+     ((j[box, -1, 0, 0, 0] - j[box, 0, -1, 0, 0] + j[box, 0, 0, -1, 0] - 
+        s12*j[box, 0, 0, 0, 0])^n2*(j[box, -1, 0, 0, 0] + 
+        j[box, 0, 0, -1, 0] - j[box, 0, 0, 0, -1] + 
+        (s13 + s23)*j[box, 0, 0, 0, 0])^n4)]}}

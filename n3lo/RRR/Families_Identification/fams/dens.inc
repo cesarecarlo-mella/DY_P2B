@@ -1,0 +1,24 @@
+id Prop(cut,r1) = 1/D1;
+id Prop(cut,r2) = 1/D2;
+id Prop(cut,r3) = 1/D3;
+id Prop(cut,p1 + p2 + r1 + r2 + r3,m2) = 1/D4;
+id Den(cut, - q.p1 + q.p2*u) = 1/D5;
+id Prop(p1+r1) = 1/D6;
+id Prop(p2+r1) = 1/D7;
+id Prop(p1+r2) = 1/D8;
+id Prop(p2+r2) = 1/D9;
+id Prop(p1+r3) = 1/D10;
+id Prop(p2+r3) = 1/D11;
+id Prop(r1+r2) = 1/D12;
+id Prop(r2+r3) = 1/D13;
+id Prop(r1+r3) = 1/D14;
+id Prop(p1+r1+r2) = 1/D15;
+id Prop(p2+r1+r2) = 1/D16;
+id Prop(p1+r1+r3) = 1/D17;
+id Prop(p2+r1+r3) = 1/D18;
+id Prop(p1+r2+r3) = 1/D19;
+id Prop(p2+r2+r3) = 1/D20;
+id Prop(r1+r2+r3) = 1/D21;
+id Prop(p1+r1+r2+r3) = 1/D22;
+id Prop(p2+r1+r2+r3) = 1/D23;
+.sort

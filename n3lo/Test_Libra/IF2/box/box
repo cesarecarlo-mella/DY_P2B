@@ -1,0 +1,146 @@
+BasisDirectory[box] = StringDrop[DirectoryName[$Input], -1]
+box /: BasisSectors[box] := 
+  Get[FileNameJoin[{BasisDirectory[box], "BasisSectors[box]"}]]
+box /: CurrentState[box] := <|NewDsBasis -> True, GenerateIBP -> True, 
+   AnalyzeSectors -> True, FindSymmetries -> False|>
+box /: CutDs[box] := {0, 0, 0, 0}
+box /: Definitions[box] := {Hold[MetricTensor[] === d, SetDim[d]], 
+   Hold[VecQ[k1], Declare[k1, Vector]], Hold[VecQ[p1], Declare[p1, Vector]], 
+   Hold[VecQ[p2], Declare[p2, Vector]], Hold[VecQ[p3], Declare[p3, Vector]], 
+   Hold[LiteRed`Private`ExpresionType[p1] === LiteRed`Private`ExpresionType[
+      p1], Declare[p1, LiteRed`Private`ExpresionType[p1]]], 
+   Hold[LiteRed`Private`ExpresionType[p2] === LiteRed`Private`ExpresionType[
+      p2], Declare[p2, LiteRed`Private`ExpresionType[p2]]], 
+   Hold[LiteRed`Private`ExpresionType[p3] === LiteRed`Private`ExpresionType[
+      p3], Declare[p3, LiteRed`Private`ExpresionType[p3]]], 
+   Hold[LiteRed`Private`ExpresionType[s12] === LiteRed`Private`ExpresionType[
+      s12], Declare[s12, LiteRed`Private`ExpresionType[s12]]], 
+   Hold[LiteRed`Private`ExpresionType[s13] === LiteRed`Private`ExpresionType[
+      s13], Declare[s13, LiteRed`Private`ExpresionType[s13]]], 
+   Hold[LiteRed`Private`ExpresionType[s23] === LiteRed`Private`ExpresionType[
+      s23], Declare[s23, LiteRed`Private`ExpresionType[s23]]], 
+   Hold[sp[p1, p1] === 0, sp[p1, p1] = 0], Hold[sp[p2, p2] === 0, 
+    sp[p2, p2] = 0], Hold[sp[p3, p3] === 0, sp[p3, p3] = 0], 
+   Hold[sp[p1, p2] === s12/2, sp[p1, p2] = s12/2], 
+   Hold[sp[p1, p3] === s13/2, sp[p1, p3] = s13/2], 
+   Hold[sp[p2, p3] === s23/2, sp[p2, p3] = s23/2]}
+box /: Ds[box] := {sp[k1, k1], sp[k1, k1] - 2*sp[k1, p1], 
+   s12 + sp[k1, k1] - 2*sp[k1, p1] - 2*sp[k1, p2], 
+   s12 + s13 + s23 + sp[k1, k1] - 2*sp[k1, p1] - 2*sp[k1, p2] - 2*sp[k1, p3]}
+box /: DsBasisQ[box] := True
+box /: EMs[box] := {p1, p2, p3}
+box /: ExtMappedSectors[box] := {}
+box /: ExtSectorsMappings[box] := {}
+box /: IBP[box] := Get[FileNameJoin[{BasisDirectory[box], "IBP[box]"}]]
+box /: Information[box] := (If[ValueQ[box::usage], 
+    Information[box, LongForm -> False]]; 
+   Print[Grid[Partition[Union[Replace[Replace[First /@ UpValues[box] /. 
+          HoldPattern -> HoldForm, 
+         {HoldPattern[HoldForm[(LiteRed`Private`f$_)[box, __]]] :> 
+           HoldForm[LiteRed`Private`f$[box, "\[Ellipsis]"]]}, {1}], 
+        {HoldPattern[LiteRed`Private`x$:HoldForm[(LiteRed`Private`f$_)[box, 
+              ___]]] :> Button[LiteRed`Private`x$, 
+           (SelectionMove[ButtonNotebook[], All, GeneratedCell]; 
+             NotebookDelete[]; Information[Evaluate[LiteRed`Private`x$[[1,
+                0]]], LongForm -> False]; Print[TableForm[Cases[UpValues[
+                  box], HoldPattern[LiteRed`Private`a$_ :> 
+                    LiteRed`Private`b$_] /; MatchQ[LiteRed`Private`a$[[1,0]], 
+                   LiteRed`Private`x$[[1,0]]]] /. HoldPattern -> 
+                 HoldForm]]) & , Appearance -> "Frameless", 
+           BaseStyle -> "InformationLink"]}, {1}]], 5], 
+     DefaultBaseStyle -> "InfoGrid"]])
+box /: jRules[box, 0, 1, 0, 1] := 
+  Get[FileNameJoin[{BasisDirectory[box], "jRules[box, 0, 1, 0, 1]"}]]
+box /: jRules[box, 0, 1, 1, 1] := 
+  Get[FileNameJoin[{BasisDirectory[box], "jRules[box, 0, 1, 1, 1]"}]]
+box /: jRules[box, 1, 0, 0, 1] := 
+  Get[FileNameJoin[{BasisDirectory[box], "jRules[box, 1, 0, 0, 1]"}]]
+box /: jRules[box, 1, 0, 1, 0] := 
+  Get[FileNameJoin[{BasisDirectory[box], "jRules[box, 1, 0, 1, 0]"}]]
+box /: jRules[box, 1, 0, 1, 1] := 
+  Get[FileNameJoin[{BasisDirectory[box], "jRules[box, 1, 0, 1, 1]"}]]
+box /: jRules[box, 1, 1, 0, 1] := 
+  Get[FileNameJoin[{BasisDirectory[box], "jRules[box, 1, 1, 0, 1]"}]]
+box /: jRules[box, 1, 1, 1, 0] := 
+  Get[FileNameJoin[{BasisDirectory[box], "jRules[box, 1, 1, 1, 0]"}]]
+box /: jRules[box, 1, 1, 1, 1] := 
+  Get[FileNameJoin[{BasisDirectory[box], "jRules[box, 1, 1, 1, 1]"}]]
+box /: jsOrder[box] := {"np", "cp", "-ds", "-ns"}
+box /: jsOrder[box, 0, 0, 0, 1] := {{-1, -1, -1, 1}, {-1, -1, -1, 0}, 
+   {1, 0, 0, 0}, {0, 1, 0, 0}}
+box /: jsOrder[box, 0, 0, 1, 0] := {{-1, -1, 1, -1}, {-1, -1, 0, -1}, 
+   {1, 0, 0, 0}, {0, 1, 0, 0}}
+box /: jsOrder[box, 0, 1, 0, 0] := {{-1, 1, -1, -1}, {-1, 0, -1, -1}, 
+   {1, 0, 0, 0}, {0, 0, 1, 0}}
+box /: jsOrder[box, 0, 1, 0, 1] := {{-1, 1, -1, 1}, {-1, 0, -1, 0}, 
+   {0, -1, 0, 0}, {1, 0, 0, 0}}
+box /: jsOrder[box, 0, 1, 1, 1] := {{-1, 1, 1, 1}, {-1, 0, 0, 0}, 
+   {0, -1, 0, 0}, {0, 0, -1, 0}}
+box /: jsOrder[box, 1, 0, 0, 0] := {{1, -1, -1, -1}, {0, -1, -1, -1}, 
+   {0, 1, 0, 0}, {0, 0, 1, 0}}
+box /: jsOrder[box, 1, 0, 0, 1] := {{1, -1, -1, 1}, {0, -1, -1, 0}, 
+   {-1, 0, 0, 0}, {0, 1, 0, 0}}
+box /: jsOrder[box, 1, 0, 1, 0] := {{1, -1, 1, -1}, {0, -1, 0, -1}, 
+   {-1, 0, 0, 0}, {0, 1, 0, 0}}
+box /: jsOrder[box, 1, 0, 1, 1] := {{1, -1, 1, 1}, {0, -1, 0, 0}, 
+   {-1, 0, 0, 0}, {0, 0, -1, 0}}
+box /: jsOrder[box, 1, 1, 0, 0] := {{1, 1, -1, -1}, {0, 0, -1, -1}, 
+   {-1, 0, 0, 0}, {0, 0, 1, 0}}
+box /: jsOrder[box, 1, 1, 0, 1] := {{1, 1, -1, 1}, {0, 0, -1, 0}, 
+   {-1, 0, 0, 0}, {0, -1, 0, 0}}
+box /: jsOrder[box, 1, 1, 1, 0] := {{1, 1, 1, -1}, {0, 0, 0, -1}, 
+   {-1, 0, 0, 0}, {0, -1, 0, 0}}
+box /: jsOrder[box, 1, 1, 1, 1] := {{1, 1, 1, 1}, {-1, 0, 0, 0}, 
+   {0, -1, 0, 0}, {0, 0, -1, 0}}
+box /: jSymmetries[box, 0, 1, 0, 1] := 
+  Get[FileNameJoin[{BasisDirectory[box], "jSymmetries[box, 0, 1, 0, 1]"}]]
+box /: jSymmetries[box, 0, 1, 1, 1] := 
+  Get[FileNameJoin[{BasisDirectory[box], "jSymmetries[box, 0, 1, 1, 1]"}]]
+box /: jSymmetries[box, 1, 0, 0, 1] := 
+  Get[FileNameJoin[{BasisDirectory[box], "jSymmetries[box, 1, 0, 0, 1]"}]]
+box /: jSymmetries[box, 1, 0, 1, 0] := 
+  Get[FileNameJoin[{BasisDirectory[box], "jSymmetries[box, 1, 0, 1, 0]"}]]
+box /: jSymmetries[box, 1, 0, 1, 1] := 
+  Get[FileNameJoin[{BasisDirectory[box], "jSymmetries[box, 1, 0, 1, 1]"}]]
+box /: jSymmetries[box, 1, 1, 0, 1] := 
+  Get[FileNameJoin[{BasisDirectory[box], "jSymmetries[box, 1, 1, 0, 1]"}]]
+box /: jSymmetries[box, 1, 1, 1, 0] := 
+  Get[FileNameJoin[{BasisDirectory[box], "jSymmetries[box, 1, 1, 1, 0]"}]]
+box /: jSymmetries[box, 1, 1, 1, 1] := 
+  Get[FileNameJoin[{BasisDirectory[box], "jSymmetries[box, 1, 1, 1, 1]"}]]
+box /: LI[box] := Get[FileNameJoin[{BasisDirectory[box], "LI[box]"}]]
+box /: LMs[box] := {k1}
+box /: MappedSectors[box] := 
+  Get[FileNameJoin[{BasisDirectory[box], "MappedSectors[box]"}]]
+box /: MIs[box] := Get[FileNameJoin[{BasisDirectory[box], "MIs[box]"}]]
+box /: NDs[box] := 4
+box /: NonZeroSectors[box] := 
+  Get[FileNameJoin[{BasisDirectory[box], "NonZeroSectors[box]"}]]
+box /: Parameters[box] := {s12, s13, s23, d}
+box /: PowerShifts[box] := {0, 0, 0, 0}
+box /: SectorsMappings[box] := {}
+box /: SectorsPattern[box] := {___}
+box /: SimpleSectors[box] := 
+  Get[FileNameJoin[{BasisDirectory[box], "SimpleSectors[box]"}]]
+box /: SPs[box] := {sp[k1, k1], sp[k1, p1], sp[k1, p2], sp[k1, p3]}
+box /: SR[box] := Get[FileNameJoin[{BasisDirectory[box], "SR[box]"}]]
+box /: Toj[box] := {sp[k1, k1] -> j[box, -1, 0, 0, 0], 
+   sp[k1, p1] -> (j[box, -1, 0, 0, 0] - j[box, 0, -1, 0, 0])/2, 
+   sp[k1, p2] -> (s12 + j[box, 0, -1, 0, 0] - j[box, 0, 0, -1, 0])/2, 
+   sp[k1, p3] -> (s13 + s23 + j[box, 0, 0, -1, 0] - j[box, 0, 0, 0, -1])/2}
+box /: UniqueSectors[box] := 
+  Get[FileNameJoin[{BasisDirectory[box], "UniqueSectors[box]"}]]
+box /: ZerojRule[box] := LiteRed`Private`jjj:j[box, __] :> 
+   0 /; Module[{LiteRed`Private`jjs = 
+       Rest[List @@ jSector[LiteRed`Private`jjj]]}, 
+     Or @@ (BitOr[LiteRed`Private`jjs, #1] === #1 & ) /@ 
+       {{1, 1, 0, 0}, {0, 0, 1, 1}, {0, 1, 1, 0}}]
+box /: ZeroSectors[box] := 
+  Get[FileNameJoin[{BasisDirectory[box], "ZeroSectors[box]"}]]
+box /: SectorsMappings[box, LiteRed`Private`ns$:(0 | 1)..] := 
+  Cases[SectorsMappings[box], HoldPattern[js[box, LiteRed`Private`ns$] -> _]]
+box::usage = "1-loop basis with 3 external momenta.\nUse Information[box] to \
+get basis summary.\nThis string can be redefined by setting \
+box::usage=\"\[Ellipsis]\""; Information[box, LongForm -> False]; 
+LiteRed`Private`CheckDefs[box]
+BasisDirectory[box]

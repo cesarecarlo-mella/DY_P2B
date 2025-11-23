@@ -1,0 +1,40 @@
+#! /usr/bin/env wolframscript
+Off[FrontEndObject::notavail];
+
+<< Fermatica`
+<< LiteRed2`
+
+SetDirectory[DirectoryName[$InputFileName]];
+
+
+AllFamilies = Get["../RRR/Families_Identification/integral_families.rrr.m"];
+intfam = AllFamilies[[NTAG]];
+
+(* initial setup *)
+(*--------------------------------------------------------------*)
+SetDim[d];
+Declare[
+{p1,p2,p4,p5,p6}, Vector,
+{z,u,m2}, Number];
+
+q = p1 + p2 - p4 - p5 - p6;
+sp[p1,p1] = 0;
+sp[p2,p2] = 0;
+sp[p1,p2] = m2/z/2;
+
+(* Initialize integral family *)
+(*--------------------------------------------------------------*)
+NewDsBasis[IFNTAG, intfam, {p4,p5,p6}, Directory->"IFNTAG", CutDs -> {1,1,1,1,1,0,0,0,0,0,0,0}]
+
+GenerateIBP[IFNTAG];
+
+AnalyzeSectors[IFNTAG];
+
+FindSymmetries[IFNTAG];
+
+(* Solve IBP reduction for unique sectors *)
+(*--------------------------------------------------------------*)
+SolvejSector/@UniqueSectors[IFNTAG];
+
+(* Save to disk *)
+DiskSave[IFNTAG];

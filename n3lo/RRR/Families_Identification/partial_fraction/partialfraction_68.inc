@@ -1,0 +1,3 @@
+repeat;
+id Prop(p2 + r1)*Prop(p2 + r2)*Prop(p2 + r3)*Prop(r1 + r2 + r3)*Prop(p1 + r1 + r2 + r3) = +Num(3*z+3*u*z)*Den(-3*m2-5*m2*u+5*m2*z+3*m2*u*z)*Prop(p2 + r1)*Prop(p2 + r2)*Prop(p2 + r3)*Prop(r1 + r2 + r3)+Num(2*z)*Den(-3*m2-5*m2*u+5*m2*z+3*m2*u*z)*Prop(p2 + r1)*Prop(p2 + r2)*Prop(p2 + r3)*Prop(p1 + r1 + r2 + r3)+Num(5*z+5*u*z)*Den(-3*m2-5*m2*u+5*m2*z+3*m2*u*z)*Prop(p2 + r1)*Prop(p2 + r2)*Prop(r1 + r2 + r3)*Prop(p1 + r1 + r2 + r3)+Num(5*z+5*u*z)*Den(-3*m2-5*m2*u+5*m2*z+3*m2*u*z)*Prop(p2 + r1)*Prop(p2 + r3)*Prop(r1 + r2 + r3)*Prop(p1 + r1 + r2 + r3)+Num(5*z+5*u*z)*Den(-3*m2-5*m2*u+5*m2*z+3*m2*u*z)*Prop(p2 + r2)*Prop(p2 + r3)*Prop(r1 + r2 + r3)*Prop(p1 + r1 + r2 + r3);
+endrepeat;

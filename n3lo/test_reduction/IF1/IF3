@@ -1,0 +1,101 @@
+BasisDirectory[IF3] = StringDrop[DirectoryName[$Input], -1]
+IF3 /: CurrentState[IF3] := <|NewDsBasis -> True, GenerateIBP -> False, 
+   AnalyzeSectors -> False, FindSymmetries -> False|>
+IF3 /: CutDs[IF3] := {1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0}
+IF3 /: Definitions[IF3] := {Hold[MetricTensor[] === d, SetDim[d]], 
+   Hold[VecQ[p4], Declare[p4, Vector]], Hold[VecQ[p5], Declare[p5, Vector]], 
+   Hold[VecQ[p6], Declare[p6, Vector]], Hold[VecQ[p1], Declare[p1, Vector]], 
+   Hold[VecQ[p2], Declare[p2, Vector]], 
+   Hold[LiteRed`Private`ExpresionType[m2] === LiteRed`Private`ExpresionType[
+      m2], Declare[m2, LiteRed`Private`ExpresionType[m2]]], 
+   Hold[LiteRed`Private`ExpresionType[p1] === LiteRed`Private`ExpresionType[
+      p1], Declare[p1, LiteRed`Private`ExpresionType[p1]]], 
+   Hold[LiteRed`Private`ExpresionType[p2] === LiteRed`Private`ExpresionType[
+      p2], Declare[p2, LiteRed`Private`ExpresionType[p2]]], 
+   Hold[LiteRed`Private`ExpresionType[z] === LiteRed`Private`ExpresionType[
+      z], Declare[z, LiteRed`Private`ExpresionType[z]]], 
+   Hold[sp[p1, p1] === 0, sp[p1, p1] = 0], Hold[sp[p2, p2] === 0, 
+    sp[p2, p2] = 0], Hold[sp[p1, p2] === m2/(2*z), sp[p1, p2] = m2/(2*z)]}
+IF3 /: Ds[IF3] := {sp[p4, p4], sp[p5, p5], sp[p6, p6], 
+   -m2 + sp[p1 + p2 - p4 - p5 - p6, p1 + p2 - p4 - p5 - p6], 
+   sp[p1, p1 + p2 - p4 - p5 - p6] - u*sp[p2, p1 + p2 - p4 - p5 - p6], 
+   sp[p1 - p4, p1 - p4], sp[p2 - p4, p2 - p4], sp[p1 - p5, p1 - p5], 
+   sp[p2 - p5, p2 - p5], sp[p1 - p4 - p5 - p6, p1 - p4 - p5 - p6], 
+   sp[p4 + p5, p4 + p5], sp[p4 + p6, p4 + p6]}
+IF3 /: DsBasisQ[IF3] := True
+IF3 /: EMs[IF3] := {p1, p2}
+IF3 /: ExtMappedSectors[IF3] := {}
+IF3 /: ExtSectorsMappings[IF3] := {}
+IF3 /: Information[IF3] := (If[ValueQ[IF3::usage], 
+    Information[IF3, LongForm -> False]]; 
+   Print[Grid[Partition[Union[Replace[Replace[First /@ UpValues[IF3] /. 
+          HoldPattern -> HoldForm, 
+         {HoldPattern[HoldForm[(LiteRed`Private`f$_)[IF3, __]]] :> 
+           HoldForm[LiteRed`Private`f$[IF3, "\[Ellipsis]"]]}, {1}], 
+        {HoldPattern[LiteRed`Private`x$:HoldForm[(LiteRed`Private`f$_)[IF3, 
+              ___]]] :> Button[LiteRed`Private`x$, 
+           (SelectionMove[ButtonNotebook[], All, GeneratedCell]; 
+             NotebookDelete[]; Information[Evaluate[LiteRed`Private`x$[[1,
+                0]]], LongForm -> False]; Print[TableForm[Cases[UpValues[
+                  IF3], HoldPattern[LiteRed`Private`a$_ :> 
+                    LiteRed`Private`b$_] /; MatchQ[LiteRed`Private`a$[[1,0]], 
+                   LiteRed`Private`x$[[1,0]]]] /. HoldPattern -> 
+                 HoldForm]]) & , Appearance -> "Frameless", 
+           BaseStyle -> "InformationLink"]}, {1}]], 5], 
+     DefaultBaseStyle -> "InfoGrid"]])
+IF3 /: jsOrder[IF3] := {"np", "cp", "-ds", "-ns"}
+IF3 /: LMs[IF3] := {p4, p5, p6}
+IF3 /: MappedSectors[IF3] := 
+  Get[FileNameJoin[{BasisDirectory[IF3], "MappedSectors[IF3]"}]]
+IF3 /: MIs[IF3] := Get[FileNameJoin[{BasisDirectory[IF3], "MIs[IF3]"}]]
+IF3 /: NDs[IF3] := 12
+IF3 /: Parameters[IF3] := {m2, u, z, d}
+IF3 /: PowerShifts[IF3] := {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+IF3 /: SectorsMappings[IF3] := {}
+IF3 /: SectorsPattern[IF3] := {___}
+IF3 /: SPs[IF3] := {sp[p1, p4], sp[p1, p5], sp[p1, p6], sp[p2, p4], 
+   sp[p2, p5], sp[p2, p6], sp[p4, p4], sp[p4, p5], sp[p4, p6], sp[p5, p5], 
+   sp[p5, p6], sp[p6, p6]}
+IF3 /: SR[IF3] := Get[FileNameJoin[{BasisDirectory[IF3], "SR[IF3]"}]]
+IF3 /: Toj[IF3] := 
+  {sp[p1, p4] -> (j[IF3, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] - 
+      j[IF3, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0])/2, 
+   sp[p1, p5] -> (j[IF3, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] - 
+      j[IF3, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0])/2, 
+   sp[p1, p6] -> -1/2*(-m2 + m2*u*z + z*j[IF3, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+         0, 0] + z*j[IF3, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] + 
+       u*z*j[IF3, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0] + 
+       2*z*j[IF3, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0] - 
+       z*j[IF3, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0] - 
+       z*j[IF3, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0] - 
+       u*z*j[IF3, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0])/z, 
+   sp[p2, p4] -> (j[IF3, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] - 
+      j[IF3, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0])/2, 
+   sp[p2, p5] -> (j[IF3, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] - 
+      j[IF3, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0])/2, 
+   sp[p2, p6] -> -1/2*(-m2 + m2*z + z*j[IF3, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+         0, 0] + z*j[IF3, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] + 
+       z*j[IF3, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0] - 
+       z*j[IF3, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0] - 
+       z*j[IF3, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0] - 
+       z*j[IF3, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0])/z, 
+   sp[p4, p4] -> j[IF3, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 
+   sp[p4, p5] -> (-j[IF3, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] - 
+      j[IF3, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] + j[IF3, 0, 0, 0, 0, 0, 0, 
+       0, 0, 0, 0, -1, 0])/2, sp[p4, p6] -> 
+    (-j[IF3, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] - j[IF3, 0, 0, -1, 0, 0, 0, 
+       0, 0, 0, 0, 0, 0] + j[IF3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1])/2, 
+   sp[p5, p5] -> j[IF3, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 
+   sp[p5, p6] -> -1/2*(-m2 + m2*u*z - z*j[IF3, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+         0, 0] + u*z*j[IF3, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0] + 
+       2*z*j[IF3, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0] - 
+       z*j[IF3, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0] - 
+       u*z*j[IF3, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0] + 
+       z*j[IF3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0] + 
+       z*j[IF3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1])/z, 
+   sp[p6, p6] -> j[IF3, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0]}
+IF3::usage = "3-loop basis with 2 external momenta.\nUse Information[IF3] to \
+get basis summary.\nThis string can be redefined by setting \
+IF3::usage=\"\[Ellipsis]\""; Information[IF3, LongForm -> False]; 
+LiteRed`Private`CheckDefs[IF3]
+BasisDirectory[IF3]
