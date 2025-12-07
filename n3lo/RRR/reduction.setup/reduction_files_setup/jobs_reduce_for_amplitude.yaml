@@ -1,0 +1,17 @@
+ jobs:
+ - reduce_sectors:
+    conditional: true
+    reduce:
+     - {topologies: [&toponame], sectors: [&sectorlist], r: &rr, s: &ss}
+    select_integrals:
+      select_mandatory_list:
+        - [&toponame, kira2reduce.inc]
+    run_symmetries: true
+    run_initiate: true
+    run_triangular: false
+    run_firefly: true
+    run_back_substitution: false
+ - kira2form:
+    target:
+       - [&toponame, kira2reduce.inc]
+    reconstruct_mass: false
