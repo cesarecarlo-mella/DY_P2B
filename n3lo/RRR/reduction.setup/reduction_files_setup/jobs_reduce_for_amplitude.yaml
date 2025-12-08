@@ -2,10 +2,14 @@
  - reduce_sectors:
     conditional: true
     reduce:
-     - {topologies: [&toponame], sectors: [&sectorlist], r: &rr, s: &ss}
+     - {topologies: [&toponame1], sectors: [&sectorlist1], r: &rr1, s: &ss1}
+     - {topologies: [&toponame2], sectors: [&sectorlist2], r: &rr2, s: &ss2}
+     - {topologies: [&toponame3], sectors: [&sectorlist3], r: &rr3, s: &ss3}
     select_integrals:
       select_mandatory_list:
-        - [&toponame, kira2reduce.inc]
+        - [&toponame1, &kira2reduce1]
+        - [&toponame2, &kira2reduce2]
+        - [&toponame3, &kira2reduce3]
     run_symmetries: true
     run_initiate: true
     run_triangular: false
@@ -13,5 +17,7 @@
     run_back_substitution: false
  - kira2form:
     target:
-       - [&toponame, kira2reduce.inc]
+       - [&toponame1, &kira2reduce1]
+       - [&toponame2, &kira2reduce2]
+       - [&toponame3, &kira2reduce3]
     reconstruct_mass: false
