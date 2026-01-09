@@ -1,0 +1,612 @@
+BasisDirectory[topo1] = StringDrop[DirectoryName[$Input], -1]
+topo1 /: BasisSectors[topo1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], "BasisSectors[topo1]"}]]
+topo1 /: CurrentState[topo1] := <|NewDsBasis -> True, GenerateIBP -> True, 
+   AnalyzeSectors -> True, FindSymmetries -> False|>
+topo1 /: CutDs[topo1] := {1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0}
+topo1 /: Definitions[topo1] := {Hold[MetricTensor[] === d, SetDim[d]], 
+   Hold[VecQ[p4], Declare[p4, Vector]], Hold[VecQ[p5], Declare[p5, Vector]], 
+   Hold[VecQ[p6], Declare[p6, Vector]], Hold[VecQ[p1], Declare[p1, Vector]], 
+   Hold[VecQ[p2], Declare[p2, Vector]], 
+   Hold[LiteRed`Private`ExpresionType[m2] === LiteRed`Private`ExpresionType[
+      m2], Declare[m2, LiteRed`Private`ExpresionType[m2]]], 
+   Hold[LiteRed`Private`ExpresionType[p1] === LiteRed`Private`ExpresionType[
+      p1], Declare[p1, LiteRed`Private`ExpresionType[p1]]], 
+   Hold[LiteRed`Private`ExpresionType[p2] === LiteRed`Private`ExpresionType[
+      p2], Declare[p2, LiteRed`Private`ExpresionType[p2]]], 
+   Hold[LiteRed`Private`ExpresionType[z] === LiteRed`Private`ExpresionType[
+      z], Declare[z, LiteRed`Private`ExpresionType[z]]], 
+   Hold[sp[p1, p1] === 0, sp[p1, p1] = 0], Hold[sp[p2, p2] === 0, 
+    sp[p2, p2] = 0], Hold[sp[p1, p2] === m2/(2*z), sp[p1, p2] = m2/(2*z)]}
+topo1 /: Ds[topo1] := {sp[p4, p4], sp[p5, p5], sp[p6, p6], 
+   -m2 + m2/z - 2*sp[p1, p4] - 2*sp[p1, p5] - 2*sp[p1, p6] - 2*sp[p2, p4] - 
+    2*sp[p2, p5] - 2*sp[p2, p6] + sp[p4, p4] + 2*sp[p4, p5] + 2*sp[p4, p6] + 
+    sp[p5, p5] + 2*sp[p5, p6] + sp[p6, p6], m2/(2*z) - (m2*u)/(2*z) - 
+    sp[p1, p4] - sp[p1, p5] - sp[p1, p6] + u*sp[p2, p4] + u*sp[p2, p5] + 
+    u*sp[p2, p6], -2*sp[p1, p4] + sp[p4, p4], -2*sp[p2, p4] + sp[p4, p4], 
+   -2*sp[p1, p5] + sp[p5, p5], -2*sp[p2, p5] + sp[p5, p5], 
+   sp[p4, p4] + 2*sp[p4, p5] + sp[p5, p5], -2*sp[p1, p4] - 2*sp[p1, p6] + 
+    sp[p4, p4] + 2*sp[p4, p6] + sp[p6, p6], -2*sp[p2, p4] - 2*sp[p2, p6] + 
+    sp[p4, p4] + 2*sp[p4, p6] + sp[p6, p6]}
+topo1 /: DsBasisQ[topo1] := True
+topo1 /: EMs[topo1] := {p1, p2}
+topo1 /: ExtMappedSectors[topo1] := {}
+topo1 /: ExtSectorsMappings[topo1] := {}
+topo1 /: IBP[topo1] := Get[FileNameJoin[{BasisDirectory[topo1], 
+     "IBP[topo1]"}]]
+topo1 /: Information[topo1] := (If[ValueQ[topo1::usage], 
+    Information[topo1, LongForm -> False]]; 
+   Print[Grid[Partition[Union[Replace[Replace[First /@ UpValues[topo1] /. 
+          HoldPattern -> HoldForm, 
+         {HoldPattern[HoldForm[(LiteRed`Private`f$_)[topo1, __]]] :> 
+           HoldForm[LiteRed`Private`f$[topo1, "\[Ellipsis]"]]}, {1}], 
+        {HoldPattern[LiteRed`Private`x$:HoldForm[(LiteRed`Private`f$_)[topo1, 
+              ___]]] :> Button[LiteRed`Private`x$, 
+           (SelectionMove[ButtonNotebook[], All, GeneratedCell]; 
+             NotebookDelete[]; Information[Evaluate[LiteRed`Private`x$[[1,
+                0]]], LongForm -> False]; Print[TableForm[Cases[UpValues[
+                  topo1], HoldPattern[LiteRed`Private`a$_ :> 
+                    LiteRed`Private`b$_] /; MatchQ[LiteRed`Private`a$[[1,0]], 
+                   LiteRed`Private`x$[[1,0]]]] /. HoldPattern -> 
+                 HoldForm]]) & , Appearance -> "Frameless", 
+           BaseStyle -> "InformationLink"]}, {1}]], 5], 
+     DefaultBaseStyle -> "InfoGrid"]])
+topo1 /: jRules[topo1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jRules[topo1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0]"}]]
+topo1 /: jRules[topo1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jRules[topo1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0]"}]]
+topo1 /: jRules[topo1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 0, 0] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jRules[topo1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 0, 0]"}]]
+topo1 /: jRules[topo1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jRules[topo1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0]"}]]
+topo1 /: jRules[topo1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jRules[topo1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0]"}]]
+topo1 /: jRules[topo1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jRules[topo1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0]"}]]
+topo1 /: jRules[topo1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jRules[topo1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0]"}]]
+topo1 /: jRules[topo1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jRules[topo1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0]"}]]
+topo1 /: jRules[topo1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jRules[topo1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0]"}]]
+topo1 /: jRules[topo1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jRules[topo1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0]"}]]
+topo1 /: jRules[topo1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jRules[topo1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0]"}]]
+topo1 /: jRules[topo1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jRules[topo1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0]"}]]
+topo1 /: jRules[topo1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jRules[topo1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0]"}]]
+topo1 /: jsOrder[topo1] := {"np", "cp", "-ds", "-ns"}
+topo1 /: jsOrder[topo1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0] := 
+  {{-1, 1, 1, 1, 1, -1, -1, -1, -1, -1, -1, -1}, {-1, 0, 0, 0, 0, -1, -1, -1, 
+    -1, -1, -1, -1}, {0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, 
+   {0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0}, {0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 
+    0}, {1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 
+    0, 0}, {0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0, 0, 1, 0, 
+    0, 0, 0}, {0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0}, 
+   {0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0}, {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0}}
+topo1 /: jsOrder[topo1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0] := 
+  {{1, -1, 1, 1, 1, -1, -1, -1, -1, -1, -1, -1}, {0, -1, 0, 0, 0, -1, -1, -1, 
+    -1, -1, -1, -1}, {-1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, 
+   {0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0}, {0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 
+    0}, {0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 
+    0, 0}, {0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0, 0, 1, 0, 
+    0, 0, 0}, {0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0}, 
+   {0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0}, {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0}}
+topo1 /: jsOrder[topo1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0] := 
+  {{1, 1, -1, 1, 1, -1, -1, -1, -1, -1, -1, -1}, {0, 0, -1, 0, 0, -1, -1, -1, 
+    -1, -1, -1, -1}, {-1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, 
+   {0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, {0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 
+    0}, {0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 
+    0, 0}, {0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0, 0, 1, 0, 
+    0, 0, 0}, {0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0}, 
+   {0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0}, {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0}}
+topo1 /: jsOrder[topo1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0] := 
+  {{1, 1, 1, -1, 1, -1, -1, -1, -1, -1, -1, -1}, {0, 0, 0, -1, 0, -1, -1, -1, 
+    -1, -1, -1, -1}, {-1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, 
+   {0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, {0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 
+    0}, {0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 
+    0, 0}, {0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0, 0, 1, 0, 
+    0, 0, 0}, {0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0}, 
+   {0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0}, {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0}}
+topo1 /: jsOrder[topo1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0] := 
+  {{1, 1, 1, 1, -1, -1, -1, -1, -1, -1, -1, -1}, {0, 0, 0, 0, -1, -1, -1, -1, 
+    -1, -1, -1, -1}, {-1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, 
+   {0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, {0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 
+    0}, {0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 
+    0, 0}, {0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0, 0, 1, 0, 
+    0, 0, 0}, {0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0}, 
+   {0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0}, {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0}}
+topo1 /: jsOrder[topo1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0] := 
+  {{1, 1, 1, 1, 1, -1, -1, -1, -1, -1, -1, -1}, {0, 0, 0, 0, 0, -1, -1, -1, 
+    -1, -1, -1, -1}, {-1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, 
+   {0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, {0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 
+    0}, {0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 
+    0, 0}, {0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0, 0, 1, 0, 
+    0, 0, 0}, {0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0}, 
+   {0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0}, {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0}}
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1, 0] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1, 0]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1, 1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1, 1]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 1]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 0] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 0]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 0] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 0]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 1]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 1]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 0] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 0]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 0] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 0]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 1]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 0] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 0]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 1]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 1]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 0] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 0]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 0] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 0]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0]"}]]
+topo1 /: jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], 
+     "jSymmetries[topo1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"}]]
+topo1 /: LI[topo1] := Get[FileNameJoin[{BasisDirectory[topo1], "LI[topo1]"}]]
+topo1 /: LMs[topo1] := {p4, p5, p6}
+topo1 /: MappedSectors[topo1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], "MappedSectors[topo1]"}]]
+topo1 /: MIs[topo1] := Get[FileNameJoin[{BasisDirectory[topo1], 
+     "MIs[topo1]"}]]
+topo1 /: NDs[topo1] := 12
+topo1 /: NonZeroSectors[topo1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], "NonZeroSectors[topo1]"}]]
+topo1 /: Parameters[topo1] := {m2, u, z, d}
+topo1 /: PowerShifts[topo1] := {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+topo1 /: SectorsMappings[topo1] := 
+  {js[topo1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0] -> 
+    js[topo1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0], 
+   js[topo1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0] -> 
+    js[topo1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0], 
+   js[topo1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0] -> 
+    js[topo1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0], 
+   js[topo1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0] -> 
+    js[topo1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0], 
+   js[topo1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0] -> 
+    js[topo1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0], 
+   js[topo1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0] -> 
+    js[topo1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0], 
+   js[topo1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0] -> 
+    js[topo1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0], 
+   js[topo1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0] -> 
+    js[topo1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0], 
+   js[topo1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0] -> 
+    js[topo1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0], 
+   js[topo1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 0, 0] -> 
+    js[topo1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0], 
+   js[topo1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0] -> 
+    js[topo1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0], 
+   js[topo1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0] -> 
+    js[topo1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0]}
+topo1 /: SectorsPattern[topo1] := {___}
+topo1 /: SimpleSectors[topo1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], "SimpleSectors[topo1]"}]]
+topo1 /: SPs[topo1] := {sp[p1, p4], sp[p1, p5], sp[p1, p6], sp[p2, p4], 
+   sp[p2, p5], sp[p2, p6], sp[p4, p4], sp[p4, p5], sp[p4, p6], sp[p5, p5], 
+   sp[p5, p6], sp[p6, p6]}
+topo1 /: SR[topo1] := Get[FileNameJoin[{BasisDirectory[topo1], "SR[topo1]"}]]
+topo1 /: Toj[topo1] := 
+  {sp[p1, p4] -> (j[topo1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] - 
+      j[topo1, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0])/2, 
+   sp[p1, p5] -> (j[topo1, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] - 
+      j[topo1, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0])/2, 
+   sp[p1, p6] -> -1/2*(m2 - m2*u - z*j[topo1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+         0, 0] + u*z*j[topo1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] - 
+       z*j[topo1, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] + 
+       u*z*j[topo1, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] - 
+       2*z*j[topo1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0] + 
+       z*j[topo1, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0] - 
+       u*z*j[topo1, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0] + 
+       z*j[topo1, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0] - 
+       u*z*j[topo1, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0] + 
+       u*z*j[topo1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0] - 
+       u*z*j[topo1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1])/((-1 + u)*z), 
+   sp[p2, p4] -> (j[topo1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] - 
+      j[topo1, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0])/2, 
+   sp[p2, p5] -> (j[topo1, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] - 
+      j[topo1, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0])/2, 
+   sp[p2, p6] -> -1/2*(m2 - m2*u - z*j[topo1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+         0, 0] + u*z*j[topo1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] - 
+       z*j[topo1, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] + 
+       u*z*j[topo1, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] - 
+       2*z*j[topo1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0] + 
+       z*j[topo1, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0] - 
+       u*z*j[topo1, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0] + 
+       z*j[topo1, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0] - 
+       u*z*j[topo1, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0] + 
+       z*j[topo1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0] - 
+       z*j[topo1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1])/((-1 + u)*z), 
+   sp[p4, p4] -> j[topo1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 
+   sp[p4, p5] -> (-j[topo1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] - 
+      j[topo1, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] + 
+      j[topo1, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0])/2, 
+   sp[p4, p6] -> -1/2*(m2 - m2*u - z*j[topo1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+         0, 0] + u*z*j[topo1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] - 
+       z*j[topo1, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] + 
+       u*z*j[topo1, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] - 
+       z*j[topo1, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0] + 
+       u*z*j[topo1, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0] - 
+       2*z*j[topo1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0] + 
+       z*j[topo1, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0] - 
+       u*z*j[topo1, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0] + 
+       z*j[topo1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0] - 
+       u*z*j[topo1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1])/((-1 + u)*z), 
+   sp[p5, p5] -> j[topo1, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 
+   sp[p5, p6] -> -1/2*(m2 - m2*u + j[topo1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+        0] - u*j[topo1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] + 
+       j[topo1, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] - 
+       u*j[topo1, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] + 
+       j[topo1, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0] - 
+       u*j[topo1, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0] - 
+       2*j[topo1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0] + 
+       u*j[topo1, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0] - 
+       j[topo1, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0] - 
+       j[topo1, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0] + 
+       u*j[topo1, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0] + 
+       u*j[topo1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0] - 
+       j[topo1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1])/(-1 + u), 
+   sp[p6, p6] -> j[topo1, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0]}
+topo1 /: UniqueSectors[topo1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], "UniqueSectors[topo1]"}]]
+topo1 /: ZerojRule[topo1] := LiteRed`Private`jjj:j[topo1, __] :> 
+   0 /; Module[{LiteRed`Private`jjs = 
+       Rest[List @@ jSector[LiteRed`Private`jjj]]}, 
+     Or @@ (BitOr[LiteRed`Private`jjs, #1] === #1 & ) /@ 
+       {{1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1}, {1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 
+         1, 1}, {1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1}, {1, 0, 1, 1, 1, 1, 1, 
+         1, 1, 1, 1, 1}, {0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1}}]
+topo1 /: ZeroSectors[topo1] := 
+  Get[FileNameJoin[{BasisDirectory[topo1], "ZeroSectors[topo1]"}]]
+topo1 /: SectorsMappings[topo1, LiteRed`Private`ns$:(0 | 1)..] := 
+  Cases[SectorsMappings[topo1], HoldPattern[js[topo1, LiteRed`Private`ns$] -> 
+     _]]
+topo1::usage = "3-loop basis with 2 external momenta.\nUse Information[topo1] \
+to get basis summary.\nThis string can be redefined by setting \
+topo1::usage=\"\[Ellipsis]\""; Information[topo1, LongForm -> False]; 
+LiteRed`Private`CheckDefs[topo1]
+BasisDirectory[topo1]
