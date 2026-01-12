@@ -1,0 +1,23 @@
+ jobs:
+ - reduce_sectors:
+    conditional: true
+    reduce:
+     - {topologies: [topo223], sectors: [2687, 3199, 3679], r: 9, s: 4}
+     - {topologies: [topo224], sectors: [3711, 287, 319, 1311, 1343, 2335, 2367, 3359, 3391], r: 10, s: 5}
+     - {topologies: [topo225], sectors: [3711, 159, 223, 1183, 1247, 2207, 2271, 3231, 3295], r: 10, s: 5}
+    select_integrals:
+      select_mandatory_list:
+        - [topo223, toreduce/kira2reducetopo223.inc]
+        - [topo224, toreduce/kira2reducetopo224.inc]
+        - [topo225, toreduce/kira2reducetopo225.inc]
+    run_symmetries: true
+    run_initiate: true
+    run_triangular: false
+    run_firefly: true
+    run_back_substitution: false
+ - kira2math:
+    target:
+       - [topo223, toreduce/kira2reducetopo223.inc]
+       - [topo224, toreduce/kira2reducetopo224.inc]
+       - [topo225, toreduce/kira2reducetopo225.inc]
+    reconstruct_mass: false

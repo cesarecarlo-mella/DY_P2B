@@ -15,7 +15,7 @@
     run_triangular: false
     run_firefly: true
     run_back_substitution: false
- - kira2form:
+ - kira2math:
     target:
        - [&toponame1, &kira2reduce1]
        - [&toponame2, &kira2reduce2]
