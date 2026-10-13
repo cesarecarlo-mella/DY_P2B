@@ -1,0 +1,40 @@
+# Everything the pipeline writes. Re-create with: Scripts/make_channel.py --qgraf, steps 01-03 in each channel,
+# Families/collect_props.py, Families/pf_identities.wl.
+
+.DS_Store
+__pycache__/
+*.pyc
+
+# --- channels: Scripts/<group>/<P>/<P>_LO/ ---
+# QGRAF output and logs
+Scripts/*/*/*_LO/external/*.0.inc
+Scripts/*/*/*_LO/qgraf/qgraf.log
+Scripts/*/*/*_LO/run*.log
+# all files under tmp/ (the empty folder tree is kept through tmp/**/.gitkeep, steps 01-06 write into it)
+Scripts/*/*/*_LO/tmp/**
+!Scripts/*/*/*_LO/tmp/**/
+!Scripts/*/*/*_LO/tmp/**/.gitkeep
+# files generated in utils/ and scratch folders of the steps
+Scripts/*/*/*_LO/utils/03_complex_conj_diags.frm
+Scripts/*/*/*_LO/utils/sum_squared_diags.frm
+Scripts/*/*/*_LO/utils/contractPj.frm
+Scripts/*/*/*_LO/utils/tmp_fld/
+Scripts/*/*/*_LO/tmp_folder/
+
+# --- Families/: propagators, partial fractions, families ---
+Families/propagators/
+Families/circuits.m
+Families/allpfid.m
+Families/pfid_sets.m
+Families/pfid_squared.m
+Families/partial_fraction/
+Families/families_raw.m
+Families/tails.m
+Families/tailFamily.m
+Families/Families.m
+Families/cover_problem.m
+Families/cover_solution.m
+Families/fams/
+Families/integralfamilies.rrr.m
+Families/family_origin.m
+Families/families_relabelling.m

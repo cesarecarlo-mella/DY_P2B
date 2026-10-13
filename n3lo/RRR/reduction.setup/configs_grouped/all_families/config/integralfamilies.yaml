@@ -1,0 +1,2812 @@
+integralfamilies:
+
+  - name: "topo1"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [1535, 2559, 3327, 3455]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r1 ", 0]
+     - [ " p1 + r2 ", 0]
+     - [ " p2 + r2 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " p1 + r1 + r3 ", 0]
+     - [ " p2 + r1 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo2"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [3583, 543, 575, 607, 639, 671, 735, 799, 831, 863, 895, 927, 991, 1567, 1631, 1695, 1759, 1823, 1887, 1951, 2015, 2591, 2623, 2655, 2687, 2847, 2879, 2911, 2943, 3615, 3679, 3871, 3935]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r1 ", 0]
+     - [ " p1 + r2 ", 0]
+     - [ " p2 + r2 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " p1 + r1 + r3 ", 0]
+     - [ " p1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo3"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [3583]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r1 ", 0]
+     - [ " p1 + r2 ", 0]
+     - [ " p2 + r2 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " p2 + r1 + r3 ", 0]
+     - [ " p2 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo5"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [2815, 3327, 3775]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r1 ", 0]
+     - [ " p1 + r2 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " p2 + r1 + r3 ", 0]
+     - [ " p2 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo6"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [1535, 2559, 3519, 3551]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r1 ", 0]
+     - [ " p1 + r2 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " p1 + r2 + r3 ", 0]
+     - [ " p2 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo7"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [767, 1663, 1759, 2303, 2751, 3199, 3295, 3647, 3743]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r1 ", 0]
+     - [ " p1 + r2 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " p1 + r1 + r2 ", 0]
+     - [ " p2 + r1 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo9"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [3327, 3519, 3711, 3807, 3903, 3999]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r1 ", 0]
+     - [ " p1 + r2 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " p1 + r1 + r2 ", 0]
+     - [ " p2 + r1 + r3 ", 0]
+     - [ " p1 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo10"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [3327, 3519, 3711, 3807, 3903, 3999]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r1 ", 0]
+     - [ " p1 + r2 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " p1 + r1 + r2 ", 0]
+     - [ " p1 + r2 + r3 ", 0]
+     - [ " p1 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo11"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [3839, 287, 2335]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r1 ", 0]
+     - [ " p1 + r2 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " p1 + r1 + r3 ", 0]
+     - [ " p2 + r1 + r3 ", 0]
+     - [ " p1 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo12"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [3839]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r1 ", 0]
+     - [ " p1 + r2 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " p1 + r1 + r3 ", 0]
+     - [ " p1 + r2 + r3 ", 0]
+     - [ " p1 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo13"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [3839, 287, 319, 351, 383, 415, 447, 799, 831, 863, 895, 927, 959, 1311, 1343, 1439, 1471, 1823, 1855, 1951, 1983, 2335, 2367, 2399, 2431, 2463, 2495, 3359, 3391, 3487, 3519]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r1 ", 0]
+     - [ " p1 + r2 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p2 + r1 + r3 ", 0]
+     - [ " p2 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo14"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [3839, 4031]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r1 ", 0]
+     - [ " p1 + r2 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p2 + r1 + r3 ", 0]
+     - [ " p1 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo15"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [1535, 2559, 3519, 3551]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r1 ", 0]
+     - [ " p2 + r2 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " p1 + r2 + r3 ", 0]
+     - [ " p2 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo16"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [511, 1407, 1471, 2303, 2527, 3199, 3263, 3423, 3487]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r1 ", 0]
+     - [ " p2 + r2 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " p2 + r1 + r2 ", 0]
+     - [ " p1 + r1 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo17"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [3967, 159, 191, 223, 255, 415, 447, 479, 511, 671, 703, 927, 959, 1183, 1215, 1439, 1471, 1695, 1727, 1951, 1983, 2207, 2239, 2271, 2303, 2463, 2495, 2527, 2559, 3231, 3263, 3487, 3519]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r1 ", 0]
+     - [ " p2 + r2 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " p2 + r1 + r2 ", 0]
+     - [ " p2 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo18"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [3327, 3551, 3711, 3775, 3935, 3999]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r1 ", 0]
+     - [ " p2 + r2 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " p2 + r1 + r2 ", 0]
+     - [ " p1 + r1 + r3 ", 0]
+     - [ " p2 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo19"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [3327, 3551, 3711, 3775, 3935, 3999]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r1 ", 0]
+     - [ " p2 + r2 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " p2 + r1 + r2 ", 0]
+     - [ " p2 + r2 + r3 ", 0]
+     - [ " p2 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo20"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [3839, 287, 319, 351, 383, 415, 479, 799, 831, 863, 895, 927, 991, 1311, 1375, 1439, 1503, 1823, 1887, 1951, 2015, 2335, 2367, 2399, 2431, 2463, 2527, 3359, 3423, 3487, 3551]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r1 ", 0]
+     - [ " p2 + r2 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p1 + r1 + r3 ", 0]
+     - [ " p1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo21"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [3839, 4063]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r1 ", 0]
+     - [ " p2 + r2 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p1 + r1 + r3 ", 0]
+     - [ " p2 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo22"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [3839, 287, 2335]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r1 ", 0]
+     - [ " p2 + r2 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " p1 + r1 + r3 ", 0]
+     - [ " p2 + r1 + r3 ", 0]
+     - [ " p2 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo23"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [3839]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r1 ", 0]
+     - [ " p2 + r2 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " p2 + r1 + r3 ", 0]
+     - [ " p2 + r2 + r3 ", 0]
+     - [ " p2 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo24"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [1535, 2559, 3519, 3551]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r1 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " p1 + r2 + r3 ", 0]
+     - [ " p2 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo25"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [3327, 3711, 3807]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r1 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " p1 + r1 + r3 ", 0]
+     - [ " p1 + r2 + r3 ", 0]
+     - [ " p1 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo26"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [3455, 3711, 3903]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r1 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " p2 + r1 + r3 ", 0]
+     - [ " p2 + r2 + r3 ", 0]
+     - [ " p2 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo27"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [3839, 4031]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r1 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " p1 + r1 + r2 ", 0]
+     - [ " p1 + r2 + r3 ", 0]
+     - [ " p1 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo28"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [3967]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r1 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p1 + r1 + r2 ", 0]
+     - [ " p1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo29"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [3967]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r1 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p1 + r1 + r2 ", 0]
+     - [ " p2 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo30"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [2943, 3711, 3903]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r1 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " p1 + r1 + r2 ", 0]
+     - [ " p2 + r1 + r3 ", 0]
+     - [ " p2 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo32"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [3583, 3839, 799, 831, 863, 895, 2847, 2879, 2911]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r1 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p1 + r1 + r2 ", 0]
+     - [ " p2 + r1 + r2 ", 0]
+     - [ " p1 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo33"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [3071, 3839, 1311, 1343, 1375, 1407, 3359, 3391, 3423]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r1 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p1 + r1 + r2 ", 0]
+     - [ " p2 + r1 + r2 ", 0]
+     - [ " p2 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo34"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [3839]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r1 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p2 + r1 + r2 ", 0]
+     - [ " p2 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo35"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [2815, 3711, 3807]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r1 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " p2 + r1 + r2 ", 0]
+     - [ " p1 + r1 + r3 ", 0]
+     - [ " p1 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo36"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [3967, 4063]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r1 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " p2 + r1 + r2 ", 0]
+     - [ " p2 + r2 + r3 ", 0]
+     - [ " p2 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo47"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [3839, 287, 319, 351, 415, 447, 479, 799, 831, 927, 959, 1311, 1375, 1439, 1503, 2335, 2367, 2399, 2463, 2495, 2527, 2847, 2879, 2975, 3007, 3359, 3423, 3487, 3551]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p1 + r2 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " p1 + r1 + r3 ", 0]
+     - [ " p2 + r1 + r3 ", 0]
+     - [ " p1 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo49"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [895, 1855, 1887, 2431, 2687, 3391, 3423, 3647, 3679]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p1 + r2 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p1 + r1 + r2 ", 0]
+     - [ " p2 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo50"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [2559, 3007, 3039]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p1 + r2 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p1 + r1 + r2 ", 0]
+     - [ " p2 + r1 + r3 ", 0]
+     - [ " p1 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo52"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [2559, 3007, 3039, 3455, 3903, 3935, 1183, 1247, 3231, 3295]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p1 + r2 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r1 + r3 ", 0]
+     - [ " p1 + r1 + r2 ", 0]
+     - [ " p2 + r1 + r3 ", 0]
+     - [ " p1 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo54"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [511, 1407, 1503, 2303, 2495, 3199, 3295, 3391, 3487]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r2 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " p1 + r1 + r3 ", 0]
+     - [ " p2 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo55"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [767, 1663, 1759, 2303, 2751, 3199, 3295, 3647, 3743]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r2 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p1 + r1 + r3 ", 0]
+     - [ " p2 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo56"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [2815, 3711, 3807]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r2 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p1 + r1 + r3 ", 0]
+     - [ " p1 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo57"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [3327, 3711, 3807]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r2 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " p1 + r1 + r3 ", 0]
+     - [ " p1 + r2 + r3 ", 0]
+     - [ " p1 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo59"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [3583, 3839, 799, 927, 2847, 2975]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r2 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " p1 + r2 + r3 ", 0]
+     - [ " p2 + r2 + r3 ", 0]
+     - [ " p1 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo60"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [767, 1279, 1759, 2687, 2751, 3199, 3263, 3679, 3743]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r2 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " r1 + r3 ", 0]
+     - [ " p1 + r1 + r3 ", 0]
+     - [ " p2 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo61"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [2943, 3711, 3903]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r2 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r1 + r3 ", 0]
+     - [ " p2 + r2 + r3 ", 0]
+     - [ " p2 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo62"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [3071, 3839, 1311, 1439, 3359, 3487]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r2 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " p1 + r1 + r3 ", 0]
+     - [ " p2 + r1 + r3 ", 0]
+     - [ " p2 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo64"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [2943, 3711, 3903]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r2 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " p2 + r1 + r3 ", 0]
+     - [ " p2 + r2 + r3 ", 0]
+     - [ " p2 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo65"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [2815, 3007, 3711, 3807, 1311, 1439, 1823, 1951, 3359, 3487, 3871]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r2 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " p1 + r1 + r3 ", 0]
+     - [ " p1 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo66"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [2943, 3039, 3711, 3807, 3903, 1439, 1951, 3487]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r2 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " p2 + r2 + r3 ", 0]
+     - [ " p2 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo68"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [2015, 63, 127, 191, 319, 383, 447, 575, 639, 703, 831, 895, 959, 1087, 1151, 1215, 1343, 1407, 1471, 2079, 2111, 2143, 2175, 2335, 2367, 2591, 2623, 2655, 2687, 2847, 2879, 3103, 3135, 3167, 3199, 3359, 3391, 3615, 3679, 3871]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r2 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " p1 + r1 + r2 ", 0]
+     - [ " p2 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo69"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [3455, 3519, 3775, 3935, 3999, 639, 1663, 2687]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r2 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " p1 + r1 + r2 ", 0]
+     - [ " p1 + r1 + r3 ", 0]
+     - [ " p1 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo70"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [3455, 3519, 3711, 3775, 3935, 3999]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r2 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " p1 + r1 + r2 ", 0]
+     - [ " p2 + r2 + r3 ", 0]
+     - [ " p1 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo71"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [1983, 95, 127, 223, 255, 351, 479, 607, 639, 735, 767, 863, 991, 1119, 1151, 1247, 1279, 1375, 1503, 2079, 2111, 2143, 2175, 2207, 2271, 2591, 2623, 2655, 2687, 2719, 2783, 3103, 3135, 3167, 3199, 3231, 3295, 3615, 3647, 3743]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r2 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " p2 + r1 + r2 ", 0]
+     - [ " p1 + r1 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo73"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [3455, 3551, 3711, 3807, 3903, 3999]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r2 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " p2 + r1 + r2 ", 0]
+     - [ " p1 + r1 + r3 ", 0]
+     - [ " p2 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo74"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [3455, 3551, 3807, 3903, 3999, 639, 1663, 2687]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r2 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " p2 + r1 + r2 ", 0]
+     - [ " p2 + r2 + r3 ", 0]
+     - [ " p2 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo75"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [2943, 3711, 3903]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r2 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " r1 + r3 ", 0]
+     - [ " p2 + r2 + r3 ", 0]
+     - [ " p2 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo76"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [895, 1407, 1887, 2687, 2879, 3199, 3391, 3679, 3871]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r2 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " r1 + r3 ", 0]
+     - [ " p1 + r1 + r3 ", 0]
+     - [ " p2 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo77"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [2943, 3455, 3935]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r2 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " r1 + r3 ", 0]
+     - [ " p1 + r1 + r3 ", 0]
+     - [ " p1 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo80"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [1791, 3327, 3807]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r2 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " r1 + r3 ", 0]
+     - [ " p1 + r1 + r2 ", 0]
+     - [ " p1 + r1 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo81"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [3967]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r2 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r1 + r3 ", 0]
+     - [ " p1 + r1 + r2 ", 0]
+     - [ " p2 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo82"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [2943, 3711, 3903]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r2 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " p1 + r1 + r2 ", 0]
+     - [ " p2 + r2 + r3 ", 0]
+     - [ " p2 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo86"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [3839, 287, 319, 351, 383, 1311, 1343, 1375, 1407, 2335, 2367, 2399, 2431, 3359, 3391, 3423, 3455]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r2 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p1 + r1 + r2 ", 0]
+     - [ " p2 + r1 + r2 ", 0]
+     - [ " p2 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo87"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [1791, 3327, 3775]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r2 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p2 + r1 + r2 ", 0]
+     - [ " p2 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo88"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [2815, 3711, 3807]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r2 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " p2 + r1 + r2 ", 0]
+     - [ " p1 + r1 + r3 ", 0]
+     - [ " p1 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo93"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [3455, 3903, 3935]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p1 + r1 + r3 ", 0]
+     - [ " p2 + r2 + r3 ", 0]
+     - [ " p1 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo94"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [3519, 3903, 671, 703, 1695, 1727, 2719, 2751, 3743]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r1 + r3 ", 0]
+     - [ " p2 + r1 + r3 ", 0]
+     - [ " p2 + r2 + r3 ", 0]
+     - [ " p2 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo95"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [3007, 3775, 3903]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p2 + r1 + r3 ", 0]
+     - [ " p2 + r2 + r3 ", 0]
+     - [ " p2 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo96"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [3007, 3519, 3903, 95, 351, 607, 863, 2143, 2399, 2655, 2911]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p2 + r2 + r3 ", 0]
+     - [ " p2 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo97"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [959, 1727, 1951, 2495, 2879, 3263, 3487, 3647, 3871]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p1 + r1 + r2 ", 0]
+     - [ " p2 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo98"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [2559, 2943, 3039, 3807]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p1 + r1 + r2 ", 0]
+     - [ " p2 + r1 + r3 ", 0]
+     - [ " p1 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo99"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [2559, 2943, 3039, 3519, 3903, 3999]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p1 + r1 + r2 ", 0]
+     - [ " p2 + r2 + r3 ", 0]
+     - [ " p1 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo100"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [2559, 3007, 3039]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " p2 + r1 + r2 ", 0]
+     - [ " p1 + r1 + r3 ", 0]
+     - [ " p2 + r1 + r3 ", 0]
+     - [ " p1 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo101"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [3519, 3775, 3999]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " r1 + r3 ", 0]
+     - [ " p1 + r1 + r3 ", 0]
+     - [ " p2 + r2 + r3 ", 0]
+     - [ " p1 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo102"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [3007, 3775, 3903]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p1 + r1 + r2 ", 0]
+     - [ " p2 + r2 + r3 ", 0]
+     - [ " p2 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo103"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [3007, 3775, 3903]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r1 + r3 ", 0]
+     - [ " p1 + r1 + r2 ", 0]
+     - [ " p2 + r1 + r3 ", 0]
+     - [ " p2 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo147"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [3839]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p2 + r1 ", 0]
+     - [ " p1 + r2 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r1 + r3 ", 0]
+     - [ " p2 + r1 + r2 ", 0]
+     - [ " p1 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo154"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [767, 1727, 1759, 2303, 2687, 3263, 3295, 3647, 3679]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p2 + r1 ", 0]
+     - [ " p2 + r2 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p2 + r1 + r2 ", 0]
+     - [ " p1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo155"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [2559, 3007, 3039]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p2 + r1 ", 0]
+     - [ " p2 + r2 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p2 + r1 + r2 ", 0]
+     - [ " p1 + r1 + r3 ", 0]
+     - [ " p2 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo157"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [2559, 3007, 3039, 3455, 3903, 3935, 1183, 1247, 3231, 3295]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p2 + r1 ", 0]
+     - [ " p2 + r2 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " r1 + r3 ", 0]
+     - [ " p2 + r1 + r2 ", 0]
+     - [ " p1 + r1 + r3 ", 0]
+     - [ " p2 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo160"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [3455, 3903, 607, 639, 1631, 1663, 2655, 2687, 3679]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p2 + r1 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r1 + r3 ", 0]
+     - [ " p1 + r1 + r3 ", 0]
+     - [ " p1 + r2 + r3 ", 0]
+     - [ " p1 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo161"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [2943, 3711, 3903]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p2 + r1 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p1 + r1 + r3 ", 0]
+     - [ " p1 + r2 + r3 ", 0]
+     - [ " p1 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo162"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [3519, 3903, 3999]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p2 + r1 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p2 + r1 + r3 ", 0]
+     - [ " p1 + r2 + r3 ", 0]
+     - [ " p2 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo163"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [2943, 3455, 3903]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p2 + r1 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p1 + r2 + r3 ", 0]
+     - [ " p1 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo164"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [2559, 3519, 3551]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p2 + r1 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " p1 + r1 + r2 ", 0]
+     - [ " p1 + r1 + r3 ", 0]
+     - [ " p2 + r1 + r3 ", 0]
+     - [ " p2 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo165"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [895, 1663, 1887, 2431, 2879, 3199, 3423, 3647, 3871]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p2 + r1 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p2 + r1 + r2 ", 0]
+     - [ " p1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo166"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [2559, 2943, 3039]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p2 + r1 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p2 + r1 + r2 ", 0]
+     - [ " p1 + r1 + r3 ", 0]
+     - [ " p2 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo167"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [2559, 2943, 3039, 3519, 3903, 3999]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p2 + r1 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p2 + r1 + r2 ", 0]
+     - [ " p1 + r2 + r3 ", 0]
+     - [ " p2 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo168"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [3519, 3775, 3999]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p2 + r1 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " r1 + r3 ", 0]
+     - [ " p2 + r1 + r3 ", 0]
+     - [ " p1 + r2 + r3 ", 0]
+     - [ " p2 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo169"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [2943, 3711, 3903]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p2 + r1 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p2 + r1 + r2 ", 0]
+     - [ " p1 + r2 + r3 ", 0]
+     - [ " p1 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo170"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [2943, 3711, 3903]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p2 + r1 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r1 + r3 ", 0]
+     - [ " p2 + r1 + r2 ", 0]
+     - [ " p1 + r1 + r3 ", 0]
+     - [ " p1 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo182"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [3839]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r2 ", 0]
+     - [ " p2 + r2 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r1 + r3 ", 0]
+     - [ " p2 + r1 + r2 ", 0]
+     - [ " p1 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo192"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [2559, 3519, 3551]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r2 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " p2 + r1 + r2 ", 0]
+     - [ " p2 + r1 + r3 ", 0]
+     - [ " p1 + r2 + r3 ", 0]
+     - [ " p1 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo201"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [2559, 3519, 3551]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p2 + r2 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " p1 + r1 + r2 ", 0]
+     - [ " p1 + r1 + r3 ", 0]
+     - [ " p2 + r2 + r3 ", 0]
+     - [ " p2 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo207"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [2559, 3455, 3551]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p2 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p1 + r1 + r2 ", 0]
+     - [ " p1 + r1 + r3 ", 0]
+     - [ " p2 + r2 + r3 ", 0]
+     - [ " p2 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo208"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [2559, 3455, 3551, 543, 575, 671, 703, 1567, 1599, 1695, 2591, 2623, 2719, 2751, 3615, 3647, 3743]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p2 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " r1 + r3 ", 0]
+     - [ " p1 + r1 + r2 ", 0]
+     - [ " p1 + r1 + r3 ", 0]
+     - [ " p2 + r1 + r3 ", 0]
+     - [ " p2 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo209"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [2559, 3455, 3551]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p2 + r1 + r2 ", 0]
+     - [ " p2 + r1 + r3 ", 0]
+     - [ " p1 + r2 + r3 ", 0]
+     - [ " p1 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo210"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [2559, 2943, 3039, 1055, 1087, 1183, 1215, 1567, 1599, 1695, 3103, 3135, 3231, 3263, 3615, 3647, 3743]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " r1 + r3 ", 0]
+     - [ " p2 + r1 + r2 ", 0]
+     - [ " p1 + r1 + r3 ", 0]
+     - [ " p2 + r1 + r3 ", 0]
+     - [ " p1 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo211"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [1279, 2303, 3199]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r1 ", 0]
+     - [ " p1 + r2 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo212"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [1279, 2303, 3199]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r1 ", 0]
+     - [ " p2 + r2 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p2 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo213"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [1663, 2687, 3199, 3679]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r1 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p1 + r1 + r3 ", 0]
+     - [ " p1 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo214"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [1663, 2687, 3199, 3647]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r1 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p2 + r1 + r3 ", 0]
+     - [ " p2 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo216"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [1727, 2687, 3199, 3263, 3647]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p1 + r2 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p1 + r2 + r3 ", 0]
+     - [ " p2 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo218"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [1663, 2751, 3199, 3263, 3647]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r2 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p1 + r2 + r3 ", 0]
+     - [ " p2 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo219"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [3903, 95, 127, 159, 415, 607, 639, 671, 927, 1119, 1151, 2143, 2175, 2207, 2463, 2655, 2687, 2719, 2975, 3167, 3199]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r2 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p2 + r2 + r3 ", 0]
+     - [ " r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo220"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [2687, 3199, 3647]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r2 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p2 + r2 + r3 ", 0]
+     - [ " p1 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo221"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [1759, 2687, 3199, 3295, 3679]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r2 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " r1 + r3 ", 0]
+     - [ " p1 + r1 + r3 ", 0]
+     - [ " p2 + r1 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo222"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [3935, 63, 127, 159, 415, 575, 639, 671, 927, 1087, 1151, 2111, 2175, 2207, 2463, 2623, 2687, 2719, 2975, 3135, 3199]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r2 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " r1 + r3 ", 0]
+     - [ " p1 + r1 + r3 ", 0]
+     - [ " r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo223"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [2687, 3199, 3679]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r2 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " r1 + r3 ", 0]
+     - [ " p1 + r1 + r3 ", 0]
+     - [ " p2 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo224"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [3711, 287, 319, 1311, 1343, 2335, 2367, 3359, 3391]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r2 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r1 + r3 ", 0]
+     - [ " p2 + r2 + r3 ", 0]
+     - [ " r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo225"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [3711, 159, 223, 1183, 1247, 2207, 2271, 3231, 3295]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r2 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p1 + r1 + r3 ", 0]
+     - [ " r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo226"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [3519, 543, 575, 671, 703, 799, 927, 1567, 1599, 2591, 2623, 2719, 2751, 2847, 2975, 3615, 3647]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p2 + r2 + r3 ", 0]
+     - [ " r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo227"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [2943, 3039, 191, 255, 1055, 1119, 1183, 1247, 2239, 2303, 3103, 3167, 3231, 3295]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p1 + r1 + r2 ", 0]
+     - [ " p2 + r1 + r3 ", 0]
+     - [ " r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo228"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [2303, 2687, 2783]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p1 + r1 + r2 ", 0]
+     - [ " p2 + r1 + r3 ", 0]
+     - [ " p2 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo229"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [1279, 1663, 1759]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p1 + r1 + r2 ", 0]
+     - [ " p2 + r1 + r2 ", 0]
+     - [ " p2 + r1 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo230"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [1279, 1663, 1759]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p1 + r1 + r2 ", 0]
+     - [ " p2 + r1 + r2 ", 0]
+     - [ " p2 + r1 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo231"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [2687, 2879, 2911]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p1 + r1 + r2 ", 0]
+     - [ " p2 + r1 + r2 ", 0]
+     - [ " p2 + r1 + r3 ", 0]
+     - [ " p1 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo232"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [2687, 2879, 2911]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p1 + r1 + r2 ", 0]
+     - [ " p2 + r1 + r2 ", 0]
+     - [ " p2 + r1 + r3 ", 0]
+     - [ " p2 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo233"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [3903]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " r1 + r3 ", 0]
+     - [ " p2 + r2 + r3 ", 0]
+     - [ " r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo234"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [2911, 3391, 3647, 3679, 3871]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " r1 + r3 ", 0]
+     - [ " p1 + r1 + r3 ", 0]
+     - [ " p2 + r1 + r3 ", 0]
+     - [ " p1 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo235"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [2911, 3391, 3647, 3679, 3871]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r1 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " r1 + r3 ", 0]
+     - [ " p1 + r1 + r3 ", 0]
+     - [ " p2 + r1 + r3 ", 0]
+     - [ " p2 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo245"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [1663, 2751, 3199, 3263, 3647]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p2 + r1 ", 0]
+     - [ " p2 + r2 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p1 + r2 + r3 ", 0]
+     - [ " p2 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo247"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [3455, 543, 575, 607, 639, 1567, 1599, 2591, 2623, 2655, 2687, 3615, 3647]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p2 + r1 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p1 + r2 + r3 ", 0]
+     - [ " r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo248"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [767, 1663, 1759]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p2 + r1 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p1 + r1 + r2 ", 0]
+     - [ " p2 + r1 + r2 ", 0]
+     - [ " p1 + r1 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo249"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [767, 1663, 1759]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p2 + r1 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p1 + r1 + r2 ", 0]
+     - [ " p2 + r1 + r2 ", 0]
+     - [ " p1 + r1 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo250"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [2431, 2879, 2911]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p2 + r1 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p1 + r1 + r2 ", 0]
+     - [ " p2 + r1 + r2 ", 0]
+     - [ " p1 + r1 + r3 ", 0]
+     - [ " p1 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo251"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [2431, 2879, 2911]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p2 + r1 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p1 + r1 + r2 ", 0]
+     - [ " p2 + r1 + r2 ", 0]
+     - [ " p1 + r1 + r3 ", 0]
+     - [ " p2 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo252"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [2943, 3039, 191, 255, 1055, 1119, 1183, 1247, 2239, 2303, 3103, 3167, 3231, 3295]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p2 + r1 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p2 + r1 + r2 ", 0]
+     - [ " p1 + r1 + r3 ", 0]
+     - [ " r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo253"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [2303, 2687, 2783]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p2 + r1 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p2 + r1 + r2 ", 0]
+     - [ " p1 + r1 + r3 ", 0]
+     - [ " p1 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo254"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [3903]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p2 + r1 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " r1 + r3 ", 0]
+     - [ " p1 + r2 + r3 ", 0]
+     - [ " r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo255"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [2879, 3423, 3647, 3679, 3871]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p2 + r1 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " r1 + r3 ", 0]
+     - [ " p1 + r1 + r3 ", 0]
+     - [ " p2 + r1 + r3 ", 0]
+     - [ " p1 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo256"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [2879, 3423, 3647, 3679, 3871]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p2 + r1 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " r1 + r3 ", 0]
+     - [ " p1 + r1 + r3 ", 0]
+     - [ " p2 + r1 + r3 ", 0]
+     - [ " p2 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo259"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [1663, 2687, 3199, 3679]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r2 ", 0]
+     - [ " p2 + r2 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r1 + r3 ", 0]
+     - [ " p1 + r1 + r2 ", 0]
+     - [ " p1 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo260"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [1663, 2687, 3199, 3647]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r2 ", 0]
+     - [ " p2 + r2 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r1 + r3 ", 0]
+     - [ " p2 + r1 + r2 ", 0]
+     - [ " p2 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo262"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [2303, 2687, 2783]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r2 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p1 + r1 + r2 ", 0]
+     - [ " p2 + r1 + r3 ", 0]
+     - [ " r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo263"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [2303, 2687, 2783]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r2 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p1 + r1 + r2 ", 0]
+     - [ " p2 + r1 + r3 ", 0]
+     - [ " p2 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo264"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [1279, 1663, 1759]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r2 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p1 + r1 + r2 ", 0]
+     - [ " p2 + r1 + r2 ", 0]
+     - [ " p2 + r1 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo265"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [1279, 1663, 1759]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r2 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p1 + r1 + r2 ", 0]
+     - [ " p2 + r1 + r2 ", 0]
+     - [ " p2 + r1 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo266"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [2687, 2879, 2911]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r2 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p1 + r1 + r2 ", 0]
+     - [ " p2 + r1 + r2 ", 0]
+     - [ " p2 + r1 + r3 ", 0]
+     - [ " p1 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo267"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [2687, 2879, 2911]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r2 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p1 + r1 + r2 ", 0]
+     - [ " p2 + r1 + r2 ", 0]
+     - [ " p2 + r1 + r3 ", 0]
+     - [ " p2 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo271"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [3007]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r2 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r1 + r3 ", 0]
+     - [ " p1 + r1 + r2 ", 0]
+     - [ " p2 + r1 + r3 ", 0]
+     - [ " r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo273"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [767, 1663, 1759]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p2 + r2 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p1 + r1 + r2 ", 0]
+     - [ " p2 + r1 + r2 ", 0]
+     - [ " p1 + r1 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo274"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [767, 1663, 1759]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p2 + r2 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p1 + r1 + r2 ", 0]
+     - [ " p2 + r1 + r2 ", 0]
+     - [ " p1 + r1 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo275"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [2431, 2879, 2911]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p2 + r2 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p1 + r1 + r2 ", 0]
+     - [ " p2 + r1 + r2 ", 0]
+     - [ " p1 + r1 + r3 ", 0]
+     - [ " p1 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo276"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [2431, 2879, 2911]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p2 + r2 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p1 + r1 + r2 ", 0]
+     - [ " p2 + r1 + r2 ", 0]
+     - [ " p1 + r1 + r3 ", 0]
+     - [ " p2 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo277"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [2303, 2687, 2783]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p2 + r2 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p2 + r1 + r2 ", 0]
+     - [ " p1 + r1 + r3 ", 0]
+     - [ " r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo278"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [2303, 2687, 2783]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p2 + r2 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " r2 + r3 ", 0]
+     - [ " p2 + r1 + r2 ", 0]
+     - [ " p1 + r1 + r3 ", 0]
+     - [ " p1 + r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo282"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [2943]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p2 + r2 ", 0]
+     - [ " p1 + r3 ", 0]
+     - [ " p2 + r3 ", 0]
+     - [ " r1 + r3 ", 0]
+     - [ " p2 + r1 + r2 ", 0]
+     - [ " p1 + r1 + r3 ", 0]
+     - [ " r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo283"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [2559]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p2 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " r1 + r3 ", 0]
+     - [ " p1 + r1 + r2 ", 0]
+     - [ " p1 + r1 + r3 ", 0]
+     - [ " p2 + r1 + r3 ", 0]
+     - [ " r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]
+
+
+  - name: "topo284"
+    loop_momenta: [ r1, r2, r3]
+    top_level_sectors: [2559]
+    propagators:
+     - [ " r1 ", 0]
+     - [ " r2 ", 0]
+     - [ " r3 ", 0]
+     - [ " p1+p2+r1+r2+r3 ", m2]
+     - { bilinear: [ [" - p1 - p2 - r1 - r2 - r3","-p1 + u*p2"], 0 ] }
+     - [ " p1 + r3 ", 0]
+     - [ " r1 + r2 ", 0]
+     - [ " r1 + r3 ", 0]
+     - [ " p2 + r1 + r2 ", 0]
+     - [ " p1 + r1 + r3 ", 0]
+     - [ " p2 + r1 + r3 ", 0]
+     - [ " r1 + r2 + r3 ", 0]
+    cut_propagators: [1,2,3,4,5]

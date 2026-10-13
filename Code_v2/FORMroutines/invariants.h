@@ -1,0 +1,37 @@
+*** do I need this first one??
+#procedure subinvariants3point
+id p1.p1 = 0;
+id p2.p2 = 0;
+id p1.p2 = m2/2;
+#endprocedure
+
+
+#procedure kin3point
+id q.p1 = -m2/2;
+id q.p2 = -m2/2;
+id q=-p1-p2;
+id p1.p2 = m2/2;
+#endprocedure
+
+#procedure kin4point
+id q=-p1-p2-r1;
+id p1.p2 = s12/2;
+#endprocedure
+
+#procedure kin5point
+id q=-p1-p2-r1-r2;
+id p1.p2 = s12/2;
+#endprocedure
+
+
+#procedure onshell
+id p1.p1 = 0;
+id p2.p2 = 0;
+#endprocedure
+
+
+#procedure onshellRadiation
+id r1.r1 = 0;
+id r2.r2 = 0;
+id r3.r3 = 0;
+#endprocedure
