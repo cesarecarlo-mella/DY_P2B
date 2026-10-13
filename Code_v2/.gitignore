@@ -1,5 +1,5 @@
 # Everything the pipeline writes. Re-create with: Scripts/make_channel.py --qgraf, steps 01-03 in each channel,
-# Families/collect_props.py, Families/pf_identities.wl.
+# Families/collect_props.py, Families/pf_identities.wl, families.py, family_rules.wl, isp_table.py, fammatch_table.py.
 
 .DS_Store
 __pycache__/
@@ -10,13 +10,17 @@ __pycache__/
 Scripts/*/*/*_LO/external/*.0.inc
 Scripts/*/*/*_LO/qgraf/qgraf.log
 Scripts/*/*/*_LO/run*.log
+Scripts/*/*/*_LO/run*.time
 # all files under tmp/ (the empty folder tree is kept through tmp/**/.gitkeep, steps 01-06 write into it)
 Scripts/*/*/*_LO/tmp/**
 !Scripts/*/*/*_LO/tmp/**/
 !Scripts/*/*/*_LO/tmp/**/.gitkeep
 # files generated in utils/ and scratch folders of the steps
 Scripts/*/*/*_LO/utils/03_complex_conj_diags.frm
-Scripts/*/*/*_LO/utils/sum_squared_diags.frm
+Scripts/*/*/*_LO/utils/sum_squared_diags*.frm
+Scripts/*/*/*_LO/utils/sum_squared_diags*.log
+Scripts/*/*/*_LO/utils/job_*/
+Scripts/*/*/*_LO/failed_jobs.txt
 Scripts/*/*/*_LO/utils/contractPj.frm
 Scripts/*/*/*_LO/utils/tmp_fld/
 Scripts/*/*/*_LO/tmp_folder/

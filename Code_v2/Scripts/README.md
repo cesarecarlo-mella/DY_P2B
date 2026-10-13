@@ -161,6 +161,9 @@ Folder name = `V` + 2 initial partons + 3 final partons, in the same order as th
         fams/symm_loop_crossings.inc (relabelling r1,r2,r3 only, no p1 <-> p2)
         families_relabelling.m: famDD, famProps (families as DD numbers / momenta), relabelling = {{FAM[a], rule, FAM[b]}},
         independentFamilies; check: AllTrue[relabelling, Sort[(#[[1]] /. famProps) /. #[[2]]] === Sort[#[[3]] /. famProps] &]
+    Families/isp_table.py       fams/fams<n>.inc as one FORM table ISP(n,k) (scalar product k of family n)   -> fams/isp_table.inc
+    Families/fammatch_table.py  fams/fammatch.inc as tables FAM<m>(k1..km) = family of the propagator set     -> fams/fammatch_table.inc
+        (run both after family_rules.wl; used by step 05 instead of trying the 909 / 22837 rules one by one, same output)
 
     Superseded: utils/run_collect_den.py, utils/collect_den.py, utils/show_den.frm (still in every channel).
         They need step-04 output (tmp/squared_diagrams), hardcode 5 x 5 groups and collect per group pair; replaced by Families/collect_props.py.
@@ -223,7 +226,6 @@ Open (FORM step cannot run yet):
 1. `FORMroutines/feynman_rules.h`: pol rules only for cut legs 93/91 (and gluon 89); missing for quark legs at 89 and for ghost legs.
 
 Minor:
-- `utils/template_sum_squared_diags.frm` (lines 44, 50): writes to `tmp/unreduced/vv/` for every coupling (aa, av, va too).
 - `utils/insert_reduction.frm`: still includes `../Vqq_LO/tmp/...` and `L1_4.inc` (not present).
 - `Code_v2/` not in git yet.
 
@@ -263,7 +265,7 @@ Minor:
   -> tmp/squared_diagrams/<name>/<name>_i_j.inc (16 per job, 0 when the combination does not occur, e.g. v2.. without a Q2 line).
   Before, only vv, aa, va, av were kept: the Q2 pieces were lost. A completeness check stops FORM (#terminate) if
   interf - sum(coupling x piece) != 0. ONLYVECTOR now also sets Ga = 0 (as before only the amplitude's axial couplings).
-  Steps 05/06 still read only vv (05) or vv, av, va, aa (06): to be extended.
+  Steps 05/06 extended to the 16 pieces (see below).
 - FORMroutines/feynman_rules.h: external-leg rules added for final quarks at r3 (leg 89: Quark, Qbar, Quark2, Qbar2 x Cut... ->
   Prop(cut,r3)) and ghosts (final ghost/Ghost x Cutghost/CutGhost -> Prop(cut,v), initial ghost/Ghost squared -> 1; no Lorentz part).
   Ghost sign (decided): NOT in the pipeline, applied at the very end when channels are combined:
@@ -298,9 +300,34 @@ Minor:
 - Per-pair checks done right (mu<->nu swap on one side only): H(i x j) = conj(H(j x i))^T in all pieces for the textbook
   process, Vqqbccbg 1x2, Vqqbqqbg 1x2 and the exchange pair 1x3. (An earlier "per-pair asymmetry" was a bug in my test.)
 - Steps 02-03 rerun in all 49 with the colour fix.
-  Still to do: timing for full groups (10 x 10), where to run (laptop one job at a time, or cluster FORM="tform -w.."), full runs.
+- Step 04 full run, VqqbQ2Q2bg (runner, 2 jobs): 9 pairs x 16 pieces OK, 2937 s CPU in total (~5 s per diagram product;
+  10x10 pairs 7-9 min), max 2 GB per job, 676 MB output. (Wall times of that run are meaningless: the laptop slept.)
+  Estimate all 49 channels: ~66 CPU h for step 04.
+- Steps 05/06 rewritten (so far ONLY in physical_qqbQ2Q2bg/VqqbQ2Q2bg; to be copied to the other 48 after review):
+  utils/05_run_contractPj.py: all non-zero pieces x group pairs; projector per piece: L1 (symmetric) for the parity-even
+    pieces vv, aa, vv2, aa2, v2v, a2a, v2v2, a2a2, L6 (epsilon) for the odd ones va, av, va2, av2, v2a, a2v, v2a2, a2v2
+    (other combinations vanish by parity, not computed); jobs in utils/job_<piece>_<PROJ>_<i_j>/ (log kept on failure,
+    exit 1); threads + main guard (macOS), FORM from $FORM; families from Code_v2/Families (FAMDIR), nothing copied.
+    Prompts: a/o/l (all, one by index, list), parallel jobs, debug (write intermediate expressions).
+  utils/template_contractPj.frm: piece/paths from the defines; generic Prop sign normalisation (hardcoded flips removed);
+    our 48 PF sets inside ONE repeat (an identity can recreate an earlier pattern; terminates: each removes a distinct
+    propagator); dens.inc, then exits if a Prop / cut Den is left; family by table lookup of the term's propagator set
+    (fammatch_table.inc), exit if a set is in no family / a term has no unique TOPO; numerators by the ISP table, one scalar
+    product per module (all powers at once); reconstruct.inc, exit if TOPO or any DD is left; CPU time in the messages.
+  utils/06_run_sum_contracted.py + template_sum_squared_diags.frm: every piece and projector, warns about missing pairs,
+    symm_loop_crossings.inc from Families, exit if a dependent family (left-hand side of the relabelling) is left;
+    output tmp/unreduced/<piece>/unreduced<PROJ>.ff and .m.
+  Tests (VqqbQ2Q2bg): numerical end-to-end check (scratch check05.py): step-04 piece x projector vs step-05 result, INT ->
+    product of the family's DD's, at random rational points on the cut surface (r_i^2 = 0, q^2 = m2 = 1, rapidity = 0, cut
+    propagators stripped, d, u, z numerical): identical for vv 3x3 (2 points), va 3x3 with L6 (2 points), vv 2x2 (10x10).
+    Table lookups and per-scalar-product ISP: byte-identical to the rule-by-rule version.
+    Step 06: relabelling applied (topo11 -> topo7, topo461 -> topo460, topo467 -> topo466), no dependent family left.
+  Timing, one piece (vv, L1): 3x3 (4x4 diagrams) 81 s -> 14 s; 10x10 pair 620 s -> 309 s (PF 17 s, dens + families 19 s,
+    numerators 120 s, reconstruct 108 s (sorting, a table lookup did not help), ratfun 33 s), 1.2 GB.
+    -> step 05 costs much more than step 04 (16 pieces per pair, ~5 min each for 10x10): to be optimised / planned.
 
-Next: reconstruct the integrals with the 909 families, symmetries in a second stage, then step 04 (kin6point, feynman_rules.h pol rules, Spin/SpinC trace rules, Q2 couplings in the vv/aa/va/av projections).
+Next: review steps 05/06 and copy them to all channels; reduce the cost of step 05; decide laptop vs cluster;
+combination stage (ghost -1, symmetry factors, flavour sums, p1 <-> p2 / C partners).
 
 ## Minimal set to compute (16 of 26)
 
