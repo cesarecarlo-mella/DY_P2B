@@ -18,26 +18,16 @@ id NfVExt =1;
 #message include output of colour_algebra and compute complex conjugated
 
 
-#do ii=1,100
-#do jj =1,100
-id T(a1?, i'ii', i'jj') = T(a1,ii'jj', ii'ii');
-id T(a1?, i'ii', j'jj') = T(a1, jj'jj', ii'ii');
-id T(a1?, j'ii', j'jj') = T(a1, jj'jj', jj'ii');
-id T(a1?, j'ii', i'jj') = T(a1, ii'jj', jj'ii');
-id T(a1?, ii99,ii1?) = T(a1, i99 , ii1);
-id T(a1?, ii97,ii1?) = T(a1, i97,ii1);
-id T(a1?, ii95,ii1?) = T(a1, i95 , ii1);
-id T(a1?, ii93,ii1?) = T(a1, i93,ii1);
-id T(a1?, ii91,ii1?) = T(a1, i91 , ii1);
-id T(a1?, ii89,ii1?) = T(a1, i89,ii1);
-id T(a1?, ii1?, ii99) = T(a1, ii1,i99);
-id T(a1?, ii1?, ii97) = T(a1, ii1, i97);
-id T(a1?, ii1?, ii95) = T(a1, ii1, i95);
-id T(a1?, ii1?, ii93) = T(a1, ii1, i93);
-id T(a1?, ii1?, ii91) = T(a1, ii1, i91);
-id T(a1?, ii1?, ii89) = T(a1, ii1, i89);
+* Complex conjugate of the colour factors: transpose every T exactly once, ((T^a)_{xy})* = (T^a)_{yx}, then give the
+* conjugate's internal quark colour indices new names (i -> ii, j -> jj); the external ones (i99 ... i89) are shared
+* with the amplitude. (The former 100 x 100 loop transposed a T with two external indices twice, i.e. not at all.)
+id T(a1?, i1?, i2?) = T(a1, i2, i1);
+.sort
+multiply replace_(i1,ii1, j1,jj1
+#do k = 2,88
+, i'k',ii'k', j'k',jj'k'
 #enddo
-#enddo
+);
 
 id a200 = aa200;
 id a110 = aa110;
@@ -134,6 +124,15 @@ id Spin(2) =1;
 
 id eps(?x) = - eps(?x);
 id i_ = -i_;
+.sort
+
+* Spin sums of final-state quarks/antiquarks: QGRAF momenta are incoming, so an outgoing (anti)quark with label r has
+* physical momentum -r and spin sum -r-slash, while the chain contains r-slash: factor -1 per final-state quark end
+* (old code: id Spin(1) = (-1)^('INITFIN'), INITFIN = 1 for one initial-final line).
+id pol(CutQuark(?a)) = -pol(CutQuark(?a));
+id pol(CutQbar(?a)) = -pol(CutQbar(?a));
+id pol(CutQuark2(?a)) = -pol(CutQuark2(?a));
+id pol(CutQbar2(?a)) = -pol(CutQbar2(?a));
 .sort
 
 #do loopind = 1,{&ngroups}

@@ -23,6 +23,11 @@ id q=-p1-p2-r1-r2;
 id p1.p2 = s12/2;
 #endprocedure
 
+#procedure kin6point
+id q=-p1-p2-r1-r2-r3;
+id p1.p2 = s12/2;
+#endprocedure
+
 
 #procedure onshell
 id p1.p1 = 0;

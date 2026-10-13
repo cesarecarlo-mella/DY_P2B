@@ -167,6 +167,8 @@ Folder name = `V` + 2 initial partons + 3 final partons, in the same order as th
         Their old output format (den/den_<i>_<j>.m) is what n3lo/RRR/Families_Identification/Triple_Real_Families.nb reads.
 
 Before running FORM: `source Code_v2/setenv.sh` (sets FORMPATH to Code_v2/FORMroutines; ~/.zshrc points elsewhere).
+Works on macOS and Linux (bash or zsh). FORM executable for the step runners: environment variable FORM, default `form`;
+on a cluster e.g. `export FORM="tform -w4"` (used by utils/04_run_4.py).
 
 ## Partial fractions: how the identities are found
 
@@ -218,8 +220,7 @@ Done:
   final-state pol check passes in all 49.
 
 Open (FORM step cannot run yet):
-1. `utils/4_square_ampl.frm:109` calls `kin6point`, not defined in `FORMroutines/invariants.h` (only kin3/4/5point).
-2. `FORMroutines/feynman_rules.h`: pol rules only for cut legs 93/91 (and gluon 89); missing for quark legs at 89 and for ghost legs.
+1. `FORMroutines/feynman_rules.h`: pol rules only for cut legs 93/91 (and gluon 89); missing for quark legs at 89 and for ghost legs.
 
 Minor:
 - `utils/template_sum_squared_diags.frm` (lines 44, 50): writes to `tmp/unreduced/vv/` for every coupling (aa, av, va too).
@@ -251,6 +252,53 @@ Minor:
 
 - Families redefined from scratch (user's choice): 909 families = 154 representatives + 755 copies; symm_loop_crossings.inc
   maps the 755 onto the 154 (all rules checked). Old notebook families no longer used (--keep-old restores them).
+
+- Step 04 fixes (one at a time): `kin6point` added to FORMroutines/invariants.h (q = -p1-p2-r1-r2-r3, p1.p2 = s12/2, as H_P2B);
+  utils/04_run_4.py (all 49) rewritten: ran only on Linux-style fork (crashed on macOS) and exited 0 on failures; now main guard,
+  one FORM process per job in utils/tmp_fld/tmp_i_j/ (log kept there on failure), exit code 1 if any job fails. Not run yet.
+- Step 04 coupling split (utils/4_square_ampl.frm, utils/04_run_4.py, all 49): the squared terms are split by the coupling of
+  the amplitude (gv, ga: V on the q line; Gv, Ga: V on the Q2 line) times the conjugate one (cgv, cga, cGv, cGa) into 16 pieces,
+  named amplitude + conjugate coupling with v, a, v2, a2 (v2, a2 = Gv, Ga):
+      vv  va  vv2  va2  /  av  aa  av2  aa2  /  v2v  v2a  v2v2  v2a2  /  a2v  a2a  a2v2  a2a2
+  -> tmp/squared_diagrams/<name>/<name>_i_j.inc (16 per job, 0 when the combination does not occur, e.g. v2.. without a Q2 line).
+  Before, only vv, aa, va, av were kept: the Q2 pieces were lost. A completeness check stops FORM (#terminate) if
+  interf - sum(coupling x piece) != 0. ONLYVECTOR now also sets Ga = 0 (as before only the amplitude's axial couplings).
+  Steps 05/06 still read only vv (05) or vv, av, va, aa (06): to be extended.
+- FORMroutines/feynman_rules.h: external-leg rules added for final quarks at r3 (leg 89: Quark, Qbar, Quark2, Qbar2 x Cut... ->
+  Prop(cut,r3)) and ghosts (final ghost/Ghost x Cutghost/CutGhost -> Prop(cut,v), initial ghost/Ghost squared -> 1; no Lorentz part).
+  Ghost sign (decided): NOT in the pipeline, applied at the very end when channels are combined:
+  sum_phys |M|^2 = sum_{-g} |M|^2 - sum_{ghost channels} |M_ghost|^2, i.e. every ghost channel (both orientations c cb and cb c,
+  already separate channels) enters once with a factor -1. QGRAF's overall (-1) per ghost amplitude squares to +1 and does
+  not provide it (it would only in a forward-scattering/cut-diagram approach, from the closed ghost loop).
+  utils/4_square_ampl.frm (all 49): stops (exit) if any pol(...) is left after the Feynman rules.
+- Step 04 tests (single FORM jobs on scratch copies, low priority): expression names X<name> (aa2 is a colour index in
+  all_header.h; files keep <name>). Feynman rules moved BEFORE the traces (polarisation sums / propagator d_ contracted inside
+  the traces): Vqqbccbg 2x2 groups 47 s -> 1 s; old vs new order identical in all 16 pieces for Vqqbccbg 2x2, Vgcqqbc 2x2
+  (initial ghost) and VqqbQ2Q2bg diagram 21 x 24 (two lines, Q2). VqqbQ2Q2bg groups 3x3 (4x4 diagrams): 69 s, all checks passed.
+- Sign of final-state quark spin sums (utils/template_03_complex_conj_diags.frm, all 49): QGRAF momenta are incoming, an outgoing
+  (anti)quark with label r has spin sum -r-slash; factor -1 per final-state quark/antiquark leg (generic version of the old
+  `id Spin(1) = (-1)^('INITFIN')` of Code/Scripts/Vqgq). Was missing in Code_v2. Checked on Vqcqcg: new conjugate = - old.
+  !! The existing step-03 outputs (Csum_*) of the channels with final-state quarks are stale: rerun steps 02-03 there.
+- Steps 02-03 rerun in all 49 channels with the sign (597 s, one channel at a time).
+- Total test on Code_v2 (Vqqbccbg regrouped, all 144 diagram pairs through step 04, 394 s one job at a time): total vv and aa
+  symmetric in mu95<->nu95, total va = conj(av) transposed (conjugation includes e_ -> -e_: gamma5 is written eps/6 without i).
+- COLOUR BUG fixed (utils/template_03_complex_conj_diags.frm, all 49): the 100x100 loop mapped the external indices back INSIDE
+  the loop, so a T with two external quark indices was transposed twice (= not conjugated). Now: one transposition of every T,
+  then renaming of the conjugate's internal quark colour indices (i->ii, j->jj, numbers < 89). Same faulty loop in the old
+  Code/ NNLO setups (Vqqbgg, Vqgqg, VqQqQ, VqQbqQb, Vqqbggg_template) and in H_P2B ggHqqb_lo, ccbHqqb_lo, but HARMLESS
+  there: their colour algebra never leaves a T with two external indices (f -> commutators with an internal j, four-quark
+  colour Fierzed into d_'s), checked on the stored diag/Cdiag files. Only T(a,i_x,i_y) with x < y was wrong (x > y was
+  transposed once). In Code_v2 it hit the 22 four-quark + gluon channels (VqqbQ2Q2bg, Vqqbqqbg, ... and partners).
+- Colour test after the fix (scratch, Vqqbqqbg, one diagram per group): the square of each single diagram has exactly
+  the colour factor (Nc^2-1)^2/(8 Nc) (gluon from a quark line: diagrams 1, 9, 16) or Nc (Nc^2-1)/4 (gluon from the
+  gluon: diagram 10), in the vv, aa, va, av pieces (checked at Nc = 2, 3, 4). Control: with the old loop diagram 10 fails.
+- Textbook check (scratch, q qb -> V g and q g -> V q, 2 diagrams each, bare tensor): -g.H = 8(1-eps) gs^2 C_F N_c
+  [(1-eps)(t/u+u/t) + 2 Q^2 s/(t u) - 2 eps] exactly, crossing with opposite constant (final-quark sign), positive in the
+  physical region, q_mu H^{mu nu} = 0. With the old loop the colour came out (Nc-1) instead of Nc^2-1.
+- Per-pair checks done right (mu<->nu swap on one side only): H(i x j) = conj(H(j x i))^T in all pieces for the textbook
+  process, Vqqbccbg 1x2, Vqqbqqbg 1x2 and the exchange pair 1x3. (An earlier "per-pair asymmetry" was a bug in my test.)
+- Steps 02-03 rerun in all 49 with the colour fix.
+  Still to do: timing for full groups (10 x 10), where to run (laptop one job at a time, or cluster FORM="tform -w.."), full runs.
 
 Next: reconstruct the integrals with the 909 families, symmetries in a second stage, then step 04 (kin6point, feynman_rules.h pol rules, Spin/SpinC trace rules, Q2 couplings in the vv/aa/va/av projections).
 

@@ -44,5 +44,17 @@ id pol(Qbar2(93,v?,i1?))*pol(CutQbar2(93,v?,i1?)) = Prop(cut,v);
 id pol(Quark2(93,v?,i1?))*pol(CutQuark2(93,v?,i1?)) = Prop(cut,v);
 id pol(Qbar2(91,v?,i1?))*pol(CutQbar2(91,v?,i1?)) = Prop(cut,v);
 id pol(Quark2(91,v?,i1?))*pol(CutQuark2(91,v?,i1?)) = Prop(cut,v);
+** final-state quarks at r3 (leg 89)
+id pol(Qbar(89,v?,i1?))*pol(CutQbar(89,v?,i1?)) = Prop(cut,v);
+id pol(Quark(89,v?,i1?))*pol(CutQuark(89,v?,i1?)) = Prop(cut,v);
+id pol(Qbar2(89,v?,i1?))*pol(CutQbar2(89,v?,i1?)) = Prop(cut,v);
+id pol(Quark2(89,v?,i1?))*pol(CutQuark2(89,v?,i1?)) = Prop(cut,v);
+** ghosts (scalar, no Lorentz structure; after parser.h: ghost(p, a)):
+** final state: on-shell cut as for the other final legs; initial state: 1.
+** The minus sign of the ghost subtraction is NOT put here (applied when channels are combined).
+id pol(ghost(v?,a1?))*pol(Cutghost(v?,a1?)) = Prop(cut,v);
+id pol(Ghost(v?,a1?))*pol(CutGhost(v?,a1?)) = Prop(cut,v);
+id pol(ghost(v?,a1?))*pol(ghost(v?,a1?)) = 1;
+id pol(Ghost(v?,a1?))*pol(Ghost(v?,a1?)) = 1;
 id pol(V(mu95,v?))*pol(CutV(nu95, v?)) = Prop(cut, -v, m2)*(-v.p2)*Den(cut, - v.p1 + u*v.p2);
 .sort
