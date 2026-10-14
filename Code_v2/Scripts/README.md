@@ -333,6 +333,10 @@ Minor:
   the 121 MB step-04 output). id ga(ti)*cga(tj) = 0, id Ga(ti)*cGa(tj) = 0 before the traces; the aa and a2a2 files are 0
   and step 05 skips them. COMBINATION: aa := vv, a2a2 := v2v2. The mixed aa2, a2a (gamma5 on two different lines) are
   kept. Tested on VqqbQ2Q2bg 3x3: aa, a2a2 = 0, the other 14 pieces byte-identical, 69 s -> 34 s.
+- Vqqbggg pair 1x1 (10x10), one job at a time (2026-10-14): step 04 41 min CPU (with aa), 1 GB, 121 MB output (aa 63 MB,
+  vv 30, va/av 16); step 05 vv 7 min, aa 15 min, va 11 min, av 12 min, max 2.7 GB. Numerical end-to-end check of step 05
+  (check05.py, random points on the cut surface): vv (2 points), va, av all IDENTICAL; vv uses 37 families.
+  Estimate with 100 jobs per machine and aa skipped: gluon channels ~2-2.5 h, quark channels ~4-5 h.
   Kept switchable (aa will be computed at some point): define SKIPAA (default 1) in 4_square_ampl.frm, set by
   04_run_4.py from the environment: `SKIPAA=0 python3 utils/04_run_4.py` computes aa and a2a2 again (step 05 then runs
   them with L1, step 06 sums them; nothing else to change). Tested: SKIPAA=0 gives aa, a2a2 byte-identical to the
