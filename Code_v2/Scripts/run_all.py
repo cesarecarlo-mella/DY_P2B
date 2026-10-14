@@ -292,6 +292,7 @@ class Job:
                 os.remove(self.output())
             return [QGRAF], self.folder()
         if self.step == "01":
+            os.makedirs(os.path.join(d, "tmp", "parsed_diagrams", "groups"), exist_ok=True)
             for f in glob.glob(os.path.join(d, "tmp", "parsed_diagrams", "*.dat")):
                 os.remove(f)
             return FORM + ["utils/01_colour_algebra.frm"], d
@@ -303,6 +304,8 @@ class Job:
                 os.remove(f)
             return FORM + ["utils/03_complex_conj_diags.frm"], d
         if self.step == "04":
+            for sub in ("squared_contracted", "unreduced"):
+                os.makedirs(os.path.join(d, "tmp", sub), exist_ok=True)
             for p in PIECES:
                 os.makedirs(os.path.join(d, "tmp", "squared_diagrams", p), exist_ok=True)
                 f = os.path.join(d, "tmp", "squared_diagrams", p, f"{p}_{self.pair}.inc")
@@ -834,7 +837,8 @@ SELFTEST_SEED = 20261014
 
 
 def cmd_selftest(args):
-    """steps 04 + 05 of VqqbQ2Q2bg pair 3x3 in a scratch copy, then the numerical check of every non-zero piece:
+    """steps 01, 02, 03, 04 (pair 3x3) and 05 of VqqbQ2Q2bg in a scratch copy, from the QGRAF output stored in
+    tools/selftest_VqqbQ2Q2bg.0.inc (QGRAF not needed), then the numerical check of every non-zero piece:
     After == Before (this FORM is consistent) and Before == the stored value from FORM 5.0 (laptop)"""
     preflight()
     ref_file = os.path.join(SCRIPTS, "tools", "selftest_reference.json")
@@ -844,28 +848,30 @@ def cmd_selftest(args):
     shutil.rmtree(work, ignore_errors=True)
     os.makedirs(os.path.join(chdir, "tmp", "parsed_diagrams"))
     shutil.copy(os.path.join(src.dir, "process_header.h"), chdir)
-    shutil.copytree(os.path.join(src.dir, "external"), os.path.join(chdir, "external"))
+    shutil.copytree(os.path.join(src.dir, "external"), os.path.join(chdir, "external"),
+                    ignore=shutil.ignore_patterns("*.0.inc"))
+    shutil.copy(os.path.join(SCRIPTS, "tools", f"selftest_{src.name}.0.inc"),
+                os.path.join(chdir, "external", f"{src.name}.0.inc"))
     shutil.copytree(os.path.join(src.dir, "utils"), os.path.join(chdir, "utils"),
-                    ignore=shutil.ignore_patterns("tmp_fld", "job_*"))
-    shutil.copytree(os.path.join(src.dir, "tmp", "parsed_diagrams", "groups"),
-                    os.path.join(chdir, "tmp", "parsed_diagrams", "groups"))
-
-    class Tmp(Channel):
-        def __init__(self):
-            self.group, self.name, self.dir, self.weight = src.group, src.name, chdir, 1.0
-    ch = Tmp()
+                    ignore=shutil.ignore_patterns("tmp_fld", "job_*", "03_complex_conj_diags.frm"))
+    ch = Channel(*SELFTEST_CHANNEL)
+    ch.dir = chdir
 
     def run(job, pairs06=None):
         cmd, cwd = job.prepare(args)
         t0 = time.time()
         with open(job.logfile(), "w") as log:
-            rc = subprocess.run(cmd, cwd=cwd, stdout=log, stderr=subprocess.STDOUT).returncode
+            rc = subprocess.run(cmd, cwd=cwd, stdout=log, stderr=subprocess.STDOUT,
+                                input=job.stdin.encode() if job.stdin else None).returncode
         ok, why, info = (job.verify(set()) if rc == 0 else (False, f"FORM rc={rc}: {form_reason(job.logfile())}", {}))
         print(f"  {job.label():32s} {time.time()-t0:6.1f} s  {'ok' if ok else 'FAILED: ' + why}", flush=True)
         return ok, info
 
     vers = (subprocess.run(FORM + ["-v"], capture_output=True, text=True).stdout.strip().splitlines() or ["?"])[0]
     print(f"selftest with {' '.join(FORM)} ({vers}) in {work}", flush=True)
+    for s in ("01", "02", "03"):
+        if not run(Job(s, ch, None, None, 0))[0]:
+            sys.exit(1)
     ok, info = run(Job("04", ch, None, SELFTEST_PAIR, 0))
     if not ok:
         sys.exit(1)
