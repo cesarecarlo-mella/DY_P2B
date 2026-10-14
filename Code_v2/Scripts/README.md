@@ -303,7 +303,7 @@ Minor:
 - Step 04 full run, VqqbQ2Q2bg (runner, 2 jobs): 9 pairs x 16 pieces OK, 2937 s CPU in total (~5 s per diagram product;
   10x10 pairs 7-9 min), max 2 GB per job, 676 MB output. (Wall times of that run are meaningless: the laptop slept.)
   Estimate all 49 channels: ~66 CPU h for step 04.
-- Steps 05/06 rewritten (so far ONLY in physical_qqbQ2Q2bg/VqqbQ2Q2bg; to be copied to the other 48 after review):
+- Steps 05/06 rewritten (first in physical_qqbQ2Q2bg/VqqbQ2Q2bg; copied to all 49 channels on 2026-10-14, identical files):
   utils/05_run_contractPj.py: all non-zero pieces x group pairs; projector per piece: L1 (symmetric) for the parity-even
     pieces vv, aa, vv2, aa2, v2v, a2a, v2v2, a2a2, L6 (epsilon) for the odd ones va, av, va2, av2, v2a, a2v, v2a2, a2v2
     (other combinations vanish by parity, not computed); jobs in utils/job_<piece>_<PROJ>_<i_j>/ (log kept on failure,

@@ -1,96 +1,106 @@
+import glob
 import os
+import shlex
 import shutil
 import subprocess
-import concurrent.futures 
+import sys
+import concurrent.futures
 
-if not os.path.exists("./tmp/squared_contracted"):
-   os.makedirs("./tmp/squared_contracted")
-   os.makedirs("./tmp/squared_contracted/vv")
-   os.makedirs("./tmp/squared_contracted/aa")
-   os.makedirs("./tmp/squared_contracted/va")
-   os.makedirs("./tmp/squared_contracted/av")
+# Step 05: contract every piece of every group pair of step 04 (tmp/squared_diagrams/<piece>/<piece>_i_j.inc) with
+# its leptonic projector, then partial fractions, families and integrals (utils/template_contractPj.frm).
+# Run from <P>_LO/:  python3 utils/05_run_contractPj.py
+# Output: tmp/squared_contracted/<piece>/unreduced<PROJ>_i_j.ff. Jobs run in utils/job_<piece>_<PROJ>_<i_j>/;
+# the folder (with form.log) is kept if the job fails, and the script then exits with an error.
+# FORM: the command in $FORM (default "form"), e.g. FORM="tform -w4" on a cluster node.
 
+FORM = shlex.split(os.environ.get("FORM", "form"))
 
-proj = input("Which projector: ")
-n_workers = int(input("How many parallel jobs: "))
+# Code_v2/Families: partial-fraction identities and family rules (Families/README in Scripts/README.md)
+FAMDIR = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "../../../../../Families"))
 
-
-# Open the file in read mode to read its content
-with open('./utils/template_contractPj.frm', 'r') as file:
-    template_content = file.read()  # Read all the content from the file
-
-
-# Need to update with option for calling aa av va, remember to change also content of form template job
-
-
+# Projector per piece: L1 (symmetric) for the parity-even pieces (no or two gamma5), L6 (epsilon) for the odd
+# ones (one gamma5). The other combinations vanish by parity and are not computed.
+EVEN = ["vv", "aa", "vv2", "aa2", "v2v", "a2a", "v2v2", "a2a2"]
+ODD = ["va", "av", "va2", "av2", "v2a", "a2v", "v2a2", "a2v2"]
+PROJ = {**{c: 1 for c in EVEN}, **{c: 6 for c in ODD}}
 
 
-folder_path = "tmp/squared_diagrams/vv/"
-files = [f for f in os.listdir(folder_path) if os.path.isfile(os.path.join(folder_path, f))]
-newfiles = [f.replace('vv_', '').replace('.inc', '') for f in files]
-print("Will process:", ", ".join(newfiles))
+def is_zero(path):
+    with open(path) as f:
+        return f.read().split("=", 1)[1].strip().rstrip(";").strip() == "0"
 
 
+def run_form(coupl, which, debug):
+    proj = PROJ[coupl]
+    folder = f"./utils/job_{coupl}_{proj}_{which}"
+    if os.path.exists(folder):
+        shutil.rmtree(folder)
+    os.makedirs(folder)
+    shutil.copy("./utils/template_contractPj.frm", os.path.join(folder, "contractPj.frm"))
+    command = FORM + ["-d", f"COUPL={coupl}", "-d", f"WHICH={which}", "-d", f"PROJ={proj}",
+                      "-d", f"FAMDIR={FAMDIR}", "-d", f"NPF={NPF}",
+                      "-d", f"DEBUG={debug}", "contractPj.frm"]
+    with open(os.path.join(folder, "form.log"), "w") as log:
+        rc = subprocess.run(command, cwd=folder, stdout=log, stderr=subprocess.STDOUT).returncode
+    out = f"./tmp/squared_contracted/{coupl}/unreduced{proj}_{which}.ff"
+    ok = rc == 0 and os.path.isfile(out) and os.path.getsize(out) > 0
+    if ok:
+        shutil.rmtree(folder)
+    print(f"[{coupl} L{proj} {which}] {'done' if ok else 'FAILED, log in ' + folder + '/form.log'}", flush=True)
+    return (coupl, which), ok
 
 
-def run_form(which_value):
+def main():
+    global NPF, NFAM
+    if shutil.which(FORM[0]) is None:
+        sys.exit(f"FORM executable '{FORM[0]}' not found (set FORM=...)")
+    if not os.environ.get("FORMPATH"):
+        print("warning: FORMPATH not set (source Code_v2/setenv.sh)")
+    NPF = len(glob.glob(os.path.join(FAMDIR, "partial_fraction", "partialfraction_*.inc")))
+    NFAM = len(glob.glob(os.path.join(FAMDIR, "fams", "fams[0-9]*.inc")))
+    if NPF == 0 or NFAM == 0 or not all(
+            os.path.isfile(os.path.join(FAMDIR, "fams", t)) for t in ("isp_table.inc", "fammatch_table.inc")):
+        sys.exit(f"partial fractions, families or the tables fams/isp_table.inc, fams/fammatch_table.inc missing "
+                 f"in {FAMDIR}: run the Families scripts (family_rules.wl, isp_table.py, fammatch_table.py)")
+    print(f"Families: {FAMDIR}  ({NPF} partial-fraction sets, {NFAM} families)")
 
-    # Create subfolder for this job
-    job_folder = f"./utils/job_{which_value}"
-    if os.path.exists(job_folder):
-        shutil.rmtree(job_folder)
-    os.makedirs(job_folder)
+    # all non-zero pieces of step 04
+    jobs, zero = [], 0
+    for coupl in EVEN + ODD:
+        for f in sorted(glob.glob(f"./tmp/squared_diagrams/{coupl}/{coupl}_*.inc")):
+            if is_zero(f):
+                zero += 1
+                continue
+            jobs.append((coupl, os.path.basename(f)[len(coupl) + 1:-len(".inc")]))
+    if not jobs:
+        sys.exit("no step-04 output in tmp/squared_diagrams: run step 04 first")
+    print(f"{len(jobs)} jobs (pieces x group pairs), {zero} zero pieces skipped")
 
-    # Write a job-specific FORM file into the subfolder
-    form_file_path = os.path.join(job_folder, "contractPj.frm")
-    with open(form_file_path, 'w') as fw:
-        fw.write(template_content)
+    mode = input("a = run all, o = run one (by index), l = list: ").strip().lower()
+    if mode == "l":
+        for k, j in enumerate(jobs, start=1):
+            print(f"{k}: {j[0]} {j[1]}")
+        mode = input("a = run all, o = run one (by index): ").strip().lower()
+    if mode == "o":
+        jobs = [jobs[int(input("index: ").strip()) - 1]]
+    elif mode != "a":
+        raise ValueError("Invalid selection")
+    mw = int(input("Enter the max number of parallel jobs: "))
+    debug = int(input("write intermediate expressions (0/1)? ") or 0)
 
-    # Build command
-    form_file_path = os.path.join(f"./job_{which_value}",  "contractPj.frm")
-    command = f'form -d PROJ={proj} -d WHICH={which_value} "contractPj.frm"'
+    for coupl in {c for c, _ in jobs}:
+        os.makedirs(f"./tmp/squared_contracted/{coupl}", exist_ok=True)
 
+    # FORM runs as a separate process for each job, so threads are enough to run them in parallel
+    with concurrent.futures.ThreadPoolExecutor(max_workers=mw) as executor:
+        results = list(executor.map(lambda j: run_form(j[0], j[1], debug), jobs))
 
-    print(f"[JOB {which_value}] Starting…")
-    result = subprocess.run(command, shell=True, cwd=job_folder)
-    
-    try:
-        shutil.rmtree(job_folder)
-        print(f"[JOB {which_value}] Cleaned up folder.")
-    except Exception as e:
-        print(f"[JOB {which_value}] Warning: could not remove folder ({e}).")
-
-    if result.returncode == 0:
-        print(f"[JOB {which_value}] Finished successfully.")
-    else:
-        print(f"[JOB {which_value}] FAILED with return code {result.returncode}.")
-
-    return which_value, result.returncode
-
-# -----------------------------------------
-# Run jobs in parallel
-# -----------------------------------------
-failed_jobs = []
-
-
-#run_form('8_25')
-
-
-with concurrent.futures.ProcessPoolExecutor(max_workers=n_workers) as executor:
-    for which_value, returncode in executor.map(run_form, newfiles):
-        if returncode != 0:
-            failed_jobs.append(which_value)
-
-
-if failed_jobs:
-    with open("failed_jobs.txt", "w") as f:
-        for job in failed_jobs:
-            f.write(job + "\n")
-    print(f"Saved failed jobs to failed_jobs.txt")
-else:
-    print("No job failed.")
+    failed = [j for j, ok in results if not ok]
+    if failed:
+        print(f"\n{len(failed)} of {len(results)} FORM jobs failed: {failed}")
+        sys.exit(1)
+    print(f"\nDone: {len(results)} jobs, output in tmp/squared_contracted/<piece>/unreduced<PROJ>_<i_j>.ff")
 
 
-
-
-
+if __name__ == "__main__":
+    main()

@@ -1,42 +1,72 @@
+import glob
 import os
+import re
+import shlex
 import shutil
 import subprocess
-import concurrent.futures 
+import sys
+
+# Step 06: sum the step-05 results of all group pairs, per piece (vv, va, ..., a2a2) and projector, and map the
+# families to the independent ones (Families/fams/symm_loop_crossings.inc).
+# Run from <P>_LO/:  python3 utils/06_run_sum_contracted.py
+# In:  tmp/squared_contracted/<piece>/unreduced<PROJ>_<i_j>.ff
+# Out: tmp/unreduced/<piece>/unreduced<PROJ>.ff (FORM) and .m (Mathematica)
+# One FORM run per piece, one after the other; utils/sum_squared_diags_<piece>_<PROJ>.frm and its .log are kept
+# if the run fails, and the script then exits with an error.
+
+FORM = shlex.split(os.environ.get("FORM", "form"))
+FAMDIR = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "../../../../../Families"))
 
 
-coupl = input("vv, av, va, aa : ")
-proj = input("which proj: ")
-projint = int(proj)
-folder_path = f"tmp/squared_contracted/{coupl}/"
+def main():
+    if shutil.which(FORM[0]) is None:
+        sys.exit(f"FORM executable '{FORM[0]}' not found (set FORM=...)")
+    if not os.environ.get("FORMPATH"):
+        print("warning: FORMPATH not set (source Code_v2/setenv.sh)")
+    if not os.path.isfile(os.path.join(FAMDIR, "fams", "symm_loop_crossings.inc")):
+        sys.exit(f"{FAMDIR}/fams/symm_loop_crossings.inc missing: run the Families scripts first")
+    with open("./utils/template_sum_squared_diags.frm") as f:
+        template = f.read()
+    # dependent families: left-hand sides of the relabelling rules
+    with open(os.path.join(FAMDIR, "fams", "symm_loop_crossings.inc")) as f:
+        dep = sorted(set(re.findall(r"^id INT\((topo\d+),", f.read(), re.M)), key=lambda t: int(t[4:]))
 
-files = [f for f in os.listdir(folder_path) if os.path.isfile(os.path.join(folder_path, f)) and f.startswith("unreduced") and f.endswith(".ff")]
-print(proj)
-newfiles =  [f.replace(f'unreduced{projint}_','').replace('.ff','') for f in files]
-joined = ",".join(newfiles)
-print('this is the list of files I need to add together', joined)
+    # (piece, projector) -> group pairs, from the step-05 output
+    runs = {}
+    for f in glob.glob("./tmp/squared_contracted/*/unreduced*_*.ff"):
+        m = re.match(r"unreduced(\d+)_(\d+_\d+)\.ff$", os.path.basename(f))
+        if m:
+            runs.setdefault((os.path.basename(os.path.dirname(f)), m.group(1)), []).append(m.group(2))
+    if not runs:
+        sys.exit("no step-05 output in tmp/squared_contracted: run step 05 first")
+    pairs = sorted({p for ps in runs.values() for p in ps})
+    for (coupl, proj), ps in sorted(runs.items()):
+        missing = sorted(set(pairs) - set(ps))
+        print(f"{coupl} L{proj}: {len(ps)} group pairs" + (f", MISSING {missing}" if missing else ""))
+    if input("sum all of them (y/n)? ").strip().lower() != "y":
+        sys.exit(0)
+
+    failed = []
+    for (coupl, proj), ps in sorted(runs.items()):
+        os.makedirs(f"./tmp/unreduced/{coupl}", exist_ok=True)
+        name = f"sum_squared_diags_{coupl}_{proj}"
+        frm = f"./utils/{name}.frm"
+        with open(frm, "w") as f:
+            f.write(template.replace("&toreplace", ",".join(sorted(ps))).replace("&coupl", coupl)
+                    .replace("&proj", proj).replace("&famdir", FAMDIR).replace("&depset", ",".join(dep)))
+        with open(f"./utils/{name}.log", "w") as log:
+            rc = subprocess.run(FORM + [frm], stdout=log, stderr=subprocess.STDOUT).returncode
+        ok = rc == 0 and os.path.isfile(f"./tmp/unreduced/{coupl}/unreduced{proj}.ff")
+        print(f"[{coupl} L{proj}] {'done' if ok else 'FAILED, see utils/' + name + '.log'}", flush=True)
+        if ok:
+            os.remove(frm)
+            os.remove(f"./utils/{name}.log")
+        else:
+            failed.append((coupl, proj))
+    if failed:
+        sys.exit(f"{len(failed)} sums failed: {failed}")
+    print("Done: tmp/unreduced/<piece>/unreduced<PROJ>.ff and .m")
 
 
-
-
-old_pattern = "&toreplace"
-old_proj = "&proj"
-old_coupl = "&coupl"
-
-
-# Open the file in read mode to read its content
-with open('./utils/template_sum_squared_diags.frm', 'r') as file:
-    content = file.read()  # Read all the content from the file
-
-# Replace the old pattern with the new pattern
-updated_content = content.replace(old_pattern, joined).replace(old_coupl,coupl).replace(old_proj, proj)
-
-
-# Open the file again in write mode to overwrite it
-with open('./utils/sum_squared_diags.frm', 'w') as file:
-    file.write(updated_content)  # Write the modified content back into the file
-
-command = f'form ./utils/sum_squared_diags.frm'
-subprocess.run(command, shell=True)
-
-
-
+if __name__ == "__main__":
+    main()
