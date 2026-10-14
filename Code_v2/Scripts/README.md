@@ -325,6 +325,13 @@ Minor:
   Timing, one piece (vv, L1): 3x3 (4x4 diagrams) 81 s -> 14 s; 10x10 pair 620 s -> 309 s (PF 17 s, dens + families 19 s,
     numerators 120 s, reconstruct 108 s (sorting, a table lookup did not help), ratfun 33 s), 1.2 GB.
     -> step 05 costs much more than step 04 (16 pieces per pair, ~5 min each for 10x10): to be optimised / planned.
+  Fixes after a 3-pair test (2026-10-14): Prop(p1+p2) (s-channel gluon, q qb -> g* -> Q Qb with V on the Q line,
+    pieces with v2/a2) -> Num(z)/m2 again (dropped by mistake; the dens.inc check stopped the job); m2 -> 1 also for
+    negative powers (id m2^n? = 1; m2^-1 was left, value unchanged since m2 = 1; same flaw in the old template).
+  Tried and NOT adopted (user): coefficients as one rational function per structure (PolyRatFun) between the numerator
+    stage and reconstruct.inc: exactly identical results, but only 4-26% faster on 10x10 pairs (vv 2x2 309 -> 263 s,
+    va 1x2 348 -> 333 s, aa2 1x1 187 -> 138 s) and a different output format. Collecting coefficients into one function
+    (Collect) made it worse (more terms after the numerators; re-collecting exceeds MaxTermSize).
 
 Next: review steps 05/06 and copy them to all channels; reduce the cost of step 05; decide laptop vs cluster;
 combination stage (ghost -1, symmetry factors, flavour sums, p1 <-> p2 / C partners).

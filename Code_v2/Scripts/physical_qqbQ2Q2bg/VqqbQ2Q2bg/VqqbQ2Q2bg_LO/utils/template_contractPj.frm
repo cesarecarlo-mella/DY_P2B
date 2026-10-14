@@ -46,6 +46,8 @@ endargument;
 Factarg Prop;
 id Prop(-1,?x) = Prop(?x);
 .sort
+* s-channel gluon (q qb -> g* -> Q Qb ...): constant propagator 1/s12 = z/m2 (not a family propagator)
+id Prop(p1+p2) = Num(z)/m2;
 
 repeat;
 id s12^(n1?) = (m2)^n1*Den(z^(n1));
@@ -125,9 +127,9 @@ id p2.r3^n1?*TOPO(n?) = TOPO(n)*ISP(n,9)^n1;
 if ( count(p1.r1,1,p1.r2,1,p1.r3,1,p2.r1,1,p2.r2,1,p2.r3,1,r1.r2,1,r1.r3,1,r2.r3,1) != 0 )
     exit "contractPj: scalar product left after the family numerators";
 
-id m2 =1;
+id m2^n? = 1;
 argument Num, Den;
-id m2=1;
+id m2^n? = 1;
 endargument;
 .sort
 id Den(2) = 1/2;
