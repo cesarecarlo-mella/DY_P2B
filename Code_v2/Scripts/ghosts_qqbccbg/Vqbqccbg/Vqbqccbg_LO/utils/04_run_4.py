@@ -12,18 +12,20 @@ import concurrent.futures
 # its FORM log is kept there if the job fails, and the script then exits with an error.
 # Works on macOS and Linux. FORM command from the environment variable FORM (default "form"),
 # e.g. on a cluster:  export FORM="tform -w4"   (FORMPATH: source Code_v2/setenv.sh)
+# SKIPAA (environment, default 1): skip the aa and a2a2 pieces (= vv, v2v2; written as 0); SKIPAA=0 computes them.
 
 # amplitude coupling + conjugate coupling: v, a (q line), v2, a2 (Q2 line); see 4_square_ampl.frm
 COUPLINGS = [x + y for x in ("v", "a", "v2", "a2") for y in ("v", "a", "v2", "a2")]
 TMPDIR = "./utils/tmp_fld"
 FORM = shlex.split(os.environ.get("FORM", "form"))
+SKIPAA = os.environ.get("SKIPAA", "1")
 
 
 def run_form(i, j, lc, onlyvector):
     folder = os.path.join(TMPDIR, f"tmp_{i}_{j}")
     os.mkdir(folder)
     shutil.copy("./utils/4_square_ampl.frm", folder)
-    command = FORM + ["-d", f"LC={lc}", "-d", f"ONLYVECTOR={onlyvector}",
+    command = FORM + ["-d", f"LC={lc}", "-d", f"ONLYVECTOR={onlyvector}", "-d", f"SKIPAA={SKIPAA}",
                "-d", f"loopind={i}", "-d", f"loopind2={j}", "4_square_ampl.frm"]
     with open(os.path.join(folder, "form.log"), "w") as log:
         rc = subprocess.run(command, cwd=folder, stdout=log, stderr=subprocess.STDOUT).returncode
@@ -52,6 +54,7 @@ def main():
     parsed_dir = "./tmp/parsed_diagrams/groups/"
     ndiag1 = len(glob.glob(os.path.join(parsed_dir, "sum_*")))
     ndiag2 = len(glob.glob(os.path.join(parsed_dir, "Csum_*")))
+    print("aa and a2a2 pieces:", "skipped (= vv, v2v2; SKIPAA=0 to compute them)" if SKIPAA != "0" else "computed")
     print("Number of diagrams for amp1:", ndiag1)
     print("Number of diagrams for amp2:", ndiag2)
     if ndiag1 == 0 or ndiag2 == 0:

@@ -23,11 +23,16 @@ id ga(?x) = 0;
 id Ga(?x) = 0;
 #endif
 
-* aa = vv and a2a2 = v2v2 (axial x axial on the same quark line equals vector x vector); the intermediate aa traces
-* (Larin scheme) are very expensive, so these pieces are not computed: take them from vv / v2v2 when combining.
-* The mixed aa2, a2a (gamma5 on two different quark lines) are kept.
+* SKIPAA (default 1): aa = vv and a2a2 = v2v2 (axial x axial on the same quark line equals vector x vector); the
+* intermediate aa traces (Larin scheme) are very expensive, so by default these pieces are not computed (written as 0;
+* take them from vv / v2v2 when combining). -d SKIPAA=0 computes them. The mixed aa2, a2a are always computed.
+#ifndef 'SKIPAA'
+#define SKIPAA "1"
+#endif
+#if 'SKIPAA' > 0
 id ga(ti)*cga(tj) = 0;
 id Ga(ti)*cGa(tj) = 0;
+#endif
 
 
 

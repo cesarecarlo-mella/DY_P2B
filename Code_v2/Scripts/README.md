@@ -333,6 +333,10 @@ Minor:
   the 121 MB step-04 output). id ga(ti)*cga(tj) = 0, id Ga(ti)*cGa(tj) = 0 before the traces; the aa and a2a2 files are 0
   and step 05 skips them. COMBINATION: aa := vv, a2a2 := v2v2. The mixed aa2, a2a (gamma5 on two different lines) are
   kept. Tested on VqqbQ2Q2bg 3x3: aa, a2a2 = 0, the other 14 pieces byte-identical, 69 s -> 34 s.
+  Kept switchable (aa will be computed at some point): define SKIPAA (default 1) in 4_square_ampl.frm, set by
+  04_run_4.py from the environment: `SKIPAA=0 python3 utils/04_run_4.py` computes aa and a2a2 again (step 05 then runs
+  them with L1, step 06 sums them; nothing else to change). Tested: SKIPAA=0 gives aa, a2a2 byte-identical to the
+  earlier full run (3x3: 47 s vs 34 s with the default).
   Tried and NOT adopted (user): coefficients as one rational function per structure (PolyRatFun) between the numerator
     stage and reconstruct.inc: exactly identical results, but only 4-26% faster on 10x10 pairs (vv 2x2 309 -> 263 s,
     va 1x2 348 -> 333 s, aa2 1x1 187 -> 138 s) and a different output format. Collecting coefficients into one function
