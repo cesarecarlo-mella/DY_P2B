@@ -20,6 +20,7 @@ Scripts/*/*/*_LO/utils/03_complex_conj_diags.frm
 Scripts/*/*/*_LO/utils/sum_squared_diags*.frm
 Scripts/*/*/*_LO/utils/sum_squared_diags*.log
 Scripts/*/*/*_LO/utils/job_*/
+Scripts/*/*/*_LO/utils/formtmp/
 Scripts/*/*/*_LO/failed_jobs.txt
 Scripts/*/*/*_LO/utils/contractPj.frm
 Scripts/*/*/*_LO/utils/tmp_fld/

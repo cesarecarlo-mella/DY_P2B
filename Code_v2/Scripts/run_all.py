@@ -274,6 +274,18 @@ class Job:
             return os.path.join(u, f"job_{self.piece}_{PROJ[self.piece]}_{self.pair}")
         return self.ch.dir
 
+    def formtmp(self, args):
+        """own folder for FORM's temporary files: FORM names them xformxxx.* (no process number), so jobs sharing a
+        folder would overwrite each other's files"""
+        base = os.path.abspath(args.form_tmp) if args.form_tmp else os.path.join(self.ch.dir, "utils")
+        return os.path.join(base, "formtmp", self.key)
+
+    def tflag(self, args):
+        d = self.formtmp(args)
+        shutil.rmtree(d, ignore_errors=True)
+        os.makedirs(d)
+        return ["-t", d]
+
     def output(self):
         if self.step == "qgraf":
             return os.path.join(self.ch.dir, "external", f"{self.ch.name}.0.inc")
@@ -295,14 +307,14 @@ class Job:
             os.makedirs(os.path.join(d, "tmp", "parsed_diagrams", "groups"), exist_ok=True)
             for f in glob.glob(os.path.join(d, "tmp", "parsed_diagrams", "*.dat")):
                 os.remove(f)
-            return FORM + ["utils/01_colour_algebra.frm"], d
+            return FORM + self.tflag(args) + ["utils/01_colour_algebra.frm"], d
         if self.step == "02":
             self.stdin = f"{GROUP_SIZE}\n1\n"                    # group size, parallel FORM jobs
             return [sys.executable, "utils/02_run_sum_diags_group.py"], d
         if self.step == "03":
             for f in glob.glob(os.path.join(d, "tmp", "parsed_diagrams", "groups", "Csum_*")):
                 os.remove(f)
-            return FORM + ["utils/03_complex_conj_diags.frm"], d
+            return FORM + self.tflag(args) + ["utils/03_complex_conj_diags.frm"], d
         if self.step == "04":
             for sub in ("squared_contracted", "unreduced"):
                 os.makedirs(os.path.join(d, "tmp", sub), exist_ok=True)
@@ -346,8 +358,7 @@ class Job:
             fo = self.folder()
             cmd = list(FORM)
             frm = os.path.join("utils", name + ".frm")
-        if args.form_tmp:
-            cmd += ["-t", args.form_tmp]
+        cmd += self.tflag(args)
         return cmd + [frm], fo
 
     def logfile(self):
@@ -382,6 +393,9 @@ class Job:
             return ok, why, {"INT": nint}
         ok, why = lint06(self.output(), dep)
         return ok, why, {}
+
+    def cleanup_tmp(self, args):
+        shutil.rmtree(self.formtmp(args), ignore_errors=True)
 
     def cleanup(self):
         if self.step in PREP:
@@ -520,7 +534,8 @@ def cmd_run(args):
                 push(j)
                 return
         if not ch.groups_ok():
-            print(f"{ch.name}: no step-02/03 groups (expected {ch.ngroups}): add the steps 01,02,03", flush=True)
+            if steps & {"04", "05", "06"}:
+                print(f"{ch.name}: no step-02/03 groups (expected {ch.ngroups}): add the steps 01,02,03", flush=True)
             return
         for pair in ch.pairs:
             j = Job("04", ch, None, pair, ch.cost04(pair))
@@ -582,6 +597,7 @@ def cmd_run(args):
             ok, why, info = False, f"FORM rc={rc}: {form_reason(job.logfile())}", {}
         else:
             ok, why, info = job.verify(dep)
+        job.cleanup_tmp(args)
         out = job.output()
         out_mb = os.path.getsize(out) / 1e6 if out and os.path.exists(out) else 0.0
         info.update({"wall_s": round(wall, 1), "cpu_s": round(cpu, 1), "maxrss_gb": round(maxrss, 3),
@@ -863,6 +879,7 @@ def cmd_selftest(args):
         with open(job.logfile(), "w") as log:
             rc = subprocess.run(cmd, cwd=cwd, stdout=log, stderr=subprocess.STDOUT,
                                 input=job.stdin.encode() if job.stdin else None).returncode
+        job.cleanup_tmp(args)
         ok, why, info = (job.verify(set()) if rc == 0 else (False, f"FORM rc={rc}: {form_reason(job.logfile())}", {}))
         print(f"  {job.label():32s} {time.time()-t0:6.1f} s  {'ok' if ok else 'FAILED: ' + why}", flush=True)
         return ok, info
