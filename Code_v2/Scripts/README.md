@@ -328,6 +328,11 @@ Minor:
   Fixes after a 3-pair test (2026-10-14): Prop(p1+p2) (s-channel gluon, q qb -> g* -> Q Qb with V on the Q line,
     pieces with v2/a2) -> Num(z)/m2 again (dropped by mistake; the dens.inc check stopped the job); m2 -> 1 also for
     negative powers (id m2^n? = 1; m2^-1 was left, value unchanged since m2 = 1; same flaw in the old template).
+- aa and a2a2 NOT computed (user decision, 2026-10-14; utils/4_square_ampl.frm, all 49): axial x axial on the same quark
+  line equals vector x vector, and the intermediate Larin-scheme aa traces are very expensive (Vqqbggg 1x1: aa = 63 MB of
+  the 121 MB step-04 output). id ga(ti)*cga(tj) = 0, id Ga(ti)*cGa(tj) = 0 before the traces; the aa and a2a2 files are 0
+  and step 05 skips them. COMBINATION: aa := vv, a2a2 := v2v2. The mixed aa2, a2a (gamma5 on two different lines) are
+  kept. Tested on VqqbQ2Q2bg 3x3: aa, a2a2 = 0, the other 14 pieces byte-identical, 69 s -> 34 s.
   Tried and NOT adopted (user): coefficients as one rational function per structure (PolyRatFun) between the numerator
     stage and reconstruct.inc: exactly identical results, but only 4-26% faster on 10x10 pairs (vv 2x2 309 -> 263 s,
     va 1x2 348 -> 333 s, aa2 1x1 187 -> 138 s) and a different output format. Collecting coefficients into one function
