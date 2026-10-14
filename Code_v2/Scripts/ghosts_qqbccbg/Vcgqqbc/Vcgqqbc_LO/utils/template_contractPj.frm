@@ -88,8 +88,9 @@ id PropSet(n1?,n2?,n3?,n4?,n5?) = TOPO(FAM5(n1,n2,n3,n4,n5));
 id PropSet(n1?,n2?,n3?,n4?,n5?,n6?) = TOPO(FAM6(n1,n2,n3,n4,n5,n6));
 id PropSet(n1?,n2?,n3?,n4?,n5?,n6?,n7?) = TOPO(FAM7(n1,n2,n3,n4,n5,n6,n7));
 .sort
-if ( count(PropSet,1,FAM1,1,FAM2,1,FAM3,1,FAM4,1,FAM5,1,FAM6,1,FAM7,1) != 0 )
-    exit "contractPj: set of propagators not in any family";
+* (count() does not look inside function arguments: an unresolved table lookup TOPO(FAMm(..)) is caught by the match)
+if ( count(PropSet,1) != 0 ) exit "contractPj: term with no regular propagator or more than 7";
+if ( match(TOPO(n?pos_)) == 0 ) exit "contractPj: set of propagators not in any family (FAMDIR/coverage.py)";
 #do k=6,29
 id D'k'^n? = DD'k'^n;
 #enddo

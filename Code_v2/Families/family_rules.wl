@@ -1,4 +1,4 @@
-(* Integral families -> integralfamilies.rrr.m and FORM rules, as in n3lo/RRR/Families_Identification/Triple_Real_Families.nb
+(* Integral families -> integralfamilies.rrr.m and FORM rules, as in n3lo_old/RRR/Families_Identification/Triple_Real_Families.nb
    ("Define Integral families", "Find Simmetries under permutation of loop momenta", "FORM ids: ISPs, fammatch, etc.").
 
    wolframscript -file family_rules.wl      (run in Code_v2/Families after families.wl)

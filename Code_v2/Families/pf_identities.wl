@@ -1,5 +1,5 @@
 (* Partial-fraction identities for the triple-real propagators.
-   Same method and output format as n3lo/RRR/Families_Identification/Triple_Real_Families.nb
+   Same method and output format as n3lo_old/RRR/Families_Identification/Triple_Real_Families.nb
    ("Partial fraction identities", "Save identities", "Write Partial fraction in form").
 
    wolframscript -file pf_identities.wl        (run in Code_v2/Families, needs circuits.m from find_circuits.py)

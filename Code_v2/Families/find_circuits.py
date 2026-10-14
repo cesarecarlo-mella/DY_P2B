@@ -17,7 +17,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 import collect_props as cp
 
-# regular propagators DD6..DD29, same numbering as n3lo/RRR/Families_Identification (DD6..DD23) + DD24..DD29
+# regular propagators DD6..DD29, same numbering as n3lo_old/RRR/Families_Identification (DD6..DD23) + DD24..DD29
 REGULAR = ["p1+r1", "p2+r1", "p1+r2", "p2+r2", "p1+r3", "p2+r3", "r1+r2", "r2+r3", "r1+r3",
            "p1+r1+r2", "p2+r1+r2", "p1+r1+r3", "p2+r1+r3", "p1+r2+r3", "p2+r2+r3", "r1+r2+r3",
            "p1+r1+r2+r3", "p2+r1+r2+r3",

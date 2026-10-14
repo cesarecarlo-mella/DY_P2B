@@ -145,7 +145,7 @@ Folder name = `V` + 2 initial partons + 3 final partons, in the same order as th
         each list only says which propagators occur (no repeats/powers); cut factors (r_i on shell, V, rapidity) not included.
     Families/denoms.m          definition of DD1..DD29 (DD1..DD5 cut, DD6..DD23 as the old notebook, DD24..DD29 new)
     Families/find_circuits.py  minimal linearly dependent propagator sets among the subsets of allMaxProducts -> circuits.m
-    Families/pf_identities.wl  partial-fraction identities, same method and format as n3lo/RRR/Families_Identification:
+    Families/pf_identities.wl  partial-fraction identities, same method and format as n3lo_old/RRR/Families_Identification:
         wolframscript -file pf_identities.wl   -> allpfid.m (PFid list), pfid_sets.m (j -> DD set),
                                                   partial_fraction/partialfraction_<j>.inc (FORM)
         DD1..DD23 as in Triple_Real_Families.nb, new DD24..DD29 = (p1+p2+r1)^2, (p1+p2+r2)^2, (p1+p2+r3)^2,
@@ -167,7 +167,7 @@ Folder name = `V` + 2 initial partons + 3 final partons, in the same order as th
 
     Superseded: utils/run_collect_den.py, utils/collect_den.py, utils/show_den.frm (still in every channel).
         They need step-04 output (tmp/squared_diagrams), hardcode 5 x 5 groups and collect per group pair; replaced by Families/collect_props.py.
-        Their old output format (den/den_<i>_<j>.m) is what n3lo/RRR/Families_Identification/Triple_Real_Families.nb reads.
+        Their old output format (den/den_<i>_<j>.m) is what n3lo_old/RRR/Families_Identification/Triple_Real_Families.nb reads.
 
 Before running FORM: `source Code_v2/setenv.sh` (sets FORMPATH to Code_v2/FORMroutines; ~/.zshrc points elsewhere).
 Works on macOS and Linux (bash or zsh). FORM executable for the step runners: environment variable FORM, default `form`;
@@ -237,7 +237,7 @@ Minor:
 
 - `Families/` created (propagators, partial fractions, families); `Code_v2/.gitignore` ignores all pipeline output (tmp/ trees kept via .gitkeep).
 - Partial fractions: 48 minimal dependent sets among the occurring propagator sets; 36 identities (allpfid.m, partial_fraction/);
-  the 12 using only DD6..DD23 are identical to the old n3lo/RRR/Families_Identification/allpfid.m. 12 sets have a relation with
+  the 12 using only DD6..DD23 are identical to the old n3lo_old/RRR/Families_Identification/allpfid.m. 12 sets have a relation with
   zero constant (all involve DD24..DD29): no identity yet (skipped, as in the old notebook).
 
 - Zero-constant relations written as PFid 37..48 (D_n squared); all 48 FORM files checked exactly.
@@ -333,6 +333,20 @@ Minor:
   the 121 MB step-04 output). id ga(ti)*cga(tj) = 0, id Ga(ti)*cGa(tj) = 0 before the traces; the aa and a2a2 files are 0
   and step 05 skips them. COMBINATION: aa := vv, a2a2 := v2v2. The mixed aa2, a2a (gamma5 on two different lines) are
   kept. Tested on VqqbQ2Q2bg 3x3: aa, a2a2 = 0, the other 14 pieces byte-identical, 69 s -> 34 s.
+- FAMILY GAP fixed (2026-10-14, found by run_all.py selftest: pieces vv2, va2, ... of VqqbQ2Q2bg 3x3 stopped after
+  reconstruct.inc): families.py split only allMaxProducts and dropped subsets before/while applying the partial fractions;
+  a smaller product containing a zero-constant identity except its squared propagator is not split by it and lies in no
+  piece of its larger partner -> 12 propagator sets FORM really produces were in no family (two relabelling orbits, e.g.
+  {D11,D12,D15,D26,D28}; 27 channels affected, not Vqqbggg). Families/pfsim.py: partial fractions on every collected
+  product exactly in FORM's order; Families/coverage.py: check (0.4 s, also run by run_all.py before starting);
+  families.py --extend: FAM[1..909] unchanged, FAM[910..921] appended (2 representatives + copies) -> 921 families,
+  156 independent (was 154). fams1..909, dens.inc, the first 909 reconstruct rules byte-identical; the 755 old
+  relabelling rules kept (+10); old sets -> same family in the matching table. 5439 sets after partial fractions, all
+  covered. Also: the family-lookup check in template_contractPj.frm used count(FAM5,..), which does not look inside
+  TOPO(..): now match(TOPO(n?pos_)). Selftest (14 pieces, FORM 5.0): all IDENTICAL, topo920/921 used.
+  Paths to the old notebook: n3lo -> n3lo_old.
+- run_all.py (Scripts/): global job queue for steps 04-06 over many channels (Linux), resume, status, check, verify,
+  selftest; tools/check05.py (numerical check), tools/selftest_reference.json (FORM 5.0 values for the selftest).
 - Vqqbggg pair 1x1 (10x10), one job at a time (2026-10-14): step 04 41 min CPU (with aa), 1 GB, 121 MB output (aa 63 MB,
   vv 30, va/av 16); step 05 vv 7 min, aa 15 min, va 11 min, av 12 min, max 2.7 GB. Numerical end-to-end check of step 05
   (check05.py, random points on the cut surface): vv (2 points), va, av all IDENTICAL; vv uses 37 families.

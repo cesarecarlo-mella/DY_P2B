@@ -2,14 +2,14 @@
 
    wolframscript -file families.wl      (run in Code_v2/Families after families.py)
 
-   In:   families_raw.m   {{DD numbers}, ...} from families.py; old Families.m of n3lo/RRR/Families_Identification
+   In:   families_raw.m   {{DD numbers}, ...} from families.py; old Families.m of n3lo_old/RRR/Families_Identification
    Out:  Families.m       {FAM[n] -> {DD[..], ...}}, same format as the old Families.m
    Checks: families marked "old" in family_origin.m (families.py --keep-old) identical to the old Families.m;
    every family has 12 propagators, linearly independent
    in the 12 scalar products with u symbolic (rank 12, as in Triple_Real_Families.nb). *)
 
 SetDirectory[DirectoryName[$InputFileName]];
-oldFam = Get["../../n3lo/RRR/Families_Identification/Families.m"];
+oldFam = Get["../../n3lo_old/RRR/Families_Identification/Families.m"];
 
 SetAttributes[sp, Orderless];
 sp[a_Integer*b_, c_] := a sp[b, c];

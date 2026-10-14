@@ -3,16 +3,21 @@
 
   python3 families.py [--keep-old] [--no-symmetry | --exact]   (after collect_props.py, find_circuits.py,
                                                                 pf_identities.wl; then families.wl)
+  python3 families.py --extend    keep the families of families_raw.m (and family_origin.m) unchanged as FAM[1..N]
+                                  and append new families (complete relabelling groups) for the tails in none of them
   default        all families chosen from scratch with the relabelling symmetry r1, r2, r3 in mind (step 3 below)
   --keep-old     keep the 284 families of the old notebook as FAM[1..284] (277 independent instead of 154)
   --no-symmetry  plain greedy choice, family by family (gave 1010 families, 474 independent under relabelling)
   --exact        exact minimum set cover without symmetry (cover.wl, Mathematica integer programming; slow)
 
-Method as in n3lo/RRR/Families_Identification/Triple_Real_Families.nb ("Define Integral families"):
- 1. the propagator sets of the channels (allMaxProducts) are split with the partial-fraction identities
-    (pfid_sets.m, pfid_squared.m): a set containing all propagators of an identity -> the subsets missing one of
-    them, except the propagator the identity squares (identities with zero constant), until no set contains an
-    identity; sets contained in another set are dropped -> "tails"
+Method as in n3lo_old/RRR/Families_Identification/Triple_Real_Families.nb ("Define Integral families"):
+ 1. EVERY collected product of the channels (products[P]) is split with the partial-fraction identities
+    (pfid_sets.m, pfid_squared.m) exactly in FORM's order (pfsim.py): a set containing all propagators of an
+    identity -> the subsets missing one of them, except the propagator the identity squares (identities with zero
+    constant), until no set contains an identity; only then sets contained in another set are dropped -> "tails".
+    (Until 2026-10-14 only allMaxProducts were split and subsets were dropped before/while splitting: a smaller
+    product containing a zero-constant identity except its squared propagator was lost -> 12 sets in no family,
+    fixed by --extend, FAM[910..].)
  2. with --keep-old: the 284 families of the old notebook (its Families.m) are kept unchanged as FAM[1..284]
  3. tails in no old family get new families (default, with the relabelling symmetry in mind):
     a. tails that fit a relabelled copy (r1, r2, r3 permuted) of an old family that is not among the 284: those
@@ -38,8 +43,9 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 import collect_props as cp
 from find_circuits import REGULAR, DD
+from pfsim import final_sets, read_pf
 
-OLD_FAMILIES = os.path.join(HERE, "..", "..", "n3lo", "RRR", "Families_Identification", "Families.m")
+OLD_FAMILIES = os.path.join(HERE, "..", "..", "n3lo_old", "RRR", "Families_Identification", "Families.m")
 CUT = (1, 2, 3, 4, 5)
 NDD = 29
 
@@ -150,27 +156,11 @@ def mlist(seq):
 
 
 def main():
-    text = open(os.path.join(HERE, "propagators", "all.m")).read()
-    body = re.search(r"allMaxProducts = \{(.*?)\};\n", text, re.S).group(1)
-    sets = [mask(DD[cp.momentum(m)] for m in x.split(", ")) for x in re.findall(r"\{([^{}]*)\}", body)]
-
-    # 1. partial fractions
-    pf = [mask(map(int, x.split(", "))) for x in
-          re.findall(r"-> \{([^{}]*)\}", open(os.path.join(HERE, "pfid_sets.m")).read())]
-    squared = [int(x) for x in re.findall(r"-> (\d+)", open(os.path.join(HERE, "pfid_squared.m")).read())]
-    if len(squared) != len(pf):
-        sys.exit("pfid_sets.m and pfid_squared.m do not match")
-    tails = maximal(sets)
-    while True:
-        changed = False
-        for d, sq in zip(pf, squared):
-            hit = [t for t in tails if d & ~t == 0]
-            if hit:
-                changed = True
-                split = [t & ~(1 << n) for t in hit for n in unmask(d) if n != sq]
-                tails = maximal([t for t in tails if t not in hit] + split)
-        if not changed:
-            break
+    # 1. partial fractions, on every product, in FORM's order
+    products, final = final_sets()
+    sets = [mask(x) for x in products]
+    pf = read_pf()[0]
+    tails = maximal([mask(x) for x in final])
     dependent = [t for t in tails if not all(rank([c[n] for n in CUT + unmask(t)]) == 5 + bin(t).count("1") for c in COEF)]
     sizes = sorted({bin(t).count("1") for t in tails})
     print(f"{len(sets)} sets -> {len(tails)} tails after {len(pf)} partial-fraction identities "
@@ -187,12 +177,23 @@ def main():
     if "--keep-old" not in sys.argv:
         old = []
     families = [mask(f) for f in old]
+    extend = "--extend" in sys.argv
+    if extend:                                           # previous families kept as FAM[1..N]
+        families = [mask(map(int, re.findall(r"\d+", x))) for x in
+                    re.findall(r"\{([\d,\s]+)\}", open(os.path.join(HERE, "families_raw.m")).read())]
+        prev_origin = []
+        for m in re.finditer(r'(\d+) -> (?:"(\w+)"|\{"copy", (\d+), \{(\d), (\d), (\d)\}\})',
+                             open(os.path.join(HERE, "family_origin.m")).read()):
+            prev_origin.append(m.group(2) if m.group(2) else ["copy", int(m.group(3)), tuple(map(int, m.group(4, 5, 6)))])
+        if len(prev_origin) != len(families):
+            sys.exit("--extend: families_raw.m and family_origin.m do not match")
+        prev = list(families)
     uncovered = [t for t in tails if not any(t & ~f == 0 for f in families)]
     print(f"{len(tails) - len(uncovered)} tails in the {len(old)} old families, {len(uncovered)} not")
 
     # 3. new families
     regular = range(6, NDD + 1)
-    origin = ["old"] * len(families)
+    origin = list(prev_origin) if extend else ["old"] * len(families)
     symmetric = "--no-symmetry" not in sys.argv and "--exact" not in sys.argv
     if "--exact" in sys.argv:
         families += exact_cover(uncovered, regular)
@@ -258,6 +259,9 @@ def main():
         families.append(best)
         uncovered = [x for x in uncovered if x & ~best != 0]
     n_old = len(old)
+    if extend:
+        assert families[:len(prev)] == prev, "--extend changed an existing family"
+        print(f"--extend: {len(prev)} families kept, {len(families) - len(prev)} appended")
     for k in range(len(families) - 1 if not symmetric else n_old - 1, n_old - 1, -1):   # drop unneeded new families
         others = families[:k] + families[k + 1:]
         if all(any(x & ~o == 0 for o in others) for x in tails if x & ~families[k] == 0):

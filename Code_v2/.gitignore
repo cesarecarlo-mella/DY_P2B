@@ -42,3 +42,7 @@ Families/fams/
 Families/integralfamilies.rrr.m
 Families/family_origin.m
 Families/families_relabelling.m
+Families/coverage_missing.m
+
+# run_all.py state, logs, selftest/verify scratch
+Scripts/run_state/
