@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
-"""Steps 04 (square), 05 (contract, partial fractions, families) and 06 (sum, relabelling) for many channels at once,
-with one global job queue. Linux (and macOS for tests). Run from anywhere after `source Code_v2/setenv.sh`.
+"""The whole pipeline for many channels at once, with one global job queue: QGRAF, steps 01 (parse, colour), 02 (groups
+of 10 diagrams), 03 (conjugates), 04 (square), 05 (contract, partial fractions, families), 06 (sum, relabelling).
+Linux (and macOS for tests). Run from anywhere after `source Code_v2/setenv.sh`.
 
   python3 run_all.py run      --set gluons --jobs 100     run (or resume) everything of the set
   python3 run_all.py status   --set gluons                progress per channel and step, memory, CPU, ETA (any time)
@@ -11,7 +12,8 @@ with one global job queue. Linux (and macOS for tests). Run from anywhere after 
 Sets: gluons = physical_qqbggg (7 channels), quarks = all other groups (42), all; or --channels Vqqbggg,VqqbQ2Q2bg,...
 Two sets can run at the same time (two run commands); each keeps its state in run_state/<set>/ (or --state DIR).
 
-Jobs: 04 = one group pair (i x conjugate j) of a channel; 05 = one non-zero piece (vv, va, ...) of one pair, started as
+Jobs: qgraf, 01, 02, 03 = one per channel, in this order (02 makes groups of 10 diagrams, as the per-channel runner
+with "10, 1"); 04 = one group pair (i x conjugate j) of a channel, started once its 03 is done; 05 = one non-zero piece (vv, va, ...) of one pair, started as
 soon as its 04 job is done; 06 = one piece of a channel, started when all its 05 jobs are done. The same FORM files as
 the per-channel runners are used (utils/4_square_ampl.frm, utils/template_contractPj.frm,
 utils/template_sum_squared_diags.frm, Code_v2/Families). The most expensive jobs are started first.
@@ -19,13 +21,15 @@ utils/template_sum_squared_diags.frm, Code_v2/Families). The most expensive jobs
 Resume: a job counts as done only after its output passed the checks below (marker in <state>/done/). After a crash or
 Ctrl-C just run the same command again: done jobs are skipped, everything else (also failed jobs) runs again.
 
-Checks after every job (on top of the exit checks inside the FORM files): 04: all 16 pieces written; 05: no Prop,
+Checks after every job (on top of the exit checks inside the FORM files): qgraf: output written, number of diagrams
+= NDIAG of process_header.h; 01: one parsed file per diagram; 02/03: ceil(NDIAG/10) groups and as many conjugates;
+04: all 16 pieces written; 05: no Prop,
 Den(cut), D/DD, TOPO, PropSet, FAM, ISP, scalar products, m2, s12 left, every INT with cut indices 1,1,1,1,1;
 06: no dependent family (left-hand sides of symm_loop_crossings.inc) left. Failed jobs keep their folder and
 form.log; the reason is in <state>/failed/ and in jobs.csv.
 
-Environment: FORM (default "form"; e.g. FORM="tform -w2"), SKIPAA (default 1: aa and a2a2 are not computed),
-FORMPATH (set by setenv.sh).
+Environment: FORM (default "form"; e.g. FORM="tform -w2"), QGRAF (default "qgraf"), SKIPAA (default 1: aa and a2a2
+are not computed), FORMPATH (set by setenv.sh). Rerunning a step of qgraf..03 for a channel invalidates its later steps.
 """
 import argparse
 import csv
@@ -48,6 +52,10 @@ CODE = os.path.dirname(SCRIPTS)
 FAMDIR = os.path.join(CODE, "Families")
 FORM = shlex.split(os.environ.get("FORM", "form"))
 SKIPAA = os.environ.get("SKIPAA", "1")
+QGRAF = os.environ.get("QGRAF", "qgraf")
+PREP = ["qgraf", "01", "02", "03"]                                       # per channel, in this order
+ALLSTEPS = PREP + ["04", "05", "06"]
+GROUP_SIZE = 10
 
 PIECES = [x + y for x in ("v", "a", "v2", "a2") for y in ("v", "a", "v2", "a2")]
 EVEN = ["vv", "aa", "vv2", "aa2", "v2v", "a2a", "v2v2", "a2a2"]          # projector L1
@@ -91,15 +99,17 @@ class Channel:
         self.dir = os.path.join(SCRIPTS, group, name, name + "_LO")
         with open(os.path.join(self.dir, "process_header.h")) as f:
             self.ndiag = int(re.search(r'#define NDIAG "(\d+)"', f.read()).group(1))
-        gdir = os.path.join(self.dir, "tmp", "parsed_diagrams", "groups")
-        self.ngroups = len(glob.glob(os.path.join(gdir, "sum_*")))
-        nconj = len(glob.glob(os.path.join(gdir, "Csum_*")))
-        if self.ngroups == 0 or nconj != self.ngroups:
-            sys.exit(f"{name}: no or inconsistent step-02/03 groups ({self.ngroups} sum, {nconj} Csum): run 02 and 03")
-        size = -(-self.ndiag // self.ngroups)
-        self.gsize = [min(size, self.ndiag - size * k) for k in range(self.ngroups)]
+        self.ngroups = -(-self.ndiag // GROUP_SIZE)                     # groups of 10 (step 02)
+        self.gsize = [min(GROUP_SIZE, self.ndiag - GROUP_SIZE * k) for k in range(self.ngroups)]
         self.pairs = [f"{i}_{j}" for i in range(1, self.ngroups + 1) for j in range(1, self.ngroups + 1)]
         self.weight = 5.0 if group in GLUON_GROUPS else 1.0
+
+    def groups_ok(self):
+        """step-02/03 output present and consistent with groups of 10"""
+        gdir = os.path.join(self.dir, "tmp", "parsed_diagrams", "groups")
+        n = len(glob.glob(os.path.join(gdir, "sum_*")))
+        nc = len(glob.glob(os.path.join(gdir, "Csum_*")))
+        return n == nc == self.ngroups
 
     def cost04(self, pair):
         i, j = map(int, pair.split("_"))
@@ -254,6 +264,10 @@ class Job:
     # paths
     def folder(self):
         u = os.path.join(self.ch.dir, "utils")
+        if self.step == "qgraf":
+            return os.path.join(self.ch.dir, "qgraf")
+        if self.step in PREP:
+            return self.ch.dir
         if self.step == "04":
             return os.path.join(u, "tmp_fld", f"tmp_{self.pair}")
         if self.step == "05":
@@ -261,6 +275,8 @@ class Job:
         return self.ch.dir
 
     def output(self):
+        if self.step == "qgraf":
+            return os.path.join(self.ch.dir, "external", f"{self.ch.name}.0.inc")
         if self.step == "05":
             return os.path.join(self.ch.dir, "tmp", "squared_contracted", self.piece,
                                 f"unreduced{PROJ[self.piece]}_{self.pair}.ff")
@@ -270,6 +286,22 @@ class Job:
 
     def prepare(self, args, pairs06=None):
         d, u = self.ch.dir, os.path.join(self.ch.dir, "utils")
+        self.stdin = None
+        if self.step == "qgraf":
+            if os.path.exists(self.output()):                       # QGRAF does not overwrite its output
+                os.remove(self.output())
+            return [QGRAF], self.folder()
+        if self.step == "01":
+            for f in glob.glob(os.path.join(d, "tmp", "parsed_diagrams", "*.dat")):
+                os.remove(f)
+            return FORM + ["utils/01_colour_algebra.frm"], d
+        if self.step == "02":
+            self.stdin = f"{GROUP_SIZE}\n1\n"                    # group size, parallel FORM jobs
+            return [sys.executable, "utils/02_run_sum_diags_group.py"], d
+        if self.step == "03":
+            for f in glob.glob(os.path.join(d, "tmp", "parsed_diagrams", "groups", "Csum_*")):
+                os.remove(f)
+            return FORM + ["utils/03_complex_conj_diags.frm"], d
         if self.step == "04":
             for p in PIECES:
                 os.makedirs(os.path.join(d, "tmp", "squared_diagrams", p), exist_ok=True)
@@ -316,12 +348,29 @@ class Job:
         return cmd + [frm], fo
 
     def logfile(self):
+        if self.step in PREP:
+            return os.path.join(self.ch.dir, f"run{self.step}.log")
         if self.step == "06":
             return os.path.join(self.ch.dir, "utils", f"sum_squared_diags_{self.piece}_{PROJ[self.piece]}.log")
         return os.path.join(self.folder(), "form.log")
 
     def verify(self, dep):
         """-> ok, reason, info"""
+        ch = self.ch
+        if self.step == "qgraf":
+            if not os.path.isfile(self.output()):
+                return False, "no QGRAF output (see qgraf/../runqgraf.log)", {}
+            with open(self.output()) as f:
+                n = len(re.findall(r"^id diag\d+ =", f.read(), re.M))
+            return (n == ch.ndiag, "" if n == ch.ndiag else f"QGRAF gave {n} diagrams, NDIAG = {ch.ndiag}",
+                    {"ndiag": n})
+        if self.step == "01":
+            n = len(glob.glob(os.path.join(ch.dir, "tmp", "parsed_diagrams", f"diag*_{ch.name}_colour_out.0.dat")))
+            return n == ch.ndiag, "" if n == ch.ndiag else f"{n} parsed diagrams, NDIAG = {ch.ndiag}", {}
+        if self.step in ("02", "03"):
+            gdir = os.path.join(ch.dir, "tmp", "parsed_diagrams", "groups")
+            n = len(glob.glob(os.path.join(gdir, "Csum_*" if self.step == "03" else "sum_*")))
+            return (n == ch.ngroups, "" if n == ch.ngroups else f"{n} groups, expected {ch.ngroups}", {})
         if self.step == "04":
             ok, why, nonzero = lint04(self.ch, self.pair)
             return ok, why, {"nonzero": nonzero}
@@ -332,6 +381,8 @@ class Job:
         return ok, why, {}
 
     def cleanup(self):
+        if self.step in PREP:
+            return
         if self.step in ("04", "05"):
             shutil.rmtree(self.folder(), ignore_errors=True)
         else:
@@ -390,7 +441,9 @@ class State:
 
 
 # ---------------------------------------------------------------- run
-def preflight():
+def preflight(steps=()):
+    if "qgraf" in steps and shutil.which(QGRAF) is None:
+        sys.exit(f"QGRAF executable '{QGRAF}' not found (set QGRAF=... or PATH, or leave out the step qgraf)")
     if shutil.which(FORM[0]) is None:
         sys.exit(f"FORM executable '{FORM[0]}' not found (set FORM=... or PATH)")
     fp = os.environ.get("FORMPATH", "")
@@ -407,11 +460,13 @@ def preflight():
 
 
 def cmd_run(args):
-    preflight()
+    steps = set(args.steps.split(","))
+    if steps - set(ALLSTEPS):
+        sys.exit(f"unknown steps {sorted(steps - set(ALLSTEPS))}; steps are {','.join(ALLSTEPS)}")
+    preflight(steps)
     chans = [Channel(g, n) for g, n in select_channels(args)]
     st = State(args.state)
     dep = deptopos()
-    steps = set(args.steps.split(","))
     run_id = time.strftime("%Y%m%d-%H%M%S")
     print(f"run {run_id}: {len(chans)} channels, steps {sorted(steps)}, {args.jobs} jobs, FORM={' '.join(FORM)}, "
           f"SKIPAA={SKIPAA}, state {args.state}", flush=True)
@@ -453,8 +508,17 @@ def cmd_run(args):
                 push(j)
 
     queued06 = set()
-    for ch in chans:
-        plan[ch.name] = {"group": ch.group, "pairs": len(ch.pairs), "ndiag": ch.ndiag}
+
+    def next_stage(ch):
+        """queue the channel's next preparation step (qgraf, 01, 02, 03), or, when those are done, its 04 jobs"""
+        for s in PREP:
+            j = Job(s, ch, None, None, 1e13)
+            if s in steps and not st.done(j.key):
+                push(j)
+                return
+        if not ch.groups_ok():
+            print(f"{ch.name}: no step-02/03 groups (expected {ch.ngroups}): add the steps 01,02,03", flush=True)
+            return
         for pair in ch.pairs:
             j = Job("04", ch, None, pair, ch.cost04(pair))
             if st.done(j.key):
@@ -462,6 +526,19 @@ def cmd_run(args):
             elif "04" in steps:
                 push(j)
         maybe06(ch)
+
+    def invalidate_after(ch, step):
+        """a preparation step was redone: the channel's later steps are no longer valid"""
+        later = ALLSTEPS[ALLSTEPS.index(step) + 1:]
+        for s in later:
+            for f in glob.glob(os.path.join(args.state, "done", f"{s}__{ch.name}__*.json")):
+                os.remove(f)
+        nonzero[ch.name].clear()
+        pending_05[ch.name].clear()
+
+    for ch in chans:
+        plan[ch.name] = {"group": ch.group, "pairs": len(ch.pairs), "ndiag": ch.ndiag}
+        next_stage(ch)
     st.write_json("plan.json", plan)
 
     running = {}
@@ -482,7 +559,11 @@ def cmd_run(args):
             os.setpgrp()
             if nice:
                 os.nice(nice)
-        job.proc = subprocess.Popen(cmd, cwd=cwd, stdout=log, stderr=subprocess.STDOUT, preexec_fn=pre)
+        job.proc = subprocess.Popen(cmd, cwd=cwd, stdout=log, stderr=subprocess.STDOUT, preexec_fn=pre,
+                                    stdin=subprocess.PIPE if job.stdin else subprocess.DEVNULL)
+        if job.stdin:
+            job.proc.stdin.write(job.stdin.encode())
+            job.proc.stdin.close()
         log.close()
         job.start = time.time()
         running[job.proc.pid] = job
@@ -510,6 +591,9 @@ def cmd_run(args):
               f"{maxrss:6.2f} GB  {('  ' + why) if why else ''}", flush=True)
         if ok:
             job.cleanup()
+            if job.step in PREP:
+                invalidate_after(job.ch, job.step)
+                next_stage(job.ch)
             if job.step == "04":
                 add05(job.ch, job.pair, info["nonzero"])
             if job.step in ("04", "05"):
@@ -603,12 +687,13 @@ def cmd_status(args):
     cpu = {"04": [], "05": [], "06": []}
     for k, p in done.items():
         try:
-            cpu[k[:2]].append(json.load(open(p))["cpu_s"])
+            cpu.setdefault(k.split("__")[0], []).append(json.load(open(p))["cpu_s"])
         except (OSError, KeyError, ValueError):
             pass
     print(f"set {cfg.get('channels') and len(cfg['channels'])} channels, {cfg['jobs']} jobs, host {cfg.get('host')}, "
           f"state {args.state}, last update {run['time']}")
-    print(f"{'channel':16s} {'04 done/all':>12s} {'05 done/known':>14s} {'06 done':>8s} {'running':>8s} {'FAILED':>7s}")
+    print(f"{'channel':16s} {'prep':>6s} {'04 done/all':>12s} {'05 done/known':>14s} {'06 done':>8s} {'running':>8s} "
+          f"{'FAILED':>7s}")
     tot = {"04": [0, 0], "05": [0, 0], "06": [0], "run": 0, "fail": 0}
     for name, p in plan.items():
         d04, d05, d06 = count(name, "04", done), count(name, "05", done), count(name, "06", done)
@@ -622,7 +707,8 @@ def cmd_status(args):
                     pass
         nrun = sum(v for (n, s), v in running_by.items() if n == name)
         nfail = sum(1 for k in failed if f"__{name}__" in k)
-        print(f"{name:16s} {d04:5d}/{p['pairs']:<6d} {d05:6d}/{k05:<7d} {d06:8d} {nrun:8d} {nfail:7d}")
+        prep = ([s for s in PREP if count(name, s, done)] or ["-"])[-1]
+        print(f"{name:16s} {prep:>6s} {d04:5d}/{p['pairs']:<6d} {d05:6d}/{k05:<7d} {d06:8d} {nrun:8d} {nfail:7d}")
         tot["04"][0] += d04
         tot["04"][1] += p["pairs"]
         tot["05"][0] += d05
@@ -630,10 +716,10 @@ def cmd_status(args):
         tot["06"][0] += d06
         tot["run"] += nrun
         tot["fail"] += nfail
-    print(f"{'TOTAL':16s} {tot['04'][0]:5d}/{tot['04'][1]:<6d} {tot['05'][0]:6d}/{tot['05'][1]:<7d} "
+    print(f"{'TOTAL':16s} {'':>6s} {tot['04'][0]:5d}/{tot['04'][1]:<6d} {tot['05'][0]:6d}/{tot['05'][1]:<7d} "
           f"{tot['06'][0]:8d} {tot['run']:8d} {tot['fail']:7d}")
-    for s in ("04", "05", "06"):
-        if cpu[s]:
+    for s in ALLSTEPS:
+        if cpu.get(s):
             print(f"step {s}: {len(cpu[s])} done, CPU {sum(cpu[s])/3600:.1f} h, mean {sum(cpu[s])/len(cpu[s])/60:.1f} min, "
                   f"max {max(cpu[s])/60:.1f} min")
     # rough ETA: remaining 04 x mean04 + (known remaining 05 + 05 expected from remaining 04) x mean05, / jobs
@@ -819,7 +905,8 @@ def main():
             p.add_argument("--jobs", type=int, default=jobs, help="parallel FORM jobs")
     p = sub.add_parser("run", help="run / resume")
     common(p, jobs=4)
-    p.add_argument("--steps", default="04,05,06")
+    p.add_argument("--steps", default=",".join(ALLSTEPS),
+                   help="comma-separated, from qgraf,01,02,03,04,05,06 (default all)")
     p.add_argument("--min-free-gb", type=float, default=100.0,
                    help="start no new job while the machine has less available memory (Linux)")
     p.add_argument("--max-job-gb", type=float, default=60.0, help="kill a FORM job above this memory (0 = never)")

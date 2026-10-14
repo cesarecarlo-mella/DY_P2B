@@ -173,6 +173,32 @@ Before running FORM: `source Code_v2/setenv.sh` (sets FORMPATH to Code_v2/FORMro
 Works on macOS and Linux (bash or zsh). FORM executable for the step runners: environment variable FORM, default `form`;
 on a cluster e.g. `export FORM="tform -w4"` (used by utils/04_run_4.py).
 
+## Running everything: run_all.py (newton1)
+
+One command per set of channels runs the whole pipeline (QGRAF, 01, 02, 03, 04, 05, 06) with one global job queue;
+see `python3 Scripts/run_all.py --help`. Only the run outputs (tmp/ trees, run_state/) are not in git: a clone is enough.
+
+    cd /scratch/ge45tuy && git clone <repo> && cd DY_P2B/Code_v2 && source setenv.sh
+    which qgraf form                      # QGRAF 3.4.2 on PATH or export QGRAF=...; else leave out the step qgraf
+    python3 Scripts/run_all.py selftest --jobs 8          # FORM on this machine vs reference numbers (FORM 5.0)
+    mkdir -p /scratch/ge45tuy/formtmp     # NOT /tmp: it is in RAM (tmpfs)
+    nohup python3 Scripts/run_all.py run --set gluons --jobs 100 --form-tmp /scratch/ge45tuy/formtmp > gluons.log 2>&1 &
+    nohup python3 Scripts/run_all.py run --set quarks --jobs 100 --form-tmp /scratch/ge45tuy/formtmp > quarks.log 2>&1 &
+    watch -n 60 python3 Scripts/run_all.py status --set gluons --running     # progress, memory, CPU, failures, ETA
+    python3 Scripts/run_all.py check --set gluons          # leftovers / missing / outputs made with older files
+    python3 Scripts/run_all.py verify --set gluons --n 2   # numerical check of random step-05 results
+
+- Sets: gluons = physical_qqbggg (7 channels), quarks = the other 42; --channels A,B,... for a selection; --steps to
+  restrict (default qgraf,01,02,03,04,05,06). State per set in Scripts/run_state/<set>/: done/ and failed/ markers
+  (JSON, with CPU, memory, file versions), jobs.csv (one line per job), system.csv (memory, load, disk every 30 s),
+  running.json. Restart = same command: finished jobs are skipped, failed and interrupted ones rerun.
+- Memory: no new job while the machine has < --min-free-gb (default 100) available; a job above --max-job-gb (default
+  60) is killed and marked failed. FORM runs with nice --nice (default 10).
+- Environment: FORM (e.g. FORM="tform -w2"), QGRAF, SKIPAA (default 1), FORMPATH (setenv.sh).
+- Tested on the laptop (2026-10-14): Vqqbccbg from QGRAF to 06 (23 jobs, 3 slots, 27 min, 0 failed; QGRAF and
+  01-03 outputs byte-identical to the earlier per-channel runs), check 0 problems, verify IDENTICAL, restart = no-op;
+  selftest PASSED (FORM 5.0). Step 05 of a 10x10 pair of the ghost channel Vqqbccbg: ~15 min per piece.
+
 ## Partial fractions: how the identities are found
 
 - Every propagator DDk is linear in the 12 scalar products p1.ri, p2.ri, ri.rj (i <= j), plus a constant
