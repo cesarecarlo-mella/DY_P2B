@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     17876,        412]
+NotebookDataLength[     17870,        412]
 NotebookOptionsPosition[     15590,        368]
-NotebookOutlinePosition[     16062,        386]
-CellTagsIndexPosition[     16019,        383]
+NotebookOutlinePosition[     16056,        386]
+CellTagsIndexPosition[     16013,        383]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -366,8 +366,8 @@ Cell[BoxData[""], "Input",
  CellLabel->
   "In[103]:=",ExpressionUUID->"e5acc42f-ab78-4425-a7e1-19d9615abb0a"]
 },
-WindowSize->{1528, 1387},
-WindowMargins->{{1517, Automatic}, {Automatic, -13}},
+WindowSize->{1512, 851},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
 TaggingRules-><|"TryRealOnly" -> False|>,
 Magnification:>1.25 Inherited,
 FrontEndVersion->"14.2 for Mac OS X ARM (64-bit) (March 16, 2025)",
