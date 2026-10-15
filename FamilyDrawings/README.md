@@ -18,7 +18,8 @@ Method: with all legs incoming every regular propagator is a split of {p1, p2, r
 p1 p2 -> V(q) r1 r2 r3 is a set of compatible splits. Each family is drawn as amplitude (left) x conjugate (right),
 glued along the cut r1, r2, r3, q, choosing the two trees that contain the most of its 7 regular propagators; the
 others are irreducible numerators (listed under each drawing and in families.json). The cut conditions are r_i^2 = 0,
-q^2 = m2 and the rapidity condition -q.p1 + u q.p2 = 0, which is not a line and is not drawn.
+q^2 = m2 and the rapidity condition -q.p1 + u q.p2 = 0 (not a line): the q line is drawn wavy up to the cut
+(q^2 = m2) and as a red double line after it (rapidity condition).
 
 Independent families: 146 with 1 irreducible numerator, 10 with 2; 155 of them are two full trees (3 + 3 propagators).
 

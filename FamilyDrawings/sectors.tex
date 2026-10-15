@@ -6,7 +6,7 @@
 \tikzfeynmanset{warn luatex=false}
 \begin{document}
 \section*{Top sectors as cut diagrams}
-Amplitude (left) $\times$ conjugate (right) for $p_1 p_2 \to V(q)\, r_1 r_2 r_3$, glued along the cut (dashed): $r_1, r_2, r_3$ (blue), $q$ (red, $q^2 = m^2$). The rapidity condition $-q\cdot p_1 + u\, q\cdot p_2 = 0$ of every family is not a line. Internal lines carry their DD number. Arrows: momentum flow with all legs incoming ($p_1+p_2+r_1+r_2+r_3+q=0$): in the amplitude every line carries the sum of the incoming momenta on its far side, e.g.\ line 6 carries $p_1+r_1$; the conjugate is the mirror image, so $p_1, p_2$ leave on the right and $r_i, q$ flow through the cut from right to left (the physical final-state momenta $-r_i$ from left to right). \textbf{Regular propagators} (DD numbers, all legs incoming): 6 = $(p_1+r_1)^2$; 7 = $(p_2+r_1)^2$; 8 = $(p_1+r_2)^2$; 9 = $(p_2+r_2)^2$; 10 = $(p_1+r_3)^2$; 11 = $(p_2+r_3)^2$; 12 = $(r_1+r_2)^2$; 13 = $(r_2+r_3)^2$; 14 = $(r_1+r_3)^2$; 15 = $(p_1+r_1+r_2)^2$; 16 = $(p_2+r_1+r_2)^2$; 17 = $(p_1+r_1+r_3)^2$; 18 = $(p_2+r_1+r_3)^2$; 19 = $(p_1+r_2+r_3)^2$; 20 = $(p_2+r_2+r_3)^2$; 21 = $(r_1+r_2+r_3)^2$; 22 = $(p_1+r_1+r_2+r_3)^2$; 23 = $(p_2+r_1+r_2+r_3)^2$; 24 = $(p_1+p_2+r_1)^2$; 25 = $(p_1+p_2+r_2)^2$; 26 = $(p_1+p_2+r_3)^2$; 27 = $(p_1+p_2+r_1+r_2)^2$; 28 = $(p_1+p_2+r_1+r_3)^2$; 29 = $(p_1+p_2+r_2+r_3)^2$.\par\medskip
+Amplitude (left) $\times$ conjugate (right) for $p_1 p_2 \to V(q)\, r_1 r_2 r_3$, glued along the cut (dashed): $r_1, r_2, r_3$ (blue), $q$ (red). The rapidity condition $-q\cdot p_1 + u\, q\cdot p_2 = 0$ of every family is not a line: the $q$ line is drawn wavy up to the cut ($q^2 = m^2$) and as a double line after it (the rapidity condition). Internal lines carry their DD number. Arrows: momentum flow with all legs incoming ($p_1+p_2+r_1+r_2+r_3+q=0$): in the amplitude every line carries the sum of the incoming momenta on its far side, e.g.\ line 6 carries $p_1+r_1$; the conjugate is the mirror image, so $p_1, p_2$ leave on the right and $r_i, q$ flow through the cut from right to left (the physical final-state momenta $-r_i$ from left to right). \textbf{Regular propagators} (DD numbers, all legs incoming): 6 = $(p_1+r_1)^2$; 7 = $(p_2+r_1)^2$; 8 = $(p_1+r_2)^2$; 9 = $(p_2+r_2)^2$; 10 = $(p_1+r_3)^2$; 11 = $(p_2+r_3)^2$; 12 = $(r_1+r_2)^2$; 13 = $(r_2+r_3)^2$; 14 = $(r_1+r_3)^2$; 15 = $(p_1+r_1+r_2)^2$; 16 = $(p_2+r_1+r_2)^2$; 17 = $(p_1+r_1+r_3)^2$; 18 = $(p_2+r_1+r_3)^2$; 19 = $(p_1+r_2+r_3)^2$; 20 = $(p_2+r_2+r_3)^2$; 21 = $(r_1+r_2+r_3)^2$; 22 = $(p_1+r_1+r_2+r_3)^2$; 23 = $(p_2+r_1+r_2+r_3)^2$; 24 = $(p_1+p_2+r_1)^2$; 25 = $(p_1+p_2+r_2)^2$; 26 = $(p_1+p_2+r_3)^2$; 27 = $(p_1+p_2+r_1+r_2)^2$; 28 = $(p_1+p_2+r_1+r_3)^2$; 29 = $(p_1+p_2+r_2+r_3)^2$.\par\medskip
 \begin{minipage}[t]{0.48\textwidth}\centering\resizebox{0.9\linewidth}{!}{\begin{tikzpicture}
 \begin{feynman}
 \vertex (Lp1) at (-3.200,2.300) {$p_1$};
@@ -15,6 +15,7 @@ Amplitude (left) $\times$ conjugate (right) for $p_1 p_2 \to V(q)\, r_1 r_2 r_3$
 \vertex (Lcr2) at (-0.750,-0.500);
 \vertex (Lcr3) at (-0.750,-1.500);
 \vertex (Lcq) at (-0.750,0.500);
+\vertex (Mq) at (0,0.500);
 \vertex[dot] (L6) at (-1.975,1.147) {};
 \vertex[dot] (Lroot) at (-1.975,-0.173) {};
 \vertex[dot] (L13) at (-1.567,-0.973) {};
@@ -41,11 +42,11 @@ Amplitude (left) $\times$ conjugate (right) for $p_1 p_2 \to V(q)\, r_1 r_2 r_3$
 (Rroot) -- [plain, blue!60!black, out=180, in=0, looseness=0.75, with arrow=0.55] (Rcr1),
 (R8) -- [plain, blue!60!black, out=180, in=0, looseness=0.75, with arrow=0.55] (Rcr2),
 (Rroot) -- [plain, blue!60!black, out=180, in=0, looseness=0.75, with arrow=0.55] (Rcr3),
-(Rroot) -- [boson, red!70!black, out=180, in=0, looseness=0.75] (Rcq),
+(Rroot) -- [plain, red!70!black, double, double distance=1.2pt, thick, out=180, in=0, looseness=0.75] (Rcq),
 (Rcr1) -- [plain, blue!60!black, with arrow=0.55] (Lcr1),
 (Rcr2) -- [plain, blue!60!black, with arrow=0.55] (Lcr2),
 (Rcr3) -- [plain, blue!60!black, with arrow=0.55] (Lcr3),
-(Rcq) -- [boson, red!70!black] (Lcq),
+(Rcq) -- [plain, red!70!black, double, double distance=1.2pt, thick] (Mq) -- [boson, red!70!black] (Lcq),
 };
 \end{feynman}
 \draw[dashed, gray!70] (0,-2.30) -- (0,2.30);

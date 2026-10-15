@@ -176,6 +176,8 @@ def tikz(n, dds, left, right):
             L.append(rf"\vertex ({k}) at ({x:.3f},{y:.3f}) {{${TEX[k[1:]]}$}};")
         elif k[1:].startswith("c"):
             L.append(rf"\vertex ({k}) at ({x:.3f},{y:.3f});")
+            if k == "Lcq":
+                L.append(rf"\vertex (Mq) at (0,{y:.3f});")
         else:
             L.append(rf"\vertex[dot] ({k}) at ({x:.3f},{y:.3f}) {{}};")
     L.append(r"\diagram* {")
@@ -190,6 +192,8 @@ def tikz(n, dds, left, right):
             c = curve(pos, a, b)
             if lab in ("p1", "p2"):
                 L.append(f"({a}) -- [plain, thick{arrow}] ({b}),")
+            elif lab == "q" and side == "R":                      # conjugate side of q: the rapidity half
+                L.append(f"({a}) -- [plain, red!70!black, double, double distance=1.2pt, thick{c}] ({b}),")
             elif lab == "q":
                 L.append(f"({a}) -- [boson, red!70!black{c}] ({b}),")
             elif lab in ("r1", "r2", "r3"):
@@ -199,8 +203,10 @@ def tikz(n, dds, left, right):
                         else rf"\footnotesize\bfseries {lab}")
                 L.append(f"({a}) -- [plain{c}{arrow}, edge label={{{text}}}] ({b}),")
     for x in CUTLEGS:                                             # the cut lines through the cut
-        st = "boson, red!70!black" if x == "q" else f"plain, blue!60!black{arrow}"
-        L.append(f"(Rc{x}) -- [{st}] (Lc{x}),")
+        if x == "q":                                              # q: wavy half (q^2 = m2), double half (rapidity)
+            L.append("(Rcq) -- [plain, red!70!black, double, double distance=1.2pt, thick] (Mq) -- [boson, red!70!black] (Lcq),")
+        else:
+            L.append(f"(Rc{x}) -- [plain, blue!60!black{arrow}] (Lc{x}),")
     L.append("};")
     L.append(r"\end{feynman}")
     L.append(rf"\draw[dashed, gray!70] (0,{min(ycut.values()) - 0.8:.2f}) -- (0,{max(ycut.values()) + 0.8:.2f});")
@@ -298,8 +304,9 @@ def render(items, fams, indep, name, title):
            r"\usepackage[compat=1.1.0]{tikz-feynman}", r"\usetikzlibrary{arrows.meta}", r"\tikzfeynmanset{warn luatex=false}", r"\begin{document}",
            rf"\section*{{{title}}}",
            r"Amplitude (left) $\times$ conjugate (right) for $p_1 p_2 \to V(q)\, r_1 r_2 r_3$, glued along the cut "
-           r"(dashed): $r_1, r_2, r_3$ (blue), $q$ (red, $q^2 = m^2$). The rapidity condition $-q\cdot p_1 + u\, q\cdot p_2 = 0$ "
-           r"of every family is not a line. Internal lines carry their DD number. Arrows: momentum flow with all legs "
+           r"(dashed): $r_1, r_2, r_3$ (blue), $q$ (red). The rapidity condition $-q\cdot p_1 + u\, q\cdot p_2 = 0$ "
+           r"of every family is not a line: the $q$ line is drawn wavy up to the cut ($q^2 = m^2$) and as a double line "
+           r"after it (the rapidity condition). Internal lines carry their DD number. Arrows: momentum flow with all legs "
            r"incoming ($p_1+p_2+r_1+r_2+r_3+q=0$): in the amplitude every line carries the sum of the incoming momenta "
            r"on its far side, e.g.\ line 6 carries $p_1+r_1$; the conjugate is the mirror image, so $p_1, p_2$ leave on "
            r"the right and $r_i, q$ flow through the cut from right to left (the physical final-state momenta $-r_i$ "
