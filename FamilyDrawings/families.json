@@ -1,6 +1,7 @@
-{
- "1": {
-  "regular": [
+[
+ {
+  "family": 1,
+  "lines": [
    6,
    7,
    8,
@@ -19,12 +20,15 @@
    8,
    18
   ],
-  "numerators": [
+  "not_in_trees": [
    27
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "7": {
-  "regular": [
+ {
+  "family": 7,
+  "lines": [
    6,
    7,
    8,
@@ -43,12 +47,15 @@
    8,
    19
   ],
-  "numerators": [
+  "not_in_trees": [
    13
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "13": {
-  "regular": [
+ {
+  "family": 13,
+  "lines": [
    6,
    7,
    8,
@@ -67,12 +74,15 @@
    8,
    18
   ],
-  "numerators": [
+  "not_in_trees": [
    13
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "19": {
-  "regular": [
+ {
+  "family": 19,
+  "lines": [
    6,
    7,
    8,
@@ -91,12 +101,15 @@
    8,
    18
   ],
-  "numerators": [
+  "not_in_trees": [
    27
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "25": {
-  "regular": [
+ {
+  "family": 25,
+  "lines": [
    6,
    7,
    8,
@@ -115,12 +128,15 @@
    8,
    19
   ],
-  "numerators": [
+  "not_in_trees": [
    22
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "31": {
-  "regular": [
+ {
+  "family": 31,
+  "lines": [
    6,
    7,
    8,
@@ -139,12 +155,15 @@
    8,
    18
   ],
-  "numerators": [
+  "not_in_trees": [
    23
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "37": {
-  "regular": [
+ {
+  "family": 37,
+  "lines": [
    6,
    7,
    8,
@@ -163,12 +182,15 @@
    8,
    18
   ],
-  "numerators": [
+  "not_in_trees": [
    27
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "43": {
-  "regular": [
+ {
+  "family": 43,
+  "lines": [
    6,
    7,
    8,
@@ -187,12 +209,15 @@
    8,
    19
   ],
-  "numerators": [
+  "not_in_trees": [
    27
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "49": {
-  "regular": [
+ {
+  "family": 49,
+  "lines": [
    6,
    7,
    8,
@@ -211,12 +236,15 @@
    8,
    19
   ],
-  "numerators": [
+  "not_in_trees": [
    13
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "55": {
-  "regular": [
+ {
+  "family": 55,
+  "lines": [
    6,
    7,
    8,
@@ -235,12 +263,15 @@
    8,
    18
   ],
-  "numerators": [
+  "not_in_trees": [
    14
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "61": {
-  "regular": [
+ {
+  "family": 61,
+  "lines": [
    6,
    7,
    8,
@@ -259,12 +290,15 @@
    8,
    27
   ],
-  "numerators": [
+  "not_in_trees": [
    25
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "67": {
-  "regular": [
+ {
+  "family": 67,
+  "lines": [
    6,
    7,
    8,
@@ -283,12 +317,15 @@
    8,
    27
   ],
-  "numerators": [
+  "not_in_trees": [
    15
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "73": {
-  "regular": [
+ {
+  "family": 73,
+  "lines": [
    6,
    7,
    8,
@@ -307,12 +344,15 @@
    8,
    18
   ],
-  "numerators": [
+  "not_in_trees": [
    22
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "79": {
-  "regular": [
+ {
+  "family": 79,
+  "lines": [
    6,
    7,
    8,
@@ -331,12 +371,15 @@
    8,
    19
   ],
-  "numerators": [
+  "not_in_trees": [
    13
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "85": {
-  "regular": [
+ {
+  "family": 85,
+  "lines": [
    6,
    7,
    8,
@@ -355,12 +398,15 @@
    8,
    18
   ],
-  "numerators": [
+  "not_in_trees": [
    19
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "91": {
-  "regular": [
+ {
+  "family": 91,
+  "lines": [
    6,
    7,
    8,
@@ -379,12 +425,15 @@
    8,
    18
   ],
-  "numerators": [
+  "not_in_trees": [
    19
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "97": {
-  "regular": [
+ {
+  "family": 97,
+  "lines": [
    6,
    7,
    8,
@@ -403,12 +452,15 @@
    8,
    27
   ],
-  "numerators": [
+  "not_in_trees": [
    25
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "103": {
-  "regular": [
+ {
+  "family": 103,
+  "lines": [
    6,
    7,
    8,
@@ -427,12 +479,15 @@
    8,
    27
   ],
-  "numerators": [
+  "not_in_trees": [
    14
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "109": {
-  "regular": [
+ {
+  "family": 109,
+  "lines": [
    6,
    7,
    9,
@@ -451,12 +506,15 @@
    13,
    23
   ],
-  "numerators": [
+  "not_in_trees": [
    14
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "115": {
-  "regular": [
+ {
+  "family": 115,
+  "lines": [
    6,
    7,
    9,
@@ -475,12 +533,15 @@
    13,
    23
   ],
-  "numerators": [
+  "not_in_trees": [
    16
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "121": {
-  "regular": [
+ {
+  "family": 121,
+  "lines": [
    6,
    7,
    9,
@@ -499,12 +560,15 @@
    10,
    16
   ],
-  "numerators": [
+  "not_in_trees": [
    23
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "127": {
-  "regular": [
+ {
+  "family": 127,
+  "lines": [
    6,
    7,
    9,
@@ -523,12 +587,15 @@
    16,
    27
   ],
-  "numerators": [
+  "not_in_trees": [
    22
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "133": {
-  "regular": [
+ {
+  "family": 133,
+  "lines": [
    6,
    7,
    9,
@@ -547,12 +614,15 @@
    16,
    27
   ],
-  "numerators": [
+  "not_in_trees": [
    13
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "139": {
-  "regular": [
+ {
+  "family": 139,
+  "lines": [
    6,
    7,
    9,
@@ -571,12 +641,15 @@
    18,
    23
   ],
-  "numerators": [
+  "not_in_trees": [
    20
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "145": {
-  "regular": [
+ {
+  "family": 145,
+  "lines": [
    6,
    7,
    9,
@@ -595,12 +668,15 @@
    18,
    28
   ],
-  "numerators": [
+  "not_in_trees": [
    20
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "151": {
-  "regular": [
+ {
+  "family": 151,
+  "lines": [
    6,
    7,
    9,
@@ -619,12 +695,15 @@
    18,
    23
   ],
-  "numerators": [
+  "not_in_trees": [
    25
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "157": {
-  "regular": [
+ {
+  "family": 157,
+  "lines": [
    6,
    7,
    9,
@@ -643,12 +722,15 @@
    18,
    28
   ],
-  "numerators": [
+  "not_in_trees": [
    14
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "163": {
-  "regular": [
+ {
+  "family": 163,
+  "lines": [
    6,
    7,
    12,
@@ -667,12 +749,15 @@
    13,
    23
   ],
-  "numerators": [
+  "not_in_trees": [
    12
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "169": {
-  "regular": [
+ {
+  "family": 169,
+  "lines": [
    6,
    7,
    12,
@@ -691,12 +776,15 @@
    16,
    27
   ],
-  "numerators": [
+  "not_in_trees": [
    12
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "175": {
-  "regular": [
+ {
+  "family": 175,
+  "lines": [
    6,
    7,
    13,
@@ -715,12 +803,15 @@
    16,
    27
   ],
-  "numerators": [
+  "not_in_trees": [
    15
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "181": {
-  "regular": [
+ {
+  "family": 181,
+  "lines": [
    6,
    7,
    15,
@@ -739,12 +830,15 @@
    16,
    23
   ],
-  "numerators": [
+  "not_in_trees": [
    18
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "187": {
-  "regular": [
+ {
+  "family": 187,
+  "lines": [
    6,
    7,
    8,
@@ -763,12 +857,15 @@
    8,
    18
   ],
-  "numerators": [
+  "not_in_trees": [
    28
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "193": {
-  "regular": [
+ {
+  "family": 193,
+  "lines": [
    6,
    8,
    11,
@@ -787,12 +884,15 @@
    11,
    15
   ],
-  "numerators": [
+  "not_in_trees": [
    21
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "199": {
-  "regular": [
+ {
+  "family": 199,
+  "lines": [
    6,
    8,
    11,
@@ -811,12 +911,15 @@
    11,
    15
   ],
-  "numerators": [
+  "not_in_trees": [
    29
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "205": {
-  "regular": [
+ {
+  "family": 205,
+  "lines": [
    6,
    8,
    11,
@@ -835,12 +938,15 @@
    11,
    15
   ],
-  "numerators": [
+  "not_in_trees": [
    27
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "211": {
-  "regular": [
+ {
+  "family": 211,
+  "lines": [
    6,
    8,
    11,
@@ -859,12 +965,15 @@
    11,
    18
   ],
-  "numerators": [
+  "not_in_trees": [
    19
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "217": {
-  "regular": [
+ {
+  "family": 217,
+  "lines": [
    6,
    8,
    11,
@@ -883,12 +992,15 @@
    11,
    18
   ],
-  "numerators": [
+  "not_in_trees": [
    17
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "223": {
-  "regular": [
+ {
+  "family": 223,
+  "lines": [
    6,
    8,
    11,
@@ -907,12 +1019,15 @@
    11,
    18
   ],
-  "numerators": [
+  "not_in_trees": [
    28
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "229": {
-  "regular": [
+ {
+  "family": 229,
+  "lines": [
    6,
    8,
    11,
@@ -931,12 +1046,15 @@
    20,
    29
   ],
-  "numerators": [
+  "not_in_trees": [
    8
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "235": {
-  "regular": [
+ {
+  "family": 235,
+  "lines": [
    6,
    8,
    11,
@@ -955,12 +1073,15 @@
    11,
    29
   ],
-  "numerators": [
+  "not_in_trees": [
    27
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "241": {
-  "regular": [
+ {
+  "family": 241,
+  "lines": [
    6,
    8,
    11,
@@ -979,12 +1100,15 @@
    15,
    27
   ],
-  "numerators": [
+  "not_in_trees": [
    17
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "247": {
-  "regular": [
+ {
+  "family": 247,
+  "lines": [
    6,
    8,
    11,
@@ -1003,12 +1127,15 @@
    15,
    22
   ],
-  "numerators": [
+  "not_in_trees": [
    24
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "253": {
-  "regular": [
+ {
+  "family": 253,
+  "lines": [
    6,
    8,
    11,
@@ -1027,12 +1154,15 @@
    11,
    18
   ],
-  "numerators": [
+  "not_in_trees": [
    29
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "259": {
-  "regular": [
+ {
+  "family": 259,
+  "lines": [
    6,
    8,
    11,
@@ -1051,12 +1181,15 @@
    11,
    29
   ],
-  "numerators": [
+  "not_in_trees": [
    25
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "265": {
-  "regular": [
+ {
+  "family": 265,
+  "lines": [
    6,
    8,
    11,
@@ -1075,12 +1208,15 @@
    11,
    18
   ],
-  "numerators": [
+  "not_in_trees": [
    23
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "271": {
-  "regular": [
+ {
+  "family": 271,
+  "lines": [
    6,
    8,
    11,
@@ -1099,12 +1235,15 @@
    19,
    29
   ],
-  "numerators": [
+  "not_in_trees": [
    24
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "277": {
-  "regular": [
+ {
+  "family": 277,
+  "lines": [
    6,
    8,
    13,
@@ -1123,12 +1262,15 @@
    14,
    18
   ],
-  "numerators": [
+  "not_in_trees": [
    21
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "280": {
-  "regular": [
+ {
+  "family": 280,
+  "lines": [
    6,
    8,
    13,
@@ -1147,12 +1289,15 @@
    14,
    18
   ],
-  "numerators": [
+  "not_in_trees": [
    28
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "286": {
-  "regular": [
+ {
+  "family": 286,
+  "lines": [
    6,
    8,
    13,
@@ -1171,12 +1316,15 @@
    14,
    22
   ],
-  "numerators": [
+  "not_in_trees": [
    27
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "292": {
-  "regular": [
+ {
+  "family": 292,
+  "lines": [
    6,
    8,
    13,
@@ -1195,12 +1343,15 @@
    14,
    25
   ],
-  "numerators": [
+  "not_in_trees": [
    17
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "298": {
-  "regular": [
+ {
+  "family": 298,
+  "lines": [
    6,
    8,
    13,
@@ -1219,12 +1370,15 @@
    15,
    22
   ],
-  "numerators": [
+  "not_in_trees": [
    27
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "304": {
-  "regular": [
+ {
+  "family": 304,
+  "lines": [
    6,
    8,
    13,
@@ -1243,12 +1397,15 @@
    15,
    27
   ],
-  "numerators": [
+  "not_in_trees": [
    24
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "310": {
-  "regular": [
+ {
+  "family": 310,
+  "lines": [
    6,
    8,
    12,
@@ -1267,12 +1424,15 @@
    25,
    29
   ],
-  "numerators": [
+  "not_in_trees": [
    12
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "316": {
-  "regular": [
+ {
+  "family": 316,
+  "lines": [
    6,
    8,
    13,
@@ -1291,12 +1451,15 @@
    25,
    27
   ],
-  "numerators": [
+  "not_in_trees": [
    29
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "322": {
-  "regular": [
+ {
+  "family": 322,
+  "lines": [
    6,
    8,
    15,
@@ -1315,12 +1478,15 @@
    15,
    27
   ],
-  "numerators": [
+  "not_in_trees": [
    28
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "328": {
-  "regular": [
+ {
+  "family": 328,
+  "lines": [
    6,
    8,
    10,
@@ -1339,12 +1505,15 @@
    15,
    27
   ],
-  "numerators": [
+  "not_in_trees": [
    10
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "334": {
-  "regular": [
+ {
+  "family": 334,
+  "lines": [
    6,
    8,
    17,
@@ -1363,12 +1532,15 @@
    19,
    29
   ],
-  "numerators": [
+  "not_in_trees": [
    28
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "337": {
-  "regular": [
+ {
+  "family": 337,
+  "lines": [
    6,
    7,
    8,
@@ -1387,12 +1559,15 @@
    8,
    27
   ],
-  "numerators": [
+  "not_in_trees": [
    25
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "343": {
-  "regular": [
+ {
+  "family": 343,
+  "lines": [
    6,
    8,
    10,
@@ -1411,12 +1586,15 @@
    25,
    29
   ],
-  "numerators": [
+  "not_in_trees": [
    10
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "346": {
-  "regular": [
+ {
+  "family": 346,
+  "lines": [
    6,
    9,
    11,
@@ -1435,12 +1613,15 @@
    12,
    15
   ],
-  "numerators": [
+  "not_in_trees": [
    16
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "352": {
-  "regular": [
+ {
+  "family": 352,
+  "lines": [
    6,
    9,
    11,
@@ -1459,12 +1640,15 @@
    12,
    15
   ],
-  "numerators": [
+  "not_in_trees": [
    21
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "358": {
-  "regular": [
+ {
+  "family": 358,
+  "lines": [
    6,
    9,
    11,
@@ -1483,12 +1667,15 @@
    12,
    15
   ],
-  "numerators": [
+  "not_in_trees": [
    27
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "364": {
-  "regular": [
+ {
+  "family": 364,
+  "lines": [
    6,
    9,
    11,
@@ -1507,12 +1694,15 @@
    12,
    23
   ],
-  "numerators": [
+  "not_in_trees": [
    18
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "370": {
-  "regular": [
+ {
+  "family": 370,
+  "lines": [
    6,
    9,
    11,
@@ -1531,12 +1721,15 @@
    12,
    26
   ],
-  "numerators": [
+  "not_in_trees": [
    28
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "376": {
-  "regular": [
+ {
+  "family": 376,
+  "lines": [
    6,
    9,
    11,
@@ -1555,12 +1748,15 @@
    12,
    23
   ],
-  "numerators": [
+  "not_in_trees": [
    27
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "382": {
-  "regular": [
+ {
+  "family": 382,
+  "lines": [
    6,
    9,
    11,
@@ -1579,12 +1775,15 @@
    12,
    26
   ],
-  "numerators": [
+  "not_in_trees": [
    29
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "388": {
-  "regular": [
+ {
+  "family": 388,
+  "lines": [
    6,
    9,
    11,
@@ -1603,12 +1802,15 @@
    14,
    25
   ],
-  "numerators": [
+  "not_in_trees": [
    27
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "394": {
-  "regular": [
+ {
+  "family": 394,
+  "lines": [
    6,
    9,
    11,
@@ -1627,12 +1829,15 @@
    16,
    27
   ],
-  "numerators": [
+  "not_in_trees": [
    28
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "400": {
-  "regular": [
+ {
+  "family": 400,
+  "lines": [
    6,
    9,
    11,
@@ -1651,12 +1856,15 @@
    12,
    15
   ],
-  "numerators": [
+  "not_in_trees": [
    29
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "406": {
-  "regular": [
+ {
+  "family": 406,
+  "lines": [
    6,
    9,
    11,
@@ -1675,12 +1883,15 @@
    25,
    29
   ],
-  "numerators": [
+  "not_in_trees": [
    22
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "412": {
-  "regular": [
+ {
+  "family": 412,
+  "lines": [
    6,
    9,
    11,
@@ -1699,12 +1910,15 @@
    16,
    23
   ],
-  "numerators": [
+  "not_in_trees": [
    26
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "418": {
-  "regular": [
+ {
+  "family": 418,
+  "lines": [
    6,
    9,
    11,
@@ -1723,12 +1937,15 @@
    18,
    28
   ],
-  "numerators": [
+  "not_in_trees": [
    14
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "424": {
-  "regular": [
+ {
+  "family": 424,
+  "lines": [
    6,
    9,
    11,
@@ -1747,12 +1964,15 @@
    26,
    28
   ],
-  "numerators": [
+  "not_in_trees": [
    23
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "430": {
-  "regular": [
+ {
+  "family": 430,
+  "lines": [
    6,
    9,
    11,
@@ -1771,12 +1991,15 @@
    25,
    29
   ],
-  "numerators": [
+  "not_in_trees": [
    17
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "436": {
-  "regular": [
+ {
+  "family": 436,
+  "lines": [
    6,
    9,
    12,
@@ -1795,12 +2018,15 @@
    15,
    22
   ],
-  "numerators": [
+  "not_in_trees": [
    27
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "442": {
-  "regular": [
+ {
+  "family": 442,
+  "lines": [
    6,
    9,
    12,
@@ -1819,12 +2045,15 @@
    15,
    22
   ],
-  "numerators": [
+  "not_in_trees": [
    16
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "448": {
-  "regular": [
+ {
+  "family": 448,
+  "lines": [
    6,
    9,
    12,
@@ -1843,12 +2072,15 @@
    16,
    23
   ],
-  "numerators": [
+  "not_in_trees": [
    15
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "454": {
-  "regular": [
+ {
+  "family": 454,
+  "lines": [
    6,
    9,
    12,
@@ -1867,12 +2099,15 @@
    16,
    23
   ],
-  "numerators": [
+  "not_in_trees": [
    27
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "460": {
-  "regular": [
+ {
+  "family": 460,
+  "lines": [
    6,
    9,
    13,
@@ -1891,12 +2126,15 @@
    17,
    22
   ],
-  "numerators": [
+  "not_in_trees": [
    13
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "466": {
-  "regular": [
+ {
+  "family": 466,
+  "lines": [
    6,
    9,
    13,
@@ -1915,12 +2153,15 @@
    14,
    17
   ],
-  "numerators": [
+  "not_in_trees": [
    21
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "472": {
-  "regular": [
+ {
+  "family": 472,
+  "lines": [
    6,
    9,
    13,
@@ -1939,12 +2180,15 @@
    20,
    23
   ],
-  "numerators": [
+  "not_in_trees": [
    14
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "478": {
-  "regular": [
+ {
+  "family": 478,
+  "lines": [
    6,
    9,
    13,
@@ -1963,12 +2207,15 @@
    14,
    25
   ],
-  "numerators": [
+  "not_in_trees": [
    29
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "484": {
-  "regular": [
+ {
+  "family": 484,
+  "lines": [
    6,
    9,
    13,
@@ -1987,12 +2234,15 @@
    14,
    25
   ],
-  "numerators": [
+  "not_in_trees": [
    27
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "490": {
-  "regular": [
+ {
+  "family": 490,
+  "lines": [
    6,
    9,
    13,
@@ -2011,12 +2261,15 @@
    14,
    23
   ],
-  "numerators": [
+  "not_in_trees": [
    27
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "496": {
-  "regular": [
+ {
+  "family": 496,
+  "lines": [
    6,
    9,
    13,
@@ -2035,12 +2288,15 @@
    14,
    25
   ],
-  "numerators": [
+  "not_in_trees": [
    21
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "502": {
-  "regular": [
+ {
+  "family": 502,
+  "lines": [
    6,
    9,
    13,
@@ -2059,12 +2315,15 @@
    20,
    23
   ],
-  "numerators": [
+  "not_in_trees": [
    16
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "508": {
-  "regular": [
+ {
+  "family": 508,
+  "lines": [
    6,
    9,
    13,
@@ -2083,12 +2342,15 @@
    16,
    27
   ],
-  "numerators": [
+  "not_in_trees": [
    15
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "514": {
-  "regular": [
+ {
+  "family": 514,
+  "lines": [
    6,
    9,
    13,
@@ -2107,12 +2369,15 @@
    16,
    23
   ],
-  "numerators": [
+  "not_in_trees": [
    27
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "520": {
-  "regular": [
+ {
+  "family": 520,
+  "lines": [
    6,
    9,
    13,
@@ -2131,12 +2396,15 @@
    19,
    29
   ],
-  "numerators": [
+  "not_in_trees": [
    14
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "526": {
-  "regular": [
+ {
+  "family": 526,
+  "lines": [
    6,
    9,
    13,
@@ -2155,12 +2423,15 @@
    25,
    27
   ],
-  "numerators": [
+  "not_in_trees": [
    21
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "532": {
-  "regular": [
+ {
+  "family": 532,
+  "lines": [
    6,
    9,
    13,
@@ -2179,12 +2450,15 @@
    20,
    29
   ],
-  "numerators": [
+  "not_in_trees": [
    16
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "538": {
-  "regular": [
+ {
+  "family": 538,
+  "lines": [
    6,
    9,
    13,
@@ -2203,12 +2477,15 @@
    25,
    29
   ],
-  "numerators": [
+  "not_in_trees": [
    17
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "544": {
-  "regular": [
+ {
+  "family": 544,
+  "lines": [
    6,
    9,
    13,
@@ -2227,12 +2504,15 @@
    25,
    27
   ],
-  "numerators": [
+  "not_in_trees": [
    29
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "550": {
-  "regular": [
+ {
+  "family": 550,
+  "lines": [
    6,
    9,
    14,
@@ -2251,12 +2531,15 @@
    17,
    22
   ],
-  "numerators": [
+  "not_in_trees": [
    15
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "556": {
-  "regular": [
+ {
+  "family": 556,
+  "lines": [
    6,
    9,
    14,
@@ -2275,12 +2558,15 @@
    14,
    25
   ],
-  "numerators": [
+  "not_in_trees": [
    27
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "562": {
-  "regular": [
+ {
+  "family": 562,
+  "lines": [
    6,
    9,
    14,
@@ -2299,12 +2585,15 @@
    14,
    23
   ],
-  "numerators": [
+  "not_in_trees": [
    20
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "568": {
-  "regular": [
+ {
+  "family": 568,
+  "lines": [
    6,
    9,
    14,
@@ -2323,12 +2612,15 @@
    17,
    28
   ],
-  "numerators": [
+  "not_in_trees": [
    24
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "574": {
-  "regular": [
+ {
+  "family": 574,
+  "lines": [
    6,
    9,
    14,
@@ -2347,12 +2639,15 @@
    14,
    23
   ],
-  "numerators": [
+  "not_in_trees": [
    20
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "580": {
-  "regular": [
+ {
+  "family": 580,
+  "lines": [
    6,
    9,
    14,
@@ -2371,12 +2666,15 @@
    14,
    25
   ],
-  "numerators": [
+  "not_in_trees": [
    28
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "586": {
-  "regular": [
+ {
+  "family": 586,
+  "lines": [
    6,
    9,
    13,
@@ -2395,12 +2693,15 @@
    16,
    23
   ],
-  "numerators": [
+  "not_in_trees": [
    13
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "592": {
-  "regular": [
+ {
+  "family": 592,
+  "lines": [
    6,
    9,
    10,
@@ -2419,12 +2720,15 @@
    10,
    29
   ],
-  "numerators": [
+  "not_in_trees": [
    25
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "598": {
-  "regular": [
+ {
+  "family": 598,
+  "lines": [
    6,
    9,
    12,
@@ -2443,12 +2747,15 @@
    16,
    27
   ],
-  "numerators": [
+  "not_in_trees": [
    28
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "604": {
-  "regular": [
+ {
+  "family": 604,
+  "lines": [
    6,
    9,
    10,
@@ -2467,12 +2774,15 @@
    10,
    16
   ],
-  "numerators": [
+  "not_in_trees": [
    28
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "610": {
-  "regular": [
+ {
+  "family": 610,
+  "lines": [
    6,
    7,
    9,
@@ -2491,12 +2801,15 @@
    25,
    27
   ],
-  "numerators": [
+  "not_in_trees": [
    7
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "616": {
-  "regular": [
+ {
+  "family": 616,
+  "lines": [
    6,
    7,
    9,
@@ -2515,12 +2828,15 @@
    25,
    27
   ],
-  "numerators": [
+  "not_in_trees": [
    7
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "622": {
-  "regular": [
+ {
+  "family": 622,
+  "lines": [
    6,
    8,
    9,
@@ -2539,12 +2855,15 @@
    20,
    23
   ],
-  "numerators": [
+  "not_in_trees": [
    8
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "628": {
-  "regular": [
+ {
+  "family": 628,
+  "lines": [
    6,
    8,
    9,
@@ -2563,12 +2882,15 @@
    20,
    29
   ],
-  "numerators": [
+  "not_in_trees": [
    8
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "634": {
-  "regular": [
+ {
+  "family": 634,
+  "lines": [
    6,
    9,
    20,
@@ -2587,12 +2909,15 @@
    20,
    29
   ],
-  "numerators": [
+  "not_in_trees": [
    25
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "640": {
-  "regular": [
+ {
+  "family": 640,
+  "lines": [
    6,
    12,
    13,
@@ -2611,12 +2936,15 @@
    15,
    27
   ],
-  "numerators": [
+  "not_in_trees": [
    21
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "646": {
-  "regular": [
+ {
+  "family": 646,
+  "lines": [
    6,
    12,
    13,
@@ -2635,12 +2963,15 @@
    15,
    27
   ],
-  "numerators": [
+  "not_in_trees": [
    24
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "652": {
-  "regular": [
+ {
+  "family": 652,
+  "lines": [
    6,
    12,
    13,
@@ -2659,12 +2990,15 @@
    16,
    23
   ],
-  "numerators": [
+  "not_in_trees": [
    27
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "658": {
-  "regular": [
+ {
+  "family": 658,
+  "lines": [
    6,
    12,
    13,
@@ -2683,12 +3017,15 @@
    16,
    23
   ],
-  "numerators": [
+  "not_in_trees": [
    28
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "664": {
-  "regular": [
+ {
+  "family": 664,
+  "lines": [
    6,
    12,
    15,
@@ -2707,12 +3044,15 @@
    15,
    27
   ],
-  "numerators": [
+  "not_in_trees": [
    26
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "670": {
-  "regular": [
+ {
+  "family": 670,
+  "lines": [
    6,
    12,
    15,
@@ -2731,12 +3071,15 @@
    15,
    22
   ],
-  "numerators": [
+  "not_in_trees": [
    26
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "676": {
-  "regular": [
+ {
+  "family": 676,
+  "lines": [
    6,
    10,
    12,
@@ -2755,12 +3098,15 @@
    12,
    16
   ],
-  "numerators": [
+  "not_in_trees": [
    23
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "682": {
-  "regular": [
+ {
+  "family": 682,
+  "lines": [
    6,
    12,
    16,
@@ -2779,12 +3125,15 @@
    16,
    23
   ],
-  "numerators": [
+  "not_in_trees": [
    28
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "688": {
-  "regular": [
+ {
+  "family": 688,
+  "lines": [
    6,
    12,
    13,
@@ -2803,12 +3152,15 @@
    19,
    29
   ],
-  "numerators": [
+  "not_in_trees": [
    12
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "694": {
-  "regular": [
+ {
+  "family": 694,
+  "lines": [
    6,
    12,
    13,
@@ -2827,12 +3179,15 @@
    15,
    27
   ],
-  "numerators": [
+  "not_in_trees": [
    29
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "700": {
-  "regular": [
+ {
+  "family": 700,
+  "lines": [
    6,
    7,
    14,
@@ -2851,12 +3206,15 @@
    18,
    28
   ],
-  "numerators": [
+  "not_in_trees": [
    14
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "706": {
-  "regular": [
+ {
+  "family": 706,
+  "lines": [
    7,
    9,
    13,
@@ -2875,12 +3233,15 @@
    14,
    17
   ],
-  "numerators": [
+  "not_in_trees": [
    22
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "709": {
-  "regular": [
+ {
+  "family": 709,
+  "lines": [
    7,
    9,
    13,
@@ -2899,12 +3260,15 @@
    14,
    17
   ],
-  "numerators": [
+  "not_in_trees": [
    28
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "715": {
-  "regular": [
+ {
+  "family": 715,
+  "lines": [
    7,
    9,
    13,
@@ -2923,12 +3287,15 @@
    14,
    23
   ],
-  "numerators": [
+  "not_in_trees": [
    27
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "721": {
-  "regular": [
+ {
+  "family": 721,
+  "lines": [
    7,
    9,
    13,
@@ -2947,12 +3314,15 @@
    14,
    25
   ],
-  "numerators": [
+  "not_in_trees": [
    18
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "727": {
-  "regular": [
+ {
+  "family": 727,
+  "lines": [
    7,
    8,
    9,
@@ -2971,12 +3341,15 @@
    16,
    23
   ],
-  "numerators": [
+  "not_in_trees": [
    13
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "733": {
-  "regular": [
+ {
+  "family": 733,
+  "lines": [
    7,
    9,
    13,
@@ -2995,12 +3368,15 @@
    16,
    27
   ],
-  "numerators": [
+  "not_in_trees": [
    24
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "739": {
-  "regular": [
+ {
+  "family": 739,
+  "lines": [
    7,
    9,
    13,
@@ -3019,12 +3395,15 @@
    25,
    27
   ],
-  "numerators": [
+  "not_in_trees": [
    22
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "745": {
-  "regular": [
+ {
+  "family": 745,
+  "lines": [
    7,
    9,
    12,
@@ -3043,12 +3422,15 @@
    25,
    29
   ],
-  "numerators": [
+  "not_in_trees": [
    12
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "751": {
-  "regular": [
+ {
+  "family": 751,
+  "lines": [
    7,
    9,
    13,
@@ -3067,12 +3449,15 @@
    25,
    27
   ],
-  "numerators": [
+  "not_in_trees": [
    29
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "757": {
-  "regular": [
+ {
+  "family": 757,
+  "lines": [
    7,
    9,
    16,
@@ -3091,12 +3476,15 @@
    16,
    27
   ],
-  "numerators": [
+  "not_in_trees": [
    28
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "763": {
-  "regular": [
+ {
+  "family": 763,
+  "lines": [
    7,
    9,
    10,
@@ -3115,12 +3503,15 @@
    16,
    27
   ],
-  "numerators": [
+  "not_in_trees": [
    24
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "769": {
-  "regular": [
+ {
+  "family": 769,
+  "lines": [
    7,
    9,
    18,
@@ -3139,12 +3530,15 @@
    20,
    29
   ],
-  "numerators": [
+  "not_in_trees": [
    28
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "772": {
-  "regular": [
+ {
+  "family": 772,
+  "lines": [
    6,
    7,
    9,
@@ -3163,12 +3557,15 @@
    18,
    28
   ],
-  "numerators": [
+  "not_in_trees": [
    25
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "778": {
-  "regular": [
+ {
+  "family": 778,
+  "lines": [
    7,
    9,
    18,
@@ -3187,12 +3584,15 @@
    25,
    29
   ],
-  "numerators": [
+  "not_in_trees": [
    24
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "784": {
-  "regular": [
+ {
+  "family": 784,
+  "lines": [
    7,
    12,
    13,
@@ -3211,12 +3611,15 @@
    15,
    22
   ],
-  "numerators": [
+  "not_in_trees": [
    27
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "790": {
-  "regular": [
+ {
+  "family": 790,
+  "lines": [
    7,
    12,
    13,
@@ -3235,12 +3638,15 @@
    16,
    27
   ],
-  "numerators": [
+  "not_in_trees": [
    21
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "796": {
-  "regular": [
+ {
+  "family": 796,
+  "lines": [
    7,
    12,
    13,
@@ -3259,12 +3665,15 @@
    16,
    27
   ],
-  "numerators": [
+  "not_in_trees": [
    24
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "802": {
-  "regular": [
+ {
+  "family": 802,
+  "lines": [
    7,
    11,
    12,
@@ -3283,12 +3692,15 @@
    12,
    15
   ],
-  "numerators": [
+  "not_in_trees": [
    22
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "808": {
-  "regular": [
+ {
+  "family": 808,
+  "lines": [
    7,
    11,
    12,
@@ -3307,12 +3719,15 @@
    12,
    15
   ],
-  "numerators": [
+  "not_in_trees": [
    27
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "814": {
-  "regular": [
+ {
+  "family": 814,
+  "lines": [
    7,
    12,
    15,
@@ -3331,12 +3746,15 @@
    15,
    27
   ],
-  "numerators": [
+  "not_in_trees": [
    21
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "820": {
-  "regular": [
+ {
+  "family": 820,
+  "lines": [
    7,
    12,
    16,
@@ -3355,12 +3773,15 @@
    16,
    23
   ],
-  "numerators": [
+  "not_in_trees": [
    26
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "826": {
-  "regular": [
+ {
+  "family": 826,
+  "lines": [
    7,
    12,
    16,
@@ -3379,12 +3800,15 @@
    16,
    27
   ],
-  "numerators": [
+  "not_in_trees": [
    26
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "832": {
-  "regular": [
+ {
+  "family": 832,
+  "lines": [
    7,
    12,
    13,
@@ -3403,12 +3827,15 @@
    20,
    29
   ],
-  "numerators": [
+  "not_in_trees": [
    12
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "838": {
-  "regular": [
+ {
+  "family": 838,
+  "lines": [
    6,
    7,
    14,
@@ -3427,12 +3854,15 @@
    16,
    23
   ],
-  "numerators": [
+  "not_in_trees": [
    14
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "844": {
-  "regular": [
+ {
+  "family": 844,
+  "lines": [
    7,
    12,
    13,
@@ -3451,12 +3881,15 @@
    15,
    22
   ],
-  "numerators": [
+  "not_in_trees": [
    27
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "850": {
-  "regular": [
+ {
+  "family": 850,
+  "lines": [
    9,
    12,
    13,
@@ -3475,12 +3908,15 @@
    15,
    22
   ],
-  "numerators": [
+  "not_in_trees": [
    13
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "856": {
-  "regular": [
+ {
+  "family": 856,
+  "lines": [
    6,
    12,
    13,
@@ -3499,12 +3935,15 @@
    15,
    27
   ],
-  "numerators": [
+  "not_in_trees": [
    23
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "862": {
-  "regular": [
+ {
+  "family": 862,
+  "lines": [
    6,
    9,
    12,
@@ -3522,13 +3961,16 @@
    12,
    21
   ],
-  "numerators": [
+  "not_in_trees": [
    14,
    24
-  ]
+  ],
+  "absent": [],
+  "independent": true
  },
- "868": {
-  "regular": [
+ {
+  "family": 868,
+  "lines": [
    6,
    7,
    11,
@@ -3538,22 +3980,24 @@
    26
   ],
   "amplitude": [
-   6,
    11,
+   12,
    15
   ],
   "conjugate": [
-   11,
-   12,
+   6,
+   13
+  ],
+  "not_in_trees": [
+   7,
    26
   ],
-  "numerators": [
-   7,
-   13
-  ]
+  "absent": [],
+  "independent": true
  },
- "874": {
-  "regular": [
+ {
+  "family": 874,
+  "lines": [
    6,
    7,
    12,
@@ -3568,17 +4012,19 @@
    28
   ],
   "conjugate": [
-   7,
-   18,
-   28
-  ],
-  "numerators": [
    12,
    21
-  ]
+  ],
+  "not_in_trees": [
+   7,
+   18
+  ],
+  "absent": [],
+  "independent": true
  },
- "880": {
-  "regular": [
+ {
+  "family": 880,
+  "lines": [
    6,
    8,
    9,
@@ -3593,17 +4039,19 @@
    27
   ],
   "conjugate": [
-   6,
+   8,
+   19
+  ],
+  "not_in_trees": [
    13,
    24
   ],
-  "numerators": [
-   8,
-   19
-  ]
+  "absent": [],
+  "independent": true
  },
- "886": {
-  "regular": [
+ {
+  "family": 886,
+  "lines": [
    6,
    8,
    9,
@@ -3618,17 +4066,19 @@
    27
   ],
   "conjugate": [
-   6,
    13,
+   21
+  ],
+  "not_in_trees": [
+   8,
    24
   ],
-  "numerators": [
-   8,
-   21
-  ]
+  "absent": [],
+  "independent": true
  },
- "892": {
-  "regular": [
+ {
+  "family": 892,
+  "lines": [
    6,
    7,
    10,
@@ -3643,17 +4093,19 @@
    16
   ],
   "conjugate": [
-   10,
+   6,
+   13
+  ],
+  "not_in_trees": [
    12,
    26
   ],
-  "numerators": [
-   6,
-   13
-  ]
+  "absent": [],
+  "independent": true
  },
- "898": {
-  "regular": [
+ {
+  "family": 898,
+  "lines": [
    7,
    8,
    9,
@@ -3668,17 +4120,19 @@
    27
   ],
   "conjugate": [
-   7,
+   9,
+   20
+  ],
+  "not_in_trees": [
    13,
    24
   ],
-  "numerators": [
-   9,
-   20
-  ]
+  "absent": [],
+  "independent": true
  },
- "904": {
-  "regular": [
+ {
+  "family": 904,
+  "lines": [
    7,
    8,
    9,
@@ -3693,17 +4147,19 @@
    27
   ],
   "conjugate": [
-   7,
    13,
+   21
+  ],
+  "not_in_trees": [
+   9,
    24
   ],
-  "numerators": [
-   9,
-   21
-  ]
+  "absent": [],
+  "independent": true
  },
- "910": {
-  "regular": [
+ {
+  "family": 910,
+  "lines": [
    6,
    8,
    9,
@@ -3718,17 +4174,19 @@
    20
   ],
   "conjugate": [
-   6,
+   8,
+   27
+  ],
+  "not_in_trees": [
    13,
    24
   ],
-  "numerators": [
-   8,
-   27
-  ]
+  "absent": [],
+  "independent": true
  },
- "916": {
-  "regular": [
+ {
+  "family": 916,
+  "lines": [
    7,
    8,
    9,
@@ -3743,13 +4201,14 @@
    19
   ],
   "conjugate": [
-   7,
+   9,
+   27
+  ],
+  "not_in_trees": [
    13,
    24
   ],
-  "numerators": [
-   9,
-   27
-  ]
+  "absent": [],
+  "independent": true
  }
-}
+]

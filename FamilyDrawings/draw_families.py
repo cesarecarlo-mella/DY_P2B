@@ -2,6 +2,8 @@
 """Draw the integral families of the triple-real phase-space integrals as cut diagrams -> families.pdf.
 
     python3 draw_families.py [--all] [N ...]       default: the independent families; --all: all; or family numbers
+    python3 draw_families.py --sectors FILE        sectors, one per line: topoN[n1,...,n12] or "N: dd dd ..." -> sectors.pdf
+    python3 draw_families.py --top-sectors integrals.m   maximal sectors per family among collected integrals
 
 A family = 5 cut "propagators" (r1^2, r2^2, r3^2, q^2 - m2 and the linear rapidity condition) + 7 regular ones.
 With all legs incoming (p1 + p2 + r1 + r2 + r3 + q = 0) every regular propagator (p1+r1)^2, (p1+p2+r1+r2)^2, ... is
@@ -47,9 +49,10 @@ def best_trees(dds):
                if all(compatible(SPLIT[x], SPLIT[y]) for x, y in itertools.combinations(c, 2))]
     maximal = [c for c in cliques if not any(set(c) < set(d) for d in cliques)]
     best = max(((a, b) for a in maximal for b in maximal),
-               key=lambda ab: (len(set(ab[0]) | set(ab[1])), min(len(ab[0]), len(ab[1])), -len(set(ab[0]) & set(ab[1])),
+               key=lambda ab: (len(set(ab[0]) | set(ab[1])), -len(set(ab[0]) & set(ab[1])), min(len(ab[0]), len(ab[1])),
                                ab[0] <= ab[1]))
     a, b = sorted(best, key=lambda c: (-len(c), c))
+    b = [x for x in b if x not in a]                 # a line in both trees only once (drawn on the amplitude side)
     return list(a), list(b)
 
 
@@ -144,44 +147,113 @@ def mom(dd):
     return "(" + "+".join(TEX[x] for x in REGULAR[dd - 6].split("+")) + ")^2"
 
 
+def int_order():
+    """family -> its 7 regular DD numbers in the order of the INT indices 6..12 (from reconstruct.inc)"""
+    out = {}
+    for line in open(os.path.join(FAMDIR, "fams", "reconstruct.inc")):
+        m = re.match(r"id TOPO\((\d+)\)/DD1/DD2/DD3/DD4/DD5/(.*) = INT\(topo\d+,", line)
+        if m:
+            out[int(m.group(1))] = [int(x) for x in re.findall(r"DD(\d+)\^", m.group(2))]
+    return out
+
+
+def read_sectors(path, order):
+    """lines 'topoN[n1,...,n12]' (positive index = line present) or 'N: dd dd dd' -> [(N, [DDs])]"""
+    out = []
+    for line in open(path):
+        line = line.split("#")[0].strip()
+        if not line:
+            continue
+        m = re.match(r"(?:INT\[)?topo(\d+)[\[,]\s*([-\d,\s]+)\]?", line)
+        if m:
+            n, idx = int(m.group(1)), [int(x) for x in m.group(2).replace(" ", "").strip(",").split(",")]
+            out.append((n, [dd for dd, k in zip(order[n], idx[5:]) if k > 0]))
+            continue
+        m = re.match(r"(\d+)\s*:\s*([\d\s,]+)$", line)
+        if m:
+            out.append((int(m.group(1)), [int(x) for x in re.findall(r"\d+", m.group(2))]))
+            continue
+        sys.exit(f"{path}: cannot read line: {line}")
+    return out
+
+
+def top_sectors(path, order):
+    """maximal sectors (sets of lines present) per family among the integrals of an integrals.m list"""
+    secs = {}
+    for m in re.finditer(r"INT\[topo(\d+), ([-\d, ]+)\]", open(path).read()):
+        n, idx = int(m.group(1)), [int(x) for x in m.group(2).split(",")]
+        secs.setdefault(n, set()).add(frozenset(dd for dd, k in zip(order[n], idx[5:]) if k > 0))
+    out = []
+    for n in sorted(secs):
+        for sct in sorted(secs[n], key=lambda x: (-len(x), sorted(x))):
+            if not any(sct < o for o in secs[n]):
+                out.append((n, sorted(sct, key=order[n].index)))
+    return out
+
+
+def render(items, fams, indep, name, title):
+    """items: [(family, lines present or None for the whole family)]"""
+    data, blocks = [], []
+    for n, present in items:
+        dds = [x for x in fams[n - 1] if x > 5]
+        lines = dds if present is None else present
+        left, right = best_trees(lines)
+        rest = [x for x in lines if x not in left and x not in right]
+        absent = [x for x in dds if x not in lines]
+        data.append({"family": n, "lines": lines, "amplitude": left, "conjugate": right,
+                     "not_in_trees": rest, "absent": absent, "independent": n in indep})
+        if present is None:
+            cap = (rf"\textbf{{FAM[{n}]}} (topo{n})\\[1pt] \scriptsize left: {', '.join(map(str, left))}; "
+                   rf"right: {', '.join(map(str, right))}"
+                   + (rf"; numerators: {', '.join(f'{x} = ${mom(x)}$' for x in rest)}" if rest else "; no numerators"))
+        else:
+            cap = (rf"\textbf{{FAM[{n}]}} (topo{n}), sector with {len(lines)} of 7 lines"
+                   + ("" if n in indep else r" \textcolor{red}{(not an independent family!)}")
+                   + rf"\\[1pt] \scriptsize left: {', '.join(map(str, left)) or '--'}; right: {', '.join(map(str, right)) or '--'}"
+                   + (rf"; absent: {', '.join(map(str, absent))}" if absent else "")
+                   + (rf"; \textcolor{{red}}{{in no tree: {', '.join(map(str, rest))}}}" if rest else ""))
+        blocks.append(r"\begin{minipage}[t]{0.48\textwidth}\centering\resizebox{0.92\linewidth}{!}{"
+                      + tikz(n, lines, left, right) + r"}\\[1mm]" + cap + r"\end{minipage}")
+    legend = r"\textbf{Regular propagators} (DD numbers, all legs incoming): " + "; ".join(
+        f"{6 + i} = ${mom(6 + i)}$" for i in range(len(REGULAR))) + "."
+    doc = [r"\documentclass[10pt]{article}", r"\usepackage[a4paper,margin=1.4cm]{geometry}", r"\usepackage{xcolor}",
+           r"\usepackage[compat=1.1.0]{tikz-feynman}", r"\tikzfeynmanset{warn luatex=false}", r"\begin{document}",
+           rf"\section*{{{title}}}",
+           r"Amplitude (left) $\times$ conjugate (right) for $p_1 p_2 \to V(q)\, r_1 r_2 r_3$, glued along the cut "
+           r"(dashed): $r_1, r_2, r_3$ (blue), $q$ (red, $q^2 = m^2$). The rapidity condition $-q\cdot p_1 + u\, q\cdot p_2 = 0$ "
+           r"of every family is not a line. Internal lines carry their DD number. " + legend + r"\par\medskip"]
+    for i, b in enumerate(blocks):
+        doc.append(b + ("\n\n\\bigskip\n" if i % 2 else "\\hfill%"))
+    doc.append(r"\end{document}")
+    open(os.path.join(HERE, name + ".tex"), "w").write("\n".join(doc))
+    json.dump(data, open(os.path.join(HERE, name + ".json"), "w"), indent=1)
+    r = subprocess.run(["pdflatex", "-interaction=nonstopmode", name + ".tex"], cwd=HERE, capture_output=True, text=True)
+    for ext in (".aux", ".log"):
+        if r.returncode == 0 and os.path.exists(os.path.join(HERE, name + ext)):
+            os.remove(os.path.join(HERE, name + ext))
+    if r.returncode != 0:
+        print(r.stdout[-2500:])
+        sys.exit("pdflatex failed")
+    print(f"{len(items)} drawings -> {HERE}/{name}.pdf, {name}.json")
+
+
 def main(argv):
     fams, indep = read_families()
+    if "--sectors" in argv or "--top-sectors" in argv:
+        order = int_order()
+        if "--sectors" in argv:
+            items = read_sectors(argv[argv.index("--sectors") + 1], order)
+        else:
+            items = top_sectors(argv[argv.index("--top-sectors") + 1], order)
+        render(items, fams, indep, "sectors", "Top sectors as cut diagrams")
+        return
     if "--all" in argv:
         sel = list(range(1, len(fams) + 1))
     elif [a for a in argv if a.isdigit()]:
         sel = [int(a) for a in argv if a.isdigit()]
     else:
         sel = indep
-    data, blocks = {}, []
-    for n in sel:
-        dds = [x for x in fams[n - 1] if x > 5]
-        left, right = best_trees(dds)
-        isp = [x for x in dds if x not in left and x not in right]
-        data[n] = {"regular": dds, "amplitude": left, "conjugate": right, "numerators": isp}
-        cap = (rf"\textbf{{FAM[{n}]}} (topo{n})\\[1pt] \scriptsize left: {', '.join(map(str, left))}; "
-               rf"right: {', '.join(map(str, right))}"
-               + (rf"; numerators: {', '.join(f'{x} = ${mom(x)}$' for x in isp)}" if isp else "; no numerators"))
-        blocks.append(r"\begin{minipage}[t]{0.48\textwidth}\centering\resizebox{0.92\linewidth}{!}{" + tikz(n, dds, left, right)
-                      + r"}\\[1mm]" + cap + r"\end{minipage}")
-    legend = r"\textbf{Regular propagators} (DD numbers, all legs incoming): " + "; ".join(
-        f"{6 + i} = ${mom(6 + i)}$" for i in range(len(REGULAR))) + "."
-    doc = [r"\documentclass[10pt]{article}", r"\usepackage[a4paper,margin=1.4cm]{geometry}",
-           r"\usepackage[compat=1.1.0]{tikz-feynman}", r"\tikzfeynmanset{warn luatex=false}", r"\begin{document}",
-           r"\section*{Integral families as cut diagrams}",
-           r"Amplitude (left) $\times$ conjugate (right) for $p_1 p_2 \to V(q)\, r_1 r_2 r_3$, glued along the cut "
-           r"(dashed): $r_1, r_2, r_3$ (blue), $q$ (red, $q^2 = m^2$). The rapidity condition $-q\cdot p_1 + u\, q\cdot p_2 = 0$ "
-           r"of every family is not a line. Internal lines carry their DD number; propagators of the family that fit "
-           r"in neither tree are irreducible numerators (listed). " + legend + r"\par\medskip"]
-    for i, b in enumerate(blocks):
-        doc.append(b + ("\n\n\\bigskip\n" if i % 2 else "\\hfill%"))
-    doc.append(r"\end{document}")
-    open(os.path.join(HERE, "families.tex"), "w").write("\n".join(doc))
-    json.dump(data, open(os.path.join(HERE, "families.json"), "w"), indent=1)
-    r = subprocess.run(["pdflatex", "-interaction=nonstopmode", "families.tex"], cwd=HERE, capture_output=True, text=True)
-    if r.returncode != 0:
-        print(r.stdout[-2500:])
-        sys.exit("pdflatex failed")
-    print(f"{len(sel)} families -> {HERE}/families.pdf, families.json")
+    render([(n, None) for n in sel], fams, indep, "families", "Integral families as cut diagrams")
 
 
 if __name__ == "__main__":

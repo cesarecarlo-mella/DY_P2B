@@ -3,6 +3,13 @@
     python3 draw_families.py            # the 156 independent families -> families.pdf, families.json, families.tex
     python3 draw_families.py --all      # all 921
     python3 draw_families.py 1 7 910    # selected families
+    python3 draw_families.py --sectors FILE              # given sectors -> sectors.pdf, sectors.json
+    python3 draw_families.py --top-sectors integrals.m   # maximal sectors per family among collected integrals
+
+Sector file, one per line: `topo55[1,1,1,1,1,1,1,0,1,1,0,1]` (INT indices; positive = line present) or `55: 6 9 17`
+(family and DD numbers of the lines). Only the lines of the sector are drawn (the others are pinched); a line that
+fits in neither tree is listed in red; a line is never drawn on both sides. Sectors of families that are not
+independent are marked.
 
 Reads the families from ../Code_v2/Families (families_raw.m, families_relabelling.m; DD numbering of
 find_circuits.REGULAR). Needs graphviz (dot) and pdflatex with tikz-feynman.
