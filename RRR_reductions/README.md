@@ -14,6 +14,20 @@ python3 make_jobs.py jobs           # groups.txt -> jobs/<group>/
 python3 make_jobs.py jobs --only g01,g02
 jobs/g01/run.sh                     # kira --parallel=$KIRA_THREADS (default 4), nice 19, log in kira.out
 ```
+
+## Running all groups: `run_reductions.py`
+```
+nohup python3 run_reductions.py run --parallel 5 --threads 4 > /dev/null 2>&1 &   # all groups, 5 at a time
+python3 run_reductions.py status        # per group: status, wall, CPU h, cores in use, RAM now / peak, masters
+python3 run_reductions.py stats         # totals, CPU s per integral, peak RAM, estimate of what is left
+python3 run_reductions.py stop          # stops the driver and its Kira jobs (they are requeued)
+tail -f run_state/driver.log
+```
+Largest groups first; finished groups are skipped on the next `run` (failed ones only with `--retry-failed`).
+CPU and RAM of each job are sampled over its whole process tree (Kira + Fermat) every `--interval` s
+(`run_state/samples/<group>.csv`); `--min-free-gb N` starts a job only with N GB of available memory.
+After a hard kill of the driver, the next `run` kills the orphaned Kira jobs and requeues them.
+Options and details: `python3 run_reductions.py -h`. `run_state/` is not in git.
 Input: `Code_RRR/integrals/all/` (`run_all.py integrals --merge`, then
 `integrals/Tools/analyse_integrals.py all`): `kira/topoN.txt` (integrals to reduce) and `analysis/topsectors.csv`
 (top sectors with r, s = maxima over their trees). Another collection: `--collection gluons`.

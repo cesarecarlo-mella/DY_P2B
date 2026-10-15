@@ -25,7 +25,8 @@ The simplest integral of every real-emission family is the one whose integrand i
 propagators: the phase space of $n$ massless partons plus the colour singlet $Q$, at fixed invariant mass $Q^2=m^2$
 and fixed rapidity. For the triple real ($n=3$) it is \texttt{INT(topoN,1,1,1,1,1,0,\dots,0)}, the same in all
 families. We compute it for any $n$ in $d=4-2\ep$, exactly in $z$, $u$ and $\ep$. The result
-(eq.~\eqref{eq:main}) is a product of powers and one Gauss hypergeometric function, which equals 1 for $n=1$.
+(eq.~\eqref{eq:main}) is a product of powers and one Gauss hypergeometric function, which equals 1 for $n=1$; for
+$n=2$ it is the result of Anastasiou, Dixon, Melnikov, Petriello (hep-ph/0312266, eq.~(3.8)).
 We explain every step, give the $\ep$ expansion and the soft limit, and compare with the NNLO computation in
 \texttt{nnlo\_rr/integrals/IF1/\allowbreak boundaries.nb}. Everything is verified numerically by the scripts in
 \texttt{checks/}.
@@ -272,7 +273,15 @@ $(1+u)^k(a_1-a_0)^{(n-1)(1-\ep)}=w^{(n-1)(1-\ep)}/(1+u)$:
   w&=\Big(1-\sqrt{\tfrac zu}\Big)\Big(1-\sqrt{zu}\Big), &
   x&=\frac{w\sqrt u}{2\sqrt z\,(1+u)} .
 \end{align}
-Here $C_n=\frac{\pi^{1-\ep}}{\Gamma(1-\ep)}\,c_n\,B(1-\ep,(n-1)(1-\ep))$. The structure of \eqref{eq:main}:
+Here $C_n=\frac{\pi^{1-\ep}}{\Gamma(1-\ep)}\,c_n\,B(1-\ep,(n-1)(1-\ep))$.
+
+\note{\textbf{Equivalent form, as in the literature.} By Pfaff's transformation (Sect.~\ref{sec:nnlo}),
+$G_n=\F\big(\ep,(n-1)(1-\ep);n(1-\ep);\delta\big)$ with
+$\delta=\frac{x}{1+x}=\frac{(\sqrt u-\sqrt z)(1-\sqrt{uz})}{(\sqrt u+\sqrt z)(1+\sqrt{uz})}\in[0,1)$. For $n=2$ this
+is eq.~(3.8)--(3.11) of Anastasiou, Dixon, Melnikov, Petriello, hep-ph/0312266 (their $I[0]$, $K_0(\delta)$),
+including the normalisation. For $n=3$ the formula is the generalisation to three partons.}
+
+The structure of \eqref{eq:main}:
 \begin{itemize}
 \item $w^{(n-1)(1-\ep)}$: the ``available phase space'' for the partons. It vanishes at the kinematic boundary;
   each extra parton adds one power.
@@ -370,32 +379,53 @@ So the NNLO boundary is the leading power of the exact $\Phi_2$. This also fixes
 $\mathcal N_2=e^{2\ep\gamma_E}/\pi^{2-2\ep}$ times \eqref{eq:def}, i.e.\ a factor $e^{\ep\gamma_E}/\pi^{1-\ep}$ per
 real parton.
 
-\subsection{(b) The closed formula in the comment is exact only at leading power}
-The notebook also contains, in a comment (``result to print''), a closed formula
+\subsection{(b) The closed formula in the comment: ADMP eq.~(3.8), exact}
+The notebook also contains, in a comment (``result to print''), the closed formula
 \[
-  F_c=\frac{\big((u-z)(1-uz)\big)^{1-2\ep}}{(1+u)^{1-2\ep}\,\big(\sqrt u(\sqrt u+\sqrt z)(1+\sqrt{uz})\big)^{1-\ep}}
-  \;\times(\text{constants})\times K[0].
+  \frac{\Omega_{d-2}\,\Omega_{d-1}}{2^d}\;z^{2\ep}\,
+  \frac{\big((u-z)(1-uz)\big)^{1-2\ep}}{(1+u)^{1-2\ep}\,\big(\sqrt u(\sqrt u+\sqrt z)(1+\sqrt{uz})\big)^{1-\ep}}
+  \;K[0]\qquad(\times\,e^{2\ep\gamma_E}\pi^{2-d}).
 \]
-To compare it with \eqref{eq:main}, note
-$(u-z)=(\sqrt u-\sqrt z)(\sqrt u+\sqrt z)$ and $(1-uz)=(1-\sqrt{uz})(1+\sqrt{uz})$, so
-\[
-  \frac{(u-z)(1-uz)}{\sqrt u(\sqrt u+\sqrt z)(1+\sqrt{uz})}=\frac{(\sqrt u-\sqrt z)(1-\sqrt{uz})}{\sqrt u}=w .
-\]
-Hence $F_c=\frac{w^{1-\ep}}{1+u}\big[\frac{(u-z)(1-uz)}{(1+u)^2}\big]^{-\ep}$: \emph{exactly \eqref{eq:main} for
-$n=2$ without the factor $G_2$}:
-\begin{equation}
-  \frac{\Phi_2}{C_2\,s^{-2\ep}F_c}=G_2(\ep,x)=1+\ep\Big(1-\frac{\ln(1+x)}x\Big)+O(\ep^2)
-  =1+\frac{\ep\,x}2+\dots\;\simeq\;1+\frac{\ep}{8}\,y(1-y)\,\zb^2 .
-\end{equation}
-Therefore $F_c$ is
+This is eq.~(3.8) of Anastasiou, Dixon, Melnikov, Petriello, \emph{High-precision QCD at hadron colliders:
+electroweak gauge boson rapidity distributions at NNLO}, hep-ph/0312266 (ADMP), for $\nu=0$, with
+\begin{gather}
+  K[0]=K_0(\delta)=\int_0^1\dd\chi\,\big[\chi(1-\chi)(1-\chi\delta)\big]^{-\ep}
+  =B(1-\ep,1-\ep)\;\F(\ep,1-\ep;2-2\ep;\delta),\nonumber\\
+  \delta=\frac{(\sqrt u-\sqrt z)(1-\sqrt{uz})}{(\sqrt u+\sqrt z)(1+\sqrt{uz})} .
+  \label{eq:admp}
+\end{gather}
+$K_0$ is \emph{a function of $z$ and $u$}, not a constant. With it the formula is exact, and it coincides with ours:
 \begin{itemize}
-\item exact at $\ep=0$, for all $z$;
-\item exact at leading power in $\zb$, to all orders in $\ep$. This is all that was exported and used, so the NNLO
-  results are not affected;
-\item not exact for general $z$ beyond $O(\ep^0)$: it misses the relative correction $G_2-1\simeq\ep x/2$, a
-  power-suppressed $O(\ep\,\zb^2)$ effect.
+\item \textbf{Same variable.} Our $x=(a_1-a_0)/(2a_0)$ and ADMP's $\delta$ are related by
+  $\delta=\frac{x}{1+x}=\frac{a_1-a_0}{a_1+a_0}$ (multiply out $a_1\pm a_0$; $(\sqrt u+\sqrt z)(1+\sqrt{uz})
+  =\sqrt u(1+z)+\sqrt z(1+u)$).
+\item \textbf{Same function.} Pfaff's transformation $\F(a,b;c;w)=(1-w)^{-a}\F\big(a,c-b;c;\frac{w}{w-1}\big)$ with
+  $w=-x$ gives
+  \begin{equation}
+    G_n=(1+x)^{\ep}\F(\ep,1-\ep;n-n\ep;-x)=\F\big(\ep,(n-1)(1-\ep);n(1-\ep);\delta\big),
+    \label{eq:pfaff}
+  \end{equation}
+  so for $n=2$: $G_2=\F(\ep,1-\ep;2-2\ep;\delta)=K_0(\delta)/B(1-\ep,1-\ep)$.
+\item \textbf{Same prefactor.} As shown in (a'), the power structure equals ours:
+  $\frac{(u-z)(1-uz)}{\sqrt u(\sqrt u+\sqrt z)(1+\sqrt{uz})}=w$.
+\item \textbf{Same normalisation.} $\Omega_{d-2}\Omega_{d-1}/2^d=\pi^{2-2\ep}/(2\Gamma(2-2\ep))=C_2/B(1-\ep,1-\ep)$
+  (duplication formula), and ADMP's measure (their eq.~(3.6)) is our \eqref{eq:def}. Numerically
+  $I[0]_{\rm ADMP}=\Phi_2$ to 30 digits.
+\item \textbf{Same expansion.} ADMP's eq.~(3.12), $K_0=1+\ep\big(3-\frac{(\delta-1)\ln(1-\delta)}{\delta}\big)+\dots$,
+  is $B(1-\ep,1-\ep)\,G_2$ with our $G_2=1+\ep(1-\ln(1+x)/x)+\dots$ ($B=1+2\ep+\dots$).
 \end{itemize}
-Numerically, at $\ep=0.3$ (the middle column is a direct numerical integration of \eqref{eq:oned}):
+
+\paragraph{(a') The power structure.} Write $(u-z)=(\sqrt u-\sqrt z)(\sqrt u+\sqrt z)$ and
+$(1-uz)=(1-\sqrt{uz})(1+\sqrt{uz})$; then
+$\frac{(u-z)(1-uz)}{\sqrt u(\sqrt u+\sqrt z)(1+\sqrt{uz})}=\frac{(\sqrt u-\sqrt z)(1-\sqrt{uz})}{\sqrt u}=w$, and the
+comment formula without $K[0]$ is
+$F_c\equiv\frac{w^{1-\ep}}{1+u}\big[\frac{(u-z)(1-uz)}{(1+u)^2}\big]^{-\ep}$, i.e.\ \eqref{eq:main} for $n=2$
+without $G_2$.
+
+\paragraph{What changes if $K[0]$ is taken as a constant.} Only then would the formula be approximate: $K_0(\delta)$
+varies with $(z,u)$ through $\delta$, and $\delta\to0$ only at threshold ($\delta\simeq x\simeq\frac14y(1-y)\zb^2$).
+The table shows $K_0/B=G_2$ at $\ep=0.3$ (the middle column is a direct numerical integration of \eqref{eq:oned}
+divided by $C_2s^{-2\ep}F_c$):
 
 \begin{center}
 \begin{tabular}{cccccc}
@@ -411,15 +441,13 @@ $1/100$ & $1/2$ & $6.31\cdot10^{-6}$ & $1.0000009470$ & $1.0000009470$ & $1.0000
 \bottomrule
 \end{tabular}
 \end{center}
-The deviation falls like $\zb^2$ and is already $10^{-4}$ at $\zb=0.1$. This is why it is invisible in the soft
-expansion but would matter if $F_c$ were used as the full master.
+At leading power $K_0\to B(1-\ep,1-\ep)$, a constant: that is what the notebook evaluates
+(\texttt{Series[\dots,\char`\{bz,0,0\char`\}]}) and exports, and (a) confirms it.
 
-\subsection{(c) Is it a matter of which delta?}
-A natural suspicion: maybe $F_c$ is not the master but the phase space with the \emph{other} rapidity delta,
-$\delta(u-u_Q)$, which differs by the factor $Q\cdot p_2$ inside the integral (Sect.~\ref{sec:def}). We tested this
-directly, integrating the notebook's own \texttt{INTEGRAND} (copied verbatim, with the $(y,z)$-dependent part of
+\subsection{(c) The notebook integrand, with both deltas}
+We also integrated the notebook's own \texttt{INTEGRAND} (copied verbatim, with the $(y,z)$-dependent part of
 \texttt{Norm}) over $\lambda_1,\lambda_2,\lambda_4$. The $\lambda_4$ and $\lambda_2$ integrals factorise into Beta
-functions, and only $\lambda_1$ is left, which we integrate numerically. Two objects:
+functions; $\lambda_1$ is integrated numerically. Two objects:
 \[
   A=\int\texttt{INTEGRAND}\quad(\text{delta }\delta(u-u_Q)),\qquad
   B=\int\texttt{INTEGRAND}/Q\!\cdot\!p_2\quad(\text{the master}).
@@ -439,19 +467,9 @@ $B\,/\,F_c$ & $2\pi$ everywhere & $68.5\ \dots\ 72.7$\\
 \bottomrule
 \end{tabular}
 \end{center}
-
-Conclusions:
-\begin{itemize}
-\item The notebook's parametrisation is \emph{exact for all $z$}, for both deltas: $A$ and $B$ agree with the
-  light-cone results everywhere, not only in the soft limit. The factor $1/Q\cdot p_2$ pulled out of the delta is
-  handled correctly.
-\item $F_c$ is not the $\delta(u-u_Q)$ phase space: $A/F_c$ varies already at $\ep=0$.
-\item $F_c$ is the master at $\ep=0$ (and at leading power), as found in (b).
-\item The most likely reading is that \texttt{K[0]} in the comment stands for the leftover $\lambda_1$ integral.
-  Then the formula is exact, with $\texttt{K[0]}\propto B(1-\ep,1-\ep)\,G_2(\ep,x)$: a function of $z,u$ that becomes
-  a constant only at leading power in $\zb$. That leading power is what the notebook evaluates
-  (\texttt{Series[\dots,\char`\{bz,0,0\char`\}]}) and exports.
-\end{itemize}
+The notebook's parametrisation is \emph{exact for all $z$}, for both deltas, and the factor $1/Q\cdot p_2$ pulled out
+of the delta is handled correctly. $B/F_c$ is not constant at $\ep\ne0$ only because $F_c$ lacks the function
+$K_0(\delta)$; $B/(F_cK_0)$ is constant.
 
 \section{\texorpdfstring{N$^3$LO: what to use}{N3LO: what to use}}
 \label{sec:n3lo}
@@ -488,6 +506,10 @@ Conclusions:
 \item the N$^3$LO leading-power constant;
 \item the $p_1\leftrightarrow p_2$ symmetry $\Phi_n(z,1/u)=u\,\Phi_n(z,u)$.
 \end{enumerate}
+\textbf{\texttt{checks/admp.wl}} (output in \texttt{admp.log}): ADMP's $I[0]$, eq.~(3.8)--(3.11), against
+$\Phi_2$ in absolute normalisation (30 digits); the Pfaff form \eqref{eq:pfaff} for $n=2,3$; $\delta=x/(1+x)$
+(symbolic); the $O(\ep)$ term of $K_0$.
+
 \textbf{\texttt{checks/notebook\_integrand.wl}} (output in \texttt{notebook\_integrand.log}): the notebook's
 \texttt{INTEGRAND}, with and without $1/Q\cdot p_2$, against the light-cone results and $F_c$ (table of (c)).
 \textbf{\texttt{checks/rest\_frame.py}} (plain Python; output in \texttt{rest\_frame.log}): an independent

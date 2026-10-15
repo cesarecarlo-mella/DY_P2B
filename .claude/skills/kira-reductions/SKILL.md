@@ -50,7 +50,13 @@ KIRA_THREADS=4 nohup ./run.sh &          # nice 19; Kira's log in kira.out (nohu
 # several groups, N at a time (N x threads < nproc, N x RES < RAM):
 cd .. ; ls -d g* | nohup xargs -P 4 -I{} env KIRA_THREADS=4 {}/run.sh > ../batch.log 2>&1 &
 ```
-Monitor: `tail -f kira.out`; `for d in g*; do printf '%s  ' $d; tail -n1 $d/kira.out 2>/dev/null || echo -; done`;
+All groups with the driver (preferred): `nohup python3 run_reductions.py run --parallel 5 --threads 4 > /dev/null 2>&1 &`
+in `RRR_reductions/`; then `run_reductions.py status | stats | stop`, log `run_state/driver.log`, per-job samples
+`run_state/samples/<group>.csv` (RAM = sum of RSS over the job's process group, cores from CPU time between samples,
+final CPU time from os.wait4). Resumable: done groups skipped, killed/stale ones requeued (orphans killed by process
+group). Test changes to the driver with a fake kira (a script that sleeps, spawns a child, writes results/) via
+`--kira --jobs-dir --state-dir` in the scratchpad, never on real jobs.
+Manual single group: monitor with `tail -f kira.out`; `for d in g*; do printf '%s  ' $d; tail -n1 $d/kira.out 2>/dev/null || echo -; done`;
 `pgrep -u ge45tuy -a -x kira`; `top -u ge45tuy`.
 Stop: kill xargs first, then Kira, then check helpers: `pkill -u ge45tuy -x xargs; pkill -u ge45tuy -x kira;
 pgrep -u ge45tuy -a 'kira|fer64|ferl64'`. Restart a group cleanly: in its folder

@@ -5,3 +5,4 @@ jobs/*/*
 !jobs/*/config/
 !jobs/*/jobs.yaml
 !jobs/*/run.sh
+run_state/

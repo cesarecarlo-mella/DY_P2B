@@ -11,5 +11,6 @@ cd checks
 wolframscript -file checks.wl > checks.log     # closed form, eps expansion, NNLO soft master, notebook formula, symmetry
 python3 rest_frame.py > rest_frame.log          # independent rest-frame derivation, absolute normalisation
 wolframscript -file notebook_integrand.wl > notebook_integrand.log   # the NNLO notebook INTEGRAND, both deltas
+wolframscript -file admp.wl > admp.log          # hep-ph/0312266 eq. (3.8) (ADMP I[0]) = our Phi_2
 ```
 Build: `pdflatex phase_space.tex` (twice, for the table of contents).
