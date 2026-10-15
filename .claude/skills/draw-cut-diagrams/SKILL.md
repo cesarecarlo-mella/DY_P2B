@@ -29,6 +29,9 @@ Sector file, one per line (`#` comments allowed):
 - or `55: 6 13 8` -- family number and the DD numbers of the lines present.
 The user's own sector list is `FamilyDrawings/my_sectors.txt` (theirs: do not commit or overwrite it).
 `--top-sectors` reads an `integrals.m` from `Code_v2/Scripts/run_all.py integrals` (default `Code_v2/integrals/<set>/`).
+The top sectors to reduce (with the subsector trees and s/dots from the trees) come from
+`Code_v2/integrals/Tools/analyse_integrals.py <collection>`; its `analysis/topsectors_list.txt` is a ready `--sectors` file:
+`python3 draw_families.py --sectors ../Code_v2/integrals/gluons/analysis/topsectors_list.txt`.
 
 ## Physics and conventions (keep these when changing anything)
 
