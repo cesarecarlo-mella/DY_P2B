@@ -1,0 +1,26 @@
+#do n = 1,12
+id FRules['n'](?x) = 1;
+#enddo
+id G(?x) = 1;
+id pol(?x) = 1;
+*id Sector(?x) = 1;
+id gs = 1;
+id gem = 1;
+id lambda = 1;
+id eq = 1;
+id i99 = i97;
+*id Sector(x1?PLANARS,?x2) = Sector(PL); 
+*id Sector(x1?,x2?,x3?) = Sector(NPL);
+.sort
+l layers = 
+#do n = 1,'NDIAG'
++ [diag'n']
+#enddo
+;
+b Nc,Nf,NfZ,NfG,NfGZ,Sector;
+.sort
+Collect Num;
+id Num(?x) = 1;
+id Sector(x?) = x;
+b Nc,Nf,NfZ,NfG,NfGZ;
+print layers;
