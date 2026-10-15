@@ -22,4 +22,8 @@ q^2 = m2 and the rapidity condition -q.p1 + u q.p2 = 0, which is not a line and 
 
 Independent families: 146 with 1 irreducible numerator, 10 with 2; 155 of them are two full trees (3 + 3 propagators).
 
-To do: nicer layout (fewer crossings, labels that do not overlap).
+Layout: cut in the middle, the cut lines r1, r2, r3, q as horizontal segments through it, in the order (of 24) for
+which the most propagators can be drawn without crossing; p1, p2 enter top/bottom left and leave top/bottom right;
+a vertex's x from its position between the p legs and the cut (graph distances), y the average of its neighbours,
+with a minimum distance between vertices. Lines are smooth (horizontal tangents); `--straight` for straight lines.
+Under each drawing: its propagators (DD number, momentum, amplitude/conjugate) and the pinched ones.

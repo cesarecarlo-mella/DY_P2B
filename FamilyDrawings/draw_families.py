@@ -75,72 +75,138 @@ def tree_edges(splits, side):
     return edges
 
 
-def layout(edges):
-    """positions from graphviz dot, left to right: amplitude (edges oriented towards the cut), cut, conjugate
-    (edges oriented away from the cut)"""
-    cut = ["cr1", "cr2", "cr3", "cq"]
+CUTLEGS = ["r1", "r2", "r3", "q"]
+
+
+def contiguous(members, seq):
+    """are the members a contiguous block of the cyclic sequence seq?"""
+    flags = [x in members for x in seq]
+    return sum(flags[k] != flags[k - 1] for k in range(len(flags))) <= 2
+
+
+def cut_order(left, right):
+    """order of the cut lines (top to bottom) for which as many propagators as possible can be drawn without crossing:
+    a tree is planar with its legs on the boundary in the cyclic order p1, cut lines, p2 iff every propagator's legs
+    form a contiguous block"""
+    def cost(order):
+        seq = ["p1"] + list(order) + ["p2"]
+        return sum(not contiguous(SPLIT[dd], seq) for dd in left + right)
+    return min(itertools.permutations(CUTLEGS),
+               key=lambda o: (cost(o), abs(o.index("q") - 1.5), o))
+
+
+def positions(edges, fixed, xp, xc):
+    """legs fixed; a vertex's x from its place between the p legs (x = xp) and the cut (x = xc): graph distances
+    dp, dc -> x = xp + (xc - xp) dp / (dp + dc); its y the average of its neighbours' y"""
     adj = {}
     for a, b, _ in edges:
         adj.setdefault(a, set()).add(b)
         adj.setdefault(b, set()).add(a)
-    dist, front = {c: 0 for c in cut}, list(cut)                      # distance from the cut
-    while front:
-        nxt = []
-        for x in front:
-            for y in adj[x]:
-                if y not in dist:
-                    dist[y] = dist[x] + 1
-                    nxt.append(y)
-        front = nxt
-    lines = ["digraph G {", "rankdir=LR; nodesep=0.35; ranksep=0.6;",
-             "{rank=min; Lp1; Lp2;}", "{rank=max; Rp1; Rp2;}", "{rank=same; " + "; ".join(cut) + ";}"]
-    for a, b, _ in edges:
-        left = a.startswith("L") or b.startswith("L")
-        far, near = (a, b) if dist[a] >= dist[b] else (b, a)
-        lines.append(f"{far} -> {near};" if left else f"{near} -> {far};")
-    lines.append("}")
-    out = subprocess.run(["dot", "-Tplain"], input="\n".join(lines), capture_output=True, text=True, check=True).stdout
-    pos = {}
-    for line in out.splitlines():
-        p = line.split()
-        if p and p[0] == "node":
-            pos[p[1]] = (float(p[2]), float(p[3]))
+
+    def dist(sources):
+        d, front = {v: 0 for v in sources}, list(sources)
+        while front:
+            nxt = []
+            for v in front:
+                for w in adj[v]:
+                    if w not in d:
+                        d[w] = d[v] + 1
+                        nxt.append(w)
+            front = nxt
+        return d
+    pl = [v for v in fixed if v[1:] in ("p1", "p2")]
+    cl = [v for v in fixed if v not in pl]
+    dp, dc = dist(pl), dist(cl)
+    pos = dict(fixed)
+    free = [v for v in adj if v not in fixed]
+    for v in free:
+        pos[v] = (xp + (xc - xp) * dp[v] / (dp[v] + dc[v]), 0.0)
+    for _ in range(500):
+        for v in free:
+            pos[v] = (pos[v][0], sum(pos[w][1] for w in adj[v]) / len(adj[v]))
+    # vertices at about the same x keep a minimum vertical distance (order kept)
+    for _ in range(200):
+        moved = False
+        for v in free:
+            for u in free:
+                if u >= v or abs(pos[u][0] - pos[v][0]) > 0.45:
+                    continue
+                dy = pos[v][1] - pos[u][1]
+                if abs(dy) < 0.8:
+                    sgn = 1.0 if dy > 0 or (dy == 0 and v > u) else -1.0
+                    shift = (0.8 - abs(dy)) / 2
+                    pos[v] = (pos[v][0], pos[v][1] + sgn * shift)
+                    pos[u] = (pos[u][0], pos[u][1] - sgn * shift)
+                    moved = True
+        if not moved:
+            break
     return pos
 
 
+SMOOTH = True                                                     # --straight: straight lines
+
+
+def curve(pos, a, b):
+    """smooth line from a to b: leaves and arrives horizontally (straight if nearly vertical)"""
+    (xa, ya), (xb, yb) = pos[a], pos[b]
+    if not SMOOTH or abs(xb - xa) < 0.7 or abs(yb - ya) < 0.05:
+        return ""
+    return (", out=0, in=180" if xb > xa else ", out=180, in=0") + ", looseness=0.75"
+
+
 def tikz(n, dds, left, right):
-    edges = tree_edges(left, "L") + tree_edges(right, "R")
-    pos = layout(edges)
-    xs = [x for x, _ in pos.values()]
-    sx = 7.0 / (max(xs) - min(xs))
-    pos = {k: ((x - min(xs)) * sx, y * sx) for k, (x, y) in pos.items()}
-    ycut = [pos[c][1] for c in ("cr1", "cr2", "cr3", "cq")]
-    xcut = sum(pos[c][0] for c in ("cr1", "cr2", "cr3", "cq")) / 4
+    order = cut_order(left, right)
+    W, H = 3.2, 1.0                                               # half width, spacing of the cut lines
+    ycut = {leg: (1.5 - k) * H for k, leg in enumerate(order)}
+    yp = {"p1": 2.3 * H, "p2": -2.3 * H}
+    A = 0.75                                                      # cut lines: horizontal segments from -A to +A
+    rename = lambda edges, side: [(a.replace("c", side + "c", 1) if a.startswith("c") else a,
+                                   b.replace("c", side + "c", 1) if b.startswith("c") else b, lab) for a, b, lab in edges]
+    edges_l, edges_r = rename(tree_edges(left, "L"), "L"), rename(tree_edges(right, "R"), "R")
+    fixed_l = {"Lp1": (-W, yp["p1"]), "Lp2": (-W, yp["p2"]), **{f"Lc{x}": (-A, ycut[x]) for x in CUTLEGS}}
+    fixed_r = {"Rp1": (W, yp["p1"]), "Rp2": (W, yp["p2"]), **{f"Rc{x}": (A, ycut[x]) for x in CUTLEGS}}
+    pos = {**positions(edges_l, fixed_l, -W, -A), **positions(edges_r, fixed_r, W, A)}
     L = [r"\begin{tikzpicture}", r"\begin{feynman}"]
     for k, (x, y) in pos.items():
-        if k in ("Lp1", "Lp2", "Rp1", "Rp2"):
-            L.append(rf"\vertex ({k}) at ({x:.2f},{y:.2f}) {{\scriptsize ${TEX[k[1:]]}$}};")
-        elif k.startswith("c"):
-            L.append(rf"\vertex ({k}) at ({xcut:.2f},{y:.2f});")
+        if k in ("Lp1", "Lp2"):
+            L.append(rf"\vertex ({k}) at ({x:.3f},{y:.3f}) {{${TEX[k[1:]]}$}};")
+        elif k in ("Rp1", "Rp2"):
+            L.append(rf"\vertex ({k}) at ({x:.3f},{y:.3f}) {{${TEX[k[1:]]}$}};")
+        elif k[1:].startswith("c"):
+            L.append(rf"\vertex ({k}) at ({x:.3f},{y:.3f});")
         else:
-            L.append(rf"\vertex[dot] ({k}) at ({x:.2f},{y:.2f}) {{}};")
+            L.append(rf"\vertex[dot] ({k}) at ({x:.3f},{y:.3f}) {{}};")
     L.append(r"\diagram* {")
-    for a, b, lab in edges:
+    for a, b, lab in edges_l + edges_r:
+        c = curve(pos, a, b)
         if lab in ("p1", "p2"):
-            L.append(f"({a}) -- [plain] ({b}),")
+            L.append(f"({a}) -- [plain, thick] ({b}),")
         elif lab == "q":
-            L.append(f"({a}) -- [boson, red!70!black] ({b}),")
+            L.append(f"({a}) -- [boson, red!70!black{c}] ({b}),")
         elif lab in ("r1", "r2", "r3"):
-            L.append(f"({a}) -- [plain, blue!60!black] ({b}),")
+            L.append(f"({a}) -- [plain, blue!60!black{c}] ({b}),")
         else:
-            L.append(f"({a}) -- [plain, edge label={{\\tiny {lab}}}] ({b}),")
+            L.append(f"({a}) -- [plain{c}, edge label={{\\footnotesize\\bfseries {lab}}}] ({b}),")
+    for x in CUTLEGS:                                             # the cut lines through the cut
+        L.append(f"(Lc{x}) -- [{'boson, red!70!black' if x == 'q' else 'plain, blue!60!black'}] (Rc{x}),")
     L.append("};")
     L.append(r"\end{feynman}")
-    L.append(rf"\draw[dashed, gray] ({xcut:.2f},{min(ycut) - 0.6:.2f}) -- ({xcut:.2f},{max(ycut) + 0.6:.2f});")
-    for c in ("cr1", "cr2", "cr3", "cq"):
-        L.append(rf"\node[font=\tiny, right] at ({xcut:.2f},{pos[c][1] + 0.15:.2f}) {{${TEX[c[1:]]}$}};")
+    L.append(rf"\draw[dashed, gray!70] (0,{min(ycut.values()) - 0.8:.2f}) -- (0,{max(ycut.values()) + 0.8:.2f});")
+    for x in CUTLEGS:
+        col = "red!70!black" if x == "q" else "blue!60!black"
+        L.append(rf"\node[font=\footnotesize, {col}, above] at (0.32,{ycut[x]:.2f}) {{${TEX[x]}$}};")
     L.append(r"\end{tikzpicture}")
     return "\n".join(L)
+
+
+def prop_table(lines, left, right, rest, absent):
+    """the propagators of a drawing as a small table"""
+    rows = [rf"\textbf{{{dd}}} & ${mom(dd)}$ & {'amplitude' if dd in left else 'conjugate'}\\" for dd in left + right]
+    rows += [rf"\textbf{{{dd}}} & ${mom(dd)}$ & \textcolor{{red}}{{in no tree}}\\" for dd in rest]
+    t = r"{\footnotesize\begin{tabular}{@{}r@{\ \ }l@{\ \ }l@{}}" + "\n".join(rows) + r"\end{tabular}}"
+    if absent:
+        t += r"\\[2pt]{\scriptsize pinched: " + ", ".join(rf"{dd} = ${mom(dd)}$" for dd in absent) + "}"
+    return t
 
 
 def mom(dd):
@@ -203,17 +269,15 @@ def render(items, fams, indep, name, title):
         data.append({"family": n, "lines": lines, "amplitude": left, "conjugate": right,
                      "not_in_trees": rest, "absent": absent, "independent": n in indep})
         if present is None:
-            cap = (rf"\textbf{{FAM[{n}]}} (topo{n})\\[1pt] \scriptsize left: {', '.join(map(str, left))}; "
-                   rf"right: {', '.join(map(str, right))}"
-                   + (rf"; numerators: {', '.join(f'{x} = ${mom(x)}$' for x in rest)}" if rest else "; no numerators"))
+            cap = rf"\textbf{{FAM[{n}]}} (topo{n})\\[2pt]" + prop_table(lines, left, right, [], []) + (
+                (r"\\[2pt]{\scriptsize irreducible numerators: " + ", ".join(rf"{dd} = ${mom(dd)}$" for dd in rest) + "}")
+                if rest else "")
         else:
             cap = (rf"\textbf{{FAM[{n}]}} (topo{n}), sector with {len(lines)} of 7 lines"
-                   + ("" if n in indep else r" \textcolor{red}{(not an independent family!)}")
-                   + rf"\\[1pt] \scriptsize left: {', '.join(map(str, left)) or '--'}; right: {', '.join(map(str, right)) or '--'}"
-                   + (rf"; absent: {', '.join(map(str, absent))}" if absent else "")
-                   + (rf"; \textcolor{{red}}{{in no tree: {', '.join(map(str, rest))}}}" if rest else ""))
-        blocks.append(r"\begin{minipage}[t]{0.48\textwidth}\centering\resizebox{0.92\linewidth}{!}{"
-                      + tikz(n, lines, left, right) + r"}\\[1mm]" + cap + r"\end{minipage}")
+                   + ("" if n in indep else r" \textcolor{red}{(not an independent family!)}") + r"\\[2pt]"
+                   + prop_table(lines, left, right, rest, absent))
+        blocks.append(r"\begin{minipage}[t]{0.48\textwidth}\centering\resizebox{0.9\linewidth}{!}{"
+                      + tikz(n, lines, left, right) + r"}\\[2mm]" + cap + r"\end{minipage}")
     legend = r"\textbf{Regular propagators} (DD numbers, all legs incoming): " + "; ".join(
         f"{6 + i} = ${mom(6 + i)}$" for i in range(len(REGULAR))) + "."
     doc = [r"\documentclass[10pt]{article}", r"\usepackage[a4paper,margin=1.4cm]{geometry}", r"\usepackage{xcolor}",
@@ -238,6 +302,8 @@ def render(items, fams, indep, name, title):
 
 
 def main(argv):
+    global SMOOTH
+    SMOOTH = "--straight" not in argv
     fams, indep = read_families()
     if "--sectors" in argv or "--top-sectors" in argv:
         order = int_order()
