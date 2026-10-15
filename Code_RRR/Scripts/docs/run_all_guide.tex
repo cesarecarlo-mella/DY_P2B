@@ -42,7 +42,7 @@
 \section{Setup (once per machine)}
 \begin{lstlisting}
 cd /scratch/ge45tuy && git clone https://github.com/cesarecarlo-mella/DY_P2B.git    # or: cd DY_P2B && git pull
-cd /scratch/ge45tuy/DY_P2B/Code_v2
+cd /scratch/ge45tuy/DY_P2B/Code_RRR
 source setenv.sh                                  # sets FORMPATH; needed in every new shell / tmux window
 echo $FORMPATH $QGRAF
 \end{lstlisting}
@@ -75,7 +75,7 @@ python3 Scripts/run_all.py run --channels Vqqbccbg --jobs 12 --form-tmp /scratch
 In a tmux session (survives logout; detach with \cmd{Ctrl-b d}, come back with \cmd{tmux attach -t dy}):
 \begin{lstlisting}
 tmux new -s dy
-cd /scratch/ge45tuy/DY_P2B/Code_v2 && source setenv.sh
+cd /scratch/ge45tuy/DY_P2B/Code_RRR && source setenv.sh
 python3 Scripts/run_all.py run --set gluons --jobs 100 --form-tmp /scratch/ge45tuy/formtmp 2>&1 | tee gluons.log
 #   newton1: the same with --set quarks ... | tee quarks.log
 \end{lstlisting}
@@ -96,7 +96,7 @@ again. Redoing a preparation step (qgraf, 01--03) of a channel invalidates its l
 \section{Monitoring}
 From any shell on the same machine (\cmd{status} needs no \cmd{setenv.sh}):
 \begin{lstlisting}
-cd /scratch/ge45tuy/DY_P2B/Code_v2
+cd /scratch/ge45tuy/DY_P2B/Code_RRR
 watch -n 120 python3 Scripts/run_all.py status --set gluons           # overview, refreshed every 2 min
 python3 Scripts/run_all.py status --set gluons --running              # + every running job: time, memory
 tail -f Scripts/run_state/gluons/jobs.csv                             # one line per finished job
@@ -131,7 +131,7 @@ du -sh /scratch/ge45tuy/formtmp/formtmp/* | sort -h | tail -5
 \item \textbf{Clean temporary files} (only with no run going on that machine):
 \begin{lstlisting}
 rm -rf /scratch/ge45tuy/formtmp
-cd /scratch/ge45tuy/DY_P2B/Code_v2/Scripts
+cd /scratch/ge45tuy/DY_P2B/Code_RRR/Scripts
 rm -rf */*/*_LO/utils/tmp_fld */*/*_LO/utils/job_* */*/*_LO/utils/formtmp */*/*_LO/tmp_folder
 rm -f  */*/*_LO/utils/sum_squared_diags_*.frm */*/*_LO/utils/sum_squared_diags_*.log
 \end{lstlisting}
@@ -152,9 +152,9 @@ point on the cut surface and compares them exactly; it prints \cmd{IDENTICAL} or
 
 \section{Integrals to reduce}
 \begin{lstlisting}
-python3 Scripts/run_all.py integrals --set gluons      # newton4 -> Code_v2/integrals/gluons/
-python3 Scripts/run_all.py integrals --set quarks      # newton1 -> Code_v2/integrals/quarks/
-python3 Scripts/run_all.py integrals --merge           # all collections in Code_v2/integrals -> Code_v2/integrals/all/
+python3 Scripts/run_all.py integrals --set gluons      # newton4 -> Code_RRR/integrals/gluons/
+python3 Scripts/run_all.py integrals --set quarks      # newton1 -> Code_RRR/integrals/quarks/
+python3 Scripts/run_all.py integrals --merge           # all collections in Code_RRR/integrals -> Code_RRR/integrals/all/
 \end{lstlisting}
 The two machines have separate clones: before \cmd{--merge}, copy one collection next to the other, e.g.\ on newton4
 \cmd{rsync -av newton1.t30.ph.tum.de:/scratch/ge45tuy/DY\_P2B/Code\_v2/integrals/quarks Code\_v2/integrals/}.
@@ -168,7 +168,7 @@ sectors, max dots, max numerator power), \cmd{sources.txt}. \cmd{--step 05}: fro
 
 Sectors, top sectors and reduction parameters of a collection:
 \begin{lstlisting}
-python3 integrals/Tools/analyse_integrals.py integrals/gluons     # (in Code_v2) -> integrals/gluons/analysis/
+python3 integrals/Tools/analyse_integrals.py integrals/gluons     # (in Code_RRR) -> integrals/gluons/analysis/
 \end{lstlisting}
 \cmd{topsectors.txt}: one row per top sector --- family, sector ID ($=\sum 2^{i-1}$ over the positive indices), $t$
 (propagators with positive power), $r$ (sum of positive powers), $s$ (sum of $|$negative powers$|$), dots $=r-t$, all

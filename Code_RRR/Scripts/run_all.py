@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
 """The whole pipeline for many channels at once, with one global job queue: QGRAF, steps 01 (parse, colour), 02 (groups
 of 10 diagrams), 03 (conjugates), 04 (square), 05 (contract, partial fractions, families), 06 (sum, relabelling).
-Linux (and macOS for tests). Run from anywhere after `source Code_v2/setenv.sh`.
+Linux (and macOS for tests). Run from anywhere after `source Code_RRR/setenv.sh`.
 
   python3 run_all.py run      --set gluons --jobs 100     run (or resume) everything of the set
   python3 run_all.py status   --set gluons                progress per channel and step, memory, CPU, ETA (any time)
   python3 run_all.py check    --set gluons                scan all outputs: missing, leftovers, made with old templates
   python3 run_all.py verify   --set gluons --n 2          numerical check of random finished step-05 results
   python3 run_all.py selftest [--jobs 8]                  check the local FORM against reference numbers (FORM 5.0)
-  python3 run_all.py integrals --set gluons               all distinct integrals to reduce -> Code_v2/integrals/gluons/
-  python3 run_all.py integrals --merge                    union of all collections in Code_v2/integrals -> .../all/
+  python3 run_all.py integrals --set gluons               all distinct integrals to reduce -> Code_RRR/integrals/gluons/
+  python3 run_all.py integrals --merge                    union of all collections in Code_RRR/integrals -> .../all/
 
 Sets: gluons = physical_qqbggg (7 channels), quarks = all other groups (42), all; or --channels Vqqbggg,VqqbQ2Q2bg,...
 Two sets can run at the same time (two run commands); each keeps its state in run_state/<set>/ (or --state DIR).
@@ -18,7 +18,7 @@ Jobs: qgraf, 01, 02, 03 = one per channel, in this order (02 makes groups of 10 
 with "10, 1"); 04 = one group pair (i x conjugate j) of a channel, started once its 03 is done; 05 = one non-zero piece (vv, va, ...) of one pair, started as
 soon as its 04 job is done; 06 = one piece of a channel, started when all its 05 jobs are done. The same FORM files as
 the per-channel runners are used (utils/4_square_ampl.frm, utils/template_contractPj.frm,
-utils/template_sum_squared_diags.frm, Code_v2/Families). The most expensive jobs are started first.
+utils/template_sum_squared_diags.frm, Code_RRR/Families). The most expensive jobs are started first.
 
 Resume: a job counts as done only after its output passed the checks below (marker in <state>/done/). After a crash or
 Ctrl-C just run the same command again: done jobs are skipped, everything else (also failed jobs) runs again.
@@ -467,7 +467,7 @@ def preflight(steps=()):
         sys.exit(f"FORM executable '{FORM[0]}' not found (set FORM=... or PATH)")
     fp = os.environ.get("FORMPATH", "")
     if not os.path.isfile(os.path.join(fp, "all_header.h")):
-        sys.exit("FORMPATH does not contain all_header.h: source Code_v2/setenv.sh")
+        sys.exit("FORMPATH does not contain all_header.h: source Code_RRR/setenv.sh")
     for f in VERSION_FILES:
         if not os.path.isfile(os.path.join(FAMDIR, f)):
             sys.exit(f"missing {FAMDIR}/{f}: run the Families scripts (family_rules.wl, isp_table.py, fammatch_table.py)")
@@ -852,7 +852,7 @@ def cmd_verify(args):
 
 # ---------------------------------------------------------------- integrals
 INT_RE = re.compile(r"INT\((topo\d+),([-\d,]+)\)")
-INTEGRALS_DIR = os.environ.get("DY_INTEGRALS", os.path.join(CODE, "integrals"))   # Code_v2/integrals/<set>
+INTEGRALS_DIR = os.environ.get("DY_INTEGRALS", os.path.join(CODE, "integrals"))   # Code_RRR/integrals/<set>
 
 
 def write_integrals(ints, out, sources, missing):
@@ -1044,12 +1044,12 @@ def main():
     p.add_argument("--seed", type=int, default=1)
     p = sub.add_parser("integrals", help="collect all distinct integrals to reduce")
     common(p)
-    p.add_argument("--out", help="output folder (default Code_v2/integrals/<set>, or Code_v2/integrals/all with "
+    p.add_argument("--out", help="output folder (default Code_RRR/integrals/<set>, or Code_RRR/integrals/all with "
                                  "--merge; base folder changeable with DY_INTEGRALS)")
     p.add_argument("--step", choices=["06", "05"], default="06",
                    help="06: summed results, independent families (default); 05: per pair, all families")
     p.add_argument("--merge", nargs="*", metavar="DIR",
-                   help="instead: union of the collections in these folders (no folder: all in Code_v2/integrals "
+                   help="instead: union of the collections in these folders (no folder: all in Code_RRR/integrals "
                         "except all)")
     p = sub.add_parser("selftest", help="FORM check: VqqbQ2Q2bg 3x3 against reference numbers")
     common(p, jobs=4)

@@ -1,6 +1,6 @@
 """Integral families and their identification rules for the reduction -> Families/reduction/.
 
-    python3 reduction_export.py      (run in Code_v2/Families after family_rules.wl)
+    python3 reduction_export.py      (run in Code_RRR/Families after family_rules.wl)
 
 Writes into reduction/:
   integralfamilies_all.rrr.m          all families (= integralfamilies.rrr.m), entry N = topoN = FAM[N]

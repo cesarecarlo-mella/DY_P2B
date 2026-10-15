@@ -11,7 +11,7 @@ Sector file, one per line: `topo55[1,1,1,1,1,1,1,0,1,1,0,1]` (INT indices; posit
 fits in neither tree is listed in red; a line is never drawn on both sides. Sectors of families that are not
 independent are marked.
 
-Reads the families from ../Code_v2/Families (families_raw.m, families_relabelling.m; DD numbering of
+Reads the families from ../Code_RRR/Families (families_raw.m, families_relabelling.m; DD numbering of
 find_circuits.REGULAR). Needs graphviz (dot) and pdflatex with tikz-feynman.
 
 Method: with all legs incoming every regular propagator is a split of {p1, p2, r1, r2, r3, q}; a tree amplitude

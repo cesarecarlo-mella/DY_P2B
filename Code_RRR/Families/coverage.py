@@ -1,6 +1,6 @@
 """Check that every propagator set FORM can produce after the partial fractions lies in a family.
 
-    python3 coverage.py      (run in Code_v2/Families after families.py; exit code 1 if a set is in no family)
+    python3 coverage.py      (run in Code_RRR/Families after families.py; exit code 1 if a set is in no family)
 
 Takes EVERY collected product (products[P] of all channels) through the 48 partial-fraction identities in FORM's
 order (pfsim.py) and checks the resulting sets against families_raw.m. Writes coverage_missing.m (sets in no family).

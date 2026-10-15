@@ -1,6 +1,6 @@
 """FORM table of the family numerators: fams/isp_table.inc from fams/fams<n>.inc (family_rules.wl).
 
-    python3 isp_table.py      (run in Code_v2/Families after family_rules.wl)
+    python3 isp_table.py      (run in Code_RRR/Families after family_rules.wl)
 
 fams<n>.inc has 9 rules  id <sp>*TOPO(n) = <combination of DD's of family n>;  for the 9 scalar products below.
 The table  ISP(n, k) = <rule k of family n>  lets contractPj look up the family of a term directly

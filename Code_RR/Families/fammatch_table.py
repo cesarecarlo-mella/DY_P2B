@@ -1,6 +1,6 @@
 """FORM tables for the family matching (generic): fams/fammatch_table.inc from fams/fammatch.inc (family_rules.wl).
 
-    python3 fammatch_table.py      (run in Code_v2/Families after family_rules.wl)
+    python3 fammatch_table.py      (run in Code_RRR/Families after family_rules.wl)
 
 fammatch.inc lists every subset of the regular propagators D6..D29 of every family once (the first family that
 has it), largest sets first, as  id D6^n6?{..}*D7^n7?{..}*... = TOPO(n)*DD6^n6*...;  so the first rule that

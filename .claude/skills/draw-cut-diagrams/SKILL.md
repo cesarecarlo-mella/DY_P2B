@@ -1,15 +1,15 @@
 ---
 name: draw-cut-diagrams
-description: Draw the triple-real integral families or individual sectors (e.g. top sectors / master-integral sectors) of the DY N3LO RRR project as cut diagrams (amplitude x conjugate glued along the cut), with momentum-flow arrows and propagator tables. Use when the user asks to draw, plot or visualise families, sectors, topologies or master integrals of Code_v2/Families, or to update those drawings.
+description: Draw the triple-real integral families or individual sectors (e.g. top sectors / master-integral sectors) of the DY N3LO RRR project as cut diagrams (amplitude x conjugate glued along the cut), with momentum-flow arrows and propagator tables. Use when the user asks to draw, plot or visualise families, sectors, topologies or master integrals of Code_RRR/Families, or to update those drawings.
 ---
 
 # Drawing integral families and sectors as cut diagrams
 
-Tool: `FamilyDrawings/draw_families.py` (repository root, next to `Code_v2/`). It reads the families from
-`../Code_v2/Families` (`families_raw.m`, `families_relabelling.m`, `fams/reconstruct.inc`, `find_circuits.REGULAR`),
+Tool: `FamilyDrawings/draw_families.py` (repository root, next to `Code_RRR/`). It reads the families from
+`../Code_RRR/Families` (`families_raw.m`, `families_relabelling.m`, `fams/reconstruct.inc`, `find_circuits.REGULAR`),
 so it must stay at that level. Needs `pdflatex` with `tikz-feynman` (TeX Live 2020 on the laptop: load it with
 `compat=1.1.0`; the `charged ghost` style does not exist there) and `pdftoppm` to look at the result. Graphviz is not
-used by this tool (only by `Code_v2/Scripts/diagrams/draw_diagrams.py`, the per-channel Feynman diagrams).
+used by this tool (only by `Code_RRR/Scripts/diagrams/draw_diagrams.py`, the per-channel Feynman diagrams).
 
 ## Commands
 
@@ -19,7 +19,7 @@ python3 draw_families.py                         # the 156 independent families 
 python3 draw_families.py --all                   # all 921 families
 python3 draw_families.py 1 7 910                 # selected families
 python3 draw_families.py --sectors my_sectors.txt                  # sectors -> sectors.pdf/.tex/.json
-python3 draw_families.py --top-sectors ../Code_v2/integrals/all/integrals.m # maximal sectors among collected integrals
+python3 draw_families.py --top-sectors ../Code_RRR/integrals/all/integrals.m # maximal sectors among collected integrals
 options: --straight (straight lines), --no-arrows, --momentum-labels (momenta instead of DD numbers on the lines)
 ```
 
@@ -28,15 +28,15 @@ Sector file, one per line (`#` comments allowed):
   from `reconstruct.inc`); positive index = line present;
 - or `55: 6 13 8` -- family number and the DD numbers of the lines present.
 The user's own sector list is `FamilyDrawings/my_sectors.txt` (theirs: do not commit or overwrite it).
-`--top-sectors` reads an `integrals.m` from `Code_v2/Scripts/run_all.py integrals` (default `Code_v2/integrals/<set>/`).
+`--top-sectors` reads an `integrals.m` from `Code_RRR/Scripts/run_all.py integrals` (default `Code_RRR/integrals/<set>/`).
 The top sectors to reduce (with the subsector trees and s/dots from the trees) come from
-`Code_v2/integrals/Tools/analyse_integrals.py <collection>`; its `analysis/topsectors_list.txt` is a ready `--sectors` file:
-`python3 draw_families.py --sectors ../Code_v2/integrals/gluons/analysis/topsectors_list.txt`.
+`Code_RRR/integrals/Tools/analyse_integrals.py <collection>`; its `analysis/topsectors_list.txt` is a ready `--sectors` file:
+`python3 draw_families.py --sectors ../Code_RRR/integrals/gluons/analysis/topsectors_list.txt`.
 
 ## Physics and conventions (keep these when changing anything)
 
 - Momenta all incoming: p1 + p2 + r1 + r2 + r3 + q = 0; regular propagators DD6..DD29 = (sum of legs)^2, e.g.
-  6 = (p1+r1)^2, 27 = (p1+p2+r1+r2)^2 (list `REGULAR` in `Code_v2/Families/find_circuits.py`). Each regular
+  6 = (p1+r1)^2, 27 = (p1+p2+r1+r2)^2 (list `REGULAR` in `Code_RRR/Families/find_circuits.py`). Each regular
   propagator is a split of the legs {p1,p2,r1,r2,r3,q}; a tree amplitude p1 p2 -> V(q) r1 r2 r3 is a set of compatible
   splits (nested or disjoint).
 - A family/sector is drawn as amplitude (left) x conjugate (right) glued along the cut (dashed): the two trees

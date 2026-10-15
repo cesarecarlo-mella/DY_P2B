@@ -5,7 +5,7 @@ Unphysical polarisation sum (-g^{mu nu}) for gluons -> ghost channels required.
 
 ## Summary (2026-10-12/13)
 
-What was done in Code_v2, in order (details in the sections below):
+What was done in Code_RRR, in order (details in the sections below):
 
 1. Channels: 26 tree-level channels i j -> V + 3 partons (q qb g g g, q qb Q Qb g, q qb q qb g, ghosts q qb c cb g), then
    their p1 <-> p2 partners -> 49 channels, listed in `channels.csv`, created by `make_channel.py`. No q <-> Q swaps.
@@ -135,7 +135,7 @@ Folder name = `V` + 2 initial partons + 3 final partons, in the same order as th
     Scripts/make_channel.py    creates channel folders from channels.csv (copies shared files from the reference channel)
         python3 make_channel.py --missing --qgraf     # every listed channel without a folder, + QGRAF + NDIAG
         python3 make_channel.py <P> [<P> ...]         # selected channels; existing folders are never overwritten
-    Families/                  propagators, partial fractions, integral families (run everything from Code_v2/Families)
+    Families/                  propagators, partial fractions, integral families (run everything from Code_RRR/Families)
     Families/collect_props.py  propagators of all channels from step-01 output -> Families/propagators/
         python3 collect_props.py [<P> ...]            # all channels by default
         propagators/<P>.m   props[P] (distinct), diagProps[P] (per diagram), pairProps[P] ({i, j, diagram i x conjugate j}),
@@ -169,7 +169,7 @@ Folder name = `V` + 2 initial partons + 3 final partons, in the same order as th
         They need step-04 output (tmp/squared_diagrams), hardcode 5 x 5 groups and collect per group pair; replaced by Families/collect_props.py.
         Their old output format (den/den_<i>_<j>.m) is what n3lo_old/RRR/Families_Identification/Triple_Real_Families.nb reads.
 
-Before running FORM: `source Code_v2/setenv.sh` (sets FORMPATH to Code_v2/FORMroutines; ~/.zshrc points elsewhere).
+Before running FORM: `source Code_RRR/setenv.sh` (sets FORMPATH to Code_RRR/FORMroutines; ~/.zshrc points elsewhere).
 Works on macOS and Linux (bash or zsh). FORM executable for the step runners: environment variable FORM, default `form`;
 on a cluster e.g. `export FORM="tform -w4"` (used by utils/04_run_4.py).
 
@@ -178,7 +178,7 @@ on a cluster e.g. `export FORM="tform -w4"` (used by utils/04_run_4.py).
 One command per set of channels runs the whole pipeline (QGRAF, 01, 02, 03, 04, 05, 06) with one global job queue;
 see `python3 Scripts/run_all.py --help`. Only the run outputs (tmp/ trees, run_state/) are not in git: a clone is enough.
 
-    cd /scratch/ge45tuy && git clone <repo> && cd DY_P2B/Code_v2 && source setenv.sh
+    cd /scratch/ge45tuy && git clone <repo> && cd DY_P2B/Code_RRR && source setenv.sh
     which qgraf form                      # QGRAF 3.4.2 on PATH or export QGRAF=...; else leave out the step qgraf
     python3 Scripts/run_all.py selftest --jobs 8          # FORM on this machine vs reference numbers (FORM 5.0)
     mkdir -p /scratch/ge45tuy/formtmp     # NOT /tmp: it is in RAM (tmpfs)
@@ -227,19 +227,19 @@ see `python3 Scripts/run_all.py --help`. Only the run outputs (tmp/ trees, run_s
 
 ## Status (2026-10-13)
 
-Code_v2 vs Code: `FORMroutines/`, `QGRAF/`, `dy_python/` identical; only `Scripts/` changed (old `Vqq*` folders, `Templates/`, `Form_Templates/`, `setup.sh` replaced by the 4 groups above).
+Code_RRR vs Code: `FORMroutines/`, `QGRAF/`, `dy_python/` identical; only `Scripts/` changed (old `Vqq*` folders, `Templates/`, `Form_Templates/`, `setup.sh` replaced by the 4 groups above).
 Not copied from the template: generated files (`03_complex_conj_diags.frm`, `sum_squared_diags.frm`) and editor junk (`.idea`, `*~`, `#decay.inc#`).
 
 Done:
 - All 26 `qgraf.dat` checked against the conventions; QGRAF run in all 26 (qgraf-3.4.2), `NDIAG` set (log total = diagrams in file).
 - `FORMroutines/parser.h`: per-PROC blocks replaced by one generic rule (leg -k -> 100-k, all fields incl. ghosts) + external ghost legs in the 99..89 loop.
   Tested on Vqqbggg, VqgqQ2Q2b, Vqqqqg, Vqqbccbg, Vgcqqbc: no negative legs, no unconverted v3/v4/prop left.
-- `setenv.sh`: sets FORMPATH to Code_v2/FORMroutines (~/.zshrc points to MatrixElement/FORMroutines, which lacks all_header.h etc.).
+- `setenv.sh`: sets FORMPATH to Code_RRR/FORMroutines (~/.zshrc points to MatrixElement/FORMroutines, which lacks all_header.h etc.).
 - `FORMroutines/spinlines.h`: per-PROC blocks replaced by one generic line builder (start at any Qbar/Qbar2 leg, follow the line, close at Quark/Quark2;
   initial-state end points drop pol, final-state ones keep it as cut marker; gv/ga on flavour-1 lines, Gv/Ga on flavour-2; FORM exits on an open line).
   Old version: removed (old VqQqQ/VqQbqQb blocks restored the flavour-1 Qbar(93) as pol(Qbar2(93,...))).
 - Step 01 (`form utils/01_colour_algebra.frm`) run in all 26 channels: no errors, all diagrams written, in every term each final quark leg has exactly one pol and no initial quark has one.
-  Check vs Code/ (same processes rerun with Code_v2): Vqqbgg, Vqgqg identical; VqQqQ identical after Qbar2(93) -> Qbar(93) in the stored Code/ output (old bug).
+  Check vs Code/ (same processes rerun with Code_RRR): Vqqbgg, Vqgqg identical; VqQqQ identical after Qbar2(93) -> Qbar(93) in the stored Code/ output (old bug).
 - `utils/02_run_sum_diags_group.py` (all 26): exits with error and keeps `tmp_folder/` if a FORM group job fails (was: printed and continued).
 - `utils/template_03_complex_conj_diags.frm` (all 26): Cut mapping for final quarks at 89 and final ghosts (93/91/89); vGGg, pghost added to the mu->nu renaming; Gv/Ga -> cGv/cGa.
   Dry run 02+03 on copies (Vqqbggg, VqgqQ2Q2b, Vqgqqqb, Vqqbccbg, Vgcqqbc): no mu left, all final-state pol in Cut form, all couplings conjugated.
@@ -253,7 +253,7 @@ Open (FORM step cannot run yet):
 
 Minor:
 - `utils/insert_reduction.frm`: still includes `../Vqq_LO/tmp/...` and `L1_4.inc` (not present).
-- `Code_v2/` not in git yet.
+- `Code_RRR/` not in git yet.
 
 - Charge conjugation + p1 <-> p2 + r relabelling: the 49 channels form 16 classes (same 16 representatives as "Minimal set to compute" below);
   every image of C, p1 <-> p2, C + p1 <-> p2 is one of the 49.
@@ -261,7 +261,7 @@ Minor:
   4849 distinct diagram-pair products (sets, no repeats), 2548 not contained in another (all with 6 propagators) = allMaxProducts. Checked: same propagators in every term of a diagram (1310 diagrams);
   products of each p1 <-> p2 partner = partner's with p1 <-> p2.
 
-- `Families/` created (propagators, partial fractions, families); `Code_v2/.gitignore` ignores all pipeline output (tmp/ trees kept via .gitkeep).
+- `Families/` created (propagators, partial fractions, families); `Code_RRR/.gitignore` ignores all pipeline output (tmp/ trees kept via .gitkeep).
 - Partial fractions: 48 minimal dependent sets among the occurring propagator sets; 36 identities (allpfid.m, partial_fraction/);
   the 12 using only DD6..DD23 are identical to the old n3lo_old/RRR/Families_Identification/allpfid.m. 12 sets have a relation with
   zero constant (all involve DD24..DD29): no identity yet (skipped, as in the old notebook).
@@ -305,10 +305,10 @@ Minor:
   (initial ghost) and VqqbQ2Q2bg diagram 21 x 24 (two lines, Q2). VqqbQ2Q2bg groups 3x3 (4x4 diagrams): 69 s, all checks passed.
 - Sign of final-state quark spin sums (utils/template_03_complex_conj_diags.frm, all 49): QGRAF momenta are incoming, an outgoing
   (anti)quark with label r has spin sum -r-slash; factor -1 per final-state quark/antiquark leg (generic version of the old
-  `id Spin(1) = (-1)^('INITFIN')` of Code/Scripts/Vqgq). Was missing in Code_v2. Checked on Vqcqcg: new conjugate = - old.
+  `id Spin(1) = (-1)^('INITFIN')` of Code/Scripts/Vqgq). Was missing in Code_RRR. Checked on Vqcqcg: new conjugate = - old.
   !! The existing step-03 outputs (Csum_*) of the channels with final-state quarks are stale: rerun steps 02-03 there.
 - Steps 02-03 rerun in all 49 channels with the sign (597 s, one channel at a time).
-- Total test on Code_v2 (Vqqbccbg regrouped, all 144 diagram pairs through step 04, 394 s one job at a time): total vv and aa
+- Total test on Code_RRR (Vqqbccbg regrouped, all 144 diagram pairs through step 04, 394 s one job at a time): total vv and aa
   symmetric in mu95<->nu95, total va = conj(av) transposed (conjugation includes e_ -> -e_: gamma5 is written eps/6 without i).
 - COLOUR BUG fixed (utils/template_03_complex_conj_diags.frm, all 49): the 100x100 loop mapped the external indices back INSIDE
   the loop, so a T with two external quark indices was transposed twice (= not conjugated). Now: one transposition of every T,
@@ -316,7 +316,7 @@ Minor:
   Code/ NNLO setups (Vqqbgg, Vqgqg, VqQqQ, VqQbqQb, Vqqbggg_template) and in H_P2B ggHqqb_lo, ccbHqqb_lo, but HARMLESS
   there: their colour algebra never leaves a T with two external indices (f -> commutators with an internal j, four-quark
   colour Fierzed into d_'s), checked on the stored diag/Cdiag files. Only T(a,i_x,i_y) with x < y was wrong (x > y was
-  transposed once). In Code_v2 it hit the 22 four-quark + gluon channels (VqqbQ2Q2bg, Vqqbqqbg, ... and partners).
+  transposed once). In Code_RRR it hit the 22 four-quark + gluon channels (VqqbQ2Q2bg, Vqqbqqbg, ... and partners).
 - Colour test after the fix (scratch, Vqqbqqbg, one diagram per group): the square of each single diagram has exactly
   the colour factor (Nc^2-1)^2/(8 Nc) (gluon from a quark line: diagrams 1, 9, 16) or Nc (Nc^2-1)/4 (gluon from the
   gluon: diagram 10), in the vv, aa, va, av pieces (checked at Nc = 2, 3, 4). Control: with the old loop diagram 10 fails.
@@ -333,7 +333,7 @@ Minor:
   utils/05_run_contractPj.py: all non-zero pieces x group pairs; projector per piece: L1 (symmetric) for the parity-even
     pieces vv, aa, vv2, aa2, v2v, a2a, v2v2, a2a2, L6 (epsilon) for the odd ones va, av, va2, av2, v2a, a2v, v2a2, a2v2
     (other combinations vanish by parity, not computed); jobs in utils/job_<piece>_<PROJ>_<i_j>/ (log kept on failure,
-    exit 1); threads + main guard (macOS), FORM from $FORM; families from Code_v2/Families (FAMDIR), nothing copied.
+    exit 1); threads + main guard (macOS), FORM from $FORM; families from Code_RRR/Families (FAMDIR), nothing copied.
     Prompts: a/o/l (all, one by index, list), parallel jobs, debug (write intermediate expressions).
   utils/template_contractPj.frm: piece/paths from the defines; generic Prop sign normalisation (hardcoded flips removed);
     our 48 PF sets inside ONE repeat (an identity can recreate an earlier pattern; terminates: each removes a distinct

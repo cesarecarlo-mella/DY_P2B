@@ -1,6 +1,6 @@
 (* Exact check and export of the families found by families.py.
 
-   wolframscript -file families.wl      (run in Code_v2/Families after families.py)
+   wolframscript -file families.wl      (run in Code_RRR/Families after families.py)
 
    In:   families_raw.m   {{DD numbers}, ...} from families.py; old Families.m of n3lo_old/RRR/Families_Identification
    Out:  Families.m       {FAM[n] -> {DD[..], ...}}, same format as the old Families.m

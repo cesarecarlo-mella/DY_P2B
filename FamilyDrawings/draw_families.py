@@ -11,7 +11,7 @@ a split of the six legs {p1, p2, r1, r2, r3, q}; a tree-level amplitude p1 p2 ->
 (nested or disjoint) splits. The family is drawn as amplitude x conjugate amplitude glued along the cut lines
 r1, r2, r3, q: the two trees (left = amplitude, right = conjugate) that together contain as many of the 7 regular
 propagators as possible; the rest are irreducible numerators (listed). The rapidity condition is not a line (listed).
-Families from ../Code_v2/Families (families_raw.m, families_relabelling.m, find_circuits.REGULAR).
+Families from ../Code_RRR/Families (families_raw.m, families_relabelling.m, find_circuits.REGULAR).
 Layout: own (see positions(), cut_order()); drawing: TikZ-Feynman (pdflatex). Writes <name>.tex, .pdf, .json.
 """
 import itertools
@@ -22,7 +22,7 @@ import subprocess
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-FAMDIR = os.path.join(HERE, "..", "Code_v2", "Families")
+FAMDIR = os.path.join(HERE, "..", "Code_RRR", "Families")
 sys.path.insert(0, FAMDIR)
 from find_circuits import REGULAR      # noqa: E402  DD6..DD29 momenta, e.g. "p1+r1"
 

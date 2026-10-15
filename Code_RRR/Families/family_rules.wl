@@ -1,7 +1,7 @@
 (* Integral families -> integralfamilies.rrr.m and FORM rules, as in n3lo_old/RRR/Families_Identification/Triple_Real_Families.nb
    ("Define Integral families", "Find Simmetries under permutation of loop momenta", "FORM ids: ISPs, fammatch, etc.").
 
-   wolframscript -file family_rules.wl      (run in Code_v2/Families after families.wl)
+   wolframscript -file family_rules.wl      (run in Code_RRR/Families after families.wl)
 
    In:   Families.m (FAM[n] -> {DD[..]}), DD1..DD29 as in denoms.m / pf_identities.wl
    Out:  integralfamilies.rrr.m             families in terms of p4 = -r1, p5 = -r2, p6 = -r3 (as the old file)

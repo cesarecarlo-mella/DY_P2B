@@ -1,6 +1,6 @@
-# Code_RR: double-real (two emissions r1, r2) with the Code_v2 (RRR) pipeline
+# Code_RR: double-real (two emissions r1, r2) with the Code_RRR pipeline
 
-Same machinery as Code_v2 (= RRR): FORM routines, QGRAF files, steps 01-06, Scripts/run_all.py, adapted to two
+Same machinery as Code_RRR: FORM routines, QGRAF files, steps 01-06, Scripts/run_all.py, adapted to two
 emissions:
 - kinematics kin5point (q = -p1-p2-r1-r2); 4 cut propagators (r1^2, r2^2, q^2 - m2, rapidity) D1..D4, regular D5..D13
   (p1+r1, p2+r1, p1+r2, p2+r2, p1+r1+r2, p2+r1+r2, r1+r2, p1+p2+r1, p1+p2+r2); INT(topoN, 1,1,1,1, n1,n2,n3)
