@@ -166,6 +166,17 @@ Output folder: \cmd{integrals.m} (\cmd{\{INT[topo55, 1,1,1,1,1,-3,...], ...\}}),
 sectors, max dots, max numerator power), \cmd{sources.txt}. \cmd{--step 05}: from the per-pair step-05 results
 (all 921 families, no relabelling).
 
+Sectors, top sectors and reduction parameters of a collection:
+\begin{lstlisting}
+python3 Scripts/tools/analyse_integrals.py Code_v2/integrals/gluons     # -> Code_v2/integrals/gluons/analysis/
+\end{lstlisting}
+\cmd{report.txt}: per family the top sectors (sector ID $=\sum 2^{i-1}$ over the positive indices, lines as
+position:DD), each with the tree of the occurring subsectors (nested by inclusion) and the maxima of $r$ (sum of
+positive powers), $s$ (sum of $|$negative powers$|$) and dots over the whole tree (a subsector can set them; the
+sectors reaching them are listed) next to the values of the top sector alone. \cmd{topsectors.csv}: one row per top
+sector. \cmd{sectors.json}: everything, machine-readable. Accepts \cmd{integrals.m}, \cmd{integrals.txt} or a
+collection folder; \cmd{--families 1,7} restricts, \cmd{--out DIR} sets the output folder.
+
 Families for the reduction: \cmd{Code\_v2/Families/reduction/} --- \cmd{integralfamilies\_independent.rrr.m} and
 \cmd{independentFamilies.m} (the 156 independent families, p4 = $-$r1, p5 = $-$r2, p6 = $-$r3, propagators in the
 order of the \cmd{INT} indices), \cmd{integralfamilies\_all.rrr.m} (all 921), \cmd{relabelling\_INT.m} /
