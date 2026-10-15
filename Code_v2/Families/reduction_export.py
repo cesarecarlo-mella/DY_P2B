@@ -1,0 +1,110 @@
+"""Integral families and their identification rules for the reduction -> Families/reduction/.
+
+    python3 reduction_export.py      (run in Code_v2/Families after family_rules.wl)
+
+Writes into reduction/:
+  integralfamilies_all.rrr.m          all families (= integralfamilies.rrr.m), entry N = topoN = FAM[N]
+  integralfamilies_independent.rrr.m  only the independent families, same format, in the order of
+  independentFamilies.m               {N1, N2, ...}: entry k of the file above is family topo<N_k>
+  relabelling_INT.m                   Mathematica: INT[topoA, n1_, ..., n12_] :> INT[topoB, ...] for every dependent
+                                      family A (from fams/symm_loop_crossings.inc); B is always independent
+  relabelling_momenta.m               {A, {p4 -> p5, ...}, B}: family A with this relabelling of p4, p5, p6 is family B
+  symm_loop_crossings.inc             the same rules in FORM (copy of fams/symm_loop_crossings.inc)
+  README.md                           conventions
+Checks: every dependent family maps directly onto an independent one; numbers consistent with families_relabelling.m.
+"""
+import os
+import re
+import shutil
+import sys
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+OUT = os.path.join(HERE, "reduction")
+
+
+def top_level_items(text):
+    """elements of the outermost Mathematica list in text"""
+    body = text[text.index("{") + 1:]
+    items, depth, cur = [], 0, []
+    for ch in body:
+        if ch == "{":
+            depth += 1
+        elif ch == "}":
+            if depth == 0:
+                break
+            depth -= 1
+        if ch == "," and depth == 0:
+            items.append("".join(cur).strip())
+            cur = []
+        else:
+            cur.append(ch)
+    if "".join(cur).strip():
+        items.append("".join(cur).strip())
+    return items
+
+
+def main():
+    os.makedirs(OUT, exist_ok=True)
+    fam_text = open(os.path.join(HERE, "integralfamilies.rrr.m")).read()
+    header = fam_text[:fam_text.index("{")]
+    fams = top_level_items(fam_text)
+    rel = open(os.path.join(HERE, "families_relabelling.m")).read()
+    indep = [int(x) for x in re.findall(r"FAM\[(\d+)\]", re.search(r"independentFamilies = \{(.*?)\};", rel, re.S).group(1))]
+    symm = open(os.path.join(HERE, "fams", "symm_loop_crossings.inc")).read()
+    rules = re.findall(r"^id INT\(topo(\d+),((?:n\d+\?,?)+)\)\s*=\s*INT\(topo(\d+),([^)]*)\);", symm, re.M)
+    dep = {int(a): int(b) for a, _, b, _ in rules}
+
+    # checks
+    n = len(fams)
+    if sorted(indep + list(dep)) != list(range(1, n + 1)):
+        sys.exit(f"families: {n}, independent {len(indep)} + dependent {len(dep)} do not cover 1..{n} exactly once")
+    if any(b not in indep for b in dep.values()):
+        sys.exit("a dependent family is mapped onto a family that is not independent")
+    mom = re.findall(r"\{FAM\[(\d+)\], \{([^{}]*)\}, FAM\[(\d+)\]\}", re.search(r"relabelling = \{(.*)\};", rel, re.S).group(1))
+    if {int(a): int(b) for a, _, b in mom} != dep:
+        sys.exit("families_relabelling.m and symm_loop_crossings.inc disagree")
+
+    shutil.copy(os.path.join(HERE, "integralfamilies.rrr.m"), os.path.join(OUT, "integralfamilies_all.rrr.m"))
+    with open(os.path.join(OUT, "integralfamilies_independent.rrr.m"), "w") as f:
+        f.write(header.rstrip() + "\n(* only the independent families; entry k is topo<N_k>, N_k from independentFamilies.m *)\n{"
+                + ",\n ".join(fams[k - 1] for k in indep) + "}\n")
+    with open(os.path.join(OUT, "independentFamilies.m"), "w") as f:
+        f.write("(* family numbers N of the independent families: entry k of integralfamilies_independent.rrr.m "
+                "is topoN *)\n{" + ", ".join(map(str, indep)) + "}\n")
+    with open(os.path.join(OUT, "relabelling_INT.m"), "w") as f:
+        f.write("(* INT[topoA, n1, ..., n12] = INT[topoB, ...] after relabelling the loop momenta (p4, p5, p6); "
+                "A dependent, B independent; from symm_loop_crossings.inc *)\n{\n")
+        lines = []
+        for a, args, b, perm in rules:
+            pats = ", ".join(x.rstrip("?") + "_" for x in args.split(",") if x)
+            lines.append(f"  INT[topo{a}, {pats}] :> INT[topo{b}, {perm.replace(',', ', ')}]")
+        f.write(",\n".join(lines) + "\n}\n")
+    to_p = {"r1": "p4", "r2": "p5", "r3": "p6"}
+    with open(os.path.join(OUT, "relabelling_momenta.m"), "w") as f:
+        f.write("(* {A, rule, B}: family A (integralfamilies_all.rrr.m) with the rule applied to p4, p5, p6 is family B, "
+                "up to the order of the propagators *)\n{\n")
+        f.write(",\n".join("  {" + a + ", {" + re.sub(r"r([123])", lambda m: to_p["r" + m.group(1)], r) + "}, " + b + "}"
+                           for a, r, b in mom) + "\n}\n")
+    shutil.copy(os.path.join(HERE, "fams", "symm_loop_crossings.inc"), os.path.join(OUT, "symm_loop_crossings.inc"))
+    with open(os.path.join(OUT, "README.md"), "w") as f:
+        f.write(f"""# Integral families for the reduction (generated by Families/reduction_export.py)
+
+- `integralfamilies_all.rrr.m`: all {n} families, the format of n3lo_old/RRR/Families_Identification/integralfamilies.rrr.m:
+  entry N is family `topoN` (`FAM[N]`), a list of 12 propagators in the order of the indices of
+  `INT(topoN, n1, ..., n12)` (power n_k on propagator k). Momenta p1, p2 incoming, p4 = -r1, p5 = -r2, p6 = -r3,
+  `sp[a,b]` = a.b, p1^2 = p2^2 = 0, s12 = m2/z.
+  Propagators 1-5 are the cut ones: p4^2, p5^2, p6^2, (p1+p2-p4-p5-p6)^2 - m2, the rapidity -q.p1 + u q.p2
+  (written out); 6-12 the regular ones. In the results the cut indices are always 1.
+- `integralfamilies_independent.rrr.m` + `independentFamilies.m`: the {len(indep)} independent families (same format);
+  entry k is `topo<N_k>`. The step-06 results (tmp/unreduced/) contain only these.
+- `relabelling_INT.m` (Mathematica) / `symm_loop_crossings.inc` (FORM): {len(dep)} rules
+  `INT[topoA, n1_, ..., n12_] :> INT[topoB, permuted indices]` that map every dependent family onto an independent one
+  (relabelling of p4, p5, p6 = permutation of r1, r2, r3; no p1 <-> p2). Already applied in step 06; needed only for
+  step-05 results or other integrals in the 921-family basis. Each rule maps directly onto an independent family.
+- `relabelling_momenta.m`: the same as momentum rules {{A, {{p4 -> p5, ...}}, B}}.
+""")
+    print(f"reduction/: {n} families, {len(indep)} independent, {len(dep)} relabelling rules")
+
+
+if __name__ == "__main__":
+    main()
