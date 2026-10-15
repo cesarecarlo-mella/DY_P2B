@@ -14,5 +14,3 @@
   step-05 results or other integrals in the 921-family basis. Each rule maps directly onto an independent family.
 - `relabelling_momenta.m`: the same as momentum rules {A, {p4 -> p5, ...}, B}.
 
-Check: `wolframscript -file ../check_relabelling.wl` (from Families/): every rule position by position, i.e. the index
-permutation puts each power on the propagator it belongs to after the relabelling (0 mismatches for all rules).

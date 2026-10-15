@@ -1,8 +1,261 @@
 [
  {
-  "family": 55,
+  "family": 1,
   "lines": [
    6,
+   7,
+   8,
+   9,
+   17
+  ],
+  "amplitude": [
+   6,
+   9,
+   17
+  ],
+  "conjugate": [
+   7,
+   8
+  ],
+  "not_in_trees": [],
+  "absent": [
+   18,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 1,
+  "lines": [
+   6,
+   7,
+   8,
+   9,
+   18
+  ],
+  "amplitude": [
+   7,
+   8,
+   18
+  ],
+  "conjugate": [
+   6,
+   9
+  ],
+  "not_in_trees": [],
+  "absent": [
+   17,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 1,
+  "lines": [
+   6,
+   7,
+   8,
+   17,
+   18
+  ],
+  "amplitude": [
+   7,
+   8,
+   18
+  ],
+  "conjugate": [
+   6,
+   17
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 1,
+  "lines": [
+   6,
+   7,
+   9,
+   17,
+   18
+  ],
+  "amplitude": [
+   6,
+   9,
+   17
+  ],
+  "conjugate": [
+   7,
+   18
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 1,
+  "lines": [
+   6,
+   7,
+   9,
+   17,
+   27
+  ],
+  "amplitude": [
+   6,
+   9,
+   17
+  ],
+  "conjugate": [
+   7,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   18
+  ],
+  "independent": true
+ },
+ {
+  "family": 1,
+  "lines": [
+   6,
+   8,
+   9,
+   17,
+   27
+  ],
+  "amplitude": [
+   6,
+   9,
+   17
+  ],
+  "conjugate": [
+   8,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   7,
+   18
+  ],
+  "independent": true
+ },
+ {
+  "family": 1,
+  "lines": [
+   6,
+   7,
+   8,
+   18,
+   27
+  ],
+  "amplitude": [
+   7,
+   8,
+   18
+  ],
+  "conjugate": [
+   6,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   17
+  ],
+  "independent": true
+ },
+ {
+  "family": 1,
+  "lines": [
+   7,
+   8,
+   9,
+   18,
+   27
+  ],
+  "amplitude": [
+   7,
+   8,
+   18
+  ],
+  "conjugate": [
+   9,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   17
+  ],
+  "independent": true
+ },
+ {
+  "family": 7,
+  "lines": [
+   6,
+   7,
+   8,
+   9,
+   17,
+   19
+  ],
+  "amplitude": [
+   6,
+   9,
+   17
+  ],
+  "conjugate": [
+   7,
+   8,
+   19
+  ],
+  "not_in_trees": [],
+  "absent": [
+   13
+  ],
+  "independent": true
+ },
+ {
+  "family": 7,
+  "lines": [
+   6,
+   7,
+   9,
+   13,
+   17,
+   19
+  ],
+  "amplitude": [
+   6,
+   9,
+   17
+  ],
+  "conjugate": [
+   7,
+   13,
+   19
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8
+  ],
+  "independent": true
+ },
+ {
+  "family": 7,
+  "lines": [
+   6,
+   7,
    8,
    13
   ],
@@ -11,14 +264,17445 @@
    13
   ],
   "conjugate": [
+   7,
    8
   ],
   "not_in_trees": [],
   "absent": [
+   9,
+   17,
+   19
+  ],
+  "independent": true
+ },
+ {
+  "family": 7,
+  "lines": [
+   6,
+   8,
+   13,
+   19
+  ],
+  "amplitude": [
+   6,
+   13
+  ],
+  "conjugate": [
+   8,
+   19
+  ],
+  "not_in_trees": [],
+  "absent": [
    7,
+   9,
+   17
+  ],
+  "independent": true
+ },
+ {
+  "family": 13,
+  "lines": [
+   6,
+   7,
+   8,
+   9,
+   18,
+   20
+  ],
+  "amplitude": [
+   6,
+   9,
+   20
+  ],
+  "conjugate": [
+   7,
+   8,
+   18
+  ],
+  "not_in_trees": [],
+  "absent": [
+   13
+  ],
+  "independent": true
+ },
+ {
+  "family": 13,
+  "lines": [
+   6,
+   7,
+   8,
+   13,
+   18,
+   20
+  ],
+  "amplitude": [
+   6,
+   13,
+   20
+  ],
+  "conjugate": [
+   7,
+   8,
+   18
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9
+  ],
+  "independent": true
+ },
+ {
+  "family": 13,
+  "lines": [
+   6,
+   7,
+   9,
+   13
+  ],
+  "amplitude": [
+   6,
+   9
+  ],
+  "conjugate": [
+   7,
+   13
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   18,
+   20
+  ],
+  "independent": true
+ },
+ {
+  "family": 13,
+  "lines": [
+   7,
+   9,
+   13,
+   20
+  ],
+  "amplitude": [
+   7,
+   13
+  ],
+  "conjugate": [
+   9,
+   20
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   8,
+   18
+  ],
+  "independent": true
+ },
+ {
+  "family": 19,
+  "lines": [
+   6,
+   7,
+   8,
+   11,
+   27
+  ],
+  "amplitude": [
+   7,
+   8,
+   27
+  ],
+  "conjugate": [
+   6,
+   11
+  ],
+  "not_in_trees": [],
+  "absent": [
+   15,
+   18
+  ],
+  "independent": true
+ },
+ {
+  "family": 19,
+  "lines": [
+   6,
+   7,
+   8,
+   15,
+   27
+  ],
+  "amplitude": [
+   6,
+   15,
+   27
+  ],
+  "conjugate": [
+   7,
+   8
+  ],
+  "not_in_trees": [],
+  "absent": [
+   11,
+   18
+  ],
+  "independent": true
+ },
+ {
+  "family": 19,
+  "lines": [
+   6,
+   7,
+   8,
+   18,
+   27
+  ],
+  "amplitude": [
+   7,
+   8,
+   18
+  ],
+  "conjugate": [
+   6,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   11,
+   15
+  ],
+  "independent": true
+ },
+ {
+  "family": 19,
+  "lines": [
+   6,
+   8,
+   11,
+   18,
+   27
+  ],
+  "amplitude": [
+   8,
+   11,
+   18
+  ],
+  "conjugate": [
+   6,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   7,
+   15
+  ],
+  "independent": true
+ },
+ {
+  "family": 19,
+  "lines": [
+   6,
+   7,
+   15,
+   18,
+   27
+  ],
+  "amplitude": [
+   6,
+   15,
+   27
+  ],
+  "conjugate": [
+   7,
+   18
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   11
+  ],
+  "independent": true
+ },
+ {
+  "family": 19,
+  "lines": [
+   7,
+   8,
+   15,
+   18,
+   27
+  ],
+  "amplitude": [
+   7,
+   8,
+   18
+  ],
+  "conjugate": [
+   15,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   11
+  ],
+  "independent": true
+ },
+ {
+  "family": 19,
+  "lines": [
+   8,
+   11,
+   15,
+   18,
+   27
+  ],
+  "amplitude": [
+   8,
+   11,
+   18
+  ],
+  "conjugate": [
+   15,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   7
+  ],
+  "independent": true
+ },
+ {
+  "family": 19,
+  "lines": [
+   6,
+   7,
+   11,
+   15
+  ],
+  "amplitude": [
+   6,
+   11,
+   15
+  ],
+  "conjugate": [
+   7
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   18,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 19,
+  "lines": [
+   7,
+   8,
+   11,
+   15
+  ],
+  "amplitude": [
+   8,
+   11,
+   15
+  ],
+  "conjugate": [
+   7
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   18,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 19,
+  "lines": [
+   6,
+   11,
+   15,
+   18
+  ],
+  "amplitude": [
+   6,
+   11,
+   15
+  ],
+  "conjugate": [
+   18
+  ],
+  "not_in_trees": [],
+  "absent": [
+   7,
+   8,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 19,
+  "lines": [
+   6,
+   11,
+   15,
+   27
+  ],
+  "amplitude": [
+   6,
+   11,
+   15
+  ],
+  "conjugate": [
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   7,
+   8,
+   18
+  ],
+  "independent": true
+ },
+ {
+  "family": 25,
+  "lines": [
+   6,
+   7,
+   8,
+   15,
+   19,
+   22
+  ],
+  "amplitude": [
+   6,
+   15,
+   22
+  ],
+  "conjugate": [
+   7,
+   8,
+   19
+  ],
+  "not_in_trees": [],
+  "absent": [
+   11
+  ],
+  "independent": true
+ },
+ {
+  "family": 25,
+  "lines": [
+   6,
+   7,
+   8,
+   11,
+   19
+  ],
+  "amplitude": [
+   7,
+   8,
+   19
+  ],
+  "conjugate": [
+   6,
+   11
+  ],
+  "not_in_trees": [],
+  "absent": [
+   15,
+   22
+  ],
+  "independent": true
+ },
+ {
+  "family": 25,
+  "lines": [
+   6,
+   7,
+   11,
+   15,
+   19
+  ],
+  "amplitude": [
+   6,
+   11,
+   15
+  ],
+  "conjugate": [
+   7,
+   19
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   22
+  ],
+  "independent": true
+ },
+ {
+  "family": 25,
+  "lines": [
+   7,
+   8,
+   11,
+   15,
+   19
+  ],
+  "amplitude": [
+   7,
+   8,
+   19
+  ],
+  "conjugate": [
+   11,
+   15
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   22
+  ],
+  "independent": true
+ },
+ {
+  "family": 25,
+  "lines": [
+   6,
+   8,
+   11,
+   19,
+   22
+  ],
+  "amplitude": [
+   8,
+   19,
+   22
+  ],
+  "conjugate": [
+   6,
+   11
+  ],
+  "not_in_trees": [],
+  "absent": [
+   7,
+   15
+  ],
+  "independent": true
+ },
+ {
+  "family": 25,
+  "lines": [
+   6,
+   11,
+   15,
+   19,
+   22
+  ],
+  "amplitude": [
+   6,
+   11,
+   15
+  ],
+  "conjugate": [
+   19,
+   22
+  ],
+  "not_in_trees": [],
+  "absent": [
+   7,
+   8
+  ],
+  "independent": true
+ },
+ {
+  "family": 25,
+  "lines": [
+   8,
+   11,
+   15,
+   19,
+   22
+  ],
+  "amplitude": [
+   8,
+   11,
+   15
+  ],
+  "conjugate": [
+   19,
+   22
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   7
+  ],
+  "independent": true
+ },
+ {
+  "family": 31,
+  "lines": [
+   6,
+   7,
+   11,
+   18,
+   20,
+   23
+  ],
+  "amplitude": [
+   6,
+   11,
+   20
+  ],
+  "conjugate": [
+   7,
+   18,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8
+  ],
+  "independent": true
+ },
+ {
+  "family": 31,
+  "lines": [
+   6,
+   7,
+   8,
+   11,
+   20
+  ],
+  "amplitude": [
+   6,
+   11,
+   20
+  ],
+  "conjugate": [
+   7,
+   8
+  ],
+  "not_in_trees": [],
+  "absent": [
+   18,
+   23
+  ],
+  "independent": true
+ },
+ {
+  "family": 31,
+  "lines": [
+   6,
+   7,
+   8,
+   18,
+   20
+  ],
+  "amplitude": [
+   7,
+   8,
+   18
+  ],
+  "conjugate": [
+   6,
+   20
+  ],
+  "not_in_trees": [],
+  "absent": [
+   11,
+   23
+  ],
+  "independent": true
+ },
+ {
+  "family": 31,
+  "lines": [
+   6,
+   8,
+   11,
+   18,
+   20
+  ],
+  "amplitude": [
+   6,
+   11,
+   20
+  ],
+  "conjugate": [
+   8,
+   18
+  ],
+  "not_in_trees": [],
+  "absent": [
+   7,
+   23
+  ],
+  "independent": true
+ },
+ {
+  "family": 31,
+  "lines": [
+   7,
+   8,
+   11,
+   20,
+   23
+  ],
+  "amplitude": [
+   11,
+   20,
+   23
+  ],
+  "conjugate": [
+   7,
+   8
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   18
+  ],
+  "independent": true
+ },
+ {
+  "family": 31,
+  "lines": [
+   7,
+   8,
+   18,
+   20,
+   23
+  ],
+  "amplitude": [
+   7,
+   8,
+   18
+  ],
+  "conjugate": [
+   20,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   11
+  ],
+  "independent": true
+ },
+ {
+  "family": 31,
+  "lines": [
+   8,
+   11,
+   18,
+   20,
+   23
+  ],
+  "amplitude": [
+   8,
+   11,
+   18
+  ],
+  "conjugate": [
+   20,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   7
+  ],
+  "independent": true
+ },
+ {
+  "family": 37,
+  "lines": [
+   6,
+   7,
+   8,
+   11,
+   27,
+   28
+  ],
+  "amplitude": [
+   6,
+   11,
+   28
+  ],
+  "conjugate": [
+   7,
+   8,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   18
+  ],
+  "independent": true
+ },
+ {
+  "family": 37,
+  "lines": [
+   6,
+   7,
+   11,
+   18,
+   28
+  ],
+  "amplitude": [
+   6,
+   11,
+   28
+  ],
+  "conjugate": [
+   7,
+   18
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 37,
+  "lines": [
+   6,
+   7,
+   18,
+   27,
+   28
+  ],
+  "amplitude": [
+   7,
+   18,
+   28
+  ],
+  "conjugate": [
+   6,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   11
+  ],
+  "independent": true
+ },
+ {
+  "family": 37,
+  "lines": [
+   8,
+   11,
+   18,
+   27,
+   28
+  ],
+  "amplitude": [
+   11,
+   18,
+   28
+  ],
+  "conjugate": [
+   8,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   7
+  ],
+  "independent": true
+ },
+ {
+  "family": 37,
+  "lines": [
+   6,
+   7,
+   8,
+   18
+  ],
+  "amplitude": [
+   7,
+   8,
+   18
+  ],
+  "conjugate": [
+   6
+  ],
+  "not_in_trees": [],
+  "absent": [
+   11,
+   27,
+   28
+  ],
+  "independent": true
+ },
+ {
+  "family": 37,
+  "lines": [
+   6,
+   8,
+   11,
+   18
+  ],
+  "amplitude": [
+   8,
+   11,
+   18
+  ],
+  "conjugate": [
+   6
+  ],
+  "not_in_trees": [],
+  "absent": [
+   7,
+   27,
+   28
+  ],
+  "independent": true
+ },
+ {
+  "family": 37,
+  "lines": [
+   7,
+   8,
+   18,
+   27
+  ],
+  "amplitude": [
+   7,
+   8,
+   18
+  ],
+  "conjugate": [
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   11,
+   28
+  ],
+  "independent": true
+ },
+ {
+  "family": 37,
+  "lines": [
+   7,
+   8,
+   18,
+   28
+  ],
+  "amplitude": [
+   7,
+   8,
+   18
+  ],
+  "conjugate": [
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   11,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 43,
+  "lines": [
+   6,
+   7,
+   8,
+   11,
+   20,
+   27
+  ],
+  "amplitude": [
+   6,
+   11,
+   20
+  ],
+  "conjugate": [
+   7,
+   8,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   19
+  ],
+  "independent": true
+ },
+ {
+  "family": 43,
+  "lines": [
+   6,
+   7,
+   8,
+   11,
+   19
+  ],
+  "amplitude": [
+   7,
+   8,
+   19
+  ],
+  "conjugate": [
+   6,
+   11
+  ],
+  "not_in_trees": [],
+  "absent": [
+   20,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 43,
+  "lines": [
+   6,
+   8,
+   11,
+   19,
+   20
+  ],
+  "amplitude": [
+   6,
+   11,
+   20
+  ],
+  "conjugate": [
+   8,
+   19
+  ],
+  "not_in_trees": [],
+  "absent": [
+   7,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 43,
+  "lines": [
+   7,
+   8,
+   11,
+   19,
+   20
+  ],
+  "amplitude": [
+   7,
+   8,
+   19
+  ],
+  "conjugate": [
+   11,
+   20
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 49,
+  "lines": [
+   6,
+   7,
+   8,
+   11,
+   19,
+   28
+  ],
+  "amplitude": [
+   6,
+   11,
+   28
+  ],
+  "conjugate": [
+   7,
+   8,
+   19
+  ],
+  "not_in_trees": [],
+  "absent": [
+   13
+  ],
+  "independent": true
+ },
+ {
+  "family": 49,
+  "lines": [
+   6,
+   7,
+   11,
+   13,
+   19,
+   28
+  ],
+  "amplitude": [
+   6,
+   11,
+   28
+  ],
+  "conjugate": [
+   7,
+   13,
+   19
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8
+  ],
+  "independent": true
+ },
+ {
+  "family": 55,
+  "lines": [
+   6,
+   7,
+   8,
+   13,
+   18,
+   22
+  ],
+  "amplitude": [
+   6,
+   13,
+   22
+  ],
+  "conjugate": [
+   7,
+   8,
+   18
+  ],
+  "not_in_trees": [],
+  "absent": [
+   14
+  ],
+  "independent": true
+ },
+ {
+  "family": 55,
+  "lines": [
+   7,
+   8,
+   13,
+   14,
+   22
+  ],
+  "amplitude": [
+   8,
+   14,
+   22
+  ],
+  "conjugate": [
+   7,
+   13
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   18
+  ],
+  "independent": true
+ },
+ {
+  "family": 55,
+  "lines": [
+   6,
+   8,
    14,
    18,
    22
+  ],
+  "amplitude": [
+   8,
+   14,
+   18
+  ],
+  "conjugate": [
+   6,
+   22
+  ],
+  "not_in_trees": [],
+  "absent": [
+   7,
+   13
+  ],
+  "independent": true
+ },
+ {
+  "family": 55,
+  "lines": [
+   8,
+   13,
+   14,
+   18,
+   22
+  ],
+  "amplitude": [
+   8,
+   14,
+   18
+  ],
+  "conjugate": [
+   13,
+   22
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   7
+  ],
+  "independent": true
+ },
+ {
+  "family": 55,
+  "lines": [
+   6,
+   13,
+   14,
+   22
+  ],
+  "amplitude": [
+   6,
+   13,
+   22
+  ],
+  "conjugate": [
+   14
+  ],
+  "not_in_trees": [],
+  "absent": [
+   7,
+   8,
+   18
+  ],
+  "independent": true
+ },
+ {
+  "family": 61,
+  "lines": [
+   6,
+   7,
+   8,
+   13,
+   20,
+   27
+  ],
+  "amplitude": [
+   6,
+   13,
+   20
+  ],
+  "conjugate": [
+   7,
+   8,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   25
+  ],
+  "independent": true
+ },
+ {
+  "family": 61,
+  "lines": [
+   6,
+   8,
+   13,
+   20,
+   25,
+   27
+  ],
+  "amplitude": [
+   6,
+   13,
+   20
+  ],
+  "conjugate": [
+   8,
+   25,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   7
+  ],
+  "independent": true
+ },
+ {
+  "family": 61,
+  "lines": [
+   7,
+   8,
+   25,
+   27
+  ],
+  "amplitude": [
+   7,
+   8,
+   27
+  ],
+  "conjugate": [
+   25
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   13,
+   20
+  ],
+  "independent": true
+ },
+ {
+  "family": 67,
+  "lines": [
+   6,
+   7,
+   8,
+   13,
+   22,
+   27
+  ],
+  "amplitude": [
+   6,
+   13,
+   22
+  ],
+  "conjugate": [
+   7,
+   8,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   15
+  ],
+  "independent": true
+ },
+ {
+  "family": 67,
+  "lines": [
+   6,
+   7,
+   8,
+   15,
+   22,
+   27
+  ],
+  "amplitude": [
+   6,
+   15,
+   22
+  ],
+  "conjugate": [
+   7,
+   8,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   13
+  ],
+  "independent": true
+ },
+ {
+  "family": 67,
+  "lines": [
+   6,
+   8,
+   13,
+   15,
+   22,
+   27
+  ],
+  "amplitude": [
+   6,
+   13,
+   22
+  ],
+  "conjugate": [
+   8,
+   15,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   7
+  ],
+  "independent": true
+ },
+ {
+  "family": 67,
+  "lines": [
+   7,
+   8,
+   13,
+   15,
+   22
+  ],
+  "amplitude": [
+   8,
+   15,
+   22
+  ],
+  "conjugate": [
+   7,
+   13
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 67,
+  "lines": [
+   6,
+   7,
+   13,
+   15,
+   27
+  ],
+  "amplitude": [
+   6,
+   15,
+   27
+  ],
+  "conjugate": [
+   7,
+   13
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   22
+  ],
+  "independent": true
+ },
+ {
+  "family": 73,
+  "lines": [
+   6,
+   7,
+   8,
+   18,
+   22
+  ],
+  "amplitude": [
+   7,
+   8,
+   18
+  ],
+  "conjugate": [
+   6,
+   22
+  ],
+  "not_in_trees": [],
+  "absent": [
+   11,
+   15
+  ],
+  "independent": true
+ },
+ {
+  "family": 73,
+  "lines": [
+   6,
+   8,
+   11,
+   18,
+   22
+  ],
+  "amplitude": [
+   8,
+   11,
+   18
+  ],
+  "conjugate": [
+   6,
+   22
+  ],
+  "not_in_trees": [],
+  "absent": [
+   7,
+   15
+  ],
+  "independent": true
+ },
+ {
+  "family": 73,
+  "lines": [
+   6,
+   7,
+   15,
+   18,
+   22
+  ],
+  "amplitude": [
+   6,
+   15,
+   22
+  ],
+  "conjugate": [
+   7,
+   18
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   11
+  ],
+  "independent": true
+ },
+ {
+  "family": 73,
+  "lines": [
+   7,
+   8,
+   15,
+   18,
+   22
+  ],
+  "amplitude": [
+   7,
+   8,
+   18
+  ],
+  "conjugate": [
+   15,
+   22
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   11
+  ],
+  "independent": true
+ },
+ {
+  "family": 73,
+  "lines": [
+   6,
+   11,
+   15,
+   18,
+   22
+  ],
+  "amplitude": [
+   6,
+   15,
+   22
+  ],
+  "conjugate": [
+   11,
+   18
+  ],
+  "not_in_trees": [],
+  "absent": [
+   7,
+   8
+  ],
+  "independent": true
+ },
+ {
+  "family": 73,
+  "lines": [
+   8,
+   11,
+   15,
+   18,
+   22
+  ],
+  "amplitude": [
+   8,
+   11,
+   18
+  ],
+  "conjugate": [
+   15,
+   22
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   7
+  ],
+  "independent": true
+ },
+ {
+  "family": 79,
+  "lines": [
+   6,
+   7,
+   8,
+   15,
+   19,
+   27
+  ],
+  "amplitude": [
+   6,
+   15,
+   27
+  ],
+  "conjugate": [
+   7,
+   8,
+   19
+  ],
+  "not_in_trees": [],
+  "absent": [
+   13
+  ],
+  "independent": true
+ },
+ {
+  "family": 79,
+  "lines": [
+   6,
+   7,
+   13,
+   15,
+   19,
+   27
+  ],
+  "amplitude": [
+   6,
+   15,
+   27
+  ],
+  "conjugate": [
+   7,
+   13,
+   19
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8
+  ],
+  "independent": true
+ },
+ {
+  "family": 79,
+  "lines": [
+   7,
+   8,
+   13,
+   15
+  ],
+  "amplitude": [
+   7,
+   13
+  ],
+  "conjugate": [
+   8,
+   15
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   19,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 79,
+  "lines": [
+   7,
+   8,
+   13,
+   27
+  ],
+  "amplitude": [
+   7,
+   8,
+   27
+  ],
+  "conjugate": [
+   13
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   15,
+   19
+  ],
+  "independent": true
+ },
+ {
+  "family": 79,
+  "lines": [
+   8,
+   13,
+   15,
+   27
+  ],
+  "amplitude": [
+   8,
+   15,
+   27
+  ],
+  "conjugate": [
+   13
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   7,
+   19
+  ],
+  "independent": true
+ },
+ {
+  "family": 85,
+  "lines": [
+   6,
+   7,
+   8,
+   17,
+   18,
+   22
+  ],
+  "amplitude": [
+   6,
+   17,
+   22
+  ],
+  "conjugate": [
+   7,
+   8,
+   18
+  ],
+  "not_in_trees": [],
+  "absent": [
+   19
+  ],
+  "independent": true
+ },
+ {
+  "family": 85,
+  "lines": [
+   6,
+   7,
+   8,
+   17,
+   19,
+   22
+  ],
+  "amplitude": [
+   6,
+   17,
+   22
+  ],
+  "conjugate": [
+   7,
+   8,
+   19
+  ],
+  "not_in_trees": [],
+  "absent": [
+   18
+  ],
+  "independent": true
+ },
+ {
+  "family": 91,
+  "lines": [
+   6,
+   7,
+   8,
+   17,
+   19,
+   28
+  ],
+  "amplitude": [
+   6,
+   17,
+   28
+  ],
+  "conjugate": [
+   7,
+   8,
+   19
+  ],
+  "not_in_trees": [],
+  "absent": [
+   18
+  ],
+  "independent": true
+ },
+ {
+  "family": 91,
+  "lines": [
+   6,
+   7,
+   8,
+   17,
+   18
+  ],
+  "amplitude": [
+   7,
+   8,
+   18
+  ],
+  "conjugate": [
+   6,
+   17
+  ],
+  "not_in_trees": [],
+  "absent": [
+   19,
+   28
+  ],
+  "independent": true
+ },
+ {
+  "family": 91,
+  "lines": [
+   6,
+   7,
+   17,
+   18,
+   28
+  ],
+  "amplitude": [
+   6,
+   17,
+   28
+  ],
+  "conjugate": [
+   7,
+   18
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   19
+  ],
+  "independent": true
+ },
+ {
+  "family": 91,
+  "lines": [
+   7,
+   8,
+   18,
+   19,
+   28
+  ],
+  "amplitude": [
+   7,
+   8,
+   19
+  ],
+  "conjugate": [
+   18,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   17
+  ],
+  "independent": true
+ },
+ {
+  "family": 97,
+  "lines": [
+   6,
+   8,
+   17,
+   22,
+   25,
+   27
+  ],
+  "amplitude": [
+   6,
+   17,
+   22
+  ],
+  "conjugate": [
+   8,
+   25,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   7
+  ],
+  "independent": true
+ },
+ {
+  "family": 97,
+  "lines": [
+   6,
+   7,
+   17,
+   22,
+   27
+  ],
+  "amplitude": [
+   6,
+   17,
+   22
+  ],
+  "conjugate": [
+   7,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   25
+  ],
+  "independent": true
+ },
+ {
+  "family": 97,
+  "lines": [
+   7,
+   8,
+   17,
+   22,
+   27
+  ],
+  "amplitude": [
+   7,
+   8,
+   27
+  ],
+  "conjugate": [
+   17,
+   22
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   25
+  ],
+  "independent": true
+ },
+ {
+  "family": 103,
+  "lines": [
+   7,
+   8,
+   14,
+   17,
+   27,
+   28
+  ],
+  "amplitude": [
+   7,
+   8,
+   27
+  ],
+  "conjugate": [
+   14,
+   17,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6
+  ],
+  "independent": true
+ },
+ {
+  "family": 103,
+  "lines": [
+   6,
+   8,
+   14,
+   17,
+   28
+  ],
+  "amplitude": [
+   6,
+   17,
+   28
+  ],
+  "conjugate": [
+   8,
+   14
+  ],
+  "not_in_trees": [],
+  "absent": [
+   7,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 103,
+  "lines": [
+   6,
+   7,
+   17,
+   27,
+   28
+  ],
+  "amplitude": [
+   6,
+   17,
+   28
+  ],
+  "conjugate": [
+   7,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   14
+  ],
+  "independent": true
+ },
+ {
+  "family": 109,
+  "lines": [
+   6,
+   7,
+   9,
+   13,
+   17,
+   23
+  ],
+  "amplitude": [
+   6,
+   9,
+   17
+  ],
+  "conjugate": [
+   7,
+   13,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   14
+  ],
+  "independent": true
+ },
+ {
+  "family": 109,
+  "lines": [
+   6,
+   9,
+   13,
+   14,
+   23
+  ],
+  "amplitude": [
+   9,
+   14,
+   23
+  ],
+  "conjugate": [
+   6,
+   13
+  ],
+  "not_in_trees": [],
+  "absent": [
+   7,
+   17
+  ],
+  "independent": true
+ },
+ {
+  "family": 109,
+  "lines": [
+   7,
+   9,
+   14,
+   17,
+   23
+  ],
+  "amplitude": [
+   9,
+   14,
+   17
+  ],
+  "conjugate": [
+   7,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   13
+  ],
+  "independent": true
+ },
+ {
+  "family": 109,
+  "lines": [
+   9,
+   13,
+   14,
+   17,
+   23
+  ],
+  "amplitude": [
+   9,
+   14,
+   17
+  ],
+  "conjugate": [
+   13,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   7
+  ],
+  "independent": true
+ },
+ {
+  "family": 109,
+  "lines": [
+   7,
+   13,
+   14,
+   23
+  ],
+  "amplitude": [
+   7,
+   13,
+   23
+  ],
+  "conjugate": [
+   14
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   9,
+   17
+  ],
+  "independent": true
+ },
+ {
+  "family": 115,
+  "lines": [
+   6,
+   7,
+   9,
+   13,
+   23,
+   27
+  ],
+  "amplitude": [
+   6,
+   9,
+   27
+  ],
+  "conjugate": [
+   7,
+   13,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   16
+  ],
+  "independent": true
+ },
+ {
+  "family": 115,
+  "lines": [
+   6,
+   7,
+   9,
+   16,
+   23,
+   27
+  ],
+  "amplitude": [
+   6,
+   9,
+   27
+  ],
+  "conjugate": [
+   7,
+   16,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   13
+  ],
+  "independent": true
+ },
+ {
+  "family": 115,
+  "lines": [
+   7,
+   9,
+   13,
+   16,
+   23,
+   27
+  ],
+  "amplitude": [
+   7,
+   13,
+   23
+  ],
+  "conjugate": [
+   9,
+   16,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6
+  ],
+  "independent": true
+ },
+ {
+  "family": 115,
+  "lines": [
+   6,
+   9,
+   13,
+   16,
+   23
+  ],
+  "amplitude": [
+   9,
+   16,
+   23
+  ],
+  "conjugate": [
+   6,
+   13
+  ],
+  "not_in_trees": [],
+  "absent": [
+   7,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 115,
+  "lines": [
+   6,
+   7,
+   13,
+   16,
+   27
+  ],
+  "amplitude": [
+   7,
+   16,
+   27
+  ],
+  "conjugate": [
+   6,
+   13
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   23
+  ],
+  "independent": true
+ },
+ {
+  "family": 121,
+  "lines": [
+   6,
+   7,
+   9,
+   17,
+   23
+  ],
+  "amplitude": [
+   6,
+   9,
+   17
+  ],
+  "conjugate": [
+   7,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   10,
+   16
+  ],
+  "independent": true
+ },
+ {
+  "family": 121,
+  "lines": [
+   7,
+   9,
+   10,
+   17,
+   23
+  ],
+  "amplitude": [
+   9,
+   10,
+   17
+  ],
+  "conjugate": [
+   7,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   16
+  ],
+  "independent": true
+ },
+ {
+  "family": 121,
+  "lines": [
+   6,
+   7,
+   16,
+   17,
+   23
+  ],
+  "amplitude": [
+   7,
+   16,
+   23
+  ],
+  "conjugate": [
+   6,
+   17
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   10
+  ],
+  "independent": true
+ },
+ {
+  "family": 121,
+  "lines": [
+   6,
+   9,
+   16,
+   17,
+   23
+  ],
+  "amplitude": [
+   6,
+   9,
+   17
+  ],
+  "conjugate": [
+   16,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   7,
+   10
+  ],
+  "independent": true
+ },
+ {
+  "family": 121,
+  "lines": [
+   7,
+   10,
+   16,
+   17,
+   23
+  ],
+  "amplitude": [
+   7,
+   16,
+   23
+  ],
+  "conjugate": [
+   10,
+   17
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   9
+  ],
+  "independent": true
+ },
+ {
+  "family": 121,
+  "lines": [
+   9,
+   10,
+   16,
+   17,
+   23
+  ],
+  "amplitude": [
+   9,
+   10,
+   17
+  ],
+  "conjugate": [
+   16,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   7
+  ],
+  "independent": true
+ },
+ {
+  "family": 127,
+  "lines": [
+   6,
+   7,
+   16,
+   17,
+   22,
+   27
+  ],
+  "amplitude": [
+   6,
+   17,
+   22
+  ],
+  "conjugate": [
+   7,
+   16,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9
+  ],
+  "independent": true
+ },
+ {
+  "family": 127,
+  "lines": [
+   6,
+   9,
+   16,
+   17,
+   22
+  ],
+  "amplitude": [
+   6,
+   17,
+   22
+  ],
+  "conjugate": [
+   9,
+   16
+  ],
+  "not_in_trees": [],
+  "absent": [
+   7,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 127,
+  "lines": [
+   6,
+   7,
+   9,
+   17,
+   27
+  ],
+  "amplitude": [
+   6,
+   9,
+   17
+  ],
+  "conjugate": [
+   7,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   16,
+   22
+  ],
+  "independent": true
+ },
+ {
+  "family": 127,
+  "lines": [
+   6,
+   9,
+   16,
+   17,
+   27
+  ],
+  "amplitude": [
+   6,
+   9,
+   17
+  ],
+  "conjugate": [
+   16,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   7,
+   22
+  ],
+  "independent": true
+ },
+ {
+  "family": 127,
+  "lines": [
+   6,
+   9,
+   17,
+   22,
+   27
+  ],
+  "amplitude": [
+   6,
+   9,
+   27
+  ],
+  "conjugate": [
+   17,
+   22
+  ],
+  "not_in_trees": [],
+  "absent": [
+   7,
+   16
+  ],
+  "independent": true
+ },
+ {
+  "family": 127,
+  "lines": [
+   9,
+   16,
+   17,
+   22,
+   27
+  ],
+  "amplitude": [
+   9,
+   16,
+   27
+  ],
+  "conjugate": [
+   17,
+   22
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   7
+  ],
+  "independent": true
+ },
+ {
+  "family": 133,
+  "lines": [
+   6,
+   7,
+   9,
+   16,
+   20,
+   27
+  ],
+  "amplitude": [
+   6,
+   9,
+   20
+  ],
+  "conjugate": [
+   7,
+   16,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   13
+  ],
+  "independent": true
+ },
+ {
+  "family": 133,
+  "lines": [
+   6,
+   7,
+   13,
+   16,
+   20,
+   27
+  ],
+  "amplitude": [
+   6,
+   13,
+   20
+  ],
+  "conjugate": [
+   7,
+   16,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9
+  ],
+  "independent": true
+ },
+ {
+  "family": 133,
+  "lines": [
+   6,
+   9,
+   13,
+   16
+  ],
+  "amplitude": [
+   6,
+   13
+  ],
+  "conjugate": [
+   9,
+   16
+  ],
+  "not_in_trees": [],
+  "absent": [
+   7,
+   20,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 133,
+  "lines": [
+   6,
+   9,
+   13,
+   27
+  ],
+  "amplitude": [
+   6,
+   9,
+   27
+  ],
+  "conjugate": [
+   13
+  ],
+  "not_in_trees": [],
+  "absent": [
+   7,
+   16,
+   20
+  ],
+  "independent": true
+ },
+ {
+  "family": 133,
+  "lines": [
+   9,
+   13,
+   16,
+   27
+  ],
+  "amplitude": [
+   9,
+   16,
+   27
+  ],
+  "conjugate": [
+   13
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   7,
+   20
+  ],
+  "independent": true
+ },
+ {
+  "family": 139,
+  "lines": [
+   6,
+   7,
+   9,
+   17,
+   18,
+   23
+  ],
+  "amplitude": [
+   6,
+   9,
+   17
+  ],
+  "conjugate": [
+   7,
+   18,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   20
+  ],
+  "independent": true
+ },
+ {
+  "family": 139,
+  "lines": [
+   6,
+   7,
+   9,
+   18,
+   20,
+   23
+  ],
+  "amplitude": [
+   6,
+   9,
+   20
+  ],
+  "conjugate": [
+   7,
+   18,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   17
+  ],
+  "independent": true
+ },
+ {
+  "family": 145,
+  "lines": [
+   6,
+   7,
+   9,
+   18,
+   20,
+   28
+  ],
+  "amplitude": [
+   6,
+   9,
+   20
+  ],
+  "conjugate": [
+   7,
+   18,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   17
+  ],
+  "independent": true
+ },
+ {
+  "family": 145,
+  "lines": [
+   6,
+   7,
+   9,
+   17,
+   18
+  ],
+  "amplitude": [
+   6,
+   9,
+   17
+  ],
+  "conjugate": [
+   7,
+   18
+  ],
+  "not_in_trees": [],
+  "absent": [
+   20,
+   28
+  ],
+  "independent": true
+ },
+ {
+  "family": 145,
+  "lines": [
+   6,
+   7,
+   17,
+   18,
+   28
+  ],
+  "amplitude": [
+   6,
+   17,
+   28
+  ],
+  "conjugate": [
+   7,
+   18
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   20
+  ],
+  "independent": true
+ },
+ {
+  "family": 151,
+  "lines": [
+   7,
+   9,
+   18,
+   23,
+   25,
+   27
+  ],
+  "amplitude": [
+   7,
+   18,
+   23
+  ],
+  "conjugate": [
+   9,
+   25,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6
+  ],
+  "independent": true
+ },
+ {
+  "family": 151,
+  "lines": [
+   6,
+   7,
+   18,
+   23,
+   27
+  ],
+  "amplitude": [
+   7,
+   18,
+   23
+  ],
+  "conjugate": [
+   6,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   25
+  ],
+  "independent": true
+ },
+ {
+  "family": 151,
+  "lines": [
+   6,
+   9,
+   18,
+   23,
+   27
+  ],
+  "amplitude": [
+   6,
+   9,
+   27
+  ],
+  "conjugate": [
+   18,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   7,
+   25
+  ],
+  "independent": true
+ },
+ {
+  "family": 151,
+  "lines": [
+   6,
+   9,
+   25,
+   27
+  ],
+  "amplitude": [
+   6,
+   9,
+   27
+  ],
+  "conjugate": [
+   25
+  ],
+  "not_in_trees": [],
+  "absent": [
+   7,
+   18,
+   23
+  ],
+  "independent": true
+ },
+ {
+  "family": 157,
+  "lines": [
+   6,
+   9,
+   14,
+   18,
+   27,
+   28
+  ],
+  "amplitude": [
+   6,
+   9,
+   27
+  ],
+  "conjugate": [
+   14,
+   18,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   7
+  ],
+  "independent": true
+ },
+ {
+  "family": 157,
+  "lines": [
+   7,
+   9,
+   14,
+   18,
+   28
+  ],
+  "amplitude": [
+   7,
+   18,
+   28
+  ],
+  "conjugate": [
+   9,
+   14
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 163,
+  "lines": [
+   6,
+   7,
+   13,
+   15,
+   23,
+   27
+  ],
+  "amplitude": [
+   6,
+   15,
+   27
+  ],
+  "conjugate": [
+   7,
+   13,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   12
+  ],
+  "independent": true
+ },
+ {
+  "family": 163,
+  "lines": [
+   7,
+   12,
+   13,
+   23,
+   27
+  ],
+  "amplitude": [
+   7,
+   13,
+   23
+  ],
+  "conjugate": [
+   12,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   15
+  ],
+  "independent": true
+ },
+ {
+  "family": 163,
+  "lines": [
+   7,
+   12,
+   15,
+   23,
+   27
+  ],
+  "amplitude": [
+   12,
+   15,
+   27
+  ],
+  "conjugate": [
+   7,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   13
+  ],
+  "independent": true
+ },
+ {
+  "family": 163,
+  "lines": [
+   12,
+   13,
+   15,
+   23,
+   27
+  ],
+  "amplitude": [
+   12,
+   15,
+   27
+  ],
+  "conjugate": [
+   13,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   7
+  ],
+  "independent": true
+ },
+ {
+  "family": 163,
+  "lines": [
+   6,
+   12,
+   23,
+   27
+  ],
+  "amplitude": [
+   6,
+   27
+  ],
+  "conjugate": [
+   12,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   7,
+   13,
+   15
+  ],
+  "independent": true
+ },
+ {
+  "family": 169,
+  "lines": [
+   6,
+   7,
+   13,
+   16,
+   22,
+   27
+  ],
+  "amplitude": [
+   6,
+   13,
+   22
+  ],
+  "conjugate": [
+   7,
+   16,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   12
+  ],
+  "independent": true
+ },
+ {
+  "family": 169,
+  "lines": [
+   6,
+   12,
+   13,
+   22,
+   27
+  ],
+  "amplitude": [
+   6,
+   13,
+   22
+  ],
+  "conjugate": [
+   12,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   7,
+   16
+  ],
+  "independent": true
+ },
+ {
+  "family": 169,
+  "lines": [
+   6,
+   12,
+   16,
+   22,
+   27
+  ],
+  "amplitude": [
+   12,
+   16,
+   27
+  ],
+  "conjugate": [
+   6,
+   22
+  ],
+  "not_in_trees": [],
+  "absent": [
+   7,
+   13
+  ],
+  "independent": true
+ },
+ {
+  "family": 169,
+  "lines": [
+   12,
+   13,
+   16,
+   22,
+   27
+  ],
+  "amplitude": [
+   12,
+   16,
+   27
+  ],
+  "conjugate": [
+   13,
+   22
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   7
+  ],
+  "independent": true
+ },
+ {
+  "family": 169,
+  "lines": [
+   7,
+   12,
+   22,
+   27
+  ],
+  "amplitude": [
+   7,
+   27
+  ],
+  "conjugate": [
+   12,
+   22
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   13,
+   16
+  ],
+  "independent": true
+ },
+ {
+  "family": 175,
+  "lines": [
+   6,
+   15,
+   16,
+   22,
+   27
+  ],
+  "amplitude": [
+   6,
+   15,
+   22
+  ],
+  "conjugate": [
+   16,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   7,
+   13
+  ],
+  "independent": true
+ },
+ {
+  "family": 175,
+  "lines": [
+   7,
+   15,
+   16,
+   22,
+   27
+  ],
+  "amplitude": [
+   7,
+   16,
+   27
+  ],
+  "conjugate": [
+   15,
+   22
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   13
+  ],
+  "independent": true
+ },
+ {
+  "family": 181,
+  "lines": [
+   6,
+   7,
+   15,
+   18,
+   23,
+   27
+  ],
+  "amplitude": [
+   6,
+   15,
+   27
+  ],
+  "conjugate": [
+   7,
+   18,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   16
+  ],
+  "independent": true
+ },
+ {
+  "family": 181,
+  "lines": [
+   6,
+   15,
+   16,
+   23,
+   27
+  ],
+  "amplitude": [
+   6,
+   15,
+   27
+  ],
+  "conjugate": [
+   16,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   7,
+   18
+  ],
+  "independent": true
+ },
+ {
+  "family": 181,
+  "lines": [
+   7,
+   15,
+   16,
+   23,
+   27
+  ],
+  "amplitude": [
+   7,
+   16,
+   23
+  ],
+  "conjugate": [
+   15,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   18
+  ],
+  "independent": true
+ },
+ {
+  "family": 181,
+  "lines": [
+   7,
+   16,
+   18,
+   23,
+   27
+  ],
+  "amplitude": [
+   7,
+   16,
+   27
+  ],
+  "conjugate": [
+   18,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   15
+  ],
+  "independent": true
+ },
+ {
+  "family": 187,
+  "lines": [
+   6,
+   7,
+   15,
+   18,
+   27,
+   28
+  ],
+  "amplitude": [
+   6,
+   15,
+   27
+  ],
+  "conjugate": [
+   7,
+   18,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8
+  ],
+  "independent": true
+ },
+ {
+  "family": 187,
+  "lines": [
+   8,
+   15,
+   18,
+   27,
+   28
+  ],
+  "amplitude": [
+   8,
+   15,
+   27
+  ],
+  "conjugate": [
+   18,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   7
+  ],
+  "independent": true
+ },
+ {
+  "family": 187,
+  "lines": [
+   7,
+   8,
+   15,
+   18
+  ],
+  "amplitude": [
+   7,
+   8,
+   18
+  ],
+  "conjugate": [
+   15
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   27,
+   28
+  ],
+  "independent": true
+ },
+ {
+  "family": 187,
+  "lines": [
+   7,
+   8,
+   18,
+   27
+  ],
+  "amplitude": [
+   7,
+   8,
+   18
+  ],
+  "conjugate": [
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   15,
+   28
+  ],
+  "independent": true
+ },
+ {
+  "family": 187,
+  "lines": [
+   7,
+   8,
+   15,
+   28
+  ],
+  "amplitude": [
+   7,
+   28
+  ],
+  "conjugate": [
+   8,
+   15
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   18,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 187,
+  "lines": [
+   7,
+   8,
+   27,
+   28
+  ],
+  "amplitude": [
+   7,
+   8,
+   27
+  ],
+  "conjugate": [
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   15,
+   18
+  ],
+  "independent": true
+ },
+ {
+  "family": 193,
+  "lines": [
+   6,
+   11,
+   13,
+   15,
+   21
+  ],
+  "amplitude": [
+   6,
+   11,
+   15
+  ],
+  "conjugate": [
+   13,
+   21
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   20
+  ],
+  "independent": true
+ },
+ {
+  "family": 193,
+  "lines": [
+   8,
+   11,
+   13,
+   15,
+   21
+  ],
+  "amplitude": [
+   8,
+   11,
+   15
+  ],
+  "conjugate": [
+   13,
+   21
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   20
+  ],
+  "independent": true
+ },
+ {
+  "family": 193,
+  "lines": [
+   6,
+   8,
+   11,
+   13
+  ],
+  "amplitude": [
+   6,
+   13
+  ],
+  "conjugate": [
+   8,
+   11
+  ],
+  "not_in_trees": [],
+  "absent": [
+   15,
+   20,
+   21
+  ],
+  "independent": true
+ },
+ {
+  "family": 193,
+  "lines": [
+   6,
+   8,
+   11,
+   20
+  ],
+  "amplitude": [
+   6,
+   11,
+   20
+  ],
+  "conjugate": [
+   8
+  ],
+  "not_in_trees": [],
+  "absent": [
+   13,
+   15,
+   21
+  ],
+  "independent": true
+ },
+ {
+  "family": 193,
+  "lines": [
+   6,
+   8,
+   13,
+   20
+  ],
+  "amplitude": [
+   6,
+   13,
+   20
+  ],
+  "conjugate": [
+   8
+  ],
+  "not_in_trees": [],
+  "absent": [
+   11,
+   15,
+   21
+  ],
+  "independent": true
+ },
+ {
+  "family": 193,
+  "lines": [
+   6,
+   11,
+   15,
+   20
+  ],
+  "amplitude": [
+   6,
+   11,
+   15
+  ],
+  "conjugate": [
+   20
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   13,
+   21
+  ],
+  "independent": true
+ },
+ {
+  "family": 193,
+  "lines": [
+   8,
+   11,
+   15,
+   20
+  ],
+  "amplitude": [
+   8,
+   11,
+   15
+  ],
+  "conjugate": [
+   20
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   13,
+   21
+  ],
+  "independent": true
+ },
+ {
+  "family": 193,
+  "lines": [
+   6,
+   13,
+   15,
+   20
+  ],
+  "amplitude": [
+   6,
+   13,
+   20
+  ],
+  "conjugate": [
+   15
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   11,
+   21
+  ],
+  "independent": true
+ },
+ {
+  "family": 193,
+  "lines": [
+   8,
+   13,
+   15,
+   20
+  ],
+  "amplitude": [
+   8,
+   15
+  ],
+  "conjugate": [
+   13,
+   20
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   11,
+   21
+  ],
+  "independent": true
+ },
+ {
+  "family": 193,
+  "lines": [
+   6,
+   11,
+   20,
+   21
+  ],
+  "amplitude": [
+   6,
+   11,
+   20
+  ],
+  "conjugate": [
+   21
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   13,
+   15
+  ],
+  "independent": true
+ },
+ {
+  "family": 193,
+  "lines": [
+   6,
+   13,
+   20,
+   21
+  ],
+  "amplitude": [
+   6,
+   13,
+   20
+  ],
+  "conjugate": [
+   21
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   11,
+   15
+  ],
+  "independent": true
+ },
+ {
+  "family": 193,
+  "lines": [
+   11,
+   13,
+   20,
+   21
+  ],
+  "amplitude": [
+   11,
+   20
+  ],
+  "conjugate": [
+   13,
+   21
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   8,
+   15
+  ],
+  "independent": true
+ },
+ {
+  "family": 199,
+  "lines": [
+   6,
+   8,
+   11,
+   13,
+   22,
+   29
+  ],
+  "amplitude": [
+   6,
+   13,
+   22
+  ],
+  "conjugate": [
+   8,
+   11,
+   29
+  ],
+  "not_in_trees": [],
+  "absent": [
+   15
+  ],
+  "independent": true
+ },
+ {
+  "family": 199,
+  "lines": [
+   6,
+   11,
+   13,
+   15,
+   22
+  ],
+  "amplitude": [
+   6,
+   11,
+   15
+  ],
+  "conjugate": [
+   13,
+   22
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   29
+  ],
+  "independent": true
+ },
+ {
+  "family": 199,
+  "lines": [
+   8,
+   11,
+   13,
+   15,
+   22
+  ],
+  "amplitude": [
+   8,
+   11,
+   15
+  ],
+  "conjugate": [
+   13,
+   22
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   29
+  ],
+  "independent": true
+ },
+ {
+  "family": 199,
+  "lines": [
+   6,
+   11,
+   13,
+   15,
+   29
+  ],
+  "amplitude": [
+   6,
+   11,
+   15
+  ],
+  "conjugate": [
+   13,
+   29
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   22
+  ],
+  "independent": true
+ },
+ {
+  "family": 199,
+  "lines": [
+   6,
+   11,
+   15,
+   22,
+   29
+  ],
+  "amplitude": [
+   6,
+   15,
+   22
+  ],
+  "conjugate": [
+   11,
+   29
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   13
+  ],
+  "independent": true
+ },
+ {
+  "family": 199,
+  "lines": [
+   8,
+   11,
+   15,
+   22,
+   29
+  ],
+  "amplitude": [
+   8,
+   11,
+   29
+  ],
+  "conjugate": [
+   15,
+   22
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   13
+  ],
+  "independent": true
+ },
+ {
+  "family": 199,
+  "lines": [
+   13,
+   15,
+   22,
+   29
+  ],
+  "amplitude": [
+   13,
+   29
+  ],
+  "conjugate": [
+   15,
+   22
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   8,
+   11
+  ],
+  "independent": true
+ },
+ {
+  "family": 205,
+  "lines": [
+   6,
+   8,
+   13,
+   15,
+   24,
+   27
+  ],
+  "amplitude": [
+   6,
+   13,
+   24
+  ],
+  "conjugate": [
+   8,
+   15,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   11
+  ],
+  "independent": true
+ },
+ {
+  "family": 205,
+  "lines": [
+   6,
+   8,
+   11,
+   13,
+   24
+  ],
+  "amplitude": [
+   6,
+   13,
+   24
+  ],
+  "conjugate": [
+   8,
+   11
+  ],
+  "not_in_trees": [],
+  "absent": [
+   15,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 205,
+  "lines": [
+   6,
+   11,
+   13,
+   15,
+   24
+  ],
+  "amplitude": [
+   6,
+   11,
+   15
+  ],
+  "conjugate": [
+   13,
+   24
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 205,
+  "lines": [
+   8,
+   11,
+   13,
+   15,
+   24
+  ],
+  "amplitude": [
+   8,
+   11,
+   15
+  ],
+  "conjugate": [
+   13,
+   24
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 205,
+  "lines": [
+   6,
+   8,
+   11,
+   24,
+   27
+  ],
+  "amplitude": [
+   6,
+   24,
+   27
+  ],
+  "conjugate": [
+   8,
+   11
+  ],
+  "not_in_trees": [],
+  "absent": [
+   13,
+   15
+  ],
+  "independent": true
+ },
+ {
+  "family": 211,
+  "lines": [
+   6,
+   8,
+   11,
+   13,
+   18
+  ],
+  "amplitude": [
+   8,
+   11,
+   18
+  ],
+  "conjugate": [
+   6,
+   13
+  ],
+  "not_in_trees": [],
+  "absent": [
+   19,
+   20
+  ],
+  "independent": true
+ },
+ {
+  "family": 211,
+  "lines": [
+   6,
+   8,
+   11,
+   18,
+   20
+  ],
+  "amplitude": [
+   6,
+   11,
+   20
+  ],
+  "conjugate": [
+   8,
+   18
+  ],
+  "not_in_trees": [],
+  "absent": [
+   13,
+   19
+  ],
+  "independent": true
+ },
+ {
+  "family": 211,
+  "lines": [
+   6,
+   8,
+   13,
+   18,
+   20
+  ],
+  "amplitude": [
+   6,
+   13,
+   20
+  ],
+  "conjugate": [
+   8,
+   18
+  ],
+  "not_in_trees": [],
+  "absent": [
+   11,
+   19
+  ],
+  "independent": true
+ },
+ {
+  "family": 211,
+  "lines": [
+   6,
+   8,
+   13,
+   19,
+   20
+  ],
+  "amplitude": [
+   6,
+   13,
+   20
+  ],
+  "conjugate": [
+   8,
+   19
+  ],
+  "not_in_trees": [],
+  "absent": [
+   11,
+   18
+  ],
+  "independent": true
+ },
+ {
+  "family": 211,
+  "lines": [
+   6,
+   11,
+   13,
+   19
+  ],
+  "amplitude": [
+   6,
+   11
+  ],
+  "conjugate": [
+   13,
+   19
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   18,
+   20
+  ],
+  "independent": true
+ },
+ {
+  "family": 211,
+  "lines": [
+   6,
+   11,
+   19,
+   20
+  ],
+  "amplitude": [
+   6,
+   11,
+   20
+  ],
+  "conjugate": [
+   19
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   13,
+   18
+  ],
+  "independent": true
+ },
+ {
+  "family": 211,
+  "lines": [
+   11,
+   13,
+   19,
+   20
+  ],
+  "amplitude": [
+   11,
+   20
+  ],
+  "conjugate": [
+   13,
+   19
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   8,
+   18
+  ],
+  "independent": true
+ },
+ {
+  "family": 217,
+  "lines": [
+   6,
+   8,
+   11,
+   13,
+   18,
+   22
+  ],
+  "amplitude": [
+   6,
+   13,
+   22
+  ],
+  "conjugate": [
+   8,
+   11,
+   18
+  ],
+  "not_in_trees": [],
+  "absent": [
+   17
+  ],
+  "independent": true
+ },
+ {
+  "family": 217,
+  "lines": [
+   6,
+   8,
+   11,
+   17,
+   18,
+   22
+  ],
+  "amplitude": [
+   6,
+   17,
+   22
+  ],
+  "conjugate": [
+   8,
+   11,
+   18
+  ],
+  "not_in_trees": [],
+  "absent": [
+   13
+  ],
+  "independent": true
+ },
+ {
+  "family": 223,
+  "lines": [
+   6,
+   8,
+   11,
+   13,
+   18,
+   24
+  ],
+  "amplitude": [
+   6,
+   13,
+   24
+  ],
+  "conjugate": [
+   8,
+   11,
+   18
+  ],
+  "not_in_trees": [],
+  "absent": [
+   28
+  ],
+  "independent": true
+ },
+ {
+  "family": 223,
+  "lines": [
+   6,
+   11,
+   13,
+   24,
+   28
+  ],
+  "amplitude": [
+   6,
+   11,
+   28
+  ],
+  "conjugate": [
+   13,
+   24
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   18
+  ],
+  "independent": true
+ },
+ {
+  "family": 223,
+  "lines": [
+   6,
+   11,
+   18,
+   24,
+   28
+  ],
+  "amplitude": [
+   6,
+   24,
+   28
+  ],
+  "conjugate": [
+   11,
+   18
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   13
+  ],
+  "independent": true
+ },
+ {
+  "family": 223,
+  "lines": [
+   6,
+   13,
+   18,
+   24,
+   28
+  ],
+  "amplitude": [
+   6,
+   13,
+   24
+  ],
+  "conjugate": [
+   18,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   11
+  ],
+  "independent": true
+ },
+ {
+  "family": 223,
+  "lines": [
+   11,
+   13,
+   18,
+   24,
+   28
+  ],
+  "amplitude": [
+   11,
+   18,
+   28
+  ],
+  "conjugate": [
+   13,
+   24
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   8
+  ],
+  "independent": true
+ },
+ {
+  "family": 223,
+  "lines": [
+   6,
+   8,
+   11,
+   28
+  ],
+  "amplitude": [
+   6,
+   11,
+   28
+  ],
+  "conjugate": [
+   8
+  ],
+  "not_in_trees": [],
+  "absent": [
+   13,
+   18,
+   24
+  ],
+  "independent": true
+ },
+ {
+  "family": 223,
+  "lines": [
+   6,
+   8,
+   24,
+   28
+  ],
+  "amplitude": [
+   6,
+   24,
+   28
+  ],
+  "conjugate": [
+   8
+  ],
+  "not_in_trees": [],
+  "absent": [
+   11,
+   13,
+   18
+  ],
+  "independent": true
+ },
+ {
+  "family": 223,
+  "lines": [
+   8,
+   11,
+   24,
+   28
+  ],
+  "amplitude": [
+   8,
+   11
+  ],
+  "conjugate": [
+   24,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   13,
+   18
+  ],
+  "independent": true
+ },
+ {
+  "family": 229,
+  "lines": [
+   6,
+   8,
+   11,
+   13,
+   29
+  ],
+  "amplitude": [
+   8,
+   11,
+   29
+  ],
+  "conjugate": [
+   6,
+   13
+  ],
+  "not_in_trees": [],
+  "absent": [
+   15,
+   20
+  ],
+  "independent": true
+ },
+ {
+  "family": 229,
+  "lines": [
+   6,
+   11,
+   13,
+   15,
+   29
+  ],
+  "amplitude": [
+   6,
+   11,
+   15
+  ],
+  "conjugate": [
+   13,
+   29
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   20
+  ],
+  "independent": true
+ },
+ {
+  "family": 229,
+  "lines": [
+   8,
+   11,
+   13,
+   15,
+   29
+  ],
+  "amplitude": [
+   8,
+   11,
+   15
+  ],
+  "conjugate": [
+   13,
+   29
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   20
+  ],
+  "independent": true
+ },
+ {
+  "family": 229,
+  "lines": [
+   8,
+   11,
+   13,
+   20,
+   29
+  ],
+  "amplitude": [
+   8,
+   11,
+   29
+  ],
+  "conjugate": [
+   13,
+   20
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   15
+  ],
+  "independent": true
+ },
+ {
+  "family": 229,
+  "lines": [
+   8,
+   11,
+   15,
+   20,
+   29
+  ],
+  "amplitude": [
+   8,
+   11,
+   15
+  ],
+  "conjugate": [
+   20,
+   29
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   13
+  ],
+  "independent": true
+ },
+ {
+  "family": 229,
+  "lines": [
+   8,
+   13,
+   15,
+   20,
+   29
+  ],
+  "amplitude": [
+   13,
+   20,
+   29
+  ],
+  "conjugate": [
+   8,
+   15
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   11
+  ],
+  "independent": true
+ },
+ {
+  "family": 229,
+  "lines": [
+   6,
+   8,
+   11,
+   20
+  ],
+  "amplitude": [
+   6,
+   11,
+   20
+  ],
+  "conjugate": [
+   8
+  ],
+  "not_in_trees": [],
+  "absent": [
+   13,
+   15,
+   29
+  ],
+  "independent": true
+ },
+ {
+  "family": 229,
+  "lines": [
+   6,
+   8,
+   13,
+   20
+  ],
+  "amplitude": [
+   6,
+   13,
+   20
+  ],
+  "conjugate": [
+   8
+  ],
+  "not_in_trees": [],
+  "absent": [
+   11,
+   15,
+   29
+  ],
+  "independent": true
+ },
+ {
+  "family": 229,
+  "lines": [
+   6,
+   11,
+   15,
+   20
+  ],
+  "amplitude": [
+   6,
+   11,
+   15
+  ],
+  "conjugate": [
+   20
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   13,
+   29
+  ],
+  "independent": true
+ },
+ {
+  "family": 229,
+  "lines": [
+   6,
+   13,
+   15,
+   20
+  ],
+  "amplitude": [
+   6,
+   13,
+   20
+  ],
+  "conjugate": [
+   15
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   11,
+   29
+  ],
+  "independent": true
+ },
+ {
+  "family": 229,
+  "lines": [
+   6,
+   11,
+   20,
+   29
+  ],
+  "amplitude": [
+   6,
+   11,
+   20
+  ],
+  "conjugate": [
+   29
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   13,
+   15
+  ],
+  "independent": true
+ },
+ {
+  "family": 229,
+  "lines": [
+   6,
+   13,
+   20,
+   29
+  ],
+  "amplitude": [
+   6,
+   13,
+   20
+  ],
+  "conjugate": [
+   29
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   11,
+   15
+  ],
+  "independent": true
+ },
+ {
+  "family": 235,
+  "lines": [
+   6,
+   8,
+   11,
+   24,
+   27,
+   29
+  ],
+  "amplitude": [
+   6,
+   24,
+   27
+  ],
+  "conjugate": [
+   8,
+   11,
+   29
+  ],
+  "not_in_trees": [],
+  "absent": [
+   13
+  ],
+  "independent": true
+ },
+ {
+  "family": 235,
+  "lines": [
+   6,
+   8,
+   11,
+   13,
+   24
+  ],
+  "amplitude": [
+   6,
+   13,
+   24
+  ],
+  "conjugate": [
+   8,
+   11
+  ],
+  "not_in_trees": [],
+  "absent": [
+   27,
+   29
+  ],
+  "independent": true
+ },
+ {
+  "family": 235,
+  "lines": [
+   6,
+   8,
+   11,
+   13,
+   29
+  ],
+  "amplitude": [
+   8,
+   11,
+   29
+  ],
+  "conjugate": [
+   6,
+   13
+  ],
+  "not_in_trees": [],
+  "absent": [
+   24,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 235,
+  "lines": [
+   6,
+   13,
+   24,
+   27,
+   29
+  ],
+  "amplitude": [
+   6,
+   24,
+   27
+  ],
+  "conjugate": [
+   13,
+   29
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   11
+  ],
+  "independent": true
+ },
+ {
+  "family": 235,
+  "lines": [
+   11,
+   13,
+   24,
+   29
+  ],
+  "amplitude": [
+   11,
+   29
+  ],
+  "conjugate": [
+   13,
+   24
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   8,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 241,
+  "lines": [
+   8,
+   11,
+   15,
+   17,
+   28
+  ],
+  "amplitude": [
+   8,
+   11,
+   15
+  ],
+  "conjugate": [
+   17,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 241,
+  "lines": [
+   6,
+   8,
+   11,
+   27,
+   28
+  ],
+  "amplitude": [
+   6,
+   11,
+   28
+  ],
+  "conjugate": [
+   8,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   15,
+   17
+  ],
+  "independent": true
+ },
+ {
+  "family": 241,
+  "lines": [
+   8,
+   11,
+   15,
+   27,
+   28
+  ],
+  "amplitude": [
+   8,
+   15,
+   27
+  ],
+  "conjugate": [
+   11,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   17
+  ],
+  "independent": true
+ },
+ {
+  "family": 241,
+  "lines": [
+   6,
+   8,
+   17,
+   27,
+   28
+  ],
+  "amplitude": [
+   6,
+   17,
+   28
+  ],
+  "conjugate": [
+   8,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   11,
+   15
+  ],
+  "independent": true
+ },
+ {
+  "family": 241,
+  "lines": [
+   6,
+   15,
+   17,
+   27,
+   28
+  ],
+  "amplitude": [
+   6,
+   15,
+   27
+  ],
+  "conjugate": [
+   17,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   11
+  ],
+  "independent": true
+ },
+ {
+  "family": 241,
+  "lines": [
+   8,
+   15,
+   17,
+   27,
+   28
+  ],
+  "amplitude": [
+   8,
+   15,
+   27
+  ],
+  "conjugate": [
+   17,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   11
+  ],
+  "independent": true
+ },
+ {
+  "family": 241,
+  "lines": [
+   6,
+   8,
+   11,
+   17
+  ],
+  "amplitude": [
+   6,
+   17
+  ],
+  "conjugate": [
+   8,
+   11
+  ],
+  "not_in_trees": [],
+  "absent": [
+   15,
+   27,
+   28
+  ],
+  "independent": true
+ },
+ {
+  "family": 241,
+  "lines": [
+   6,
+   11,
+   15,
+   17
+  ],
+  "amplitude": [
+   6,
+   11,
+   15
+  ],
+  "conjugate": [
+   17
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   27,
+   28
+  ],
+  "independent": true
+ },
+ {
+  "family": 241,
+  "lines": [
+   6,
+   11,
+   15,
+   28
+  ],
+  "amplitude": [
+   6,
+   11,
+   15
+  ],
+  "conjugate": [
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   17,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 247,
+  "lines": [
+   6,
+   11,
+   15,
+   24,
+   28
+  ],
+  "amplitude": [
+   6,
+   11,
+   15
+  ],
+  "conjugate": [
+   24,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   22
+  ],
+  "independent": true
+ },
+ {
+  "family": 247,
+  "lines": [
+   8,
+   11,
+   15,
+   24,
+   28
+  ],
+  "amplitude": [
+   8,
+   11,
+   15
+  ],
+  "conjugate": [
+   24,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   22
+  ],
+  "independent": true
+ },
+ {
+  "family": 247,
+  "lines": [
+   6,
+   8,
+   22,
+   24,
+   28
+  ],
+  "amplitude": [
+   6,
+   24,
+   28
+  ],
+  "conjugate": [
+   8,
+   22
+  ],
+  "not_in_trees": [],
+  "absent": [
+   11,
+   15
+  ],
+  "independent": true
+ },
+ {
+  "family": 247,
+  "lines": [
+   6,
+   15,
+   22,
+   24,
+   28
+  ],
+  "amplitude": [
+   6,
+   15,
+   22
+  ],
+  "conjugate": [
+   24,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   11
+  ],
+  "independent": true
+ },
+ {
+  "family": 247,
+  "lines": [
+   8,
+   15,
+   22,
+   24,
+   28
+  ],
+  "amplitude": [
+   8,
+   15,
+   22
+  ],
+  "conjugate": [
+   24,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   11
+  ],
+  "independent": true
+ },
+ {
+  "family": 247,
+  "lines": [
+   6,
+   8,
+   11,
+   24
+  ],
+  "amplitude": [
+   6,
+   24
+  ],
+  "conjugate": [
+   8,
+   11
+  ],
+  "not_in_trees": [],
+  "absent": [
+   15,
+   22,
+   28
+  ],
+  "independent": true
+ },
+ {
+  "family": 247,
+  "lines": [
+   6,
+   8,
+   11,
+   28
+  ],
+  "amplitude": [
+   6,
+   11,
+   28
+  ],
+  "conjugate": [
+   8
+  ],
+  "not_in_trees": [],
+  "absent": [
+   15,
+   22,
+   24
+  ],
+  "independent": true
+ },
+ {
+  "family": 253,
+  "lines": [
+   6,
+   8,
+   11,
+   17,
+   18
+  ],
+  "amplitude": [
+   8,
+   11,
+   18
+  ],
+  "conjugate": [
+   6,
+   17
+  ],
+  "not_in_trees": [],
+  "absent": [
+   28,
+   29
+  ],
+  "independent": true
+ },
+ {
+  "family": 253,
+  "lines": [
+   6,
+   11,
+   17,
+   18,
+   28
+  ],
+  "amplitude": [
+   6,
+   17,
+   28
+  ],
+  "conjugate": [
+   11,
+   18
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   29
+  ],
+  "independent": true
+ },
+ {
+  "family": 253,
+  "lines": [
+   6,
+   8,
+   11,
+   17,
+   29
+  ],
+  "amplitude": [
+   8,
+   11,
+   29
+  ],
+  "conjugate": [
+   6,
+   17
+  ],
+  "not_in_trees": [],
+  "absent": [
+   18,
+   28
+  ],
+  "independent": true
+ },
+ {
+  "family": 253,
+  "lines": [
+   6,
+   8,
+   11,
+   28,
+   29
+  ],
+  "amplitude": [
+   6,
+   11,
+   28
+  ],
+  "conjugate": [
+   8,
+   29
+  ],
+  "not_in_trees": [],
+  "absent": [
+   17,
+   18
+  ],
+  "independent": true
+ },
+ {
+  "family": 253,
+  "lines": [
+   6,
+   8,
+   17,
+   28,
+   29
+  ],
+  "amplitude": [
+   6,
+   17,
+   28
+  ],
+  "conjugate": [
+   8,
+   29
+  ],
+  "not_in_trees": [],
+  "absent": [
+   11,
+   18
+  ],
+  "independent": true
+ },
+ {
+  "family": 253,
+  "lines": [
+   8,
+   11,
+   17,
+   28,
+   29
+  ],
+  "amplitude": [
+   8,
+   11,
+   29
+  ],
+  "conjugate": [
+   17,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   18
+  ],
+  "independent": true
+ },
+ {
+  "family": 259,
+  "lines": [
+   6,
+   8,
+   11,
+   17,
+   22,
+   29
+  ],
+  "amplitude": [
+   6,
+   17,
+   22
+  ],
+  "conjugate": [
+   8,
+   11,
+   29
+  ],
+  "not_in_trees": [],
+  "absent": [
+   25
+  ],
+  "independent": true
+ },
+ {
+  "family": 259,
+  "lines": [
+   6,
+   8,
+   17,
+   22,
+   25,
+   29
+  ],
+  "amplitude": [
+   6,
+   17,
+   22
+  ],
+  "conjugate": [
+   8,
+   25,
+   29
+  ],
+  "not_in_trees": [],
+  "absent": [
+   11
+  ],
+  "independent": true
+ },
+ {
+  "family": 265,
+  "lines": [
+   6,
+   8,
+   11,
+   18,
+   24,
+   27
+  ],
+  "amplitude": [
+   6,
+   24,
+   27
+  ],
+  "conjugate": [
+   8,
+   11,
+   18
+  ],
+  "not_in_trees": [],
+  "absent": [
+   23
+  ],
+  "independent": true
+ },
+ {
+  "family": 265,
+  "lines": [
+   6,
+   11,
+   18,
+   23,
+   24,
+   27
+  ],
+  "amplitude": [
+   6,
+   24,
+   27
+  ],
+  "conjugate": [
+   11,
+   18,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8
+  ],
+  "independent": true
+ },
+ {
+  "family": 265,
+  "lines": [
+   8,
+   11,
+   18,
+   23,
+   27
+  ],
+  "amplitude": [
+   11,
+   18,
+   23
+  ],
+  "conjugate": [
+   8,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   24
+  ],
+  "independent": true
+ },
+ {
+  "family": 271,
+  "lines": [
+   6,
+   8,
+   19,
+   24,
+   28,
+   29
+  ],
+  "amplitude": [
+   6,
+   24,
+   28
+  ],
+  "conjugate": [
+   8,
+   19,
+   29
+  ],
+  "not_in_trees": [],
+  "absent": [
+   11
+  ],
+  "independent": true
+ },
+ {
+  "family": 271,
+  "lines": [
+   6,
+   8,
+   11,
+   24,
+   29
+  ],
+  "amplitude": [
+   8,
+   11,
+   29
+  ],
+  "conjugate": [
+   6,
+   24
+  ],
+  "not_in_trees": [],
+  "absent": [
+   19,
+   28
+  ],
+  "independent": true
+ },
+ {
+  "family": 271,
+  "lines": [
+   6,
+   8,
+   11,
+   28,
+   29
+  ],
+  "amplitude": [
+   6,
+   11,
+   28
+  ],
+  "conjugate": [
+   8,
+   29
+  ],
+  "not_in_trees": [],
+  "absent": [
+   19,
+   24
+  ],
+  "independent": true
+ },
+ {
+  "family": 271,
+  "lines": [
+   8,
+   11,
+   24,
+   28,
+   29
+  ],
+  "amplitude": [
+   8,
+   11,
+   29
+  ],
+  "conjugate": [
+   24,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   19
+  ],
+  "independent": true
+ },
+ {
+  "family": 277,
+  "lines": [
+   6,
+   8,
+   13,
+   14,
+   18,
+   20
+  ],
+  "amplitude": [
+   6,
+   13,
+   20
+  ],
+  "conjugate": [
+   8,
+   14,
+   18
+  ],
+  "not_in_trees": [],
+  "absent": [
+   21
+  ],
+  "independent": true
+ },
+ {
+  "family": 277,
+  "lines": [
+   8,
+   13,
+   14,
+   18,
+   21
+  ],
+  "amplitude": [
+   8,
+   14,
+   18
+  ],
+  "conjugate": [
+   13,
+   21
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   20
+  ],
+  "independent": true
+ },
+ {
+  "family": 277,
+  "lines": [
+   6,
+   13,
+   14,
+   20,
+   21
+  ],
+  "amplitude": [
+   6,
+   13,
+   20
+  ],
+  "conjugate": [
+   14,
+   21
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   18
+  ],
+  "independent": true
+ },
+ {
+  "family": 280,
+  "lines": [
+   6,
+   8,
+   13,
+   14,
+   18,
+   24
+  ],
+  "amplitude": [
+   6,
+   13,
+   24
+  ],
+  "conjugate": [
+   8,
+   14,
+   18
+  ],
+  "not_in_trees": [],
+  "absent": [
+   28
+  ],
+  "independent": true
+ },
+ {
+  "family": 280,
+  "lines": [
+   6,
+   13,
+   14,
+   18,
+   24,
+   28
+  ],
+  "amplitude": [
+   6,
+   13,
+   24
+  ],
+  "conjugate": [
+   14,
+   18,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8
+  ],
+  "independent": true
+ },
+ {
+  "family": 280,
+  "lines": [
+   6,
+   8,
+   14,
+   24,
+   28
+  ],
+  "amplitude": [
+   6,
+   24,
+   28
+  ],
+  "conjugate": [
+   8,
+   14
+  ],
+  "not_in_trees": [],
+  "absent": [
+   13,
+   18
+  ],
+  "independent": true
+ },
+ {
+  "family": 286,
+  "lines": [
+   6,
+   8,
+   13,
+   22,
+   24
+  ],
+  "amplitude": [
+   6,
+   13,
+   24
+  ],
+  "conjugate": [
+   8,
+   22
+  ],
+  "not_in_trees": [],
+  "absent": [
+   14,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 286,
+  "lines": [
+   6,
+   13,
+   14,
+   22,
+   24
+  ],
+  "amplitude": [
+   6,
+   13,
+   24
+  ],
+  "conjugate": [
+   14,
+   22
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 286,
+  "lines": [
+   8,
+   13,
+   14,
+   22,
+   24
+  ],
+  "amplitude": [
+   8,
+   14,
+   22
+  ],
+  "conjugate": [
+   13,
+   24
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 286,
+  "lines": [
+   6,
+   13,
+   22,
+   24,
+   27
+  ],
+  "amplitude": [
+   6,
+   13,
+   22
+  ],
+  "conjugate": [
+   24,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   14
+  ],
+  "independent": true
+ },
+ {
+  "family": 286,
+  "lines": [
+   6,
+   14,
+   22,
+   24,
+   27
+  ],
+  "amplitude": [
+   6,
+   24,
+   27
+  ],
+  "conjugate": [
+   14,
+   22
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   13
+  ],
+  "independent": true
+ },
+ {
+  "family": 286,
+  "lines": [
+   8,
+   14,
+   22,
+   24,
+   27
+  ],
+  "amplitude": [
+   8,
+   14,
+   22
+  ],
+  "conjugate": [
+   24,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   13
+  ],
+  "independent": true
+ },
+ {
+  "family": 292,
+  "lines": [
+   6,
+   8,
+   13,
+   14,
+   24,
+   25
+  ],
+  "amplitude": [
+   6,
+   13,
+   24
+  ],
+  "conjugate": [
+   8,
+   14,
+   25
+  ],
+  "not_in_trees": [],
+  "absent": [
+   17
+  ],
+  "independent": true
+ },
+ {
+  "family": 292,
+  "lines": [
+   6,
+   8,
+   17,
+   25
+  ],
+  "amplitude": [
+   6,
+   17
+  ],
+  "conjugate": [
+   8,
+   25
+  ],
+  "not_in_trees": [],
+  "absent": [
+   13,
+   14,
+   24
+  ],
+  "independent": true
+ },
+ {
+  "family": 292,
+  "lines": [
+   8,
+   14,
+   17,
+   25
+  ],
+  "amplitude": [
+   8,
+   14,
+   25
+  ],
+  "conjugate": [
+   17
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   13,
+   24
+  ],
+  "independent": true
+ },
+ {
+  "family": 298,
+  "lines": [
+   6,
+   8,
+   13,
+   20,
+   22
+  ],
+  "amplitude": [
+   6,
+   13,
+   20
+  ],
+  "conjugate": [
+   8,
+   22
+  ],
+  "not_in_trees": [],
+  "absent": [
+   15,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 298,
+  "lines": [
+   6,
+   13,
+   15,
+   20,
+   22
+  ],
+  "amplitude": [
+   6,
+   13,
+   20
+  ],
+  "conjugate": [
+   15,
+   22
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 298,
+  "lines": [
+   8,
+   13,
+   15,
+   20,
+   22
+  ],
+  "amplitude": [
+   8,
+   15,
+   22
+  ],
+  "conjugate": [
+   13,
+   20
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 298,
+  "lines": [
+   6,
+   8,
+   13,
+   20,
+   27
+  ],
+  "amplitude": [
+   6,
+   13,
+   20
+  ],
+  "conjugate": [
+   8,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   15,
+   22
+  ],
+  "independent": true
+ },
+ {
+  "family": 298,
+  "lines": [
+   6,
+   13,
+   15,
+   20,
+   27
+  ],
+  "amplitude": [
+   6,
+   13,
+   20
+  ],
+  "conjugate": [
+   15,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   22
+  ],
+  "independent": true
+ },
+ {
+  "family": 298,
+  "lines": [
+   8,
+   13,
+   15,
+   20,
+   27
+  ],
+  "amplitude": [
+   8,
+   15,
+   27
+  ],
+  "conjugate": [
+   13,
+   20
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   22
+  ],
+  "independent": true
+ },
+ {
+  "family": 304,
+  "lines": [
+   6,
+   8,
+   13,
+   15,
+   22,
+   24
+  ],
+  "amplitude": [
+   6,
+   13,
+   24
+  ],
+  "conjugate": [
+   8,
+   15,
+   22
+  ],
+  "not_in_trees": [],
+  "absent": [
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 304,
+  "lines": [
+   6,
+   8,
+   15,
+   22,
+   24,
+   27
+  ],
+  "amplitude": [
+   6,
+   24,
+   27
+  ],
+  "conjugate": [
+   8,
+   15,
+   22
+  ],
+  "not_in_trees": [],
+  "absent": [
+   13
+  ],
+  "independent": true
+ },
+ {
+  "family": 310,
+  "lines": [
+   6,
+   13,
+   22,
+   25,
+   29
+  ],
+  "amplitude": [
+   6,
+   13,
+   22
+  ],
+  "conjugate": [
+   25,
+   29
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   12
+  ],
+  "independent": true
+ },
+ {
+  "family": 310,
+  "lines": [
+   8,
+   13,
+   22,
+   25,
+   29
+  ],
+  "amplitude": [
+   8,
+   25,
+   29
+  ],
+  "conjugate": [
+   13,
+   22
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   12
+  ],
+  "independent": true
+ },
+ {
+  "family": 316,
+  "lines": [
+   6,
+   8,
+   13,
+   24,
+   25,
+   27
+  ],
+  "amplitude": [
+   6,
+   13,
+   24
+  ],
+  "conjugate": [
+   8,
+   25,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   29
+  ],
+  "independent": true
+ },
+ {
+  "family": 316,
+  "lines": [
+   6,
+   8,
+   13,
+   25,
+   29
+  ],
+  "amplitude": [
+   8,
+   25,
+   29
+  ],
+  "conjugate": [
+   6,
+   13
+  ],
+  "not_in_trees": [],
+  "absent": [
+   24,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 316,
+  "lines": [
+   6,
+   8,
+   24,
+   25,
+   29
+  ],
+  "amplitude": [
+   8,
+   25,
+   29
+  ],
+  "conjugate": [
+   6,
+   24
+  ],
+  "not_in_trees": [],
+  "absent": [
+   13,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 316,
+  "lines": [
+   6,
+   8,
+   25,
+   27,
+   29
+  ],
+  "amplitude": [
+   8,
+   25,
+   29
+  ],
+  "conjugate": [
+   6,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   13,
+   24
+  ],
+  "independent": true
+ },
+ {
+  "family": 316,
+  "lines": [
+   8,
+   13,
+   25,
+   27,
+   29
+  ],
+  "amplitude": [
+   8,
+   25,
+   27
+  ],
+  "conjugate": [
+   13,
+   29
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   24
+  ],
+  "independent": true
+ },
+ {
+  "family": 316,
+  "lines": [
+   6,
+   24,
+   25,
+   27,
+   29
+  ],
+  "amplitude": [
+   6,
+   24,
+   27
+  ],
+  "conjugate": [
+   25,
+   29
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   13
+  ],
+  "independent": true
+ },
+ {
+  "family": 316,
+  "lines": [
+   8,
+   24,
+   25,
+   27,
+   29
+  ],
+  "amplitude": [
+   8,
+   25,
+   29
+  ],
+  "conjugate": [
+   24,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   13
+  ],
+  "independent": true
+ },
+ {
+  "family": 322,
+  "lines": [
+   6,
+   8,
+   15,
+   17,
+   22,
+   27
+  ],
+  "amplitude": [
+   6,
+   17,
+   22
+  ],
+  "conjugate": [
+   8,
+   15,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   28
+  ],
+  "independent": true
+ },
+ {
+  "family": 322,
+  "lines": [
+   6,
+   8,
+   17,
+   22,
+   28
+  ],
+  "amplitude": [
+   6,
+   17,
+   28
+  ],
+  "conjugate": [
+   8,
+   22
+  ],
+  "not_in_trees": [],
+  "absent": [
+   15,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 322,
+  "lines": [
+   6,
+   15,
+   17,
+   22,
+   28
+  ],
+  "amplitude": [
+   6,
+   15,
+   22
+  ],
+  "conjugate": [
+   17,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 322,
+  "lines": [
+   8,
+   15,
+   17,
+   22,
+   28
+  ],
+  "amplitude": [
+   8,
+   15,
+   22
+  ],
+  "conjugate": [
+   17,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 328,
+  "lines": [
+   6,
+   8,
+   24,
+   27,
+   28
+  ],
+  "amplitude": [
+   6,
+   24,
+   28
+  ],
+  "conjugate": [
+   8,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   10,
+   15
+  ],
+  "independent": true
+ },
+ {
+  "family": 328,
+  "lines": [
+   6,
+   15,
+   24,
+   27,
+   28
+  ],
+  "amplitude": [
+   6,
+   15,
+   27
+  ],
+  "conjugate": [
+   24,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   10
+  ],
+  "independent": true
+ },
+ {
+  "family": 328,
+  "lines": [
+   8,
+   15,
+   24,
+   27,
+   28
+  ],
+  "amplitude": [
+   8,
+   15,
+   27
+  ],
+  "conjugate": [
+   24,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   10
+  ],
+  "independent": true
+ },
+ {
+  "family": 334,
+  "lines": [
+   6,
+   8,
+   17,
+   19,
+   28,
+   29
+  ],
+  "amplitude": [
+   6,
+   17,
+   28
+  ],
+  "conjugate": [
+   8,
+   19,
+   29
+  ],
+  "not_in_trees": [],
+  "absent": [
+   22
+  ],
+  "independent": true
+ },
+ {
+  "family": 337,
+  "lines": [
+   6,
+   8,
+   17,
+   25,
+   27,
+   28
+  ],
+  "amplitude": [
+   6,
+   17,
+   28
+  ],
+  "conjugate": [
+   8,
+   25,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   7
+  ],
+  "independent": true
+ },
+ {
+  "family": 343,
+  "lines": [
+   6,
+   8,
+   24,
+   25,
+   28,
+   29
+  ],
+  "amplitude": [
+   6,
+   24,
+   28
+  ],
+  "conjugate": [
+   8,
+   25,
+   29
+  ],
+  "not_in_trees": [],
+  "absent": [
+   10
+  ],
+  "independent": true
+ },
+ {
+  "family": 346,
+  "lines": [
+   9,
+   11,
+   12,
+   15,
+   16
+  ],
+  "amplitude": [
+   11,
+   12,
+   15
+  ],
+  "conjugate": [
+   9,
+   16
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   17
+  ],
+  "independent": true
+ },
+ {
+  "family": 346,
+  "lines": [
+   6,
+   9,
+   11,
+   12,
+   17
+  ],
+  "amplitude": [
+   6,
+   9,
+   17
+  ],
+  "conjugate": [
+   11,
+   12
+  ],
+  "not_in_trees": [],
+  "absent": [
+   15,
+   16
+  ],
+  "independent": true
+ },
+ {
+  "family": 346,
+  "lines": [
+   6,
+   9,
+   11,
+   15,
+   17
+  ],
+  "amplitude": [
+   6,
+   9,
+   17
+  ],
+  "conjugate": [
+   11,
+   15
+  ],
+  "not_in_trees": [],
+  "absent": [
+   12,
+   16
+  ],
+  "independent": true
+ },
+ {
+  "family": 346,
+  "lines": [
+   9,
+   11,
+   12,
+   15,
+   17
+  ],
+  "amplitude": [
+   11,
+   12,
+   15
+  ],
+  "conjugate": [
+   9,
+   17
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   16
+  ],
+  "independent": true
+ },
+ {
+  "family": 346,
+  "lines": [
+   6,
+   11,
+   12,
+   16
+  ],
+  "amplitude": [
+   6,
+   11
+  ],
+  "conjugate": [
+   12,
+   16
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   15,
+   17
+  ],
+  "independent": true
+ },
+ {
+  "family": 346,
+  "lines": [
+   6,
+   11,
+   15,
+   16
+  ],
+  "amplitude": [
+   6,
+   11,
+   15
+  ],
+  "conjugate": [
+   16
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   12,
+   17
+  ],
+  "independent": true
+ },
+ {
+  "family": 352,
+  "lines": [
+   6,
+   9,
+   12,
+   20,
+   21
+  ],
+  "amplitude": [
+   6,
+   9,
+   20
+  ],
+  "conjugate": [
+   12,
+   21
+  ],
+  "not_in_trees": [],
+  "absent": [
+   11,
+   15
+  ],
+  "independent": true
+ },
+ {
+  "family": 352,
+  "lines": [
+   6,
+   11,
+   12,
+   20,
+   21
+  ],
+  "amplitude": [
+   6,
+   11,
+   20
+  ],
+  "conjugate": [
+   12,
+   21
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   15
+  ],
+  "independent": true
+ },
+ {
+  "family": 352,
+  "lines": [
+   6,
+   9,
+   11,
+   12
+  ],
+  "amplitude": [
+   6,
+   9
+  ],
+  "conjugate": [
+   11,
+   12
+  ],
+  "not_in_trees": [],
+  "absent": [
+   15,
+   20,
+   21
+  ],
+  "independent": true
+ },
+ {
+  "family": 352,
+  "lines": [
+   6,
+   9,
+   11,
+   15
+  ],
+  "amplitude": [
+   6,
+   11,
+   15
+  ],
+  "conjugate": [
+   9
+  ],
+  "not_in_trees": [],
+  "absent": [
+   12,
+   20,
+   21
+  ],
+  "independent": true
+ },
+ {
+  "family": 352,
+  "lines": [
+   9,
+   11,
+   12,
+   15
+  ],
+  "amplitude": [
+   11,
+   12,
+   15
+  ],
+  "conjugate": [
+   9
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   20,
+   21
+  ],
+  "independent": true
+ },
+ {
+  "family": 352,
+  "lines": [
+   6,
+   9,
+   15,
+   20
+  ],
+  "amplitude": [
+   6,
+   9,
+   20
+  ],
+  "conjugate": [
+   15
+  ],
+  "not_in_trees": [],
+  "absent": [
+   11,
+   12,
+   21
+  ],
+  "independent": true
+ },
+ {
+  "family": 352,
+  "lines": [
+   6,
+   11,
+   15,
+   20
+  ],
+  "amplitude": [
+   6,
+   11,
+   15
+  ],
+  "conjugate": [
+   20
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   12,
+   21
+  ],
+  "independent": true
+ },
+ {
+  "family": 352,
+  "lines": [
+   9,
+   12,
+   15,
+   20
+  ],
+  "amplitude": [
+   9,
+   20
+  ],
+  "conjugate": [
+   12,
+   15
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   11,
+   21
+  ],
+  "independent": true
+ },
+ {
+  "family": 352,
+  "lines": [
+   11,
+   12,
+   15,
+   20
+  ],
+  "amplitude": [
+   11,
+   12,
+   15
+  ],
+  "conjugate": [
+   20
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   9,
+   21
+  ],
+  "independent": true
+ },
+ {
+  "family": 352,
+  "lines": [
+   6,
+   11,
+   15,
+   21
+  ],
+  "amplitude": [
+   6,
+   11,
+   15
+  ],
+  "conjugate": [
+   21
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   12,
+   20
+  ],
+  "independent": true
+ },
+ {
+  "family": 352,
+  "lines": [
+   6,
+   12,
+   15,
+   21
+  ],
+  "amplitude": [
+   6,
+   15
+  ],
+  "conjugate": [
+   12,
+   21
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   11,
+   20
+  ],
+  "independent": true
+ },
+ {
+  "family": 352,
+  "lines": [
+   11,
+   12,
+   15,
+   21
+  ],
+  "amplitude": [
+   11,
+   12,
+   15
+  ],
+  "conjugate": [
+   21
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   9,
+   20
+  ],
+  "independent": true
+ },
+ {
+  "family": 358,
+  "lines": [
+   6,
+   9,
+   11,
+   12,
+   27
+  ],
+  "amplitude": [
+   6,
+   9,
+   27
+  ],
+  "conjugate": [
+   11,
+   12
+  ],
+  "not_in_trees": [],
+  "absent": [
+   15,
+   20
+  ],
+  "independent": true
+ },
+ {
+  "family": 358,
+  "lines": [
+   6,
+   9,
+   12,
+   15,
+   27
+  ],
+  "amplitude": [
+   6,
+   9,
+   27
+  ],
+  "conjugate": [
+   12,
+   15
+  ],
+  "not_in_trees": [],
+  "absent": [
+   11,
+   20
+  ],
+  "independent": true
+ },
+ {
+  "family": 358,
+  "lines": [
+   6,
+   9,
+   12,
+   20,
+   27
+  ],
+  "amplitude": [
+   6,
+   9,
+   20
+  ],
+  "conjugate": [
+   12,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   11,
+   15
+  ],
+  "independent": true
+ },
+ {
+  "family": 358,
+  "lines": [
+   6,
+   11,
+   12,
+   20,
+   27
+  ],
+  "amplitude": [
+   6,
+   11,
+   20
+  ],
+  "conjugate": [
+   12,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   15
+  ],
+  "independent": true
+ },
+ {
+  "family": 358,
+  "lines": [
+   6,
+   9,
+   15,
+   20,
+   27
+  ],
+  "amplitude": [
+   6,
+   9,
+   20
+  ],
+  "conjugate": [
+   15,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   11,
+   12
+  ],
+  "independent": true
+ },
+ {
+  "family": 358,
+  "lines": [
+   9,
+   12,
+   15,
+   20,
+   27
+  ],
+  "amplitude": [
+   12,
+   15,
+   27
+  ],
+  "conjugate": [
+   9,
+   20
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   11
+  ],
+  "independent": true
+ },
+ {
+  "family": 358,
+  "lines": [
+   6,
+   9,
+   11,
+   15
+  ],
+  "amplitude": [
+   6,
+   11,
+   15
+  ],
+  "conjugate": [
+   9
+  ],
+  "not_in_trees": [],
+  "absent": [
+   12,
+   20,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 358,
+  "lines": [
+   9,
+   11,
+   12,
+   15
+  ],
+  "amplitude": [
+   11,
+   12,
+   15
+  ],
+  "conjugate": [
+   9
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   20,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 358,
+  "lines": [
+   6,
+   11,
+   15,
+   20
+  ],
+  "amplitude": [
+   6,
+   11,
+   15
+  ],
+  "conjugate": [
+   20
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   12,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 358,
+  "lines": [
+   11,
+   12,
+   15,
+   20
+  ],
+  "amplitude": [
+   11,
+   12,
+   15
+  ],
+  "conjugate": [
+   20
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   9,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 358,
+  "lines": [
+   6,
+   11,
+   15,
+   27
+  ],
+  "amplitude": [
+   6,
+   11,
+   15
+  ],
+  "conjugate": [
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   12,
+   20
+  ],
+  "independent": true
+ },
+ {
+  "family": 358,
+  "lines": [
+   11,
+   12,
+   15,
+   27
+  ],
+  "amplitude": [
+   11,
+   12,
+   15
+  ],
+  "conjugate": [
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   9,
+   20
+  ],
+  "independent": true
+ },
+ {
+  "family": 364,
+  "lines": [
+   6,
+   9,
+   11,
+   12,
+   17,
+   23
+  ],
+  "amplitude": [
+   6,
+   9,
+   17
+  ],
+  "conjugate": [
+   11,
+   12,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   18
+  ],
+  "independent": true
+ },
+ {
+  "family": 364,
+  "lines": [
+   6,
+   9,
+   11,
+   17,
+   18,
+   23
+  ],
+  "amplitude": [
+   6,
+   9,
+   17
+  ],
+  "conjugate": [
+   11,
+   18,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   12
+  ],
+  "independent": true
+ },
+ {
+  "family": 370,
+  "lines": [
+   6,
+   9,
+   11,
+   12,
+   17,
+   26
+  ],
+  "amplitude": [
+   6,
+   9,
+   17
+  ],
+  "conjugate": [
+   11,
+   12,
+   26
+  ],
+  "not_in_trees": [],
+  "absent": [
+   28
+  ],
+  "independent": true
+ },
+ {
+  "family": 370,
+  "lines": [
+   6,
+   11,
+   12,
+   26,
+   28
+  ],
+  "amplitude": [
+   6,
+   11,
+   28
+  ],
+  "conjugate": [
+   12,
+   26
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   17
+  ],
+  "independent": true
+ },
+ {
+  "family": 370,
+  "lines": [
+   6,
+   11,
+   17,
+   26,
+   28
+  ],
+  "amplitude": [
+   6,
+   17,
+   28
+  ],
+  "conjugate": [
+   11,
+   26
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   12
+  ],
+  "independent": true
+ },
+ {
+  "family": 370,
+  "lines": [
+   6,
+   12,
+   17,
+   26,
+   28
+  ],
+  "amplitude": [
+   6,
+   17,
+   28
+  ],
+  "conjugate": [
+   12,
+   26
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   11
+  ],
+  "independent": true
+ },
+ {
+  "family": 370,
+  "lines": [
+   11,
+   12,
+   17,
+   26,
+   28
+  ],
+  "amplitude": [
+   11,
+   12,
+   26
+  ],
+  "conjugate": [
+   17,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   9
+  ],
+  "independent": true
+ },
+ {
+  "family": 370,
+  "lines": [
+   6,
+   9,
+   11,
+   28
+  ],
+  "amplitude": [
+   6,
+   11,
+   28
+  ],
+  "conjugate": [
+   9
+  ],
+  "not_in_trees": [],
+  "absent": [
+   12,
+   17,
+   26
+  ],
+  "independent": true
+ },
+ {
+  "family": 370,
+  "lines": [
+   6,
+   9,
+   26,
+   28
+  ],
+  "amplitude": [
+   6,
+   9
+  ],
+  "conjugate": [
+   26,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   11,
+   12,
+   17
+  ],
+  "independent": true
+ },
+ {
+  "family": 370,
+  "lines": [
+   9,
+   11,
+   26,
+   28
+  ],
+  "amplitude": [
+   11,
+   26,
+   28
+  ],
+  "conjugate": [
+   9
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   12,
+   17
+  ],
+  "independent": true
+ },
+ {
+  "family": 376,
+  "lines": [
+   6,
+   9,
+   11,
+   12,
+   23,
+   27
+  ],
+  "amplitude": [
+   6,
+   9,
+   27
+  ],
+  "conjugate": [
+   11,
+   12,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   20
+  ],
+  "independent": true
+ },
+ {
+  "family": 376,
+  "lines": [
+   6,
+   9,
+   12,
+   20,
+   23
+  ],
+  "amplitude": [
+   6,
+   9,
+   20
+  ],
+  "conjugate": [
+   12,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   11,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 376,
+  "lines": [
+   6,
+   11,
+   12,
+   20,
+   23
+  ],
+  "amplitude": [
+   6,
+   11,
+   20
+  ],
+  "conjugate": [
+   12,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 376,
+  "lines": [
+   6,
+   9,
+   20,
+   23,
+   27
+  ],
+  "amplitude": [
+   6,
+   9,
+   27
+  ],
+  "conjugate": [
+   20,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   11,
+   12
+  ],
+  "independent": true
+ },
+ {
+  "family": 376,
+  "lines": [
+   6,
+   11,
+   20,
+   23,
+   27
+  ],
+  "amplitude": [
+   11,
+   20,
+   23
+  ],
+  "conjugate": [
+   6,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   12
+  ],
+  "independent": true
+ },
+ {
+  "family": 376,
+  "lines": [
+   11,
+   12,
+   20,
+   27
+  ],
+  "amplitude": [
+   11,
+   20
+  ],
+  "conjugate": [
+   12,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   9,
+   23
+  ],
+  "independent": true
+ },
+ {
+  "family": 376,
+  "lines": [
+   12,
+   20,
+   23,
+   27
+  ],
+  "amplitude": [
+   12,
+   27
+  ],
+  "conjugate": [
+   20,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   9,
+   11
+  ],
+  "independent": true
+ },
+ {
+  "family": 382,
+  "lines": [
+   9,
+   11,
+   12,
+   20,
+   26,
+   29
+  ],
+  "amplitude": [
+   9,
+   20,
+   29
+  ],
+  "conjugate": [
+   11,
+   12,
+   26
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6
+  ],
+  "independent": true
+ },
+ {
+  "family": 382,
+  "lines": [
+   6,
+   9,
+   11,
+   12,
+   26
+  ],
+  "amplitude": [
+   11,
+   12,
+   26
+  ],
+  "conjugate": [
+   6,
+   9
+  ],
+  "not_in_trees": [],
+  "absent": [
+   20,
+   29
+  ],
+  "independent": true
+ },
+ {
+  "family": 382,
+  "lines": [
+   6,
+   9,
+   12,
+   20,
+   26
+  ],
+  "amplitude": [
+   6,
+   9,
+   20
+  ],
+  "conjugate": [
+   12,
+   26
+  ],
+  "not_in_trees": [],
+  "absent": [
+   11,
+   29
+  ],
+  "independent": true
+ },
+ {
+  "family": 382,
+  "lines": [
+   6,
+   11,
+   12,
+   20,
+   26
+  ],
+  "amplitude": [
+   6,
+   11,
+   20
+  ],
+  "conjugate": [
+   12,
+   26
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   29
+  ],
+  "independent": true
+ },
+ {
+  "family": 382,
+  "lines": [
+   6,
+   9,
+   11,
+   26,
+   29
+  ],
+  "amplitude": [
+   11,
+   26,
+   29
+  ],
+  "conjugate": [
+   6,
+   9
+  ],
+  "not_in_trees": [],
+  "absent": [
+   12,
+   20
+  ],
+  "independent": true
+ },
+ {
+  "family": 388,
+  "lines": [
+   6,
+   9,
+   11,
+   14,
+   25
+  ],
+  "amplitude": [
+   9,
+   14,
+   25
+  ],
+  "conjugate": [
+   6,
+   11
+  ],
+  "not_in_trees": [],
+  "absent": [
+   27,
+   28
+  ],
+  "independent": true
+ },
+ {
+  "family": 388,
+  "lines": [
+   6,
+   9,
+   11,
+   14,
+   28
+  ],
+  "amplitude": [
+   6,
+   11,
+   28
+  ],
+  "conjugate": [
+   9,
+   14
+  ],
+  "not_in_trees": [],
+  "absent": [
+   25,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 388,
+  "lines": [
+   6,
+   9,
+   11,
+   25,
+   28
+  ],
+  "amplitude": [
+   6,
+   11,
+   28
+  ],
+  "conjugate": [
+   9,
+   25
+  ],
+  "not_in_trees": [],
+  "absent": [
+   14,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 388,
+  "lines": [
+   6,
+   9,
+   11,
+   27,
+   28
+  ],
+  "amplitude": [
+   6,
+   9,
+   27
+  ],
+  "conjugate": [
+   11,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   14,
+   25
+  ],
+  "independent": true
+ },
+ {
+  "family": 388,
+  "lines": [
+   6,
+   11,
+   25,
+   27,
+   28
+  ],
+  "amplitude": [
+   6,
+   11,
+   28
+  ],
+  "conjugate": [
+   25,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   14
+  ],
+  "independent": true
+ },
+ {
+  "family": 388,
+  "lines": [
+   9,
+   11,
+   25,
+   27,
+   28
+  ],
+  "amplitude": [
+   9,
+   25,
+   27
+  ],
+  "conjugate": [
+   11,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   14
+  ],
+  "independent": true
+ },
+ {
+  "family": 388,
+  "lines": [
+   9,
+   14,
+   25,
+   27,
+   28
+  ],
+  "amplitude": [
+   9,
+   25,
+   27
+  ],
+  "conjugate": [
+   14,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   11
+  ],
+  "independent": true
+ },
+ {
+  "family": 388,
+  "lines": [
+   6,
+   14,
+   25,
+   28
+  ],
+  "amplitude": [
+   6,
+   28
+  ],
+  "conjugate": [
+   14,
+   25
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   11,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 394,
+  "lines": [
+   6,
+   9,
+   11,
+   15,
+   16
+  ],
+  "amplitude": [
+   6,
+   11,
+   15
+  ],
+  "conjugate": [
+   9,
+   16
+  ],
+  "not_in_trees": [],
+  "absent": [
+   27,
+   28
+  ],
+  "independent": true
+ },
+ {
+  "family": 394,
+  "lines": [
+   6,
+   9,
+   11,
+   16,
+   28
+  ],
+  "amplitude": [
+   6,
+   11,
+   28
+  ],
+  "conjugate": [
+   9,
+   16
+  ],
+  "not_in_trees": [],
+  "absent": [
+   15,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 394,
+  "lines": [
+   6,
+   9,
+   11,
+   27,
+   28
+  ],
+  "amplitude": [
+   6,
+   9,
+   27
+  ],
+  "conjugate": [
+   11,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   15,
+   16
+  ],
+  "independent": true
+ },
+ {
+  "family": 394,
+  "lines": [
+   6,
+   11,
+   16,
+   27,
+   28
+  ],
+  "amplitude": [
+   6,
+   11,
+   28
+  ],
+  "conjugate": [
+   16,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   15
+  ],
+  "independent": true
+ },
+ {
+  "family": 394,
+  "lines": [
+   9,
+   11,
+   16,
+   27,
+   28
+  ],
+  "amplitude": [
+   9,
+   16,
+   27
+  ],
+  "conjugate": [
+   11,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   15
+  ],
+  "independent": true
+ },
+ {
+  "family": 394,
+  "lines": [
+   6,
+   9,
+   15,
+   27
+  ],
+  "amplitude": [
+   6,
+   9,
+   27
+  ],
+  "conjugate": [
+   15
+  ],
+  "not_in_trees": [],
+  "absent": [
+   11,
+   16,
+   28
+  ],
+  "independent": true
+ },
+ {
+  "family": 394,
+  "lines": [
+   6,
+   15,
+   16,
+   27
+  ],
+  "amplitude": [
+   6,
+   15,
+   27
+  ],
+  "conjugate": [
+   16
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   11,
+   28
+  ],
+  "independent": true
+ },
+ {
+  "family": 394,
+  "lines": [
+   9,
+   15,
+   16,
+   27
+  ],
+  "amplitude": [
+   9,
+   16,
+   27
+  ],
+  "conjugate": [
+   15
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   11,
+   28
+  ],
+  "independent": true
+ },
+ {
+  "family": 400,
+  "lines": [
+   6,
+   9,
+   11,
+   15,
+   29
+  ],
+  "amplitude": [
+   6,
+   11,
+   15
+  ],
+  "conjugate": [
+   9,
+   29
+  ],
+  "not_in_trees": [],
+  "absent": [
+   12,
+   20
+  ],
+  "independent": true
+ },
+ {
+  "family": 400,
+  "lines": [
+   9,
+   11,
+   12,
+   15,
+   29
+  ],
+  "amplitude": [
+   11,
+   12,
+   15
+  ],
+  "conjugate": [
+   9,
+   29
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   20
+  ],
+  "independent": true
+ },
+ {
+  "family": 400,
+  "lines": [
+   9,
+   12,
+   15,
+   20,
+   29
+  ],
+  "amplitude": [
+   9,
+   20,
+   29
+  ],
+  "conjugate": [
+   12,
+   15
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   11
+  ],
+  "independent": true
+ },
+ {
+  "family": 400,
+  "lines": [
+   11,
+   12,
+   15,
+   20,
+   29
+  ],
+  "amplitude": [
+   11,
+   12,
+   15
+  ],
+  "conjugate": [
+   20,
+   29
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   9
+  ],
+  "independent": true
+ },
+ {
+  "family": 400,
+  "lines": [
+   6,
+   9,
+   15,
+   20
+  ],
+  "amplitude": [
+   6,
+   9,
+   20
+  ],
+  "conjugate": [
+   15
+  ],
+  "not_in_trees": [],
+  "absent": [
+   11,
+   12,
+   29
+  ],
+  "independent": true
+ },
+ {
+  "family": 400,
+  "lines": [
+   6,
+   11,
+   15,
+   20
+  ],
+  "amplitude": [
+   6,
+   11,
+   15
+  ],
+  "conjugate": [
+   20
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   12,
+   29
+  ],
+  "independent": true
+ },
+ {
+  "family": 406,
+  "lines": [
+   6,
+   9,
+   11,
+   15,
+   25,
+   29
+  ],
+  "amplitude": [
+   6,
+   11,
+   15
+  ],
+  "conjugate": [
+   9,
+   25,
+   29
+  ],
+  "not_in_trees": [],
+  "absent": [
+   22
+  ],
+  "independent": true
+ },
+ {
+  "family": 406,
+  "lines": [
+   6,
+   9,
+   15,
+   22,
+   25,
+   29
+  ],
+  "amplitude": [
+   6,
+   15,
+   22
+  ],
+  "conjugate": [
+   9,
+   25,
+   29
+  ],
+  "not_in_trees": [],
+  "absent": [
+   11
+  ],
+  "independent": true
+ },
+ {
+  "family": 412,
+  "lines": [
+   6,
+   9,
+   11,
+   16,
+   23,
+   28
+  ],
+  "amplitude": [
+   6,
+   11,
+   28
+  ],
+  "conjugate": [
+   9,
+   16,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   26
+  ],
+  "independent": true
+ },
+ {
+  "family": 412,
+  "lines": [
+   9,
+   11,
+   16,
+   23,
+   26,
+   28
+  ],
+  "amplitude": [
+   9,
+   16,
+   23
+  ],
+  "conjugate": [
+   11,
+   26,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6
+  ],
+  "independent": true
+ },
+ {
+  "family": 418,
+  "lines": [
+   6,
+   9,
+   14,
+   18,
+   20,
+   28
+  ],
+  "amplitude": [
+   6,
+   9,
+   20
+  ],
+  "conjugate": [
+   14,
+   18,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   11
+  ],
+  "independent": true
+ },
+ {
+  "family": 418,
+  "lines": [
+   6,
+   11,
+   14,
+   18,
+   20,
+   28
+  ],
+  "amplitude": [
+   6,
+   11,
+   20
+  ],
+  "conjugate": [
+   14,
+   18,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9
+  ],
+  "independent": true
+ },
+ {
+  "family": 418,
+  "lines": [
+   6,
+   9,
+   11,
+   18
+  ],
+  "amplitude": [
+   6,
+   9
+  ],
+  "conjugate": [
+   11,
+   18
+  ],
+  "not_in_trees": [],
+  "absent": [
+   14,
+   20,
+   28
+  ],
+  "independent": true
+ },
+ {
+  "family": 418,
+  "lines": [
+   6,
+   9,
+   11,
+   28
+  ],
+  "amplitude": [
+   6,
+   11,
+   28
+  ],
+  "conjugate": [
+   9
+  ],
+  "not_in_trees": [],
+  "absent": [
+   14,
+   18,
+   20
+  ],
+  "independent": true
+ },
+ {
+  "family": 418,
+  "lines": [
+   9,
+   11,
+   18,
+   28
+  ],
+  "amplitude": [
+   11,
+   18,
+   28
+  ],
+  "conjugate": [
+   9
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   14,
+   20
+  ],
+  "independent": true
+ },
+ {
+  "family": 424,
+  "lines": [
+   6,
+   9,
+   20,
+   26,
+   28
+  ],
+  "amplitude": [
+   6,
+   9,
+   20
+  ],
+  "conjugate": [
+   26,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   11,
+   23
+  ],
+  "independent": true
+ },
+ {
+  "family": 424,
+  "lines": [
+   6,
+   11,
+   20,
+   26,
+   28
+  ],
+  "amplitude": [
+   6,
+   11,
+   20
+  ],
+  "conjugate": [
+   26,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   23
+  ],
+  "independent": true
+ },
+ {
+  "family": 424,
+  "lines": [
+   9,
+   11,
+   23,
+   26,
+   28
+  ],
+  "amplitude": [
+   11,
+   26,
+   28
+  ],
+  "conjugate": [
+   9,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   20
+  ],
+  "independent": true
+ },
+ {
+  "family": 424,
+  "lines": [
+   9,
+   20,
+   23,
+   26,
+   28
+  ],
+  "amplitude": [
+   9,
+   20,
+   23
+  ],
+  "conjugate": [
+   26,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   11
+  ],
+  "independent": true
+ },
+ {
+  "family": 424,
+  "lines": [
+   11,
+   20,
+   23,
+   26,
+   28
+  ],
+  "amplitude": [
+   11,
+   20,
+   23
+  ],
+  "conjugate": [
+   26,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   9
+  ],
+  "independent": true
+ },
+ {
+  "family": 424,
+  "lines": [
+   6,
+   9,
+   11,
+   26
+  ],
+  "amplitude": [
+   6,
+   9
+  ],
+  "conjugate": [
+   11,
+   26
+  ],
+  "not_in_trees": [],
+  "absent": [
+   20,
+   23,
+   28
+  ],
+  "independent": true
+ },
+ {
+  "family": 424,
+  "lines": [
+   6,
+   9,
+   11,
+   28
+  ],
+  "amplitude": [
+   6,
+   11,
+   28
+  ],
+  "conjugate": [
+   9
+  ],
+  "not_in_trees": [],
+  "absent": [
+   20,
+   23,
+   26
+  ],
+  "independent": true
+ },
+ {
+  "family": 430,
+  "lines": [
+   6,
+   9,
+   11,
+   25,
+   28,
+   29
+  ],
+  "amplitude": [
+   6,
+   11,
+   28
+  ],
+  "conjugate": [
+   9,
+   25,
+   29
+  ],
+  "not_in_trees": [],
+  "absent": [
+   17
+  ],
+  "independent": true
+ },
+ {
+  "family": 430,
+  "lines": [
+   6,
+   9,
+   17,
+   25,
+   29
+  ],
+  "amplitude": [
+   6,
+   9,
+   17
+  ],
+  "conjugate": [
+   25,
+   29
+  ],
+  "not_in_trees": [],
+  "absent": [
+   11,
+   28
+  ],
+  "independent": true
+ },
+ {
+  "family": 430,
+  "lines": [
+   6,
+   17,
+   25,
+   28,
+   29
+  ],
+  "amplitude": [
+   6,
+   17,
+   28
+  ],
+  "conjugate": [
+   25,
+   29
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   11
+  ],
+  "independent": true
+ },
+ {
+  "family": 430,
+  "lines": [
+   9,
+   17,
+   25,
+   28,
+   29
+  ],
+  "amplitude": [
+   9,
+   25,
+   29
+  ],
+  "conjugate": [
+   17,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   11
+  ],
+  "independent": true
+ },
+ {
+  "family": 430,
+  "lines": [
+   6,
+   9,
+   17,
+   28
+  ],
+  "amplitude": [
+   6,
+   9,
+   17
+  ],
+  "conjugate": [
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   11,
+   25,
+   29
+  ],
+  "independent": true
+ },
+ {
+  "family": 436,
+  "lines": [
+   6,
+   9,
+   12,
+   15,
+   17,
+   22
+  ],
+  "amplitude": [
+   6,
+   9,
+   17
+  ],
+  "conjugate": [
+   12,
+   15,
+   22
+  ],
+  "not_in_trees": [],
+  "absent": [
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 436,
+  "lines": [
+   6,
+   9,
+   12,
+   15,
+   17,
+   27
+  ],
+  "amplitude": [
+   6,
+   9,
+   17
+  ],
+  "conjugate": [
+   12,
+   15,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   22
+  ],
+  "independent": true
+ },
+ {
+  "family": 436,
+  "lines": [
+   6,
+   9,
+   12,
+   15,
+   22,
+   27
+  ],
+  "amplitude": [
+   6,
+   9,
+   27
+  ],
+  "conjugate": [
+   12,
+   15,
+   22
+  ],
+  "not_in_trees": [],
+  "absent": [
+   17
+  ],
+  "independent": true
+ },
+ {
+  "family": 436,
+  "lines": [
+   6,
+   12,
+   15,
+   17,
+   22,
+   27
+  ],
+  "amplitude": [
+   6,
+   17,
+   22
+  ],
+  "conjugate": [
+   12,
+   15,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9
+  ],
+  "independent": true
+ },
+ {
+  "family": 442,
+  "lines": [
+   6,
+   12,
+   15,
+   16,
+   22
+  ],
+  "amplitude": [
+   6,
+   15,
+   22
+  ],
+  "conjugate": [
+   12,
+   16
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   20
+  ],
+  "independent": true
+ },
+ {
+  "family": 442,
+  "lines": [
+   6,
+   9,
+   12,
+   20,
+   22
+  ],
+  "amplitude": [
+   6,
+   9,
+   20
+  ],
+  "conjugate": [
+   12,
+   22
+  ],
+  "not_in_trees": [],
+  "absent": [
+   15,
+   16
+  ],
+  "independent": true
+ },
+ {
+  "family": 442,
+  "lines": [
+   6,
+   9,
+   15,
+   20,
+   22
+  ],
+  "amplitude": [
+   6,
+   9,
+   20
+  ],
+  "conjugate": [
+   15,
+   22
+  ],
+  "not_in_trees": [],
+  "absent": [
+   12,
+   16
+  ],
+  "independent": true
+ },
+ {
+  "family": 442,
+  "lines": [
+   9,
+   12,
+   15,
+   20,
+   22
+  ],
+  "amplitude": [
+   12,
+   15,
+   22
+  ],
+  "conjugate": [
+   9,
+   20
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   16
+  ],
+  "independent": true
+ },
+ {
+  "family": 442,
+  "lines": [
+   9,
+   15,
+   16,
+   22
+  ],
+  "amplitude": [
+   9,
+   16
+  ],
+  "conjugate": [
+   15,
+   22
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   12,
+   20
+  ],
+  "independent": true
+ },
+ {
+  "family": 448,
+  "lines": [
+   9,
+   12,
+   15,
+   16,
+   23
+  ],
+  "amplitude": [
+   9,
+   16,
+   23
+  ],
+  "conjugate": [
+   12,
+   15
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   17
+  ],
+  "independent": true
+ },
+ {
+  "family": 448,
+  "lines": [
+   6,
+   9,
+   12,
+   17,
+   23
+  ],
+  "amplitude": [
+   6,
+   9,
+   17
+  ],
+  "conjugate": [
+   12,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   15,
+   16
+  ],
+  "independent": true
+ },
+ {
+  "family": 448,
+  "lines": [
+   6,
+   9,
+   16,
+   17,
+   23
+  ],
+  "amplitude": [
+   6,
+   9,
+   17
+  ],
+  "conjugate": [
+   16,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   12,
+   15
+  ],
+  "independent": true
+ },
+ {
+  "family": 448,
+  "lines": [
+   6,
+   12,
+   16,
+   17,
+   23
+  ],
+  "amplitude": [
+   12,
+   16,
+   23
+  ],
+  "conjugate": [
+   6,
+   17
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   15
+  ],
+  "independent": true
+ },
+ {
+  "family": 448,
+  "lines": [
+   6,
+   15,
+   16,
+   23
+  ],
+  "amplitude": [
+   6,
+   15
+  ],
+  "conjugate": [
+   16,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   12,
+   17
+  ],
+  "independent": true
+ },
+ {
+  "family": 454,
+  "lines": [
+   6,
+   9,
+   12,
+   16,
+   20,
+   23
+  ],
+  "amplitude": [
+   6,
+   9,
+   20
+  ],
+  "conjugate": [
+   12,
+   16,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 454,
+  "lines": [
+   6,
+   9,
+   12,
+   16,
+   23,
+   27
+  ],
+  "amplitude": [
+   6,
+   9,
+   27
+  ],
+  "conjugate": [
+   12,
+   16,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   20
+  ],
+  "independent": true
+ },
+ {
+  "family": 454,
+  "lines": [
+   9,
+   12,
+   16,
+   20,
+   23,
+   27
+  ],
+  "amplitude": [
+   9,
+   20,
+   23
+  ],
+  "conjugate": [
+   12,
+   16,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6
+  ],
+  "independent": true
+ },
+ {
+  "family": 460,
+  "lines": [
+   6,
+   9,
+   13,
+   14,
+   22
+  ],
+  "amplitude": [
+   6,
+   13,
+   22
+  ],
+  "conjugate": [
+   9,
+   14
+  ],
+  "not_in_trees": [],
+  "absent": [
+   17,
+   20
+  ],
+  "independent": true
+ },
+ {
+  "family": 460,
+  "lines": [
+   6,
+   9,
+   13,
+   17,
+   22
+  ],
+  "amplitude": [
+   6,
+   9,
+   17
+  ],
+  "conjugate": [
+   13,
+   22
+  ],
+  "not_in_trees": [],
+  "absent": [
+   14,
+   20
+  ],
+  "independent": true
+ },
+ {
+  "family": 460,
+  "lines": [
+   6,
+   13,
+   14,
+   17,
+   22
+  ],
+  "amplitude": [
+   6,
+   13,
+   22
+  ],
+  "conjugate": [
+   14,
+   17
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   20
+  ],
+  "independent": true
+ },
+ {
+  "family": 460,
+  "lines": [
+   9,
+   13,
+   14,
+   17,
+   22
+  ],
+  "amplitude": [
+   9,
+   14,
+   17
+  ],
+  "conjugate": [
+   13,
+   22
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   20
+  ],
+  "independent": true
+ },
+ {
+  "family": 460,
+  "lines": [
+   6,
+   9,
+   14,
+   20,
+   22
+  ],
+  "amplitude": [
+   6,
+   9,
+   20
+  ],
+  "conjugate": [
+   14,
+   22
+  ],
+  "not_in_trees": [],
+  "absent": [
+   13,
+   17
+  ],
+  "independent": true
+ },
+ {
+  "family": 460,
+  "lines": [
+   6,
+   13,
+   14,
+   20,
+   22
+  ],
+  "amplitude": [
+   6,
+   13,
+   20
+  ],
+  "conjugate": [
+   14,
+   22
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   17
+  ],
+  "independent": true
+ },
+ {
+  "family": 460,
+  "lines": [
+   6,
+   9,
+   17,
+   20,
+   22
+  ],
+  "amplitude": [
+   6,
+   9,
+   20
+  ],
+  "conjugate": [
+   17,
+   22
+  ],
+  "not_in_trees": [],
+  "absent": [
+   13,
+   14
+  ],
+  "independent": true
+ },
+ {
+  "family": 460,
+  "lines": [
+   6,
+   13,
+   17,
+   20,
+   22
+  ],
+  "amplitude": [
+   6,
+   13,
+   20
+  ],
+  "conjugate": [
+   17,
+   22
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   14
+  ],
+  "independent": true
+ },
+ {
+  "family": 460,
+  "lines": [
+   9,
+   14,
+   17,
+   20,
+   22
+  ],
+  "amplitude": [
+   14,
+   17,
+   22
+  ],
+  "conjugate": [
+   9,
+   20
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   13
+  ],
+  "independent": true
+ },
+ {
+  "family": 460,
+  "lines": [
+   13,
+   14,
+   17,
+   20,
+   22
+  ],
+  "amplitude": [
+   14,
+   17,
+   22
+  ],
+  "conjugate": [
+   13,
+   20
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   9
+  ],
+  "independent": true
+ },
+ {
+  "family": 466,
+  "lines": [
+   9,
+   13,
+   14,
+   17,
+   21
+  ],
+  "amplitude": [
+   9,
+   14,
+   17
+  ],
+  "conjugate": [
+   13,
+   21
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   24
+  ],
+  "independent": true
+ },
+ {
+  "family": 466,
+  "lines": [
+   6,
+   9,
+   13,
+   14,
+   24
+  ],
+  "amplitude": [
+   6,
+   13,
+   24
+  ],
+  "conjugate": [
+   9,
+   14
+  ],
+  "not_in_trees": [],
+  "absent": [
+   17,
+   21
+  ],
+  "independent": true
+ },
+ {
+  "family": 466,
+  "lines": [
+   6,
+   9,
+   13,
+   17,
+   24
+  ],
+  "amplitude": [
+   6,
+   9,
+   17
+  ],
+  "conjugate": [
+   13,
+   24
+  ],
+  "not_in_trees": [],
+  "absent": [
+   14,
+   21
+  ],
+  "independent": true
+ },
+ {
+  "family": 466,
+  "lines": [
+   9,
+   13,
+   14,
+   17,
+   24
+  ],
+  "amplitude": [
+   9,
+   14,
+   17
+  ],
+  "conjugate": [
+   13,
+   24
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   21
+  ],
+  "independent": true
+ },
+ {
+  "family": 466,
+  "lines": [
+   6,
+   13,
+   21,
+   24
+  ],
+  "amplitude": [
+   6,
+   13,
+   24
+  ],
+  "conjugate": [
+   21
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   14,
+   17
+  ],
+  "independent": true
+ },
+ {
+  "family": 466,
+  "lines": [
+   6,
+   14,
+   21,
+   24
+  ],
+  "amplitude": [
+   6,
+   24
+  ],
+  "conjugate": [
+   14,
+   21
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   13,
+   17
+  ],
+  "independent": true
+ },
+ {
+  "family": 472,
+  "lines": [
+   6,
+   9,
+   13,
+   14,
+   23
+  ],
+  "amplitude": [
+   9,
+   14,
+   23
+  ],
+  "conjugate": [
+   6,
+   13
+  ],
+  "not_in_trees": [],
+  "absent": [
+   17,
+   20
+  ],
+  "independent": true
+ },
+ {
+  "family": 472,
+  "lines": [
+   6,
+   9,
+   13,
+   17,
+   23
+  ],
+  "amplitude": [
+   6,
+   9,
+   17
+  ],
+  "conjugate": [
+   13,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   14,
+   20
+  ],
+  "independent": true
+ },
+ {
+  "family": 472,
+  "lines": [
+   9,
+   13,
+   14,
+   17,
+   23
+  ],
+  "amplitude": [
+   9,
+   14,
+   17
+  ],
+  "conjugate": [
+   13,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   20
+  ],
+  "independent": true
+ },
+ {
+  "family": 472,
+  "lines": [
+   6,
+   9,
+   14,
+   20,
+   23
+  ],
+  "amplitude": [
+   6,
+   9,
+   20
+  ],
+  "conjugate": [
+   14,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   13,
+   17
+  ],
+  "independent": true
+ },
+ {
+  "family": 472,
+  "lines": [
+   6,
+   13,
+   14,
+   20,
+   23
+  ],
+  "amplitude": [
+   6,
+   13,
+   20
+  ],
+  "conjugate": [
+   14,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   17
+  ],
+  "independent": true
+ },
+ {
+  "family": 472,
+  "lines": [
+   9,
+   13,
+   14,
+   20,
+   23
+  ],
+  "amplitude": [
+   9,
+   14,
+   23
+  ],
+  "conjugate": [
+   13,
+   20
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   17
+  ],
+  "independent": true
+ },
+ {
+  "family": 472,
+  "lines": [
+   6,
+   9,
+   17,
+   20,
+   23
+  ],
+  "amplitude": [
+   6,
+   9,
+   17
+  ],
+  "conjugate": [
+   20,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   13,
+   14
+  ],
+  "independent": true
+ },
+ {
+  "family": 472,
+  "lines": [
+   6,
+   13,
+   17,
+   20,
+   23
+  ],
+  "amplitude": [
+   13,
+   20,
+   23
+  ],
+  "conjugate": [
+   6,
+   17
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   14
+  ],
+  "independent": true
+ },
+ {
+  "family": 472,
+  "lines": [
+   9,
+   14,
+   17,
+   20,
+   23
+  ],
+  "amplitude": [
+   9,
+   14,
+   17
+  ],
+  "conjugate": [
+   20,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   13
+  ],
+  "independent": true
+ },
+ {
+  "family": 472,
+  "lines": [
+   13,
+   14,
+   17,
+   20,
+   23
+  ],
+  "amplitude": [
+   13,
+   20,
+   23
+  ],
+  "conjugate": [
+   14,
+   17
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   9
+  ],
+  "independent": true
+ },
+ {
+  "family": 478,
+  "lines": [
+   9,
+   13,
+   14,
+   20,
+   25,
+   29
+  ],
+  "amplitude": [
+   9,
+   14,
+   25
+  ],
+  "conjugate": [
+   13,
+   20,
+   29
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6
+  ],
+  "independent": true
+ },
+ {
+  "family": 478,
+  "lines": [
+   6,
+   9,
+   13,
+   14,
+   25
+  ],
+  "amplitude": [
+   9,
+   14,
+   25
+  ],
+  "conjugate": [
+   6,
+   13
+  ],
+  "not_in_trees": [],
+  "absent": [
+   20,
+   29
+  ],
+  "independent": true
+ },
+ {
+  "family": 478,
+  "lines": [
+   6,
+   9,
+   14,
+   20,
+   25
+  ],
+  "amplitude": [
+   6,
+   9,
+   20
+  ],
+  "conjugate": [
+   14,
+   25
+  ],
+  "not_in_trees": [],
+  "absent": [
+   13,
+   29
+  ],
+  "independent": true
+ },
+ {
+  "family": 478,
+  "lines": [
+   6,
+   13,
+   14,
+   20,
+   25
+  ],
+  "amplitude": [
+   6,
+   13,
+   20
+  ],
+  "conjugate": [
+   14,
+   25
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   29
+  ],
+  "independent": true
+ },
+ {
+  "family": 478,
+  "lines": [
+   6,
+   9,
+   13,
+   25,
+   29
+  ],
+  "amplitude": [
+   9,
+   25,
+   29
+  ],
+  "conjugate": [
+   6,
+   13
+  ],
+  "not_in_trees": [],
+  "absent": [
+   14,
+   20
+  ],
+  "independent": true
+ },
+ {
+  "family": 484,
+  "lines": [
+   6,
+   9,
+   13,
+   14,
+   22,
+   25
+  ],
+  "amplitude": [
+   6,
+   13,
+   22
+  ],
+  "conjugate": [
+   9,
+   14,
+   25
+  ],
+  "not_in_trees": [],
+  "absent": [
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 484,
+  "lines": [
+   6,
+   9,
+   13,
+   22,
+   27
+  ],
+  "amplitude": [
+   6,
+   9,
+   27
+  ],
+  "conjugate": [
+   13,
+   22
+  ],
+  "not_in_trees": [],
+  "absent": [
+   14,
+   25
+  ],
+  "independent": true
+ },
+ {
+  "family": 484,
+  "lines": [
+   6,
+   13,
+   22,
+   25,
+   27
+  ],
+  "amplitude": [
+   6,
+   13,
+   22
+  ],
+  "conjugate": [
+   25,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   14
+  ],
+  "independent": true
+ },
+ {
+  "family": 484,
+  "lines": [
+   9,
+   13,
+   22,
+   25,
+   27
+  ],
+  "amplitude": [
+   9,
+   25,
+   27
+  ],
+  "conjugate": [
+   13,
+   22
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   14
+  ],
+  "independent": true
+ },
+ {
+  "family": 484,
+  "lines": [
+   9,
+   14,
+   22,
+   25,
+   27
+  ],
+  "amplitude": [
+   9,
+   25,
+   27
+  ],
+  "conjugate": [
+   14,
+   22
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   13
+  ],
+  "independent": true
+ },
+ {
+  "family": 490,
+  "lines": [
+   6,
+   9,
+   13,
+   14,
+   23,
+   24
+  ],
+  "amplitude": [
+   6,
+   13,
+   24
+  ],
+  "conjugate": [
+   9,
+   14,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 490,
+  "lines": [
+   6,
+   9,
+   14,
+   23,
+   27
+  ],
+  "amplitude": [
+   6,
+   9,
+   27
+  ],
+  "conjugate": [
+   14,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   13,
+   24
+  ],
+  "independent": true
+ },
+ {
+  "family": 490,
+  "lines": [
+   6,
+   13,
+   23,
+   24,
+   27
+  ],
+  "amplitude": [
+   6,
+   24,
+   27
+  ],
+  "conjugate": [
+   13,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   14
+  ],
+  "independent": true
+ },
+ {
+  "family": 490,
+  "lines": [
+   6,
+   14,
+   23,
+   24,
+   27
+  ],
+  "amplitude": [
+   6,
+   24,
+   27
+  ],
+  "conjugate": [
+   14,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   13
+  ],
+  "independent": true
+ },
+ {
+  "family": 490,
+  "lines": [
+   9,
+   14,
+   23,
+   24,
+   27
+  ],
+  "amplitude": [
+   9,
+   14,
+   23
+  ],
+  "conjugate": [
+   24,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   13
+  ],
+  "independent": true
+ },
+ {
+  "family": 496,
+  "lines": [
+   6,
+   9,
+   13,
+   14,
+   24,
+   25
+  ],
+  "amplitude": [
+   6,
+   13,
+   24
+  ],
+  "conjugate": [
+   9,
+   14,
+   25
+  ],
+  "not_in_trees": [],
+  "absent": [
+   21
+  ],
+  "independent": true
+ },
+ {
+  "family": 496,
+  "lines": [
+   9,
+   13,
+   21,
+   25
+  ],
+  "amplitude": [
+   9,
+   25
+  ],
+  "conjugate": [
+   13,
+   21
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   14,
+   24
+  ],
+  "independent": true
+ },
+ {
+  "family": 496,
+  "lines": [
+   9,
+   14,
+   21,
+   25
+  ],
+  "amplitude": [
+   9,
+   14,
+   25
+  ],
+  "conjugate": [
+   21
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   13,
+   24
+  ],
+  "independent": true
+ },
+ {
+  "family": 502,
+  "lines": [
+   6,
+   9,
+   13,
+   16,
+   23
+  ],
+  "amplitude": [
+   9,
+   16,
+   23
+  ],
+  "conjugate": [
+   6,
+   13
+  ],
+  "not_in_trees": [],
+  "absent": [
+   20,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 502,
+  "lines": [
+   6,
+   9,
+   16,
+   20,
+   23
+  ],
+  "amplitude": [
+   6,
+   9,
+   20
+  ],
+  "conjugate": [
+   16,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   13,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 502,
+  "lines": [
+   6,
+   13,
+   16,
+   20,
+   23
+  ],
+  "amplitude": [
+   6,
+   13,
+   20
+  ],
+  "conjugate": [
+   16,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 502,
+  "lines": [
+   6,
+   9,
+   13,
+   23,
+   27
+  ],
+  "amplitude": [
+   6,
+   9,
+   27
+  ],
+  "conjugate": [
+   13,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   16,
+   20
+  ],
+  "independent": true
+ },
+ {
+  "family": 502,
+  "lines": [
+   9,
+   13,
+   16,
+   23,
+   27
+  ],
+  "amplitude": [
+   9,
+   16,
+   27
+  ],
+  "conjugate": [
+   13,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   20
+  ],
+  "independent": true
+ },
+ {
+  "family": 502,
+  "lines": [
+   6,
+   9,
+   20,
+   23,
+   27
+  ],
+  "amplitude": [
+   6,
+   9,
+   27
+  ],
+  "conjugate": [
+   20,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   13,
+   16
+  ],
+  "independent": true
+ },
+ {
+  "family": 502,
+  "lines": [
+   6,
+   13,
+   20,
+   23,
+   27
+  ],
+  "amplitude": [
+   13,
+   20,
+   23
+  ],
+  "conjugate": [
+   6,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   16
+  ],
+  "independent": true
+ },
+ {
+  "family": 502,
+  "lines": [
+   9,
+   16,
+   20,
+   23,
+   27
+  ],
+  "amplitude": [
+   9,
+   16,
+   27
+  ],
+  "conjugate": [
+   20,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   13
+  ],
+  "independent": true
+ },
+ {
+  "family": 502,
+  "lines": [
+   13,
+   16,
+   20,
+   23,
+   27
+  ],
+  "amplitude": [
+   13,
+   20,
+   23
+  ],
+  "conjugate": [
+   16,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   9
+  ],
+  "independent": true
+ },
+ {
+  "family": 508,
+  "lines": [
+   6,
+   9,
+   13,
+   16,
+   22
+  ],
+  "amplitude": [
+   6,
+   13,
+   22
+  ],
+  "conjugate": [
+   9,
+   16
+  ],
+  "not_in_trees": [],
+  "absent": [
+   15,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 508,
+  "lines": [
+   6,
+   9,
+   15,
+   16,
+   22
+  ],
+  "amplitude": [
+   6,
+   15,
+   22
+  ],
+  "conjugate": [
+   9,
+   16
+  ],
+  "not_in_trees": [],
+  "absent": [
+   13,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 508,
+  "lines": [
+   6,
+   9,
+   13,
+   22,
+   27
+  ],
+  "amplitude": [
+   6,
+   9,
+   27
+  ],
+  "conjugate": [
+   13,
+   22
+  ],
+  "not_in_trees": [],
+  "absent": [
+   15,
+   16
+  ],
+  "independent": true
+ },
+ {
+  "family": 508,
+  "lines": [
+   6,
+   9,
+   15,
+   22,
+   27
+  ],
+  "amplitude": [
+   6,
+   9,
+   27
+  ],
+  "conjugate": [
+   15,
+   22
+  ],
+  "not_in_trees": [],
+  "absent": [
+   13,
+   16
+  ],
+  "independent": true
+ },
+ {
+  "family": 508,
+  "lines": [
+   6,
+   13,
+   16,
+   22,
+   27
+  ],
+  "amplitude": [
+   6,
+   13,
+   22
+  ],
+  "conjugate": [
+   16,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   15
+  ],
+  "independent": true
+ },
+ {
+  "family": 508,
+  "lines": [
+   9,
+   13,
+   16,
+   22,
+   27
+  ],
+  "amplitude": [
+   9,
+   16,
+   27
+  ],
+  "conjugate": [
+   13,
+   22
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   15
+  ],
+  "independent": true
+ },
+ {
+  "family": 508,
+  "lines": [
+   6,
+   15,
+   16,
+   22,
+   27
+  ],
+  "amplitude": [
+   6,
+   15,
+   22
+  ],
+  "conjugate": [
+   16,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   13
+  ],
+  "independent": true
+ },
+ {
+  "family": 508,
+  "lines": [
+   9,
+   15,
+   16,
+   22,
+   27
+  ],
+  "amplitude": [
+   9,
+   16,
+   27
+  ],
+  "conjugate": [
+   15,
+   22
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   13
+  ],
+  "independent": true
+ },
+ {
+  "family": 514,
+  "lines": [
+   6,
+   9,
+   13,
+   16,
+   23,
+   24
+  ],
+  "amplitude": [
+   6,
+   13,
+   24
+  ],
+  "conjugate": [
+   9,
+   16,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 514,
+  "lines": [
+   6,
+   9,
+   16,
+   23,
+   27
+  ],
+  "amplitude": [
+   6,
+   9,
+   27
+  ],
+  "conjugate": [
+   16,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   13,
+   24
+  ],
+  "independent": true
+ },
+ {
+  "family": 514,
+  "lines": [
+   6,
+   16,
+   23,
+   24,
+   27
+  ],
+  "amplitude": [
+   6,
+   24,
+   27
+  ],
+  "conjugate": [
+   16,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   13
+  ],
+  "independent": true
+ },
+ {
+  "family": 514,
+  "lines": [
+   9,
+   16,
+   23,
+   24,
+   27
+  ],
+  "amplitude": [
+   9,
+   16,
+   23
+  ],
+  "conjugate": [
+   24,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   13
+  ],
+  "independent": true
+ },
+ {
+  "family": 520,
+  "lines": [
+   6,
+   9,
+   13,
+   17,
+   19,
+   29
+  ],
+  "amplitude": [
+   6,
+   9,
+   17
+  ],
+  "conjugate": [
+   13,
+   19,
+   29
+  ],
+  "not_in_trees": [],
+  "absent": [
+   14
+  ],
+  "independent": true
+ },
+ {
+  "family": 520,
+  "lines": [
+   9,
+   13,
+   14,
+   17,
+   19,
+   29
+  ],
+  "amplitude": [
+   9,
+   14,
+   17
+  ],
+  "conjugate": [
+   13,
+   19,
+   29
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6
+  ],
+  "independent": true
+ },
+ {
+  "family": 526,
+  "lines": [
+   6,
+   9,
+   13,
+   21,
+   27
+  ],
+  "amplitude": [
+   6,
+   9,
+   27
+  ],
+  "conjugate": [
+   13,
+   21
+  ],
+  "not_in_trees": [],
+  "absent": [
+   20,
+   25
+  ],
+  "independent": true
+ },
+ {
+  "family": 526,
+  "lines": [
+   6,
+   13,
+   20,
+   25,
+   27
+  ],
+  "amplitude": [
+   6,
+   13,
+   20
+  ],
+  "conjugate": [
+   25,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   21
+  ],
+  "independent": true
+ },
+ {
+  "family": 526,
+  "lines": [
+   9,
+   13,
+   21,
+   25,
+   27
+  ],
+  "amplitude": [
+   9,
+   25,
+   27
+  ],
+  "conjugate": [
+   13,
+   21
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   20
+  ],
+  "independent": true
+ },
+ {
+  "family": 526,
+  "lines": [
+   6,
+   9,
+   13,
+   25
+  ],
+  "amplitude": [
+   6,
+   13
+  ],
+  "conjugate": [
+   9,
+   25
+  ],
+  "not_in_trees": [],
+  "absent": [
+   20,
+   21,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 526,
+  "lines": [
+   6,
+   9,
+   20,
+   25
+  ],
+  "amplitude": [
+   6,
+   9,
+   20
+  ],
+  "conjugate": [
+   25
+  ],
+  "not_in_trees": [],
+  "absent": [
+   13,
+   21,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 526,
+  "lines": [
+   6,
+   9,
+   20,
+   27
+  ],
+  "amplitude": [
+   6,
+   9,
+   20
+  ],
+  "conjugate": [
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   13,
+   21,
+   25
+  ],
+  "independent": true
+ },
+ {
+  "family": 526,
+  "lines": [
+   9,
+   20,
+   25,
+   27
+  ],
+  "amplitude": [
+   9,
+   25,
+   27
+  ],
+  "conjugate": [
+   20
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   13,
+   21
+  ],
+  "independent": true
+ },
+ {
+  "family": 532,
+  "lines": [
+   6,
+   9,
+   13,
+   27,
+   29
+  ],
+  "amplitude": [
+   6,
+   9,
+   27
+  ],
+  "conjugate": [
+   13,
+   29
+  ],
+  "not_in_trees": [],
+  "absent": [
+   16,
+   20
+  ],
+  "independent": true
+ },
+ {
+  "family": 532,
+  "lines": [
+   9,
+   13,
+   16,
+   27,
+   29
+  ],
+  "amplitude": [
+   9,
+   16,
+   27
+  ],
+  "conjugate": [
+   13,
+   29
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   20
+  ],
+  "independent": true
+ },
+ {
+  "family": 532,
+  "lines": [
+   6,
+   13,
+   20,
+   27,
+   29
+  ],
+  "amplitude": [
+   13,
+   20,
+   29
+  ],
+  "conjugate": [
+   6,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   16
+  ],
+  "independent": true
+ },
+ {
+  "family": 532,
+  "lines": [
+   9,
+   16,
+   20,
+   27,
+   29
+  ],
+  "amplitude": [
+   9,
+   16,
+   27
+  ],
+  "conjugate": [
+   20,
+   29
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   13
+  ],
+  "independent": true
+ },
+ {
+  "family": 532,
+  "lines": [
+   13,
+   16,
+   20,
+   27,
+   29
+  ],
+  "amplitude": [
+   13,
+   20,
+   29
+  ],
+  "conjugate": [
+   16,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   9
+  ],
+  "independent": true
+ },
+ {
+  "family": 532,
+  "lines": [
+   6,
+   9,
+   20,
+   27
+  ],
+  "amplitude": [
+   6,
+   9,
+   20
+  ],
+  "conjugate": [
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   13,
+   16,
+   29
+  ],
+  "independent": true
+ },
+ {
+  "family": 538,
+  "lines": [
+   6,
+   9,
+   13,
+   22,
+   25,
+   29
+  ],
+  "amplitude": [
+   6,
+   13,
+   22
+  ],
+  "conjugate": [
+   9,
+   25,
+   29
+  ],
+  "not_in_trees": [],
+  "absent": [
+   17
+  ],
+  "independent": true
+ },
+ {
+  "family": 538,
+  "lines": [
+   6,
+   9,
+   17,
+   22,
+   25,
+   29
+  ],
+  "amplitude": [
+   6,
+   17,
+   22
+  ],
+  "conjugate": [
+   9,
+   25,
+   29
+  ],
+  "not_in_trees": [],
+  "absent": [
+   13
+  ],
+  "independent": true
+ },
+ {
+  "family": 544,
+  "lines": [
+   6,
+   9,
+   13,
+   24,
+   25
+  ],
+  "amplitude": [
+   6,
+   13,
+   24
+  ],
+  "conjugate": [
+   9,
+   25
+  ],
+  "not_in_trees": [],
+  "absent": [
+   27,
+   29
+  ],
+  "independent": true
+ },
+ {
+  "family": 544,
+  "lines": [
+   6,
+   9,
+   13,
+   24,
+   27
+  ],
+  "amplitude": [
+   6,
+   9,
+   27
+  ],
+  "conjugate": [
+   13,
+   24
+  ],
+  "not_in_trees": [],
+  "absent": [
+   25,
+   29
+  ],
+  "independent": true
+ },
+ {
+  "family": 544,
+  "lines": [
+   6,
+   9,
+   24,
+   25,
+   27
+  ],
+  "amplitude": [
+   6,
+   24,
+   27
+  ],
+  "conjugate": [
+   9,
+   25
+  ],
+  "not_in_trees": [],
+  "absent": [
+   13,
+   29
+  ],
+  "independent": true
+ },
+ {
+  "family": 544,
+  "lines": [
+   6,
+   13,
+   24,
+   25,
+   27
+  ],
+  "amplitude": [
+   6,
+   13,
+   24
+  ],
+  "conjugate": [
+   25,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   29
+  ],
+  "independent": true
+ },
+ {
+  "family": 544,
+  "lines": [
+   9,
+   13,
+   24,
+   25,
+   27
+  ],
+  "amplitude": [
+   9,
+   25,
+   27
+  ],
+  "conjugate": [
+   13,
+   24
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   29
+  ],
+  "independent": true
+ },
+ {
+  "family": 544,
+  "lines": [
+   6,
+   9,
+   13,
+   25,
+   29
+  ],
+  "amplitude": [
+   9,
+   25,
+   29
+  ],
+  "conjugate": [
+   6,
+   13
+  ],
+  "not_in_trees": [],
+  "absent": [
+   24,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 544,
+  "lines": [
+   6,
+   9,
+   24,
+   25,
+   29
+  ],
+  "amplitude": [
+   9,
+   25,
+   29
+  ],
+  "conjugate": [
+   6,
+   24
+  ],
+  "not_in_trees": [],
+  "absent": [
+   13,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 544,
+  "lines": [
+   6,
+   9,
+   25,
+   27,
+   29
+  ],
+  "amplitude": [
+   6,
+   9,
+   27
+  ],
+  "conjugate": [
+   25,
+   29
+  ],
+  "not_in_trees": [],
+  "absent": [
+   13,
+   24
+  ],
+  "independent": true
+ },
+ {
+  "family": 544,
+  "lines": [
+   9,
+   13,
+   25,
+   27,
+   29
+  ],
+  "amplitude": [
+   9,
+   25,
+   27
+  ],
+  "conjugate": [
+   13,
+   29
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   24
+  ],
+  "independent": true
+ },
+ {
+  "family": 544,
+  "lines": [
+   6,
+   24,
+   25,
+   27,
+   29
+  ],
+  "amplitude": [
+   6,
+   24,
+   27
+  ],
+  "conjugate": [
+   25,
+   29
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   13
+  ],
+  "independent": true
+ },
+ {
+  "family": 544,
+  "lines": [
+   9,
+   24,
+   25,
+   27,
+   29
+  ],
+  "amplitude": [
+   9,
+   25,
+   29
+  ],
+  "conjugate": [
+   24,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   13
+  ],
+  "independent": true
+ },
+ {
+  "family": 550,
+  "lines": [
+   6,
+   9,
+   14,
+   15,
+   22
+  ],
+  "amplitude": [
+   6,
+   15,
+   22
+  ],
+  "conjugate": [
+   9,
+   14
+  ],
+  "not_in_trees": [],
+  "absent": [
+   17,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 550,
+  "lines": [
+   6,
+   9,
+   15,
+   17,
+   22
+  ],
+  "amplitude": [
+   6,
+   9,
+   17
+  ],
+  "conjugate": [
+   15,
+   22
+  ],
+  "not_in_trees": [],
+  "absent": [
+   14,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 550,
+  "lines": [
+   9,
+   14,
+   15,
+   17,
+   22
+  ],
+  "amplitude": [
+   9,
+   14,
+   17
+  ],
+  "conjugate": [
+   15,
+   22
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 550,
+  "lines": [
+   6,
+   9,
+   14,
+   22,
+   27
+  ],
+  "amplitude": [
+   6,
+   9,
+   27
+  ],
+  "conjugate": [
+   14,
+   22
+  ],
+  "not_in_trees": [],
+  "absent": [
+   15,
+   17
+  ],
+  "independent": true
+ },
+ {
+  "family": 550,
+  "lines": [
+   6,
+   14,
+   15,
+   22,
+   27
+  ],
+  "amplitude": [
+   6,
+   15,
+   27
+  ],
+  "conjugate": [
+   14,
+   22
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   17
+  ],
+  "independent": true
+ },
+ {
+  "family": 550,
+  "lines": [
+   6,
+   9,
+   17,
+   22,
+   27
+  ],
+  "amplitude": [
+   6,
+   9,
+   27
+  ],
+  "conjugate": [
+   17,
+   22
+  ],
+  "not_in_trees": [],
+  "absent": [
+   14,
+   15
+  ],
+  "independent": true
+ },
+ {
+  "family": 550,
+  "lines": [
+   9,
+   14,
+   17,
+   22,
+   27
+  ],
+  "amplitude": [
+   14,
+   17,
+   22
+  ],
+  "conjugate": [
+   9,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   15
+  ],
+  "independent": true
+ },
+ {
+  "family": 550,
+  "lines": [
+   6,
+   15,
+   17,
+   22,
+   27
+  ],
+  "amplitude": [
+   6,
+   15,
+   27
+  ],
+  "conjugate": [
+   17,
+   22
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   14
+  ],
+  "independent": true
+ },
+ {
+  "family": 550,
+  "lines": [
+   14,
+   15,
+   17,
+   22,
+   27
+  ],
+  "amplitude": [
+   14,
+   17,
+   22
+  ],
+  "conjugate": [
+   15,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   9
+  ],
+  "independent": true
+ },
+ {
+  "family": 556,
+  "lines": [
+   6,
+   9,
+   14,
+   15,
+   22,
+   25
+  ],
+  "amplitude": [
+   6,
+   15,
+   22
+  ],
+  "conjugate": [
+   9,
+   14,
+   25
+  ],
+  "not_in_trees": [],
+  "absent": [
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 556,
+  "lines": [
+   6,
+   9,
+   15,
+   22,
+   27
+  ],
+  "amplitude": [
+   6,
+   9,
+   27
+  ],
+  "conjugate": [
+   15,
+   22
+  ],
+  "not_in_trees": [],
+  "absent": [
+   14,
+   25
+  ],
+  "independent": true
+ },
+ {
+  "family": 556,
+  "lines": [
+   6,
+   15,
+   22,
+   25,
+   27
+  ],
+  "amplitude": [
+   6,
+   15,
+   22
+  ],
+  "conjugate": [
+   25,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   14
+  ],
+  "independent": true
+ },
+ {
+  "family": 556,
+  "lines": [
+   9,
+   15,
+   22,
+   25,
+   27
+  ],
+  "amplitude": [
+   9,
+   25,
+   27
+  ],
+  "conjugate": [
+   15,
+   22
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   14
+  ],
+  "independent": true
+ },
+ {
+  "family": 562,
+  "lines": [
+   6,
+   9,
+   14,
+   15,
+   23
+  ],
+  "amplitude": [
+   9,
+   14,
+   23
+  ],
+  "conjugate": [
+   6,
+   15
+  ],
+  "not_in_trees": [],
+  "absent": [
+   20,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 562,
+  "lines": [
+   6,
+   9,
+   15,
+   20,
+   23
+  ],
+  "amplitude": [
+   9,
+   20,
+   23
+  ],
+  "conjugate": [
+   6,
+   15
+  ],
+  "not_in_trees": [],
+  "absent": [
+   14,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 562,
+  "lines": [
+   6,
+   9,
+   14,
+   23,
+   27
+  ],
+  "amplitude": [
+   6,
+   9,
+   27
+  ],
+  "conjugate": [
+   14,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   15,
+   20
+  ],
+  "independent": true
+ },
+ {
+  "family": 562,
+  "lines": [
+   6,
+   14,
+   15,
+   23,
+   27
+  ],
+  "amplitude": [
+   6,
+   15,
+   27
+  ],
+  "conjugate": [
+   14,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   20
+  ],
+  "independent": true
+ },
+ {
+  "family": 562,
+  "lines": [
+   9,
+   14,
+   15,
+   23,
+   27
+  ],
+  "amplitude": [
+   9,
+   14,
+   23
+  ],
+  "conjugate": [
+   15,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   20
+  ],
+  "independent": true
+ },
+ {
+  "family": 562,
+  "lines": [
+   6,
+   9,
+   20,
+   23,
+   27
+  ],
+  "amplitude": [
+   6,
+   9,
+   27
+  ],
+  "conjugate": [
+   20,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   14,
+   15
+  ],
+  "independent": true
+ },
+ {
+  "family": 562,
+  "lines": [
+   6,
+   15,
+   20,
+   23,
+   27
+  ],
+  "amplitude": [
+   6,
+   15,
+   27
+  ],
+  "conjugate": [
+   20,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   14
+  ],
+  "independent": true
+ },
+ {
+  "family": 562,
+  "lines": [
+   9,
+   15,
+   20,
+   23,
+   27
+  ],
+  "amplitude": [
+   9,
+   20,
+   23
+  ],
+  "conjugate": [
+   15,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   14
+  ],
+  "independent": true
+ },
+ {
+  "family": 568,
+  "lines": [
+   9,
+   14,
+   17,
+   24,
+   27
+  ],
+  "amplitude": [
+   9,
+   14,
+   17
+  ],
+  "conjugate": [
+   24,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   28
+  ],
+  "independent": true
+ },
+ {
+  "family": 568,
+  "lines": [
+   6,
+   9,
+   14,
+   24,
+   28
+  ],
+  "amplitude": [
+   6,
+   24,
+   28
+  ],
+  "conjugate": [
+   9,
+   14
+  ],
+  "not_in_trees": [],
+  "absent": [
+   17,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 568,
+  "lines": [
+   6,
+   14,
+   17,
+   24,
+   28
+  ],
+  "amplitude": [
+   6,
+   24,
+   28
+  ],
+  "conjugate": [
+   14,
+   17
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 568,
+  "lines": [
+   6,
+   9,
+   14,
+   27,
+   28
+  ],
+  "amplitude": [
+   6,
+   9,
+   27
+  ],
+  "conjugate": [
+   14,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   17,
+   24
+  ],
+  "independent": true
+ },
+ {
+  "family": 568,
+  "lines": [
+   9,
+   14,
+   17,
+   27,
+   28
+  ],
+  "amplitude": [
+   14,
+   17,
+   28
+  ],
+  "conjugate": [
+   9,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   24
+  ],
+  "independent": true
+ },
+ {
+  "family": 568,
+  "lines": [
+   6,
+   9,
+   24,
+   27,
+   28
+  ],
+  "amplitude": [
+   6,
+   9,
+   27
+  ],
+  "conjugate": [
+   24,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   14,
+   17
+  ],
+  "independent": true
+ },
+ {
+  "family": 568,
+  "lines": [
+   6,
+   14,
+   24,
+   27,
+   28
+  ],
+  "amplitude": [
+   6,
+   24,
+   27
+  ],
+  "conjugate": [
+   14,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   17
+  ],
+  "independent": true
+ },
+ {
+  "family": 568,
+  "lines": [
+   6,
+   17,
+   24,
+   27,
+   28
+  ],
+  "amplitude": [
+   6,
+   17,
+   28
+  ],
+  "conjugate": [
+   24,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   14
+  ],
+  "independent": true
+ },
+ {
+  "family": 568,
+  "lines": [
+   14,
+   17,
+   24,
+   27,
+   28
+  ],
+  "amplitude": [
+   14,
+   17,
+   28
+  ],
+  "conjugate": [
+   24,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   9
+  ],
+  "independent": true
+ },
+ {
+  "family": 568,
+  "lines": [
+   6,
+   9,
+   17,
+   24
+  ],
+  "amplitude": [
+   6,
+   9,
+   17
+  ],
+  "conjugate": [
+   24
+  ],
+  "not_in_trees": [],
+  "absent": [
+   14,
+   27,
+   28
+  ],
+  "independent": true
+ },
+ {
+  "family": 568,
+  "lines": [
+   6,
+   9,
+   17,
+   27
+  ],
+  "amplitude": [
+   6,
+   9,
+   17
+  ],
+  "conjugate": [
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   14,
+   24,
+   28
+  ],
+  "independent": true
+ },
+ {
+  "family": 574,
+  "lines": [
+   6,
+   9,
+   14,
+   23,
+   24,
+   28
+  ],
+  "amplitude": [
+   6,
+   24,
+   28
+  ],
+  "conjugate": [
+   9,
+   14,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   20
+  ],
+  "independent": true
+ },
+ {
+  "family": 574,
+  "lines": [
+   6,
+   9,
+   20,
+   23,
+   24,
+   28
+  ],
+  "amplitude": [
+   6,
+   24,
+   28
+  ],
+  "conjugate": [
+   9,
+   20,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   14
+  ],
+  "independent": true
+ },
+ {
+  "family": 580,
+  "lines": [
+   6,
+   9,
+   14,
+   24,
+   25
+  ],
+  "amplitude": [
+   9,
+   14,
+   25
+  ],
+  "conjugate": [
+   6,
+   24
+  ],
+  "not_in_trees": [],
+  "absent": [
+   27,
+   28
+  ],
+  "independent": true
+ },
+ {
+  "family": 580,
+  "lines": [
+   6,
+   9,
+   14,
+   25,
+   27
+  ],
+  "amplitude": [
+   6,
+   9,
+   27
+  ],
+  "conjugate": [
+   14,
+   25
+  ],
+  "not_in_trees": [],
+  "absent": [
+   24,
+   28
+  ],
+  "independent": true
+ },
+ {
+  "family": 580,
+  "lines": [
+   6,
+   14,
+   24,
+   25,
+   27
+  ],
+  "amplitude": [
+   6,
+   24,
+   27
+  ],
+  "conjugate": [
+   14,
+   25
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   28
+  ],
+  "independent": true
+ },
+ {
+  "family": 580,
+  "lines": [
+   9,
+   14,
+   24,
+   25,
+   27
+  ],
+  "amplitude": [
+   9,
+   14,
+   25
+  ],
+  "conjugate": [
+   24,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   28
+  ],
+  "independent": true
+ },
+ {
+  "family": 580,
+  "lines": [
+   6,
+   9,
+   14,
+   24,
+   28
+  ],
+  "amplitude": [
+   6,
+   24,
+   28
+  ],
+  "conjugate": [
+   9,
+   14
+  ],
+  "not_in_trees": [],
+  "absent": [
+   25,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 580,
+  "lines": [
+   6,
+   9,
+   24,
+   25,
+   28
+  ],
+  "amplitude": [
+   6,
+   24,
+   28
+  ],
+  "conjugate": [
+   9,
+   25
+  ],
+  "not_in_trees": [],
+  "absent": [
+   14,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 580,
+  "lines": [
+   6,
+   9,
+   24,
+   27,
+   28
+  ],
+  "amplitude": [
+   6,
+   9,
+   27
+  ],
+  "conjugate": [
+   24,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   14,
+   25
+  ],
+  "independent": true
+ },
+ {
+  "family": 580,
+  "lines": [
+   6,
+   24,
+   25,
+   27,
+   28
+  ],
+  "amplitude": [
+   6,
+   24,
+   28
+  ],
+  "conjugate": [
+   25,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   14
+  ],
+  "independent": true
+ },
+ {
+  "family": 580,
+  "lines": [
+   9,
+   24,
+   25,
+   27,
+   28
+  ],
+  "amplitude": [
+   9,
+   25,
+   27
+  ],
+  "conjugate": [
+   24,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   14
+  ],
+  "independent": true
+ },
+ {
+  "family": 586,
+  "lines": [
+   6,
+   9,
+   15,
+   16,
+   23
+  ],
+  "amplitude": [
+   9,
+   16,
+   23
+  ],
+  "conjugate": [
+   6,
+   15
+  ],
+  "not_in_trees": [],
+  "absent": [
+   13,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 586,
+  "lines": [
+   6,
+   9,
+   16,
+   23,
+   27
+  ],
+  "amplitude": [
+   6,
+   9,
+   27
+  ],
+  "conjugate": [
+   16,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   13,
+   15
+  ],
+  "independent": true
+ },
+ {
+  "family": 586,
+  "lines": [
+   6,
+   15,
+   16,
+   23,
+   27
+  ],
+  "amplitude": [
+   6,
+   15,
+   27
+  ],
+  "conjugate": [
+   16,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   13
+  ],
+  "independent": true
+ },
+ {
+  "family": 586,
+  "lines": [
+   9,
+   15,
+   16,
+   23,
+   27
+  ],
+  "amplitude": [
+   9,
+   16,
+   23
+  ],
+  "conjugate": [
+   15,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   13
+  ],
+  "independent": true
+ },
+ {
+  "family": 592,
+  "lines": [
+   6,
+   9,
+   15,
+   25,
+   29
+  ],
+  "amplitude": [
+   9,
+   25,
+   29
+  ],
+  "conjugate": [
+   6,
+   15
+  ],
+  "not_in_trees": [],
+  "absent": [
+   10,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 592,
+  "lines": [
+   6,
+   9,
+   25,
+   27,
+   29
+  ],
+  "amplitude": [
+   6,
+   9,
+   27
+  ],
+  "conjugate": [
+   25,
+   29
+  ],
+  "not_in_trees": [],
+  "absent": [
+   10,
+   15
+  ],
+  "independent": true
+ },
+ {
+  "family": 592,
+  "lines": [
+   6,
+   15,
+   25,
+   27,
+   29
+  ],
+  "amplitude": [
+   6,
+   15,
+   27
+  ],
+  "conjugate": [
+   25,
+   29
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   10
+  ],
+  "independent": true
+ },
+ {
+  "family": 592,
+  "lines": [
+   9,
+   15,
+   25,
+   27,
+   29
+  ],
+  "amplitude": [
+   9,
+   25,
+   29
+  ],
+  "conjugate": [
+   15,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   10
+  ],
+  "independent": true
+ },
+ {
+  "family": 598,
+  "lines": [
+   6,
+   12,
+   16,
+   17,
+   27,
+   28
+  ],
+  "amplitude": [
+   6,
+   17,
+   28
+  ],
+  "conjugate": [
+   12,
+   16,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9
+  ],
+  "independent": true
+ },
+ {
+  "family": 598,
+  "lines": [
+   9,
+   16,
+   17,
+   27,
+   28
+  ],
+  "amplitude": [
+   9,
+   16,
+   27
+  ],
+  "conjugate": [
+   17,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   12
+  ],
+  "independent": true
+ },
+ {
+  "family": 598,
+  "lines": [
+   6,
+   9,
+   16,
+   17
+  ],
+  "amplitude": [
+   6,
+   9,
+   17
+  ],
+  "conjugate": [
+   16
+  ],
+  "not_in_trees": [],
+  "absent": [
+   12,
+   27,
+   28
+  ],
+  "independent": true
+ },
+ {
+  "family": 598,
+  "lines": [
+   6,
+   9,
+   17,
+   27
+  ],
+  "amplitude": [
+   6,
+   9,
+   17
+  ],
+  "conjugate": [
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   12,
+   16,
+   28
+  ],
+  "independent": true
+ },
+ {
+  "family": 598,
+  "lines": [
+   6,
+   9,
+   16,
+   28
+  ],
+  "amplitude": [
+   6,
+   28
+  ],
+  "conjugate": [
+   9,
+   16
+  ],
+  "not_in_trees": [],
+  "absent": [
+   12,
+   17,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 598,
+  "lines": [
+   6,
+   9,
+   27,
+   28
+  ],
+  "amplitude": [
+   6,
+   9,
+   27
+  ],
+  "conjugate": [
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   12,
+   16,
+   17
+  ],
+  "independent": true
+ },
+ {
+  "family": 604,
+  "lines": [
+   6,
+   9,
+   16,
+   24,
+   28
+  ],
+  "amplitude": [
+   6,
+   24,
+   28
+  ],
+  "conjugate": [
+   9,
+   16
+  ],
+  "not_in_trees": [],
+  "absent": [
+   10,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 604,
+  "lines": [
+   6,
+   9,
+   24,
+   27,
+   28
+  ],
+  "amplitude": [
+   6,
+   9,
+   27
+  ],
+  "conjugate": [
+   24,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   10,
+   16
+  ],
+  "independent": true
+ },
+ {
+  "family": 604,
+  "lines": [
+   6,
+   16,
+   24,
+   27,
+   28
+  ],
+  "amplitude": [
+   6,
+   24,
+   28
+  ],
+  "conjugate": [
+   16,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   10
+  ],
+  "independent": true
+ },
+ {
+  "family": 604,
+  "lines": [
+   9,
+   16,
+   24,
+   27,
+   28
+  ],
+  "amplitude": [
+   9,
+   16,
+   27
+  ],
+  "conjugate": [
+   24,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   10
+  ],
+  "independent": true
+ },
+ {
+  "family": 610,
+  "lines": [
+   6,
+   9,
+   17,
+   22,
+   25
+  ],
+  "amplitude": [
+   6,
+   17,
+   22
+  ],
+  "conjugate": [
+   9,
+   25
+  ],
+  "not_in_trees": [],
+  "absent": [
+   7,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 610,
+  "lines": [
+   6,
+   9,
+   17,
+   22,
+   27
+  ],
+  "amplitude": [
+   6,
+   9,
+   27
+  ],
+  "conjugate": [
+   17,
+   22
+  ],
+  "not_in_trees": [],
+  "absent": [
+   7,
+   25
+  ],
+  "independent": true
+ },
+ {
+  "family": 610,
+  "lines": [
+   6,
+   9,
+   17,
+   25,
+   27
+  ],
+  "amplitude": [
+   6,
+   9,
+   17
+  ],
+  "conjugate": [
+   25,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   7,
+   22
+  ],
+  "independent": true
+ },
+ {
+  "family": 610,
+  "lines": [
+   6,
+   17,
+   22,
+   25,
+   27
+  ],
+  "amplitude": [
+   6,
+   17,
+   22
+  ],
+  "conjugate": [
+   25,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   7,
+   9
+  ],
+  "independent": true
+ },
+ {
+  "family": 610,
+  "lines": [
+   9,
+   17,
+   22,
+   25,
+   27
+  ],
+  "amplitude": [
+   9,
+   25,
+   27
+  ],
+  "conjugate": [
+   17,
+   22
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   7
+  ],
+  "independent": true
+ },
+ {
+  "family": 616,
+  "lines": [
+   6,
+   17,
+   25,
+   27,
+   28
+  ],
+  "amplitude": [
+   6,
+   17,
+   28
+  ],
+  "conjugate": [
+   25,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   7,
+   9
+  ],
+  "independent": true
+ },
+ {
+  "family": 616,
+  "lines": [
+   6,
+   9,
+   17,
+   25
+  ],
+  "amplitude": [
+   6,
+   9,
+   17
+  ],
+  "conjugate": [
+   25
+  ],
+  "not_in_trees": [],
+  "absent": [
+   7,
+   27,
+   28
+  ],
+  "independent": true
+ },
+ {
+  "family": 616,
+  "lines": [
+   6,
+   9,
+   17,
+   27
+  ],
+  "amplitude": [
+   6,
+   9,
+   17
+  ],
+  "conjugate": [
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   7,
+   25,
+   28
+  ],
+  "independent": true
+ },
+ {
+  "family": 616,
+  "lines": [
+   9,
+   17,
+   25,
+   27
+  ],
+  "amplitude": [
+   9,
+   25,
+   27
+  ],
+  "conjugate": [
+   17
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   7,
+   28
+  ],
+  "independent": true
+ },
+ {
+  "family": 616,
+  "lines": [
+   6,
+   9,
+   25,
+   28
+  ],
+  "amplitude": [
+   6,
+   28
+  ],
+  "conjugate": [
+   9,
+   25
+  ],
+  "not_in_trees": [],
+  "absent": [
+   7,
+   17,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 616,
+  "lines": [
+   6,
+   9,
+   27,
+   28
+  ],
+  "amplitude": [
+   6,
+   9,
+   27
+  ],
+  "conjugate": [
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   7,
+   17,
+   25
+  ],
+  "independent": true
+ },
+ {
+  "family": 616,
+  "lines": [
+   9,
+   25,
+   27,
+   28
+  ],
+  "amplitude": [
+   9,
+   25,
+   27
+  ],
+  "conjugate": [
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   7,
+   17
+  ],
+  "independent": true
+ },
+ {
+  "family": 622,
+  "lines": [
+   6,
+   9,
+   20,
+   23,
+   24
+  ],
+  "amplitude": [
+   9,
+   20,
+   23
+  ],
+  "conjugate": [
+   6,
+   24
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 622,
+  "lines": [
+   6,
+   9,
+   20,
+   23,
+   27
+  ],
+  "amplitude": [
+   6,
+   9,
+   27
+  ],
+  "conjugate": [
+   20,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   24
+  ],
+  "independent": true
+ },
+ {
+  "family": 622,
+  "lines": [
+   6,
+   9,
+   20,
+   24,
+   27
+  ],
+  "amplitude": [
+   6,
+   9,
+   20
+  ],
+  "conjugate": [
+   24,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   23
+  ],
+  "independent": true
+ },
+ {
+  "family": 622,
+  "lines": [
+   6,
+   20,
+   23,
+   24,
+   27
+  ],
+  "amplitude": [
+   6,
+   24,
+   27
+  ],
+  "conjugate": [
+   20,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   9
+  ],
+  "independent": true
+ },
+ {
+  "family": 622,
+  "lines": [
+   9,
+   20,
+   23,
+   24,
+   27
+  ],
+  "amplitude": [
+   9,
+   20,
+   23
+  ],
+  "conjugate": [
+   24,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   8
+  ],
+  "independent": true
+ },
+ {
+  "family": 628,
+  "lines": [
+   6,
+   20,
+   24,
+   27,
+   29
+  ],
+  "amplitude": [
+   6,
+   24,
+   27
+  ],
+  "conjugate": [
+   20,
+   29
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   9
+  ],
+  "independent": true
+ },
+ {
+  "family": 628,
+  "lines": [
+   9,
+   20,
+   24,
+   27,
+   29
+  ],
+  "amplitude": [
+   9,
+   20,
+   29
+  ],
+  "conjugate": [
+   24,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   8
+  ],
+  "independent": true
+ },
+ {
+  "family": 628,
+  "lines": [
+   6,
+   9,
+   20,
+   24
+  ],
+  "amplitude": [
+   6,
+   9,
+   20
+  ],
+  "conjugate": [
+   24
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   27,
+   29
+  ],
+  "independent": true
+ },
+ {
+  "family": 628,
+  "lines": [
+   6,
+   9,
+   20,
+   27
+  ],
+  "amplitude": [
+   6,
+   9,
+   20
+  ],
+  "conjugate": [
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   24,
+   29
+  ],
+  "independent": true
+ },
+ {
+  "family": 628,
+  "lines": [
+   6,
+   9,
+   20,
+   29
+  ],
+  "amplitude": [
+   6,
+   9,
+   20
+  ],
+  "conjugate": [
+   29
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   24,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 628,
+  "lines": [
+   6,
+   9,
+   24,
+   29
+  ],
+  "amplitude": [
+   6,
+   24
+  ],
+  "conjugate": [
+   9,
+   29
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   20,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 628,
+  "lines": [
+   6,
+   9,
+   27,
+   29
+  ],
+  "amplitude": [
+   6,
+   9,
+   27
+  ],
+  "conjugate": [
+   29
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   20,
+   24
+  ],
+  "independent": true
+ },
+ {
+  "family": 634,
+  "lines": [
+   6,
+   9,
+   24,
+   25,
+   28,
+   29
+  ],
+  "amplitude": [
+   6,
+   24,
+   28
+  ],
+  "conjugate": [
+   9,
+   25,
+   29
+  ],
+  "not_in_trees": [],
+  "absent": [
+   20
+  ],
+  "independent": true
+ },
+ {
+  "family": 634,
+  "lines": [
+   6,
+   9,
+   20,
+   24,
+   28
+  ],
+  "amplitude": [
+   6,
+   9,
+   20
+  ],
+  "conjugate": [
+   24,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   25,
+   29
+  ],
+  "independent": true
+ },
+ {
+  "family": 634,
+  "lines": [
+   9,
+   20,
+   24,
+   28,
+   29
+  ],
+  "amplitude": [
+   9,
+   20,
+   29
+  ],
+  "conjugate": [
+   24,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   25
+  ],
+  "independent": true
+ },
+ {
+  "family": 640,
+  "lines": [
+   6,
+   12,
+   13,
+   20,
+   27
+  ],
+  "amplitude": [
+   6,
+   13,
+   20
+  ],
+  "conjugate": [
+   12,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   15,
+   21
+  ],
+  "independent": true
+ },
+ {
+  "family": 640,
+  "lines": [
+   6,
+   13,
+   15,
+   20,
+   27
+  ],
+  "amplitude": [
+   6,
+   13,
+   20
+  ],
+  "conjugate": [
+   15,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   12,
+   21
+  ],
+  "independent": true
+ },
+ {
+  "family": 640,
+  "lines": [
+   12,
+   13,
+   15,
+   20,
+   27
+  ],
+  "amplitude": [
+   12,
+   15,
+   27
+  ],
+  "conjugate": [
+   13,
+   20
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   21
+  ],
+  "independent": true
+ },
+ {
+  "family": 640,
+  "lines": [
+   6,
+   12,
+   15,
+   21,
+   27
+  ],
+  "amplitude": [
+   6,
+   15,
+   27
+  ],
+  "conjugate": [
+   12,
+   21
+  ],
+  "not_in_trees": [],
+  "absent": [
+   13,
+   20
+  ],
+  "independent": true
+ },
+ {
+  "family": 640,
+  "lines": [
+   6,
+   13,
+   15,
+   21,
+   27
+  ],
+  "amplitude": [
+   6,
+   15,
+   27
+  ],
+  "conjugate": [
+   13,
+   21
+  ],
+  "not_in_trees": [],
+  "absent": [
+   12,
+   20
+  ],
+  "independent": true
+ },
+ {
+  "family": 646,
+  "lines": [
+   6,
+   12,
+   13,
+   15,
+   22,
+   24
+  ],
+  "amplitude": [
+   6,
+   13,
+   24
+  ],
+  "conjugate": [
+   12,
+   15,
+   22
+  ],
+  "not_in_trees": [],
+  "absent": [
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 646,
+  "lines": [
+   6,
+   12,
+   13,
+   15,
+   22,
+   27
+  ],
+  "amplitude": [
+   6,
+   13,
+   22
+  ],
+  "conjugate": [
+   12,
+   15,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   24
+  ],
+  "independent": true
+ },
+ {
+  "family": 646,
+  "lines": [
+   6,
+   12,
+   13,
+   15,
+   24,
+   27
+  ],
+  "amplitude": [
+   6,
+   13,
+   24
+  ],
+  "conjugate": [
+   12,
+   15,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   22
+  ],
+  "independent": true
+ },
+ {
+  "family": 646,
+  "lines": [
+   6,
+   12,
+   15,
+   22,
+   24,
+   27
+  ],
+  "amplitude": [
+   6,
+   24,
+   27
+  ],
+  "conjugate": [
+   12,
+   15,
+   22
+  ],
+  "not_in_trees": [],
+  "absent": [
+   13
+  ],
+  "independent": true
+ },
+ {
+  "family": 652,
+  "lines": [
+   6,
+   12,
+   13,
+   16,
+   20,
+   23
+  ],
+  "amplitude": [
+   6,
+   13,
+   20
+  ],
+  "conjugate": [
+   12,
+   16,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 652,
+  "lines": [
+   6,
+   12,
+   13,
+   16,
+   20,
+   27
+  ],
+  "amplitude": [
+   6,
+   13,
+   20
+  ],
+  "conjugate": [
+   12,
+   16,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   23
+  ],
+  "independent": true
+ },
+ {
+  "family": 652,
+  "lines": [
+   12,
+   13,
+   16,
+   23,
+   27
+  ],
+  "amplitude": [
+   12,
+   16,
+   27
+  ],
+  "conjugate": [
+   13,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   20
+  ],
+  "independent": true
+ },
+ {
+  "family": 652,
+  "lines": [
+   12,
+   13,
+   20,
+   23,
+   27
+  ],
+  "amplitude": [
+   13,
+   20,
+   23
+  ],
+  "conjugate": [
+   12,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   16
+  ],
+  "independent": true
+ },
+ {
+  "family": 658,
+  "lines": [
+   6,
+   12,
+   13,
+   16,
+   23,
+   24
+  ],
+  "amplitude": [
+   6,
+   13,
+   24
+  ],
+  "conjugate": [
+   12,
+   16,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   28
+  ],
+  "independent": true
+ },
+ {
+  "family": 658,
+  "lines": [
+   6,
+   12,
+   16,
+   23,
+   24,
+   28
+  ],
+  "amplitude": [
+   6,
+   24,
+   28
+  ],
+  "conjugate": [
+   12,
+   16,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   13
+  ],
+  "independent": true
+ },
+ {
+  "family": 664,
+  "lines": [
+   6,
+   12,
+   17,
+   27,
+   28
+  ],
+  "amplitude": [
+   6,
+   17,
+   28
+  ],
+  "conjugate": [
+   12,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   15,
+   26
+  ],
+  "independent": true
+ },
+ {
+  "family": 664,
+  "lines": [
+   6,
+   15,
+   17,
+   27,
+   28
+  ],
+  "amplitude": [
+   6,
+   15,
+   27
+  ],
+  "conjugate": [
+   17,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   12,
+   26
+  ],
+  "independent": true
+ },
+ {
+  "family": 664,
+  "lines": [
+   12,
+   15,
+   17,
+   27,
+   28
+  ],
+  "amplitude": [
+   12,
+   15,
+   27
+  ],
+  "conjugate": [
+   17,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   26
+  ],
+  "independent": true
+ },
+ {
+  "family": 664,
+  "lines": [
+   12,
+   15,
+   26,
+   27,
+   28
+  ],
+  "amplitude": [
+   12,
+   15,
+   27
+  ],
+  "conjugate": [
+   26,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   17
+  ],
+  "independent": true
+ },
+ {
+  "family": 664,
+  "lines": [
+   6,
+   12,
+   26,
+   27
+  ],
+  "amplitude": [
+   6,
+   27
+  ],
+  "conjugate": [
+   12,
+   26
+  ],
+  "not_in_trees": [],
+  "absent": [
+   15,
+   17,
+   28
+  ],
+  "independent": true
+ },
+ {
+  "family": 664,
+  "lines": [
+   6,
+   15,
+   26,
+   27
+  ],
+  "amplitude": [
+   6,
+   15,
+   27
+  ],
+  "conjugate": [
+   26
+  ],
+  "not_in_trees": [],
+  "absent": [
+   12,
+   17,
+   28
+  ],
+  "independent": true
+ },
+ {
+  "family": 670,
+  "lines": [
+   6,
+   12,
+   22,
+   24,
+   28
+  ],
+  "amplitude": [
+   6,
+   24,
+   28
+  ],
+  "conjugate": [
+   12,
+   22
+  ],
+  "not_in_trees": [],
+  "absent": [
+   15,
+   26
+  ],
+  "independent": true
+ },
+ {
+  "family": 670,
+  "lines": [
+   6,
+   15,
+   22,
+   24,
+   28
+  ],
+  "amplitude": [
+   6,
+   15,
+   22
+  ],
+  "conjugate": [
+   24,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   12,
+   26
+  ],
+  "independent": true
+ },
+ {
+  "family": 670,
+  "lines": [
+   12,
+   15,
+   22,
+   24,
+   28
+  ],
+  "amplitude": [
+   12,
+   15,
+   22
+  ],
+  "conjugate": [
+   24,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   26
+  ],
+  "independent": true
+ },
+ {
+  "family": 670,
+  "lines": [
+   12,
+   15,
+   22,
+   26,
+   28
+  ],
+  "amplitude": [
+   12,
+   15,
+   22
+  ],
+  "conjugate": [
+   26,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   24
+  ],
+  "independent": true
+ },
+ {
+  "family": 670,
+  "lines": [
+   6,
+   12,
+   22,
+   26
+  ],
+  "amplitude": [
+   6,
+   22
+  ],
+  "conjugate": [
+   12,
+   26
+  ],
+  "not_in_trees": [],
+  "absent": [
+   15,
+   24,
+   28
+  ],
+  "independent": true
+ },
+ {
+  "family": 670,
+  "lines": [
+   6,
+   15,
+   22,
+   26
+  ],
+  "amplitude": [
+   6,
+   15,
+   22
+  ],
+  "conjugate": [
+   26
+  ],
+  "not_in_trees": [],
+  "absent": [
+   12,
+   24,
+   28
+  ],
+  "independent": true
+ },
+ {
+  "family": 676,
+  "lines": [
+   6,
+   12,
+   16,
+   17,
+   23,
+   28
+  ],
+  "amplitude": [
+   6,
+   17,
+   28
+  ],
+  "conjugate": [
+   12,
+   16,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   10
+  ],
+  "independent": true
+ },
+ {
+  "family": 676,
+  "lines": [
+   10,
+   12,
+   16,
+   17,
+   23,
+   28
+  ],
+  "amplitude": [
+   10,
+   17,
+   28
+  ],
+  "conjugate": [
+   12,
+   16,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6
+  ],
+  "independent": true
+ },
+ {
+  "family": 682,
+  "lines": [
+   12,
+   16,
+   23,
+   24,
+   27
+  ],
+  "amplitude": [
+   12,
+   16,
+   23
+  ],
+  "conjugate": [
+   24,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   28
+  ],
+  "independent": true
+ },
+ {
+  "family": 682,
+  "lines": [
+   12,
+   16,
+   24,
+   27,
+   28
+  ],
+  "amplitude": [
+   12,
+   16,
+   27
+  ],
+  "conjugate": [
+   24,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   23
+  ],
+  "independent": true
+ },
+ {
+  "family": 688,
+  "lines": [
+   6,
+   13,
+   15,
+   19,
+   27,
+   29
+  ],
+  "amplitude": [
+   6,
+   15,
+   27
+  ],
+  "conjugate": [
+   13,
+   19,
+   29
+  ],
+  "not_in_trees": [],
+  "absent": [
+   12
+  ],
+  "independent": true
+ },
+ {
+  "family": 688,
+  "lines": [
+   12,
+   13,
+   15,
+   19,
+   27,
+   29
+  ],
+  "amplitude": [
+   12,
+   15,
+   27
+  ],
+  "conjugate": [
+   13,
+   19,
+   29
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6
+  ],
+  "independent": true
+ },
+ {
+  "family": 694,
+  "lines": [
+   12,
+   13,
+   15,
+   20,
+   27,
+   29
+  ],
+  "amplitude": [
+   12,
+   15,
+   27
+  ],
+  "conjugate": [
+   13,
+   20,
+   29
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6
+  ],
+  "independent": true
+ },
+ {
+  "family": 694,
+  "lines": [
+   6,
+   13,
+   15,
+   20,
+   27
+  ],
+  "amplitude": [
+   6,
+   13,
+   20
+  ],
+  "conjugate": [
+   15,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   12,
+   29
+  ],
+  "independent": true
+ },
+ {
+  "family": 694,
+  "lines": [
+   6,
+   13,
+   15,
+   27,
+   29
+  ],
+  "amplitude": [
+   6,
+   15,
+   27
+  ],
+  "conjugate": [
+   13,
+   29
+  ],
+  "not_in_trees": [],
+  "absent": [
+   12,
+   20
+  ],
+  "independent": true
+ },
+ {
+  "family": 700,
+  "lines": [
+   6,
+   14,
+   15,
+   18,
+   22,
+   28
+  ],
+  "amplitude": [
+   6,
+   15,
+   22
+  ],
+  "conjugate": [
+   14,
+   18,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   7
+  ],
+  "independent": true
+ },
+ {
+  "family": 706,
+  "lines": [
+   7,
+   9,
+   13,
+   14,
+   17,
+   19
+  ],
+  "amplitude": [
+   7,
+   13,
+   19
+  ],
+  "conjugate": [
+   9,
+   14,
+   17
+  ],
+  "not_in_trees": [],
+  "absent": [
+   22
+  ],
+  "independent": true
+ },
+ {
+  "family": 706,
+  "lines": [
+   7,
+   13,
+   14,
+   17,
+   19,
+   22
+  ],
+  "amplitude": [
+   7,
+   13,
+   19
+  ],
+  "conjugate": [
+   14,
+   17,
+   22
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9
+  ],
+  "independent": true
+ },
+ {
+  "family": 706,
+  "lines": [
+   9,
+   13,
+   14,
+   17,
+   19,
+   22
+  ],
+  "amplitude": [
+   9,
+   14,
+   17
+  ],
+  "conjugate": [
+   13,
+   19,
+   22
+  ],
+  "not_in_trees": [],
+  "absent": [
+   7
+  ],
+  "independent": true
+ },
+ {
+  "family": 709,
+  "lines": [
+   7,
+   9,
+   13,
+   14,
+   17,
+   24
+  ],
+  "amplitude": [
+   7,
+   13,
+   24
+  ],
+  "conjugate": [
+   9,
+   14,
+   17
+  ],
+  "not_in_trees": [],
+  "absent": [
+   28
+  ],
+  "independent": true
+ },
+ {
+  "family": 709,
+  "lines": [
+   7,
+   13,
+   14,
+   17,
+   24,
+   28
+  ],
+  "amplitude": [
+   7,
+   13,
+   24
+  ],
+  "conjugate": [
+   14,
+   17,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9
+  ],
+  "independent": true
+ },
+ {
+  "family": 709,
+  "lines": [
+   7,
+   9,
+   14,
+   24,
+   28
+  ],
+  "amplitude": [
+   7,
+   24,
+   28
+  ],
+  "conjugate": [
+   9,
+   14
+  ],
+  "not_in_trees": [],
+  "absent": [
+   13,
+   17
+  ],
+  "independent": true
+ },
+ {
+  "family": 715,
+  "lines": [
+   7,
+   9,
+   13,
+   23,
+   24
+  ],
+  "amplitude": [
+   7,
+   13,
+   24
+  ],
+  "conjugate": [
+   9,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   14,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 715,
+  "lines": [
+   7,
+   13,
+   14,
+   23,
+   24
+  ],
+  "amplitude": [
+   7,
+   13,
+   24
+  ],
+  "conjugate": [
+   14,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 715,
+  "lines": [
+   7,
+   13,
+   23,
+   24,
+   27
+  ],
+  "amplitude": [
+   7,
+   13,
+   23
+  ],
+  "conjugate": [
+   24,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   14
+  ],
+  "independent": true
+ },
+ {
+  "family": 715,
+  "lines": [
+   7,
+   14,
+   23,
+   24,
+   27
+  ],
+  "amplitude": [
+   7,
+   24,
+   27
+  ],
+  "conjugate": [
+   14,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   13
+  ],
+  "independent": true
+ },
+ {
+  "family": 721,
+  "lines": [
+   7,
+   9,
+   13,
+   14,
+   24,
+   25
+  ],
+  "amplitude": [
+   7,
+   13,
+   24
+  ],
+  "conjugate": [
+   9,
+   14,
+   25
+  ],
+  "not_in_trees": [],
+  "absent": [
+   18
+  ],
+  "independent": true
+ },
+ {
+  "family": 721,
+  "lines": [
+   7,
+   9,
+   18,
+   25
+  ],
+  "amplitude": [
+   7,
+   18
+  ],
+  "conjugate": [
+   9,
+   25
+  ],
+  "not_in_trees": [],
+  "absent": [
+   13,
+   14,
+   24
+  ],
+  "independent": true
+ },
+ {
+  "family": 721,
+  "lines": [
+   9,
+   14,
+   18,
+   25
+  ],
+  "amplitude": [
+   9,
+   14,
+   25
+  ],
+  "conjugate": [
+   18
+  ],
+  "not_in_trees": [],
+  "absent": [
+   7,
+   13,
+   24
+  ],
+  "independent": true
+ },
+ {
+  "family": 727,
+  "lines": [
+   7,
+   9,
+   13,
+   19,
+   23
+  ],
+  "amplitude": [
+   7,
+   13,
+   19
+  ],
+  "conjugate": [
+   9,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   16
+  ],
+  "independent": true
+ },
+ {
+  "family": 727,
+  "lines": [
+   7,
+   13,
+   16,
+   19,
+   23
+  ],
+  "amplitude": [
+   7,
+   13,
+   19
+  ],
+  "conjugate": [
+   16,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   9
+  ],
+  "independent": true
+ },
+ {
+  "family": 727,
+  "lines": [
+   9,
+   13,
+   16,
+   19,
+   23
+  ],
+  "amplitude": [
+   9,
+   16,
+   23
+  ],
+  "conjugate": [
+   13,
+   19
+  ],
+  "not_in_trees": [],
+  "absent": [
+   7,
+   8
+  ],
+  "independent": true
+ },
+ {
+  "family": 733,
+  "lines": [
+   7,
+   9,
+   13,
+   16,
+   23,
+   24
+  ],
+  "amplitude": [
+   7,
+   13,
+   24
+  ],
+  "conjugate": [
+   9,
+   16,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 733,
+  "lines": [
+   7,
+   9,
+   16,
+   23,
+   24,
+   27
+  ],
+  "amplitude": [
+   7,
+   24,
+   27
+  ],
+  "conjugate": [
+   9,
+   16,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   13
+  ],
+  "independent": true
+ },
+ {
+  "family": 739,
+  "lines": [
+   7,
+   9,
+   13,
+   19,
+   25,
+   27
+  ],
+  "amplitude": [
+   7,
+   13,
+   19
+  ],
+  "conjugate": [
+   9,
+   25,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   22
+  ],
+  "independent": true
+ },
+ {
+  "family": 739,
+  "lines": [
+   9,
+   13,
+   19,
+   22,
+   25,
+   27
+  ],
+  "amplitude": [
+   9,
+   25,
+   27
+  ],
+  "conjugate": [
+   13,
+   19,
+   22
+  ],
+  "not_in_trees": [],
+  "absent": [
+   7
+  ],
+  "independent": true
+ },
+ {
+  "family": 745,
+  "lines": [
+   9,
+   13,
+   23,
+   25,
+   29
+  ],
+  "amplitude": [
+   9,
+   25,
+   29
+  ],
+  "conjugate": [
+   13,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   7,
+   12
+  ],
+  "independent": true
+ },
+ {
+  "family": 751,
+  "lines": [
+   7,
+   9,
+   13,
+   24,
+   25,
+   27
+  ],
+  "amplitude": [
+   7,
+   13,
+   24
+  ],
+  "conjugate": [
+   9,
+   25,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   29
+  ],
+  "independent": true
+ },
+ {
+  "family": 751,
+  "lines": [
+   7,
+   9,
+   13,
+   25,
+   29
+  ],
+  "amplitude": [
+   9,
+   25,
+   29
+  ],
+  "conjugate": [
+   7,
+   13
+  ],
+  "not_in_trees": [],
+  "absent": [
+   24,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 751,
+  "lines": [
+   7,
+   9,
+   24,
+   25,
+   29
+  ],
+  "amplitude": [
+   9,
+   25,
+   29
+  ],
+  "conjugate": [
+   7,
+   24
+  ],
+  "not_in_trees": [],
+  "absent": [
+   13,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 751,
+  "lines": [
+   7,
+   9,
+   25,
+   27,
+   29
+  ],
+  "amplitude": [
+   9,
+   25,
+   29
+  ],
+  "conjugate": [
+   7,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   13,
+   24
+  ],
+  "independent": true
+ },
+ {
+  "family": 757,
+  "lines": [
+   7,
+   9,
+   16,
+   18,
+   23,
+   27
+  ],
+  "amplitude": [
+   7,
+   18,
+   23
+  ],
+  "conjugate": [
+   9,
+   16,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   28
+  ],
+  "independent": true
+ },
+ {
+  "family": 757,
+  "lines": [
+   7,
+   9,
+   18,
+   23,
+   28
+  ],
+  "amplitude": [
+   7,
+   18,
+   28
+  ],
+  "conjugate": [
+   9,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   16,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 757,
+  "lines": [
+   7,
+   16,
+   18,
+   23,
+   28
+  ],
+  "amplitude": [
+   7,
+   16,
+   23
+  ],
+  "conjugate": [
+   18,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 757,
+  "lines": [
+   9,
+   16,
+   18,
+   23,
+   28
+  ],
+  "amplitude": [
+   9,
+   16,
+   23
+  ],
+  "conjugate": [
+   18,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   7,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 757,
+  "lines": [
+   7,
+   9,
+   18,
+   27,
+   28
+  ],
+  "amplitude": [
+   7,
+   18,
+   28
+  ],
+  "conjugate": [
+   9,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   16,
+   23
+  ],
+  "independent": true
+ },
+ {
+  "family": 757,
+  "lines": [
+   7,
+   16,
+   18,
+   27,
+   28
+  ],
+  "amplitude": [
+   7,
+   16,
+   27
+  ],
+  "conjugate": [
+   18,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   23
+  ],
+  "independent": true
+ },
+ {
+  "family": 757,
+  "lines": [
+   9,
+   16,
+   18,
+   27,
+   28
+  ],
+  "amplitude": [
+   9,
+   16,
+   27
+  ],
+  "conjugate": [
+   18,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   7,
+   23
+  ],
+  "independent": true
+ },
+ {
+  "family": 763,
+  "lines": [
+   7,
+   9,
+   24,
+   27,
+   28
+  ],
+  "amplitude": [
+   7,
+   24,
+   28
+  ],
+  "conjugate": [
+   9,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   10,
+   16
+  ],
+  "independent": true
+ },
+ {
+  "family": 763,
+  "lines": [
+   7,
+   16,
+   24,
+   27,
+   28
+  ],
+  "amplitude": [
+   7,
+   16,
+   27
+  ],
+  "conjugate": [
+   24,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   10
+  ],
+  "independent": true
+ },
+ {
+  "family": 763,
+  "lines": [
+   9,
+   16,
+   24,
+   27,
+   28
+  ],
+  "amplitude": [
+   9,
+   16,
+   27
+  ],
+  "conjugate": [
+   24,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   7,
+   10
+  ],
+  "independent": true
+ },
+ {
+  "family": 769,
+  "lines": [
+   7,
+   9,
+   18,
+   20,
+   28,
+   29
+  ],
+  "amplitude": [
+   7,
+   18,
+   28
+  ],
+  "conjugate": [
+   9,
+   20,
+   29
+  ],
+  "not_in_trees": [],
+  "absent": [
+   23
+  ],
+  "independent": true
+ },
+ {
+  "family": 772,
+  "lines": [
+   7,
+   9,
+   18,
+   25,
+   27,
+   28
+  ],
+  "amplitude": [
+   7,
+   18,
+   28
+  ],
+  "conjugate": [
+   9,
+   25,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6
+  ],
+  "independent": true
+ },
+ {
+  "family": 778,
+  "lines": [
+   7,
+   9,
+   18,
+   25,
+   28,
+   29
+  ],
+  "amplitude": [
+   7,
+   18,
+   28
+  ],
+  "conjugate": [
+   9,
+   25,
+   29
+  ],
+  "not_in_trees": [],
+  "absent": [
+   24
+  ],
+  "independent": true
+ },
+ {
+  "family": 778,
+  "lines": [
+   7,
+   9,
+   24,
+   25,
+   28,
+   29
+  ],
+  "amplitude": [
+   7,
+   24,
+   28
+  ],
+  "conjugate": [
+   9,
+   25,
+   29
+  ],
+  "not_in_trees": [],
+  "absent": [
+   18
+  ],
+  "independent": true
+ },
+ {
+  "family": 784,
+  "lines": [
+   7,
+   12,
+   13,
+   15,
+   22,
+   24
+  ],
+  "amplitude": [
+   7,
+   13,
+   24
+  ],
+  "conjugate": [
+   12,
+   15,
+   22
+  ],
+  "not_in_trees": [],
+  "absent": [
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 790,
+  "lines": [
+   7,
+   12,
+   13,
+   19,
+   27
+  ],
+  "amplitude": [
+   7,
+   13,
+   19
+  ],
+  "conjugate": [
+   12,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   16,
+   21
+  ],
+  "independent": true
+ },
+ {
+  "family": 790,
+  "lines": [
+   7,
+   13,
+   16,
+   19,
+   27
+  ],
+  "amplitude": [
+   7,
+   13,
+   19
+  ],
+  "conjugate": [
+   16,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   12,
+   21
+  ],
+  "independent": true
+ },
+ {
+  "family": 790,
+  "lines": [
+   12,
+   13,
+   16,
+   19,
+   27
+  ],
+  "amplitude": [
+   12,
+   16,
+   27
+  ],
+  "conjugate": [
+   13,
+   19
+  ],
+  "not_in_trees": [],
+  "absent": [
+   7,
+   21
+  ],
+  "independent": true
+ },
+ {
+  "family": 790,
+  "lines": [
+   7,
+   12,
+   16,
+   21,
+   27
+  ],
+  "amplitude": [
+   7,
+   16,
+   27
+  ],
+  "conjugate": [
+   12,
+   21
+  ],
+  "not_in_trees": [],
+  "absent": [
+   13,
+   19
+  ],
+  "independent": true
+ },
+ {
+  "family": 790,
+  "lines": [
+   7,
+   13,
+   16,
+   21,
+   27
+  ],
+  "amplitude": [
+   7,
+   16,
+   27
+  ],
+  "conjugate": [
+   13,
+   21
+  ],
+  "not_in_trees": [],
+  "absent": [
+   12,
+   19
+  ],
+  "independent": true
+ },
+ {
+  "family": 796,
+  "lines": [
+   7,
+   12,
+   13,
+   16,
+   23,
+   24
+  ],
+  "amplitude": [
+   7,
+   13,
+   24
+  ],
+  "conjugate": [
+   12,
+   16,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 796,
+  "lines": [
+   7,
+   12,
+   13,
+   16,
+   23,
+   27
+  ],
+  "amplitude": [
+   7,
+   13,
+   23
+  ],
+  "conjugate": [
+   12,
+   16,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   24
+  ],
+  "independent": true
+ },
+ {
+  "family": 796,
+  "lines": [
+   7,
+   12,
+   16,
+   23,
+   24,
+   27
+  ],
+  "amplitude": [
+   7,
+   24,
+   27
+  ],
+  "conjugate": [
+   12,
+   16,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   13
+  ],
+  "independent": true
+ },
+ {
+  "family": 802,
+  "lines": [
+   7,
+   12,
+   15,
+   18,
+   22,
+   28
+  ],
+  "amplitude": [
+   7,
+   18,
+   28
+  ],
+  "conjugate": [
+   12,
+   15,
+   22
+  ],
+  "not_in_trees": [],
+  "absent": [
+   11
+  ],
+  "independent": true
+ },
+ {
+  "family": 802,
+  "lines": [
+   11,
+   12,
+   15,
+   18,
+   22,
+   28
+  ],
+  "amplitude": [
+   11,
+   18,
+   28
+  ],
+  "conjugate": [
+   12,
+   15,
+   22
+  ],
+  "not_in_trees": [],
+  "absent": [
+   7
+  ],
+  "independent": true
+ },
+ {
+  "family": 808,
+  "lines": [
+   7,
+   12,
+   15,
+   18,
+   27,
+   28
+  ],
+  "amplitude": [
+   7,
+   18,
+   28
+  ],
+  "conjugate": [
+   12,
+   15,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   11
+  ],
+  "independent": true
+ },
+ {
+  "family": 808,
+  "lines": [
+   11,
+   12,
+   15,
+   18,
+   28
+  ],
+  "amplitude": [
+   11,
+   12,
+   15
+  ],
+  "conjugate": [
+   18,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   7,
+   27
+  ],
+  "independent": true
+ },
+ {
+  "family": 808,
+  "lines": [
+   11,
+   12,
+   18,
+   27,
+   28
+  ],
+  "amplitude": [
+   11,
+   18,
+   28
+  ],
+  "conjugate": [
+   12,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   7,
+   15
+  ],
+  "independent": true
+ },
+ {
+  "family": 814,
+  "lines": [
+   7,
+   12,
+   21,
+   24,
+   27
+  ],
+  "amplitude": [
+   7,
+   24,
+   27
+  ],
+  "conjugate": [
+   12,
+   21
+  ],
+  "not_in_trees": [],
+  "absent": [
+   15,
+   28
+  ],
+  "independent": true
+ },
+ {
+  "family": 820,
+  "lines": [
+   7,
+   12,
+   23,
+   24,
+   28
+  ],
+  "amplitude": [
+   7,
+   24,
+   28
+  ],
+  "conjugate": [
+   12,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   16,
+   26
+  ],
+  "independent": true
+ },
+ {
+  "family": 820,
+  "lines": [
+   7,
+   16,
+   23,
+   24,
+   28
+  ],
+  "amplitude": [
+   7,
+   16,
+   23
+  ],
+  "conjugate": [
+   24,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   12,
+   26
+  ],
+  "independent": true
+ },
+ {
+  "family": 820,
+  "lines": [
+   12,
+   16,
+   23,
+   24,
+   28
+  ],
+  "amplitude": [
+   12,
+   16,
+   23
+  ],
+  "conjugate": [
+   24,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   7,
+   26
+  ],
+  "independent": true
+ },
+ {
+  "family": 820,
+  "lines": [
+   12,
+   16,
+   23,
+   26,
+   28
+  ],
+  "amplitude": [
+   12,
+   16,
+   23
+  ],
+  "conjugate": [
+   26,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   7,
+   24
+  ],
+  "independent": true
+ },
+ {
+  "family": 820,
+  "lines": [
+   7,
+   12,
+   23,
+   26
+  ],
+  "amplitude": [
+   7,
+   23
+  ],
+  "conjugate": [
+   12,
+   26
+  ],
+  "not_in_trees": [],
+  "absent": [
+   16,
+   24,
+   28
+  ],
+  "independent": true
+ },
+ {
+  "family": 820,
+  "lines": [
+   7,
+   16,
+   23,
+   26
+  ],
+  "amplitude": [
+   7,
+   16,
+   23
+  ],
+  "conjugate": [
+   26
+  ],
+  "not_in_trees": [],
+  "absent": [
+   12,
+   24,
+   28
+  ],
+  "independent": true
+ },
+ {
+  "family": 826,
+  "lines": [
+   7,
+   12,
+   24,
+   27,
+   28
+  ],
+  "amplitude": [
+   7,
+   24,
+   28
+  ],
+  "conjugate": [
+   12,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   16,
+   26
+  ],
+  "independent": true
+ },
+ {
+  "family": 826,
+  "lines": [
+   7,
+   16,
+   24,
+   27,
+   28
+  ],
+  "amplitude": [
+   7,
+   16,
+   27
+  ],
+  "conjugate": [
+   24,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   12,
+   26
+  ],
+  "independent": true
+ },
+ {
+  "family": 826,
+  "lines": [
+   12,
+   16,
+   24,
+   27,
+   28
+  ],
+  "amplitude": [
+   12,
+   16,
+   27
+  ],
+  "conjugate": [
+   24,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   7,
+   26
+  ],
+  "independent": true
+ },
+ {
+  "family": 826,
+  "lines": [
+   12,
+   16,
+   26,
+   27,
+   28
+  ],
+  "amplitude": [
+   12,
+   16,
+   27
+  ],
+  "conjugate": [
+   26,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   7,
+   24
+  ],
+  "independent": true
+ },
+ {
+  "family": 826,
+  "lines": [
+   7,
+   12,
+   26,
+   27
+  ],
+  "amplitude": [
+   7,
+   27
+  ],
+  "conjugate": [
+   12,
+   26
+  ],
+  "not_in_trees": [],
+  "absent": [
+   16,
+   24,
+   28
+  ],
+  "independent": true
+ },
+ {
+  "family": 826,
+  "lines": [
+   7,
+   16,
+   26,
+   27
+  ],
+  "amplitude": [
+   7,
+   16,
+   27
+  ],
+  "conjugate": [
+   26
+  ],
+  "not_in_trees": [],
+  "absent": [
+   12,
+   24,
+   28
+  ],
+  "independent": true
+ },
+ {
+  "family": 832,
+  "lines": [
+   7,
+   13,
+   16,
+   20,
+   27,
+   29
+  ],
+  "amplitude": [
+   7,
+   16,
+   27
+  ],
+  "conjugate": [
+   13,
+   20,
+   29
+  ],
+  "not_in_trees": [],
+  "absent": [
+   12
+  ],
+  "independent": true
+ },
+ {
+  "family": 832,
+  "lines": [
+   12,
+   13,
+   16,
+   20,
+   27,
+   29
+  ],
+  "amplitude": [
+   12,
+   16,
+   27
+  ],
+  "conjugate": [
+   13,
+   20,
+   29
+  ],
+  "not_in_trees": [],
+  "absent": [
+   7
+  ],
+  "independent": true
+ },
+ {
+  "family": 838,
+  "lines": [
+   7,
+   14,
+   16,
+   17,
+   23,
+   28
+  ],
+  "amplitude": [
+   7,
+   16,
+   23
+  ],
+  "conjugate": [
+   14,
+   17,
+   28
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6
+  ],
+  "independent": true
+ },
+ {
+  "family": 844,
+  "lines": [
+   12,
+   13,
+   19,
+   22,
+   27
+  ],
+  "amplitude": [
+   13,
+   19,
+   22
+  ],
+  "conjugate": [
+   12,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   7,
+   15
+  ],
+  "independent": true
+ },
+ {
+  "family": 850,
+  "lines": [
+   12,
+   13,
+   15,
+   20,
+   22,
+   29
+  ],
+  "amplitude": [
+   12,
+   15,
+   22
+  ],
+  "conjugate": [
+   13,
+   20,
+   29
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9
+  ],
+  "independent": true
+ },
+ {
+  "family": 856,
+  "lines": [
+   12,
+   13,
+   15,
+   20,
+   23,
+   27
+  ],
+  "amplitude": [
+   12,
+   15,
+   27
+  ],
+  "conjugate": [
+   13,
+   20,
+   23
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6
+  ],
+  "independent": true
+ },
+ {
+  "family": 862,
+  "lines": [
+   6,
+   9,
+   14,
+   21,
+   27
+  ],
+  "amplitude": [
+   6,
+   9,
+   27
+  ],
+  "conjugate": [
+   14,
+   21
+  ],
+  "not_in_trees": [],
+  "absent": [
+   12,
+   24
+  ],
+  "independent": true
+ },
+ {
+  "family": 862,
+  "lines": [
+   6,
+   12,
+   21,
+   24,
+   27
+  ],
+  "amplitude": [
+   6,
+   24,
+   27
+  ],
+  "conjugate": [
+   12,
+   21
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   14
+  ],
+  "independent": true
+ },
+ {
+  "family": 862,
+  "lines": [
+   6,
+   14,
+   21,
+   24,
+   27
+  ],
+  "amplitude": [
+   6,
+   24,
+   27
+  ],
+  "conjugate": [
+   14,
+   21
+  ],
+  "not_in_trees": [],
+  "absent": [
+   9,
+   12
+  ],
+  "independent": true
+ },
+ {
+  "family": 868,
+  "lines": [
+   6,
+   11,
+   12,
+   26
+  ],
+  "amplitude": [
+   11,
+   12,
+   26
+  ],
+  "conjugate": [
+   6
+  ],
+  "not_in_trees": [],
+  "absent": [
+   7,
+   13,
+   15
+  ],
+  "independent": true
+ },
+ {
+  "family": 868,
+  "lines": [
+   6,
+   11,
+   15,
+   26
+  ],
+  "amplitude": [
+   6,
+   11,
+   15
+  ],
+  "conjugate": [
+   26
+  ],
+  "not_in_trees": [],
+  "absent": [
+   7,
+   12,
+   13
+  ],
+  "independent": true
+ },
+ {
+  "family": 868,
+  "lines": [
+   11,
+   12,
+   15
+  ],
+  "amplitude": [
+   11,
+   12,
+   15
+  ],
+  "conjugate": [],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   7,
+   13,
+   26
+  ],
+  "independent": true
+ },
+ {
+  "family": 868,
+  "lines": [
+   12,
+   15,
+   26
+  ],
+  "amplitude": [
+   12,
+   15
+  ],
+  "conjugate": [
+   26
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   7,
+   11,
+   13
+  ],
+  "independent": true
+ },
+ {
+  "family": 874,
+  "lines": [
+   6,
+   12,
+   17,
+   21,
+   28
+  ],
+  "amplitude": [
+   6,
+   17,
+   28
+  ],
+  "conjugate": [
+   12,
+   21
+  ],
+  "not_in_trees": [],
+  "absent": [
+   7,
+   18
+  ],
+  "independent": true
+ },
+ {
+  "family": 874,
+  "lines": [
+   7,
+   12,
+   18,
+   21,
+   28
+  ],
+  "amplitude": [
+   7,
+   18,
+   28
+  ],
+  "conjugate": [
+   12,
+   21
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   17
+  ],
+  "independent": true
+ },
+ {
+  "family": 880,
+  "lines": [
+   6,
+   13,
+   19,
+   24,
+   27
+  ],
+  "amplitude": [
+   6,
+   24,
+   27
+  ],
+  "conjugate": [
+   13,
+   19
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   9
+  ],
+  "independent": true
+ },
+ {
+  "family": 886,
+  "lines": [
+   6,
+   13,
+   21,
+   24,
+   27
+  ],
+  "amplitude": [
+   6,
+   24,
+   27
+  ],
+  "conjugate": [
+   13,
+   21
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   9
+  ],
+  "independent": true
+ },
+ {
+  "family": 892,
+  "lines": [
+   7,
+   10,
+   12,
+   26
+  ],
+  "amplitude": [
+   10,
+   12,
+   26
+  ],
+  "conjugate": [
+   7
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   13,
+   16
+  ],
+  "independent": true
+ },
+ {
+  "family": 892,
+  "lines": [
+   7,
+   10,
+   16,
+   26
+  ],
+  "amplitude": [
+   7,
+   10,
+   16
+  ],
+  "conjugate": [
+   26
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   12,
+   13
+  ],
+  "independent": true
+ },
+ {
+  "family": 892,
+  "lines": [
+   10,
+   12,
+   16
+  ],
+  "amplitude": [
+   10,
+   12,
+   16
+  ],
+  "conjugate": [],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   7,
+   13,
+   26
+  ],
+  "independent": true
+ },
+ {
+  "family": 892,
+  "lines": [
+   12,
+   16,
+   26
+  ],
+  "amplitude": [
+   12,
+   16
+  ],
+  "conjugate": [
+   26
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   7,
+   10,
+   13
+  ],
+  "independent": true
+ },
+ {
+  "family": 898,
+  "lines": [
+   7,
+   13,
+   20,
+   24,
+   27
+  ],
+  "amplitude": [
+   7,
+   24,
+   27
+  ],
+  "conjugate": [
+   13,
+   20
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   9
+  ],
+  "independent": true
+ },
+ {
+  "family": 904,
+  "lines": [
+   7,
+   13,
+   21,
+   24,
+   27
+  ],
+  "amplitude": [
+   7,
+   24,
+   27
+  ],
+  "conjugate": [
+   13,
+   21
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   9
+  ],
+  "independent": true
+ },
+ {
+  "family": 910,
+  "lines": [
+   6,
+   13,
+   20,
+   27
+  ],
+  "amplitude": [
+   6,
+   13,
+   20
+  ],
+  "conjugate": [
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   9,
+   24
+  ],
+  "independent": true
+ },
+ {
+  "family": 910,
+  "lines": [
+   6,
+   13,
+   24,
+   27
+  ],
+  "amplitude": [
+   6,
+   13,
+   24
+  ],
+  "conjugate": [
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   9,
+   20
+  ],
+  "independent": true
+ },
+ {
+  "family": 910,
+  "lines": [
+   6,
+   20,
+   24,
+   27
+  ],
+  "amplitude": [
+   6,
+   24,
+   27
+  ],
+  "conjugate": [
+   20
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   9,
+   13
+  ],
+  "independent": true
+ },
+ {
+  "family": 910,
+  "lines": [
+   13,
+   20,
+   24,
+   27
+  ],
+  "amplitude": [
+   13,
+   20
+  ],
+  "conjugate": [
+   24,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   6,
+   8,
+   9
+  ],
+  "independent": true
+ },
+ {
+  "family": 916,
+  "lines": [
+   7,
+   13,
+   19,
+   27
+  ],
+  "amplitude": [
+   7,
+   13,
+   19
+  ],
+  "conjugate": [
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   9,
+   24
+  ],
+  "independent": true
+ },
+ {
+  "family": 916,
+  "lines": [
+   7,
+   13,
+   24,
+   27
+  ],
+  "amplitude": [
+   7,
+   13,
+   24
+  ],
+  "conjugate": [
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   9,
+   19
+  ],
+  "independent": true
+ },
+ {
+  "family": 916,
+  "lines": [
+   7,
+   19,
+   24,
+   27
+  ],
+  "amplitude": [
+   7,
+   24,
+   27
+  ],
+  "conjugate": [
+   19
+  ],
+  "not_in_trees": [],
+  "absent": [
+   8,
+   9,
+   13
+  ],
+  "independent": true
+ },
+ {
+  "family": 916,
+  "lines": [
+   13,
+   19,
+   24,
+   27
+  ],
+  "amplitude": [
+   13,
+   19
+  ],
+  "conjugate": [
+   24,
+   27
+  ],
+  "not_in_trees": [],
+  "absent": [
+   7,
+   8,
+   9
   ],
   "independent": true
  }
