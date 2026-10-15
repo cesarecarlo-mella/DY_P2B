@@ -206,15 +206,13 @@ def tikz(n, dds, left, right):
         if x == "q":                                              # q: wavy half (q^2 = m2), double half (rapidity)
             L.append("(Rcq) -- [plain, red!70!black, double, double distance=1.2pt, thick] (Mq) -- [boson, red!70!black] (Lcq),")
         else:
-            L.append(f"(Rc{x}) -- [plain, blue!60!black{arrow}] (Lc{x}),")
+            L.append(f"(Rc{x}) -- [plain, blue!60!black] (Lc{x}),")      # no arrow on the cut
     L.append("};")
     L.append(r"\end{feynman}")
     L.append(rf"\draw[dashed, gray!70] (0,{min(ycut.values()) - 0.8:.2f}) -- (0,{max(ycut.values()) + 0.8:.2f});")
     for x in CUTLEGS:
         col = "red!70!black" if x == "q" else "blue!60!black"
         L.append(rf"\node[font=\footnotesize, {col}, above] at (0.32,{ycut[x]:.2f}) {{${TEX[x]}$}};")
-        if ARROWS and x == "q":
-            L.append(rf"\draw[-{{Stealth[length=1.6mm]}}, red!70!black] (0.25,{ycut[x] - 0.2:.2f}) -- (-0.25,{ycut[x] - 0.2:.2f});")
     L.append(r"\end{tikzpicture}")
     return "\n".join(L)
 
