@@ -42,5 +42,6 @@ Scripts/docs/*.log
 Scripts/docs/*.out
 Scripts/docs/*.toc
 
-# integral collections copied from the cluster (run_all.py integrals)
-integrals/
+# integral collections (run_all.py integrals); the analysis tools in integrals/Tools are kept
+integrals/*
+!integrals/Tools/
