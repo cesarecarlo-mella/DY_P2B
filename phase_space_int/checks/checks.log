@@ -1,0 +1,60 @@
+== 1. one-dimensional integral J_n vs closed form (n = 2, 3, 4)
+   n=2  {eps,z,u}={3/10, 1/5, 7/10}   numeric/closed - 1 = NumberForm[6.871429223499722*^-29, 3]   pdf form/closed - 1 = NumberForm[0., 3]
+   n=2  {eps,z,u}={-1/4, 1/3, 2}   numeric/closed - 1 = NumberForm[-8.739773910192406*^-30, 3]   pdf form/closed - 1 = NumberForm[0., 3]
+   n=2  {eps,z,u}={1/7, 1/20, 1/3}   numeric/closed - 1 = NumberForm[2.0431914972391475*^-29, 3]   pdf form/closed - 1 = NumberForm[0., 3]
+   n=2  {eps,z,u}={2/5, 1/2, 1}   numeric/closed - 1 = NumberForm[1.199951736292431*^-28, 3]   pdf form/closed - 1 = NumberForm[0., 3]
+   n=2  {eps,z,u}={-3/10, 1/10, 5}   numeric/closed - 1 = NumberForm[-8.540265677487108*^-30, 3]   pdf form/closed - 1 = NumberForm[0., 3]
+   n=3  {eps,z,u}={3/10, 1/5, 7/10}   numeric/closed - 1 = NumberForm[5.888539050061116*^-29, 3]   pdf form/closed - 1 = NumberForm[0., 3]
+   n=3  {eps,z,u}={-1/4, 1/3, 2}   numeric/closed - 1 = NumberForm[-9.957024876932023*^-30, 3]   pdf form/closed - 1 = NumberForm[0., 3]
+   n=3  {eps,z,u}={1/7, 1/20, 1/3}   numeric/closed - 1 = NumberForm[1.9095762130495843*^-29, 3]   pdf form/closed - 1 = NumberForm[0., 3]
+   n=3  {eps,z,u}={2/5, 1/2, 1}   numeric/closed - 1 = NumberForm[9.741595501586592*^-29, 3]   pdf form/closed - 1 = NumberForm[0., 3]
+   n=3  {eps,z,u}={-3/10, 1/10, 5}   numeric/closed - 1 = NumberForm[-9.900856944827658*^-30, 3]   pdf form/closed - 1 = NumberForm[0., 3]
+   n=4  {eps,z,u}={3/10, 1/5, 7/10}   numeric/closed - 1 = NumberForm[8.205176829686631*^-29, 3]   pdf form/closed - 1 = NumberForm[0., 3]
+   n=4  {eps,z,u}={-1/4, 1/3, 2}   numeric/closed - 1 = NumberForm[-1.6586043180666344*^-29, 3]   pdf form/closed - 1 = NumberForm[0., 3]
+   n=4  {eps,z,u}={1/7, 1/20, 1/3}   numeric/closed - 1 = NumberForm[2.79907877678592*^-29, 3]   pdf form/closed - 1 = NumberForm[0., 3]
+   n=4  {eps,z,u}={2/5, 1/2, 1}   numeric/closed - 1 = NumberForm[1.3067110789472533*^-28, 3]   pdf form/closed - 1 = NumberForm[0., 3]
+   n=4  {eps,z,u}={-3/10, 1/10, 5}   numeric/closed - 1 = NumberForm[-1.681244651394507*^-29, 3]   pdf form/closed - 1 = NumberForm[0., 3]
+== 2. n = 1 (NLO): 2F1(eps,1-eps;1-eps;-x) (1+x)^eps = 1
+1
+== 3. NNLO variable y: u = (y+z-y z)/(1-y+y z)  =>  (u-z)(1-u z)/(1+u)^2 = y(1-y)(1-z)^2
+-((-1 + y)*y*(-1 + z)^2)
+   and 1+u = (1 + z)/(1 - y + y*z),  u - z = -((y*(-1 + z)*(1 + z))/(1 - y + y*z)),  1 - u z = ((-1 + y)*(-1 + z)*(1 + z))/(1 - y + y*z)
+== 4. leading power z -> 1 at fixed y:  w -> y(1-y)(1-z)^2,  x -> 0
+   w/(y(1-y)(1-z)^2) at z=1-10^-8, y=3/10: 1.00000000500000003425000026375000212548`20.
+   series of w in bz = 1-z: -1/2*(bz^2*(2 + bz)*(-1 + y)*y)
+== 5. eps expansion of G_n (n = 2, 3): eps^1 (from the series of 2F1) and eps^2 (Euler integral)
+   n=2:  G_n = 1 + eps (1 - Log[1 + x]/x) + O(eps^2)
+   n=3:  G_n = 1 + eps ((x*(2 + 3*x) - 2*(1 + 2*x)*Log[1 + x])/(2*x^2)) + O(eps^2)
+   n=2 x=1/10: (G(10^-6)-1)/10^-6 = 0.04689820195675312983780693242201207409`12.  formula: 0.04689820195675139956047876719234907787`12.
+   n=2 x=2: (G(10^-6)-1)/10^-6 = 0.45069385566612582990468236488570003289`12.  formula: 0.45069385566594515430237738153873714768`12.
+   n=2 x=7: (G(10^-6)-1)/10^-6 = 0.7029369226176596345350278243537206789`12.  formula: 0.70293692261716629596404337651792432796`12.
+   n=3 x=1/10: (G(10^-6)-1)/10^-6 = 0.06277842348101921463730559714854604818`12.  formula: 0.06277842348101679472574520630818893443`12.
+   n=3 x=2: (G(10^-6)-1)/10^-6 = 0.62673463916512625352726529616471718524`12.  formula: 0.62673463916486288575594345384684286919`12.
+   n=3 x=7: (G(10^-6)-1)/10^-6 = 1.0062934056089582132629822676768821571`12.  formula: 1.00629340560821349135152152110983784563`12.
+   n=2:  eps^2 coefficient = InputForm[(6*x - Log[1 + x]*(2 + Log[1 + x]) + 2*PolyLog[2, -x] - 2*(1 + x)*PolyLog[2, x/(1 + x)])/(2*x)]
+      x=1/10:  0.00173027732816450610571685610160376751`12.   numeric (G - 1 - eps c1)/eps^2 at eps=10^-8: 0.00173027733283882350546695516627344501`12.
+      x=2:  0.18067560230487442327924945685480926538`12.   numeric (G - 1 - eps c1)/eps^2 at eps=10^-8: 0.18067560338939563494041732558547423913`12.
+   n=3:  eps^2 coefficient = InputForm[(x*(7 + 11*x) - (1 + 2*x)*Log[1 + x]*(1 + Log[1 + x]) + (2 + 4*x)*PolyLog[2, -x] - 4*(1 + x)^2*PolyLog[2, x/(1 + x)])/(2*x^2)]
+      x=1/10:  0.00241991156039184630927122724339478407`12.   numeric (G - 1 - eps c1)/eps^2 at eps=10^-8: 0.00241991156441993467533464384060281963`12.
+      x=2:  0.26336777132171223362978712672839223497`12.   numeric (G - 1 - eps c1)/eps^2 at eps=10^-8: 0.26336777262768826167632133887495478017`12.
+   n=2: pdf form of the eps^2 coefficient - Euler result at x = 1/10, 2, 7: {0``32.46085428708075, 0``30.442070493168213, 0``30.005824932841715}
+   n=3: pdf form of the eps^2 coefficient - Euler result at x = 1/10, 2, 7: {0``32.31517051006453, 0``30.278407375674966, 0``29.82697587234542}
+== 6. NNLO soft master SoftMasters/m1_1111000.m = e^(2 eps gamma) Gamma(1-eps)^2/(4 Gamma(2-2 eps)^2)
+   prefactor in the file: P[bz, 2 - 4*epps]*P2[(1 - y)*y, 1 - 2*epps]
+   coefficients eps^0..eps^6, file - formula: {0, 0, 0, 0, 0, 0, 0}
+== 7. the closed form in the comment of boundaries.nb vs exact (n = 2)
+   symbolic: comment = w^(1-eps)/(1+u) [(u-z)(1-uz)/(1+u)^2]^-eps ? 1
+   exact/comment / B(1-eps,1-eps) = G_2 :
+     eps=3/10 bz=1/2 y=1/5:  numeric 1.00291154616622989495092342580873916667`10.   G_2 1.00291154616622951900523071271887762096`10.   x = 0.0196152422706631881`6.
+     eps=3/10 bz=1/2 y=1/2:  numeric 1.00447652892839520502922420578024416494`10.   G_2 1.00447652892839533119034786123250465029`10.   x = 0.0303300858899106433`6.
+     eps=3/10 bz=1/10 y=1/5:  numeric 1.00006662109461244439101007799790330427`10.   G_2 1.00006662109461229490585223565130368274`10.   x = 0.0004442470889683876`6.
+     eps=3/10 bz=1/10 y=1/2:  numeric 1.00010405546876906416572852468494309282`10.   G_2 1.00010405546876896299769693618455895085`10.   x = 0.0006939628599933942`6.
+     eps=3/10 bz=1/100 y=1/5:  numeric 1.00000060605683607116017772123373019329`10.   G_2 1.00000060605683608383422078318173470823`10.   x = 4.04038771567114745772729228029803`6.*^-6
+     eps=3/10 bz=1/100 y=1/2:  numeric 1.00000094696049294062146680335874204419`10.   G_2 1.00000094696049307793357925844016765967`10.   x = 6.31309145800755610018426666085039`6.*^-6
+== 8. N3LO: leading power, normalised like NNLO (e^(3 eps gamma)/pi^(3-3eps)): C_3/2 series
+   1/32 + (9*eps)/32 + (eps^2*(207 - 5*Pi^2))/128 + (eps^4*(488430 - 31050*Pi^2 + 163*Pi^4 - 73440*Zeta[3]))/15360 + (eps^3*(972 - 45*Pi^2 - 68*Zeta[3]))/128
+== 9. p1 <-> p2 symmetry: Phi_n(z,1/u) = u Phi_n(z,u)  (u-independent factors of eq. (main) drop out)
+   n=2 {eps,z,u}={3/10, 1/5, 7/10}:  Phi(z,1/u)/(u Phi(z,u)) - 1 = 0``39.69897000433602
+   n=2 {eps,z,u}={-1/4, 1/3, 2}:  Phi(z,1/u)/(u Phi(z,u)) - 1 = 0``39.69897000433602
+   n=3 {eps,z,u}={3/10, 1/5, 7/10}:  Phi(z,1/u)/(u Phi(z,u)) - 1 = 0``39.69897000433602
+   n=3 {eps,z,u}={-1/4, 1/3, 2}:  Phi(z,1/u)/(u Phi(z,u)) - 1 = 0``39.69897000433602

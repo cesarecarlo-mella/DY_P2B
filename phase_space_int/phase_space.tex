@@ -1,0 +1,499 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=2.4cm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue]{hyperref}
+
+\newcommand{\ep}{\epsilon}
+\newcommand{\zb}{\bar z}
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\Li}{\mathrm{Li}_2}
+\newcommand{\F}{{}_2F_1}
+\newcommand{\note}[1]{\par\smallskip\noindent\colorbox{gray!12}{\parbox{\dimexpr\linewidth-2\fboxsep}{\small #1}}\par\smallskip}
+
+\title{The phase space of Drell--Yan real emission at fixed rapidity\\[2pt]
+\large NLO, NNLO and N$^3$LO in one closed formula}
+\author{DY\_P2B --- \texttt{phase\_space\_int/}}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+The simplest integral of every real-emission family is the one whose integrand is \emph{only} the cut
+propagators: the phase space of $n$ massless partons plus the colour singlet $Q$, at fixed invariant mass $Q^2=m^2$
+and fixed rapidity. For the triple real ($n=3$) it is \texttt{INT(topoN,1,1,1,1,1,0,\dots,0)}, the same in all
+families. We compute it for any $n$ in $d=4-2\ep$, exactly in $z$, $u$ and $\ep$. The result
+(eq.~\eqref{eq:main}) is a product of powers and one Gauss hypergeometric function, which equals 1 for $n=1$.
+We explain every step, give the $\ep$ expansion and the soft limit, and compare with the NNLO computation in
+\texttt{nnlo\_rr/integrals/IF1/\allowbreak boundaries.nb}. Everything is verified numerically by the scripts in
+\texttt{checks/}.
+\end{abstract}
+
+\tableofcontents
+
+\section*{Roadmap}
+\addcontentsline{toc}{section}{Roadmap}
+The computation has three ideas, one per section:
+\begin{enumerate}
+\item \textbf{Factorise} (Sect.~\ref{sec:strategy}). The $n$ massless partons only feel the total momentum
+  $K=p_1+p_2-Q$ they share. Their phase space is a known function of $K^2$ alone. What remains is an integral
+  over $Q$.
+\item \textbf{Light-cone variables for $Q$} (Sect.~\ref{sec:lightcone}). With $Q=a\,p_1+b\,p_2+Q_T$ the
+  rapidity constraint is \emph{linear} ($b=u\,a$) and the mass-shell constraint fixes $|Q_T|$. One integral, over
+  $a$, is left.
+\item \textbf{Recognise a hypergeometric function} (Sect.~\ref{sec:hyp}). The $a$ integrand is a product of three
+  powers. Mapping the integration range to $[0,1]$ gives Euler's integral for $\F$.
+\end{enumerate}
+The answer is in Sect.~\ref{sec:result}. The rest of the note covers its use: $\ep$ expansion, soft limit, the
+comparison with NNLO, and N$^3$LO.
+
+\section{The integral and what each factor means}
+\label{sec:def}
+\subsection{Definition}
+Incoming massless partons $p_1,p_2$, with $s=(p_1+p_2)^2=2\,p_1\!\cdot p_2$. Outgoing massless partons
+$k_1,\dots,k_n$. The colour singlet carries what is left:
+\[ Q=p_1+p_2-\sum_{i=1}^n k_i . \]
+We study
+\begin{equation}
+  \boxed{\;\Phi_n(z,u)=\int\prod_{i=1}^n \dd^dk_i\,\delta^+(k_i^2)\;\;\delta^+(Q^2-m^2)\;\;
+  \delta(Q\cdot p_1-u\,Q\cdot p_2)\;}
+  \qquad z=\frac{m^2}{s},\qquad d=4-2\ep .
+  \label{eq:def}
+\end{equation}
+Here $\delta^+(k^2)=\delta(k^2)\,\theta(k^0)$. Each factor has a meaning:
+\begin{itemize}
+\item $\delta^+(k_i^2)$: parton $i$ is real (on shell, positive energy). These are the cut propagators $1/k_i^2$.
+\item $\delta^+(Q^2-m^2)$: the singlet has invariant mass $m$, i.e.\ we look at fixed $Q^2$. This is the cut of
+  $1/(Q^2-m^2)$.
+\item $\delta(Q\cdot p_1-u\,Q\cdot p_2)$: the singlet has fixed rapidity (see below). This is the fifth
+  ``propagator'' of our families. It is linear in the momenta.
+\end{itemize}
+No factors of $2\pi$, $i$ or $e^{\ep\gamma_E}$ are included. Any other normalisation is an overall $\ep$-dependent
+constant; Sect.~\ref{sec:nnlo} identifies the one used at NNLO.
+
+\subsection{Why the last delta fixes the rapidity}
+Work in the partonic centre-of-mass frame, with $p_1=\frac{\sqrt s}2(1,0,0,1)$ and
+$p_2=\frac{\sqrt s}2(1,0,0,-1)$. Write $Q=(m_T\cosh Y,\,\vec Q_T,\,m_T\sinh Y)$ with $m_T^2=m^2+Q_T^2$. Then
+\[
+  Q\cdot p_1=\tfrac{\sqrt s}{2}\,(Q^0-Q^3)=\tfrac{\sqrt s}{2}\,m_T\,e^{-Y},\qquad
+  Q\cdot p_2=\tfrac{\sqrt s}{2}\,(Q^0+Q^3)=\tfrac{\sqrt s}{2}\,m_T\,e^{Y},
+\]
+so $Q\cdot p_1-u\,Q\cdot p_2=0$ means $u=e^{-2Y}$: \emph{$u$ is the rapidity of $Q$}. Note that
+$m_T$ drops out of the ratio.
+
+\note{\textbf{The ``different delta''.} One can also fix the rapidity with $\delta(u-u_Q)$,
+$u_Q=Q\cdot p_1/Q\cdot p_2$. The two are related by
+$\delta(Q\cdot p_1-u\,Q\cdot p_2)=\delta(u-u_Q)/(Q\cdot p_2)$, since the derivative of the argument with
+respect to $u$ is $Q\cdot p_2$. So \eqref{eq:def} is the $u$-distribution of the phase space weighted with
+$1/Q\cdot p_2$. This is the factor \texttt{1/p2dotq} of the NNLO notebook.}
+
+\subsection{Physical region and dimension}
+The rapidity of an object of mass $m$ produced at energy $\sqrt s$ is bounded by $|Y|\le\frac12\ln\frac1z$. In
+terms of $u$:
+\[ z\le u\le 1/z . \]
+We will re-derive this below, as the condition for the $a$ integral to be non-empty.
+
+Dimension check: each $\int\dd^dk\,\delta^+(k^2)$ has mass dimension $d-2$, and each of the two other deltas
+has $-2$. So $[\Phi_n]=n(d-2)-4=2(n-2-n\ep)$, and $\Phi_n\propto s^{\,n-2-n\ep}$ times a function of $z$ and $u$.
+
+\subsection{Link with our integral families}
+In \texttt{Code\_RRR} every momentum is incoming: $r_i=-k_i$, $q=-Q$. The five cut propagators are
+\[
+  r_1^2,\quad r_2^2,\quad r_3^2,\quad (p_1+p_2+r_1+r_2+r_3)^2-m^2=Q^2-m^2,\quad
+  -q\cdot p_1+u\,q\cdot p_2=Q\cdot p_1-u\,Q\cdot p_2 .
+\]
+Hence the sector with only the cut lines,
+\[\texttt{INT(topoN,1,1,1,1,1,0,0,0,0,0,0,0)},\]
+is $\Phi_3$ for \emph{every} family, up to the normalisation convention. The pipeline uses $m^2=1$, so $s=1/z$.
+
+\section{Strategy: factorise off the massless partons}
+\label{sec:strategy}
+Insert $1=\int\dd^dQ\,\delta^d\big(Q-p_1-p_2+\sum_ik_i\big)$ into \eqref{eq:def}. The partons now only appear in
+\begin{equation}
+  \Phi^{(0)}_n(K^2)\equiv\int\prod_{i=1}^n\dd^dk_i\,\delta^+(k_i^2)\;\delta^d\Big(K-\sum_ik_i\Big),
+  \qquad K=p_1+p_2-Q,
+\end{equation}
+the phase space of $n$ massless particles with total momentum $K$. It is Lorentz invariant, so it depends only on
+$K^2$. Therefore
+\begin{equation}
+  \Phi_n=\int\dd^dQ\;\delta^+(Q^2-m^2)\;\delta(Q\cdot p_1-u\,Q\cdot p_2)\;\Phi^{(0)}_n\big((p_1+p_2-Q)^2\big).
+  \label{eq:fact}
+\end{equation}
+Two tasks remain: compute $\Phi^{(0)}_n(K^2)$ (Sect.~\ref{sec:massless}) and the $Q$ integral
+(Sect.~\ref{sec:lightcone}).
+
+\section{\texorpdfstring{The massless $n$-body phase space}{The massless n-body phase space}}
+\label{sec:massless}
+We need the solid angle of the unit sphere in $D$ dimensions, $\Omega_D=2\pi^{D/2}/\Gamma(D/2)$
+(e.g.\ $\Omega_3=4\pi$).
+
+\subsection{Two bodies, one of them massive}
+Take one massless particle $k$ and one of mass $M$, in the rest frame of $K$ ($K=(\sqrt{K^2},\vec 0)$):
+\[
+  \Phi_2(K^2;M^2,0)=\int\dd^dk\,\delta^+(k^2)\,\delta^+\big((K-k)^2-M^2\big)
+  =\int\frac{\dd^{d-1}k}{2|\vec k|}\,\delta\big(K^2-2\sqrt{K^2}\,|\vec k|-M^2\big).
+\]
+In the first step $\int\dd k^0\,\delta^+(k^2)=1/(2|\vec k|)$, and we used $(K-k)^2=K^2-2\sqrt{K^2}|\vec k|$ for
+massless $k$. In spherical coordinates, $\dd^{d-1}k=\Omega_{d-1}|\vec k|^{d-2}\dd|\vec k|$. The delta fixes
+$|\vec k|=E\equiv(K^2-M^2)/(2\sqrt{K^2})$, with Jacobian $1/(2\sqrt{K^2})$. This gives
+\[
+  \Phi_2(K^2;M^2,0)=\frac{\Omega_{d-1}}{4\sqrt{K^2}}\,E^{\,d-3}
+  =\frac{\pi^{1-\ep}\,\Gamma(1-\ep)}{2\,\Gamma(2-2\ep)}\;(K^2)^{-1+\ep}\,(K^2-M^2)^{1-2\ep},
+\]
+where the duplication formula $\Gamma(1-\ep)\Gamma(\frac32-\ep)=2^{-1+2\ep}\sqrt\pi\,\Gamma(2-2\ep)$ was used to
+write $\Omega_{3-2\ep}=2^{2-2\ep}\pi^{1-\ep}\Gamma(1-\ep)/\Gamma(2-2\ep)$. Two massless particles: set $M=0$,
+$\Phi^{(0)}_2(K^2)=\frac{\pi^{1-\ep}\Gamma(1-\ep)}{2\Gamma(2-2\ep)}(K^2)^{-\ep}$.
+
+\subsection{\texorpdfstring{Recursion to $n$ bodies}{Recursion to n bodies}}
+Group the first $n-1$ partons into one ``particle'' of mass $M$: insert
+$1=\int\dd M^2\int\dd^dP\,\delta^+(P^2-M^2)\,\delta^d(P-\sum_{i<n}k_i)$. Then
+\[
+  \Phi^{(0)}_n(K^2)=\int_0^{K^2}\dd M^2\;\Phi_2(K^2;M^2,0)\;\Phi^{(0)}_{n-1}(M^2).
+\]
+Assume $\Phi^{(0)}_{n-1}(M^2)=c_{n-1}(M^2)^{n-3-(n-2)\ep}$. With $M^2=K^2t$ the integral is a Beta function,
+$\int_0^1\dd t\,t^{\,n-3-(n-2)\ep}(1-t)^{1-2\ep}=B\big((n-2)(1-\ep),2-2\ep\big)$, and
+\begin{equation}
+  \Phi^{(0)}_n(K^2)=c_n\,(K^2)^{\,n-2-(n-1)\ep},\qquad
+  c_n=\frac{\pi^{(n-1)(1-\ep)}\,\Gamma(1-\ep)^n}{2^{n-1}\,\Gamma\big((n-1)(1-\ep)\big)\,\Gamma\big(n(1-\ep)\big)}
+  \quad(n\ge2).
+  \label{eq:cn}
+\end{equation}
+The cases needed:
+\[
+  \Phi^{(0)}_1=\delta^+(K^2),\qquad
+  c_2=\frac{\pi^{1-\ep}\Gamma(1-\ep)}{2\Gamma(2-2\ep)},\qquad
+  c_3=\frac{\pi^{2-2\ep}\Gamma(1-\ep)^3}{4\Gamma(2-2\ep)\Gamma(3-3\ep)} .
+\]
+The power of $K^2$ follows from dimensions: $n(d-2)-d=2(n-2-(n-1)\ep)$.
+
+\section{\texorpdfstring{The integral over $Q$ in light-cone variables}{The integral over Q in light-cone variables}}
+\label{sec:lightcone}
+\subsection{Why light-cone variables}
+Both remaining constraints are simple in the basis $\{p_1,p_2,\text{transverse}\}$:
+\begin{equation}
+  Q=a\,p_1+b\,p_2+Q_T,\qquad Q_T\cdot p_1=Q_T\cdot p_2=0,\qquad Q_T^2=-q_T^2\ \ (q_T\ge0).
+\end{equation}
+Since $p_1^2=p_2^2=0$:
+\[
+  Q\cdot p_1=\tfrac s2\,b,\qquad Q\cdot p_2=\tfrac s2\,a,\qquad Q^2=s\,a\,b-q_T^2 .
+\]
+The rapidity constraint is linear in $(a,b)$ and the mass-shell constraint involves $q_T$ only through $q_T^2$.
+
+\subsection{The measure}
+In the frame of Sect.~\ref{sec:def}, $Q^0=\frac{\sqrt s}2(a+b)$ and $Q^3=\frac{\sqrt s}2(a-b)$. Hence
+\[\dd Q^0\dd Q^3=\frac s4\,\Big|\det\begin{pmatrix}1&1\\1&-1\end{pmatrix}\Big|\,\dd a\,\dd b=\frac s2\,\dd a\,\dd b,\]
+and
+\begin{equation}
+  \dd^dQ=\frac s2\,\dd a\,\dd b\,\dd^{d-2}q_T .
+\end{equation}
+
+\subsection{Doing the two deltas}
+\textbf{Rapidity.} $\delta(Q\cdot p_1-u\,Q\cdot p_2)=\delta\big(\frac s2(b-u\,a)\big)=\frac2s\,\delta(b-u\,a)$.
+The $b$ integral sets $b=u\,a$, and the $\frac2s$ cancels the $\frac s2$ of the measure.
+
+\textbf{Mass shell.} Now $Q^2=s\,u\,a^2-q_T^2$. In the $(d-2)$-dimensional Euclidean transverse space,
+$\dd^{d-2}q_T=\frac{\Omega_{d-2}}2(q_T^2)^{\frac{d-4}2}\dd q_T^2$, so
+\begin{equation}
+  \int\dd^{d-2}q_T\;\delta\big(s u a^2-q_T^2-m^2\big)=\frac{\pi^{1-\ep}}{\Gamma(1-\ep)}\,\big(s u a^2-m^2\big)^{-\ep},
+  \label{eq:qt}
+\end{equation}
+with $q_T^2=s u a^2-m^2$ fixed. At $\ep=0$ this is just $\pi$: in 4 dimensions the transverse ``sphere'' is a circle
+and its length times the Jacobian is constant. The factor $(\dots)^{-\ep}$ is the $d$-dimensional remnant.
+
+\textbf{The recoil.} With $b=ua$ and $q_T^2=sua^2-m^2$, the momentum of the partons
+$K=(1-a)p_1+(1-ua)p_2-Q_T$ has
+\[
+  K^2=s(1-a)(1-ua)-q_T^2=s\big(1-a(1+u)\big)+m^2=s(1+u)\,(a_1-a),\qquad a_1\equiv\frac{1+z}{1+u}.
+\]
+
+\subsection{Integration limits and the physical region}
+$a$ is bounded on both sides:
+\begin{itemize}
+\item $q_T^2\ge0$ requires $a\ge a_0\equiv\sqrt{z/u}$; $a>0$ comes from $Q^0>0$;
+\item $K^2\ge0$ requires $a\le a_1$; then also $K^0=\frac{\sqrt s}2(2-a(1+u))>0$, since $a_1(1+u)=1+z<2$.
+\end{itemize}
+The range is non-empty iff $a_0\le a_1$. Multiplying by $(1+u)$, this is $w\ge0$, where
+\begin{equation}
+  w\equiv(1+u)(a_1-a_0)=1+z-(1+u)\sqrt{z/u}=\Big(1-\sqrt{\tfrac zu}\Big)\Big(1-\sqrt{zu}\Big).
+\end{equation}
+Both factors are $\ge0$ exactly for $z\le u\le1/z$ (both negative is impossible for $z<1$). This re-derives the
+physical region; $w\to0$ at its edges, the maximal $|Y|$.
+
+\subsection{Result: a one-dimensional integral}
+Collect everything. Use $s u a^2-m^2=s u\,(a-a_0)(a+a_0)$ and $\Phi^{(0)}_n(K^2)=c_n[s(1+u)(a_1-a)]^{k}$ with
+$k\equiv n-2-(n-1)\ep$:
+\begin{equation}
+  \Phi_n=\frac{\pi^{1-\ep}}{\Gamma(1-\ep)}\,c_n\;s^{\,n-2-n\ep}\,u^{-\ep}(1+u)^{k}
+  \int_{a_0}^{a_1}\!\dd a\,(a-a_0)^{-\ep}\,(a+a_0)^{-\ep}\,(a_1-a)^{k}.
+  \label{eq:oned}
+\end{equation}
+For $n=1$, $\Phi^{(0)}_1=\delta(K^2)$ instead puts $a=a_1$ and no integral is left (Sect.~\ref{sec:result}).
+
+\section{The hypergeometric function}
+\label{sec:hyp}
+Map the range to $[0,1]$ with $a=a_0+(a_1-a_0)\,t$:
+\[
+  a-a_0=(a_1-a_0)\,t,\qquad a_1-a=(a_1-a_0)(1-t),\qquad a+a_0=2a_0\,(1+x\,t),\qquad x\equiv\frac{a_1-a_0}{2a_0}.
+\]
+The integral becomes
+\[
+  (a_1-a_0)^{\,n-1-n\ep}\,(2a_0)^{-\ep}\int_0^1\dd t\;t^{-\ep}(1-t)^{k}(1+x\,t)^{-\ep}.
+\]
+The two powers of $t$ and $1-t$ alone would give a Beta function. The extra $(1+xt)^{-\ep}$ turns it into Euler's
+integral representation
+\[
+  \int_0^1\dd t\,t^{\beta-1}(1-t)^{\gamma-\beta-1}(1-wt)^{-\alpha}=B(\beta,\gamma-\beta)\;\F(\alpha,\beta;\gamma;w),
+\]
+here with $\alpha=\ep$, $\beta=1-\ep$, $\gamma=n-n\ep$, $w=-x$:
+\begin{equation}
+  \int_{a_0}^{a_1}\!\dd a\cdots=(a_1-a_0)^{\,n-1-n\ep}\,(2a_0)^{-\ep}\;
+  B\big(1-\ep,(n-1)(1-\ep)\big)\;\F\big(\ep,1-\ep;n-n\ep;-x\big).
+\end{equation}
+The variable $x$ measures how far the integration range extends compared with its distance from the singular
+point $a=-a_0$. Near threshold or at the edges of the rapidity range $x\to0$ and $\F\to1$.
+
+\section{The result}
+\label{sec:result}
+Two identities make the result compact. First,
+$u(a_1-a_0)(a_1+a_0)=u\,a_1^2-z=\frac{(u-z)(1-uz)}{(1+u)^2}$ (multiply out). Second,
+$(2a_0)^{-\ep}=(a_1+a_0)^{-\ep}(1+x)^{\ep}$. Using them, together with
+$(1+u)^k(a_1-a_0)^{(n-1)(1-\ep)}=w^{(n-1)(1-\ep)}/(1+u)$:
+\begin{equation}
+  \boxed{\;
+  \Phi_n(z,u)=C_n\;s^{\,n-2-n\ep}\;\frac{w^{(n-1)(1-\ep)}}{1+u}\;
+  \Big[\frac{(u-z)(1-uz)}{(1+u)^2}\Big]^{-\ep}\;G_n(\ep,x)\;}
+  \label{eq:main}
+\end{equation}
+\begin{align}
+  G_n(\ep,x)&=(1+x)^{\ep}\,\F\big(\ep,1-\ep;n-n\ep;-x\big), &
+  C_n&=\frac{\pi^{n(1-\ep)}\,\Gamma(1-\ep)^n}{2^{n-1}\,\Gamma\big(n(1-\ep)\big)^2},\nonumber\\
+  w&=\Big(1-\sqrt{\tfrac zu}\Big)\Big(1-\sqrt{zu}\Big), &
+  x&=\frac{w\sqrt u}{2\sqrt z\,(1+u)} .
+\end{align}
+Here $C_n=\frac{\pi^{1-\ep}}{\Gamma(1-\ep)}\,c_n\,B(1-\ep,(n-1)(1-\ep))$. The structure of \eqref{eq:main}:
+\begin{itemize}
+\item $w^{(n-1)(1-\ep)}$: the ``available phase space'' for the partons. It vanishes at the kinematic boundary;
+  each extra parton adds one power.
+\item $[(u-z)(1-uz)/(1+u)^2]^{-\ep}$: from the transverse momentum of $Q$ in $d$ dimensions. At NLO this is the
+  well-known $[(u-z)(1-uz)]^{-\ep}$.
+\item $G_n$: the only non-trivial function, $G_n=1+O(\ep\,x)$.
+\end{itemize}
+
+\subsection{The three orders}
+\begin{itemize}
+\item \textbf{$n=1$ (NLO).} Here $\delta(K^2)=\delta\big(s(1+u)(a_1-a)\big)$ sets $a=a_1$. Directly from
+  \eqref{eq:qt}:
+  \[\Phi_1=\frac{\pi^{1-\ep}}{\Gamma(1-\ep)}\;\frac{s^{-1-\ep}}{1+u}\;\Big[\frac{(u-z)(1-uz)}{(1+u)^2}\Big]^{-\ep}.\]
+  This is \eqref{eq:main} with $C_1=\pi^{1-\ep}/\Gamma(1-\ep)$, $w^0=1$ and $G_1=1$. Consistently,
+  $\F(\ep,1-\ep;1-\ep;-x)=(1+x)^{-\ep}$, so $G_1=1$ also from the formula. At NLO the deltas fix everything; nothing
+  is left to integrate.
+\item \textbf{$n=2$ (NNLO).}
+  $\Phi_2=\frac{\pi^{2-2\ep}\Gamma(1-\ep)^2}{2\Gamma(2-2\ep)^2}\,s^{-2\ep}\,
+  \frac{w^{1-\ep}}{1+u}\big[\tfrac{(u-z)(1-uz)}{(1+u)^2}\big]^{-\ep}G_2(\ep,x)$.
+\item \textbf{$n=3$ (N$^3$LO).}
+  \[\Phi_3=\frac{\pi^{3-3\ep}\Gamma(1-\ep)^3}{4\,\Gamma(3-3\ep)^2}\;s^{1-3\ep}\;
+  \frac{w^{2-2\ep}}{1+u}\Big[\frac{(u-z)(1-uz)}{(1+u)^2}\Big]^{-\ep}(1+x)^{\ep}\,\F(\ep,1-\ep;3-3\ep;-x).\]
+\end{itemize}
+
+\subsection{Sanity checks you can do by eye}
+\begin{itemize}
+\item \textbf{$\ep=0$:} $G_n=1$ and $\Phi_n=C_n\,s^{n-2}w^{n-1}/(1+u)$, e.g.\ $\Phi_3=\frac{\pi^3}{16}\,s\,\frac{w^2}{1+u}$.
+\item \textbf{Dimension:} $s^{\,n-2-n\ep}$, as counted in Sect.~\ref{sec:def}.
+\item \textbf{Edges of the rapidity range:} $w\to0$ at $u\to z$ and $u\to1/z$; the phase space closes.
+\item \textbf{$p_1\leftrightarrow p_2$:} exchanging the beams sends $Y\to-Y$, i.e.\ $u\to1/u$. From the delta,
+  $\delta(Q\cdot p_1-\tfrac1u Q\cdot p_2)=u\,\delta(Q\cdot p_2-u\,Q\cdot p_1)$, so one needs
+  $\Phi_n(z,1/u)=u\,\Phi_n(z,u)$. In \eqref{eq:main}, $w$, $x$ and $(u-z)(1-uz)/(1+u)^2$ are invariant under
+  $u\to1/u$, and $\frac1{1+1/u}=\frac u{1+u}$. \checkmark
+\end{itemize}
+
+\section{\texorpdfstring{The $\ep$ expansion}{The epsilon expansion}}
+\label{sec:eps}
+All factors of \eqref{eq:main} except $G_n$ are powers: they expand into logarithms of $w$, $1+u$,
+$(u-z)(1-uz)$ and constants. For $G_n$, expand the series of $\F$ or the Euler integral. With $L=\ln(1+x)$:
+\begin{align}
+G_2&=1+\ep\Big(1-\frac Lx\Big)+\ep^2\,\frac{6x-2L+xL^2+2(2+x)\Li(-x)}{2x}+O(\ep^3),\\
+G_3&=1+\ep\,\frac{x(2+3x)-2(1+2x)L}{2x^2}\nonumber\\
+ &\quad+\ep^2\,\frac{x(7+11x)-(1+2x)L+(1+2x+2x^2)L^2+2(3+6x+2x^2)\Li(-x)}{2x^2}+O(\ep^3).
+\end{align}
+How the $O(\ep)$ term arises: $(\ep)_m\approx\ep\,(m-1)!$ for small $\ep$, so
+$\F(\ep,1-\ep;n;-x)\approx1+\ep\sum_{m\ge1}\frac{(m-1)!}{(n)_m}(-x)^m$. For $n=2$ the sum is
+$\sum_m\frac{(-x)^m}{m(m+1)}=1-\frac{(1+x)L}{x}$; adding $\ep L$ from $(1+x)^\ep$ gives $1-L/x$. These
+coefficients are regular at $x=0$ (e.g.\ $1-L/x=x/2+O(x^2)$), so $G_n-1$ is small near threshold.
+Higher orders: expand the Euler integral; this gives harmonic polylogarithms of $x$ (HypExp or PolyLogTools).
+
+\section{NNLO variables and the soft limit}
+\label{sec:soft}
+\subsection{The variables of the NNLO computation}
+The NNLO computation uses $\zb=1-z$ and $y\in[0,1]$, with
+\[ u=\frac{y+z-yz}{1-y+yz}\qquad(y=0\Rightarrow u=z,\quad y=1\Rightarrow u=1/z). \]
+So $y$ maps the rapidity range onto $[0,1]$. A short computation gives the exact relations
+\begin{gather}
+  1+u=\frac{1+z}{1-y\zb},\qquad u-z=\frac{y(1-z^2)}{1-y\zb},\qquad 1-uz=\frac{(1-y)(1-z^2)}{1-y\zb},\nonumber\\
+  \frac{(u-z)(1-uz)}{(1+u)^2}=y(1-y)\,\zb^{\,2}.
+\end{gather}
+So the bracket in \eqref{eq:main} is rational in $(y,z)$; the square roots only sit in $w$ and $x$. These are
+the roots the NNLO notebook handles with $r=\sqrt u$, $t=\sqrt z$.
+
+\subsection{Soft limit}
+$\zb\to0$ is the threshold: no energy is left for radiation. At fixed $y$ one finds
+$\sqrt{z/u}\simeq1-y\zb$ and $\sqrt{zu}\simeq1-(1-y)\zb$, hence
+\[
+  w=y(1-y)\zb^2\big(1+\tfrac{\zb}2+O(\zb^2)\big),\qquad x=\tfrac14\,y(1-y)\zb^2+O(\zb^3),\qquad
+  G_n=1+O(\ep\,\zb^2),\qquad 1+u\to2 .
+\]
+With $m^2=1$, $s^{\dots}=z^{-\dots}\to1$, and the leading power is
+\begin{equation}
+  \Phi_n^{\rm LP}=\frac{C_n}{2}\,\big(y(1-y)\big)^{\,n-1-n\ep}\,\zb^{\,2(n-1)-2n\ep}.
+  \label{eq:lp}
+\end{equation}
+The exponents count the phase space: each parton contributes $\zb^{2-2\ep}$ (energy and angles scale with $\zb$),
+and $\big(y(1-y)\zb^2\big)^{-\ep}$ comes from the transverse momentum of $Q$.
+
+\section{Comparison with the NNLO computation}
+\label{sec:nnlo}
+File: \texttt{nnlo\_rr/integrals/IF1/boundaries.nb}, section ``phase space''. There the phase-space master
+$j[\mathrm{IF1},1,1,1,1,0,0,0]$ is integrated over angular variables $\lambda_1,\lambda_2,\lambda_4$ and expanded
+at leading power in $\zb$. The exported result is the boundary condition of the canonical differential equations.
+
+\subsection{(a) The exported soft master is right}
+The file \texttt{SoftMasters/m1\_1111000.m} contains
+\texttt{P[bz,2-4eps]\,P2[(1-y)y,1-2eps]} times a series in $\ep$ up to $\ep^6$. The prefactor is exactly the
+structure of \eqref{eq:lp} for $n=2$. Its coefficients agree \emph{exactly, through $\ep^6$} with
+\begin{equation}
+  \frac{e^{2\ep\gamma_E}\,\Gamma(1-\ep)^2}{4\,\Gamma(2-2\ep)^2}
+  =\frac{e^{2\ep\gamma_E}}{\pi^{2-2\ep}}\times\frac{C_2}{2}
+  =\frac14+\ep+\ep^2\Big(3-\frac{\pi^2}8\Big)+\dots
+\end{equation}
+So the NNLO boundary is the leading power of the exact $\Phi_2$. This also fixes the normalisation used at NNLO:
+$\mathcal N_2=e^{2\ep\gamma_E}/\pi^{2-2\ep}$ times \eqref{eq:def}, i.e.\ a factor $e^{\ep\gamma_E}/\pi^{1-\ep}$ per
+real parton.
+
+\subsection{(b) The closed formula in the comment is exact only at leading power}
+The notebook also contains, in a comment (``result to print''), a closed formula
+\[
+  F_c=\frac{\big((u-z)(1-uz)\big)^{1-2\ep}}{(1+u)^{1-2\ep}\,\big(\sqrt u(\sqrt u+\sqrt z)(1+\sqrt{uz})\big)^{1-\ep}}
+  \;\times(\text{constants})\times K[0].
+\]
+To compare it with \eqref{eq:main}, note
+$(u-z)=(\sqrt u-\sqrt z)(\sqrt u+\sqrt z)$ and $(1-uz)=(1-\sqrt{uz})(1+\sqrt{uz})$, so
+\[
+  \frac{(u-z)(1-uz)}{\sqrt u(\sqrt u+\sqrt z)(1+\sqrt{uz})}=\frac{(\sqrt u-\sqrt z)(1-\sqrt{uz})}{\sqrt u}=w .
+\]
+Hence $F_c=\frac{w^{1-\ep}}{1+u}\big[\frac{(u-z)(1-uz)}{(1+u)^2}\big]^{-\ep}$: \emph{exactly \eqref{eq:main} for
+$n=2$ without the factor $G_2$}:
+\begin{equation}
+  \frac{\Phi_2}{C_2\,s^{-2\ep}F_c}=G_2(\ep,x)=1+\ep\Big(1-\frac{\ln(1+x)}x\Big)+O(\ep^2)
+  =1+\frac{\ep\,x}2+\dots\;\simeq\;1+\frac{\ep}{8}\,y(1-y)\,\zb^2 .
+\end{equation}
+Therefore $F_c$ is
+\begin{itemize}
+\item exact at $\ep=0$, for all $z$;
+\item exact at leading power in $\zb$, to all orders in $\ep$. This is all that was exported and used, so the NNLO
+  results are not affected;
+\item not exact for general $z$ beyond $O(\ep^0)$: it misses the relative correction $G_2-1\simeq\ep x/2$, a
+  power-suppressed $O(\ep\,\zb^2)$ effect.
+\end{itemize}
+Numerically, at $\ep=0.3$ (the middle column is a direct numerical integration of \eqref{eq:oned}):
+
+\begin{center}
+\begin{tabular}{cccccc}
+\toprule
+$\zb$ & $y$ & $x$ & $\Phi_2/(C_2 s^{-2\ep}F_c)$ (numerical) & $G_2(\ep,x)$ & $1+\ep x/2$\\
+\midrule
+$1/2$   & $1/5$ & $1.96\cdot10^{-2}$ & $1.0029115462$ & $1.0029115462$ & $1.00294$\\
+$1/2$   & $1/2$ & $3.03\cdot10^{-2}$ & $1.0044765289$ & $1.0044765289$ & $1.00455$\\
+$1/10$  & $1/5$ & $4.44\cdot10^{-4}$ & $1.0000666211$ & $1.0000666211$ & $1.000067$\\
+$1/10$  & $1/2$ & $6.94\cdot10^{-4}$ & $1.0001040555$ & $1.0001040555$ & $1.000104$\\
+$1/100$ & $1/5$ & $4.04\cdot10^{-6}$ & $1.0000006061$ & $1.0000006061$ & $1.00000061$\\
+$1/100$ & $1/2$ & $6.31\cdot10^{-6}$ & $1.0000009470$ & $1.0000009470$ & $1.00000095$\\
+\bottomrule
+\end{tabular}
+\end{center}
+The deviation falls like $\zb^2$ and is already $10^{-4}$ at $\zb=0.1$. This is why it is invisible in the soft
+expansion but would matter if $F_c$ were used as the full master.
+
+\subsection{(c) Is it a matter of which delta?}
+A natural suspicion: maybe $F_c$ is not the master but the phase space with the \emph{other} rapidity delta,
+$\delta(u-u_Q)$, which differs by the factor $Q\cdot p_2$ inside the integral (Sect.~\ref{sec:def}). We tested this
+directly, integrating the notebook's own \texttt{INTEGRAND} (copied verbatim, with the $(y,z)$-dependent part of
+\texttt{Norm}) over $\lambda_1,\lambda_2,\lambda_4$. The $\lambda_4$ and $\lambda_2$ integrals factorise into Beta
+functions, and only $\lambda_1$ is left, which we integrate numerically. Two objects:
+\[
+  A=\int\texttt{INTEGRAND}\quad(\text{delta }\delta(u-u_Q)),\qquad
+  B=\int\texttt{INTEGRAND}/Q\!\cdot\!p_2\quad(\text{the master}).
+\]
+Ratios over five points $(z,u)$; a ratio that is the same at every point means the two functions coincide up to an
+$\ep$-dependent constant:
+
+\begin{center}
+\begin{tabular}{lcc}
+\toprule
+ratio & $\ep=0$ & $\ep=0.3$\\
+\midrule
+$A\,/\,$\eqref{eq:oned} with extra factor $Q\cdot p_2=\frac{as}2$ & $2\pi$ everywhere & $36.0874\ldots$ everywhere\\
+$B\,/\,$\eqref{eq:oned} (the master) & $2\pi$ everywhere & $36.0874\ldots$ everywhere\\
+$A\,/\,F_c$ & $1.34\ \dots\ 2.91$ & $14.7\ \dots\ 31.7$\\
+$B\,/\,F_c$ & $2\pi$ everywhere & $68.5\ \dots\ 72.7$\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Conclusions:
+\begin{itemize}
+\item The notebook's parametrisation is \emph{exact for all $z$}, for both deltas: $A$ and $B$ agree with the
+  light-cone results everywhere, not only in the soft limit. The factor $1/Q\cdot p_2$ pulled out of the delta is
+  handled correctly.
+\item $F_c$ is not the $\delta(u-u_Q)$ phase space: $A/F_c$ varies already at $\ep=0$.
+\item $F_c$ is the master at $\ep=0$ (and at leading power), as found in (b).
+\item The most likely reading is that \texttt{K[0]} in the comment stands for the leftover $\lambda_1$ integral.
+  Then the formula is exact, with $\texttt{K[0]}\propto B(1-\ep,1-\ep)\,G_2(\ep,x)$: a function of $z,u$ that becomes
+  a constant only at leading power in $\zb$. That leading power is what the notebook evaluates
+  (\texttt{Series[\dots,\char`\{bz,0,0\char`\}]}) and exports.
+\end{itemize}
+
+\section{\texorpdfstring{N$^3$LO: what to use}{N3LO: what to use}}
+\label{sec:n3lo}
+\begin{itemize}
+\item \textbf{The master.} \texttt{INT(topoN,1,1,1,1,1,0,\dots,0)}$\;=\Phi_3$ of \eqref{eq:main}, exact. In the
+  normalisation analogous to NNLO, $\mathcal N_3=e^{3\ep\gamma_E}/\pi^{3-3\ep}$ (an assumption, to be matched to the
+  convention of the reduction and the other masters):
+  \[ \mathcal N_3\,\Phi_3=\frac{e^{3\ep\gamma_E}\Gamma(1-\ep)^3}{4\,\Gamma(3-3\ep)^2}\;s^{1-3\ep}\;
+     \frac{w^{2-2\ep}}{1+u}\,\big[y(1-y)\zb^2\big]^{-\ep}\,G_3(\ep,x).\]
+\item \textbf{Soft boundary} (if the NNLO strategy is repeated for the other masters):
+  \[\mathcal N_3\Phi_3^{\rm LP}=\big(y(1-y)\big)^{2-3\ep}\zb^{4-6\ep}\times
+  \frac{e^{3\ep\gamma_E}\Gamma(1-\ep)^3}{8\Gamma(3-3\ep)^2},\]
+  \begin{align*}\frac{e^{3\ep\gamma_E}\Gamma(1-\ep)^3}{8\Gamma(3-3\ep)^2}&=\frac1{32}+\frac{9\ep}{32}
+   +\frac{207-5\pi^2}{128}\ep^2+\frac{972-45\pi^2-68\zeta_3}{128}\ep^3\\
+   &\quad+\frac{488430-31050\pi^2+163\pi^4-73440\zeta_3}{15360}\ep^4+\dots\end{align*}
+  For \emph{this} master no boundary is needed, since the exact formula is known. It can also serve as an exact
+  check of the differential-equation solution at any $z$.
+\end{itemize}
+
+\section{Checks}
+\label{sec:checks}
+\textbf{\texttt{checks/checks.wl}} (Mathematica; output in \texttt{checks.log}):
+\begin{enumerate}
+\item the one-dimensional integral \eqref{eq:oned} against the $\F$ form and against \eqref{eq:main}, for $n=2,3,4$
+  and five points $(\ep,z,u)$ with $\ep$ of both signs: agreement to $10^{-28}$;
+\item $n=1$: $G_1=1$ (symbolic);
+\item the identities of the NNLO variables (symbolic);
+\item the leading power of $w$ and $x$;
+\item the $\ep$ and $\ep^2$ coefficients of $G_2$ and $G_3$: from the series of $\F$ and the Euler integral, checked
+  by finite differences; the simplified forms above are identical to the Euler-integral results;
+\item the NNLO soft master file against $e^{2\ep\gamma_E}\Gamma(1-\ep)^2/(4\Gamma(2-2\ep)^2)$: identical through $\ep^6$;
+\item the comment formula of \texttt{boundaries.nb}: symbolic identity with $w^{1-\ep}/(1+u)[\dots]^{-\ep}$, and the
+  table of Sect.~\ref{sec:nnlo};
+\item the N$^3$LO leading-power constant;
+\item the $p_1\leftrightarrow p_2$ symmetry $\Phi_n(z,1/u)=u\,\Phi_n(z,u)$.
+\end{enumerate}
+\textbf{\texttt{checks/notebook\_integrand.wl}} (output in \texttt{notebook\_integrand.log}): the notebook's
+\texttt{INTEGRAND}, with and without $1/Q\cdot p_2$, against the light-cone results and $F_c$ (table of (c)).
+\textbf{\texttt{checks/rest\_frame.py}} (plain Python; output in \texttt{rest\_frame.log}): an independent
+derivation in the partonic rest frame instead of light-cone variables. $P\to Q+K$ two-body, $K\to n$ massless as in
+Sect.~\ref{sec:massless}, and the angle of $Q$ fixed by the rapidity delta. Compared with \eqref{eq:main} in absolute
+normalisation for $n=2,3$, $\ep=0,\,0.3,\,-0.2$ and three $(s,z,u)$ points: agreement to $10^{-9}$--$10^{-14}$ (the
+accuracy of the quadrature).
+
+\end{document}

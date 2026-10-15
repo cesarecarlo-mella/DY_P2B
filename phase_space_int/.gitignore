@@ -1,0 +1,6 @@
+*.aux
+*.log
+!checks/*.log
+*.out
+*.toc
+__pycache__/
