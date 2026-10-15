@@ -1,0 +1,46 @@
+# group g09: families 61 820 826 898 (integrals/all; make_jobs.py)
+jobs:
+ - reduce_sectors:
+    conditional: true
+    reduce:
+     - {topologies: [topo61], sectors: [3071], r: 11, s: 5}
+     - {topologies: [topo61], sectors: [4031], r: 11, s: 6}
+     - {topologies: [topo61], sectors: [3295], r: 10, s: 5}
+     - {topologies: [topo820], sectors: [2943], r: 10, s: 4}
+     - {topologies: [topo820], sectors: [3007], r: 10, s: 4}
+     - {topologies: [topo820], sectors: [3039], r: 10, s: 4}
+     - {topologies: [topo820], sectors: [3551], r: 10, s: 5}
+     - {topologies: [topo820], sectors: [1407], r: 9, s: 4}
+     - {topologies: [topo820], sectors: [1471], r: 9, s: 4}
+     - {topologies: [topo826], sectors: [3455], r: 10, s: 4}
+     - {topologies: [topo826], sectors: [3519], r: 10, s: 4}
+     - {topologies: [topo826], sectors: [3551], r: 10, s: 5}
+     - {topologies: [topo826], sectors: [3807], r: 10, s: 5}
+     - {topologies: [topo826], sectors: [1663], r: 9, s: 4}
+     - {topologies: [topo826], sectors: [1727], r: 10, s: 5}
+     - {topologies: [topo898], sectors: [3903], r: 10, s: 5}
+    select_integrals:
+      select_mandatory_list:
+        - [topo61, toreduce/topo61.txt]
+        - [topo820, toreduce/topo820.txt]
+        - [topo826, toreduce/topo826.txt]
+        - [topo898, toreduce/topo898.txt]
+    run_symmetries: true
+    run_initiate: true
+    run_triangular: false
+    run_firefly: true
+    run_back_substitution: false
+ - kira2math:
+    target:
+       - [topo61, toreduce/topo61.txt]
+       - [topo820, toreduce/topo820.txt]
+       - [topo826, toreduce/topo826.txt]
+       - [topo898, toreduce/topo898.txt]
+    reconstruct_mass: false
+ - kira2form:
+    target:
+       - [topo61, toreduce/topo61.txt]
+       - [topo820, toreduce/topo820.txt]
+       - [topo826, toreduce/topo826.txt]
+       - [topo898, toreduce/topo898.txt]
+    reconstruct_mass: false

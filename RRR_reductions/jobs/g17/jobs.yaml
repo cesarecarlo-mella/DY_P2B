@@ -1,0 +1,63 @@
+# group g17: families 199 229 436 550 (integrals/all; make_jobs.py)
+jobs:
+ - reduce_sectors:
+    conditional: true
+    reduce:
+     - {topologies: [topo199], sectors: [3583], r: 11, s: 5}
+     - {topologies: [topo199], sectors: [1983], r: 11, s: 5}
+     - {topologies: [topo199], sectors: [2015], r: 10, s: 5}
+     - {topologies: [topo199], sectors: [3007], r: 10, s: 6}
+     - {topologies: [topo199], sectors: [3039], r: 10, s: 5}
+     - {topologies: [topo199], sectors: [3775], r: 10, s: 5}
+     - {topologies: [topo199], sectors: [3807], r: 10, s: 4}
+     - {topologies: [topo199], sectors: [3935], r: 10, s: 5}
+     - {topologies: [topo229], sectors: [2559], r: 10, s: 5}
+     - {topologies: [topo229], sectors: [3007], r: 10, s: 5}
+     - {topologies: [topo229], sectors: [3039], r: 10, s: 4}
+     - {topologies: [topo229], sectors: [3551], r: 11, s: 5}
+     - {topologies: [topo229], sectors: [3807], r: 10, s: 4}
+     - {topologies: [topo229], sectors: [3935], r: 10, s: 5}
+     - {topologies: [topo229], sectors: [1279], r: 9, s: 4}
+     - {topologies: [topo229], sectors: [1407], r: 10, s: 5}
+     - {topologies: [topo229], sectors: [1727], r: 9, s: 4}
+     - {topologies: [topo229], sectors: [1855], r: 10, s: 5}
+     - {topologies: [topo229], sectors: [3263], r: 9, s: 4}
+     - {topologies: [topo229], sectors: [3391], r: 10, s: 5}
+     - {topologies: [topo436], sectors: [2047], r: 11, s: 5}
+     - {topologies: [topo436], sectors: [3071], r: 11, s: 5}
+     - {topologies: [topo436], sectors: [3583], r: 11, s: 5}
+     - {topologies: [topo436], sectors: [4031], r: 11, s: 5}
+     - {topologies: [topo550], sectors: [1535], r: 10, s: 4}
+     - {topologies: [topo550], sectors: [1919], r: 10, s: 4}
+     - {topologies: [topo550], sectors: [2015], r: 10, s: 5}
+     - {topologies: [topo550], sectors: [3327], r: 10, s: 4}
+     - {topologies: [topo550], sectors: [3519], r: 10, s: 4}
+     - {topologies: [topo550], sectors: [3711], r: 10, s: 4}
+     - {topologies: [topo550], sectors: [3807], r: 10, s: 5}
+     - {topologies: [topo550], sectors: [3903], r: 10, s: 4}
+     - {topologies: [topo550], sectors: [3999], r: 10, s: 5}
+    select_integrals:
+      select_mandatory_list:
+        - [topo199, toreduce/topo199.txt]
+        - [topo229, toreduce/topo229.txt]
+        - [topo436, toreduce/topo436.txt]
+        - [topo550, toreduce/topo550.txt]
+    run_symmetries: true
+    run_initiate: true
+    run_triangular: false
+    run_firefly: true
+    run_back_substitution: false
+ - kira2math:
+    target:
+       - [topo199, toreduce/topo199.txt]
+       - [topo229, toreduce/topo229.txt]
+       - [topo436, toreduce/topo436.txt]
+       - [topo550, toreduce/topo550.txt]
+    reconstruct_mass: false
+ - kira2form:
+    target:
+       - [topo199, toreduce/topo199.txt]
+       - [topo229, toreduce/topo229.txt]
+       - [topo436, toreduce/topo436.txt]
+       - [topo550, toreduce/topo550.txt]
+    reconstruct_mass: false

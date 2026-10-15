@@ -1,0 +1,42 @@
+# groups of the 156 families of integrals/all (make_jobs.py group --size 4); one job per line, 'name: family numbers'. Editable.
+# common sectors within groups, summed: 7871
+# comment: #integrals, #occurring sectors (up to r1,r2,r3 permutations) in the union, common sectors summed over pairs
+g01: 1 43 145 394          #  14970 int,  169 sectors,  267 common
+g02: 7 193 346 352         #  14679 int,  175 sectors,  159 common
+g03: 13 55 169 460         #  15399 int,  225 sectors,  212 common
+g04: 19 91 187 253         #  17189 int,  186 sectors,  218 common
+g05: 25 73 85 127          #  10207 int,  182 sectors,  218 common
+g06: 31 121 139 364        #   9816 int,  172 sectors,  228 common
+g07: 37 133 157 532        #  19723 int,  208 sectors,  209 common
+g08: 49 79 103 520         #  16639 int,  221 sectors,  231 common
+g09: 61 820 826 898        #  11474 int,  194 sectors,  133 common
+g10: 67 304 484 556        #  12013 int,  221 sectors,  240 common
+g11: 97 247 259 406        #  10422 int,  184 sectors,  257 common
+g12: 109 448 472 727       #  11367 int,  172 sectors,  218 common
+g13: 115 490 514 658       #  13259 int,  229 sectors,  234 common
+g14: 151 265 412 424       #  11235 int,  188 sectors,  263 common
+g15: 163 358 562 838       #  12043 int,  204 sectors,  197 common
+g16: 175 181 586 874       #   7657 int,  182 sectors,  146 common
+g17: 199 229 436 550       #  14484 int,  226 sectors,  266 common
+g18: 205 235 316 544       #  20586 int,  214 sectors,  242 common
+g19: 211 217 442 508       #  11622 int,  179 sectors,  226 common
+g20: 223 280 382 478       #  16069 int,  207 sectors,  269 common
+g21: 241 322 334 592       #   9836 int,  152 sectors,  149 common
+g22: 271 328 337 343       #  11097 int,  121 sectors,  162 common
+g23: 277 298 652 676       #   7539 int,  209 sectors,  149 common
+g24: 286 310 646 670       #   9351 int,  198 sectors,  223 common
+g25: 292 466 496 721       #   9306 int,  150 sectors,  134 common
+g26: 370 388 580 751       #  14927 int,  204 sectors,  244 common
+g27: 376 418 454 502       #  11918 int,  205 sectors,  287 common
+g28: 400 790 802 808       #   8193 int,  198 sectors,  233 common
+g29: 430 538 610 616       #   7757 int,  168 sectors,  202 common
+g30: 526 862 886 904       #   6827 int,  123 sectors,  126 common
+g31: 568 598 604 682       #  12561 int,  205 sectors,  178 common
+g32: 574 622 892 910       #   5669 int,  127 sectors,  129 common
+g33: 628 634 772 778       #  10142 int,  131 sectors,  210 common
+g34: 640 688 694 856       #  10175 int,  172 sectors,  189 common
+g35: 664 868 880 916       #   6245 int,  100 sectors,   88 common
+g36: 700 706 844 850       #   4883 int,  158 sectors,  120 common
+g37: 709 739 784 814       #   7170 int,  214 sectors,  222 common
+g38: 715 733 745 796       #   7362 int,  190 sectors,  238 common
+g39: 757 763 769 832       #   7724 int,  153 sectors,  155 common

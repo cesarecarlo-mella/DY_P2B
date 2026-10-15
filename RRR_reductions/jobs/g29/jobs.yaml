@@ -1,0 +1,49 @@
+# group g29: families 430 538 610 616 (integrals/all; make_jobs.py)
+jobs:
+ - reduce_sectors:
+    conditional: true
+    reduce:
+     - {topologies: [topo430], sectors: [3839], r: 11, s: 6}
+     - {topologies: [topo430], sectors: [2943], r: 10, s: 5}
+     - {topologies: [topo430], sectors: [3903], r: 10, s: 5}
+     - {topologies: [topo430], sectors: [3935], r: 10, s: 5}
+     - {topologies: [topo430], sectors: [1407], r: 9, s: 4}
+     - {topologies: [topo538], sectors: [3839], r: 11, s: 5}
+     - {topologies: [topo538], sectors: [3967], r: 11, s: 5}
+     - {topologies: [topo610], sectors: [1983], r: 10, s: 4}
+     - {topologies: [topo610], sectors: [3007], r: 10, s: 4}
+     - {topologies: [topo610], sectors: [3519], r: 10, s: 5}
+     - {topologies: [topo610], sectors: [3903], r: 10, s: 5}
+     - {topologies: [topo610], sectors: [3999], r: 10, s: 4}
+     - {topologies: [topo616], sectors: [3903], r: 10, s: 5}
+     - {topologies: [topo616], sectors: [959], r: 9, s: 4}
+     - {topologies: [topo616], sectors: [1471], r: 9, s: 4}
+     - {topologies: [topo616], sectors: [1951], r: 9, s: 4}
+     - {topologies: [topo616], sectors: [2751], r: 9, s: 4}
+     - {topologies: [topo616], sectors: [3263], r: 9, s: 4}
+     - {topologies: [topo616], sectors: [3743], r: 9, s: 4}
+    select_integrals:
+      select_mandatory_list:
+        - [topo430, toreduce/topo430.txt]
+        - [topo538, toreduce/topo538.txt]
+        - [topo610, toreduce/topo610.txt]
+        - [topo616, toreduce/topo616.txt]
+    run_symmetries: true
+    run_initiate: true
+    run_triangular: false
+    run_firefly: true
+    run_back_substitution: false
+ - kira2math:
+    target:
+       - [topo430, toreduce/topo430.txt]
+       - [topo538, toreduce/topo538.txt]
+       - [topo610, toreduce/topo610.txt]
+       - [topo616, toreduce/topo616.txt]
+    reconstruct_mass: false
+ - kira2form:
+    target:
+       - [topo430, toreduce/topo430.txt]
+       - [topo538, toreduce/topo538.txt]
+       - [topo610, toreduce/topo610.txt]
+       - [topo616, toreduce/topo616.txt]
+    reconstruct_mass: false

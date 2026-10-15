@@ -1,0 +1,40 @@
+# group g16: families 175 181 586 874 (integrals/all; make_jobs.py)
+jobs:
+ - reduce_sectors:
+    conditional: true
+    reduce:
+     - {topologies: [topo175], sectors: [3967], r: 11, s: 5}
+     - {topologies: [topo181], sectors: [3583], r: 11, s: 5}
+     - {topologies: [topo181], sectors: [3839], r: 11, s: 5}
+     - {topologies: [topo181], sectors: [3935], r: 11, s: 5}
+     - {topologies: [topo586], sectors: [1919], r: 10, s: 4}
+     - {topologies: [topo586], sectors: [3711], r: 10, s: 4}
+     - {topologies: [topo586], sectors: [3903], r: 10, s: 4}
+     - {topologies: [topo586], sectors: [3935], r: 10, s: 4}
+     - {topologies: [topo874], sectors: [3519], r: 10, s: 5}
+     - {topologies: [topo874], sectors: [3807], r: 10, s: 5}
+    select_integrals:
+      select_mandatory_list:
+        - [topo175, toreduce/topo175.txt]
+        - [topo181, toreduce/topo181.txt]
+        - [topo586, toreduce/topo586.txt]
+        - [topo874, toreduce/topo874.txt]
+    run_symmetries: true
+    run_initiate: true
+    run_triangular: false
+    run_firefly: true
+    run_back_substitution: false
+ - kira2math:
+    target:
+       - [topo175, toreduce/topo175.txt]
+       - [topo181, toreduce/topo181.txt]
+       - [topo586, toreduce/topo586.txt]
+       - [topo874, toreduce/topo874.txt]
+    reconstruct_mass: false
+ - kira2form:
+    target:
+       - [topo175, toreduce/topo175.txt]
+       - [topo181, toreduce/topo181.txt]
+       - [topo586, toreduce/topo586.txt]
+       - [topo874, toreduce/topo874.txt]
+    reconstruct_mass: false

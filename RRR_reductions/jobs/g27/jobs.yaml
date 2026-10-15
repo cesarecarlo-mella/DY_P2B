@@ -1,0 +1,54 @@
+# group g27: families 376 418 454 502 (integrals/all; make_jobs.py)
+jobs:
+ - reduce_sectors:
+    conditional: true
+    reduce:
+     - {topologies: [topo376], sectors: [3583], r: 11, s: 5}
+     - {topologies: [topo376], sectors: [1919], r: 10, s: 5}
+     - {topologies: [topo376], sectors: [1983], r: 11, s: 5}
+     - {topologies: [topo376], sectors: [3711], r: 11, s: 5}
+     - {topologies: [topo376], sectors: [3775], r: 10, s: 4}
+     - {topologies: [topo376], sectors: [3935], r: 10, s: 5}
+     - {topologies: [topo376], sectors: [2975], r: 9, s: 5}
+     - {topologies: [topo418], sectors: [3967], r: 11, s: 5}
+     - {topologies: [topo418], sectors: [4031], r: 11, s: 5}
+     - {topologies: [topo418], sectors: [767], r: 9, s: 4}
+     - {topologies: [topo418], sectors: [2303], r: 9, s: 4}
+     - {topologies: [topo418], sectors: [2783], r: 9, s: 4}
+     - {topologies: [topo454], sectors: [2047], r: 11, s: 5}
+     - {topologies: [topo454], sectors: [3583], r: 11, s: 5}
+     - {topologies: [topo454], sectors: [4063], r: 11, s: 5}
+     - {topologies: [topo502], sectors: [1535], r: 10, s: 4}
+     - {topologies: [topo502], sectors: [1919], r: 10, s: 4}
+     - {topologies: [topo502], sectors: [1983], r: 10, s: 5}
+     - {topologies: [topo502], sectors: [3327], r: 10, s: 4}
+     - {topologies: [topo502], sectors: [3551], r: 10, s: 4}
+     - {topologies: [topo502], sectors: [3711], r: 10, s: 4}
+     - {topologies: [topo502], sectors: [3775], r: 10, s: 5}
+     - {topologies: [topo502], sectors: [3935], r: 10, s: 4}
+     - {topologies: [topo502], sectors: [3999], r: 10, s: 5}
+    select_integrals:
+      select_mandatory_list:
+        - [topo376, toreduce/topo376.txt]
+        - [topo418, toreduce/topo418.txt]
+        - [topo454, toreduce/topo454.txt]
+        - [topo502, toreduce/topo502.txt]
+    run_symmetries: true
+    run_initiate: true
+    run_triangular: false
+    run_firefly: true
+    run_back_substitution: false
+ - kira2math:
+    target:
+       - [topo376, toreduce/topo376.txt]
+       - [topo418, toreduce/topo418.txt]
+       - [topo454, toreduce/topo454.txt]
+       - [topo502, toreduce/topo502.txt]
+    reconstruct_mass: false
+ - kira2form:
+    target:
+       - [topo376, toreduce/topo376.txt]
+       - [topo418, toreduce/topo418.txt]
+       - [topo454, toreduce/topo454.txt]
+       - [topo502, toreduce/topo502.txt]
+    reconstruct_mass: false

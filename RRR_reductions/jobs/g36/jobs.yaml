@@ -1,0 +1,36 @@
+# group g36: families 700 706 844 850 (integrals/all; make_jobs.py)
+jobs:
+ - reduce_sectors:
+    conditional: true
+    reduce:
+     - {topologies: [topo700], sectors: [4031], r: 11, s: 5}
+     - {topologies: [topo706], sectors: [2047], r: 11, s: 6}
+     - {topologies: [topo706], sectors: [4031], r: 11, s: 5}
+     - {topologies: [topo706], sectors: [4063], r: 11, s: 5}
+     - {topologies: [topo844], sectors: [4063], r: 11, s: 5}
+     - {topologies: [topo850], sectors: [4063], r: 11, s: 5}
+    select_integrals:
+      select_mandatory_list:
+        - [topo700, toreduce/topo700.txt]
+        - [topo706, toreduce/topo706.txt]
+        - [topo844, toreduce/topo844.txt]
+        - [topo850, toreduce/topo850.txt]
+    run_symmetries: true
+    run_initiate: true
+    run_triangular: false
+    run_firefly: true
+    run_back_substitution: false
+ - kira2math:
+    target:
+       - [topo700, toreduce/topo700.txt]
+       - [topo706, toreduce/topo706.txt]
+       - [topo844, toreduce/topo844.txt]
+       - [topo850, toreduce/topo850.txt]
+    reconstruct_mass: false
+ - kira2form:
+    target:
+       - [topo700, toreduce/topo700.txt]
+       - [topo706, toreduce/topo706.txt]
+       - [topo844, toreduce/topo844.txt]
+       - [topo850, toreduce/topo850.txt]
+    reconstruct_mass: false

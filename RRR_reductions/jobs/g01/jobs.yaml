@@ -1,0 +1,49 @@
+# group g01: families 1 43 145 394 (integrals/all; make_jobs.py)
+jobs:
+ - reduce_sectors:
+    conditional: true
+    reduce:
+     - {topologies: [topo1], sectors: [3071], r: 11, s: 5}
+     - {topologies: [topo1], sectors: [3583], r: 11, s: 5}
+     - {topologies: [topo1], sectors: [1791], r: 10, s: 5}
+     - {topologies: [topo1], sectors: [1919], r: 10, s: 5}
+     - {topologies: [topo43], sectors: [3583], r: 11, s: 6}
+     - {topologies: [topo43], sectors: [1023], r: 10, s: 5}
+     - {topologies: [topo43], sectors: [1983], r: 10, s: 5}
+     - {topologies: [topo43], sectors: [2015], r: 10, s: 5}
+     - {topologies: [topo145], sectors: [3839], r: 11, s: 6}
+     - {topologies: [topo145], sectors: [1023], r: 10, s: 5}
+     - {topologies: [topo145], sectors: [2943], r: 10, s: 5}
+     - {topologies: [topo394], sectors: [1023], r: 10, s: 5}
+     - {topologies: [topo394], sectors: [2815], r: 10, s: 5}
+     - {topologies: [topo394], sectors: [3327], r: 10, s: 5}
+     - {topologies: [topo394], sectors: [3775], r: 10, s: 5}
+     - {topologies: [topo394], sectors: [3807], r: 10, s: 5}
+     - {topologies: [topo394], sectors: [1407], r: 9, s: 4}
+     - {topologies: [topo394], sectors: [1855], r: 9, s: 4}
+     - {topologies: [topo394], sectors: [1887], r: 9, s: 4}
+    select_integrals:
+      select_mandatory_list:
+        - [topo1, toreduce/topo1.txt]
+        - [topo43, toreduce/topo43.txt]
+        - [topo145, toreduce/topo145.txt]
+        - [topo394, toreduce/topo394.txt]
+    run_symmetries: true
+    run_initiate: true
+    run_triangular: false
+    run_firefly: true
+    run_back_substitution: false
+ - kira2math:
+    target:
+       - [topo1, toreduce/topo1.txt]
+       - [topo43, toreduce/topo43.txt]
+       - [topo145, toreduce/topo145.txt]
+       - [topo394, toreduce/topo394.txt]
+    reconstruct_mass: false
+ - kira2form:
+    target:
+       - [topo1, toreduce/topo1.txt]
+       - [topo43, toreduce/topo43.txt]
+       - [topo145, toreduce/topo145.txt]
+       - [topo394, toreduce/topo394.txt]
+    reconstruct_mass: false

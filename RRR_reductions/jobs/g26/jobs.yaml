@@ -1,0 +1,58 @@
+# group g26: families 370 388 580 751 (integrals/all; make_jobs.py)
+jobs:
+ - reduce_sectors:
+    conditional: true
+    reduce:
+     - {topologies: [topo370], sectors: [2047], r: 11, s: 6}
+     - {topologies: [topo370], sectors: [3519], r: 11, s: 5}
+     - {topologies: [topo370], sectors: [3775], r: 10, s: 5}
+     - {topologies: [topo370], sectors: [3903], r: 10, s: 4}
+     - {topologies: [topo370], sectors: [3999], r: 11, s: 5}
+     - {topologies: [topo370], sectors: [2303], r: 9, s: 4}
+     - {topologies: [topo370], sectors: [3199], r: 9, s: 4}
+     - {topologies: [topo370], sectors: [3295], r: 10, s: 5}
+     - {topologies: [topo388], sectors: [1023], r: 10, s: 5}
+     - {topologies: [topo388], sectors: [2559], r: 10, s: 5}
+     - {topologies: [topo388], sectors: [2815], r: 10, s: 5}
+     - {topologies: [topo388], sectors: [3327], r: 11, s: 6}
+     - {topologies: [topo388], sectors: [3775], r: 10, s: 5}
+     - {topologies: [topo388], sectors: [3807], r: 10, s: 5}
+     - {topologies: [topo388], sectors: [3935], r: 10, s: 5}
+     - {topologies: [topo388], sectors: [2879], r: 9, s: 4}
+     - {topologies: [topo580], sectors: [1023], r: 10, s: 5}
+     - {topologies: [topo580], sectors: [1791], r: 10, s: 4}
+     - {topologies: [topo580], sectors: [1983], r: 10, s: 4}
+     - {topologies: [topo580], sectors: [2015], r: 10, s: 5}
+     - {topologies: [topo580], sectors: [2559], r: 10, s: 5}
+     - {topologies: [topo580], sectors: [2943], r: 10, s: 5}
+     - {topologies: [topo580], sectors: [3455], r: 10, s: 4}
+     - {topologies: [topo580], sectors: [3903], r: 10, s: 4}
+     - {topologies: [topo580], sectors: [3935], r: 10, s: 4}
+     - {topologies: [topo751], sectors: [2047], r: 11, s: 5}
+     - {topologies: [topo751], sectors: [3967], r: 11, s: 5}
+     - {topologies: [topo751], sectors: [2815], r: 10, s: 5}
+    select_integrals:
+      select_mandatory_list:
+        - [topo370, toreduce/topo370.txt]
+        - [topo388, toreduce/topo388.txt]
+        - [topo580, toreduce/topo580.txt]
+        - [topo751, toreduce/topo751.txt]
+    run_symmetries: true
+    run_initiate: true
+    run_triangular: false
+    run_firefly: true
+    run_back_substitution: false
+ - kira2math:
+    target:
+       - [topo370, toreduce/topo370.txt]
+       - [topo388, toreduce/topo388.txt]
+       - [topo580, toreduce/topo580.txt]
+       - [topo751, toreduce/topo751.txt]
+    reconstruct_mass: false
+ - kira2form:
+    target:
+       - [topo370, toreduce/topo370.txt]
+       - [topo388, toreduce/topo388.txt]
+       - [topo580, toreduce/topo580.txt]
+       - [topo751, toreduce/topo751.txt]
+    reconstruct_mass: false
