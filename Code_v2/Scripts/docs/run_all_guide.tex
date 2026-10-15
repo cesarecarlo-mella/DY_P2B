@@ -1,0 +1,186 @@
+\documentclass[10pt]{article}
+\usepackage[a4paper,margin=1.8cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue!50!black,urlcolor=blue!50!black}
+\lstset{basicstyle=\ttfamily\small,columns=fullflexible,keepspaces=true,backgroundcolor=\color{gray!8},
+  frame=single,rulecolor=\color{gray!30},breaklines=true,showstringspaces=false,commentstyle=\color{green!35!black},
+  morecomment=[l]{\#}}
+\setlist{nosep}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+\newcommand{\cmd}[1]{\texttt{#1}}
+
+\title{DY @ N3LO, triple-real: running the pipeline with \texttt{run\_all.py}}
+\author{Code\_v2/Scripts}
+\date{\today}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\section{What runs where}
+\begin{itemize}
+\item One command runs the whole pipeline for a set of channels: QGRAF $\to$ 01 (parse, colour) $\to$ 02 (groups of
+  10 diagrams) $\to$ 03 (conjugates) $\to$ 04 (square) $\to$ 05 (projector, partial fractions, families, integrals)
+  $\to$ 06 (sum over pairs, relabelling to the 156 independent families). One global job queue, most expensive jobs
+  first; a job's step-05 jobs start as soon as its step-04 job is done.
+\item Sets: \cmd{gluons} = \cmd{physical\_qqbggg} (7 channels), \cmd{quarks} = the other 42 channels, \cmd{all};
+  or \cmd{--channels A,B,...}.
+\item Plan: gluons on \textbf{newton4}, quarks on \textbf{newton1}. Each machine has its own clone in
+  \cmd{/scratch/ge45tuy/DY\_P2B} (local disk) and its own state in \cmd{Code\_v2/Scripts/run\_state/<set>/}.
+  The home directory \cmd{/home/t30/...} is shared by both machines.
+\item Results stay in each channel folder \cmd{Scripts/<group>/<P>/<P>\_LO/tmp/}: step 04
+  \cmd{squared\_diagrams/}, step 05 \cmd{squared\_contracted/}, step 06 \cmd{unreduced/<piece>/unreduced<PROJ>.ff}
+  (and \cmd{.m}). None of these is in git.
+\end{itemize}
+
+\section{Setup (once per machine)}
+\begin{lstlisting}
+cd /scratch/ge45tuy && git clone https://github.com/cesarecarlo-mella/DY_P2B.git    # or: cd DY_P2B && git pull
+cd /scratch/ge45tuy/DY_P2B/Code_v2
+source setenv.sh                                  # sets FORMPATH; needed in every new shell / tmux window
+echo $FORMPATH $QGRAF
+\end{lstlisting}
+In \cmd{\textasciitilde/.bashrc} (shared home, so once for both machines):
+\begin{lstlisting}
+export QGRAF=/home/t30/all/ge45tuy/Software/qgraf-3.4.2/qgraf    # qgraf is only an alias in the shell
+\end{lstlisting}
+Optional environment variables: \cmd{FORM} (default \cmd{form}; e.g.\ \cmd{FORM=\$HOME/opt/form5/bin/form}),
+\cmd{SKIPAA} (default 1: the pieces aa and a2a2 are not computed, aa = vv and a2a2 = v2v2 in the combination;
+\cmd{SKIPAA=0} computes them).
+
+\textbf{Updating the code}: \cmd{git push} on the laptop, then on the machines
+\begin{lstlisting}
+cd /scratch/ge45tuy/DY_P2B && git status --short | grep -v '^??' | head && git pull
+\end{lstlisting}
+Safe also during a run: results, \cmd{run\_state/}, \cmd{formtmp} and \cmd{integrals/} are not tracked by git.
+Deleted \cmd{.gitkeep} files in \cmd{git status} are harmless.
+
+\section{Before a production run}
+\begin{lstlisting}
+python3 Scripts/run_all.py selftest --jobs 8      # FORM on this machine vs reference numbers: must end with SELFTEST PASSED
+mkdir -p /scratch/ge45tuy/formtmp                 # FORM temporary files: on /scratch, NEVER /tmp (that is RAM)
+\end{lstlisting}
+Optional pilot (one small channel, about 20 minutes):
+\begin{lstlisting}
+python3 Scripts/run_all.py run --channels Vqqbccbg --jobs 12 --form-tmp /scratch/ge45tuy/formtmp
+\end{lstlisting}
+
+\section{Production run}
+In a tmux session (survives logout; detach with \cmd{Ctrl-b d}, come back with \cmd{tmux attach -t dy}):
+\begin{lstlisting}
+tmux new -s dy
+cd /scratch/ge45tuy/DY_P2B/Code_v2 && source setenv.sh
+python3 Scripts/run_all.py run --set gluons --jobs 100 --form-tmp /scratch/ge45tuy/formtmp 2>&1 | tee gluons.log
+#   newton1: the same with --set quarks ... | tee quarks.log
+\end{lstlisting}
+Useful options of \cmd{run}:
+\begin{itemize}
+\item \cmd{--jobs N}: parallel FORM jobs.
+\item \cmd{--min-free-gb 100}: no new job while the machine has less available memory.
+\item \cmd{--max-job-gb 60}: a FORM job above this memory is stopped and marked failed.
+\item \cmd{--nice 10}: priority of the FORM jobs.
+\item \cmd{--steps qgraf,01,02,03,04,05,06}: restrict the steps (default all).
+\item \cmd{--state DIR}: other state directory (default \cmd{Scripts/run\_state/<set>}).
+\end{itemize}
+\textbf{Restart / resume}: run the same command again. Finished jobs are skipped; failed and interrupted ones run
+again. Redoing a preparation step (qgraf, 01--03) of a channel invalidates its later steps.
+
+\textbf{Do not} delete \cmd{/scratch/ge45tuy/formtmp} while a run is going (running jobs keep their sort files there).
+
+\section{Monitoring}
+From any shell on the same machine (\cmd{status} needs no \cmd{setenv.sh}):
+\begin{lstlisting}
+cd /scratch/ge45tuy/DY_P2B/Code_v2
+watch -n 120 python3 Scripts/run_all.py status --set gluons           # overview, refreshed every 2 min
+python3 Scripts/run_all.py status --set gluons --running              # + every running job: time, memory
+tail -f Scripts/run_state/gluons/jobs.csv                             # one line per finished job
+tail Scripts/run_state/gluons/system.csv                              # memory, load, disk every 30 s
+tail -f gluons.log                                                    # what the run prints
+htop ; free -g                                                        # the machine as a whole
+\end{lstlisting}
+Reading \cmd{status}:
+\begin{itemize}
+\item \cmd{prep}: last preparation step done (qgraf, 01, 02, 03).
+\item \cmd{04 done/all}: group pairs (groups $\times$ groups).
+\item \cmd{05 done/known}: step-05 jobs; ``known'' = non-zero pieces of the finished step-04 pairs (grows while step 04 runs;
+  3 pieces per pair in the gluon channels, up to 14 in the Q2 channels).
+\item \cmd{06 done}: summed pieces.
+\item \cmd{running}, \cmd{FAILED}; at the end the failure reasons.
+\item The time estimate is pessimistic early on (the most expensive jobs run first).
+\end{itemize}
+Live stage of the running step-05 jobs, and the size of their temporary files:
+\begin{lstlisting}
+cd Scripts; for f in physical_qqbggg/*/*_LO/utils/job_*/form.log; do echo "$(basename $(dirname $f)): $(grep '~~~' $f | tail -1)"; done
+du -sh /scratch/ge45tuy/formtmp/formtmp/* | sort -h | tail -5
+\end{lstlisting}
+
+\section{Problems}
+\begin{itemize}
+\item \textbf{Failed jobs}: reason at the end of \cmd{status}, details in \cmd{run\_state/<set>/failed/<job>.json};
+  the FORM log is kept: step 04 \cmd{<P>\_LO/utils/tmp\_fld/tmp\_<i\_j>/form.log}, step 05
+  \cmd{<P>\_LO/utils/job\_<piece>\_<PROJ>\_<i\_j>/form.log}, steps 01--03 and 06 \cmd{<P>\_LO/run<step>.log} /
+  \cmd{utils/sum\_squared\_diags\_*.log}. After fixing the cause: run the same command again.
+\item \textbf{Stop a run}: \cmd{Ctrl-C} in its tmux window (it stops its FORM jobs). If FORM jobs are left over
+  (\cmd{pgrep -u ge45tuy -a form}): \cmd{pkill -u ge45tuy -x form} --- only on a machine that runs no other set.
+\item \textbf{Clean temporary files} (only with no run going on that machine):
+\begin{lstlisting}
+rm -rf /scratch/ge45tuy/formtmp
+cd /scratch/ge45tuy/DY_P2B/Code_v2/Scripts
+rm -rf */*/*_LO/utils/tmp_fld */*/*_LO/utils/job_* */*/*_LO/utils/formtmp */*/*_LO/tmp_folder
+rm -f  */*/*_LO/utils/sum_squared_diags_*.frm */*/*_LO/utils/sum_squared_diags_*.log
+\end{lstlisting}
+\item \textbf{Start from scratch} for a set: delete \cmd{Scripts/run\_state/<set>} (all jobs then run again).
+\end{itemize}
+
+\section{After a run: checks}
+\begin{lstlisting}
+source setenv.sh
+python3 Scripts/run_all.py check  --set gluons          # completeness, leftovers, outputs made with older files
+python3 Scripts/run_all.py verify --set gluons --n 2    # numerical check of 2 random step-05 results per channel
+\end{lstlisting}
+\cmd{check} reads all result files: no missing pair or piece, nothing unprocessed in the step-05 results (no
+\cmd{Prop}, \cmd{D}/\cmd{DD}, \cmd{TOPO}, scalar products, \cmd{m2}, \ldots; cut indices of every \cmd{INT} = 1), no
+dependent family after step 06, no output made with an older template or family file.
+\cmd{verify} evaluates the step-04 input (contracted with the projector) and the step-05 result at a random rational
+point on the cut surface and compares them exactly; it prints \cmd{IDENTICAL} or \cmd{DIFFERENT}.
+
+\section{Integrals to reduce}
+\begin{lstlisting}
+python3 Scripts/run_all.py integrals --set gluons --out ~/integrals/gluons      # newton4
+python3 Scripts/run_all.py integrals --set quarks --out ~/integrals/quarks      # newton1
+python3 Scripts/run_all.py integrals --merge ~/integrals/gluons ~/integrals/quarks --out ~/integrals/all
+\end{lstlisting}
+Output folder: \cmd{integrals.m} (\cmd{\{INT[topo55, 1,1,1,1,1,-3,...], ...\}}), \cmd{integrals.txt} and
+\cmd{kira/topoN.txt} (\cmd{topo55[1,1,1,1,1,-3,...]}, one per line), \cmd{summary.txt} (per family: integrals,
+sectors, max dots, max numerator power), \cmd{sources.txt}. \cmd{--step 05}: from the per-pair step-05 results
+(all 921 families, no relabelling).
+
+Families for the reduction: \cmd{Code\_v2/Families/reduction/} --- \cmd{integralfamilies\_independent.rrr.m} and
+\cmd{independentFamilies.m} (the 156 independent families, p4 = $-$r1, p5 = $-$r2, p6 = $-$r3, propagators in the
+order of the \cmd{INT} indices), \cmd{integralfamilies\_all.rrr.m} (all 921), \cmd{relabelling\_INT.m} /
+\cmd{symm\_loop\_crossings.inc} (rules to the independent families), \cmd{README.md}.
+
+\section{Other tools}
+\begin{itemize}
+\item Diagrams: \cmd{python3 Scripts/diagrams/draw\_diagrams.py [channel ...]} $\to$ \cmd{Scripts/diagrams/diagrams.pdf}
+  (one representative diagram per channel; needs the QGRAF outputs).
+\item Families: \cmd{Code\_v2/Families/} --- \cmd{coverage.py} (every propagator set after partial fractions in a
+  family), \cmd{reduction\_export.py}, \cmd{check\_relabelling.wl}; details in \cmd{Scripts/README.md}.
+\item Help: \cmd{python3 Scripts/run\_all.py --help}, \cmd{python3 Scripts/run\_all.py run --help}, \ldots
+\end{itemize}
+
+\section{Timings so far (for orientation)}
+\begin{itemize}
+\item Laptop, FORM 5.0: gluon 10$\times$10 pair step 04 about 40 min; step 05 7--15 min per piece.
+\item newton4, FORM 4.2.1, 100 jobs: gluon set (175 pairs, 525 step-05 jobs) done overnight; step 04 mean 46 min,
+  step 05 up to several hours per piece for the largest pairs (6--12 GB of FORM sort files per job).
+\item Pending: test FORM 5.0 and larger FORM buffers on newton for step 05.
+\end{itemize}
+
+\end{document}
