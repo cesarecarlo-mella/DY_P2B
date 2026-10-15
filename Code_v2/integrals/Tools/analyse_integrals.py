@@ -106,7 +106,8 @@ def table(header, rows):
     w = [max(len(str(x)) for x in col) for col in zip(header, *rows)]
 
     def line(r):
-        cells = [str(r[0]).ljust(w[0])] + [str(x).rjust(w[k]) for k, x in enumerate(r[1:-1], 1)] + [str(r[-1])]
+        cells = [str(r[0]).ljust(w[0])] + [(str(x).ljust(w[k]) if isinstance(x, str) and not str(x).lstrip("-").isdigit()
+                                            else str(x).rjust(w[k])) for k, x in enumerate(r[1:-1], 1)] + [str(r[-1])]
         return "  ".join(cells).rstrip()
     return "\n".join([line(header), line(["-" * k for k in w[:-1]] + ["-" * len(header[-1])])] + [line(r) for r in rows])
 
@@ -160,8 +161,8 @@ def main(argv):
             setby = "; ".join(f"{k} from {','.join(map(str, v))}" for k, v in tr["argmax"].items()
                               if v != [sid(t)] and (k != "r" or tr["r"] > own["r"]) and
                               (k != "s" or tr["s"] > own["s"]) and (k != "dots" or tr["dots"] > own["dots"]))
-            top_rows.append([f"topo{n}", sid(t), len(t), tr["r"], tr["s"], tr["dots"], len(tr["members"]), tr["n_int"],
-                             reg(t) + (f"   [{setby}]" if setby else "")])
+            top_rows.append([f"topo{n}", sid(t), len(t), reg(t), tr["s"], tr["dots"], tr["r"], len(tr["members"]),
+                             tr["n_int"], setby])
             js[f"topo{n}"]["top_sectors"].append({"id": sid(t), "t": len(t), "lines": sorted(t), "regular_DD": reg(t),
                                                   "r": tr["r"], "s": tr["s"], "dots": tr["dots"],
                                                   "n_sub": len(tr["members"]), "n_int": tr["n_int"],
@@ -192,10 +193,11 @@ def main(argv):
             f"{sum(len(ints[n]) for n in fams)} integrals in {len(fams)} families, {len(top_rows)} top sectors; "
             f"maxima: t={glob['t']} r={glob['r']} s={glob['s']} dots={glob['dots']}", legend]
     with open(os.path.join(out, "topsectors.txt"), "w") as f:
-        f.write("\n".join(head) + "\nr, s, dots: maxima over the tree of the top sector (all occurring sectors inside "
-                "it); [... from ...]: the subsectors that set them when they exceed the top sector's own\n\n"
-                + table(["family", "sector", "t", "r", "s", "dots", "#sub", "#int", "regular propagators"],
-                        top_rows) + "\n")
+        f.write("\n".join(head) + "\ns(tree), dots(tree), r(tree): maxima over the tree of the top sector (all occurring "
+                "sectors inside it) = what the reduction of the top sector needs; last column: the subsectors that set them "
+                "when they exceed the top sector's own values\n\n"
+                + table(["family", "sector", "t", "regular propagators", "s(tree)", "dots(tree)", "r(tree)", "#sub",
+                         "#int", "s/dots set by subsectors"], top_rows) + "\n")
     with open(os.path.join(out, "sectors.txt"), "w") as f:
         f.write("\n".join(head) + "\nr, s, dots, #int: the sector's own integrals only\n\n"
                 + table(["family", "sector", "t", "r", "s", "dots", "#int", "in top sector(s)"], sec_rows) + "\n")
@@ -204,10 +206,10 @@ def main(argv):
                 + "\n".join(tree_txt) + "\n")
     with open(os.path.join(out, "topsectors.csv"), "w", newline="") as f:
         w = csv.writer(f)
-        w.writerow(["family", "sector", "t", "r", "s", "dots", "n_sub", "n_int", "regular_DD", "r_own", "s_own",
-                    "dots_own"])
+        w.writerow(["family", "sector", "t", "regular_DD", "s_tree", "dots_tree", "r_tree", "n_sub", "n_int",
+                    "s_own", "dots_own", "r_own", "set_by"])
         for row, (n, x) in zip(top_rows, ((n, x) for n in fams for x in js[f"topo{n}"]["top_sectors"])):
-            w.writerow(row[:8] + [x["regular_DD"], x["top_only"]["r"], x["top_only"]["s"], x["top_only"]["dots"]])
+            w.writerow(row[:9] + [x["top_only"]["s"], x["top_only"]["dots"], x["top_only"]["r"], row[9]])
     with open(os.path.join(out, "sectors.csv"), "w", newline="") as f:
         w = csv.writer(f)
         w.writerow(["family", "sector", "t", "r", "s", "dots", "n_int", "top_sectors"])
