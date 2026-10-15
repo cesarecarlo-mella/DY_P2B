@@ -34,3 +34,6 @@ Scripts/run_state/
 # LaTeX by-products of Scripts/diagrams/draw_diagrams.py (diagrams.tex and diagrams.pdf are kept)
 Scripts/diagrams/*.aux
 Scripts/diagrams/*.log
+
+# run_all.py integrals output
+Scripts/integrals/

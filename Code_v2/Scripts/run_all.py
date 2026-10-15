@@ -8,6 +8,8 @@ Linux (and macOS for tests). Run from anywhere after `source Code_v2/setenv.sh`.
   python3 run_all.py check    --set gluons                scan all outputs: missing, leftovers, made with old templates
   python3 run_all.py verify   --set gluons --n 2          numerical check of random finished step-05 results
   python3 run_all.py selftest [--jobs 8]                  check the local FORM against reference numbers (FORM 5.0)
+  python3 run_all.py integrals --set gluons               all distinct integrals to reduce -> Scripts/integrals/<set>/
+  python3 run_all.py integrals --merge DIR1 DIR2 --out D  union of two such collections (e.g. from two machines)
 
 Sets: gluons = physical_qqbggg (7 channels), quarks = all other groups (42), all; or --channels Vqqbggg,VqqbQ2Q2bg,...
 Two sets can run at the same time (two run commands); each keeps its state in run_state/<set>/ (or --state DIR).
@@ -847,6 +849,89 @@ def cmd_verify(args):
     sys.exit(1 if bad else 0)
 
 
+
+# ---------------------------------------------------------------- integrals
+INT_RE = re.compile(r"INT\((topo\d+),([-\d,]+)\)")
+
+
+def write_integrals(ints, out, sources, missing):
+    """ints: set of (topo, (n1..n12)). Writes integrals.m (Mathematica), kira/ (one list per family), summary.txt"""
+    os.makedirs(os.path.join(out, "kira"), exist_ok=True)
+    for f in glob.glob(os.path.join(out, "kira", "*.txt")):
+        os.remove(f)
+    fams = {}
+    for t, n in ints:
+        fams.setdefault(t, []).append(n)
+    order = sorted(fams, key=lambda t: int(t[4:]))
+    with open(os.path.join(out, "integrals.m"), "w") as f:
+        f.write("(* all integrals INT[topoN, n1, ..., n12] to reduce (families: Families/reduction/), run_all.py "
+                "integrals *)\n{\n" + ",\n".join(f"INT[{t}, {', '.join(map(str, n))}]"
+                                                 for t in order for n in sorted(fams[t])) + "\n}\n")
+    with open(os.path.join(out, "integrals.txt"), "w") as f:
+        for t in order:
+            for n in sorted(fams[t]):
+                f.write(f"{t}[{','.join(map(str, n))}]\n")
+    lines = [f"{len(ints)} integrals in {len(fams)} families, from {len(sources)} result files"
+             + (f"; {len(missing)} channels without step-06 results: {' '.join(missing)}" if missing else ""),
+             f"{'family':>9s} {'integrals':>10s} {'sectors':>8s} {'max dots':>9s} {'max numerator':>14s}"]
+    for t in order:
+        ns = fams[t]
+        with open(os.path.join(out, "kira", f"{t}.txt"), "w") as f:
+            f.write("".join(f"{t}[{','.join(map(str, n))}]\n" for n in sorted(ns)))
+        sectors = {tuple(int(x > 0) for x in n[5:]) for n in ns}
+        dots = max(sum(x - 1 for x in n[5:] if x > 1) for n in ns)
+        nums = max(sum(-x for x in n[5:] if x < 0) for n in ns)
+        lines.append(f"{t:>9s} {len(ns):10d} {len(sectors):8d} {dots:9d} {nums:14d}")
+    with open(os.path.join(out, "summary.txt"), "w") as f:
+        f.write("\n".join(lines) + "\n")
+    with open(os.path.join(out, "sources.txt"), "w") as f:
+        f.write("\n".join(sorted(sources)) + "\n")
+    print("\n".join(lines[:2] + lines[2:12] + (["   ..."] if len(lines) > 12 else [])))
+    print(f"-> {out}/integrals.m, integrals.txt, kira/topoN.txt, summary.txt")
+
+
+def read_integrals_m(path):
+    ints = set()
+    for m in re.finditer(r"INT\[(topo\d+), ([-\d, ]+)\]", open(path).read()):
+        ints.add((m.group(1), tuple(int(x) for x in m.group(2).split(","))))
+    return ints
+
+
+def cmd_integrals(args):
+    """all distinct integrals of the step-06 results (or with --step 05 the per-pair step-05 results, all families)"""
+    out = os.path.abspath(args.out or os.path.join(SCRIPTS, "integrals", set_name(args)))
+    ints, sources, missing = set(), [], []
+    if args.merge:
+        for d in args.merge:
+            ints |= read_integrals_m(os.path.join(d, "integrals.m"))
+            sources += [os.path.join(d, "integrals.m")]
+        write_integrals(ints, out, sources, missing)
+        return
+    sub = "unreduced" if args.step == "06" else "squared_contracted"
+    pat = "unreduced*.ff" if args.step == "06" else "unreduced*_*.ff"
+    for g, n in select_channels(args):
+        d = os.path.join(SCRIPTS, g, n, n + "_LO", "tmp", sub)
+        files = sorted(glob.glob(os.path.join(d, "*", pat)))
+        if not files:
+            missing.append(n)
+            continue
+        for f in files:
+            t = flat(f)
+            found = INT_RE.findall(t)
+            for topo, idx in found:
+                key = tuple(int(x) for x in idx.split(","))
+                if len(key) != 12 or key[:5] != (1, 1, 1, 1, 1):
+                    sys.exit(f"{f}: unexpected INT({topo},{idx})")
+                ints.add((topo, key))
+            sources.append(os.path.relpath(f, SCRIPTS))
+    if args.step == "06":
+        dep = deptopos()
+        bad = {t for t, _ in ints} & dep
+        if bad:
+            sys.exit(f"dependent families in step-06 results: {sorted(bad)[:5]}")
+    write_integrals(ints, out, sources, missing)
+
+
 SELFTEST_CHANNEL = ("physical_qqbQ2Q2bg", "VqqbQ2Q2bg")
 SELFTEST_PAIR = "3_3"
 SELFTEST_SEED = 20261014
@@ -947,6 +1032,12 @@ def main():
     common(p)
     p.add_argument("--n", type=int, default=2, help="results per channel")
     p.add_argument("--seed", type=int, default=1)
+    p = sub.add_parser("integrals", help="collect all distinct integrals to reduce")
+    common(p)
+    p.add_argument("--out", help="output folder (default Scripts/integrals/<set>)")
+    p.add_argument("--step", choices=["06", "05"], default="06",
+                   help="06: summed results, independent families (default); 05: per pair, all families")
+    p.add_argument("--merge", nargs="+", metavar="DIR", help="instead: union of integrals.m in these folders")
     p = sub.add_parser("selftest", help="FORM check: VqqbQ2Q2bg 3x3 against reference numbers")
     common(p, jobs=4)
     p.add_argument("--workdir")
@@ -957,7 +1048,7 @@ def main():
         args.state = os.path.join(SCRIPTS, "run_state", set_name(args))
     args.state = os.path.abspath(args.state)
     {"run": cmd_run, "status": cmd_status, "check": cmd_check, "verify": cmd_verify,
-     "selftest": cmd_selftest}[args.cmd](args)
+     "selftest": cmd_selftest, "integrals": cmd_integrals}[args.cmd](args)
 
 
 if __name__ == "__main__":
