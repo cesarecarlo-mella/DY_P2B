@@ -7,17 +7,18 @@ Input: INT[topoN, n1, ..., n12] (integrals.m from run_all.py integrals) or topoN
 Definitions (Kira conventions, indices n1..n12 in the INT order of the family, see Families/fams/reconstruct.inc;
 n1..n5 are the cut propagators, always 1):
   sector       the set of indices with n_i > 0;  ID = sum over them of 2^(i-1)  (all 12 positions)
-  lines        number of indices with n_i > 0 (propagators of the sector, cut ones included)
-  r            sum of the positive indices;  s = sum of |negative indices| (numerator rank);  dots = r - lines
+  t            number of indices with n_i > 0 (propagators of the sector, cut ones included)
+  r            sum of the positive indices;  s = sum of |negative indices| (numerator rank);  dots = r - t
   top sector   a sector that occurs and is not contained in another occurring sector of the same family
   tree of a top sector: all occurring sectors contained in it (the top sector itself included). The reduction of a
   top sector needs seeds up to the maximal r and s over its whole tree (a subsector can have higher r or s).
-Output (default: next to the input, analysis/):
-  report.txt   per family: top sectors with ID, lines (position:DD), integrals in the tree, r, s, dots maxima, and the
-               tree of occurring subsectors (nested by inclusion; a subsector shared by several top sectors is listed
-               under each of them, nested once and marked elsewhere)
-  topsectors.csv   one row per top sector (family, ID, lines, regular DD numbers, integrals, r, s, dots, ...)
-  sectors.json     everything per family: all sectors with their integrals count and r/s, top sectors and trees
+Output (default: next to the input, analysis/; or --out DIR):
+  topsectors.txt   one row per top sector: family, sector, t, r, s, dots (maxima over its tree), #sub (sectors in
+                   the tree), #int (integrals in the tree), regular propagators (DD numbers) [subsectors that set
+                   r, s or dots when they exceed the top sector's own]
+  sectors.txt      one row per occurring sector: its own t, r, s, dots, #int and the top sectors containing it
+  trees.txt        per top sector the occurring subsectors nested by inclusion, with their own values
+  topsectors.csv, sectors.csv, sectors.json   the same, machine-readable
 """
 import csv
 import json
@@ -100,79 +101,124 @@ def fmt_lines(sec, order):
     return " ".join(f"{i}:{order[i - 1]}" if order else str(i) for i in sorted(sec))
 
 
+def table(header, rows):
+    """aligned text table: first column left, the others right-aligned except the last one (left)"""
+    w = [max(len(str(x)) for x in col) for col in zip(header, *rows)]
+
+    def line(r):
+        cells = [str(r[0]).ljust(w[0])] + [str(x).rjust(w[k]) for k, x in enumerate(r[1:-1], 1)] + [str(r[-1])]
+        return "  ".join(cells).rstrip()
+    return "\n".join([line(header), line(["-" * k for k in w[:-1]] + ["-" * len(header[-1])])] + [line(r) for r in rows])
+
+
 def main(argv):
-    if not argv or argv[0].startswith("-"):
-        sys.exit(__doc__)
-    path, ints = read_integrals(argv[0])
-    out = argv[argv.index("--out") + 1] if "--out" in argv else os.path.join(os.path.dirname(os.path.abspath(path)),
-                                                                                  "analysis")
-    only = {int(x) for x in argv[argv.index("--families") + 1].split(",")} if "--families" in argv else None
+    args, opts = [], {}
+    k = 0
+    while k < len(argv):
+        if argv[k] in ("--out", "--families"):
+            opts[argv[k]] = argv[k + 1]
+            k += 2
+        elif argv[k].startswith("-"):
+            sys.exit(f"unknown option {argv[k]}\n\n" + __doc__)
+        else:
+            args.append(argv[k])
+            k += 1
+    if len(args) != 1:
+        sys.exit("give one input (integrals.m, integrals.txt or a collection folder); output folder with --out\n\n"
+                 + __doc__)
+    path, ints = read_integrals(args[0])
+    out = opts.get("--out", os.path.join(os.path.dirname(os.path.abspath(path)), "analysis"))
+    only = {int(x) for x in opts["--families"].split(",")} if "--families" in opts else None
     os.makedirs(out, exist_ok=True)
     orders = dd_order()
-    rep, rows, js = [], [], {}
-    total_tops, glob = 0, {"r": 0, "s": 0, "dots": 0, "lines": 0}
-    for n in sorted(ints):
-        if only and n not in only:
-            continue
+    fams = [n for n in sorted(ints) if not only or n in only]
+
+    top_rows, sec_rows, tree_txt, js = [], [], [], {}
+    glob = {"t": 0, "r": 0, "s": 0, "dots": 0}
+    for n in fams:
         order = orders.get(n)
+        reg = lambda sec: " ".join(str(order[i - 1]) for i in sorted(sec) if i > 5) if order else \
+            " ".join(str(i) for i in sorted(sec) if i > 5)
         by_sec, secs, tops, trees = analyse_family(ints[n])
-        total_tops += len(tops)
         fr, fs, fd = stats(ints[n])
-        glob = {"r": max(glob["r"], fr), "s": max(glob["s"], fs), "dots": max(glob["dots"], fd),
-                "lines": max(glob["lines"], max(len(z) for z in secs))}
-        rep.append(f"=== topo{n}: {len(ints[n])} integrals, {len(secs)} sectors, {len(tops)} top sectors; "
-                   f"family maxima r={fr} s={fs} dots={fd}")
-        if order:
-            rep.append(f"    propagators (position:DD): {' '.join(f'{i + 1}:{d}' for i, d in enumerate(order))}")
-        js[f"topo{n}"] = {"n_int": len(ints[n]), "r": fr, "s": fs, "dots": fd,
-                          "sectors": {sid(z): {"lines": sorted(z), "n_int": len(by_sec[z]),
-                                               **dict(zip(("r", "s", "dots"), stats(by_sec[z])))} for z in secs},
-                          "top_sectors": []}
+        glob = {"t": max(glob["t"], max(len(z) for z in secs)), "r": max(glob["r"], fr),
+                "s": max(glob["s"], fs), "dots": max(glob["dots"], fd)}
+        in_tops = {z: [sid(t) for t in tops if z <= t] for z in secs}
+        js[f"topo{n}"] = {"n_int": len(ints[n]), "r": fr, "s": fs, "dots": fd, "propagators_DD": order,
+                          "sectors": {}, "top_sectors": []}
+        for z in secs:
+            r, s_, d = stats(by_sec[z])
+            sec_rows.append([f"topo{n}", sid(z), len(z), r, s_, d, len(by_sec[z]), " ".join(map(str, in_tops[z]))])
+            js[f"topo{n}"]["sectors"][sid(z)] = {"lines": sorted(z), "t": len(z), "r": r, "s": s_, "dots": d,
+                                                 "n_int": len(by_sec[z]), "top_sectors": in_tops[z]}
+        tree_txt.append(f"=== topo{n}: {len(ints[n])} integrals, {len(secs)} sectors, {len(tops)} top sectors"
+                        + (f"; propagators (position:DD) {' '.join(f'{i + 1}:{x}' for i, x in enumerate(order))}"
+                           if order else ""))
         for t in tops:
             tr = trees[t]
-            reg = [order[i - 1] for i in sorted(t) if i > 5] if order else []
-            rep.append(f"  TOP ID {sid(t)}: {len(t)} lines ({len(t) - 5} regular) [{fmt_lines(t, order)}]")
-            rep.append(f"      tree: {len(tr['members'])} sectors, {tr['n_int']} integrals;  r={tr['r']} s={tr['s']} "
-                       f"dots={tr['dots']}   (top sector alone: {tr['top_only']['n_int']} integrals, "
-                       f"r={tr['top_only']['r']} s={tr['top_only']['s']} dots={tr['top_only']['dots']})")
-            rep.append(f"      maxima reached in sectors: r {tr['argmax']['r']}, s {tr['argmax']['s']}, "
-                       f"dots {tr['argmax']['dots']}")
+            own = tr["top_only"]
+            setby = "; ".join(f"{k} from {','.join(map(str, v))}" for k, v in tr["argmax"].items()
+                              if v != [sid(t)] and (k != "r" or tr["r"] > own["r"]) and
+                              (k != "s" or tr["s"] > own["s"]) and (k != "dots" or tr["dots"] > own["dots"]))
+            top_rows.append([f"topo{n}", sid(t), len(t), tr["r"], tr["s"], tr["dots"], len(tr["members"]), tr["n_int"],
+                             reg(t) + (f"   [{setby}]" if setby else "")])
+            js[f"topo{n}"]["top_sectors"].append({"id": sid(t), "t": len(t), "lines": sorted(t), "regular_DD": reg(t),
+                                                  "r": tr["r"], "s": tr["s"], "dots": tr["dots"],
+                                                  "n_sub": len(tr["members"]), "n_int": tr["n_int"],
+                                                  "top_only": own, "maxima_from": tr["argmax"],
+                                                  "tree": sorted(sid(z) for z in tr["members"])})
+            rows = [[f"{sid(t)}", len(t), *stats(by_sec[t]), len(by_sec[t]), reg(t)]]
             seen = set()
 
             def walk(sec, depth):
                 for c in sorted(hasse_children(sec, tr["members"]), key=lambda z: (-len(z), sid(z))):
-                    r, s, d = stats(by_sec[c])
-                    mark = " (listed above)" if c in seen else ""
-                    rep.append(f"      {'   ' * depth}- ID {sid(c)}: {len(c)} lines [{fmt_lines(c, order)}] "
-                               f"{len(by_sec[c])} int, r={r} s={s} dots={d}{mark}")
+                    r, s_, d = stats(by_sec[c])
+                    rows.append(["   " * depth + "- " + str(sid(c)), len(c), r, s_, d, len(by_sec[c]),
+                                 reg(c) + ("   (listed above)" if c in seen else "")])
                     if c not in seen:
                         seen.add(c)
                         walk(c, depth + 1)
-            walk(t, 0)
-            rows.append([f"topo{n}", sid(t), len(t), " ".join(map(str, reg)), len(tr["members"]), tr["n_int"],
-                         tr["r"], tr["s"], tr["dots"], tr["top_only"]["r"], tr["top_only"]["s"]])
-            js[f"topo{n}"]["top_sectors"].append({"id": sid(t), "lines": sorted(t), "regular_DD": reg,
-                                                  "tree": sorted(sid(z) for z in tr["members"]),
-                                                  "n_int": tr["n_int"], "r": tr["r"], "s": tr["s"],
-                                                  "dots": tr["dots"], "top_only": tr["top_only"],
-                                                  "argmax": tr["argmax"]})
-        rep.append("")
-    head = [f"input: {path}", f"{sum(len(v) for k, v in ints.items() if not only or k in only)} integrals in "
-            f"{len(js)} families, {total_tops} top sectors; maxima over everything: lines={glob['lines']} "
-            f"r={glob['r']} s={glob['s']} dots={glob['dots']}",
-            "lines = propagators with positive power (5 cut + regular); r = sum of positive powers; s = sum of "
-            "|negative powers|; dots = r - lines; ID = sum 2^(i-1) over the positive positions", ""]
-    with open(os.path.join(out, "report.txt"), "w") as f:
-        f.write("\n".join(head + rep) + "\n")
+            walk(t, 1)
+            tree_txt.append(f"\n  top sector {sid(t)}: tree r={tr['r']} s={tr['s']} dots={tr['dots']}, "
+                            f"{len(tr['members'])} sectors, {tr['n_int']} integrals"
+                            + (f"   [{setby}]" if setby else ""))
+            tree_txt.append("  " + table(["sector", "t", "r", "s", "dots", "#int", "regular propagators"],
+                                         rows).replace("\n", "\n  "))
+        tree_txt.append("")
+
+    legend = ("t = number of propagators with positive power (5 cut + regular); r = sum of the positive powers; "
+              "s = sum of |negative powers|; dots = r - t; sector = sum 2^(i-1) over the positive positions i")
+    head = [f"input: {path}",
+            f"{sum(len(ints[n]) for n in fams)} integrals in {len(fams)} families, {len(top_rows)} top sectors; "
+            f"maxima: t={glob['t']} r={glob['r']} s={glob['s']} dots={glob['dots']}", legend]
+    with open(os.path.join(out, "topsectors.txt"), "w") as f:
+        f.write("\n".join(head) + "\nr, s, dots: maxima over the tree of the top sector (all occurring sectors inside "
+                "it); [... from ...]: the subsectors that set them when they exceed the top sector's own\n\n"
+                + table(["family", "sector", "t", "r", "s", "dots", "#sub", "#int", "regular propagators"],
+                        top_rows) + "\n")
+    with open(os.path.join(out, "sectors.txt"), "w") as f:
+        f.write("\n".join(head) + "\nr, s, dots, #int: the sector's own integrals only\n\n"
+                + table(["family", "sector", "t", "r", "s", "dots", "#int", "in top sector(s)"], sec_rows) + "\n")
+    with open(os.path.join(out, "trees.txt"), "w") as f:
+        f.write("\n".join(head) + "\nper top sector: its occurring subsectors, nested by inclusion (own r, s, dots)\n\n"
+                + "\n".join(tree_txt) + "\n")
     with open(os.path.join(out, "topsectors.csv"), "w", newline="") as f:
         w = csv.writer(f)
-        w.writerow(["family", "sector_id", "lines", "regular_DD", "tree_sectors", "tree_integrals", "r", "s", "dots",
-                    "r_top_only", "s_top_only"])
-        w.writerows(rows)
+        w.writerow(["family", "sector", "t", "r", "s", "dots", "n_sub", "n_int", "regular_DD", "r_own", "s_own",
+                    "dots_own"])
+        for row, (n, x) in zip(top_rows, ((n, x) for n in fams for x in js[f"topo{n}"]["top_sectors"])):
+            w.writerow(row[:8] + [x["regular_DD"], x["top_only"]["r"], x["top_only"]["s"], x["top_only"]["dots"]])
+    with open(os.path.join(out, "sectors.csv"), "w", newline="") as f:
+        w = csv.writer(f)
+        w.writerow(["family", "sector", "t", "r", "s", "dots", "n_int", "top_sectors"])
+        w.writerows(sec_rows)
     with open(os.path.join(out, "sectors.json"), "w") as f:
         json.dump(js, f, indent=1)
+    for old in ("report.txt",):
+        if os.path.exists(os.path.join(out, old)):
+            os.remove(os.path.join(out, old))
     print("\n".join(head[:2]))
-    print(f"-> {out}/report.txt, topsectors.csv, sectors.json")
+    print(f"-> {out}/: topsectors.txt, sectors.txt, trees.txt (+ .csv, sectors.json)")
 
 
 if __name__ == "__main__":

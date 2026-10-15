@@ -170,12 +170,13 @@ Sectors, top sectors and reduction parameters of a collection:
 \begin{lstlisting}
 python3 integrals/Tools/analyse_integrals.py integrals/gluons     # (in Code_v2) -> integrals/gluons/analysis/
 \end{lstlisting}
-\cmd{report.txt}: per family the top sectors (sector ID $=\sum 2^{i-1}$ over the positive indices, lines as
-position:DD), each with the tree of the occurring subsectors (nested by inclusion) and the maxima of $r$ (sum of
-positive powers), $s$ (sum of $|$negative powers$|$) and dots over the whole tree (a subsector can set them; the
-sectors reaching them are listed) next to the values of the top sector alone. \cmd{topsectors.csv}: one row per top
-sector. \cmd{sectors.json}: everything, machine-readable. Accepts \cmd{integrals.m}, \cmd{integrals.txt} or a
-collection folder; \cmd{--families 1,7} restricts, \cmd{--out DIR} sets the output folder.
+\cmd{topsectors.txt}: one row per top sector --- family, sector ID ($=\sum 2^{i-1}$ over the positive indices), $t$
+(propagators with positive power), $r$ (sum of positive powers), $s$ (sum of $|$negative powers$|$), dots $=r-t$, all
+as maxima over the tree of the top sector (a subsector can set them: listed as [s from \ldots]), the number of
+sectors and integrals in the tree, the regular propagators. \cmd{sectors.txt}: every occurring sector with its own
+values and the top sectors containing it. \cmd{trees.txt}: per top sector its subsectors nested by inclusion.
+The same as \cmd{.csv} and \cmd{sectors.json}. Accepts \cmd{integrals.m}, \cmd{integrals.txt} or a collection folder;
+\cmd{--families 1,7} restricts, \cmd{--out DIR} sets the output folder.
 
 Families for the reduction: \cmd{Code\_v2/Families/reduction/} --- \cmd{integralfamilies\_independent.rrr.m} and
 \cmd{independentFamilies.m} (the 156 independent families, p4 = $-$r1, p5 = $-$r2, p6 = $-$r3, propagators in the
