@@ -12,7 +12,7 @@ a split of the six legs {p1, p2, r1, r2, r3, q}; a tree-level amplitude p1 p2 ->
 r1, r2, r3, q: the two trees (left = amplitude, right = conjugate) that together contain as many of the 7 regular
 propagators as possible; the rest are irreducible numerators (listed). The rapidity condition is not a line (listed).
 Families from ../Code_v2/Families (families_raw.m, families_relabelling.m, find_circuits.REGULAR).
-Layout: graphviz dot; drawing: TikZ-Feynman (pdflatex). Writes families.tex, families.pdf, families.json.
+Layout: own (see positions(), cut_order()); drawing: TikZ-Feynman (pdflatex). Writes <name>.tex, .pdf, .json.
 """
 import itertools
 import json
