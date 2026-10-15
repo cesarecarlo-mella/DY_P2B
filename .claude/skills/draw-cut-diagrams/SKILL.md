@@ -19,7 +19,7 @@ python3 draw_families.py                         # the 156 independent families 
 python3 draw_families.py --all                   # all 921 families
 python3 draw_families.py 1 7 910                 # selected families
 python3 draw_families.py --sectors my_sectors.txt                  # sectors -> sectors.pdf/.tex/.json
-python3 draw_families.py --top-sectors ~/integrals/all/integrals.m # maximal sectors among collected integrals
+python3 draw_families.py --top-sectors ../Code_v2/integrals/all/integrals.m # maximal sectors among collected integrals
 options: --straight (straight lines), --no-arrows, --momentum-labels (momenta instead of DD numbers on the lines)
 ```
 
@@ -28,7 +28,7 @@ Sector file, one per line (`#` comments allowed):
   from `reconstruct.inc`); positive index = line present;
 - or `55: 6 13 8` -- family number and the DD numbers of the lines present.
 The user's own sector list is `FamilyDrawings/my_sectors.txt` (theirs: do not commit or overwrite it).
-`--top-sectors` reads an `integrals.m` from `Code_v2/Scripts/run_all.py integrals` (default `~/integrals/<set>/`).
+`--top-sectors` reads an `integrals.m` from `Code_v2/Scripts/run_all.py integrals` (default `Code_v2/integrals/<set>/`).
 
 ## Physics and conventions (keep these when changing anything)
 

@@ -8,8 +8,8 @@ Linux (and macOS for tests). Run from anywhere after `source Code_v2/setenv.sh`.
   python3 run_all.py check    --set gluons                scan all outputs: missing, leftovers, made with old templates
   python3 run_all.py verify   --set gluons --n 2          numerical check of random finished step-05 results
   python3 run_all.py selftest [--jobs 8]                  check the local FORM against reference numbers (FORM 5.0)
-  python3 run_all.py integrals --set gluons               all distinct integrals to reduce -> ~/integrals/gluons/
-  python3 run_all.py integrals --merge                    union of all collections in ~/integrals -> ~/integrals/all/
+  python3 run_all.py integrals --set gluons               all distinct integrals to reduce -> Code_v2/integrals/gluons/
+  python3 run_all.py integrals --merge                    union of all collections in Code_v2/integrals -> .../all/
 
 Sets: gluons = physical_qqbggg (7 channels), quarks = all other groups (42), all; or --channels Vqqbggg,VqqbQ2Q2bg,...
 Two sets can run at the same time (two run commands); each keeps its state in run_state/<set>/ (or --state DIR).
@@ -852,7 +852,7 @@ def cmd_verify(args):
 
 # ---------------------------------------------------------------- integrals
 INT_RE = re.compile(r"INT\((topo\d+),([-\d,]+)\)")
-INTEGRALS_DIR = os.environ.get("DY_INTEGRALS", "~/integrals")       # shared home on the newton machines
+INTEGRALS_DIR = os.environ.get("DY_INTEGRALS", os.path.join(CODE, "integrals"))   # Code_v2/integrals/<set>
 
 
 def write_integrals(ints, out, sources, missing):
@@ -1044,12 +1044,13 @@ def main():
     p.add_argument("--seed", type=int, default=1)
     p = sub.add_parser("integrals", help="collect all distinct integrals to reduce")
     common(p)
-    p.add_argument("--out", help="output folder (default ~/integrals/<set>, or ~/integrals/all with --merge; "
-                                 "base folder changeable with DY_INTEGRALS)")
+    p.add_argument("--out", help="output folder (default Code_v2/integrals/<set>, or Code_v2/integrals/all with "
+                                 "--merge; base folder changeable with DY_INTEGRALS)")
     p.add_argument("--step", choices=["06", "05"], default="06",
                    help="06: summed results, independent families (default); 05: per pair, all families")
     p.add_argument("--merge", nargs="*", metavar="DIR",
-                   help="instead: union of the collections in these folders (no folder: all in ~/integrals except all)")
+                   help="instead: union of the collections in these folders (no folder: all in Code_v2/integrals "
+                        "except all)")
     p = sub.add_parser("selftest", help="FORM check: VqqbQ2Q2bg 3x3 against reference numbers")
     common(p, jobs=4)
     p.add_argument("--workdir")
