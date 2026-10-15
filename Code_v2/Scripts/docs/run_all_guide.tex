@@ -152,10 +152,12 @@ point on the cut surface and compares them exactly; it prints \cmd{IDENTICAL} or
 
 \section{Integrals to reduce}
 \begin{lstlisting}
-python3 Scripts/run_all.py integrals --set gluons --out ~/integrals/gluons      # newton4
-python3 Scripts/run_all.py integrals --set quarks --out ~/integrals/quarks      # newton1
-python3 Scripts/run_all.py integrals --merge ~/integrals/gluons ~/integrals/quarks --out ~/integrals/all
+python3 Scripts/run_all.py integrals --set gluons      # newton4 -> ~/integrals/gluons/
+python3 Scripts/run_all.py integrals --set quarks      # newton1 -> ~/integrals/quarks/
+python3 Scripts/run_all.py integrals --merge           # either machine: all collections in ~/integrals -> ~/integrals/all/
 \end{lstlisting}
+\cmd{\textasciitilde/integrals} is in the home directory shared by both machines (other place: \cmd{--out DIR}, or the
+base folder with \cmd{export DY\_INTEGRALS=...}; \cmd{--merge DIR1 DIR2} merges just these folders).
 Output folder: \cmd{integrals.m} (\cmd{\{INT[topo55, 1,1,1,1,1,-3,...], ...\}}), \cmd{integrals.txt} and
 \cmd{kira/topoN.txt} (\cmd{topo55[1,1,1,1,1,-3,...]}, one per line), \cmd{summary.txt} (per family: integrals,
 sectors, max dots, max numerator power), \cmd{sources.txt}. \cmd{--step 05}: from the per-pair step-05 results
