@@ -144,6 +144,8 @@ def positions(edges, fixed, xp, xc):
 
 
 SMOOTH = True                                                     # --straight: straight lines
+ARROWS = True                                                     # --no-arrows: no momentum-flow arrows
+MOMLABELS = False                                                 # --momentum-labels: momenta instead of DD numbers
 
 
 def curve(pos, a, b):
@@ -177,24 +179,36 @@ def tikz(n, dds, left, right):
         else:
             L.append(rf"\vertex[dot] ({k}) at ({x:.3f},{y:.3f}) {{}};")
     L.append(r"\diagram* {")
-    for a, b, lab in edges_l + edges_r:
-        c = curve(pos, a, b)
-        if lab in ("p1", "p2"):
-            L.append(f"({a}) -- [plain, thick] ({b}),")
-        elif lab == "q":
-            L.append(f"({a}) -- [boson, red!70!black{c}] ({b}),")
-        elif lab in ("r1", "r2", "r3"):
-            L.append(f"({a}) -- [plain, blue!60!black{c}] ({b}),")
-        else:
-            L.append(f"({a}) -- [plain{c}, edge label={{\\footnotesize\\bfseries {lab}}}] ({b}),")
+    # momentum flow (all legs incoming): in the amplitude every line carries the sum of the incoming momenta of the
+    # legs below it towards the root (edges are listed child -> parent); in the conjugate the same momenta flow out
+    # (parent -> child); through the cut r_i, q flow from right to left
+    arrow = ", with arrow=0.55" if ARROWS else ""
+    for side, edges in (("L", edges_l), ("R", edges_r)):
+        for a, b, lab in edges:
+            if side == "R":
+                a, b = b, a
+            c = curve(pos, a, b)
+            if lab in ("p1", "p2"):
+                L.append(f"({a}) -- [plain, thick{arrow}] ({b}),")
+            elif lab == "q":
+                L.append(f"({a}) -- [boson, red!70!black{c}] ({b}),")
+            elif lab in ("r1", "r2", "r3"):
+                L.append(f"({a}) -- [plain, blue!60!black{c}{arrow}] ({b}),")
+            else:
+                text = (rf"\scriptsize ${'+'.join(TEX[x] for x in REGULAR[int(lab) - 6].split('+'))}$" if MOMLABELS
+                        else rf"\footnotesize\bfseries {lab}")
+                L.append(f"({a}) -- [plain{c}{arrow}, edge label={{{text}}}] ({b}),")
     for x in CUTLEGS:                                             # the cut lines through the cut
-        L.append(f"(Lc{x}) -- [{'boson, red!70!black' if x == 'q' else 'plain, blue!60!black'}] (Rc{x}),")
+        st = "boson, red!70!black" if x == "q" else f"plain, blue!60!black{arrow}"
+        L.append(f"(Rc{x}) -- [{st}] (Lc{x}),")
     L.append("};")
     L.append(r"\end{feynman}")
     L.append(rf"\draw[dashed, gray!70] (0,{min(ycut.values()) - 0.8:.2f}) -- (0,{max(ycut.values()) + 0.8:.2f});")
     for x in CUTLEGS:
         col = "red!70!black" if x == "q" else "blue!60!black"
         L.append(rf"\node[font=\footnotesize, {col}, above] at (0.32,{ycut[x]:.2f}) {{${TEX[x]}$}};")
+        if ARROWS and x == "q":
+            L.append(rf"\draw[-{{Stealth[length=1.6mm]}}, red!70!black] (0.25,{ycut[x] - 0.2:.2f}) -- (-0.25,{ycut[x] - 0.2:.2f});")
     L.append(r"\end{tikzpicture}")
     return "\n".join(L)
 
@@ -281,11 +295,15 @@ def render(items, fams, indep, name, title):
     legend = r"\textbf{Regular propagators} (DD numbers, all legs incoming): " + "; ".join(
         f"{6 + i} = ${mom(6 + i)}$" for i in range(len(REGULAR))) + "."
     doc = [r"\documentclass[10pt]{article}", r"\usepackage[a4paper,margin=1.4cm]{geometry}", r"\usepackage{xcolor}",
-           r"\usepackage[compat=1.1.0]{tikz-feynman}", r"\tikzfeynmanset{warn luatex=false}", r"\begin{document}",
+           r"\usepackage[compat=1.1.0]{tikz-feynman}", r"\usetikzlibrary{arrows.meta}", r"\tikzfeynmanset{warn luatex=false}", r"\begin{document}",
            rf"\section*{{{title}}}",
            r"Amplitude (left) $\times$ conjugate (right) for $p_1 p_2 \to V(q)\, r_1 r_2 r_3$, glued along the cut "
            r"(dashed): $r_1, r_2, r_3$ (blue), $q$ (red, $q^2 = m^2$). The rapidity condition $-q\cdot p_1 + u\, q\cdot p_2 = 0$ "
-           r"of every family is not a line. Internal lines carry their DD number. " + legend + r"\par\medskip"]
+           r"of every family is not a line. Internal lines carry their DD number. Arrows: momentum flow with all legs "
+           r"incoming ($p_1+p_2+r_1+r_2+r_3+q=0$): in the amplitude every line carries the sum of the incoming momenta "
+           r"on its far side, e.g.\ line 6 carries $p_1+r_1$; the conjugate is the mirror image, so $p_1, p_2$ leave on "
+           r"the right and $r_i, q$ flow through the cut from right to left (the physical final-state momenta $-r_i$ "
+           r"from left to right). " + legend + r"\par\medskip"]
     for i, b in enumerate(blocks):
         doc.append(b + ("\n\n\\bigskip\n" if i % 2 else "\\hfill%"))
     doc.append(r"\end{document}")
@@ -302,8 +320,10 @@ def render(items, fams, indep, name, title):
 
 
 def main(argv):
-    global SMOOTH
+    global SMOOTH, ARROWS, MOMLABELS
     SMOOTH = "--straight" not in argv
+    ARROWS = "--no-arrows" not in argv
+    MOMLABELS = "--momentum-labels" in argv
     fams, indep = read_families()
     if "--sectors" in argv or "--top-sectors" in argv:
         order = int_order()

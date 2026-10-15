@@ -26,4 +26,7 @@ Layout: cut in the middle, the cut lines r1, r2, r3, q as horizontal segments th
 which the most propagators can be drawn without crossing; p1, p2 enter top/bottom left and leave top/bottom right;
 a vertex's x from its position between the p legs and the cut (graph distances), y the average of its neighbours,
 with a minimum distance between vertices. Lines are smooth (horizontal tangents); `--straight` for straight lines.
+Arrows show the momentum flow (all legs incoming: line k carries the momentum of DDk from the legs on its far side towards
+the rest of the amplitude; the conjugate is the mirror image; r_i, q flow through the cut from right to left);
+`--no-arrows` without them; `--momentum-labels` writes the momenta instead of the DD numbers on the lines.
 Under each drawing: its propagators (DD number, momentum, amplitude/conjugate) and the pinched ones.
