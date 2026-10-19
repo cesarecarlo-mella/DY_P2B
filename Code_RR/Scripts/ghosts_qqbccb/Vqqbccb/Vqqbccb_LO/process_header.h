@@ -1,0 +1,3 @@
+#define NDIAG "2"
+#define NLOOP "0"
+#define PROC "Vqqbccb"
