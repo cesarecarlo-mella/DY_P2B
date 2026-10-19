@@ -39,9 +39,16 @@ Input: `Code_RRR/integrals/all/` (`run_all.py integrals --merge`, then
   `Families/integralfamilies.rrr.m` for all 921 families.
 - `config/kinematics.yaml`: as in n3lo_old: invariants m2, s12, u; p1.p2 = s12/2; m2 -> 1.
   **Our families use s12 = m2/z**: in the results set s12 -> 1/z (m2 = 1).
-- `jobs.yaml`: `reduce_sectors` with one entry per top sector and its own r, s (`--merge-rs`: one entry per family
-  with the maxima, as in n3lo_old), `select_mandatory_list` = `toreduce/topoN.txt`, symmetries on, FireFly
+- `jobs.yaml`: `reduce_sectors` with one entry per top sector and its own r, s (a family appears in several
+  entries; checked on newton4 2026-10-18: same reduction as one entry per family with the maxima, as in n3lo_old),
+  `select_mandatory_list` = `toreduce/topoN.txt`, symmetries on, FireFly
   reconstruction, then `kira2math` and `kira2form`.
 - `toreduce/` (not in git, copied from `Code_RRR/integrals/all/kira/`) and Kira's output (not in git).
+
+Test of the setup on one group (cheap): `python3 make_jobs.py test --only g01 [--max-s 1] [--max-dots 0]`
+-> `jobs/g01_test/`: same families and config, only the integrals with s <= max-s and dots <= max-dots,
+top sectors and r, s recomputed (`--max-lines T`: at most T lines; `--max-ints N`: only N per family;
+`--fams 1,43 --name g00`: any families -> `jobs/g00_test/`).
+Check in `kira.out` that every family is initiated and in `results/` that every family has a table.
 
 The jobs folder with the integral lists to the cluster: `rsync -a jobs/ newton4:/scratch/ge45tuy/DY_P2B/RRR_reductions/jobs/`.

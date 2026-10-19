@@ -17,8 +17,9 @@ cd RRR_reductions
 python3 make_jobs.py group                    # -> groups.txt (39 groups; editable by hand)
 python3 make_jobs.py jobs                     # groups.txt -> jobs/<group>/
 python3 make_jobs.py jobs --only g01,g02      # only some groups
-python3 make_jobs.py jobs --merge-rs          # one reduce entry per family (max r, s) instead of one per top sector
 python3 make_jobs.py jobs --collection gluons # another Code_RRR/integrals/<collection>
+python3 make_jobs.py test --only g01          # low-rank test job jobs/g01_test (s<=1, no dots)
+python3 make_jobs.py test --fams 1,43 --name g00 --max-lines 6 --max-s 1 --max-dots 1 --max-ints 6   # tiny: 6 ints per family -> jobs/g00_test
 ```
 Inputs (must exist): `Code_RRR/integrals/<collection>/kira/topoN.txt` and `analysis/{topsectors,sectors}.csv`, from
 `Code_RRR/Scripts/run_all.py integrals [--merge]` and `Code_RRR/integrals/Tools/analyse_integrals.py <collection>`.
@@ -65,8 +66,8 @@ Never regenerate (`make_jobs.py jobs`) or rsync over a group that is running.
 
 ## Open points
 
-- Untested: whether Kira accepts the same topology in several `reduce` entries (one per top sector); if not, use
-  `--merge-rs`.
+- Checked 2026-10-18 (g00 test, topo1 + topo43, on newton4): Kira accepts a family in several `reduce` entries
+  (one per top sector); same reduction as one entry per family with the maxima. `--merge-rs` removed.
 - What to read from a first run: symmetries found between the 4 families, masters per group, memory (RES), time of
   initiate vs FireFly.
 - Possible improvement of the grouping: count all subsectors of the top sectors, weight shared sectors by #lines.

@@ -2,7 +2,9 @@
 """Kira reduction jobs for the triple-real (RRR) integrals, a few families per job.
 
     python3 make_jobs.py group [--size 4] [--collection all]   # -> groups.txt (edit it by hand if you like)
-    python3 make_jobs.py jobs  [--collection all] [--merge-rs] [--only g01,g02]   # groups.txt -> jobs/<group>/
+    python3 make_jobs.py jobs  [--collection all] [--only g01,g02]   # groups.txt -> jobs/<group>/
+    python3 make_jobs.py test  --only g01 [--max-s 1] [--max-dots 0] [--max-lines 12] [--max-ints 0]  # -> jobs/g01_test/
+    python3 make_jobs.py test  --fams 1,43 --name g00 --max-s 0 --max-lines 7   # any families -> jobs/g00_test/
 
 Inputs (nothing is changed there):
   ../Code_RRR/Families/fams/reconstruct.inc      INT order of every family (DD numbers of indices 6..12)
@@ -19,8 +21,12 @@ group: families with many common sectors go together, so that a job reduces them
   sectors with the group so far is added (ties: the lighter one), until the group has --size families; then two
   families of different groups are swapped as long as that increases the common sectors within the groups.
 jobs: per group jobs/<group>/ with config/integralfamilies.yaml, config/kinematics.yaml, jobs.yaml, toreduce/topoN.txt,
-  run.sh. reduce_sectors lists every top sector with its own r, s (maxima over its tree); --merge-rs uses one entry
-  per family with the maxima over its top sectors (the old n3lo_old setup).
+  run.sh. reduce_sectors lists every top sector with its own r, s (maxima over its tree); Kira accepts
+  a family in several entries (checked 2026-10-18 on newton4: same reduction as one entry per family with the maxima).
+test: a cheap job to check the setup on one group: same families, but only the integrals with s <= --max-s and
+  dots <= --max-dots and at most --max-lines lines (cut ones included), at most --max-ints per family (one per
+  sector in turn, highest rank first); top sectors, r, s recomputed from that selection. Read in its kira.out whether
+  every family is initiated and which sectors are mapped by symmetries, and whether results/ has a table for every family.
 """
 import argparse
 import csv
@@ -173,56 +179,108 @@ def cmd_jobs(args):
         print(f"warning: families not in groups.txt: {missing}; placed twice: "
               f"{sorted({n for n in placed if placed.count(n) > 1})}")
     for name, fams in groups:
-        d = os.path.join(HERE, "jobs", name)
-        for sub in ("config", "toreduce"):
-            os.makedirs(os.path.join(d, sub), exist_ok=True)
-        with open(os.path.join(d, "config", "integralfamilies.yaml"), "w") as f:
-            f.write("integralfamilies:\n")
-            for n in fams:
-                f.write(f"\n  - name: \"topo{n}\"\n    loop_momenta: [r1, r2, r3]\n    propagators:\n")
-                f.write(CUT.format())
-                for dd in order[n]:
-                    f.write(f"     - [ \"{REGULAR[dd - 6]}\", 0]   # DD{dd}\n")
-                f.write("    cut_propagators: [1, 2, 3, 4, 5]\n")
-        with open(os.path.join(d, "config", "kinematics.yaml"), "w") as f:
-            f.write(KINEMATICS)
-        reduce = []
-        for n in fams:
-            ts = sorted(tops[n], key=lambda x: (-bin(x[0]).count("1"), x[0]))
-            if args.merge_rs:
-                reduce.append(f"{{topologies: [topo{n}], sectors: [{', '.join(str(t[0]) for t in ts)}], "
-                              f"r: {max(t[1] for t in ts)}, s: {max(t[2] for t in ts)}}}")
-            else:
-                reduce += [f"{{topologies: [topo{n}], sectors: [{t[0]}], r: {t[1]}, s: {t[2]}}}" for t in ts]
-            shutil.copy(os.path.join(kira, f"topo{n}.txt"), os.path.join(d, "toreduce", f"topo{n}.txt"))
-        targets = "".join(f"       - [topo{n}, toreduce/topo{n}.txt]\n" for n in fams)
-        with open(os.path.join(d, "jobs.yaml"), "w") as f:
-            f.write(f"# group {name}: families {' '.join(map(str, fams))} (integrals/{args.collection}; make_jobs.py)\n"
-                    "jobs:\n - reduce_sectors:\n    conditional: true\n    reduce:\n")
-            f.write("".join(f"     - {x}\n" for x in reduce))
-            f.write("    select_integrals:\n      select_mandatory_list:\n")
-            f.write(targets.replace("       -", "        -"))
-            f.write("    run_symmetries: true\n    run_initiate: true\n    run_triangular: false\n"
-                    "    run_firefly: true\n    run_back_substitution: false\n")
-            f.write(" - kira2math:\n    target:\n" + targets + "    reconstruct_mass: false\n")
-            f.write(" - kira2form:\n    target:\n" + targets + "    reconstruct_mass: false\n")
-        with open(os.path.join(d, "run.sh"), "w") as f:
-            f.write(RUN.format(group=name, fams=" ".join(f"topo{n}" for n in fams)))
-        os.chmod(os.path.join(d, "run.sh"), 0o755)
-        nint = sum(1 for n in fams for _ in open(os.path.join(kira, f"topo{n}.txt")))
-        print(f"{name}: topo{' topo'.join(map(str, fams))}  {len(reduce)} reduce entries, {nint} integrals")
+        lists = {n: open(os.path.join(kira, f"topo{n}.txt")).read().splitlines() for n in fams}
+        write_job(name, fams, order, {n: tops[n] for n in fams}, lists, args,
+                  f"integrals/{args.collection}; make_jobs.py")
     print(f"-> jobs/ ({len(groups)} jobs)")
+
+
+def write_job(name, fams, order, tops, lists, args, note):
+    """jobs/<name>/: config, jobs.yaml, run.sh, toreduce/topoN.txt; tops = family -> [(sector, r, s)],
+    lists = family -> integrals (Kira notation)"""
+    d = os.path.join(HERE, "jobs", name)
+    for sub in ("config", "toreduce"):
+        os.makedirs(os.path.join(d, sub), exist_ok=True)
+    with open(os.path.join(d, "config", "integralfamilies.yaml"), "w") as f:
+        f.write("integralfamilies:\n")
+        for n in fams:
+            f.write(f"\n  - name: \"topo{n}\"\n    loop_momenta: [r1, r2, r3]\n    propagators:\n")
+            f.write(CUT.format())
+            for dd in order[n]:
+                f.write(f"     - [ \"{REGULAR[dd - 6]}\", 0]   # DD{dd}\n")
+            f.write("    cut_propagators: [1, 2, 3, 4, 5]\n")
+    with open(os.path.join(d, "config", "kinematics.yaml"), "w") as f:
+        f.write(KINEMATICS)
+    reduce = []
+    for n in fams:
+        ts = sorted(tops[n], key=lambda x: (-bin(x[0]).count("1"), x[0]))
+        reduce += [f"{{topologies: [topo{n}], sectors: [{t[0]}], r: {t[1]}, s: {t[2]}}}" for t in ts]
+        with open(os.path.join(d, "toreduce", f"topo{n}.txt"), "w") as f:
+            f.write("".join(x + "\n" for x in lists[n]))
+    targets = "".join(f"       - [topo{n}, toreduce/topo{n}.txt]\n" for n in fams)
+    with open(os.path.join(d, "jobs.yaml"), "w") as f:
+        f.write(f"# group {name}: families {' '.join(map(str, fams))} ({note})\n"
+                "jobs:\n - reduce_sectors:\n    conditional: true\n    reduce:\n")
+        f.write("".join(f"     - {x}\n" for x in reduce))
+        f.write("    select_integrals:\n      select_mandatory_list:\n")
+        f.write(targets.replace("       -", "        -"))
+        f.write("    run_symmetries: true\n    run_initiate: true\n    run_triangular: false\n"
+                "    run_firefly: true\n    run_back_substitution: false\n")
+        f.write(" - kira2math:\n    target:\n" + targets + "    reconstruct_mass: false\n")
+        f.write(" - kira2form:\n    target:\n" + targets + "    reconstruct_mass: false\n")
+    with open(os.path.join(d, "run.sh"), "w") as f:
+        f.write(RUN.format(group=name, fams=" ".join(f"topo{n}" for n in fams)))
+    os.chmod(os.path.join(d, "run.sh"), 0o755)
+    print(f"{name}: topo{' topo'.join(map(str, fams))}  {len(reduce)} reduce entries, "
+          f"{sum(len(x) for x in lists.values())} integrals")
+
+
+def parse_int(line):
+    """'topo1[1,1,0,-2,...]' -> (sector, t, r, s); sector = sum of 2^(i-1) over the positive indices"""
+    a = [int(x) for x in line[line.index("[") + 1:line.index("]")].split(",")]
+    pos = [i for i, x in enumerate(a) if x > 0]
+    return sum(1 << i for i in pos), len(pos), sum(a[i] for i in pos), -sum(x for x in a if x < 0)
+
+
+def cmd_test(args):
+    if args.fams:
+        groups = [(args.name or "g00", [int(x) for x in args.fams.split(",")])]
+    else:
+        groups = [g for g in read_groups() if args.only and g[0] in args.only.split(",")]
+    if not groups:
+        sys.exit("test: give the group(s) with --only, e.g. --only g01, or the families with --fams 1,43 [--name g00]")
+    order = int_order()
+    kira = os.path.join(CODE, "integrals", args.collection, "kira")
+    for name, fams in groups:
+        lists, tops = {}, {}
+        for n in fams:
+            sel = [(line, parse_int(line)) for line in open(os.path.join(kira, f"topo{n}.txt")).read().split()]
+            sel = [(line, p) for line, p in sel if p[3] <= args.max_s and p[2] - p[1] <= args.max_dots
+                   and p[1] <= args.max_lines]
+            if args.max_ints:   # a few per family: one per sector in turn, highest rank first
+                by = {}
+                for line, p in sorted(sel, key=lambda x: (-x[1][3], x[1][1] - x[1][2], x[0])):
+                    by.setdefault(p[0], []).append((line, p))
+                queues = [by[k] for k in sorted(by)]
+                sel = [q[i] for i in range(max(map(len, queues), default=0)) for q in queues if i < len(q)]
+                sel = sel[:args.max_ints]
+            lists[n] = [line for line, _ in sel]
+            secs = {p[0] for _, p in sel}
+            top = [x for x in secs if not any(y != x and x & y == x for y in secs)]
+            tops[n] = []
+            for x in top:
+                tree = [p for _, p in sel if p[0] & x == p[0]]
+                tops[n].append((x, max(bin(x).count("1"), max(p[2] for p in tree)), max(p[3] for p in tree)))
+        test = name + "_test"
+        write_job(test, fams, order, tops, lists, args,
+                  f"TEST: s <= {args.max_s}, dots <= {args.max_dots}, lines <= {args.max_lines}, max {args.max_ints or "all"} per family; integrals/{args.collection}; make_jobs.py test")
+    print("-> jobs/ (test)")
 
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("command", choices=["group", "jobs"])
+    ap.add_argument("command", choices=["group", "jobs", "test"])
     ap.add_argument("--collection", default="all", help="Code_RRR/integrals/<collection> (default all)")
     ap.add_argument("--size", type=int, default=4, help="families per job (group; default 4)")
-    ap.add_argument("--merge-rs", action="store_true", help="one reduce entry per family with the maximal r, s")
-    ap.add_argument("--only", help="jobs: comma-separated group names")
+    ap.add_argument("--only", help="jobs, test: comma-separated group names")
+    ap.add_argument("--max-s", type=int, default=1, help="test: keep integrals with numerator rank s <= this (default 1)")
+    ap.add_argument("--max-lines", type=int, default=12, help="test: keep integrals with at most this many lines (default 12)")
+    ap.add_argument("--max-ints", type=int, default=0, help="test: keep only this many integrals per family (0 = all)")
+    ap.add_argument("--fams", help="test: comma-separated family numbers instead of a group of groups.txt")
+    ap.add_argument("--name", help="test with --fams: job name (default g00) -> jobs/<name>_test")
+    ap.add_argument("--max-dots", type=int, default=0, help="test: keep integrals with at most this many dots (default 0)")
     args = ap.parse_args()
-    {"group": cmd_group, "jobs": cmd_jobs}[args.command](args)
+    {"group": cmd_group, "jobs": cmd_jobs, "test": cmd_test}[args.command](args)
 
 
 if __name__ == "__main__":
