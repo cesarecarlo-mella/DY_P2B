@@ -1,0 +1,3 @@
+group,name,in,p1p2_partner
+physical_qqb,Vqqb,"Quark[p1], Qbar[p2], V[q]",Vqbq
+physical_qqb,Vqbq,"Qbar[p1], Quark[p2], V[q]",Vqqb

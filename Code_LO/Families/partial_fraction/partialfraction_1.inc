@@ -1,0 +1,1 @@
+* LO: no regular propagators

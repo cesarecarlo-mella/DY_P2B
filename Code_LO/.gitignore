@@ -1,0 +1,47 @@
+# Everything the pipeline writes. Re-create with: Scripts/make_channel.py --qgraf, steps 01-03 in each channel,
+# (Families/ outputs are in git.)
+
+.DS_Store
+__pycache__/
+*.pyc
+
+# --- channels: Scripts/<group>/<P>/<P>_LO/ ---
+# QGRAF output and logs
+Scripts/*/*/*_LO/external/*.0.inc
+Scripts/*/*/*_LO/qgraf/qgraf.log
+Scripts/*/*/*_LO/run*.log
+Scripts/*/*/*_LO/run*.time
+# all files under tmp/ (the empty folder tree is kept through tmp/**/.gitkeep, steps 01-06 write into it)
+Scripts/*/*/*_LO/tmp/**
+!Scripts/*/*/*_LO/tmp/**/
+!Scripts/*/*/*_LO/tmp/**/.gitkeep
+# files generated in utils/ and scratch folders of the steps
+Scripts/*/*/*_LO/utils/03_complex_conj_diags.frm
+Scripts/*/*/*_LO/utils/sum_squared_diags*.frm
+Scripts/*/*/*_LO/utils/sum_squared_diags*.log
+Scripts/*/*/*_LO/utils/job_*/
+Scripts/*/*/*_LO/utils/formtmp/
+Scripts/*/*/*_LO/failed_jobs.txt
+Scripts/*/*/*_LO/utils/contractPj.frm
+Scripts/*/*/*_LO/utils/tmp_fld/
+Scripts/*/*/*_LO/tmp_folder/
+
+# Families/: all generated files (propagators, partial fractions, families, FORM rules) are kept in git
+
+# run_all.py state, logs, selftest/verify scratch
+Scripts/run_state/
+
+# LaTeX by-products of Scripts/diagrams/draw_diagrams.py (diagrams.tex and diagrams.pdf are kept)
+Scripts/diagrams/*.aux
+Scripts/diagrams/*.log
+
+# run_all.py integrals output
+Scripts/integrals/
+Scripts/docs/*.aux
+Scripts/docs/*.log
+Scripts/docs/*.out
+Scripts/docs/*.toc
+
+# integral collections (run_all.py integrals); the analysis tools in integrals/Tools are kept
+integrals/*
+!integrals/Tools/
