@@ -1,0 +1,272 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=2.0cm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs,longtable,array,pdflscape}
+\usepackage{xcolor}
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue]{hyperref}
+
+\newcommand{\ep}{\epsilon}
+\renewcommand{\Re}{\mathrm{Re}\,}
+\newcommand{\tr}{\mathrm{Tr}}
+\newcommand{\PS}{_{\rm PS}}
+% piece: amplitude label Y at j loops times conjugate of X at i loops
+\newcommand{\pc}[4]{#1^{(#2)}\,#3^{(#4)*}}
+% table blocks: channel list + brace as tall as the block of rows
+\newsavebox{\rowsbox}
+\newlength{\cw}\setlength{\cw}{3.2cm}
+\newlength{\fw}\setlength{\fw}{15.2cm}
+\newcommand{\rows}{$\vcenter{\hbox{\usebox{\rowsbox}}}$}
+\newcommand{\chan}[1]{$\vcenter{\hbox{\begin{tabular}{@{}r@{}}#1\end{tabular}}}
+  \left.\vphantom{\vcenter{\hbox{\usebox{\rowsbox}}}\vcenter{\hbox{\begin{tabular}{@{}r@{}}#1\end{tabular}}}}\right\}$}
+\newcommand{\blockname}[1]{$\vcenter{\hbox{\begin{tabular}{@{}l@{}}#1\end{tabular}}}$}
+\newcommand{\zs}{C_FT_R\big(\tfrac{3}{2\ep}+\tfrac34\big)}
+\newcommand{\note}[1]{\par\smallskip\noindent\colorbox{gray!12}{\parbox{\dimexpr\linewidth-2\fboxsep}{\small #1}}\par\smallskip}
+
+\title{Assembly of the Drell--Yan contributions up to N$^3$LO\\[2pt]\large UV renormalisation per coupling piece}
+\author{DY\_P2B --- notes\_Larin/}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section{Notation}
+
+\paragraph{$V$-vertex labels} (the coupling is stripped off and written in the ``coupling'' column):
+\begin{center}
+\begin{tabular}{lll}
+\toprule
+label & $V$ attached to & coupling \\
+\midrule
+$v$, $a$ & open quark line 1 (flavour $q$) & $v_q$, $a_q$ \\
+$v_2$, $a_2$ & open quark line 2 (flavour $Q$, four-quark channels) & $v_Q$, $a_Q$ \\
+$v\PS$, $a\PS$ & closed quark loop = \textbf{pure singlet (PS)}, summed over $n_f$ flavours & $\sum_fv_f$, $\sum_fa_f$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+The couplings are real numbers (tree-level electroweak couplings; the $Z$ propagator, complex in the
+Breit--Wigner form, multiplies the whole hadronic tensor and is not part of them), so they factor out of every
+$2\Re$ below. Lines are labelled \emph{by line}, not by flavour (identical quarks: see \texttt{Larin.pdf}). PS exists only in loop
+amplitudes: RRR, RR, R, LO have none.
+
+\paragraph{Pieces.} $Y^{(j)}X^{(i)*}$ = amplitude with label $Y$ at $j$ loops times the complex conjugate of the
+amplitude with label $X$ at $i$ loops, summed over spins, colours, polarisations, couplings stripped off, contracted
+with the symmetric leptonic projector $L_1$ (parity-even pieces, table~\ref{tab:even}) or with the antisymmetric
+projector $L_6$ (parity-odd pieces, one vector and one axial label, table~\ref{tab:odd}; leptonic coupling
+$2v_\ell a_\ell$ instead of $v_\ell^2+a_\ell^2$).
+
+\paragraph{$\gamma_5$.} Same-line parity-even products: anticommuting $\gamma_5$, $aa=vv$: these rows are $v\,v^*$
+times $v_q^2+a_q^2$. Rows marked \textbf{(L)}, and all parity-odd rows: Larin for \emph{every} axial vertex of the
+piece and of its counterterm pieces.
+
+\paragraph{Conventions.} $a=\alpha_s(\mu^2)/(2\pi)$, $d=4-2\ep$, $\mu=\mu_0$; the bare $L$-loop amplitude (in terms of
+$\bar\alpha_s$) is multiplied by $S_\ep^{-L}$, $S_\ep=(4\pi)^\ep e^{-\ep\gamma_E}$ (arXiv:2306.10170, eq.~(5.1)).
+\[
+\beta_0=\tfrac{11}{6}C_A-\tfrac23T_Rn_f,\qquad \beta_1=\tfrac{17}{6}C_A^2-\tfrac53C_AT_Rn_f-C_FT_Rn_f .
+\]
+
+\section{Parity-even pieces (\texorpdfstring{$L_1$}{L1})}
+
+$m$ = number of emitted partons. Rows of one contribution are separate coupling pieces, summed after multiplying by
+their couplings. ``$=0$'': see section~\ref{sec:zero}.
+
+\begin{landscape}
+{\small
+\renewcommand{\arraystretch}{1.55}
+\begin{longtable}{@{}r@{\hspace{3pt}}>{\raggedright}p{2.0cm}l@{}}
+\caption{Parity-even pieces, contracted with $L_1$.}\label{tab:even}\\
+\toprule
+channels\quad & contribution & \begin{tabular}{@{}p{\cw}p{\fw}@{}}coupling & renormalised\end{tabular} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+
+\multicolumn{3}{@{}l}{\textbf{LO ($a^0$)}}\\
+\global\setbox\rowsbox=\hbox{\begin{tabular}{@{}>{$}p{\cw}<{$}>{$}p{\fw}<{$}@{}}v_q^2+a_q^2 & \pc{v}0{v}0\end{tabular}}
+\chan{$q\bar q\to V$} & \blockname{B} & \rows \\
+\midrule
+\multicolumn{3}{@{}l}{\textbf{NLO ($a^1$)}}\\
+\global\setbox\rowsbox=\hbox{\begin{tabular}{@{}>{$}p{\cw}<{$}>{$}p{\fw}<{$}@{}}v_q^2+a_q^2 & \pc{v}0{v}0\end{tabular}}
+\chan{$q\bar q\to Vg$\\$qg\to Vq$} & \blockname{R} & \rows \\
+\addlinespace
+\global\setbox\rowsbox=\hbox{\begin{tabular}{@{}>{$}p{\cw}<{$}>{$}p{\fw}<{$}@{}}v_q^2+a_q^2 & 2\Re\big[\pc{v}1{v}0\big]\end{tabular}}
+\chan{$q\bar q\to V$} & \blockname{V} & \rows \\
+\midrule
+\multicolumn{3}{@{}l}{\textbf{NNLO ($a^2$)}}\\
+\global\setbox\rowsbox=\hbox{\begin{tabular}{@{}>{$}p{\cw}<{$}>{$}p{\fw}<{$}@{}}v_q^2+a_q^2 & \pc{v}0{v}0\end{tabular}}
+\chan{$q\bar q\to Vgg$\\$qg\to Vqg$\\$gg\to Vq\bar q$} & \blockname{RR} & \rows \\
+\addlinespace
+\global\setbox\rowsbox=\hbox{\begin{tabular}{@{}>{$}p{\cw}<{$}>{$}p{\fw}<{$}@{}}v_q^2+a_q^2 & \pc{v}0{v}0\\v_Q^2+a_Q^2 & \pc{v_2}0{v_2}0\\v_qv_Q & 2\Re\big[\pc{v}0{v_2}0\big]\\a_qa_Q\ \text{(L)} & 2\Re\big[\pc{a}0{a_2}0\big]\end{tabular}}
+\chan{$q\bar q\to VQ\bar Q$\\$qQ\to VqQ$\\$q\bar Q\to Vq\bar Q$\\$q\bar q\to Vq\bar q$\\$qq\to Vqq$} & \blockname{RR} & \rows \\
+\addlinespace
+\global\setbox\rowsbox=\hbox{\begin{tabular}{@{}>{$}p{\cw}<{$}>{$}p{\fw}<{$}@{}}v_q^2+a_q^2 & 2\Re\big[\pc{v}1{v}0-\frac{\beta_0}{2\ep}\,\pc{v}0{v}0\big]\\v_q\sum v_f & =0\\a_q\sum a_f\ \text{(L)} & 2\Re\big[\pc{a\PS}1{a}0\big]\end{tabular}}
+\chan{$q\bar q\to Vg$\\$qg\to Vq$} & \blockname{RV} & \rows \\
+\addlinespace
+\global\setbox\rowsbox=\hbox{\begin{tabular}{@{}>{$}p{\cw}<{$}>{$}p{\fw}<{$}@{}}v_q^2+a_q^2 & 2\Re\big[\pc{v}2{v}0-\frac{\beta_0}{\ep}\,\pc{v}1{v}0\big]+\pc{v}1{v}1\\v_q\sum v_f & =0\\a_q\sum a_f\ \text{(L)} & 2\Re\big[\pc{a\PS}2{a}0+\zs\,\pc{a}0{a}0\big]\end{tabular}}
+\chan{$q\bar q\to V$} & \blockname{VV} & \rows \\
+\midrule
+\multicolumn{3}{@{}l}{\textbf{N$^3$LO ($a^3$)}}\\
+\global\setbox\rowsbox=\hbox{\begin{tabular}{@{}>{$}p{\cw}<{$}>{$}p{\fw}<{$}@{}}v_q^2+a_q^2 & \pc{v}0{v}0\end{tabular}}
+\chan{$q\bar q\to Vggg$\\$qg\to Vqgg$\\$gg\to Vq\bar qg$} & \blockname{RRR} & \rows \\
+\addlinespace
+\global\setbox\rowsbox=\hbox{\begin{tabular}{@{}>{$}p{\cw}<{$}>{$}p{\fw}<{$}@{}}v_q^2+a_q^2 & \pc{v}0{v}0\\v_Q^2+a_Q^2 & \pc{v_2}0{v_2}0\\v_qv_Q & 2\Re\big[\pc{v}0{v_2}0\big]\\a_qa_Q\ \text{(L)} & 2\Re\big[\pc{a}0{a_2}0\big]\end{tabular}}
+\chan{$q\bar q\to VQ\bar Qg$\\$qg\to VqQ\bar Q$\\$qQ\to VqQg$\\$q\bar Q\to Vq\bar Qg$\\$q\bar q\to Vq\bar qg$\\$qq\to Vqqg$\\$qg\to Vqq\bar q$} & \blockname{RRR} & \rows \\
+\addlinespace
+\global\setbox\rowsbox=\hbox{\begin{tabular}{@{}>{$}p{\cw}<{$}>{$}p{\fw}<{$}@{}}v_q^2+a_q^2 & 2\Re\big[\pc{v}1{v}0-\frac{\beta_0}{\ep}\,\pc{v}0{v}0\big]\\v_q\sum v_f & 2\Re\big[\pc{v\PS}1{v}0\big]\\a_q\sum a_f\ \text{(L)} & 2\Re\big[\pc{a\PS}1{a}0\big]\end{tabular}}
+\chan{$q\bar q\to Vgg$\\$qg\to Vqg$\\$gg\to Vq\bar q$} & \blockname{RRV} & \rows \\
+\addlinespace
+\global\setbox\rowsbox=\hbox{\begin{tabular}{@{}>{$}p{\cw}<{$}>{$}p{\fw}<{$}@{}}v_q^2+a_q^2 & 2\Re\big[\pc{v}1{v}0-\frac{\beta_0}{\ep}\,\pc{v}0{v}0\big]\\v_Q^2+a_Q^2 & 2\Re\big[\pc{v_2}1{v_2}0-\frac{\beta_0}{\ep}\,\pc{v_2}0{v_2}0\big]\\v_qv_Q & 2\Re\big[\pc{v}1{v_2}0-\frac{\beta_0}{\ep}\,\pc{v}0{v_2}0\big]+2\Re\big[\pc{v_2}1{v}0-\frac{\beta_0}{\ep}\,\pc{v_2}0{v}0\big]\\a_qa_Q\ \text{(L)} & 2\Re\big[\pc{a}1{a_2}0-\big(\frac{\beta_0}{\ep}+2C_F\big)\pc{a}0{a_2}0\big]+2\Re\big[\pc{a_2}1{a}0-\big(\frac{\beta_0}{\ep}+2C_F\big)\pc{a_2}0{a}0\big]\\v_q\sum v_f,\ v_Q\sum v_f & =0\\a_q\sum a_f\ \text{(L)} & 2\Re\big[\pc{a\PS}1{a}0\big]\\a_Q\sum a_f\ \text{(L)} & 2\Re\big[\pc{a\PS}1{a_2}0\big]\end{tabular}}
+\chan{$q\bar q\to VQ\bar Q$\\$qQ\to VqQ$\\$q\bar Q\to Vq\bar Q$\\$q\bar q\to Vq\bar q$\\$qq\to Vqq$} & \blockname{RRV} & \rows \\
+\addlinespace
+\global\setbox\rowsbox=\hbox{\begin{tabular}{@{}>{$}p{\cw}<{$}>{$}p{\fw}<{$}@{}}v_q^2+a_q^2 & 2\Re\big[\pc{v}2{v}0-\frac{3\beta_0}{2\ep}\,\pc{v}1{v}0+\big(\frac{3\beta_0^2}{8\ep^2}-\frac{\beta_1}{4\ep}\big)\pc{v}0{v}0\big]\\v_q\sum v_f & 2\Re\big[\pc{v\PS}2{v}0\big]\\a_q\sum a_f\ \text{(L)} & 2\Re\big[\pc{a\PS}2{a}0-\big(\frac{3\beta_0}{2\ep}+2C_F\big)\pc{a\PS}1{a}0+\zs\,\pc{a}0{a}0\big]\end{tabular}}
+\chan{$q\bar q\to Vg$\\$qg\to Vq$} & \blockname{RVV\\ 2L$\times$0L} & \rows \\
+\addlinespace
+\global\setbox\rowsbox=\hbox{\begin{tabular}{@{}>{$}p{\cw}<{$}>{$}p{\fw}<{$}@{}}v_q^2+a_q^2 & \pc{v}1{v}1-\frac{\beta_0}{2\ep}\,2\Re\big[\pc{v}1{v}0\big]+\frac{\beta_0^2}{4\ep^2}\,\pc{v}0{v}0\\v_q\sum v_f & =0\\a_q\sum a_f\ \text{(L)} & 2\Re\big[\pc{a\PS}1{a}1-\big(\frac{\beta_0}{2\ep}+2C_F\big)\pc{a\PS}1{a}0\big]\\(\sum a_f)^2\ \text{(L)} & \pc{a\PS}1{a\PS}1\end{tabular}}
+\chan{$q\bar q\to Vg$\\$qg\to Vq$} & \blockname{RVV\\ 1L$\times$1L} & \rows \\
+\addlinespace
+\global\setbox\rowsbox=\hbox{\begin{tabular}{@{}>{$}p{\cw}<{$}>{$}p{\fw}<{$}@{}}(\sum v_f)^2 & \pc{v\PS}1{v\PS}1\quad\text{(colour $d^{abc}d^{abc}$)}\\(\sum a_f)^2\ \text{(L)} & \pc{a\PS}1{a\PS}1\end{tabular}}
+\chan{$gg\to Vg$} & \blockname{1L$\times$1L} & \rows \\
+\addlinespace
+$q\bar q\to V$\ \ & VVV & \begin{tabular}{@{}p{\cw}p{\fw}@{}} & three-loop form factor: not covered here\end{tabular} \\
+\end{longtable}
+}
+\end{landscape}
+
+
+\section{Parity-odd pieces (\texorpdfstring{$L_6$}{L6})}
+
+Only for observables that resolve the lepton direction. Every row is Larin. Here $Z_a^{ns}$ enters up to two loops:
+its $a^2$ coefficient $\frac{11}{2}C_F^2-\frac{107}{36}C_FC_A+\frac1{18}C_Fn_f+\frac{C_F\beta_0}{\ep}$ is written out
+where needed. ``$=0$'': see section~\ref{sec:zero}.
+
+\begin{landscape}
+{\small
+\renewcommand{\arraystretch}{1.55}
+\begin{longtable}{@{}r@{\hspace{3pt}}>{\raggedright}p{2.0cm}l@{}}
+\caption{Parity-odd pieces, contracted with $L_6$ (all Larin).}\label{tab:odd}\\
+\toprule
+channels\quad & contribution & \begin{tabular}{@{}p{\cw}p{\fw}@{}}coupling & renormalised\end{tabular} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+
+\multicolumn{3}{@{}l}{\textbf{LO ($a^0$)}}\\
+\global\setbox\rowsbox=\hbox{\begin{tabular}{@{}>{$}p{\cw}<{$}>{$}p{\fw}<{$}@{}}v_qa_q & 2\Re\big[\pc{v}0{a}0\big]\end{tabular}}
+\chan{$q\bar q\to V$} & \blockname{B} & \rows \\
+\midrule
+\multicolumn{3}{@{}l}{\textbf{NLO ($a^1$)}}\\
+\global\setbox\rowsbox=\hbox{\begin{tabular}{@{}>{$}p{\cw}<{$}>{$}p{\fw}<{$}@{}}v_qa_q & 2\Re\big[\pc{v}0{a}0\big]\end{tabular}}
+\chan{$q\bar q\to Vg$\\$qg\to Vq$} & \blockname{R} & \rows \\
+\addlinespace
+\global\setbox\rowsbox=\hbox{\begin{tabular}{@{}>{$}p{\cw}<{$}>{$}p{\fw}<{$}@{}}v_qa_q & 2\Re\big[\pc{v}1{a}0\big]+2\Re\big[\pc{a}1{v}0-2C_F\,\pc{a}0{v}0\big]\end{tabular}}
+\chan{$q\bar q\to V$} & \blockname{V} & \rows \\
+\midrule
+\multicolumn{3}{@{}l}{\textbf{NNLO ($a^2$)}}\\
+\global\setbox\rowsbox=\hbox{\begin{tabular}{@{}>{$}p{\cw}<{$}>{$}p{\fw}<{$}@{}}v_qa_q & 2\Re\big[\pc{v}0{a}0\big]\end{tabular}}
+\chan{$q\bar q\to Vgg$\\$qg\to Vqg$\\$gg\to Vq\bar q$} & \blockname{RR} & \rows \\
+\addlinespace
+\global\setbox\rowsbox=\hbox{\begin{tabular}{@{}>{$}p{\cw}<{$}>{$}p{\fw}<{$}@{}}v_qa_q & 2\Re\big[\pc{v}0{a}0\big]\\v_Qa_Q & 2\Re\big[\pc{v_2}0{a_2}0\big]\\v_qa_Q & 2\Re\big[\pc{v}0{a_2}0\big]\\a_qv_Q & 2\Re\big[\pc{a}0{v_2}0\big]\end{tabular}}
+\chan{$q\bar q\to VQ\bar Q$\\$qQ\to VqQ$\\$q\bar Q\to Vq\bar Q$\\$q\bar q\to Vq\bar q$\\$qq\to Vqq$} & \blockname{RR} & \rows \\
+\addlinespace
+\global\setbox\rowsbox=\hbox{\begin{tabular}{@{}>{$}p{\cw}<{$}>{$}p{\fw}<{$}@{}}v_qa_q & 2\Re\big[\pc{v}1{a}0-\frac{\beta_0}{2\ep}\,\pc{v}0{a}0\big]+2\Re\big[\pc{a}1{v}0-\big(\frac{\beta_0}{2\ep}+2C_F\big)\pc{a}0{v}0\big]\\v_q\sum a_f & 2\Re\big[\pc{a\PS}1{v}0\big]\\a_q\sum v_f & =0\end{tabular}}
+\chan{$q\bar q\to Vg$\\$qg\to Vq$} & \blockname{RV} & \rows \\
+\addlinespace
+\global\setbox\rowsbox=\hbox{\begin{tabular}{@{}>{$}p{\cw}<{$}>{$}p{\fw}<{$}@{}}v_qa_q & 2\Re\big[\pc{v}2{a}0-\frac{\beta_0}{\ep}\,\pc{v}1{a}0\big]$\newline$+\,2\Re\big[\pc{a}2{v}0-\big(\frac{\beta_0}{\ep}+2C_F\big)\pc{a}1{v}0+\big(\frac{11}{2}C_F^2-\frac{107}{36}C_FC_A+\frac1{18}C_Fn_f+\frac{C_F\beta_0}{\ep}\big)\pc{a}0{v}0\big]\\v_q\sum a_f & 2\Re\big[\pc{a\PS}2{v}0+\zs\,\pc{a}0{v}0\big]\\a_q\sum v_f & =0\end{tabular}}
+\chan{$q\bar q\to V$} & \blockname{VV\\ 2L$\times$0L} & \rows \\
+\addlinespace
+\global\setbox\rowsbox=\hbox{\begin{tabular}{@{}>{$}p{\cw}<{$}>{$}p{\fw}<{$}@{}}v_qa_q & 2\Re\big[\pc{v}1{a}1-2C_F\,\pc{v}1{a}0\big]\end{tabular}}
+\chan{$q\bar q\to V$} & \blockname{VV\\ 1L$\times$1L} & \rows \\
+\midrule
+\multicolumn{3}{@{}l}{\textbf{N$^3$LO ($a^3$)}}\\
+\global\setbox\rowsbox=\hbox{\begin{tabular}{@{}>{$}p{\cw}<{$}>{$}p{\fw}<{$}@{}}v_qa_q & 2\Re\big[\pc{v}0{a}0\big]\end{tabular}}
+\chan{$q\bar q\to Vggg$\\$qg\to Vqgg$\\$gg\to Vq\bar qg$} & \blockname{RRR} & \rows \\
+\addlinespace
+\global\setbox\rowsbox=\hbox{\begin{tabular}{@{}>{$}p{\cw}<{$}>{$}p{\fw}<{$}@{}}v_qa_q & 2\Re\big[\pc{v}0{a}0\big]\\v_Qa_Q & 2\Re\big[\pc{v_2}0{a_2}0\big]\\v_qa_Q & 2\Re\big[\pc{v}0{a_2}0\big]\\a_qv_Q & 2\Re\big[\pc{a}0{v_2}0\big]\end{tabular}}
+\chan{$q\bar q\to VQ\bar Qg$\\$qg\to VqQ\bar Q$\\$qQ\to VqQg$\\$q\bar Q\to Vq\bar Qg$\\$q\bar q\to Vq\bar qg$\\$qq\to Vqqg$\\$qg\to Vqq\bar q$} & \blockname{RRR} & \rows \\
+\addlinespace
+\global\setbox\rowsbox=\hbox{\begin{tabular}{@{}>{$}p{\cw}<{$}>{$}p{\fw}<{$}@{}}v_qa_q & 2\Re\big[\pc{v}1{a}0-\frac{\beta_0}{\ep}\,\pc{v}0{a}0\big]+2\Re\big[\pc{a}1{v}0-\big(\frac{\beta_0}{\ep}+2C_F\big)\pc{a}0{v}0\big]\\v_q\sum a_f & 2\Re\big[\pc{a\PS}1{v}0\big]\\a_q\sum v_f & 2\Re\big[\pc{v\PS}1{a}0\big]\end{tabular}}
+\chan{$q\bar q\to Vgg$\\$qg\to Vqg$\\$gg\to Vq\bar q$} & \blockname{RRV} & \rows \\
+\addlinespace
+\global\setbox\rowsbox=\hbox{\begin{tabular}{@{}>{$}p{\cw}<{$}>{$}p{\fw}<{$}@{}}v_qa_q & 2\Re\big[\pc{v}1{a}0-\frac{\beta_0}{\ep}\,\pc{v}0{a}0\big]+2\Re\big[\pc{a}1{v}0-\big(\frac{\beta_0}{\ep}+2C_F\big)\pc{a}0{v}0\big]\\v_Qa_Q & 2\Re\big[\pc{v_2}1{a_2}0-\frac{\beta_0}{\ep}\,\pc{v_2}0{a_2}0\big]+2\Re\big[\pc{a_2}1{v_2}0-\big(\frac{\beta_0}{\ep}+2C_F\big)\pc{a_2}0{v_2}0\big]\\v_qa_Q & 2\Re\big[\pc{v}1{a_2}0-\frac{\beta_0}{\ep}\,\pc{v}0{a_2}0\big]+2\Re\big[\pc{a_2}1{v}0-\big(\frac{\beta_0}{\ep}+2C_F\big)\pc{a_2}0{v}0\big]\\a_qv_Q & 2\Re\big[\pc{a}1{v_2}0-\big(\frac{\beta_0}{\ep}+2C_F\big)\pc{a}0{v_2}0\big]+2\Re\big[\pc{v_2}1{a}0-\frac{\beta_0}{\ep}\,\pc{v_2}0{a}0\big]\\v_q\sum a_f & 2\Re\big[\pc{a\PS}1{v}0\big]\\v_Q\sum a_f & 2\Re\big[\pc{a\PS}1{v_2}0\big]\\a_q\sum v_f,\ a_Q\sum v_f & =0\end{tabular}}
+\chan{$q\bar q\to VQ\bar Q$\\$qQ\to VqQ$\\$q\bar Q\to Vq\bar Q$\\$q\bar q\to Vq\bar q$\\$qq\to Vqq$} & \blockname{RRV} & \rows \\
+\addlinespace
+\global\setbox\rowsbox=\hbox{\begin{tabular}{@{}>{$}p{\cw}<{$}>{$}p{\fw}<{$}@{}}v_qa_q & 2\Re\big[\pc{v}2{a}0-\frac{3\beta_0}{2\ep}\,\pc{v}1{a}0+\big(\frac{3\beta_0^2}{8\ep^2}-\frac{\beta_1}{4\ep}\big)\pc{v}0{a}0\big]$\newline$+\,2\Re\big[\pc{a}2{v}0-\big(\frac{3\beta_0}{2\ep}+2C_F\big)\pc{a}1{v}0+\big(\frac{3\beta_0^2}{8\ep^2}-\frac{\beta_1}{4\ep}+\frac{2C_F\beta_0}{\ep}+\frac{11}{2}C_F^2-\frac{107}{36}C_FC_A+\frac1{18}C_Fn_f\big)\pc{a}0{v}0\big]\\v_q\sum a_f & 2\Re\big[\pc{a\PS}2{v}0-\big(\frac{3\beta_0}{2\ep}+2C_F\big)\pc{a\PS}1{v}0+\zs\,\pc{a}0{v}0\big]\\a_q\sum v_f & 2\Re\big[\pc{v\PS}2{a}0\big]\end{tabular}}
+\chan{$q\bar q\to Vg$\\$qg\to Vq$} & \blockname{RVV\\ 2L$\times$0L} & \rows \\
+\addlinespace
+\global\setbox\rowsbox=\hbox{\begin{tabular}{@{}>{$}p{\cw}<{$}>{$}p{\fw}<{$}@{}}v_qa_q & 2\Re\big[\pc{v}1{a}1-\big(\frac{\beta_0}{2\ep}+2C_F\big)\pc{v}1{a}0\big]$\newline$-\,2\Re\big[\frac{\beta_0}{2\ep}\,\pc{a}1{v}0-\frac{\beta_0}{2\ep}\big(\frac{\beta_0}{2\ep}+2C_F\big)\pc{v}0{a}0\big]\\v_q\sum a_f & 2\Re\big[\pc{a\PS}1{v}1-\frac{\beta_0}{2\ep}\,\pc{a\PS}1{v}0\big]\\a_q\sum v_f,\ \sum v_f\sum a_f & =0\end{tabular}}
+\chan{$q\bar q\to Vg$\\$qg\to Vq$} & \blockname{RVV\\ 1L$\times$1L} & \rows \\
+\addlinespace
+\global\setbox\rowsbox=\hbox{\begin{tabular}{@{}>{$}p{\cw}<{$}>{$}p{\fw}<{$}@{}}\sum v_f\sum a_f & =0\quad\text{(colour $d^{abc}f^{abc}=0$)}\end{tabular}}
+\chan{$gg\to Vg$} & \blockname{1L$\times$1L} & \rows \\
+\addlinespace
+$q\bar q\to V$\ \ & VVV & \begin{tabular}{@{}p{\cw}p{\fw}@{}} & three-loop form factor: not covered here\end{tabular} \\
+\end{longtable}
+}
+\end{landscape}
+
+\section{Why the ``\texorpdfstring{$=0$}{=0}'' entries vanish}\label{sec:zero}
+
+All of them are PS pieces: $V$ on a closed quark loop, with the loop attached to the rest of the diagram by gluons.
+
+\paragraph{Furry's theorem (charge conjugation).} For every loop orientation there is the diagram with the
+opposite orientation. With $C\gamma^\mu C^{-1}=-(\gamma^\mu)^T$ and $C\gamma^\mu\gamma_5C^{-1}=+(\gamma^\mu\gamma_5)^T$, the reversed
+loop equals the original one times $(-1)^{n_v}$, $n_v$ = number of \emph{vector} vertices on the loop (gluons and
+$V$ if vector), with the colour trace read in the opposite order. For $V$ plus two gluons the colour trace is
+$\tr(T^aT^b)=T_R\delta^{ab}$, the same in both orders, so
+\begin{itemize}
+\item vector $V$: $n_v=3$, the two orientations cancel: $v\PS=0$;
+\item axial $V$: $n_v=2$, they add: $a\PS\neq0$ (the anomalous triangle).
+\end{itemize}
+Two gluons on the loop is the case of: (i) $V$ + one parton at one loop ($q\bar q\to Vg$, $qg\to Vq$: one gluon to
+the quark line, one external); (ii) $q\bar q\to V$ at two loops (both gluons to the quark line); (iii) four-quark
+channels at one loop (one gluon to each quark line). Hence the zeros:
+\begin{center}
+\small
+\begin{tabular}{lll}
+\toprule
+entry & vanishing amplitude & case \\
+\midrule
+RV $v_q\sum v_f$; RV $a_q\sum v_f$ (odd) & $v\PS^{(1)}$, $m=1$ & (i) \\
+RVV 1L$\times$1L $v_q\sum v_f$, $a_q\sum v_f$, $\sum v_f\sum a_f$, $(\sum v_f)^2$ & $v\PS^{(1)}$, $m=1$ & (i) \\
+VV $v_q\sum v_f$; VV $a_q\sum v_f$ (odd) & $v\PS^{(2)}$, $m=0$ & (ii) \\
+RRV four-quark $v_\ell\sum v_f$, $a_\ell\sum v_f$ & $v\PS^{(1)}$, four-quark & (iii) \\
+\bottomrule
+\end{tabular}
+\end{center}
+With \emph{three} gluons on the loop the vector part survives: $n_v=4$, and the two orders of the trace add,
+$\tr(T^aT^bT^c)+\tr(T^cT^bT^a)=\tfrac12d^{abc}$, while for the axial part they subtract, $\propto if^{abc}$. That is why
+$v\PS^{(2)}$ for $m=1$, $v\PS^{(1)}$ for $q\bar q\to Vgg$, $qg\to Vqg$, $gg\to Vq\bar q$, and $gg\to Vg$ are non-zero.
+
+\paragraph{Colour.} $gg\to Vg$ at one loop: vector $\propto d^{abc}$, axial $\propto f^{abc}$ (previous paragraph), so the
+parity-odd interference $v\PS^{(1)}a\PS^{(1)*}\propto d^{abc}f^{abc}=0$ (symmetric times antisymmetric).
+
+\note{\textbf{Reading the tables.}
+\begin{itemize}
+\item Counterterms are lower-loop pieces \emph{of the same labels}. So some Larin lower-order pieces are needed even
+though the lower order itself uses $aa=vv$: RRV $a_qa_Q$ needs RR $\pc a0{a_2}0$ (L); RVV $a_q\sum a_f$ needs RV
+$\pc{a\PS}1a0$ and R $\pc a0a0$ (L), and VV $a_q\sum a_f$ needs B $\pc a0a0$ (L) (the $1/\ep$ of the PS counterterm
+times Larin's $aa\neq vv$ at $O(\ep)$ gives a finite difference).
+\item $-2C_F$ and the $a^2$ term above are Larin's non-singlet renormalisation $Z_a^{ns}$ of the axial vertex;
+$C_FT_R(\frac3{2\ep}+\frac34)$ is the PS constant $Z_s$ (per flavour). The two-loop $Z_a^{ns}$ appears only in the
+parity-odd table: the parity-even same-line products use $aa=vv$.
+\item With $n_f=5$ massless flavours $\sum_fa_f\neq0$ (the $b$ has no partner): the $\sum a_f$ rows are the ``$b$
+remainder'' and need a decision on the top (\texttt{Larin.pdf}, sect.~5).
+\item In the parity-odd table each coupling has two orderings (vector in the amplitude, axial in the conjugate, and
+the reverse); the counterterm of each ordering carries the $Z$ of the amplitude label at two loops, of the conjugate
+label in 1L$\times$1L.
+\item Identical quarks ($q=Q$): same rows with $v_Q=v_q$, $a_Q=a_q$; pieces kept separate by line.
+\end{itemize}}
+
+\paragraph{Origin of the coefficients.} The amplitude with $m$ emissions is
+$\bar a^{\,m/2}\big(M^{(0)}+\bar aM^{(1)}+\bar a^2M^{(2)}\big)$ with
+$\bar a=a\big[1-\frac{\beta_0}{\ep}a+\big(\frac{\beta_0^2}{\ep^2}-\frac{\beta_1}{2\ep}\big)a^2\big]$, times
+$Z_a^{ns}$ for each Larin axial vertex, plus $Z_s$ times the tree with $V$ on the open lines for $a\PS$. Expanding
+in $a$ and keeping the stated order gives every row; the 1L$\times$1L row is the square of the renormalised one-loop
+amplitude, the 2L$\times$0L row the renormalised two-loop amplitude times the tree. Check: for the vector, the two RVV
+rows together give $-\frac{2\beta_0}{\ep}\,2\Re[\pc v1v0]+\big(\frac{\beta_0^2}{\ep^2}-\frac{\beta_1}{2\ep}\big)\pc v0v0$,
+which is the expansion of $\bar a^{\,1}$ and $\bar a^{\,2}$ in the bare $|M|^2$; the parity-odd $v_qa_q$ rows
+together give in addition one power of $Z_a^{ns}$. The PS rows reproduce arXiv:2306.10170 eq.~(5.14), the Larin
+axial one eq.~(5.13) (with $2C_F\beta_0/\ep$; the paper prints $2\beta_0/\ep$).
+
+\end{document}

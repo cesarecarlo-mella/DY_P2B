@@ -1,0 +1,170 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=2.4cm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue]{hyperref}
+
+\newcommand{\ep}{\epsilon}
+\newcommand{\gf}{\gamma_5}
+\newcommand{\sla}[1]{#1\!\!\!/}
+\newcommand{\tr}{\mathrm{Tr}}
+\newcommand{\PS}{_{\rm PS}}
+\newcommand{\note}[1]{\par\smallskip\noindent\colorbox{gray!12}{\parbox{\dimexpr\linewidth-2\fboxsep}{\small #1}}\par\smallskip}
+
+\title{$\gamma_5$ in the Drell--Yan computation\\[2pt]
+\large When is $aa=vv$? Larin's scheme, open lines and pure singlet}
+\author{DY\_P2B --- notes\_Larin/}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+The vector boson $V=\gamma^*,Z$ couples to quarks through $\gamma^\mu(v_q+a_q\gf)$. Squaring gives vector--vector,
+axial--axial and mixed pieces. We explain when the axial--axial piece equals the vector--vector one ($aa=vv$) and
+when it does not, what Larin's prescription for $\gf$ does in squared amplitudes, and which axial-current
+renormalisation constants are needed. The rule: $aa=vv$ when $V$ sits on the \emph{same open quark line} in the
+amplitude and in the complex-conjugate amplitude, and only then. How to assemble all contributions with their
+counterterms: \texttt{assembly.pdf}.
+\end{abstract}
+
+\section*{Summary}
+\noindent Labels of the $V$ vertex (as in \texttt{assembly.pdf}): $v$, $a$ on open quark line 1 (flavour $q$); $v_2$,
+$a_2$ on open quark line 2 (flavour $Q$); $v\PS$, $a\PS$ on a closed quark loop, the \textbf{pure singlet (PS)}, with
+couplings $\sum_fv_f$, $\sum_fa_f$.
+\begin{center}
+\small
+\begin{tabular}{lll}
+\toprule
+$V$ in amplitude / conjugate & example & axial--axial \\
+\midrule
+same open line & $v\,v^*$, $v_2v_2^*$ & $aa=vv$ (anticommuting $\gf$) \\
+different open lines & $v\,v_2^*$ & $aa_2\neq vv_2$, also in $d=4$: Larin \\
+identical quarks ($q=Q$) & both kinds, same couplings & split by line \\
+closed loop (PS) & $v\PS v^*$, $a\PS a^*$ & vector: compute; axial: Larin, $\propto\sum_fa_f$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+The parity-odd pieces ($va$, $av$) contain one $\gf$ in the hadronic trace and always need Larin
+(section~\ref{sec:lept}).
+
+\section{The leptonic tensor}\label{sec:lept}
+
+For massless leptons, $V\to\ell^-(l_1)\ell^+(l_2)$ with vertex $\gamma^\mu(v_\ell+a_\ell\gf)$:
+\begin{equation}
+L^{\mu\nu}=\tr\big[\sla{l}_1\gamma^\mu(v_\ell+a_\ell\gf)\sla{l}_2\gamma^\nu(v_\ell+a_\ell\gf)\big]
+=(v_\ell^2+a_\ell^2)\,4\big(l_1^\mu l_2^\nu+l_1^\nu l_2^\mu-g^{\mu\nu}l_1\!\cdot l_2\big)
++2v_\ell a_\ell\,\tr[\sla l_1\gamma^\mu\sla l_2\gamma^\nu\gf].
+\end{equation}
+(The conjugate vertex is again $\gamma^\nu(v_\ell+a_\ell\gf)$, since $\gamma^0(\gamma^\nu\gf)^\dagger\gamma^0=\gamma^\nu\gf$; the first
+$(v_\ell+a_\ell\gf)$ moves through $\sla l_2\gamma^\nu$ without sign, and $(v_\ell+a_\ell\gf)^2=v_\ell^2+a_\ell^2+2v_\ell a_\ell\gf$.)
+The symmetric part multiplies the parity-even hadronic pieces ($vv$, $aa$, \dots), the antisymmetric ($\epsilon$) part,
+with coupling $2v_\ell a_\ell$, the parity-odd ones ($va$, $av$, \dots).
+
+Averaged over the lepton angles at fixed $q=l_1+l_2$: $\langle l_1^\rho l_2^\sigma\rangle=A\,q^\rho q^\sigma+B\,q^2g^{\rho\sigma}$;
+contracting with $g_{\rho\sigma}$ and $q_\rho q_\sigma$ gives $q^2/2=(A+4B)q^2$, $q^4/4=(A+B)q^4$, so $A=\tfrac16$, $B=\tfrac1{12}$:
+the antisymmetric part averages to zero and
+$\langle L^{\mu\nu}\rangle=\tfrac43(v_\ell^2+a_\ell^2)(q^\mu q^\nu-q^2g^{\mu\nu})=\tfrac43(v_\ell^2+a_\ell^2)L_1^{\mu\nu}$.
+The parity-odd pieces contribute only to observables that resolve the lepton direction; there they are projected with
+the antisymmetric projector $L_6$.
+
+\section{\texorpdfstring{$\gamma_5$}{gamma5} in \texorpdfstring{$d$}{d} dimensions; Larin's scheme}\label{sec:g5}
+
+In $d\neq4$ one cannot have both $\{\gf,\gamma^\mu\}=0$ and $\tr[\gf\gamma^\alpha\gamma^\beta\gamma^\gamma\gamma^\delta]\propto\epsilon^{\alpha\beta\gamma\delta}\neq0$
+(anticommutation and cyclicity force that trace to vanish). Anticommuting $\gf$ is therefore unambiguous only if no
+trace with an odd number of $\gf$ has to be computed.
+
+Larin [hep-ph/9302240] replaces the axial vertex by
+\begin{equation}
+\gamma^\mu\gf\;\to\;\tfrac12(\gamma^\mu\gf-\gf\gamma^\mu)=\tfrac{i}{6}\,\epsilon^{\mu\nu\rho\sigma}\gamma_\nu\gamma_\rho\gamma_\sigma
+\end{equation}
+(normalisation of arXiv:2306.10170, eq.~(4.3)) and contracts the $\epsilon$ tensors in $d$ dimensions. No $\gf$ is ever
+moved, so the scheme is consistent; the axial current must then be renormalised by
+\begin{align}
+Z_a^{ns}&=1-2C_Fa+\Big(\tfrac{11}{2}C_F^2-\tfrac{107}{36}C_FC_A+\tfrac1{18}C_Fn_f+\frac{C_F\beta_0}{\ep}\Big)a^2,\\
+Z_s&=C_FT_R\Big(\frac{3}{2\ep}+\frac34\Big)a^2\quad\text{(singlet, per flavour)},
+\end{align}
+with $a=\alpha_s/(2\pi)$, $\beta_0=\tfrac{11}{6}C_A-\tfrac23T_Rn_f$. The finite parts restore the anticommuting-$\gf$ Ward
+identities; the pole $C_F\beta_0/\ep$ is the $\overline{\rm MS}$ part. Conversion check (Larin's constants as I recall
+them, in $a_s=\alpha_s/4\pi=a/2$, to be checked against the original): $Z_5^{ns}=1-4C_Fa_s+a_s^2(22C_F^2-\tfrac{107}9C_AC_F+\tfrac29C_Fn_f)$,
+$Z^{ns}_{\overline{\rm MS}}=1+a_s^2(\tfrac{22}3C_AC_F-\tfrac43C_Fn_f)/\ep$; with $a_s^2=a^2/4$ these give the
+expression above. The singlet finite constant has $\tfrac{31}{18}C_Fn_f$ instead of $\tfrac29C_Fn_f$: the difference
+$\tfrac32C_Fn_fa_s^2=\tfrac34C_FT_Rn_fa^2$ is the $\tfrac34$ of $Z_s$ (arXiv:2306.10170, eqs.~(5.5), (5.6)).
+
+\emph{Remark on arXiv:2306.10170, eq.~(5.13):} the $\bar G^{(0),n}$ coefficient is printed as $2\beta_0/\ep$; expanding
+$Z_a^{ns}\sqrt{\bar a}$ gives $2C_F\beta_0/\ep$ ($C_F\beta_0/\ep$ from $(-2C_F)(-\beta_0/2\ep)$ and $C_F\beta_0/\ep$ from the
+pole of $Z_a^{ns}$): probably a missing $C_F$.
+
+\section{Same line: \texorpdfstring{$aa=vv$}{aa = vv}}\label{sec:same}
+
+One open massless quark line, $V$ attached once in the amplitude and once in the conjugate, any number of gluons.
+The spin-summed product is one trace,
+\begin{equation}
+\tr\big[\sla p\;\Gamma_1\,\gamma^\mu\gf\,\Gamma_2\;\sla p'\;\bar\Gamma'_2\,\gamma^\nu\gf\,\bar\Gamma'_1\big],
+\end{equation}
+$\Gamma_2$ = string from the $V$ vertex to the end of the line in the amplitude, $\bar\Gamma_2'$ the same in the
+conjugate (reversed). Along a massless line propagators $\sla k$ and vertices $\gamma^\alpha$ alternate and the line ends
+with a vertex, so $\Gamma_2=\sla k_1\gamma^{\alpha_1}\cdots\sla k_j\gamma^{\alpha_j}$ has $2j$ matrices; the same for
+$\bar\Gamma_2'$. Between the two $\gf$ there are $2j+1+2j'+1$ matrices: an \emph{even} number. With anticommuting
+$\gf$, moving one $\gf$ next to the other costs $+1$, and $\gf^2=1$:
+\begin{equation}
+\boxed{\;\tr[\cdots\gamma^\mu\gf\cdots\gamma^\nu\gf\cdots]=\tr[\cdots\gamma^\mu\cdots\gamma^\nu\cdots]\quad\Rightarrow\quad aa=vv\;}
+\end{equation}
+diagram by diagram, in any $d$, also with loops on the line (gluon loops, quark loops without $V$). No trace with a
+single $\gf$ is computed: the two are removed before tracing. Helicity version: $P_\pm\gamma^\alpha=\gamma^\alpha P_\mp$,
+$P_\pm\sla k=\sla kP_\mp$, so chirality $h$ is conserved along the line, $A_a(h)=h\,A_v(h)$ and
+$\sum_h|A_a|^2=\sum_hh^2|A_v|^2=\sum_h|A_v|^2$. The parity-odd $\sum_hA_vA_a^*=\sum_hh|A_v|^2$ keeps one $\gf$ in the
+trace: it needs Larin.
+
+\paragraph{Larin breaks it at $O(\ep)$.} Larin's vertex is not $\gamma^\mu\gf$ in $d$ dimensions. Born:
+\begin{equation}
+vv=N_c(d-2)z^{-3},\qquad aa_{\rm Larin}=-\tfrac16N_c(d-2)(d-3)(d^2-8d+10)z^{-3},
+\end{equation}
+\begin{equation}
+\frac{aa_{\rm Larin}}{vv}=(1-2\ep)\Big(1-\tfrac23\ep^2\Big).
+\end{equation}
+Equal at $d=4$, different at $O(\ep)$; the same pattern holds for the double-real same-line pieces. Larin
+$+Z_a^{ns}$ and anticommuting $\gf$ are both consistent and give the same physical non-singlet result; the $O(\ep)$
+differences cancel only in the full combination (reals, virtuals, collinear counterterms in the same scheme).
+
+\note{\textbf{Choice.} Same-line parity-even pieces: anticommuting $\gf$, i.e.\ compute $vv$ and set $aa=vv$, at all
+orders (RRR, RR, R, B and the non-singlet part of the loop contributions). Then $Z_a^{ns}$ is never needed for them.
+Everything else with an axial vertex (cross-line, PS, parity-odd): Larin $+Z$'s.}
+
+\section{Different lines: \texorpdfstring{$aa\neq vv$}{aa != vv}}\label{sec:cross}
+
+$q\bar q\to VQ\bar Q$ with $V$ on the $q$ line in the amplitude and on the $Q$ line in the conjugate: for $q\neq Q$ the
+product is two traces with one $\gf$ each, and the two $\gf$ cannot meet. With chiralities $h_1$, $h_2$ of the lines,
+\begin{equation}
+\sum_{h_1h_2}A_a^{(1)}A_a^{(2)*}=\sum_{h_1h_2}h_1h_2\,A_v^{(1)}A_v^{(2)*}\neq\sum_{h_1h_2}A_v^{(1)}A_v^{(2)*}:
+\end{equation}
+configurations with $h_1=-h_2$ enter with opposite sign, so $aa_2\neq vv_2$ already in four dimensions. Each trace has a
+single $\gf$, so anticommuting $\gf$ is ambiguous: these pieces need Larin (and $Z_a^{ns}$ on both vertices in their
+loop corrections). Their coupling is $a_qa_Q$; summed over $Q$, $\sum_Qa_Q$ cancels within complete generations
+except for the $b$.
+
+\paragraph{Identical quarks} ($q\bar q\to Vq\bar q$): both lines have the same couplings, so $v_q^2$ and $a_q^2$
+multiply same-line products, cross-line products and the exchange interference together. $aa=vv$ holds only for the
+same-line ones: the pieces must be separated by line, not by coupling.
+
+\section{Closed quark loops: pure singlet}\label{sec:ps}
+
+$V$ on a closed loop, summed over the $n_f$ flavours of the loop: couplings $\sum_fv_f$, $\sum_fa_f$; only in loop
+amplitudes.
+\begin{itemize}
+\item \textbf{Vector PS.} Furry: zero with two gluons on the loop ($V$ + 1 parton at one loop; four-quark processes at
+one loop; $q\bar q\to V$ at two loops). With three gluons on the loop ($d^{abc}$) it is non-zero: $V$ + 1 parton at
+two loops, $q\bar q\to Vgg$ at one loop, $gg\to Vg$ at one loop. It does not cancel between flavours ($v_u\neq-v_d$).
+\item \textbf{Axial PS.} One $\gf$ in the loop: the anomalous triangle; Larin $+Z_s$ is required. Example: the
+one-loop $a\PS$ amplitude for $q\bar q\to Vg$ times the tree $a^*$ (an NNLO RV piece) is non-zero by itself
+(Landau--Yang does not apply: one gluon is off shell); its coupling $a_q\sum_fa_f$ makes it vanish, together with its $Z_s$
+counterterm, in the sum over a complete mass-degenerate doublet ($a_u=-a_d$).
+\item With $n_f=5$ massless flavours the $b$ is left without its partner: $\sum_fa_f\neq0$. A correct treatment of
+this remainder needs the massive top in the loop (arXiv:2306.10170, introduction); in DY it is usually small and
+treated separately. To check in the N$^3$LO DY literature before deciding.
+\item $gg\to Vg$: vector $\propto d^{abc}$, axial $\propto f^{abc}$, so their interference (parity-odd) vanishes by colour.
+\item $\gamma^*$: $a_f=0$. $W$: no PS (a $W$ cannot couple to a loop that connects only to gluons).
+\end{itemize}
+
+\end{document}
