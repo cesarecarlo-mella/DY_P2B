@@ -1,0 +1,8 @@
+#opendictionary mth
+#add pi_: "Pi"
+#add i_: "I"
+#add Z: "Zeta"
+
+#closedictionary mth
+#usedictionary mth
+#closedictionary mth

@@ -3,6 +3,18 @@
 \usepackage{amsmath,amssymb}
 \usepackage{booktabs}
 \usepackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{decorations.pathmorphing,decorations.markings,arrows.meta}
+\tikzset{
+  f/.style={thick,postaction={decorate},decoration={markings,mark=at position 0.55 with {\arrow{Stealth[length=4.5pt]}}}},
+  g/.style={thick,decorate,decoration={coil,aspect=0.7,segment length=3.3pt,amplitude=2.2pt}},
+  V/.style={thick,red!70!black,decorate,decoration={snake,segment length=6pt,amplitude=1.6pt}},
+  cut/.style={dashed,gray!80!black,thick},
+  dot/.style={circle,fill,inner sep=1.1pt},
+  Vdot/.style={circle,fill=red!70!black,inner sep=1.5pt},
+  lab/.style={font=\footnotesize}
+}
+\newcommand{\cc}{\raisebox{-2pt}{\Large$\times$}}
 \usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue]{hyperref}
 
 \newcommand{\ep}{\epsilon}
@@ -166,5 +178,165 @@ treated separately. To check in the N$^3$LO DY literature before deciding.
 \item $gg\to Vg$: vector $\propto d^{abc}$, axial $\propto f^{abc}$, so their interference (parity-odd) vanishes by colour.
 \item $\gamma^*$: $a_f=0$. $W$: no PS (a $W$ cannot couple to a loop that connects only to gluons).
 \end{itemize}
+
+
+\section{Representative diagrams of the pieces with \texorpdfstring{$aa\neq vv$}{aa != vv}}\label{sec:diag}
+
+Each row shows the amplitude (left) times the complex-conjugate amplitude (right). The red dot marks the $V$ vertex;
+the red wavy line is $V$, curly lines are gluons, arrows give the fermion flow. In all of them the two $V$ vertices are
+\emph{not} on the same open quark line, so the argument of section~\ref{sec:same} does not apply.
+
+\subsection*{(a) PS, one loop $\times$ tree: RV ($q\bar q\to Vg$), coupling $a_q\sum_fa_f$}
+\begin{center}
+\begin{tikzpicture}[scale=0.85,baseline=(current bounding box.center)]
+ \draw[f] (0,1) node[left,lab]{$q$} -- (1,0);
+ \draw[f] (1,0) -- (0,-1) node[left,lab]{$\bar q$};
+ \draw[g] (1,0) -- (2,0);
+ \draw[f] (2,0) -- (3,0.75); \draw[f] (3,0.75) -- (3,-0.75); \draw[f] (3,-0.75) -- (2,0);
+ \node[Vdot] at (3,0.75) {}; \draw[V] (3,0.75) -- (4.1,1.1) node[right,lab]{$V$};
+ \draw[g] (3,-0.75) -- (4.1,-1.1) node[right,lab]{$g$};
+ \node[lab] at (2.6,0) {$f$};
+\end{tikzpicture}
+\quad\cc\quad
+\begin{tikzpicture}[scale=0.85,baseline=(current bounding box.center)]
+ \draw[f] (0,1) node[left,lab]{$q$} -- (1,0.5);
+ \draw[f] (1,0.5) -- (1,-0.5); \draw[f] (1,-0.5) -- (0,-1) node[left,lab]{$\bar q$};
+ \node[Vdot] at (1,0.5) {}; \draw[V] (1,0.5) -- (2.2,1.1) node[right,lab]{$V$};
+ \draw[g] (1,-0.5) -- (2.2,-1.1) node[right,lab]{$g$};
+\end{tikzpicture}
+\,${}^*$
+\end{center}
+$V$ on a closed loop of flavour $f$ with two gluons: vector part $=0$ (Furry), axial part = anomalous triangle.
+
+\subsection*{(b) PS, two loops $\times$ tree: VV ($q\bar q\to V$), coupling $a_q\sum_fa_f$}
+\begin{center}
+\begin{tikzpicture}[scale=0.85,baseline=(current bounding box.center)]
+ \draw[f] (0,1) node[left,lab]{$q$} -- (1,0.6); \draw[f] (1,0.6) -- (1,-0.6); \draw[f] (1,-0.6) -- (0,-1) node[left,lab]{$\bar q$};
+ \draw[g] (1,0.6) -- (2.1,0.6); \draw[g] (1,-0.6) -- (2.1,-0.6);
+ \draw[f] (2.1,0.6) -- (3,0); \draw[f] (3,0) -- (2.1,-0.6); \draw[f] (2.1,-0.6) -- (2.1,0.6);
+ \node[Vdot] at (3,0) {}; \draw[V] (3,0) -- (4.1,0) node[right,lab]{$V$};
+\end{tikzpicture}
+\quad\cc\quad
+\begin{tikzpicture}[scale=0.85,baseline=(current bounding box.center)]
+ \draw[f] (0,0.8) node[left,lab]{$q$} -- (1,0); \draw[f] (1,0) -- (0,-0.8) node[left,lab]{$\bar q$};
+ \node[Vdot] at (1,0) {}; \draw[V] (1,0) -- (2.2,0) node[right,lab]{$V$};
+\end{tikzpicture}
+\,${}^*$
+\end{center}
+Again two gluons on the loop: vector $=0$, axial $\neq0$.
+
+\subsection*{(c) PS with three gluons: RRV ($q\bar q\to Vgg$), couplings $v_q\sum_fv_f$ and $a_q\sum_fa_f$}
+\begin{center}
+\begin{tikzpicture}[scale=0.85,baseline=(current bounding box.center)]
+ \draw[f] (0,1) node[left,lab]{$q$} -- (1,0); \draw[f] (1,0) -- (0,-1) node[left,lab]{$\bar q$};
+ \draw[g] (1,0) -- (2,0);
+ \draw[f] (2,0) -- (2.8,0.8); \draw[f] (2.8,0.8) -- (3.6,0); \draw[f] (3.6,0) -- (2.8,-0.8); \draw[f] (2.8,-0.8) -- (2,0);
+ \node[Vdot] at (2.8,0.8) {}; \draw[V] (2.8,0.8) -- (3.9,1.3) node[right,lab]{$V$};
+ \draw[g] (3.6,0) -- (4.6,0) node[right,lab]{$g$};
+ \draw[g] (2.8,-0.8) -- (3.9,-1.3) node[right,lab]{$g$};
+\end{tikzpicture}
+\quad\cc\quad
+\begin{tikzpicture}[scale=0.85,baseline=(current bounding box.center)]
+ \draw[f] (0,1) node[left,lab]{$q$} -- (1,0.8); \draw[f] (1,0.8) -- (1,0); \draw[f] (1,0) -- (1,-0.8); \draw[f] (1,-0.8) -- (0,-1) node[left,lab]{$\bar q$};
+ \draw[g] (1,0.8) -- (2.2,1.2) node[right,lab]{$g$};
+ \node[Vdot] at (1,0) {}; \draw[V] (1,0) -- (2.2,0) node[right,lab]{$V$};
+ \draw[g] (1,-0.8) -- (2.2,-1.2) node[right,lab]{$g$};
+\end{tikzpicture}
+\,${}^*$
+\end{center}
+Three gluons on the loop: the vector part survives ($\propto d^{abc}$), the axial part $\propto f^{abc}$.
+
+\subsection*{(d) Loop-induced: $gg\to Vg$, one loop $\times$ one loop, couplings $(\sum_fv_f)^2$, $(\sum_fa_f)^2$}
+\begin{center}
+\begin{tikzpicture}[scale=0.85,baseline=(current bounding box.center)]
+ \draw[g] (0,1) node[left,lab]{$g$} -- (1.2,0.6); \draw[g] (0,-1) node[left,lab]{$g$} -- (1.2,-0.6);
+ \draw[f] (1.2,0.6) -- (2.3,0.6); \draw[f] (2.3,0.6) -- (2.3,-0.6); \draw[f] (2.3,-0.6) -- (1.2,-0.6); \draw[f] (1.2,-0.6) -- (1.2,0.6);
+ \node[Vdot] at (2.3,0.6) {}; \draw[V] (2.3,0.6) -- (3.4,1.1) node[right,lab]{$V$};
+ \draw[g] (2.3,-0.6) -- (3.4,-1.1) node[right,lab]{$g$};
+\end{tikzpicture}
+\quad\cc\quad (same)${}^*$
+\end{center}
+$V$ on a closed loop on both sides; the vector--axial interference vanishes by colour ($d^{abc}f^{abc}=0$).
+
+\subsection*{(e) Cross-line, produced pair (PS-type): RR ($q\bar q\to VQ\bar Q$), couplings $v_qv_Q$, $a_qa_Q$}
+\begin{center}
+\begin{tikzpicture}[scale=0.85,baseline=(current bounding box.center)]
+ \draw[f] (0,1) node[left,lab]{$q$} -- (1,0.5); \draw[f] (1,0.5) -- (1,-0.5); \draw[f] (1,-0.5) -- (0,-1) node[left,lab]{$\bar q$};
+ \node[Vdot] at (1,0.5) {}; \draw[V] (1,0.5) -- (2.2,1.1) node[right,lab]{$V$};
+ \draw[g] (1,-0.5) -- (2.1,-0.5);
+ \draw[f] (2.1,-0.5) -- (3,0.1) node[right,lab]{$Q$}; \draw[f] (3,-1.1) node[right,lab]{$\bar Q$} -- (2.1,-0.5);
+\end{tikzpicture}
+\quad\cc\quad
+\begin{tikzpicture}[scale=0.85,baseline=(current bounding box.center)]
+ \draw[f] (0,1) node[left,lab]{$q$} -- (1,0); \draw[f] (1,0) -- (0,-1) node[left,lab]{$\bar q$};
+ \draw[g] (1,0) -- (2,0);
+ \draw[f] (2,0) -- (2.7,0.5); \draw[f] (2.7,0.5) -- (3.5,1) node[right,lab]{$Q$}; \draw[f] (3.5,-0.8) node[right,lab]{$\bar Q$} -- (2,0);
+ \node[Vdot] at (2.7,0.5) {}; \draw[V] (2.7,0.5) -- (3.6,0.2) node[right,lab]{$V$};
+\end{tikzpicture}
+\,${}^*$
+\end{center}
+As a cut diagram (amplitude left of the cut, conjugate right of it) the $Q$ line closes into a loop that contains $V$
+once and two gluons: the cut of the two-loop PS diagram (b).
+\begin{center}
+\begin{tikzpicture}[scale=0.9]
+ \draw[f] (0,1.5) node[left,lab]{$q$} -- (1,1.0); \draw[f] (1,1.0) -- (1,-0.7); \draw[f] (1,-0.7) -- (0,-1.5) node[left,lab]{$\bar q$};
+ \node[Vdot] at (1,1.0) {};
+ \draw[g] (1,-0.7) -- (2,0);
+ \draw[f] (2,0) arc[start angle=180,end angle=45,radius=1];
+ \draw[f] (3.707,0.707) arc[start angle=45,end angle=-45,radius=1];
+ \draw[f] (3.707,-0.707) arc[start angle=-45,end angle=-180,radius=1];
+ \node[lab] at (2.45,1.1) {$Q$}; \node[lab] at (2.45,-1.12) {$\bar Q$};
+ \node[Vdot] at (3.707,0.707) {};
+ \draw[V] (1,1.0) to[out=35,in=115] (3.707,0.707); \node[lab,red!70!black] at (2.0,1.75) {$V$};
+ \draw[g] (3.707,-0.707) -- (4.8,-0.2);
+ \draw[f] (5.8,-1.5) node[right,lab]{$\bar q$} -- (4.8,-0.2); \draw[f] (4.8,-0.2) -- (5.8,1.1) node[right,lab]{$q$};
+ \draw[cut] (3,2.1) -- (3,-1.6);
+ \node[lab,gray!80!black] at (3,-1.85) {cut};
+\end{tikzpicture}
+\end{center}
+Three vector vertices on the closed $Q$ loop: $vv_2$ integrates to zero (Furry; it is antisymmetric under
+$Q\leftrightarrow\bar Q$), $aa_2$ survives with coupling $a_qa_Q$, i.e.\ $a_q\sum_Qa_Q$ after the flavour sum: the same
+bucket as the PS.
+
+\subsection*{(f) Cross-line, $Q$ in the initial state: RR ($qQ\to VqQ$), couplings $v_qv_Q$, $a_qa_Q$}
+\begin{center}
+\begin{tikzpicture}[scale=0.85,baseline=(current bounding box.center)]
+ \draw[f] (0,1) node[left,lab]{$q$} -- (1,1); \draw[f] (1,1) -- (2,1); \draw[f] (2,1) -- (3,1) node[right,lab]{$q$};
+ \node[Vdot] at (1,1) {}; \draw[V] (1,1) -- (1.8,1.7) node[right,lab]{$V$};
+ \draw[g] (2,1) -- (2,-1);
+ \draw[f] (0,-1) node[left,lab]{$Q$} -- (2,-1); \draw[f] (2,-1) -- (3,-1) node[right,lab]{$Q$};
+\end{tikzpicture}
+\quad\cc\quad
+\begin{tikzpicture}[scale=0.85,baseline=(current bounding box.center)]
+ \draw[f] (0,1) node[left,lab]{$q$} -- (1.8,1); \draw[f] (1.8,1) -- (3,1) node[right,lab]{$q$};
+ \draw[g] (1.8,1) -- (1.8,-1);
+ \draw[f] (0,-1) node[left,lab]{$Q$} -- (0.9,-1); \draw[f] (0.9,-1) -- (1.8,-1); \draw[f] (1.8,-1) -- (3,-1) node[right,lab]{$Q$};
+ \node[Vdot] at (0.9,-1) {}; \draw[V] (0.9,-1) -- (1.5,-1.7) node[right,lab]{$V$};
+\end{tikzpicture}
+\,${}^*$
+\end{center}
+Two traces with one $\gamma_5$ each; no closed loop and no $Q\leftrightarrow\bar Q$ symmetry: $aa_2\neq vv_2$, both
+non-zero in general. Own bucket ($a_Q$ fixed by the parton distribution, not summed).
+
+\subsection*{(g) Identical quarks, direct $\times$ exchange: RR ($q\bar q\to Vq\bar q$), coupling $v_q^2$, $a_q^2$}
+\begin{center}
+\begin{tikzpicture}[scale=0.85,baseline=(current bounding box.center)]
+ \draw[f] (0,1) node[left,lab]{$q$} -- (1,0.5); \draw[f] (1,0.5) -- (1,-0.5); \draw[f] (1,-0.5) -- (0,-1) node[left,lab]{$\bar q$};
+ \node[Vdot] at (1,0.5) {}; \draw[V] (1,0.5) -- (2.2,1.1) node[right,lab]{$V$};
+ \draw[g] (1,-0.5) -- (2.1,-0.5);
+ \draw[f] (2.1,-0.5) -- (3,0.1) node[right,lab]{$q$}; \draw[f] (3,-1.1) node[right,lab]{$\bar q$} -- (2.1,-0.5);
+\end{tikzpicture}
+\quad\cc\quad
+\begin{tikzpicture}[scale=0.85,baseline=(current bounding box.center)]
+ \draw[f] (0,1) node[left,lab]{$q$} -- (0.9,1); \draw[f] (0.9,1) -- (1.8,1); \draw[f] (1.8,1) -- (3,1) node[right,lab]{$q$};
+ \node[Vdot] at (0.9,1) {}; \draw[V] (0.9,1) -- (1.5,1.7) node[right,lab]{$V$};
+ \draw[g] (1.8,1) -- (1.8,-1);
+ \draw[f] (3,-1) node[right,lab]{$\bar q$} -- (1.8,-1); \draw[f] (1.8,-1) -- (0,-1) node[left,lab]{$\bar q$};
+\end{tikzpicture}
+\,${}^*$
+\end{center}
+Annihilation-type amplitude times scattering-type amplitude: the product is one single trace
+through both lines, and the two $V$ vertices are on different lines of the diagrams. With the same couplings ($v_q^2$, $a_q^2$) for every
+product, these terms are mixed with the same-line ones unless the pieces are separated by line.
 
 \end{document}

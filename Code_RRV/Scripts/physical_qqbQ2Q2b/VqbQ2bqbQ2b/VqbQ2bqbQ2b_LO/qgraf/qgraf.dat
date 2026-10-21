@@ -1,0 +1,14 @@
+output = '../external/VqbQ2bqbQ2b.0.inc' ;
+
+style = '../../../../../QGRAF/form.sty' ;
+ 
+model = '../../../../../QGRAF/model_file';
+
+in = Qbar[p1], Qbar2[p2], V[q], Quark[r1], Quark2[r2];
+out = ;
+
+loops = 0 ;
+
+loop_momentum = k ;
+
+options = nosnail, onshell, notadpole; 
