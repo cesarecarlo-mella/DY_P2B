@@ -36,14 +36,18 @@ id Ga(?x) = 0;
 
 
 .sort
+* closed quark loop (spinlines.h): moved into the commuting SpinL while the lines are combined (Spin, SpinC are
+* noncommuting: a Spin(3) between Spin(1) and SpinC(1) would block the patterns below)
+id Spin(3,?x) = SpinL(?x);
 #message combine spinlines
 id Spin(1,p1?,?x, p2?)*SpinC(1,p2?, ?y, p1?) = g_(1,p1,?x, p2, ?y);
 id Spin(1,p1?,?x, p2?)*Spin(2,?z)*SpinC(1,p2?, ?y, p1?) = g_(1,p1,?x, p2, ?y)*Spin(2,?z);
 id Spin(2,p1?,?x, r1?)*SpinC(2,r1?, ?y, p1?) = g_(2,p1,?x, r1, ?y)*trTwo;
 id Spin(1,p1?,?x, p2?)*Spin(2,?z)*SpinC(1,p2?, ?y, p3?) = Spin(1,p1,?x, p2, ?y,p3)*Spin(2,?z);
 id Spin(1,p1?,?x, p2?)*Spin(2,p2?,?y, p3?)*SpinC(2,p3?,?z, p1?)= g_(1,p1,?x, p2, ?y,p3,?z);
-* closed quark loop of the one-loop amplitude (spinlines.h)
-id Spin(3,?x) = g_(3,?x);
+.sort
+id SpinL(?x) = g_(3,?x);
+if ( count(Spin,1,SpinC,1) > 0 ) exit "4_square_ampl.frm: spin lines not combined";
 .sort
 * Trace classes. trTwo: two traces (amplitude line i closes with conjugate line i). V vertices on different lines
 * in a two-trace term -> trX (class X: one gamma5 per trace, Larin). Everything else is class S (V vertices in

@@ -20,6 +20,8 @@ cf gv, ga, cgv, cga, eps, Gv, Ga, cGv, cGa;
 cf Vline, cVline;
 * gvPS, gaPS: V on a closed quark loop (pure singlet); Begin: start of a closed loop (spinlines.h)
 cf gvPS, gaPS, Begin;
+* SpinL: closed quark loop while the open lines are combined (step 04)
+cf SpinL;
 s trTwo, trX;
 
 s MONSTER;
