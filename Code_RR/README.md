@@ -8,6 +8,14 @@ emissions:
   reconstruct.inc, integralfamilies.rr.m) and its partial fractions 1..49 + extra_1 (= 50) + extra_2 (= 51);
   no relabelling rules (fams/symm_loop_crossings.inc empty). Tables by isp_table.py (generic: also writes
   fams/isp_apply.inc, included by step 05) and fammatch_table.py.
+  Extras (2026-10-21) from the Higgs setup H_P2B/nnlo_setup/RR/Families_Identification, missing in nnlo_rr:
+  fams42..46.inc, reconstruct.inc entries 42..46, fammatch.inc sets {5,11,12} -> 42, {8,11,12} -> 45, {6,11,13} -> 46
+  (42 = r1 <-> r2 crossing of 30; 43, 44 have the sets of 8, 17 in another order and are never matched),
+  partial fraction for {D5,D8,D11,D12} (Higgs partialfraction_50 = partialfraction_52.inc), and the r1 <-> r2
+  crossings as relabelling rules: fams/symm_loop_crossings.inc = Higgs identical_families.inc (35..41 -> 34, 29,
+  31, 32, 33, 28, 27; 42 -> 30; 43 -> 12; 44 -> 20; 46 -> 45; same indices). Checked: every map sends the ordered
+  propagators and the ISP rules of the family onto those of its image under r1 <-> r2. Independent families after
+  step 06: 1..34 and 45. Vqqbqqb ({5,11,12} was in no family) and VqqbQ2Q2b run through 06.
 - run_all.py: NCUT = 4, NPROP = 7; no coverage.py; the selftest and tools/check05.py (verify) are not adapted yet.
 
 Channels (2026-10-19): all 33 in Scripts/channels.csv, derived from Code_RRR's by removing the final gluon r3 (same
