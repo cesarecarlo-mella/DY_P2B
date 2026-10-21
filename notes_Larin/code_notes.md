@@ -56,7 +56,16 @@ vv, va, v2v2, v2a2, vv2, aa2, va2, av2 are needed (8 of the 14 computed), the ot
 Not done yet in step 04/05 (they are still all computed). At loop level v^(1) a^(0)* and a^(1) v^(0)* are NOT
 mirrors (different loop amplitude, different Z): both needed; the 2Re supplies a^(0) v^(1)* etc.
 
-## Open issue: identical-quark channels
+## Identical-quark channels: trace tag (done 2026-10-21, all four Code folders)
+
+Step 04 tags the terms with the two V vertices in different traces (`trX`): amplitude line i, conjugate line j != i,
+two traces. New pieces vvX, vaX, avX, aaX (flavour-1 couplings, class X, Larin); vv, va, av, aa are then the
+same-trace parts (class S; the direct x exchange interference is always one trace, so it is S). SKIPAA zeroes only
+the S part of aa (aa_S = vv_S). Markers: Vline(LINE) in spinlines.h, cVline in step 03. For q != Q channels the X
+pieces are 0 and the 16 old pieces are unchanged. Checks: new S + X = old (RR Vqqbqqb, RRR Vqqbqqbg pair 1_1, exact);
+S: aa - vv = 0 at d = 4, != 0 in d; X: aa - vv != 0 at d = 4; LO and R outputs byte-identical.
+
+## (Former) open issue: identical-quark channels
 
 - In q qb -> V q qb (Code_RR `physical_qqbqqb`, Code_RRR `physical_qqbqqbg`) both lines are flavour 1, so the `aa`
   piece contains same-line AND cross-line products (and the exchange interference). aa = vv is wrong there.

@@ -16,6 +16,9 @@ i ti=2,tj=2, li=2,lj=2;
 i t1=2, t2=2;
 cf metric;
 cf gv, ga, cgv, cga, eps, Gv, Ga, cGv, cGa;
+* Vline(n), cVline(n): line of the V vertex (amplitude, conjugate); trTwo, trX: trace tags (step 04)
+cf Vline, cVline;
+s trTwo, trX;
 
 s MONSTER;
 s x,n,x1,x2,x3,x4,x5,x6;

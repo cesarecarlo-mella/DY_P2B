@@ -16,6 +16,8 @@ import concurrent.futures
 
 # amplitude coupling + conjugate coupling: v, a (q line), v2, a2 (Q2 line); see 4_square_ampl.frm
 COUPLINGS = [x + y for x in ("v", "a", "v2", "a2") for y in ("v", "a", "v2", "a2")]
+# identical quarks: flavour-1 couplings with the V vertices on different traces (class X)
+COUPLINGS += ["vvX", "vaX", "avX", "aaX"]
 TMPDIR = "./utils/tmp_fld"
 FORM = shlex.split(os.environ.get("FORM", "form"))
 SKIPAA = os.environ.get("SKIPAA", "1")

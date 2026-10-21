@@ -25,7 +25,7 @@ Ctrl-C just run the same command again: done jobs are skipped, everything else (
 
 Checks after every job (on top of the exit checks inside the FORM files): qgraf: output written, number of diagrams
 = NDIAG of process_header.h; 01: one parsed file per diagram; 02/03: ceil(NDIAG/10) groups and as many conjugates;
-04: all 16 pieces written; 05: no Prop,
+04: all 20 pieces written; 05: no Prop,
 Den(cut), D/DD, TOPO, PropSet, FAM, ISP, scalar products, m2, s12 left, every INT with cut indices 1,1,1,1,1;
 06: no dependent family (left-hand sides of symm_loop_crossings.inc) left. Failed jobs keep their folder and
 form.log; the reason is in <state>/failed/ and in jobs.csv.
@@ -60,7 +60,10 @@ ALLSTEPS = PREP + ["04", "05", "06"]
 GROUP_SIZE = 10
 
 PIECES = [x + y for x in ("v", "a", "v2", "a2") for y in ("v", "a", "v2", "a2")]
-EVEN = ["vv", "aa", "vv2", "aa2", "v2v", "a2a", "v2v2", "a2a2"]          # projector L1
+# identical quarks: flavour-1 couplings with the V vertices on different traces (class X, trace tag in step 04)
+XPIECES = ["vvX", "vaX", "avX", "aaX"]
+PIECES += XPIECES
+EVEN = ["vv", "aa", "vv2", "aa2", "v2v", "a2a", "v2v2", "a2a2", "vvX", "aaX"]          # projector L1
 PROJ = {c: (1 if c in EVEN else 6) for c in PIECES}                      # L6 for the parity-odd pieces
 GLUON_GROUPS = {"physical_qqbg"}
 NCUT = 3                       # R: cut propagators r1^2, q^2 - m2, rapidity (INT(topo1, 1,1,1))
@@ -205,6 +208,8 @@ def lint04(ch, pair):
     nonzero = []
     for p in PIECES:
         f = os.path.join(ch.dir, "tmp", "squared_diagrams", p, f"{p}_{pair}.inc")
+        if p in XPIECES and not os.path.isfile(f):
+            continue                                  # output made before the trace tag: piece is zero
         if not os.path.isfile(f) or os.path.getsize(f) == 0:
             return False, f"missing {p}_{pair}.inc", []
         with open(f) as fh:

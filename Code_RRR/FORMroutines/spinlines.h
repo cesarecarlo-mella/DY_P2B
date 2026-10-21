@@ -9,6 +9,7 @@
 *   line 1 = first flavour-1 Qbar leg in the order 99,97,93,91,89
 *   line 2 = next flavour-1 Qbar leg, otherwise the Qbar2 leg
 * Couplings to V: gv, ga on flavour-1 lines, Gv, Ga on flavour-2 lines.
+* Vline(LINE) marks the line of the V vertex (used in step 04 to tag V on different traces).
 *
 * Spin(k, p_Quark, ..., p_Qbar): Lorentz indices and momenta in order along the line.
 * Initial-state pol(...) of the end points are dropped (spin sum = momentum in the chain);
@@ -45,7 +46,7 @@ endif;
 repeat;
 id Search(n1?)*vQQg(mu1?,n1?,n2?)*Spin('LINE',?x2) = Save(vQQg(mu1,n1,n2))*Search(n2)*Spin('LINE',mu1,?x2);
 id Search(n1?)*vQQV(n1?,nu1?,n2?)*Spin('LINE',?z2) = Save(vQQV(n1,nu1,n2))*Search(n2)
-   *('GV'(ti)*Spin('LINE',nu1,?z2) + 'GA'(ti)*eps(nu1,rho1,rho2,rho3)/6*Spin('LINE',rho1,rho2,rho3,?z2));
+   *Vline('LINE')*('GV'(ti)*Spin('LINE',nu1,?z2) + 'GA'(ti)*eps(nu1,rho1,rho2,rho3)/6*Spin('LINE',rho1,rho2,rho3,?z2));
 id Search(n1?)*pQuark(n1?,mom1?,n2?)*Spin('LINE',?x2) = Save(pQuark(n1,mom1,n2))*Search(n2)*Spin('LINE',mom1,?x2);
 endrepeat;
 

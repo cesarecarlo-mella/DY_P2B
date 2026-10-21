@@ -101,6 +101,7 @@ id gv(ti) = cgv(tj);
 id ga(ti) = cga(tj);
 id Gv(ti) = cGv(tj);
 id Ga(ti) = cGa(tj);
+id Vline(n1?) = cVline(n1);
 .sort
 
 #message revert spins

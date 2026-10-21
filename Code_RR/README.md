@@ -16,6 +16,8 @@ emissions:
   31, 32, 33, 28, 27; 42 -> 30; 43 -> 12; 44 -> 20; 46 -> 45; same indices). Checked: every map sends the ordered
   propagators and the ISP rules of the family onto those of its image under r1 <-> r2. Independent families after
   step 06: 1..34 and 45. Vqqbqqb ({5,11,12} was in no family) and VqqbQ2Q2b run through 06.
+- Trace tag (2026-10-21, also in Code_LO, Code_R, Code_RRR): pieces vvX, vaX, avX, aaX = V vertices in different
+  traces (identical quarks only; see notes_Larin/code_notes.md). The 4 identical-quark channels run through 06.
 - run_all.py: NCUT = 4, NPROP = 7; no coverage.py; the selftest and tools/check05.py (verify) are not adapted yet.
 
 Channels (2026-10-19): all 33 in Scripts/channels.csv, derived from Code_RRR's by removing the final gluon r3 (same

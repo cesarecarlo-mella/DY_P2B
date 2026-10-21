@@ -20,8 +20,8 @@ FAMDIR = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__))
 
 # Projector per piece: L1 (symmetric) for the parity-even pieces (no or two gamma5), L6 (epsilon) for the odd
 # ones (one gamma5). The other combinations vanish by parity and are not computed.
-EVEN = ["vv", "aa", "vv2", "aa2", "v2v", "a2a", "v2v2", "a2a2"]
-ODD = ["va", "av", "va2", "av2", "v2a", "a2v", "v2a2", "a2v2"]
+EVEN = ["vv", "aa", "vv2", "aa2", "v2v", "a2a", "v2v2", "a2a2", "vvX", "aaX"]
+ODD = ["va", "av", "va2", "av2", "v2a", "a2v", "v2a2", "a2v2", "vaX", "avX"]
 PROJ = {**{c: 1 for c in EVEN}, **{c: 6 for c in ODD}}
 
 
