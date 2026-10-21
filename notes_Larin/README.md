@@ -6,6 +6,8 @@
 - `Larin.pdf` (`Larin.tex`): why aa = vv on the same open quark line and not otherwise; Larin's prescription and
   constants; pure singlet.
 - `RRV_plan.md`: plan for RRV and what RR needs (classes by trace: S, X, P; tags; decisions).
+- `RVV_plan.md`: plan for RV (NNLO) and RVV (2x0, 1x1): collapsed single-emission phase space, loop-only
+  families, complex conjugation of the loop integrals in 1x1, 2 Re for the interferences.
 - `code_notes.md`: how the code handles all this (coupling labels, SKIPAA, projectors, identical-quark issue, Larin
   lower-order pieces needed, ghost sign, notebook issues, checks).
 - `checks/`: scripts and log of the aa vs vv checks (see `code_notes.md`).

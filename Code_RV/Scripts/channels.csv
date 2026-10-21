@@ -1,0 +1,7 @@
+group,name,in,p1p2_partner
+physical_qqbg,Vqqbg,"Quark[p1], Qbar[p2], V[q], gluon[r1]",Vqbqg
+physical_qqbg,Vqbgqb,"Qbar[p1], gluon[p2], V[q], Quark[r1]",Vgqbqb
+physical_qqbg,Vgqbqb,"gluon[p1], Qbar[p2], V[q], Quark[r1]",Vqbgqb
+physical_qqbg,Vqgq,"Quark[p1], gluon[p2], V[q], Qbar[r1]",Vgqq
+physical_qqbg,Vgqq,"gluon[p1], Quark[p2], V[q], Qbar[r1]",Vqgq
+physical_qqbg,Vqbqg,"Qbar[p1], Quark[p2], V[q], gluon[r1]",Vqqbg
