@@ -70,12 +70,13 @@ EVEN = ["vv", "aa", "vv2", "aa2", "v2v", "a2a", "v2v2", "a2a2", "vvX", "aaX"]   
 EVEN += ["vPSv", "vPSv2", "aPSa", "aPSa2"]
 PROJ = {c: (1 if c in EVEN else 6) for c in PIECES}                      # L6 for the parity-odd pieces
 GLUON_GROUPS = {"physical_qqbg"}
-NCUT = 3                       # R: cut propagators r1^2, q^2 - m2, rapidity (INT(topo1, 1,1,1))
-NPROP = 3                      # propagators per family (= the cut ones)
+NCUT = 3                       # cut propagators r1^2, q^2 - m2, rapidity (INT(topoN, 1,1,1, n1,...,n4))
+NPROP = 7                      # RV: 3 cut + 4 loop (box in k1) propagators per family
 LEFTOVERS_05 = [r"\bProp\(", r"\bDen\(cut", r"\bD\d+\b", r"\bDD\d+\b", r"\bTOPO\(", r"\bPropSet\(", r"\bFAM\d\(",
-                r"\bISP\(", r"\b[pr]\d\.[pr]\d\b", r"\bm2\b", r"\bs12\b", r"\bq\b"]
-VERSION_FILES = ["fams/dens.inc", "fams/fammatch_table.inc", "fams/isp_table.inc", "fams/reconstruct.inc",
-                 "fams/symm_loop_crossings.inc"]
+                r"\bISP\(", r"\b[pr]\d\.[pr]\d\b", r"\bm2\b", r"\bs12\b", r"\bq\b",
+                r"\bRVT\(", r"\bLSHIFT\(", r"\bRVM\d\(", r"\bLISP\(", r"\bk1\."]
+VERSION_FILES = ["fams/dens.inc", "fams/isp_table.inc", "fams/symm_loop_crossings.inc", "fams/rv_loopcodes.inc",
+                 "fams/rv_match_table.inc", "fams/rv_shifts.inc", "fams/rv_isp_table.inc", "fams/rv_reconstruct.inc"]
 
 
 # ---------------------------------------------------------------- channels
@@ -504,7 +505,7 @@ def preflight(steps=()):
         sys.exit("FORMPATH does not contain all_header.h: source Code_RV/setenv.sh")
     for f in VERSION_FILES:
         if not os.path.isfile(os.path.join(FAMDIR, f)):
-            sys.exit(f"missing {FAMDIR}/{f}: run the Families scripts (family_rules.wl, isp_table.py, fammatch_table.py)")
+            sys.exit(f"missing {FAMDIR}/{f}: run Families/rv_families.py (Code_R files: dens.inc, isp_table.inc, partial_fraction)")
     if npf() == 0:
         sys.exit(f"no partial-fraction files in {FAMDIR}/partial_fraction")
     cov = os.path.join(FAMDIR, "coverage.py")
