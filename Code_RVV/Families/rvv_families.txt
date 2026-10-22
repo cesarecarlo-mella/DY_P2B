@@ -1,0 +1,10 @@
+# RVV 1L x 1L families (rvv_families.py): number, k1 box (RV topoA), k2 box (RV topoB), propagators D1..D12
+topo1   k1: RV topo1  k2: RV topo1  D[1, 2, 3, 4, 5, 7, 11, 12, 13, 15, 19, 20]
+topo2   k1: RV topo1  k2: RV topo2  D[1, 2, 3, 4, 5, 7, 11, 12, 13, 17, 19, 20]
+topo3   k1: RV topo1  k2: RV topo3  D[1, 2, 3, 4, 5, 7, 11, 12, 14, 15, 19, 20]
+topo4   k1: RV topo2  k2: RV topo1  D[1, 2, 3, 4, 5, 9, 11, 12, 13, 15, 19, 20]
+topo5   k1: RV topo2  k2: RV topo2  D[1, 2, 3, 4, 5, 9, 11, 12, 13, 17, 19, 20]
+topo6   k1: RV topo2  k2: RV topo3  D[1, 2, 3, 4, 5, 9, 11, 12, 14, 15, 19, 20]
+topo7   k1: RV topo3  k2: RV topo1  D[1, 2, 3, 4, 6, 7, 11, 12, 13, 15, 19, 20]
+topo8   k1: RV topo3  k2: RV topo2  D[1, 2, 3, 4, 6, 7, 11, 12, 13, 17, 19, 20]
+topo9   k1: RV topo3  k2: RV topo3  D[1, 2, 3, 4, 6, 7, 11, 12, 14, 15, 19, 20]

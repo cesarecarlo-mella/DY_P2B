@@ -1,0 +1,300 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=2.2cm]{geometry}
+\usepackage{amsmath,amssymb,slashed}
+\usepackage{booktabs,array}
+\usepackage{xcolor}
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue,citecolor=blue]{hyperref}
+
+\newcommand{\ep}{\epsilon}
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\kpar}{k_{\parallel}}
+\newcommand{\kperp}{k_{\perp}}
+\newcommand{\note}[1]{\par\smallskip\noindent\colorbox{gray!12}{\parbox{\dimexpr\linewidth-2\fboxsep}{\small #1}}\par\smallskip}
+
+\title{One-loop $\times$ one-loop interferences\\[2pt]\large factorisable two-loop families, the $k_1\cdot k_2$ numerators,
+and complex conjugation}
+\author{DY\_P2B --- notes\_Larin/}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section*{Summary}
+
+In the real--virtual--virtual contribution at N$^3$LO, the product of two one-loop amplitudes,
+$\mathcal{A}^{(1)}\,\mathcal{A}^{(1)*}$, contains two loop momenta: $k_1$ in the amplitude and $k_2$ in the
+complex-conjugate amplitude. No propagator depends on both, but the spin and polarisation sums contract Lorentz
+indices of the two loops, so the numerators contain $k_1\cdot k_2$. The integrals are therefore not plain products
+of one-loop integrals, but they belong to a \emph{factorisable} two-loop family. We show:
+\begin{enumerate}
+\item each family has 12 propagators: 3 cut, 4 in $k_1$, 4 in $k_2$, and one irreducible numerator for
+$k_1\cdot k_2$ (section~\ref{sec:count});
+\item every integral with powers of $k_1\cdot k_2$ is a combination of products of one-loop integrals without it
+(Lorentz covariance, section~\ref{sec:k1k2}); the reduction of the two-loop family therefore yields masters that are
+products $M_a(k_1)\,M_b(k_2)$;
+\item the reduction never mixes $k_1$ and $k_2$ propagators, and its coefficients are real, so the opposite $i0$
+prescription of the conjugate loop is applied at the end, $M_a\,M_b^*$; symmetries exchanging $k_1$ and $k_2$ must
+not be used (section~\ref{sec:conj}).
+\end{enumerate}
+No tensor reduction is needed: the reduction of the two-loop family does it.
+
+\section{Setting}
+
+One emission: $q(p_1)+\bar q(p_2)\to V(q)+g(r_1)$ and crossings, $s=(p_1+p_2)^2$, $q^2=m^2=zs$, and the rapidity
+fixed by $u$. The cut conditions fix $r_1$ completely,
+\begin{equation}
+2\,p_1\cdot r_1=s\,\frac{1-uz}{1+u},\qquad 2\,p_2\cdot r_1=s\,\frac{u-z}{1+u},
+\end{equation}
+so every invariant is a function of $(s,z,u)$. The interference
+\begin{equation}
+\sum_{\rm spins,\,pols}\mathcal{A}^{(1)}(k_1)\;\mathcal{A}^{(1)}(k_2)^*
+\end{equation}
+is written with the loop momentum $k_1$ in the amplitude and $k_2$ in the conjugate. The amplitude loop has Feynman
+propagators $1/(\ell^2+i0)$; the conjugate loop has $1/(\ell^2-i0)$.
+
+\paragraph{Where $k_1\cdot k_2$ comes from.} The open quark line of the amplitude and that of the conjugate join into
+one Dirac trace, e.g.\ $\mathrm{Tr}[\,\slashed{p}_2\,\Gamma(k_1)\,\slashed{p}_1\,\bar\Gamma(k_2)\,]$, and the gluon
+polarisation sum $-g^{\mu\nu}$ and the leptonic tensor contract a Lorentz index of the amplitude with one of the
+conjugate. A $\slashed{k}_1$ from $\Gamma$ and a $\slashed{k}_2$ from $\bar\Gamma$ in the same trace give $k_1\cdot k_2$;
+two pairs give $(k_1\cdot k_2)^2$, and so on.
+
+\section{Counting: why 12 propagators}\label{sec:count}
+
+Integration momenta $\{r_1,k_1,k_2\}$ (the emission and the two loops), external momenta $\{p_1,p_2\}$.
+The scalar products that involve an integration momentum are
+\begin{center}
+\begin{tabular}{lll}
+\toprule
+group & scalar products & number \\
+\midrule
+emission & $r_1^2,\ r_1\cdot p_1,\ r_1\cdot p_2$ & 3 \\
+loop 1 & $k_1^2,\ k_1\cdot p_1,\ k_1\cdot p_2,\ k_1\cdot r_1$ & 4 \\
+loop 2 & $k_2^2,\ k_2\cdot p_1,\ k_2\cdot p_2,\ k_2\cdot r_1$ & 4 \\
+mixed & $k_1\cdot k_2$ & 1 \\
+\midrule
+ & & 12 \\
+\bottomrule
+\end{tabular}
+\end{center}
+A family needs 12 linearly independent denominators (or numerators) to express all of them:
+\begin{itemize}
+\item 3 cut propagators: $r_1^2$, $(p_1+p_2-r_1)^2-m^2$, and the linear rapidity denominator;
+\item 4 propagators of the box in $k_1$: $k_1^2,\ (k_1+P_1)^2,\ (k_1+P_2)^2,\ (k_1+P_3)^2$, with $P_i$ the partial sums
+of the external momenta in one cyclic ordering of the legs $p_1,p_2,r_1,q$; they are independent in
+$k_1^2,k_1\cdot p_1,k_1\cdot p_2,k_1\cdot r_1$;
+\item 4 propagators of the box in $k_2$, the same for $k_2$;
+\item 1 irreducible numerator for $k_1\cdot k_2$, e.g.\ $(k_1+k_2)^2$: it never appears in a denominator.
+\end{itemize}
+$3+4+4+1=12$. Since the cuts fix $r_1$, one may equally reduce in $k_1,k_2$ only, at fixed $(s,z,u)$: 9 scalar
+products, $4+4$ propagators and the same numerator. The two descriptions have the same loop part.
+
+\note{One loop $\times$ tree (RV) has no such numerator: the conjugate has no loop momentum, and the contraction only
+produces $k_1\cdot p_i$ and $k_1\cdot r_1$, which the box propagators express.}
+
+\section{Factorisable families}\label{sec:fact}
+
+A two-loop family is \emph{factorisable} if its propagators split into two groups depending on disjoint loop
+momenta: here the $k_1$-box and the $k_2$-box. As a graph it is two one-loop graphs with no propagator in common.
+An integral of the family is
+\begin{equation}
+I(\vec a;\vec b;n)=\int\!\frac{\dd^dk_1}{i\pi^{d/2}}\frac{\dd^dk_2}{i\pi^{d/2}}\;
+\frac{(k_1\cdot k_2)^n}{\prod_{j}D_j(k_1)^{a_j}\;\prod_{j}E_j(k_2)^{b_j}},
+\end{equation}
+($D_j$ the $k_1$-box propagators, $E_j$ the $k_2$-box ones, negative $a_j,b_j$ allowed). For $n=0$ it is a product
+of one-loop integrals,
+\begin{equation}
+I(\vec a;\vec b;0)=J_1(\vec a)\;J_2(\vec b),\qquad
+J_1(\vec a)=\int\!\frac{\dd^dk_1}{i\pi^{d/2}}\frac{1}{\prod_jD_j(k_1)^{a_j}},
+\end{equation}
+because the integrand is a product of a function of $k_1$ and a function of $k_2$. The only coupling between the two
+loops is the numerator $(k_1\cdot k_2)^n$.
+
+\section{Removing $k_1\cdot k_2$}\label{sec:k1k2}
+
+\subsection{Lorentz covariance}
+
+Write the $k_1$-part of the integrand as $f(k_1)=1/\prod_jD_j(k_1)^{a_j}$. It depends on $k_1$ only through $k_1^2$ and
+$k_1\cdot p_i$, with $\{p_i\}=\{p_1,p_2,r_1\}$ (three linearly independent external momenta). Split $k_1$ into its
+component in the space spanned by the $p_i$ and the rest:
+\begin{equation}
+k_1^\mu=\kpar^\mu+\kperp^\mu,\qquad
+\kpar^\mu=\sum_{i,j}p_i^\mu\,(G^{-1})_{ij}\,(k_1\cdot p_j),\qquad G_{ij}=p_i\cdot p_j ,
+\end{equation}
+and the same for $k_2$. ``Parallel'' means: the projection of $k_1$ onto the three-dimensional subspace spanned by
+$p_1,p_2,r_1$; it is the combination of the $p_i$ with the same scalar products as $k_1$, since contracting with
+$p_l$ gives $\kpar\cdot p_l=\sum_{ij}G_{li}(G^{-1})_{ij}(k_1\cdot p_j)=k_1\cdot p_l$. ``Perpendicular'' means:
+$\kperp=k_1-\kpar$ is orthogonal to every $p_l$, $\kperp\cdot p_l=0$.
+$\kpar$ and $\kperp^2=k_1^2-\kpar^2$ are functions of the scalar products of the family,
+and $\kperp$ lives in the $(d-3)$-dimensional space orthogonal to all $p_i$. The projector onto that space is
+\begin{equation}
+g_\perp^{\mu\nu}=g^{\mu\nu}-\sum_{i,j}p_i^\mu\,(G^{-1})_{ij}\,p_j^\nu ,\qquad
+g_\perp^{\mu\nu}p_{l\,\nu}=0,\qquad g_\perp^{\mu\nu}g_{\perp\,\mu\nu}=g_\perp{}^\mu{}_\mu=d-3 .
+\end{equation}
+We need the tensor integrals
+\begin{equation}
+T^\mu=\int\!d^dk_1\,f(k_1)\,\kperp^\mu ,\qquad T^{\mu\nu}=\int\!d^dk_1\,f(k_1)\,\kperp^\mu\kperp^\nu .
+\end{equation}
+
+\paragraph{General form.} The integrand of $T^{\mu\nu}$ depends on $k_1$ only through scalar products, and the
+integration runs over all of $k_1$, so $T^{\mu\nu}$ is a Lorentz-covariant function of the $p_i$:
+$\Lambda^\mu{}_\rho\Lambda^\nu{}_\sigma T^{\rho\sigma}(p)=T^{\mu\nu}(\Lambda p)$. A covariant tensor built from vectors
+$p_i$ is a combination of products of the metric, of the $p_i$, and of the Levi-Civita tensor, with coefficients that
+are functions of the invariants $p_i\cdot p_j$. The Levi-Civita tensor does not enter, for two independent reasons:
+\begin{enumerate}
+\item $T^{\mu\nu}$ is symmetric by construction, while every rank-two structure with one Levi-Civita tensor, such as
+$\epsilon^{\mu\nu\rho\sigma}p_{1\rho}p_{2\sigma}$, is antisymmetric in $\mu\nu$;
+\item $f$ is parity even. A reflection of one direction orthogonal to all $p_i$ (it exists for $d>3$) leaves the
+$p_i$ and $f$ unchanged, so $R^\mu{}_\rho R^\nu{}_\sigma T^{\rho\sigma}=T^{\mu\nu}$, while it flips the sign of every
+structure with one Levi-Civita tensor ($\det R=-1$). This excludes such structures at every rank, $T^\mu$ included.
+\end{enumerate}
+Hence
+\begin{equation}
+T^\mu=\sum_iC_i\,p_i^\mu ,\qquad
+T^{\mu\nu}=A\,g^{\mu\nu}+\sum_{i,j}B_{ij}\,p_i^\mu p_j^\nu ,\qquad B_{ij}=B_{ji}.
+\end{equation}
+
+\paragraph{Transversality.} $\kperp\cdot p_l=0$ holds before integration, so $T^\mu p_{l\,\mu}=0$ and
+$T^{\mu\nu}p_{l\,\nu}=0$ for every $l$. For the vector, $\sum_iC_iG_{il}=0$ for all $l$, and $G$ is invertible, so
+$C_i=0$. For the tensor,
+\begin{equation}
+A\,p_l^\mu+\sum_{i,j}B_{ij}\,G_{jl}\,p_i^\mu=0
+\quad\Longrightarrow\quad A\,\delta_{il}+(BG)_{il}=0
+\quad\Longrightarrow\quad B=-A\,G^{-1},
+\end{equation}
+since the $p_i$ are linearly independent. Hence $T^{\mu\nu}=A\,g_\perp^{\mu\nu}$: $g_\perp$ is the only combination of
+$g$ and the $p_i$ orthogonal to all $p_i$.
+
+\paragraph{Trace.} Contracting with $g_{\mu\nu}$ and using $g_\perp{}^\mu{}_\mu=d-3$,
+$A=\frac{1}{d-3}\int d^dk_1\,f(k_1)\,\kperp^2$, an integral of the family since $\kperp^2=k_1^2-\kpar^2$ is a
+function of its scalar products. Hence, inside the integral,
+\begin{equation}
+\kperp^\mu\to0,\qquad
+\kperp^\mu\kperp^\nu\to\frac{\kperp^2}{d-3}\,g_\perp^{\mu\nu}.
+\end{equation}
+The same steps at higher rank give zero for every odd product of $\kperp$'s and symmetrised products of $g_\perp$ for
+every even one, e.g.\ $\kperp^\mu\kperp^\nu\kperp^\rho\kperp^\sigma\to\frac{(\kperp^2)^2}{(d-3)(d-1)}
+\big(g_\perp^{\mu\nu}g_\perp^{\rho\sigma}+g_\perp^{\mu\rho}g_\perp^{\nu\sigma}+g_\perp^{\mu\sigma}g_\perp^{\nu\rho}\big)$.
+
+\paragraph{The same result without the general form.} At fixed $\kpar$, i.e.\ at fixed $k_1\cdot p_i$, the integrand
+depends on $\kperp$ only through $\kperp^2=k_1^2-\kpar^2$. The integral over $\kperp$ is therefore invariant under the
+rotations of the $(d-3)$-dimensional orthogonal space, and $T^{\mu\nu}$, which lives entirely in that space, must be a
+symmetric invariant tensor of it: a multiple of its metric $g_\perp$.
+
+\paragraph{Levi-Civita tensors in the numerator.} The traces with $\gamma_5$ can leave Levi-Civita tensors contracted
+with $k_1$, e.g.\ $\epsilon(k_1,p_1,p_2,r_1)=\epsilon_\mu(p_1,p_2,r_1)\,\kperp^\mu$. They are not part of $f$: they are
+external tensors contracted with $\kperp^\mu$ or $\kperp^\mu\kperp^\nu$, and the replacements above apply to them as
+to $k_2$. The derivation needs only $f$, the denominators and the scalar-product numerators, to be parity even, which
+always holds.
+
+\subsection{Rank one}
+
+Expanding,
+\begin{equation}
+k_1\cdot k_2=\kpar\cdot k_{2\parallel}+\kpar\cdot k_{2\perp}+\kperp\cdot k_{2\parallel}+\kperp\cdot k_{2\perp}
+=\kpar\cdot k_{2\parallel}+\kperp\cdot k_{2\perp},
+\end{equation}
+because the cross terms vanish identically: $\kpar$ is a combination of the $p_i$ and $k_{2\perp}$ is orthogonal to
+all of them (and vice versa). The first term is
+$\kpar\cdot k_{2\parallel}=\sum_{ij}(k_1\cdot p_i)(G^{-1})_{ij}(k_2\cdot p_j)$; the second is odd in $\kperp$ and drops
+out:
+\begin{equation}
+I(\vec a;\vec b;1)=\sum_{i,j}(G^{-1})_{ij}\;
+\Big[\int f(k_1)\,(k_1\cdot p_i)\Big]\;\Big[\int g(k_2)\,(k_2\cdot p_j)\Big].
+\end{equation}
+Each bracket is a one-loop integral of the family without $k_1\cdot k_2$: $k_1\cdot p_i$ is a combination of box
+propagators and constants. So $I(\vec a;\vec b;1)$ is a sum of products $J_1\,J_2$ with rational coefficients.
+
+\subsection{Rank two}
+
+$(k_1\cdot k_2)^2=(\kpar\cdot k_{2\parallel})^2+2(\kpar\cdot k_{2\parallel})(\kperp\cdot k_{2\perp})
++(\kperp\cdot k_{2\perp})^2$. The middle term is odd in $\kperp$; the last one gives
+$\kperp^\mu\kperp^\nu k_{2\perp\mu}k_{2\perp\nu}\to\kperp^2\,k_{2\perp}^2/(d-3)$. Hence
+\begin{equation}
+(k_1\cdot k_2)^2\;\to\;(\kpar\cdot k_{2\parallel})^2+\frac{1}{d-3}\,\kperp^2\,k_{2\perp}^2 ,
+\end{equation}
+and both terms are products of a function of the $k_1$ scalar products and one of the $k_2$ scalar products.
+Any power $n$ works the same way.
+
+\subsection{Can $k_1\cdot k_2$ survive in a master?}
+
+No relation is missing: the identities above are Lorentz-invariance identities, and these are linear combinations of
+the integration-by-parts identities of the family \cite{Lee}. A complete reduction of the two-loop family therefore
+contains them: every integral with $n>0$ reduces to integrals with $n=0$, which are products. Which integrals are
+called masters is a choice of basis: an ordering that ranks numerator powers as more complicated (the usual one)
+never picks an integral with $n>0$. The masters are then products,
+\begin{equation}
+\{\text{masters}\}=\{M_a(k_1)\,M_b(k_2)\},
+\end{equation}
+with $\{M_a\}$ the one-loop masters of the $k_1$-box and $\{M_b\}$ those of the $k_2$-box: the IBP identities
+generated by $\partial/\partial k_1\cdot v$ with $v\in\{k_1,p_i\}$ act on the $k_1$ factor only and are exactly the
+one-loop IBPs, so the master basis of the product is the product of the two bases.
+
+\paragraph{Sanity checks.}
+\begin{itemize}
+\item The coefficients contain $1/\det G$ and $1/(d-3)$. With $p_1^2=p_2^2=r_1^2=0$,
+\begin{equation}
+\det G=2\,(p_1\cdot p_2)(p_1\cdot r_1)(p_2\cdot r_1)=\frac{s^3}{4}\,\frac{(1-uz)(u-z)}{(1+u)^2},
+\end{equation}
+non-zero inside the physical region and vanishing on the collinear boundaries $u=z$ and $u=1/z$, where $r_1$ is
+parallel to $p_2$ or $p_1$ and the three momenta no longer span three directions. These are the boundaries where the
+expansion in distributions is needed anyway. $d-3=1-2\ep$ is harmless.
+\item In a subsector the $k_1$-integral may depend on fewer external momenta (a triangle or a bubble); the same
+argument holds with the Gram matrix of those momenta.
+\item A direct check, on a family with both boxes in the ordering $p_1,p_2,r_1$: eight integrals, with $n=0,1,2$,
+one dot, and in subsectors, computed in two ways, (i) with the rank-one and rank-two formulas above followed by the
+one-loop reduction of each factor, and (ii) by the reduction of the two-loop family without $k_1\leftrightarrow k_2$
+symmetries (section~\ref{sec:conj}). The two agree term by term as ordered products $M_a(k_1)\,M_b(k_2)$, and no master
+carries a power of $k_1\cdot k_2$.
+\end{itemize}
+
+\section{Complex conjugation}\label{sec:conj}
+
+The $k_1$ propagators carry $+i0$, the $k_2$ propagators $-i0$. This is consistent with the reduction:
+\begin{enumerate}
+\item The IBP identities are algebraic: they do not depend on the $i0$ prescription, and their coefficients are
+rational functions of $s,z,u,d$ with real coefficients.
+\item No identity produces a propagator depending on both $k_1$ and $k_2$: $\partial/\partial k_1$ acts only on the
+$k_1$ propagators and on the numerator $k_1\cdot k_2$. Every term of the reduction keeps the split (normal $k_1$
+factor) $\times$ (conjugate $k_2$ factor).
+\end{enumerate}
+Hence one reduces as if both prescriptions were $+i0$, and evaluates each master as
+\begin{equation}
+M_a(k_1;+i0)\;M_b(k_2;-i0)=M_a\;M_b^{*},
+\end{equation}
+with $M_b$ the usual (Feynman) one-loop master at the same real kinematics.
+
+\paragraph{Symmetries.} Symmetries acting on $k_1$ alone (shifts and reflections of the $k_1$-box) or on $k_2$ alone
+preserve the split and may be used. A symmetry that exchanges $k_1$ and $k_2$ (possible when both boxes have the same
+ordering) must not be used: it would identify $M_a\,M_b^*$ with $M_b\,M_a^*$, i.e.\ move the conjugation to the
+other factor. The exchange relates instead the two interferences with amplitude and conjugate swapped,
+$\mathcal{A}_i^{(1)}\mathcal{A}_j^{(1)*}=\big(\mathcal{A}_j^{(1)}\mathcal{A}_i^{(1)*}\big)^*$, which is used when the
+contributions are summed, not inside the reduction.
+
+An automatic search for sector relations finds this exchange: for two boxes of the same ordering it maps, for
+instance, (box in $k_1$)$\times$(bubble in $k_2$) onto (bubble in $k_1$)$\times$(box in $k_2$), so the reduced
+integral is correct as a number for $+i0$ in both loops but no longer correct once the conjugation is applied to the
+$k_2$ factor. The reduction of the family is therefore run with sector relations and sector symmetries switched off;
+every sector is then reduced on its own, and the masters are the $4\times4=16$ ordered products. In the check of
+section~\ref{sec:k1k2} the reduction with the exchange allowed agrees with the formulas of section~\ref{sec:k1k2} for
+all eight integrals only after symmetrising each product, $M_a M_b\to\tfrac12(M_aM_b+M_bM_a)$, and as ordered products
+for one of them; without the exchange all eight agree as ordered products.
+
+\section{Families and reductions}
+
+\begin{itemize}
+\item Families: (ordering of the $k_1$-box) $\times$ (ordering of the $k_2$-box), 3 orderings each (legs
+$p_1,p_2,r_1$ around the box, $q$ fixed, up to reflection), at most 9 families of 12 propagators.
+\item Two different reductions enter the single-emission virtual corrections: the one-loop boxes (one loop $\times$
+tree, NNLO and N$^3$LO) and the factorisable two-loop families of this note (one loop $\times$ one loop).
+\item Masters: products of one-loop masters, each needed to the order in $\ep$ required by the product, with the
+conjugation applied to the $k_2$ factor. With massless internal lines the triangles reduce to bubbles, so each box
+has four masters: the box and the three bubbles in the invariants of its two-particle channels and in $q^2$ (for the
+ordering $p_1,p_2,r_1$: $(p_1+p_2)^2$, $(p_2+r_1)^2$, $q^2$); a family has $4\times4=16$ masters.
+\end{itemize}
+
+\begin{thebibliography}{9}
+\bibitem{Lee} R.~N.~Lee, \emph{Group structure of the integration-by-part identities and its application to the
+reduction of multiloop integrals}, JHEP 07 (2008) 031, \href{https://arxiv.org/abs/0804.3008}{arXiv:0804.3008}.
+\end{thebibliography}
+
+\end{document}

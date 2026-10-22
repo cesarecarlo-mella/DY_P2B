@@ -1,0 +1,30 @@
+Den(cut,-q.p1+q.p2*u) Prop(cut,p1+p2+r1,m2) Prop(cut,r1) Prop(p1+r1) Prop(p2+r1) | Prop(k1) Prop(k1+p2+r1)   # Vqbqg,Vqqbg
+Den(cut,-q.p1+q.p2*u) Prop(cut,p1+p2+r1,m2) Prop(cut,r1) Prop(p1+r1) Prop(p2+r1) | Prop(k1) Prop(k1+r1) Prop(k1-p1)   # Vqbqg,Vqqbg
+Den(cut,-q.p1+q.p2*u) Prop(cut,p1+p2+r1,m2) Prop(cut,r1) Prop(p1+r1) Prop(p2+r1) | Prop(k1) Prop(k1+r1) Prop(k1-p2)   # Vqbqg,Vqqbg
+Den(cut,-q.p1+q.p2*u) Prop(cut,p1+p2+r1,m2) Prop(cut,r1) Prop(p1+r1) Prop(p2+r1) | Prop(k1) Prop(k1-p1) Prop(k1-p1-p2-r1)   # Vgqbqb,Vgqq,Vqbqg,Vqqbg
+Den(cut,-q.p1+q.p2*u) Prop(cut,p1+p2+r1,m2) Prop(cut,r1) Prop(p1+r1) Prop(p2+r1) | Prop(k1) Prop(k1-p1-p2-r1) Prop(k1-p2)   # Vqbgqb,Vqbqg,Vqgq,Vqqbg
+Den(cut,-q.p1+q.p2*u) Prop(cut,p1+p2+r1,m2) Prop(cut,r1) Prop(p1+r1) Prop(p2+r1) | Prop(k1) Prop(k1-p1-r1)   # Vqbqg,Vqqbg
+Den(cut,-q.p1+q.p2*u) Prop(cut,p1+p2+r1,m2) Prop(cut,r1) Prop(p1+r1) | Prop(k1) Prop(k1+p1+p2+r1) Prop(k1+r1)   # Vgqbqb,Vgqq,Vqbqg,Vqqbg
+Den(cut,-q.p1+q.p2*u) Prop(cut,p1+p2+r1,m2) Prop(cut,r1) Prop(p1+r1) | Prop(k1) Prop(k1+p2) Prop(k1+p2+r1) Prop(k1-p1)   # Vgqbqb,Vgqq,Vqbqg,Vqqbg
+Den(cut,-q.p1+q.p2*u) Prop(cut,p1+p2+r1,m2) Prop(cut,r1) Prop(p1+r1) | Prop(k1) Prop(k1+p2) Prop(k1-p1)   # Vgqbqb,Vgqq
+Den(cut,-q.p1+q.p2*u) Prop(cut,p1+p2+r1,m2) Prop(cut,r1) Prop(p1+r1) | Prop(k1) Prop(k1+p2) Prop(k1-p1) Prop(k1-p1-r1)   # Vgqbqb,Vgqq,Vqbqg,Vqqbg
+Den(cut,-q.p1+q.p2*u) Prop(cut,p1+p2+r1,m2) Prop(cut,r1) Prop(p1+r1) | Prop(k1) Prop(k1+r1) Prop(k1-p1)   # Vgqbqb,Vgqq,Vqbqg,Vqqbg
+Den(cut,-q.p1+q.p2*u) Prop(cut,p1+p2+r1,m2) Prop(cut,r1) Prop(p1+r1) | Prop(k1) Prop(k1-p1) Prop(k1-p1-p2-r1) Prop(k1-p1-r1)   # Vgqbqb,Vgqq,Vqbqg,Vqqbg
+Den(cut,-q.p1+q.p2*u) Prop(cut,p1+p2+r1,m2) Prop(cut,r1) Prop(p1+r1) | Prop(k1) Prop(k1-p1-p2)   # Vgqbqb,Vgqq
+Den(cut,-q.p1+q.p2*u) Prop(cut,p1+p2+r1,m2) Prop(cut,r1) Prop(p1+r1) | Prop(k1) Prop(k1-p1-p2-r1) Prop(k1-p2)   # Vgqbqb,Vgqq,Vqbgqb,Vqbqg,Vqgq,Vqqbg
+Den(cut,-q.p1+q.p2*u) Prop(cut,p1+p2+r1,m2) Prop(cut,r1) Prop(p1+r1) | Prop(k1) Prop(k1-p1-r1)   # Vgqbqb,Vgqq,Vqbqg,Vqqbg
+Den(cut,-q.p1+q.p2*u) Prop(cut,p1+p2+r1,m2) Prop(cut,r1) Prop(p2+r1) | Prop(k1) Prop(k1+p1+p2+r1) Prop(k1+r1)   # Vqbgqb,Vqbqg,Vqgq,Vqqbg
+Den(cut,-q.p1+q.p2*u) Prop(cut,p1+p2+r1,m2) Prop(cut,r1) Prop(p2+r1) | Prop(k1) Prop(k1+p2) Prop(k1+p2+r1) Prop(k1-p1)   # Vqbgqb,Vqbqg,Vqgq,Vqqbg
+Den(cut,-q.p1+q.p2*u) Prop(cut,p1+p2+r1,m2) Prop(cut,r1) Prop(p2+r1) | Prop(k1) Prop(k1+p2) Prop(k1-p1)   # Vqbgqb,Vqgq
+Den(cut,-q.p1+q.p2*u) Prop(cut,p1+p2+r1,m2) Prop(cut,r1) Prop(p2+r1) | Prop(k1) Prop(k1+p2) Prop(k1-p1) Prop(k1-p1-r1)   # Vqbgqb,Vqbqg,Vqgq,Vqqbg
+Den(cut,-q.p1+q.p2*u) Prop(cut,p1+p2+r1,m2) Prop(cut,r1) Prop(p2+r1) | Prop(k1) Prop(k1+p2+r1)   # Vqbgqb,Vqbqg,Vqgq,Vqqbg
+Den(cut,-q.p1+q.p2*u) Prop(cut,p1+p2+r1,m2) Prop(cut,r1) Prop(p2+r1) | Prop(k1) Prop(k1+r1) Prop(k1-p2)   # Vqbgqb,Vqbqg,Vqgq,Vqqbg
+Den(cut,-q.p1+q.p2*u) Prop(cut,p1+p2+r1,m2) Prop(cut,r1) Prop(p2+r1) | Prop(k1) Prop(k1-p1) Prop(k1-p1-p2-r1)   # Vgqbqb,Vgqq,Vqbgqb,Vqbqg,Vqgq,Vqqbg
+Den(cut,-q.p1+q.p2*u) Prop(cut,p1+p2+r1,m2) Prop(cut,r1) Prop(p2+r1) | Prop(k1) Prop(k1-p1) Prop(k1-p1-p2-r1) Prop(k1-p1-r1)   # Vqbgqb,Vqbqg,Vqgq,Vqqbg
+Den(cut,-q.p1+q.p2*u) Prop(cut,p1+p2+r1,m2) Prop(cut,r1) Prop(p2+r1) | Prop(k1) Prop(k1-p1-p2)   # Vqbgqb,Vqgq
+Den(cut,-q.p1+q.p2*u) Prop(cut,p1+p2+r1,m2) Prop(cut,r1) | Prop(k1) Prop(k1+p1+p2+r1) Prop(k1+r1)   # Vgqbqb,Vgqq,Vqbgqb,Vqgq
+Den(cut,-q.p1+q.p2*u) Prop(cut,p1+p2+r1,m2) Prop(cut,r1) | Prop(k1) Prop(k1+p2) Prop(k1+p2+r1) Prop(k1-p1)   # Vgqbqb,Vgqq,Vqbgqb,Vqgq
+Den(cut,-q.p1+q.p2*u) Prop(cut,p1+p2+r1,m2) Prop(cut,r1) | Prop(k1) Prop(k1+p2) Prop(k1-p1)   # Vgqbqb,Vgqq,Vqbgqb,Vqgq
+Den(cut,-q.p1+q.p2*u) Prop(cut,p1+p2+r1,m2) Prop(cut,r1) | Prop(k1) Prop(k1+p2) Prop(k1-p1) Prop(k1-p1-r1)   # Vgqbqb,Vgqq,Vqbgqb,Vqgq
+Den(cut,-q.p1+q.p2*u) Prop(cut,p1+p2+r1,m2) Prop(cut,r1) | Prop(k1) Prop(k1-p1) Prop(k1-p1-p2-r1) Prop(k1-p1-r1)   # Vgqbqb,Vgqq,Vqbgqb,Vqgq
+Den(cut,-q.p1+q.p2*u) Prop(cut,p1+p2+r1,m2) Prop(cut,r1) | Prop(k1) Prop(k1-p1-p2)   # Vgqbqb,Vgqq,Vqbgqb,Vqgq

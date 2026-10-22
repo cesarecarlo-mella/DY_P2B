@@ -63,7 +63,21 @@ amplitudes, exact in eps).
   or from the literature with their boundary expansions.
 - Two-loop UV, Larin Z5 and Z_a^ns at O(a^2); Z_s differs from Z_ns from O(a^2) (D3 b remainder, see RRV_plan.md).
 
-## 5. Order of work
+## 5. Status (end of 2026-10-21)
+
+- Code_RV built (commit 6307873), runs up to step 04 (laptop test Vqqbg: vv, va, av, and the PS pieces in the pair
+  with the closed quark loop; no Spin left). Step 05 not done.
+- Loop-momentum matching with Reduze 2.6 (installed in ~/Software/reduze2). Test on Vqqbg (work files in
+  ~/Documents/GitHub/DY_P2B_work/2026-10-21/reduze_rv): QGRAF with QGRAF/reduze.sty, kinematics p1, p2, q, r1 all
+  incoming (q^2 = m2, s = (p1+p2)^2, t = (p1+r1)^2), families RVA/RVB/RVC; find_diagram_shifts maps all 15 diagrams
+  onto RVA = {k1, k1+p1, k1+p1+p2, k1+p1+p2+r1} and its crossings over the massless legs (RVB, RVC are crossings).
+  Conventions checked independently: Shift(k1, X) means k1 -> X in the diagram; RVAx124 = RVA with legs 1 -> 2 -> 4 -> 1
+  (legs 1 = p1, 2 = p2, 3 = q, 4 = r1). Closed Quark2 diagrams (5, 6) are dropped as in the FORM set.
+- Proposed, awaiting approval: the qgraf job also writes external/PROC.1.yaml; a Reduze project per Code folder;
+  per-diagram replace_(k1, X) and family tag in step 01 (one-loop set); step 05 = Phi_1 as in Code_R times
+  LINT(RVAxNN, a1..a4). The same for RRV with loop-only pentagon families. First check: vPSv -> 0 (Furry).
+
+## 6. Order of work
 
 1. RV, validated against the known NNLO DY rapidity distribution (Anastasiou-Dixon-Melnikov-Petriello, hep-ph/0312266).
 2. RVV 1x1 (one-loop masters only).

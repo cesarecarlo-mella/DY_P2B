@@ -1,0 +1,4 @@
+# RV families (rv_families.py): number, box legs after q, propagators D1..D7
+topo1   q-p1-p2-r1  D[1, 2, 3, 4, 5, 7, 11]
+topo2   q-p1-r1-p2  D[1, 2, 3, 4, 5, 9, 11]
+topo3   q-p2-p1-r1  D[1, 2, 3, 4, 6, 7, 11]
