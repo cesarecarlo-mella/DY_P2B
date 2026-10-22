@@ -70,12 +70,13 @@ EVEN = ["vv", "aa", "vv2", "aa2", "v2v", "a2a", "v2v2", "a2a2", "vvX", "aaX"]   
 EVEN += ["vPSv", "vPSv2", "aPSa", "aPSa2"]
 PROJ = {c: (1 if c in EVEN else 6) for c in PIECES}                      # L6 for the parity-odd pieces
 GLUON_GROUPS = {"physical_qqbgg"}
-NCUT = 4                       # RR: cut propagators r1^2, r2^2, q^2 - m2, rapidity (INT(topoN, 1,1,1,1, n1,n2,n3))
-NPROP = 7                      # propagators per family
+NCUT = 4                       # cut propagators r1^2, r2^2, q^2 - m2, rapidity (INT(topoN, 1,1,1,1, n1,...,n8))
+NPROP = 12                     # RRV: 4 cut + 3 RR + 5 loop (pentagon in k1) propagators per family
 LEFTOVERS_05 = [r"\bProp\(", r"\bDen\(cut", r"\bD\d+\b", r"\bDD\d+\b", r"\bTOPO\(", r"\bPropSet\(", r"\bFAM\d\(",
-                r"\bISP\(", r"\b[pr]\d\.[pr]\d\b", r"\bm2\b", r"\bs12\b", r"\bq\b"]
-VERSION_FILES = ["fams/dens.inc", "fams/fammatch_table.inc", "fams/isp_table.inc", "fams/reconstruct.inc",
-                 "fams/symm_loop_crossings.inc"]
+                r"\bISP\(", r"\b[pr]\d\.[pr]\d\b", r"\bm2\b", r"\bs12\b", r"\bq\b",
+                r"\bRRVT\(", r"\bLSHIFT\(", r"\bRRVM\d\(", r"\bLISP\(", r"\bRRF\(", r"\bk1\."]
+VERSION_FILES = ["fams/dens.inc", "fams/isp_table.inc", "fams/symm_loop_crossings.inc", "fams/rrv_loopcodes.inc",
+                 "fams/rrv_match_table.inc", "fams/rrv_shifts.inc", "fams/rrv_isp_table.inc", "fams/rrv_reconstruct.inc"]
 
 
 # ---------------------------------------------------------------- channels

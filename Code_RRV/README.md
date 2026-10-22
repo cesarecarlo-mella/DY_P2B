@@ -28,7 +28,31 @@ Steps done (2026-10-21; user-approved, see notes_Larin/RRV_plan.md section 8):
   gvPS/gaPS + Vline(3) if V is on it; step 01 splits the momentum sums in Spin(3) (as for lines 1, 2); step 04:
   g_(3,...), tracen 3, pieces vPSv, vPSa, vPSv2, vPSa2, aPSv, aPSa, aPSv2, aPSa2 (L1 for vPSv, vPSv2, aPSa, aPSa2).
 - One-loop diagrams per channel (after the filter): Vqqbgg-type 134, identical quarks 112, Q2 56, ghosts 29.
-Not done: kinematics/families with the loop momentum k1 (step 05 onwards), colour test, renormalisation pieces.
+- Step 04 for all 33 channels on newton4 (2026-10-21, 242 pairs, 0 failed); closed loop through the commuting SpinL
+  (f927dca). Vqqbgg colour test consistent.
+
+Step 05, RRV families (2026-10-22):
+- Scripts/tools/collect_dens.py: distinct propagator sets of the step-04 output, per channel <P>_LO/tmp/den/sets.txt;
+  union of the 33 channels in Families/rrv/sets_union.txt (1769 sets, 90 loop parts, 4 of them scaleless; every loop
+  part lies in one pentagon, all 12 orderings occur).
+- Families/rrv_families.py: 12 propagators per family, D1..D4 cuts, 5-7 the 3 regular props of an RR family, 8-12 a
+  pentagon in k1 (k1, k1+a, k1+a+b, k1+a+b+c, k1+a+b+c+d, legs a, b, c, d after q). Global denominators D1..D13 as in
+  RR, D14..D29 = (k1 + S)^2 for the subsets S of {p1, p2, r1, r2}. The RR part goes through the RR partial fractions
+  (same order as FORM); no partial fractions in k1 (one loop: the props of a diagram are always in one pentagon, and
+  the 5 pentagon props are independent in k1.k1, k1.p1, k1.p2, k1.r1, k1.r2). Families: greedy cover over
+  (independent RR family, pentagon ordering), each item directly or through r1 <-> r2: 77 independent families
+  topo1..77 + their r1 <-> r2 images topo78..154 (fams/symm_loop_crossings.inc, same indices). Every collected set
+  is in the matching table (6311 entries, 28 k1 shifts). INT(topoN, 1,1,1,1, n1, ..., n8).
+- Step 05 (utils/template_contractPj.frm): RR partial fractions and dens as in RR; match (RR D's, loop props) ->
+  family and k1 shift (fams/rrv_match_table.inc, rrv_shifts.inc; scaleless loops -> 0); kinematics again; loop ISP
+  (rrv_isp_table.inc: k1.x in the pentagon props), RR ISP of the family's RR part; rrv_reconstruct.inc.
+- Mathematica (Families/, format of integralfamilies.rr.m; p4 = -r1, p5 = -r2, p6 = -k1): integralfamilies.rrv.m
+  (entry N = topoN), denominators.rrv.m (den[n] = Dn), relabelling_momenta.rrv.m (topo78..154 -> topo1..77 with
+  p4 <-> p5). `wolframscript -file Families/check_rrv_families.wl`: RR parts vs integralfamilies.rr.m (RR 1..41),
+  rank 12 in every family, relabellings, loop ISP table modulo D1..D4, every matching-table entry lands in its family.
+- Laptop test (Vqqbccb): av 2_1 571 s, 7032 INT, nothing left; aPSa 1_1 non-zero (topo1, 2, 6); vPSv 1_1 = 0 already
+  before the matching (Furry test to be done on Vqqbgg).
+Not done: step 05 on all channels (newton), Kira for the RRV families, renormalisation pieces.
 
 ----------------------------------------------------------------------------------------------------------------------
 
