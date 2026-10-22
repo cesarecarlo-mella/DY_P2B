@@ -1,0 +1,8 @@
+__pycache__/
+.DS_Store
+# per job only the configuration is in git; the integral lists (from Code_RRV/integrals) and Kira's output not
+jobs/*/*
+!jobs/*/config/
+!jobs/*/jobs.yaml
+!jobs/*/run.sh
+run_state/

@@ -1,0 +1,3544 @@
+[
+ {
+  "family": 1,
+  "lines": [
+   7,
+   9,
+   13,
+   14,
+   16,
+   17,
+   25,
+   29
+  ],
+  "loop": [
+   14,
+   16,
+   17,
+   25,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "p2"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "r2"
+   ],
+   [
+    "r1"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   7,
+   9
+  ],
+  "irreducible_numerators": [
+   13
+  ],
+  "absent": []
+ },
+ {
+  "family": 2,
+  "lines": [
+   8,
+   10,
+   13,
+   14,
+   15,
+   17,
+   25,
+   29
+  ],
+  "loop": [
+   14,
+   15,
+   17,
+   25,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "p2"
+   ],
+   [
+    "r2"
+   ],
+   [
+    "r1"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   8,
+   10
+  ],
+  "irreducible_numerators": [
+   13
+  ],
+  "absent": []
+ },
+ {
+  "family": 3,
+  "lines": [
+   5,
+   8,
+   11,
+   14,
+   15,
+   19,
+   27,
+   29
+  ],
+  "loop": [
+   14,
+   15,
+   19,
+   27,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "r1"
+   ],
+   [
+    "r2"
+   ],
+   [
+    "p2"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   5,
+   8
+  ],
+  "irreducible_numerators": [
+   11
+  ],
+  "absent": []
+ },
+ {
+  "family": 4,
+  "lines": [
+   5,
+   6,
+   9,
+   14,
+   15,
+   23,
+   27,
+   29
+  ],
+  "loop": [
+   14,
+   15,
+   23,
+   27,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "r2"
+   ],
+   [
+    "r1"
+   ],
+   [
+    "p2"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   5,
+   9
+  ],
+  "irreducible_numerators": [
+   6
+  ],
+  "absent": []
+ },
+ {
+  "family": 5,
+  "lines": [
+   5,
+   6,
+   10,
+   14,
+   15,
+   19,
+   27,
+   29
+  ],
+  "loop": [
+   14,
+   15,
+   19,
+   27,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "r1"
+   ],
+   [
+    "r2"
+   ],
+   [
+    "p2"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   6,
+   10
+  ],
+  "irreducible_numerators": [
+   5
+  ],
+  "absent": []
+ },
+ {
+  "family": 6,
+  "lines": [
+   7,
+   11,
+   13,
+   14,
+   15,
+   17,
+   25,
+   29
+  ],
+  "loop": [
+   14,
+   15,
+   17,
+   25,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "p2"
+   ],
+   [
+    "r2"
+   ],
+   [
+    "r1"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   7,
+   13
+  ],
+  "irreducible_numerators": [
+   11
+  ],
+  "absent": []
+ },
+ {
+  "family": 7,
+  "lines": [
+   6,
+   12,
+   13,
+   14,
+   18,
+   19,
+   21,
+   29
+  ],
+  "loop": [
+   14,
+   18,
+   19,
+   21,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "r1"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "p2"
+   ],
+   [
+    "r2"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   6,
+   12
+  ],
+  "irreducible_numerators": [
+   13
+  ],
+  "absent": []
+ },
+ {
+  "family": 8,
+  "lines": [
+   5,
+   6,
+   7,
+   14,
+   16,
+   20,
+   21,
+   29
+  ],
+  "loop": [
+   14,
+   16,
+   20,
+   21,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "p2"
+   ],
+   [
+    "r1"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "r2"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   6,
+   7
+  ],
+  "irreducible_numerators": [
+   5
+  ],
+  "absent": []
+ },
+ {
+  "family": 9,
+  "lines": [
+   5,
+   8,
+   10,
+   14,
+   15,
+   19,
+   21,
+   29
+  ],
+  "loop": [
+   14,
+   15,
+   19,
+   21,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "r1"
+   ],
+   [
+    "p2"
+   ],
+   [
+    "r2"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   5,
+   8
+  ],
+  "irreducible_numerators": [
+   10
+  ],
+  "absent": []
+ },
+ {
+  "family": 10,
+  "lines": [
+   8,
+   9,
+   13,
+   14,
+   16,
+   24,
+   25,
+   29
+  ],
+  "loop": [
+   14,
+   16,
+   24,
+   25,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "p2"
+   ],
+   [
+    "r2"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "r1"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   8,
+   13
+  ],
+  "irreducible_numerators": [
+   9
+  ],
+  "absent": []
+ },
+ {
+  "family": 11,
+  "lines": [
+   5,
+   8,
+   12,
+   14,
+   18,
+   19,
+   21,
+   29
+  ],
+  "loop": [
+   14,
+   18,
+   19,
+   21,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "r1"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "p2"
+   ],
+   [
+    "r2"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   5,
+   8
+  ],
+  "irreducible_numerators": [
+   12
+  ],
+  "absent": []
+ },
+ {
+  "family": 12,
+  "lines": [
+   6,
+   8,
+   12,
+   14,
+   15,
+   19,
+   21,
+   29
+  ],
+  "loop": [
+   14,
+   15,
+   19,
+   21,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "r1"
+   ],
+   [
+    "p2"
+   ],
+   [
+    "r2"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   6,
+   12
+  ],
+  "irreducible_numerators": [
+   8
+  ],
+  "absent": []
+ },
+ {
+  "family": 13,
+  "lines": [
+   8,
+   11,
+   13,
+   14,
+   16,
+   17,
+   25,
+   29
+  ],
+  "loop": [
+   14,
+   16,
+   17,
+   25,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "p2"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "r2"
+   ],
+   [
+    "r1"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   8,
+   13
+  ],
+  "irreducible_numerators": [
+   11
+  ],
+  "absent": []
+ },
+ {
+  "family": 14,
+  "lines": [
+   5,
+   8,
+   9,
+   14,
+   15,
+   17,
+   25,
+   29
+  ],
+  "loop": [
+   14,
+   15,
+   17,
+   25,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "p2"
+   ],
+   [
+    "r2"
+   ],
+   [
+    "r1"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   5,
+   8
+  ],
+  "irreducible_numerators": [
+   9
+  ],
+  "absent": []
+ },
+ {
+  "family": 15,
+  "lines": [
+   5,
+   8,
+   13,
+   14,
+   16,
+   17,
+   21,
+   29
+  ],
+  "loop": [
+   14,
+   16,
+   17,
+   21,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "p2"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "r1"
+   ],
+   [
+    "r2"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   5,
+   8
+  ],
+  "irreducible_numerators": [
+   13
+  ],
+  "absent": []
+ },
+ {
+  "family": 16,
+  "lines": [
+   5,
+   9,
+   13,
+   14,
+   16,
+   24,
+   25,
+   29
+  ],
+  "loop": [
+   14,
+   16,
+   24,
+   25,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "p2"
+   ],
+   [
+    "r2"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "r1"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   5,
+   9
+  ],
+  "irreducible_numerators": [
+   13
+  ],
+  "absent": []
+ },
+ {
+  "family": 17,
+  "lines": [
+   7,
+   10,
+   13,
+   14,
+   15,
+   23,
+   25,
+   29
+  ],
+  "loop": [
+   14,
+   15,
+   23,
+   25,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "r2"
+   ],
+   [
+    "p2"
+   ],
+   [
+    "r1"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   7,
+   13
+  ],
+  "irreducible_numerators": [
+   10
+  ],
+  "absent": []
+ },
+ {
+  "family": 18,
+  "lines": [
+   5,
+   6,
+   8,
+   14,
+   15,
+   19,
+   21,
+   29
+  ],
+  "loop": [
+   14,
+   15,
+   19,
+   21,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "r1"
+   ],
+   [
+    "p2"
+   ],
+   [
+    "r2"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   5,
+   8
+  ],
+  "irreducible_numerators": [
+   6
+  ],
+  "absent": []
+ },
+ {
+  "family": 19,
+  "lines": [
+   5,
+   7,
+   12,
+   14,
+   16,
+   20,
+   21,
+   29
+  ],
+  "loop": [
+   14,
+   16,
+   20,
+   21,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "p2"
+   ],
+   [
+    "r1"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "r2"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   5,
+   12
+  ],
+  "irreducible_numerators": [
+   7
+  ],
+  "absent": []
+ },
+ {
+  "family": 20,
+  "lines": [
+   6,
+   10,
+   13,
+   14,
+   18,
+   20,
+   21,
+   29
+  ],
+  "loop": [
+   14,
+   18,
+   20,
+   21,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "r1"
+   ],
+   [
+    "p2"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "r2"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   6,
+   10
+  ],
+  "irreducible_numerators": [
+   13
+  ],
+  "absent": []
+ },
+ {
+  "family": 21,
+  "lines": [
+   5,
+   12,
+   13,
+   14,
+   18,
+   19,
+   21,
+   29
+  ],
+  "loop": [
+   14,
+   18,
+   19,
+   21,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "r1"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "p2"
+   ],
+   [
+    "r2"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   5,
+   12
+  ],
+  "irreducible_numerators": [
+   13
+  ],
+  "absent": []
+ },
+ {
+  "family": 22,
+  "lines": [
+   5,
+   8,
+   10,
+   14,
+   16,
+   17,
+   21,
+   29
+  ],
+  "loop": [
+   14,
+   16,
+   17,
+   21,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "p2"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "r1"
+   ],
+   [
+    "r2"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   5,
+   8
+  ],
+  "irreducible_numerators": [
+   10
+  ],
+  "absent": []
+ },
+ {
+  "family": 23,
+  "lines": [
+   7,
+   9,
+   13,
+   14,
+   18,
+   19,
+   21,
+   29
+  ],
+  "loop": [
+   14,
+   18,
+   19,
+   21,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "r1"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "p2"
+   ],
+   [
+    "r2"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   7,
+   9
+  ],
+  "irreducible_numerators": [
+   13
+  ],
+  "absent": []
+ },
+ {
+  "family": 24,
+  "lines": [
+   5,
+   8,
+   9,
+   14,
+   16,
+   20,
+   21,
+   29
+  ],
+  "loop": [
+   14,
+   16,
+   20,
+   21,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "p2"
+   ],
+   [
+    "r1"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "r2"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   5,
+   8
+  ],
+  "irreducible_numerators": [
+   9
+  ],
+  "absent": []
+ },
+ {
+  "family": 25,
+  "lines": [
+   5,
+   8,
+   13,
+   14,
+   16,
+   24,
+   25,
+   29
+  ],
+  "loop": [
+   14,
+   16,
+   24,
+   25,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "p2"
+   ],
+   [
+    "r2"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "r1"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   5,
+   8
+  ],
+  "irreducible_numerators": [
+   13
+  ],
+  "absent": []
+ },
+ {
+  "family": 26,
+  "lines": [
+   5,
+   8,
+   12,
+   14,
+   15,
+   23,
+   25,
+   29
+  ],
+  "loop": [
+   14,
+   15,
+   23,
+   25,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "r2"
+   ],
+   [
+    "p2"
+   ],
+   [
+    "r1"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   5,
+   8
+  ],
+  "irreducible_numerators": [
+   12
+  ],
+  "absent": []
+ },
+ {
+  "family": 27,
+  "lines": [
+   8,
+   10,
+   13,
+   14,
+   16,
+   20,
+   21,
+   29
+  ],
+  "loop": [
+   14,
+   16,
+   20,
+   21,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "p2"
+   ],
+   [
+    "r1"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "r2"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   8,
+   10
+  ],
+  "irreducible_numerators": [
+   13
+  ],
+  "absent": []
+ },
+ {
+  "family": 28,
+  "lines": [
+   5,
+   6,
+   9,
+   14,
+   15,
+   19,
+   21,
+   29
+  ],
+  "loop": [
+   14,
+   15,
+   19,
+   21,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "r1"
+   ],
+   [
+    "p2"
+   ],
+   [
+    "r2"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   5,
+   9
+  ],
+  "irreducible_numerators": [
+   6
+  ],
+  "absent": []
+ },
+ {
+  "family": 29,
+  "lines": [
+   7,
+   11,
+   13,
+   14,
+   15,
+   23,
+   27,
+   29
+  ],
+  "loop": [
+   14,
+   15,
+   23,
+   27,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "r2"
+   ],
+   [
+    "r1"
+   ],
+   [
+    "p2"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   7,
+   13
+  ],
+  "irreducible_numerators": [
+   11
+  ],
+  "absent": []
+ },
+ {
+  "family": 30,
+  "lines": [
+   8,
+   11,
+   13,
+   14,
+   15,
+   17,
+   25,
+   29
+  ],
+  "loop": [
+   14,
+   15,
+   17,
+   25,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "p2"
+   ],
+   [
+    "r2"
+   ],
+   [
+    "r1"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   8,
+   13
+  ],
+  "irreducible_numerators": [
+   11
+  ],
+  "absent": []
+ },
+ {
+  "family": 31,
+  "lines": [
+   5,
+   6,
+   10,
+   14,
+   15,
+   19,
+   21,
+   29
+  ],
+  "loop": [
+   14,
+   15,
+   19,
+   21,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "r1"
+   ],
+   [
+    "p2"
+   ],
+   [
+    "r2"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   6,
+   10
+  ],
+  "irreducible_numerators": [
+   5
+  ],
+  "absent": []
+ },
+ {
+  "family": 32,
+  "lines": [
+   6,
+   10,
+   13,
+   14,
+   15,
+   17,
+   25,
+   29
+  ],
+  "loop": [
+   14,
+   15,
+   17,
+   25,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "p2"
+   ],
+   [
+    "r2"
+   ],
+   [
+    "r1"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   6,
+   10
+  ],
+  "irreducible_numerators": [
+   13
+  ],
+  "absent": []
+ },
+ {
+  "family": 33,
+  "lines": [
+   7,
+   10,
+   13,
+   14,
+   15,
+   17,
+   21,
+   29
+  ],
+  "loop": [
+   14,
+   15,
+   17,
+   21,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "p2"
+   ],
+   [
+    "r1"
+   ],
+   [
+    "r2"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   7,
+   13
+  ],
+  "irreducible_numerators": [
+   10
+  ],
+  "absent": []
+ },
+ {
+  "family": 34,
+  "lines": [
+   8,
+   9,
+   13,
+   14,
+   15,
+   19,
+   27,
+   29
+  ],
+  "loop": [
+   14,
+   15,
+   19,
+   27,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "r1"
+   ],
+   [
+    "r2"
+   ],
+   [
+    "p2"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   8,
+   13
+  ],
+  "irreducible_numerators": [
+   9
+  ],
+  "absent": []
+ },
+ {
+  "family": 35,
+  "lines": [
+   6,
+   12,
+   13,
+   14,
+   15,
+   23,
+   25,
+   29
+  ],
+  "loop": [
+   14,
+   15,
+   23,
+   25,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "r2"
+   ],
+   [
+    "p2"
+   ],
+   [
+    "r1"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   6,
+   12
+  ],
+  "irreducible_numerators": [
+   13
+  ],
+  "absent": []
+ },
+ {
+  "family": 36,
+  "lines": [
+   5,
+   6,
+   7,
+   14,
+   18,
+   19,
+   21,
+   29
+  ],
+  "loop": [
+   14,
+   18,
+   19,
+   21,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "r1"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "p2"
+   ],
+   [
+    "r2"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   6,
+   7
+  ],
+  "irreducible_numerators": [
+   5
+  ],
+  "absent": []
+ },
+ {
+  "family": 37,
+  "lines": [
+   5,
+   8,
+   11,
+   14,
+   16,
+   17,
+   21,
+   29
+  ],
+  "loop": [
+   14,
+   16,
+   17,
+   21,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "p2"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "r1"
+   ],
+   [
+    "r2"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   5,
+   8
+  ],
+  "irreducible_numerators": [
+   11
+  ],
+  "absent": []
+ },
+ {
+  "family": 38,
+  "lines": [
+   5,
+   6,
+   8,
+   14,
+   15,
+   23,
+   27,
+   29
+  ],
+  "loop": [
+   14,
+   15,
+   23,
+   27,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "r2"
+   ],
+   [
+    "r1"
+   ],
+   [
+    "p2"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   5,
+   8
+  ],
+  "irreducible_numerators": [
+   6
+  ],
+  "absent": []
+ },
+ {
+  "family": 39,
+  "lines": [
+   5,
+   8,
+   9,
+   14,
+   15,
+   19,
+   27,
+   29
+  ],
+  "loop": [
+   14,
+   15,
+   19,
+   27,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "r1"
+   ],
+   [
+    "r2"
+   ],
+   [
+    "p2"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   5,
+   8
+  ],
+  "irreducible_numerators": [
+   9
+  ],
+  "absent": []
+ },
+ {
+  "family": 40,
+  "lines": [
+   5,
+   7,
+   12,
+   14,
+   16,
+   17,
+   25,
+   29
+  ],
+  "loop": [
+   14,
+   16,
+   17,
+   25,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "p2"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "r2"
+   ],
+   [
+    "r1"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   5,
+   12
+  ],
+  "irreducible_numerators": [
+   7
+  ],
+  "absent": []
+ },
+ {
+  "family": 41,
+  "lines": [
+   5,
+   8,
+   13,
+   14,
+   18,
+   19,
+   21,
+   29
+  ],
+  "loop": [
+   14,
+   18,
+   19,
+   21,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "r1"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "p2"
+   ],
+   [
+    "r2"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   5,
+   8
+  ],
+  "irreducible_numerators": [
+   13
+  ],
+  "absent": []
+ },
+ {
+  "family": 42,
+  "lines": [
+   6,
+   8,
+   12,
+   14,
+   15,
+   17,
+   25,
+   29
+  ],
+  "loop": [
+   14,
+   15,
+   17,
+   25,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "p2"
+   ],
+   [
+    "r2"
+   ],
+   [
+    "r1"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   6,
+   12
+  ],
+  "irreducible_numerators": [
+   8
+  ],
+  "absent": []
+ },
+ {
+  "family": 43,
+  "lines": [
+   5,
+   12,
+   13,
+   14,
+   16,
+   24,
+   25,
+   29
+  ],
+  "loop": [
+   14,
+   16,
+   24,
+   25,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "p2"
+   ],
+   [
+    "r2"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "r1"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   5,
+   12
+  ],
+  "irreducible_numerators": [
+   13
+  ],
+  "absent": []
+ },
+ {
+  "family": 44,
+  "lines": [
+   5,
+   9,
+   13,
+   14,
+   16,
+   17,
+   25,
+   29
+  ],
+  "loop": [
+   14,
+   16,
+   17,
+   25,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "p2"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "r2"
+   ],
+   [
+    "r1"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   5,
+   9
+  ],
+  "irreducible_numerators": [
+   13
+  ],
+  "absent": []
+ },
+ {
+  "family": 45,
+  "lines": [
+   7,
+   11,
+   13,
+   14,
+   15,
+   23,
+   25,
+   29
+  ],
+  "loop": [
+   14,
+   15,
+   23,
+   25,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "r2"
+   ],
+   [
+    "p2"
+   ],
+   [
+    "r1"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   7,
+   13
+  ],
+  "irreducible_numerators": [
+   11
+  ],
+  "absent": []
+ },
+ {
+  "family": 46,
+  "lines": [
+   5,
+   8,
+   10,
+   14,
+   15,
+   17,
+   21,
+   29
+  ],
+  "loop": [
+   14,
+   15,
+   17,
+   21,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "p2"
+   ],
+   [
+    "r1"
+   ],
+   [
+    "r2"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   5,
+   8
+  ],
+  "irreducible_numerators": [
+   10
+  ],
+  "absent": []
+ },
+ {
+  "family": 47,
+  "lines": [
+   8,
+   10,
+   13,
+   14,
+   15,
+   23,
+   25,
+   29
+  ],
+  "loop": [
+   14,
+   15,
+   23,
+   25,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "r2"
+   ],
+   [
+    "p2"
+   ],
+   [
+    "r1"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   8,
+   10
+  ],
+  "irreducible_numerators": [
+   13
+  ],
+  "absent": []
+ },
+ {
+  "family": 48,
+  "lines": [
+   5,
+   8,
+   12,
+   14,
+   15,
+   19,
+   21,
+   29
+  ],
+  "loop": [
+   14,
+   15,
+   19,
+   21,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "r1"
+   ],
+   [
+    "p2"
+   ],
+   [
+    "r2"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   5,
+   8
+  ],
+  "irreducible_numerators": [
+   12
+  ],
+  "absent": []
+ },
+ {
+  "family": 49,
+  "lines": [
+   5,
+   8,
+   9,
+   14,
+   16,
+   17,
+   25,
+   29
+  ],
+  "loop": [
+   14,
+   16,
+   17,
+   25,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "p2"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "r2"
+   ],
+   [
+    "r1"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   5,
+   8
+  ],
+  "irreducible_numerators": [
+   9
+  ],
+  "absent": []
+ },
+ {
+  "family": 50,
+  "lines": [
+   5,
+   8,
+   10,
+   14,
+   15,
+   19,
+   27,
+   29
+  ],
+  "loop": [
+   14,
+   15,
+   19,
+   27,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "r1"
+   ],
+   [
+    "r2"
+   ],
+   [
+    "p2"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   5,
+   8
+  ],
+  "irreducible_numerators": [
+   10
+  ],
+  "absent": []
+ },
+ {
+  "family": 51,
+  "lines": [
+   7,
+   9,
+   13,
+   14,
+   15,
+   19,
+   27,
+   29
+  ],
+  "loop": [
+   14,
+   15,
+   19,
+   27,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "r1"
+   ],
+   [
+    "r2"
+   ],
+   [
+    "p2"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   7,
+   9
+  ],
+  "irreducible_numerators": [
+   13
+  ],
+  "absent": []
+ },
+ {
+  "family": 52,
+  "lines": [
+   5,
+   8,
+   11,
+   14,
+   16,
+   24,
+   25,
+   29
+  ],
+  "loop": [
+   14,
+   16,
+   24,
+   25,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "p2"
+   ],
+   [
+    "r2"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "r1"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   5,
+   8
+  ],
+  "irreducible_numerators": [
+   11
+  ],
+  "absent": []
+ },
+ {
+  "family": 53,
+  "lines": [
+   5,
+   6,
+   8,
+   14,
+   16,
+   20,
+   21,
+   29
+  ],
+  "loop": [
+   14,
+   16,
+   20,
+   21,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "p2"
+   ],
+   [
+    "r1"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "r2"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   5,
+   8
+  ],
+  "irreducible_numerators": [
+   6
+  ],
+  "absent": []
+ },
+ {
+  "family": 54,
+  "lines": [
+   5,
+   6,
+   9,
+   14,
+   16,
+   20,
+   21,
+   29
+  ],
+  "loop": [
+   14,
+   16,
+   20,
+   21,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "p2"
+   ],
+   [
+    "r1"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "r2"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   5,
+   9
+  ],
+  "irreducible_numerators": [
+   6
+  ],
+  "absent": []
+ },
+ {
+  "family": 55,
+  "lines": [
+   5,
+   6,
+   10,
+   14,
+   16,
+   17,
+   21,
+   29
+  ],
+  "loop": [
+   14,
+   16,
+   17,
+   21,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "p2"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "r1"
+   ],
+   [
+    "r2"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   6,
+   10
+  ],
+  "irreducible_numerators": [
+   5
+  ],
+  "absent": []
+ },
+ {
+  "family": 56,
+  "lines": [
+   5,
+   8,
+   9,
+   14,
+   18,
+   19,
+   21,
+   29
+  ],
+  "loop": [
+   14,
+   18,
+   19,
+   21,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "r1"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "p2"
+   ],
+   [
+    "r2"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   5,
+   8
+  ],
+  "irreducible_numerators": [
+   9
+  ],
+  "absent": []
+ },
+ {
+  "family": 57,
+  "lines": [
+   6,
+   12,
+   13,
+   14,
+   18,
+   20,
+   21,
+   29
+  ],
+  "loop": [
+   14,
+   18,
+   20,
+   21,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "r1"
+   ],
+   [
+    "p2"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "r2"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   6,
+   12
+  ],
+  "irreducible_numerators": [
+   13
+  ],
+  "absent": []
+ },
+ {
+  "family": 58,
+  "lines": [
+   6,
+   10,
+   13,
+   14,
+   15,
+   23,
+   25,
+   29
+  ],
+  "loop": [
+   14,
+   15,
+   23,
+   25,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "r2"
+   ],
+   [
+    "p2"
+   ],
+   [
+    "r1"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   6,
+   10
+  ],
+  "irreducible_numerators": [
+   13
+  ],
+  "absent": []
+ },
+ {
+  "family": 59,
+  "lines": [
+   8,
+   10,
+   13,
+   14,
+   15,
+   23,
+   27,
+   29
+  ],
+  "loop": [
+   14,
+   15,
+   23,
+   27,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "r2"
+   ],
+   [
+    "r1"
+   ],
+   [
+    "p2"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   8,
+   10
+  ],
+  "irreducible_numerators": [
+   13
+  ],
+  "absent": []
+ },
+ {
+  "family": 60,
+  "lines": [
+   8,
+   10,
+   13,
+   14,
+   18,
+   20,
+   21,
+   29
+  ],
+  "loop": [
+   14,
+   18,
+   20,
+   21,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "r1"
+   ],
+   [
+    "p2"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "r2"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   8,
+   10
+  ],
+  "irreducible_numerators": [
+   13
+  ],
+  "absent": []
+ },
+ {
+  "family": 61,
+  "lines": [
+   7,
+   9,
+   13,
+   14,
+   16,
+   24,
+   25,
+   29
+  ],
+  "loop": [
+   14,
+   16,
+   24,
+   25,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "p2"
+   ],
+   [
+    "r2"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "r1"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   7,
+   9
+  ],
+  "irreducible_numerators": [
+   13
+  ],
+  "absent": []
+ },
+ {
+  "family": 62,
+  "lines": [
+   5,
+   8,
+   11,
+   14,
+   18,
+   19,
+   21,
+   29
+  ],
+  "loop": [
+   14,
+   18,
+   19,
+   21,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "r1"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "p2"
+   ],
+   [
+    "r2"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   5,
+   8
+  ],
+  "irreducible_numerators": [
+   11
+  ],
+  "absent": []
+ },
+ {
+  "family": 63,
+  "lines": [
+   5,
+   6,
+   7,
+   14,
+   15,
+   19,
+   27,
+   29
+  ],
+  "loop": [
+   14,
+   15,
+   19,
+   27,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "r1"
+   ],
+   [
+    "r2"
+   ],
+   [
+    "p2"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   6,
+   7
+  ],
+  "irreducible_numerators": [
+   5
+  ],
+  "absent": []
+ },
+ {
+  "family": 64,
+  "lines": [
+   5,
+   6,
+   9,
+   14,
+   15,
+   17,
+   21,
+   29
+  ],
+  "loop": [
+   14,
+   15,
+   17,
+   21,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "p2"
+   ],
+   [
+    "r1"
+   ],
+   [
+    "r2"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   5,
+   9
+  ],
+  "irreducible_numerators": [
+   6
+  ],
+  "absent": []
+ },
+ {
+  "family": 65,
+  "lines": [
+   5,
+   6,
+   9,
+   14,
+   15,
+   23,
+   25,
+   29
+  ],
+  "loop": [
+   14,
+   15,
+   23,
+   25,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "r2"
+   ],
+   [
+    "p2"
+   ],
+   [
+    "r1"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   5,
+   9
+  ],
+  "irreducible_numerators": [
+   6
+  ],
+  "absent": []
+ },
+ {
+  "family": 66,
+  "lines": [
+   5,
+   6,
+   10,
+   14,
+   16,
+   20,
+   21,
+   29
+  ],
+  "loop": [
+   14,
+   16,
+   20,
+   21,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "p2"
+   ],
+   [
+    "r1"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "r2"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   6,
+   10
+  ],
+  "irreducible_numerators": [
+   5
+  ],
+  "absent": []
+ },
+ {
+  "family": 67,
+  "lines": [
+   5,
+   8,
+   11,
+   14,
+   15,
+   17,
+   21,
+   29
+  ],
+  "loop": [
+   14,
+   15,
+   17,
+   21,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "p2"
+   ],
+   [
+    "r1"
+   ],
+   [
+    "r2"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   5,
+   8
+  ],
+  "irreducible_numerators": [
+   11
+  ],
+  "absent": []
+ },
+ {
+  "family": 68,
+  "lines": [
+   5,
+   7,
+   12,
+   14,
+   15,
+   23,
+   25,
+   29
+  ],
+  "loop": [
+   14,
+   15,
+   23,
+   25,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "r2"
+   ],
+   [
+    "p2"
+   ],
+   [
+    "r1"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   5,
+   12
+  ],
+  "irreducible_numerators": [
+   7
+  ],
+  "absent": []
+ },
+ {
+  "family": 69,
+  "lines": [
+   5,
+   8,
+   12,
+   14,
+   15,
+   17,
+   21,
+   29
+  ],
+  "loop": [
+   14,
+   15,
+   17,
+   21,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "p2"
+   ],
+   [
+    "r1"
+   ],
+   [
+    "r2"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   5,
+   8
+  ],
+  "irreducible_numerators": [
+   12
+  ],
+  "absent": []
+ },
+ {
+  "family": 70,
+  "lines": [
+   5,
+   8,
+   13,
+   14,
+   16,
+   17,
+   25,
+   29
+  ],
+  "loop": [
+   14,
+   16,
+   17,
+   25,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "p2"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "r2"
+   ],
+   [
+    "r1"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   5,
+   8
+  ],
+  "irreducible_numerators": [
+   13
+  ],
+  "absent": []
+ },
+ {
+  "family": 71,
+  "lines": [
+   6,
+   8,
+   12,
+   14,
+   16,
+   24,
+   25,
+   29
+  ],
+  "loop": [
+   14,
+   16,
+   24,
+   25,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "p2"
+   ],
+   [
+    "r2"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "r1"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   6,
+   12
+  ],
+  "irreducible_numerators": [
+   8
+  ],
+  "absent": []
+ },
+ {
+  "family": 72,
+  "lines": [
+   5,
+   12,
+   13,
+   14,
+   16,
+   17,
+   25,
+   29
+  ],
+  "loop": [
+   14,
+   16,
+   17,
+   25,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "p2"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "r2"
+   ],
+   [
+    "r1"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   5,
+   12
+  ],
+  "irreducible_numerators": [
+   13
+  ],
+  "absent": []
+ },
+ {
+  "family": 73,
+  "lines": [
+   7,
+   10,
+   13,
+   14,
+   15,
+   17,
+   25,
+   29
+  ],
+  "loop": [
+   14,
+   15,
+   17,
+   25,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "p2"
+   ],
+   [
+    "r2"
+   ],
+   [
+    "r1"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   7,
+   13
+  ],
+  "irreducible_numerators": [
+   10
+  ],
+  "absent": []
+ },
+ {
+  "family": 74,
+  "lines": [
+   7,
+   11,
+   13,
+   14,
+   16,
+   17,
+   21,
+   29
+  ],
+  "loop": [
+   14,
+   16,
+   17,
+   21,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "p2"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "r1"
+   ],
+   [
+    "r2"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   7,
+   13
+  ],
+  "irreducible_numerators": [
+   11
+  ],
+  "absent": []
+ },
+ {
+  "family": 75,
+  "lines": [
+   8,
+   11,
+   13,
+   14,
+   15,
+   19,
+   27,
+   29
+  ],
+  "loop": [
+   14,
+   15,
+   19,
+   27,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "r1"
+   ],
+   [
+    "r2"
+   ],
+   [
+    "p2"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   8,
+   13
+  ],
+  "irreducible_numerators": [
+   11
+  ],
+  "absent": []
+ },
+ {
+  "family": 76,
+  "lines": [
+   5,
+   9,
+   13,
+   14,
+   15,
+   17,
+   25,
+   29
+  ],
+  "loop": [
+   14,
+   15,
+   17,
+   25,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "p2"
+   ],
+   [
+    "r2"
+   ],
+   [
+    "r1"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   5,
+   9
+  ],
+  "irreducible_numerators": [
+   13
+  ],
+  "absent": []
+ },
+ {
+  "family": 77,
+  "lines": [
+   8,
+   9,
+   13,
+   14,
+   15,
+   23,
+   27,
+   29
+  ],
+  "loop": [
+   14,
+   15,
+   23,
+   27,
+   29
+  ],
+  "loop_groups": [
+   [
+    "q"
+   ],
+   [
+    "p1"
+   ],
+   [
+    "r2"
+   ],
+   [
+    "r1"
+   ],
+   [
+    "p2"
+   ]
+  ],
+  "amplitude_trees": [],
+  "conjugate": [
+   8,
+   13
+  ],
+  "irreducible_numerators": [
+   9
+  ],
+  "absent": []
+ }
+]

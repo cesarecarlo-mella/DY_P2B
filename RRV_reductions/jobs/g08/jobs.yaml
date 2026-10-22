@@ -1,0 +1,73 @@
+# group g08: RRV families 8 19 25 43 (Code_RRV/integrals/all; make_jobs.py)
+jobs:
+ - reduce_sectors:
+    conditional: true
+    reduce:
+     - {topologies: [topo8], sectors: [3583], r: 11, s: 5}
+     - {topologies: [topo8], sectors: [1919], r: 10, s: 5}
+     - {topologies: [topo8], sectors: [2815], r: 10, s: 5}
+     - {topologies: [topo8], sectors: [3039], r: 10, s: 5}
+     - {topologies: [topo8], sectors: [3775], r: 10, s: 5}
+     - {topologies: [topo8], sectors: [1775], r: 9, s: 5}
+     - {topologies: [topo8], sectors: [1999], r: 9, s: 5}
+     - {topologies: [topo8], sectors: [2927], r: 9, s: 5}
+     - {topologies: [topo8], sectors: [3679], r: 9, s: 5}
+     - {topologies: [topo8], sectors: [3887], r: 9, s: 4}
+     - {topologies: [topo8], sectors: [3983], r: 9, s: 4}
+     - {topologies: [topo19], sectors: [3071], r: 11, s: 6}
+     - {topologies: [topo19], sectors: [4063], r: 11, s: 5}
+     - {topologies: [topo19], sectors: [1919], r: 10, s: 5}
+     - {topologies: [topo19], sectors: [3327], r: 10, s: 5}
+     - {topologies: [topo19], sectors: [1471], r: 9, s: 4}
+     - {topologies: [topo19], sectors: [1519], r: 9, s: 5}
+     - {topologies: [topo25], sectors: [2015], r: 10, s: 5}
+     - {topologies: [topo25], sectors: [2815], r: 10, s: 5}
+     - {topologies: [topo25], sectors: [3039], r: 10, s: 5}
+     - {topologies: [topo25], sectors: [3327], r: 10, s: 5}
+     - {topologies: [topo25], sectors: [3519], r: 10, s: 5}
+     - {topologies: [topo25], sectors: [511], r: 9, s: 4}
+     - {topologies: [topo25], sectors: [895], r: 9, s: 4}
+     - {topologies: [topo25], sectors: [959], r: 10, s: 5}
+     - {topologies: [topo25], sectors: [1007], r: 10, s: 5}
+     - {topologies: [topo25], sectors: [1519], r: 9, s: 5}
+     - {topologies: [topo25], sectors: [1663], r: 9, s: 4}
+     - {topologies: [topo25], sectors: [1727], r: 10, s: 5}
+     - {topologies: [topo25], sectors: [1775], r: 10, s: 5}
+     - {topologies: [topo25], sectors: [1855], r: 9, s: 5}
+     - {topologies: [topo25], sectors: [1903], r: 9, s: 5}
+     - {topologies: [topo25], sectors: [2543], r: 9, s: 4}
+     - {topologies: [topo25], sectors: [2879], r: 9, s: 4}
+     - {topologies: [topo25], sectors: [2927], r: 9, s: 4}
+     - {topologies: [topo25], sectors: [3759], r: 9, s: 4}
+     - {topologies: [topo25], sectors: [3887], r: 9, s: 4}
+     - {topologies: [topo25], sectors: [3983], r: 9, s: 4}
+     - {topologies: [topo43], sectors: [1983], r: 10, s: 5}
+     - {topologies: [topo43], sectors: [2015], r: 10, s: 5}
+     - {topologies: [topo43], sectors: [3007], r: 11, s: 5}
+     - {topologies: [topo43], sectors: [3519], r: 10, s: 5}
+     - {topologies: [topo43], sectors: [4015], r: 10, s: 6}
+    select_integrals:
+      select_mandatory_list:
+        - [topo8, toreduce/topo8.txt]
+        - [topo19, toreduce/topo19.txt]
+        - [topo25, toreduce/topo25.txt]
+        - [topo43, toreduce/topo43.txt]
+    run_symmetries: true
+    run_initiate: true
+    run_triangular: false
+    run_firefly: true
+    run_back_substitution: false
+ - kira2math:
+    target:
+       - [topo8, toreduce/topo8.txt]
+       - [topo19, toreduce/topo19.txt]
+       - [topo25, toreduce/topo25.txt]
+       - [topo43, toreduce/topo43.txt]
+    reconstruct_mass: false
+ - kira2form:
+    target:
+       - [topo8, toreduce/topo8.txt]
+       - [topo19, toreduce/topo19.txt]
+       - [topo25, toreduce/topo25.txt]
+       - [topo43, toreduce/topo43.txt]
+    reconstruct_mass: false

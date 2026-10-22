@@ -1,0 +1,23 @@
+# groups of the 77 RRV families of Code_RRV/integrals/all (make_jobs.py group --size 4); one job per line, 'name: family numbers'. Editable.
+# common sectors within groups, summed: 9027
+# comment: #integrals, #occurring sectors (up to r1 <-> r2) in the union, common sectors summed over pairs
+g01: 1 16 44 61        #  21336 int,  491 sectors,  581 common
+g02: 2 32 42 46        #  20454 int,  482 sectors,  579 common
+g03: 3 29 59 75        #  16533 int,  473 sectors,  399 common
+g04: 4 34 39 51        #  17841 int,  431 sectors,  683 common
+g05: 5 38 50 63        #  16323 int,  399 sectors,  607 common
+g06: 6 30 67 69        #  17096 int,  383 sectors,  503 common
+g07: 7 20 57 60        #  23081 int,  473 sectors,  443 common
+g08: 8 19 25 43        #  29258 int,  413 sectors,  574 common
+g09: 9 17 31 47        #  22100 int,  485 sectors,  666 common
+g10: 10 24 53 54       #  18200 int,  449 sectors,  425 common
+g11: 11 21 41 56       #  25900 int,  402 sectors,  525 common
+g12: 12 35 48 58       #  21695 int,  440 sectors,  602 common
+g13: 13 15 40 74       #  22336 int,  480 sectors,  507 common
+g14: 14 18 28 65       #  19949 int,  472 sectors,  389 common
+g15: 22 37 49 55       #  12928 int,  459 sectors,  467 common
+g16: 23 26 36 68       #  19655 int,  496 sectors,  377 common
+g17: 27 52 66 71       #  13032 int,  355 sectors,  361 common
+g18: 33 64 73 76       #   8351 int,  371 sectors,  211 common
+g19: 45 62 70 72       #   7897 int,  287 sectors,  128 common
+g20: 77                #   1025 int,  118 sectors,    0 common

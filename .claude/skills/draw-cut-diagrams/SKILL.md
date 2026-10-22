@@ -5,16 +5,21 @@ description: Draw the triple-real integral families or individual sectors (e.g. 
 
 # Drawing integral families and sectors as cut diagrams
 
-Tool: `FamilyDrawings/draw_families.py` (repository root, next to `Code_RRR/`). It reads the families from
-`../Code_RRR/Families` (`families_raw.m`, `families_relabelling.m`, `fams/reconstruct.inc`, `find_circuits.REGULAR`),
-so it must stay at that level. Needs `pdflatex` with `tikz-feynman` (TeX Live 2020 on the laptop: load it with
+Two tools, one folder per contribution:
+- RRR: `FamilyDrawings/RRR/draw_families.py`. It reads the families from `../../Code_RRR/Families` (`families_raw.m`,
+  `families_relabelling.m`, `fams/reconstruct.inc`, `find_circuits.REGULAR`), so it must stay at that level.
+- RRV: `FamilyDrawings/RRV/draw_families_rrv.py` (one-loop amplitude x tree conjugate; the k1 loop in green). It reads
+  `../../Code_RRV/Families` (`integralfamilies_r.rrv.m`, `rrv_families.txt`) and imports the layout helpers of
+  `../RRR/draw_families.py`. Same options (`N ...`, `--sectors FILE`, `--top-sectors integrals.m`, `--straight`,
+  `--no-arrows`, `--momentum-labels`); outputs `families_rrv.*`, `sectors_rrv.*`. Sector lists from
+  `Code_RRV/integrals/Tools/analyse_integrals.py` (`analysis/topsectors_list.txt`). Needs `pdflatex` with `tikz-feynman` (TeX Live 2020 on the laptop: load it with
 `compat=1.1.0`; the `charged ghost` style does not exist there) and `pdftoppm` to look at the result. Graphviz is not
 used by this tool (only by `Code_RRR/Scripts/diagrams/draw_diagrams.py`, the per-channel Feynman diagrams).
 
 ## Commands
 
 ```
-cd FamilyDrawings
+cd FamilyDrawings/RRR
 python3 draw_families.py                         # the 156 independent families -> families.pdf/.tex/.json
 python3 draw_families.py --all                   # all 921 families
 python3 draw_families.py 1 7 910                 # selected families
@@ -27,7 +32,7 @@ Sector file, one per line (`#` comments allowed):
 - `topo55[1,1,1,1,1,1,0,1,1,0,0,0]` -- INT indices (5 cut indices, then the 7 regular ones in the family's INT order
   from `reconstruct.inc`); positive index = line present;
 - or `55: 6 13 8` -- family number and the DD numbers of the lines present.
-The user's own sector list is `FamilyDrawings/my_sectors.txt` (theirs: do not commit or overwrite it).
+The user's own sector list is `FamilyDrawings/RRR/my_sectors.txt` (theirs: do not commit or overwrite it).
 `--top-sectors` reads an `integrals.m` from `Code_RRR/Scripts/run_all.py integrals` (default `Code_RRR/integrals/<set>/`).
 The top sectors to reduce (with the subsector trees and s/dots from the trees) come from
 `Code_RRR/integrals/Tools/analyse_integrals.py <collection>`; its `analysis/topsectors_list.txt` is a ready `--sectors` file:
@@ -70,5 +75,5 @@ expected, labels readable. Known cosmetic limit: where 4-5 lines meet in a small
 ## Housekeeping
 
 Commit `draw_families.py`, `README.md` and the generated `.pdf/.tex/.json`; `FamilyDrawings/.gitignore` excludes
-`*.aux`, `*.log`, `__pycache__/`. Do not commit the user's `my_sectors.txt`. Update `FamilyDrawings/README.md` when
+`*.aux`, `*.log`, `__pycache__/`. Do not commit the user's `my_sectors.txt`. Update `FamilyDrawings/RRR/README.md` (or `RRV/README.md`) when
 the conventions or options change.

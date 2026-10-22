@@ -19,7 +19,7 @@ Output (default: next to the input, analysis/; or --out DIR):
   sectors.txt      one row per occurring sector: its own t, r, s, dots, #int and the top sectors containing it
   trees.txt        per top sector the occurring subsectors nested by inclusion, with their own values
   topsectors_list.txt   the top sectors as topoN[1,1,1,1,1,1,0,...] (1 = propagator present), one per line:
-                   input for FamilyDrawings/draw_families.py --sectors
+                   input for FamilyDrawings/RRR/draw_families.py --sectors
   topsectors.csv, sectors.csv, sectors.json   the same, machine-readable
 """
 import csv
@@ -212,7 +212,7 @@ def main(argv):
                     "s_own", "dots_own", "r_own", "set_by"])
         for row, (n, x) in zip(top_rows, ((n, x) for n in fams for x in js[f"topo{n}"]["top_sectors"])):
             w.writerow(row[:9] + [x["top_only"]["s"], x["top_only"]["dots"], x["top_only"]["r"], row[9]])
-    with open(os.path.join(out, "topsectors_list.txt"), "w") as f:        # for FamilyDrawings --sectors
+    with open(os.path.join(out, "topsectors_list.txt"), "w") as f:        # for FamilyDrawings/RRR --sectors
         f.write("".join(f"topo{n}[{','.join('1' if i + 1 in x['lines'] else '0' for i in range(12))}]\n"
                         for n in fams for x in js[f"topo{n}"]["top_sectors"]))
     with open(os.path.join(out, "sectors.csv"), "w", newline="") as f:

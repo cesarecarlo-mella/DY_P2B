@@ -1,0 +1,49 @@
+# group g06: RRV families 6 30 67 69 (Code_RRV/integrals/all; make_jobs.py)
+jobs:
+ - reduce_sectors:
+    conditional: true
+    reduce:
+     - {topologies: [topo6], sectors: [3071], r: 11, s: 5}
+     - {topologies: [topo6], sectors: [4063], r: 11, s: 5}
+     - {topologies: [topo6], sectors: [2031], r: 10, s: 5}
+     - {topologies: [topo6], sectors: [3327], r: 10, s: 5}
+     - {topologies: [topo6], sectors: [1663], r: 9, s: 4}
+     - {topologies: [topo6], sectors: [3503], r: 9, s: 4}
+     - {topologies: [topo6], sectors: [3647], r: 9, s: 5}
+     - {topologies: [topo30], sectors: [3071], r: 11, s: 5}
+     - {topologies: [topo30], sectors: [1919], r: 10, s: 5}
+     - {topologies: [topo30], sectors: [3519], r: 10, s: 5}
+     - {topologies: [topo30], sectors: [1279], r: 9, s: 4}
+     - {topologies: [topo30], sectors: [1519], r: 9, s: 4}
+     - {topologies: [topo67], sectors: [3071], r: 11, s: 5}
+     - {topologies: [topo67], sectors: [1999], r: 9, s: 4}
+     - {topologies: [topo67], sectors: [3535], r: 9, s: 4}
+     - {topologies: [topo67], sectors: [3983], r: 9, s: 5}
+     - {topologies: [topo69], sectors: [4063], r: 11, s: 5}
+     - {topologies: [topo69], sectors: [1983], r: 10, s: 5}
+     - {topologies: [topo69], sectors: [2031], r: 10, s: 5}
+    select_integrals:
+      select_mandatory_list:
+        - [topo6, toreduce/topo6.txt]
+        - [topo30, toreduce/topo30.txt]
+        - [topo67, toreduce/topo67.txt]
+        - [topo69, toreduce/topo69.txt]
+    run_symmetries: true
+    run_initiate: true
+    run_triangular: false
+    run_firefly: true
+    run_back_substitution: false
+ - kira2math:
+    target:
+       - [topo6, toreduce/topo6.txt]
+       - [topo30, toreduce/topo30.txt]
+       - [topo67, toreduce/topo67.txt]
+       - [topo69, toreduce/topo69.txt]
+    reconstruct_mass: false
+ - kira2form:
+    target:
+       - [topo6, toreduce/topo6.txt]
+       - [topo30, toreduce/topo30.txt]
+       - [topo67, toreduce/topo67.txt]
+       - [topo69, toreduce/topo69.txt]
+    reconstruct_mass: false

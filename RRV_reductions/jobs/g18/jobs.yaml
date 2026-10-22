@@ -1,0 +1,36 @@
+# group g18: RRV families 33 64 73 76 (Code_RRV/integrals/all; make_jobs.py)
+jobs:
+ - reduce_sectors:
+    conditional: true
+    reduce:
+     - {topologies: [topo33], sectors: [3967], r: 11, s: 5}
+     - {topologies: [topo33], sectors: [4063], r: 11, s: 6}
+     - {topologies: [topo33], sectors: [4015], r: 10, s: 5}
+     - {topologies: [topo64], sectors: [4063], r: 11, s: 5}
+     - {topologies: [topo73], sectors: [3967], r: 11, s: 5}
+     - {topologies: [topo76], sectors: [2047], r: 11, s: 5}
+    select_integrals:
+      select_mandatory_list:
+        - [topo33, toreduce/topo33.txt]
+        - [topo64, toreduce/topo64.txt]
+        - [topo73, toreduce/topo73.txt]
+        - [topo76, toreduce/topo76.txt]
+    run_symmetries: true
+    run_initiate: true
+    run_triangular: false
+    run_firefly: true
+    run_back_substitution: false
+ - kira2math:
+    target:
+       - [topo33, toreduce/topo33.txt]
+       - [topo64, toreduce/topo64.txt]
+       - [topo73, toreduce/topo73.txt]
+       - [topo76, toreduce/topo76.txt]
+    reconstruct_mass: false
+ - kira2form:
+    target:
+       - [topo33, toreduce/topo33.txt]
+       - [topo64, toreduce/topo64.txt]
+       - [topo73, toreduce/topo73.txt]
+       - [topo76, toreduce/topo76.txt]
+    reconstruct_mass: false

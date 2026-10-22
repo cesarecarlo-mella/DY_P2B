@@ -1,0 +1,82 @@
+# group g11: RRV families 11 21 41 56 (Code_RRV/integrals/all; make_jobs.py)
+jobs:
+ - reduce_sectors:
+    conditional: true
+    reduce:
+     - {topologies: [topo11], sectors: [2015], r: 11, s: 5}
+     - {topologies: [topo11], sectors: [2031], r: 10, s: 5}
+     - {topologies: [topo11], sectors: [2559], r: 10, s: 5}
+     - {topologies: [topo11], sectors: [2815], r: 11, s: 5}
+     - {topologies: [topo11], sectors: [3055], r: 10, s: 6}
+     - {topologies: [topo11], sectors: [3327], r: 11, s: 5}
+     - {topologies: [topo11], sectors: [3519], r: 10, s: 6}
+     - {topologies: [topo11], sectors: [3551], r: 11, s: 5}
+     - {topologies: [topo11], sectors: [3807], r: 11, s: 5}
+     - {topologies: [topo11], sectors: [3935], r: 10, s: 5}
+     - {topologies: [topo11], sectors: [4047], r: 10, s: 5}
+     - {topologies: [topo11], sectors: [895], r: 10, s: 4}
+     - {topologies: [topo11], sectors: [959], r: 10, s: 5}
+     - {topologies: [topo11], sectors: [1663], r: 10, s: 4}
+     - {topologies: [topo11], sectors: [1727], r: 10, s: 5}
+     - {topologies: [topo11], sectors: [1855], r: 9, s: 4}
+     - {topologies: [topo11], sectors: [2879], r: 10, s: 5}
+     - {topologies: [topo11], sectors: [3647], r: 10, s: 5}
+     - {topologies: [topo11], sectors: [3695], r: 10, s: 5}
+     - {topologies: [topo21], sectors: [3807], r: 10, s: 6}
+     - {topologies: [topo21], sectors: [3903], r: 10, s: 5}
+     - {topologies: [topo21], sectors: [3935], r: 10, s: 5}
+     - {topologies: [topo21], sectors: [959], r: 10, s: 5}
+     - {topologies: [topo21], sectors: [991], r: 10, s: 5}
+     - {topologies: [topo21], sectors: [1727], r: 10, s: 5}
+     - {topologies: [topo21], sectors: [2495], r: 10, s: 5}
+     - {topologies: [topo21], sectors: [2527], r: 10, s: 5}
+     - {topologies: [topo21], sectors: [3263], r: 10, s: 5}
+     - {topologies: [topo21], sectors: [255], r: 9, s: 4}
+     - {topologies: [topo21], sectors: [383], r: 9, s: 4}
+     - {topologies: [topo21], sectors: [1151], r: 9, s: 4}
+     - {topologies: [topo21], sectors: [2175], r: 9, s: 4}
+     - {topologies: [topo41], sectors: [2031], r: 10, s: 5}
+     - {topologies: [topo41], sectors: [3055], r: 10, s: 4}
+     - {topologies: [topo41], sectors: [3567], r: 10, s: 5}
+     - {topologies: [topo41], sectors: [3807], r: 10, s: 5}
+     - {topologies: [topo41], sectors: [3935], r: 10, s: 5}
+     - {topologies: [topo41], sectors: [4047], r: 10, s: 4}
+     - {topologies: [topo41], sectors: [1727], r: 9, s: 4}
+     - {topologies: [topo41], sectors: [1855], r: 9, s: 4}
+     - {topologies: [topo41], sectors: [2751], r: 9, s: 4}
+     - {topologies: [topo41], sectors: [2879], r: 9, s: 4}
+     - {topologies: [topo41], sectors: [3263], r: 9, s: 4}
+     - {topologies: [topo41], sectors: [3391], r: 9, s: 5}
+     - {topologies: [topo56], sectors: [2559], r: 10, s: 4}
+     - {topologies: [topo56], sectors: [2815], r: 10, s: 4}
+     - {topologies: [topo56], sectors: [2943], r: 10, s: 4}
+     - {topologies: [topo56], sectors: [3055], r: 10, s: 4}
+     - {topologies: [topo56], sectors: [3551], r: 10, s: 5}
+     - {topologies: [topo56], sectors: [3807], r: 10, s: 4}
+     - {topologies: [topo56], sectors: [3935], r: 10, s: 4}
+     - {topologies: [topo56], sectors: [4047], r: 10, s: 4}
+    select_integrals:
+      select_mandatory_list:
+        - [topo11, toreduce/topo11.txt]
+        - [topo21, toreduce/topo21.txt]
+        - [topo41, toreduce/topo41.txt]
+        - [topo56, toreduce/topo56.txt]
+    run_symmetries: true
+    run_initiate: true
+    run_triangular: false
+    run_firefly: true
+    run_back_substitution: false
+ - kira2math:
+    target:
+       - [topo11, toreduce/topo11.txt]
+       - [topo21, toreduce/topo21.txt]
+       - [topo41, toreduce/topo41.txt]
+       - [topo56, toreduce/topo56.txt]
+    reconstruct_mass: false
+ - kira2form:
+    target:
+       - [topo11, toreduce/topo11.txt]
+       - [topo21, toreduce/topo21.txt]
+       - [topo41, toreduce/topo41.txt]
+       - [topo56, toreduce/topo56.txt]
+    reconstruct_mass: false

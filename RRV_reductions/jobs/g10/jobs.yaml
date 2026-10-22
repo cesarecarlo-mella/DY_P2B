@@ -1,0 +1,57 @@
+# group g10: RRV families 10 24 53 54 (Code_RRV/integrals/all; make_jobs.py)
+jobs:
+ - reduce_sectors:
+    conditional: true
+    reduce:
+     - {topologies: [topo10], sectors: [3967], r: 11, s: 5}
+     - {topologies: [topo10], sectors: [2015], r: 11, s: 5}
+     - {topologies: [topo10], sectors: [2031], r: 10, s: 5}
+     - {topologies: [topo10], sectors: [2559], r: 10, s: 5}
+     - {topologies: [topo10], sectors: [3327], r: 10, s: 5}
+     - {topologies: [topo10], sectors: [3551], r: 10, s: 5}
+     - {topologies: [topo10], sectors: [3775], r: 10, s: 5}
+     - {topologies: [topo10], sectors: [3807], r: 11, s: 5}
+     - {topologies: [topo10], sectors: [4015], r: 10, s: 5}
+     - {topologies: [topo10], sectors: [4047], r: 10, s: 5}
+     - {topologies: [topo10], sectors: [767], r: 10, s: 5}
+     - {topologies: [topo24], sectors: [4063], r: 11, s: 5}
+     - {topologies: [topo24], sectors: [2559], r: 10, s: 5}
+     - {topologies: [topo24], sectors: [2943], r: 10, s: 5}
+     - {topologies: [topo24], sectors: [3007], r: 10, s: 5}
+     - {topologies: [topo24], sectors: [3455], r: 10, s: 5}
+     - {topologies: [topo24], sectors: [3519], r: 10, s: 5}
+     - {topologies: [topo24], sectors: [3711], r: 10, s: 5}
+     - {topologies: [topo24], sectors: [3775], r: 10, s: 5}
+     - {topologies: [topo24], sectors: [3951], r: 10, s: 4}
+     - {topologies: [topo24], sectors: [4015], r: 10, s: 5}
+     - {topologies: [topo53], sectors: [3839], r: 11, s: 5}
+     - {topologies: [topo54], sectors: [3839], r: 11, s: 5}
+     - {topologies: [topo54], sectors: [3951], r: 10, s: 5}
+     - {topologies: [topo54], sectors: [1407], r: 9, s: 4}
+     - {topologies: [topo54], sectors: [2431], r: 9, s: 4}
+     - {topologies: [topo54], sectors: [3391], r: 9, s: 5}
+    select_integrals:
+      select_mandatory_list:
+        - [topo10, toreduce/topo10.txt]
+        - [topo24, toreduce/topo24.txt]
+        - [topo53, toreduce/topo53.txt]
+        - [topo54, toreduce/topo54.txt]
+    run_symmetries: true
+    run_initiate: true
+    run_triangular: false
+    run_firefly: true
+    run_back_substitution: false
+ - kira2math:
+    target:
+       - [topo10, toreduce/topo10.txt]
+       - [topo24, toreduce/topo24.txt]
+       - [topo53, toreduce/topo53.txt]
+       - [topo54, toreduce/topo54.txt]
+    reconstruct_mass: false
+ - kira2form:
+    target:
+       - [topo10, toreduce/topo10.txt]
+       - [topo24, toreduce/topo24.txt]
+       - [topo53, toreduce/topo53.txt]
+       - [topo54, toreduce/topo54.txt]
+    reconstruct_mass: false

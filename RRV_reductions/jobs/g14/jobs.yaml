@@ -1,0 +1,47 @@
+# group g14: RRV families 14 18 28 65 (Code_RRV/integrals/all; make_jobs.py)
+jobs:
+ - reduce_sectors:
+    conditional: true
+    reduce:
+     - {topologies: [topo14], sectors: [3583], r: 11, s: 5}
+     - {topologies: [topo14], sectors: [4063], r: 11, s: 5}
+     - {topologies: [topo14], sectors: [3007], r: 10, s: 5}
+     - {topologies: [topo14], sectors: [3711], r: 10, s: 5}
+     - {topologies: [topo14], sectors: [3775], r: 10, s: 6}
+     - {topologies: [topo14], sectors: [895], r: 9, s: 4}
+     - {topologies: [topo18], sectors: [3583], r: 11, s: 5}
+     - {topologies: [topo18], sectors: [1919], r: 10, s: 5}
+     - {topologies: [topo18], sectors: [2815], r: 10, s: 5}
+     - {topologies: [topo18], sectors: [3775], r: 10, s: 5}
+     - {topologies: [topo18], sectors: [1007], r: 9, s: 4}
+     - {topologies: [topo28], sectors: [3583], r: 11, s: 5}
+     - {topologies: [topo28], sectors: [1023], r: 10, s: 5}
+     - {topologies: [topo28], sectors: [3807], r: 11, s: 5}
+     - {topologies: [topo28], sectors: [3935], r: 10, s: 5}
+     - {topologies: [topo28], sectors: [4047], r: 10, s: 5}
+     - {topologies: [topo65], sectors: [4063], r: 11, s: 5}
+    select_integrals:
+      select_mandatory_list:
+        - [topo14, toreduce/topo14.txt]
+        - [topo18, toreduce/topo18.txt]
+        - [topo28, toreduce/topo28.txt]
+        - [topo65, toreduce/topo65.txt]
+    run_symmetries: true
+    run_initiate: true
+    run_triangular: false
+    run_firefly: true
+    run_back_substitution: false
+ - kira2math:
+    target:
+       - [topo14, toreduce/topo14.txt]
+       - [topo18, toreduce/topo18.txt]
+       - [topo28, toreduce/topo28.txt]
+       - [topo65, toreduce/topo65.txt]
+    reconstruct_mass: false
+ - kira2form:
+    target:
+       - [topo14, toreduce/topo14.txt]
+       - [topo18, toreduce/topo18.txt]
+       - [topo28, toreduce/topo28.txt]
+       - [topo65, toreduce/topo65.txt]
+    reconstruct_mass: false
