@@ -505,7 +505,7 @@ def preflight(steps=()):
         sys.exit("FORMPATH does not contain all_header.h: source Code_RRR/setenv.sh")
     for f in VERSION_FILES:
         if not os.path.isfile(os.path.join(FAMDIR, f)):
-            sys.exit(f"missing {FAMDIR}/{f}: run the Families scripts (family_rules.wl, isp_table.py, fammatch_table.py)")
+            sys.exit(f"missing {FAMDIR}/{f}: run Families/rrv_families.py (RR files: copies of Code_RR/Families)")
     if npf() == 0:
         sys.exit(f"no partial-fraction files in {FAMDIR}/partial_fraction")
     cov = os.path.join(FAMDIR, "coverage.py")

@@ -1,17 +1,20 @@
 (* Checks of the RRV families (rrv_families.py), from the FORM files and the Mathematica exports:
      wolframscript -file Families/check_rrv_families.wl
+   0. the r1 <-> r2 images (relabelling_momenta.rrv.m: A = B with the rule) are built from their partners
    1. independent families: propagators 1-7 = the RR family (integralfamilies.rr.m); images: the same set
       (only RR families topo1..41, the entries of integralfamilies.rr.m)
    2. 12 linearly independent propagators in the 12 scalar products, in every family
-   3. relabelling_momenta.rrv.m: family A with the rule = family B, propagator by propagator
+   3. all families, images included = the propagators of fams/rrv_reconstruct.inc (what step 05 uses)
    4. fams/rrv_isp_table.inc: LISP(f, j) = k1.k1, k1.p1, k1.p2, k1.r1, k1.r2 in the propagators of family f,
       modulo D1..D4 (as in the RR ISP)
    5. fams/rrv_match_table.inc + rrv_loopcodes.inc + rrv_shifts.inc: every entry lands in its family
       (RR D's among propagators 5-7, the loop propagators after k1 -> X among 8-12)
+   6. integralfamilies_r.rrv.m (DD[n] -> Den[...] in r1, r2, k1) = integralfamilies.rrv.m
    sp[a,b] = a.b, p4 = -r1, p5 = -r2, p6 = -k1, p1^2 = p2^2 = 0, s12 = m2/z. *)
 dir = DirectoryName[$InputFileName];
 fams = Get[FileNameJoin[{dir, "integralfamilies.rrv.m"}]];
 dens = Get[FileNameJoin[{dir, "denominators.rrv.m"}]];
+dd[n_] := (den[n] /. dens);
 rr = Get[FileNameJoin[{dir, "integralfamilies.rr.m"}]];
 rel = Get[FileNameJoin[{dir, "relabelling_momenta.rrv.m"}]];
 SetAttributes[sp, Orderless];
@@ -21,7 +24,9 @@ sq[v_] := Expand[Sum[Coefficient[v, a] Coefficient[v, b] sp[a, b], {a, mom}, {b,
 canon[e_] := Expand[e /. sp[a_, b_] :> sp[a, b]];
 sps = Union[Flatten[Table[sp[a, b], {a, {p4, p5, p6}}, {b, {p1, p2, p4, p5, p6}}]]];
 fail[msg_] := (Print["FAILED: ", msg]; Exit[1]);
-Print[Length[fams], " families, ", Length[rr], " RR families"];
+If[rel[[All, 1]] =!= Range[Length[fams] + 1, Length[fams] + Length[rel]], fail["relabelling_momenta.rrv.m: numbering"]];
+fams = Join[fams, Table[fams[[r[[3]]]] /. r[[2]], {r, rel}]];
+Print[Length[fams] - Length[rel], " independent families + ", Length[rel], " images, ", Length[rr], " RR families"];
 
 (* RR family of each RRV family, from rrv_families.txt *)
 rrf = ToExpression /@ StringCases[Import[FileNameJoin[{dir, "rrv_families.txt"}], "Text"],
@@ -42,13 +47,16 @@ Do[If[MatrixRank[D[fams[[f]], {sps}]] =!= 12, fail[{"rank", f}]], {f, Length[fam
 Print["2. 12 independent propagators in ", Length[sps], " scalar products: ok"];
 
 (* 3 *)
-Do[If[canon[fams[[r[[1]]]] /. r[[2]]] =!= canon[fams[[r[[3]]]]], fail[{"relabelling", r}]], {r, rel}];
-Print["3. relabellings: ok"];
+recon = StringCases[Import[FileNameJoin[{dir, "fams", "rrv_reconstruct.inc"}], "Text"],
+   RegularExpression["id RRVT\\((\\d+)\\)\\*TOPO\\(\\d+\\)(\\S*) = INT"] :>
+    {ToExpression["$1"], ToExpression /@ StringCases["$2", RegularExpression["DD(\\d+)"] -> "$1"]}];
+If[recon[[All, 1]] =!= Range[Length[fams]], fail["rrv_reconstruct.inc: numbering"]];
+Do[If[canon[fams[[e[[1]]]]] =!= canon[dd /@ e[[2]]], fail[{"rrv_reconstruct", e[[1]]}]], {e, recon}];
+Print["3. all ", Length[recon], " families (images from the relabelling) = rrv_reconstruct.inc: ok"];
 
 (* FORM text -> Mathematica *)
 formMom[s_String] := ToExpression[StringReplace[s, " " -> ""]];
 toM[e_] := e /. {r1 -> -p4, r2 -> -p5, k1 -> -p6};
-dd[n_] := (den[n] /. dens);
 formExpr[s_String] := Module[{t = StringReplace[s, {" " -> "", "\n" -> ""}]},
    t = StringReplace[t, {RegularExpression["DD(\\d+)"] -> "dd[$1]", "Den(" -> "1/(",
        RegularExpression["\\b([pr]\\d)\\.([pr]\\d)\\b"] -> "fdot[$1,$2]"}];
@@ -85,4 +93,13 @@ Do[Module[{key = e[[1]], f = e[[2]], s = e[[3]], rrd, lc, fp},
   {e, tab}];
 Print["5. matching table: ok (", Length[tab], " nonzero entries, ", Length[shifts], " shifts, ", Length[codes],
   " loop propagators)"];
+(* 6 *)
+{famsR, ddDef} = Get[FileNameJoin[{dir, "integralfamilies_r.rrv.m"}]];
+qsub = q -> -p1 - p2 - r1 - r2;
+ddval[Den[e_]] := If[FreeQ[e, sp], sq[toM[e]], Expand[e /. sp[a_, b_] :> fdot[a /. qsub, b /. qsub]]];
+ddval[Den[e_, m_]] := sq[toM[e]] - m;
+If[Length[famsR] =!= Length[fams] - Length[rel], fail["integralfamilies_r.rrv.m: number of families"]];
+Do[If[canon[ddval /@ (famsR[[f]] /. ddDef)] =!= canon[fams[[f]]], fail[{"integralfamilies_r", f}]], {f, Length[famsR]}];
+Do[If[Expand[ddval[DD[n] /. ddDef] - dd[n]] =!= 0, fail[{"DD vs den", n}]], {n, 29}];
+Print["6. integralfamilies_r.rrv.m = integralfamilies.rrv.m, DD[n] = den[n]: ok"];
 Print["all checks passed"];

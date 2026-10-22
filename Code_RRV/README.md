@@ -47,11 +47,17 @@ Step 05, RRV families (2026-10-22):
   family and k1 shift (fams/rrv_match_table.inc, rrv_shifts.inc; scaleless loops -> 0); kinematics again; loop ISP
   (rrv_isp_table.inc: k1.x in the pentagon props), RR ISP of the family's RR part; rrv_reconstruct.inc.
 - Mathematica (Families/, format of integralfamilies.rr.m; p4 = -r1, p5 = -r2, p6 = -k1): integralfamilies.rrv.m
-  (entry N = topoN), denominators.rrv.m (den[n] = Dn), relabelling_momenta.rrv.m (topo78..154 -> topo1..77 with
-  p4 <-> p5). `wolframscript -file Families/check_rrv_families.wl`: RR parts vs integralfamilies.rr.m (RR 1..41),
-  rank 12 in every family, relabellings, loop ISP table modulo D1..D4, every matching-table entry lands in its family.
+  (entry N = topoN, only the independent topo1..77: the output of step 06), denominators.rrv.m (den[n] = Dn), relabelling_momenta.rrv.m (topo78..154 -> topo1..77 with
+  p4 <-> p5); integralfamilies_r.rrv.m = {families as {DD[n], ...}, DD[n] -> Den[k] / Den[k, m2] in the FORM momenta
+  r1, r2, k1}. `wolframscript -file Families/check_rrv_families.wl`: RR parts vs integralfamilies.rr.m (RR 1..41),
+  rank 12 in every family, relabellings, loop ISP table modulo D1..D4, every matching-table entry lands in its family,
+  integralfamilies_r.rrv.m = integralfamilies.rrv.m.
 - Laptop test (Vqqbccb): av 2_1 571 s, 7032 INT, nothing left; aPSa 1_1 non-zero (topo1, 2, 6); vPSv 1_1 = 0 already
   before the matching (Furry test to be done on Vqqbgg).
+- Families/ keeps only what step 05 and rrv_families.py use (2026-10-22): from Code_RR (identical copies) fams/dens.inc,
+  fams/fammatch.inc, fams/isp_table.inc, fams/isp_apply.inc, partial_fraction/, integralfamilies.rr.m; the RR family
+  rules fams1..46.inc, fammatch_table.inc, reconstruct.inc and the scripts isp_table.py, fammatch_table.py are removed
+  (in Code_RR/Families).
 Not done: step 05 on all channels (newton), Kira for the RRV families, renormalisation pieces.
 
 ----------------------------------------------------------------------------------------------------------------------
