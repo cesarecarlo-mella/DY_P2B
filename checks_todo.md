@@ -1,6 +1,6 @@
 # Checks to do
 
-Written 2026-10-22. Tick items off as they are done.
+Written 2026-10-22, updated 2026-10-23. Tick items off as they are done.
 
 ## 1. Families and identities
 
@@ -27,8 +27,8 @@ relabelling_momenta.rrv.m, rrv_topsectors.m, rrv_families.txt, denominators.rrv.
       integral of the step-06 results (Code_RRV/integrals/all after `run_all.py integrals`) lies in a subsector of
       one of them.
 - [ ] Step-06 results: no dependent family (topo78..154), no leftovers (`run_all.py check`, lines 05/06 only).
-- [ ] Numerical step-05 check (before = after matching at random kinematics): tools/check05.py is not ported to
-      Code_RRV yet (`run_all.py verify` does not work there).
+- [-] Numerical step-05 check: not ported to Code_RRV (the k1 shift in step 05 makes a pointwise check need the same
+      shift on both sides); dropped (user, 2026-10-22).
 - [ ] Colour/Furry on step 06: Vqqbgg vPSv purely d^abc d^abc, zero at Nc = 2; non-zero for Nc = 3 (the box survives).
 
 ### RV (Code_RV/Families)
@@ -64,8 +64,9 @@ To check:
 - [ ] Read check/routeB.wl against the formulas of the notes (Gram matrix of p1, p2, r1; rank 2: (k1perp^2 k2perp^2)/(d-3);
       higher ranks: (2l-1)!! / ((d-3)(d-1)...)).
 - [ ] sectormappings/sectormappings_rvv12.yaml: sector_relations and sector_symmetries empty, only zero sectors.
-- [ ] Higher rank: (k1+k2)^2 to the power 3 (seeds s <= 3), as the real 1x1 integrands may need; set the seeds
-      from the maximal powers in the RVV step-05 output.
+- [x] Higher rank: seeds from the data (2026-10-23, all 6 q qb g channels: 11441 integrals, s <= 4 in topo1, 2, 4,
+      s <= 3 otherwise, (k1+k2)^2 up to the third power, no dots); RVV_reductions/make_jobs.py takes them from
+      the analysis.
 - [ ] Subsector integrals, numerators on the box propagators, one dot (not only the top sector).
 - [ ] A diagonal family (rvv11, same ordering in k1 and k2), where k1 <-> k2 maps the family onto itself: ordered
       products must still come out right with the relations off.
@@ -73,5 +74,44 @@ To check:
       (if true, only 6 of the 9 families need a reduction: rvv11, rvv22, rvv33, rvv12, rvv13, rvv23).
 - [ ] Conjugation: the reduction coefficients are real (rational in s, t, m2, d); evaluate one product with
       both prescriptions, M_a(+i0) M_b(-i0) = M_a M_b^*, on a simple case (bubble x bubble above threshold).
-- [ ] Assembly: X_ij + X_ji = 2 Re X_ij for the pairs (i, j) of 1x1 products; the summed 1x1 contribution is real.
+- [x] Step 04: X_ji[Q] = (X_ij[P])^* for every partner pair of pieces (Vqqbg, with negative controls).
+- [x] After insertion: Vqqbg aPSaPS coefficient matrix symmetric under amplitude <-> conjugate masters (FORM check
+      with a negative control).
+- [ ] Assembly: X_ij + X_ji = 2 Re X_ij for the pairs (i, j) of 1x1 products; the summed 1x1 contribution is real;
+      the same symmetry for every self-conjugate piece (vv, aPSaPS, vPSvPS, ...) of every channel.
 - [ ] Cost: time and memory of the real families (9 propagators, all sectors, no symmetries) at the needed seeds.
+      Laptop, one core per family, s <= 4: about 46 of ~65 sectors in 2 h (stopped 2026-10-23, to run on newton
+      with MPI).
+- [ ] g g -> V g (Vggg + 6 ghost channels): ghost |M|^2 subtracted at assembly; after the reduction the vector PS
+      part of Vggg is pure d^abc d^abc (zero at Nc = 2); the triangle parts (vector) cancel.
+
+## 3. Reduction strategy and checks for two loop x tree (RVV 2L x tree, Code_RVV_2L)
+
+Families PL, NPL of Hjet2L and their 6 crossings (12, 10 used); per-diagram shifts from Reduze find_diagram_shifts
+(applied in step 01, tag L2F); Kira with symmetries (no conjugated loop; 2 Re after the masters).
+
+Done (Vqqbg, prototype): census of the 229 two-loop diagrams (2 with two closed quark loops, 4 zero by colour, the
+colour zero checked with explicit SU(3) matrices); Reduze matches 300/300 checked independently; every loop
+propagator inside its tagged family after step 01; step 05 = step 04 numerically (check05, 6/6 + negative control).
+
+To check:
+- [ ] All channels: census and shift check (rvv2l_shifts.py does it per channel), step 05 check05 on random pieces.
+- [ ] After the Kira reduction: the triangle-type vector PS contributions cancel (Furry); the vector PS part is pure
+      d^abc (zero at Nc = 2).
+- [ ] Masters: Kira masters mapped onto the Hjet2L canonical basis (crossings!), production-region continuation.
+- [ ] Comparison with the known two-loop V+jet interference (Garland, Gehrmann, Glover, Koukoutsakis, Remiddi;
+      Gehrmann et al.).
+
+## 4. Still to implement (2026-10-23)
+
+- [ ] Repo: g g -> V g channels in Code_RVV_1L1L; RVV_reductions MPIRUN option; commit to_form.py,
+      insert_reductions.py (tested on the laptop).
+- [ ] Repo: Code_RVV_2L (build scripts in DY_P2B_work/2026-10-23/code_rvv2l_build), with the 6 shift files.
+- [ ] Code_RVV_2L: integral analysis tool (12 families) and RVV2L_reductions/ (Kira job generator for PL, NPL and
+      crossings).
+- [ ] Insertion of Kira results (RRV, RVV 2L x tree; RRR): Kira tables -> FORM tables -> masters (as to_form.py /
+      insert_reductions.py for Reduze).
+- [ ] Masters: one-loop box/bubble masters to the needed order in eps (1L x 1L, conjugate factor); two-loop masters
+      from Hjet2L in our kinematics; RRV masters (open).
+- [ ] Assembly: 2 Re, ghost subtraction, PS coupling sums, renormalisation (Z factors), mass factorisation; full
+      Larin (aa_S with Z5^ns, an ONLYAA option for step 04) if decided.

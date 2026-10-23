@@ -5,3 +5,10 @@ physical_qqbg,Vgqbqb,"gluon[p1], Qbar[p2], V[q], Quark[r1]",Vqbgqb
 physical_qqbg,Vqgq,"Quark[p1], gluon[p2], V[q], Qbar[r1]",Vgqq
 physical_qqbg,Vgqq,"gluon[p1], Quark[p2], V[q], Qbar[r1]",Vqgq
 physical_qqbg,Vqbqg,"Qbar[p1], Quark[p2], V[q], gluon[r1]",Vqqbg
+physical_ggg,Vggg,"gluon[p1], gluon[p2], V[q], gluon[r1]",Vggg
+ghosts_ggg,Vccbg,"ghost[p1], Ghost[p2], V[q], gluon[r1]",Vcbcg
+ghosts_ggg,Vcbcg,"Ghost[p1], ghost[p2], V[q], gluon[r1]",Vccbg
+ghosts_ggg,Vcgcb,"ghost[p1], gluon[p2], V[q], Ghost[r1]",Vgccb
+ghosts_ggg,Vgccb,"gluon[p1], ghost[p2], V[q], Ghost[r1]",Vcgcb
+ghosts_ggg,Vcbgc,"Ghost[p1], gluon[p2], V[q], ghost[r1]",Vgcbc
+ghosts_ggg,Vgcbc,"gluon[p1], Ghost[p2], V[q], ghost[r1]",Vcbgc

@@ -68,7 +68,7 @@ PIECES += XPIECES
 # projector L1 when both couplings are vector-like or both axial, L6 otherwise
 EVEN = [x + y for x in COUPLINGS for y in COUPLINGS if x.startswith("v") == y.startswith("v")] + ["vvX", "aaX"]
 PROJ = {c: (1 if c in EVEN else 6) for c in PIECES}                      # L6 for the parity-odd pieces
-GLUON_GROUPS = {"physical_qqbg"}
+GLUON_GROUPS = {"physical_qqbg", "physical_ggg", "ghosts_ggg"}
 NCUT = 3                       # cut propagators r1^2, q^2 - m2, rapidity (INT(topoN, 1,1,1, n1,...,n4))
 NPROP = 12                     # RVV 1L x 1L: 3 cut + 4 (box in k1) + 4 (box in k2) + (k1+k2)^2 per family
 LEFTOVERS_05 = [r"\bProp\(", r"\bDen\(cut", r"\bD\d+\b", r"\bDD\d+\b", r"\bTOPO\(", r"\bPropSet\(", r"\bFAM\d\(",

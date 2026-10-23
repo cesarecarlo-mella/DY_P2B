@@ -6,19 +6,57 @@ Internal notes (not physics). Physics: `Larin.pdf` (when aa = vv), `assembly.pdf
 
 - `FORMroutines/spinlines.h`: V vertex `gv`, `ga` on **flavour-1** lines (`Quark`), `Gv`, `Ga` on **flavour-2** lines
   (`Quark2`); the conjugate carries `cgv`, `cga`, `cGv`, `cGa`. Labels are by **flavour**, not by line (see below).
-- Step 04 (`4_square_ampl.frm`) splits into 16 pieces, name = amplitude coupling + conjugate coupling:
+- Step 04 (`4_square_ampl.frm`) splits into pieces, name = amplitude coupling + conjugate coupling:
   `vv` = v v*, `va` = v a*, `vv2` = v v2*, `aa2` = a a2*, `v2v` = v2 v*, ... (same order as `assembly.pdf`,
   amplitude first).
+
+Labels (one letter group per side; the conjugate's coupling has a `c` in front):
+
+| label | amplitude | conjugate | V vertex on | coupling |
+|---|---|---|---|---|
+| `v`, `a` | `gv(ti)`, `ga(ti)` | `cgv(tj)`, `cga(tj)` | a flavour-1 open line (q) | v_q, a_q |
+| `v2`, `a2` | `Gv(ti)`, `Ga(ti)` | `cGv(tj)`, `cGa(tj)` | a flavour-2 open line (Q) | v_Q, a_Q |
+| `vPS`, `aPS` | `gvPS(ti)`, `gaPS(ti)` | `cgvPS(tj)`, `cgaPS(tj)` | a closed quark loop | sum_f v_f, sum_f a_f |
+
+Trace classes (where the two V vertices of the cut diagram end up; `Larin.pdf` for the physics):
+
+| class | V vertices of amplitude and conjugate | gamma5 | pieces | code |
+|---|---|---|---|---|
+| S (same trace) | in one trace (same open line; also identical-quark direct x exchange) | aa = vv (anticommuting) | `vv`, `va`, `av`, `aa`, `v2v2`, `a2a2`, ... | no tag; `SKIPAA=1` writes `aa`, `a2a2` = 0 |
+| X (crossed: two traces) | on different traces, one gamma5 each | Larin | `vvX`, `vaX`, `avX`, `aaX` (flavour 1, identical quarks: tag `trX`); `vv2`, `aa2`, `v2v`, `a2a`, ... (different flavours: always two traces) | `trX` from `Vline`/`cVline` |
+| P (pure singlet) | at least one on a closed quark loop | Larin | `vPS*`, `aPS*` on either side | couplings `gvPS`, `gaPS` (`cgvPS`, `cgaPS`) |
+
+Pieces per product (all with the projector L1 when both couplings are vector or both axial, L6 otherwise):
+- tree x tree (LO, R, RR, RRR): 16 (`v a v2 a2` x `v a v2 a2`) + 4 X;
+- loop x tree (RV, RRV, RVV 2L x tree): 16 + 4 X + 8 PS (`vPS`/`aPS` x `v a v2 a2`);
+- 1L x 1L (Code_RVV_1L1L): 36 (`v a v2 a2 vPS aPS` on both sides) + 4 X, e.g. `vvPS`, `aPSaPS`.
 - Projectors (step 05, `05_run_contractPj.py`): `L1.inc` = q^mu q^nu - q^2 g^{mu nu} for the parity-even pieces
   (vv, aa, vv2, aa2, v2v, a2a, v2v2, a2a2), `L6.inc` (epsilon) for the parity-odd ones (va, av, va2, av2, v2a, a2v,
   v2a2, a2v2).
 - Larin vertex: `spinlines.h`, `GA(ti)*eps(nu1,rho1,rho2,rho3)/6*Spin(LINE,rho1,rho2,rho3,...)`; all axial vertices
   are Larin in the code (the choice "aa = vv" is applied by not computing aa).
-- `SKIPAA` (default 1): aa and a2a2 are written as 0 (to be taken = vv, v2v2 at assembly). aa2, a2a (cross-line) and
-  all parity-odd pieces are always computed with Larin. `SKIPAA=0` computes aa, a2a2 too (expensive in RRR).
-- Loops (future RV, RRV, RVV runs): the code computes conjugate(lower) x higher per piece; assembly takes 2Re. For
-  1L x 1L all ordered pairs are needed (sum is real). V on a closed quark loop (PS) needs its own labels (e.g.
-  `gvL`, `gaL`, coupling sum_f v_f, sum_f a_f), like `Gv`/`Ga` for the second line.
+- `SKIPAA` (default 1): the class-S `aa` and `a2a2` are written as 0 (to be taken = vv, v2v2 at assembly). The X and
+  P pieces and all parity-odd pieces are always computed with Larin. `SKIPAA=0` computes `aa`, `a2a2` too (expensive
+  in RRR). Full Larin (under discussion, 2026-10-23) = `SKIPAA=0` everywhere: an addition (the other pieces do not
+  change), but step 04 computes all pieces of a pair in one job (an `ONLYAA` option could skip the others), the aa
+  pieces may add integrals to the reduction lists, and at assembly aa_S needs Z5^ns Z_MS^ns instead of aa_S = vv.
+- Loops: the code computes conjugate(lower) x higher per piece; assembly takes 2Re. For 1L x 1L all ordered pairs
+  (i, j) of diagram groups are computed; (j, i) is the complex conjugate of (i, j) (checked: X_ji[Q] = X_ij[P]^* with
+  Q = P mirrored, `Code_RVV_1L1L/README.md`).
+
+## Closed quark loops in the code
+
+- `spinlines.h` walks the open lines, then the closed quark loops: trace `Spin(3,...)`, and in `Code_RVV_2L` also
+  `Spin(4,...)` (two closed loops at two loops: a quark bubble on the s-channel gluon of the V-g-g triangle, e.g.
+  Vqqbg QGRAF diagrams 134, 138). Each loop: factor Nf if V is not on it (`Vline(L)` absent), couplings `gvPS`,
+  `gaPS` and `Vline(L)` if V is on it. Diagrams with a closed `Quark2` loop are dropped after QGRAF
+  (`Scripts/tools/drop_quark2_loops.py`): the closed `Quark` loop stands for any light flavour.
+- Step 04: the closed loops go into commuting holders while the open lines are combined (`SpinL` -> trace 3,
+  `SpinL4` -> trace 4 in 2L x tree; in 1L x 1L the conjugate's loop `SpinC(3, reversed)` -> `SpinLC` -> trace 4).
+- 1L x 1L conjugation (step 03): k1 -> k2, `Spin(3, x1..xn)` -> `SpinC(3, xn..x1)` (trace of the reversed product),
+  `gvPS`, `gaPS` -> `cgvPS`, `cgaPS`; the Larin eps changes sign with i_.
+- 2L x tree (`Code_RVV_2L`, in progress): every two-loop diagram gets its loop-momentum shift onto a family (PL, NPL
+  and crossings, Reduze `find_diagram_shifts`) and the tag `L2F(f)` in step 01 (`Families/rvv2l_shifts.py`).
 
 ## What to compute, contribution by contribution (minimal set)
 

@@ -1,6 +1,7 @@
 # Plan: RV (NNLO) and RVV (N3LO)
 
-Status 2026-10-21: plan only, no code yet. RRV production (step 04, all channels) running on newton4.
+Status 2026-10-23: RV done to step 06 (Code_RV); RVV 1x1 = Code_RVV_1L1L (production on newton4, reduction with
+Reduze); RVV 2x0 = Code_RVV_2L (prototype tested on Vqqbg, to be added to the repo). Details in section 5.
 
 ## 0. Kinematics: the phase space collapses
 
@@ -29,32 +30,39 @@ amplitudes, exact in eps).
 | RVV 2x0 | two loops (set 2) | tree (set 0) | 2 Re(A2 A0*) |
 | RVV 1x1 | one loop (set 1, k1) | one loop (set 1, k2) | A1 A1* |
 
-- 1x1: the conjugate's loop integrals are complex conjugated (-i0): conjugate-side integrals tagged (e.g. INTC), and
-  after the reduction each master -> M*. Step 03 already flips the explicit i_ and eps; this is on top of it.
-- 1x1 pairs (i, j) and (j, i) are complex conjugates: compute i <= j, X_ij + X_ji = 2 Re X_ij.
+- 1x1: the conjugate's loop integrals are complex conjugated (-i0). No tag is needed: the conjugate's loop momentum
+  is k2 (step 03: k1 -> k2), the families are box(k1) x box(k2) x (k1+k2)^2, and the reduction (Reduze, sector
+  relations and symmetries off, notes oneloop_squared.tex) gives ordered products M_a(k1) M_b(k2); at the insertion
+  every master becomes ML1(M_a) ML1C(M_b), ML1C = complex conjugate. Step 03 also flips the explicit i_ and eps.
+- 1x1 pairs (i, j) and (j, i) are complex conjugates (checked: X_ji = X_ij^* for all partner pieces); all pairs are
+  computed (the check needs both), X_ij + X_ji = 2 Re X_ij.
 - RV, RVV 2x0 (and RRV): the pipeline computes A_L A0* only; take 2 Re after the masters are evaluated (explicit i's
   and imaginary parts of the masters both contribute).
-- The two RVV products are kept apart: own pair lists, run states and output folders (e.g. squared_diagrams/p20/,
-  squared_diagrams/p11/).
+- The two RVV products are kept apart: two Code folders, Code_RVV_1L1L and Code_RVV_2L.
 
 ## 2. Code
 
 1. `Code_RV`: Code_R channels (one emission) with the RRV two-set plumbing (set 1 x set 0), closed-loop handling of
    Code_RRV (spinlines.h block, Quark2 filter, SpinL in step 04, PS pieces), step 05 with the kinematic substitution
    and loop-only families.
-2. `Code_RVV_1L1L` (product 1x1, done 2026-10-22) and `Code_RVV_2L` (product 2x0).
-   - QGRAF loops = 2 set; conjugate of set 1 in step 03 with k1 -> k2 and the integral tag.
-   - spinlines.h (changes to be approved): up to two closed quark loops (Spin(3), Spin(4)), each through SpinL in
-     step 04; Nf, Nf^2; diagrams with any closed Quark2 loop dropped.
-   - Classes: V on a closed loop in the amplitude, in the conjugate, in both (PS x PS in 1x1: (sum v_f)^2, (sum a_f)^2);
-     at two loops V on a closed loop with an extra gluon, light-by-light-type singlet pieces.
+2. `Code_RVV_1L1L` (product 1x1): one-loop set only; step 03 conjugates it (k1 -> k2, closed-loop trace reversed,
+   gvPS, gaPS -> cgvPS, cgaPS); step 04 with the conjugate's closed loop as trace 4; 40 pieces (v, a, v2, a2, vPS,
+   aPS on both sides + 4 X). Channels: q qb g and crossings (6) and the loop-induced g g -> V g (Vggg) with its 6
+   ghost channels (gluon polarisation sums; ghost |M|^2 subtracted at assembly). spinlines.h unchanged.
+3. `Code_RVV_2L` (product 2x0): two-loop set (QGRAF loops = 2, set label 2) x tree; q qb g channels only (g g -> V g
+   has no tree; 2L x 1L of g g -> V g is N4LO). spinlines.h change (approved 2026-10-23): up to two closed quark loops
+   (Spin(3), Spin(4); e.g. a quark bubble on the s-channel gluon of the V-g-g triangle), Nf per closed loop without V.
+   Per two-loop diagram, family and loop-momentum shift from Reduze find_diagram_shifts, applied in step 01 with the
+   tag L2F(f).
 
 ## 3. Families (loop-only)
 
-- RV, RVV 1x1: one-loop box with legs p1, p2, r1, q (3 orderings), propagators of k1 (and k2 for the conjugate);
-  1x1 is a product of one-loop integrals (needed to higher order in eps).
-- RVV 2x0: two-loop four-point, one off-shell leg, 9 propagators (planar and non-planar double boxes; masters known,
-  Gehrmann-Remiddi, 2dHPLs). Matching as in RRV: shift the loop momenta onto the canonical family.
+- RV: one-loop box with legs p1, p2, r1, q (3 orderings), propagators of k1.
+- RVV 1x1: box A in k1 x box B in k2 x (k1+k2)^2 (9 families topo1..9 = rvvAB); k1.k2 is removed by the reduction
+  (Lorentz covariance), the masters are products of one-loop masters (needed to higher order in eps).
+- RVV 2x0: two-loop four-point, one off-shell leg, families PL and NPL of Hjet2L (Code/Scripts/Templates/common.py)
+  and their 6 crossings of p1, p2, r1 (12 families, 10 used); masters: Hjet2L ancillary files (canonical basis,
+  solutions to weight 6).
 - Reference: H_P2B/nnlo_setup/RV (Higgs NNLO RV families), H_P2B/nnlo_setup/VV.
 
 ## 4. Masters, renormalisation
@@ -63,19 +71,22 @@ amplitudes, exact in eps).
   or from the literature with their boundary expansions.
 - Two-loop UV, Larin Z5 and Z_a^ns at O(a^2); Z_s differs from Z_ns from O(a^2) (D3 b remainder, see RRV_plan.md).
 
-## 5. Status (end of 2026-10-21)
+## 5. Status (2026-10-23)
 
-- Code_RV built (commit 6307873), runs up to step 04 (laptop test Vqqbg: vv, va, av, and the PS pieces in the pair
-  with the closed quark loop; no Spin left). Step 05 not done.
-- Loop-momentum matching with Reduze 2.6 (installed in ~/Software/reduze2). Test on Vqqbg (work files in
-  ~/Documents/GitHub/DY_P2B_work/2026-10-21/reduze_rv): QGRAF with QGRAF/reduze.sty, kinematics p1, p2, q, r1 all
-  incoming (q^2 = m2, s = (p1+p2)^2, t = (p1+r1)^2), families RVA/RVB/RVC; find_diagram_shifts maps all 15 diagrams
-  onto RVA = {k1, k1+p1, k1+p1+p2, k1+p1+p2+r1} and its crossings over the massless legs (RVB, RVC are crossings).
-  Conventions checked independently: Shift(k1, X) means k1 -> X in the diagram; RVAx124 = RVA with legs 1 -> 2 -> 4 -> 1
-  (legs 1 = p1, 2 = p2, 3 = q, 4 = r1). Closed Quark2 diagrams (5, 6) are dropped as in the FORM set.
-- Proposed, awaiting approval: the qgraf job also writes external/PROC.1.yaml; a Reduze project per Code folder;
-  per-diagram replace_(k1, X) and family tag in step 01 (one-loop set); step 05 = Phi_1 as in Code_R times
-  LINT(RVAxNN, a1..a4). The same for RRV with loop-only pentagon families. First check: vPSv -> 0 (Furry).
+- RV (Code_RV): steps qgraf..06, families and matching done (6 channels); vPSv = vPSa = 0 (Furry: two gluons on the
+  loop), aPSa, aPSv non-zero. Reduction and masters not done.
+- RVV 1x1 (Code_RVV_1L1L): 6 q qb g channels run on newton4 (0 failed); 11441 integrals in 9 families (s <= 4, no
+  dots). Checks on Vqqbg: conjugation X_ji = X_ij^*, Furry (all vPS pieces with two gluons on the loop vanish),
+  Reduze reduction = Gram projection as ordered products (notes oneloop_squared.tex). Reduction: RVV_reductions/
+  (Reduze per family, no symmetries), tables and insertion (to_form.py, tools/insert_reductions.py) tested on Vqqbg
+  aPSaPS. g g -> V g channels tested (Vggg: vPSvPS and aPSaPS non-zero, mixed pieces zero, d^abc f^abc = 0; ghost
+  channel: only aPSaPS); not yet in the repo.
+- RVV 2x0 (Code_RVV_2L, prototype): Vqqbg 229 two-loop diagrams (300 before the Quark2 filter, 4 zero by colour),
+  Reduze matches 300/300 checked independently; step 04 23 pairs (157 CPU min); step 05 checked numerically against
+  step 04 (check05). Vector PS pieces do not vanish pair by pair: V on a closed loop with three gluons (box) survives
+  with d^abc, the triangle parts cancel only after the reduction.
+- RRV (for comparison, RRV_plan.md): there the vector PS piece does NOT vanish either: the box (V + 3 gluons on the
+  loop) survives with d^abc d^abc (summed vPSv = 0 only at Nc = 2).
 
 ## 6. Order of work
 

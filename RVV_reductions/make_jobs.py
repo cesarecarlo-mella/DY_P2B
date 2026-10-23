@@ -55,6 +55,9 @@ KINEMATICS = """kinematics:
     - [[p2+r1, p2+r1], m2-s-t]
   symbol_to_replace_by_one: m2
 """
+# exported in the variables of the FORM pipeline: s = m2/z, t = m2 (u z - 1)/(z (1 + u)), m2 = 1
+EXPORT_REPARAM = """      new_parameters: [z, u]
+      reparametrization_rules: [ ["s", "1/z"], ["t", "(u*z-1)/(z*(1+u))"], ["m2", "1"] ]"""
 SETUP = """  # sector mappings WITHOUT sector relations and symmetries (no k1 <-> k2), only zero sectors
   - setup_sector_mappings:
       conditional: true
@@ -63,9 +66,10 @@ SETUP = """  # sector mappings WITHOUT sector relations and symmetries (no k1 <-
       setup_crossings: false
 """
 RUN = """#!/bin/bash
-# Reduze reduction of {fam} (RVV 1L x 1L); REDUZE = path of reduze (default: reduze in PATH); low priority
+# Reduze reduction of {fam} (RVV 1L x 1L); REDUZE = path of reduze (default: reduze in PATH); MPIRUN = MPI launcher
+# for an MPI build, e.g. MPIRUN="mpirun -np 8" (default: none, serial); low priority
 cd "$(dirname "$0")"
-nice -n 19 ${{REDUZE:-reduze}} jobs.yaml > reduze.out 2>&1
+nice -n 19 ${{MPIRUN:-}} ${{REDUZE:-reduze}} jobs.yaml > reduze.out 2>&1
 """
 
 
@@ -138,10 +142,12 @@ def write_job(name, n, ints, tops, r_extra, note):
       input_file: "results/topo{n}.sol"
       output_file: "results/topo{n}.m"
       output_format: "mma"
+{EXPORT_REPARAM}
   - export:
       input_file: "results/topo{n}.sol"
       output_file: "results/topo{n}.inc"
       output_format: "form"
+{EXPORT_REPARAM}
 """)
     with open(os.path.join(d, "run.sh"), "w") as f:
         f.write(RUN.format(fam=f"topo{n}"))
@@ -156,6 +162,7 @@ def main():
     ap.add_argument("--collection", default="all", help="Code_RVV_1L1L/integrals/<collection> (default all)")
     ap.add_argument("--fams", help="comma-separated family numbers (default: all with integrals)")
     ap.add_argument("--r-extra", type=int, default=1, help="seeds r in [t, t + this] (default 1)")
+    ap.add_argument("--tag", help="jobs: name the jobs topoN_<tag> (e.g. for a test collection)")
     ap.add_argument("--max-s", type=int, default=1, help="test: integrals with numerator rank <= this (default 1)")
     ap.add_argument("--max-ints", type=int, default=20, help="test: at most this many integrals (default 20)")
     args = ap.parse_args()
@@ -164,7 +171,8 @@ def main():
     for n in fams:
         ints = read_list(args.collection, n)
         if args.command == "jobs":
-            write_job(f"topo{n}", n, ints, tops[n], args.r_extra, f"integrals/{args.collection}")
+            write_job(f"topo{n}" + (f"_{args.tag}" if args.tag else ""), n, ints, tops[n], args.r_extra,
+                      f"integrals/{args.collection}")
         else:
             sel = sorted((x for x in ints if -sum(v for v in x if v < 0) <= args.max_s),
                          key=lambda x: (-sum(1 for v in x if v > 0), sum(v for v in x if v < 0)))[:args.max_ints]

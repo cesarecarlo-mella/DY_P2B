@@ -5,5 +5,7 @@ jobs/*/*
 !jobs/*/config/
 !jobs/*/jobs.yaml
 !jobs/*/run.sh
-# test jobs (make_jobs.py test) not at all
-jobs/*_test/
+# test jobs (make_jobs.py test, or jobs --tag) not at all
+jobs/*_*/
+# FORM tables written by to_form.py from the Reduze results
+tables/
