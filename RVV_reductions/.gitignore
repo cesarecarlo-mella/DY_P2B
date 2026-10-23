@@ -1,0 +1,9 @@
+__pycache__/
+.DS_Store
+# per job only the configuration is in git; integral lists, Reduze's working folders and results not
+jobs/*/*
+!jobs/*/config/
+!jobs/*/jobs.yaml
+!jobs/*/run.sh
+# test jobs (make_jobs.py test) not at all
+jobs/*_test/

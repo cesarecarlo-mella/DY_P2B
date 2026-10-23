@@ -42,7 +42,7 @@ amplitudes, exact in eps).
 1. `Code_RV`: Code_R channels (one emission) with the RRV two-set plumbing (set 1 x set 0), closed-loop handling of
    Code_RRV (spinlines.h block, Quark2 filter, SpinL in step 04, PS pieces), step 05 with the kinematic substitution
    and loop-only families.
-2. `Code_RVV`: products 2x0 and 1x1.
+2. `Code_RVV_1L1L` (product 1x1, done 2026-10-22) and `Code_RVV_2L` (product 2x0).
    - QGRAF loops = 2 set; conjugate of set 1 in step 03 with k1 -> k2 and the integral tag.
    - spinlines.h (changes to be approved): up to two closed quark loops (Spin(3), Spin(4)), each through SpinL in
      step 04; Nf, Nf^2; diagrams with any closed Quark2 loop dropped.
