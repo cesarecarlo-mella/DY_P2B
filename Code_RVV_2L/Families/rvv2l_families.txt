@@ -1,0 +1,15 @@
+# RVV 2L x tree families (rvv2l_shifts.py): number, name, propagators (all legs incoming,
+# q = -p1-p2-r1). PL, NPL = Hjet2L (Code/Scripts/Templates/common.py) with p_i -> -p_i, p3 -> r1;
+# crossings in the standard notation 1 = p1, 2 = p2, 3 = r1: PLx123 = PL with p1 -> p2 -> r1 -> p1
+ 1  PL        k1, k2, k1-k2, k1+p1, k2+p1, k1+p1+p2, k2+p1+p2, k1+p1+p2+r1, k2+p1+p2+r1
+ 2  PLx12     k1, k2, k1-k2, k1+p2, k2+p2, k1+p2+p1, k2+p2+p1, k1+p2+p1+r1, k2+p2+p1+r1
+ 3  PLx13     k1, k2, k1-k2, k1+r1, k2+r1, k1+r1+p2, k2+r1+p2, k1+r1+p2+p1, k2+r1+p2+p1
+ 4  PLx23     k1, k2, k1-k2, k1+p1, k2+p1, k1+p1+r1, k2+p1+r1, k1+p1+r1+p2, k2+p1+r1+p2
+ 5  PLx123    k1, k2, k1-k2, k1+p2, k2+p2, k1+p2+r1, k2+p2+r1, k1+p2+r1+p1, k2+p2+r1+p1
+ 6  PLx132    k1, k2, k1-k2, k1+r1, k2+r1, k1+r1+p1, k2+r1+p1, k1+r1+p1+p2, k2+r1+p1+p2
+ 7  NPL       k1, k2, k1+p1, k2+p1, k1-r1, k2-r1, k1-p2-r1, k1-k2, k1-k2-p2
+ 8  NPLx12    k1, k2, k1+p2, k2+p2, k1-r1, k2-r1, k1-p1-r1, k1-k2, k1-k2-p1
+ 9  NPLx13    k1, k2, k1+r1, k2+r1, k1-p1, k2-p1, k1-p2-p1, k1-k2, k1-k2-p2
+10  NPLx23    k1, k2, k1+p1, k2+p1, k1-p2, k2-p2, k1-r1-p2, k1-k2, k1-k2-r1
+11  NPLx123   k1, k2, k1+p2, k2+p2, k1-p1, k2-p1, k1-r1-p1, k1-k2, k1-k2-r1
+12  NPLx132   k1, k2, k1+r1, k2+r1, k1-p2, k2-p2, k1-p1-p2, k1-k2, k1-k2-p1

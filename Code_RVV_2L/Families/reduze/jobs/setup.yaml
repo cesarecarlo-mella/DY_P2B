@@ -1,0 +1,2 @@
+jobs:
+  - setup_sector_mappings: {}
