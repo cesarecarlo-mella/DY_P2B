@@ -58,6 +58,7 @@ QGRAF = os.environ.get("QGRAF", "qgraf")
 PREP = ["qgraf", "01", "02", "03"]                                       # per channel, in this order
 ALLSTEPS = PREP + ["04", "05", "06"]
 GROUP_SIZE = 10
+KEEP04 = 2                     # --prune keeps the step-04 output of the first 2 pairs of each channel (for verify)
 
 PIECES = [x + y for x in ("v", "a", "v2", "a2") for y in ("v", "a", "v2", "a2")]
 # identical quarks: flavour-1 couplings with the V vertices on different traces (class X, trace tag in step 04)
@@ -173,6 +174,18 @@ def mem_available_gb():
     except OSError:
         return None
     return None
+
+
+def dir_gb(path):
+    """total size of the files under path (FORM temporary folder of a job)"""
+    tot = 0
+    for root, _, files in os.walk(path):
+        for f in files:
+            try:
+                tot += os.path.getsize(os.path.join(root, f))
+            except OSError:
+                pass
+    return tot / 2**30
 
 
 def rss_gb(pid):
@@ -446,7 +459,7 @@ class State:
             w = csv.writer(f)
             if new:
                 w.writerow(["end", "step", "channel", "piece", "pair", "status", "reason", "wall_s", "cpu_s",
-                            "maxrss_gb", "output_mb"])
+                            "maxrss_gb", "output_mb", "maxtmp_gb"])
             w.writerow(row)
 
     def log_sys(self, row):
@@ -454,7 +467,8 @@ class State:
         with open(self.sys_csv, "a", newline="") as f:
             w = csv.writer(f)
             if new:
-                w.writerow(["time", "running", "pending", "mem_available_gb", "form_rss_gb", "load1", "disk_free_gb"])
+                w.writerow(["time", "running", "pending", "mem_available_gb", "form_rss_gb", "load1", "disk_free_gb",
+                            "form_tmp_gb"])
             w.writerow(row)
 
     def write_json(self, name, obj):
@@ -506,6 +520,22 @@ def cmd_run(args):
     def push(job):
         heapq.heappush(heap, job)
 
+    def prune04(ch, pair):
+        """--prune: the step-04 output of a pair is only read by its step-05 jobs (and verify): delete it once they are
+        all done, except for the KEEP04 pairs of the channel kept for verify"""
+        key = f"04__{ch.name}__-__{pair}"
+        if pair in ch.pairs[:KEEP04] or not st.done(key):
+            return
+        info = st.read("done", key)
+        if info.get("pruned"):
+            return
+        for d in glob.glob(os.path.join(ch.dir, "tmp", "squared_diagrams", "*")):
+            f = os.path.join(d, f"{os.path.basename(d)}_{pair}.inc")
+            if os.path.exists(f):
+                os.remove(f)
+        info["pruned"] = True                       # check: the non-zero pieces come from this marker
+        st.mark("done", key, info)
+
     def add05(ch, pair, pieces):
         nonzero[ch.name][pair] = pieces
         pending_05[ch.name][pair] = set()
@@ -518,6 +548,8 @@ def cmd_run(args):
             pending_05[ch.name][pair].add(p)
             if "05" in steps:
                 push(j)
+        if args.prune and not pending_05[ch.name][pair]:
+            prune04(ch, pair)
 
     def maybe06(ch):
         if "06" not in steps or len(nonzero[ch.name]) < len(ch.pairs):
@@ -604,17 +636,18 @@ def cmd_run(args):
             ok, why, info = False, f"FORM rc={rc}: {form_reason(job.logfile())}", {}
         else:
             ok, why, info = job.verify(dep)
+        job.maxtmp = max(getattr(job, "maxtmp", 0.0), dir_gb(job.formtmp(args)))
         job.cleanup_tmp(args)
         out = job.output()
         out_mb = os.path.getsize(out) / 1e6 if out and os.path.exists(out) else 0.0
         info.update({"wall_s": round(wall, 1), "cpu_s": round(cpu, 1), "maxrss_gb": round(maxrss, 3),
-                     "output_mb": round(out_mb, 2), "end": time.strftime("%Y-%m-%d %H:%M:%S"), "run_id": run_id,
+                     "output_mb": round(out_mb, 2), "maxtmp_gb": round(job.maxtmp, 2), "end": time.strftime("%Y-%m-%d %H:%M:%S"), "run_id": run_id,
                      "versions": versions(job.ch), "reason": why, "log": job.logfile()})
         st.mark("done" if ok else "failed", job.key, info)
         st.log_job([info["end"], job.step, job.ch.name, job.piece or "", job.pair or "", "done" if ok else "FAILED",
-                    why, info["wall_s"], info["cpu_s"], info["maxrss_gb"], info["output_mb"]])
+                    why, info["wall_s"], info["cpu_s"], info["maxrss_gb"], info["output_mb"], info["maxtmp_gb"]])
         print(f"{info['end']}  {'done  ' if ok else 'FAILED'} {job.label():35s} cpu {cpu/60:7.1f} min  "
-              f"{maxrss:6.2f} GB  {('  ' + why) if why else ''}", flush=True)
+              f"{maxrss:6.2f} GB  tmp {job.maxtmp:6.1f} GB{('  ' + why) if why else ''}", flush=True)
         if ok:
             job.cleanup()
             if job.step in PREP:
@@ -625,9 +658,14 @@ def cmd_run(args):
             if job.step in ("04", "05"):
                 if job.step == "05":
                     pending_05[job.ch.name][job.pair].discard(job.piece)
+                    if args.prune and not pending_05[job.ch.name][job.pair]:
+                        prune04(job.ch, job.pair)
                 maybe06(job.ch)
 
     last_sample = 0.0
+    disk = {"free": float("inf"), "tmp": 0.0, "paused": False}
+    if args.form_tmp:
+        os.makedirs(args.form_tmp, exist_ok=True)              # the free disk is measured there
     while (heap or running) and not stop["flag"]:
         # finished jobs
         for pid, job in list(running.items()):
@@ -651,17 +689,38 @@ def cmd_run(args):
                 if args.max_job_gb and r > args.max_job_gb and not getattr(job, "killed", None):
                     job.killed = f"killed: memory {r:.1f} GB > --max-job-gb {args.max_job_gb}"
                     os.killpg(pid, signal.SIGTERM)
+            tmp = {}
+            for pid, job in running.items():
+                tmp[pid] = dir_gb(job.formtmp(args))
+                job.maxtmp = max(getattr(job, "maxtmp", 0.0), tmp[pid])
+            disk["tmp"] = sum(tmp.values())
+            disk["free"] = shutil.disk_usage(args.form_tmp or SCRIPTS).free / 2**30
+            if disk["free"] < args.kill_disk_gb and tmp:
+                pid = max(tmp, key=tmp.get)                      # the job with the largest temporary files
+                job = running[pid]
+                if not getattr(job, "killed", None):
+                    job.killed = (f"killed: free disk {disk['free']:.0f} GB < --kill-disk-gb {args.kill_disk_gb:.0f}, "
+                                  f"temporary files {tmp[pid]:.0f} GB")
+                    print(f"{time.strftime('%Y-%m-%d %H:%M:%S')}  {job.killed}: {job.label()}", flush=True)
+                    os.killpg(pid, signal.SIGTERM)
+            paused = disk["free"] < args.min_disk_gb or disk["tmp"] > args.max_tmp_gb
+            if paused != disk["paused"]:
+                disk["paused"] = paused
+                print(f"{time.strftime('%Y-%m-%d %H:%M:%S')}  " + (
+                    f"no new jobs: free disk {disk['free']:.0f} GB (--min-disk-gb {args.min_disk_gb:.0f}), "
+                    f"temporary files {disk['tmp']:.0f} GB (--max-tmp-gb {args.max_tmp_gb:.0f})" if paused
+                    else "disk ok again: starting new jobs"), flush=True)
             avail = mem_available_gb()
             st.log_sys([time.strftime("%Y-%m-%d %H:%M:%S"), len(running), len(heap),
                         round(avail, 1) if avail is not None else "", round(tot, 2),
-                        round(os.getloadavg()[0], 1), round(shutil.disk_usage(SCRIPTS).free / 2**30, 1)])
+                        round(os.getloadavg()[0], 1), round(disk["free"], 1), round(disk["tmp"], 1)])
             st.write_json("running.json", {"time": time.strftime("%Y-%m-%d %H:%M:%S"), "pending": len(heap),
                                            "pending_by_step": {s: sum(1 for j in heap if j.step == s)
                                                                for s in ("04", "05", "06")},
                                            "jobs": [{"job": j.label(), "pid": p, "elapsed_min": round((now - j.start) / 60, 1),
                                                      "rss_gb": round(rss_gb(p), 2)} for p, j in running.items()]})
         # start new jobs
-        while heap and len(running) < args.jobs and not stop["flag"]:
+        while heap and len(running) < args.jobs and not stop["flag"] and not disk["paused"]:
             avail = mem_available_gb()
             if avail is not None and avail < args.min_free_gb:
                 break
@@ -784,6 +843,9 @@ def cmd_check(args):
         msgs = []
         for pair in ch.pairs:
             ok, why, nz = lint04(ch, pair)
+            key = f"04__{ch.name}__-__{pair}"
+            if not ok and st.done(key) and st.read("done", key).get("pruned"):
+                ok, nz = True, st.read("done", key)["nonzero"]           # step-04 output deleted by --prune
             if not ok:
                 msgs.append(f"04 {pair}: {why}")
                 continue
@@ -835,13 +897,20 @@ def form_reason_text(text):
     return " | ".join(lines[:3])[:300]
 
 
+def step04_file(ch, f05):
+    piece = os.path.basename(os.path.dirname(f05))
+    pair = re.search(r"_(\d+_\d+)\.ff$", f05).group(1)
+    return os.path.join(ch.dir, "tmp", "squared_diagrams", piece, f"{piece}_{pair}.inc")
+
+
 def cmd_verify(args):
     preflight()
     chans = [Channel(g, n) for g, n in select_channels(args)]
     rng = random.Random(args.seed)
     bad = 0
     for ch in chans:
-        files = glob.glob(os.path.join(ch.dir, "tmp", "squared_contracted", "*", "unreduced*_*.ff"))
+        files = [f for f in glob.glob(os.path.join(ch.dir, "tmp", "squared_contracted", "*", "unreduced*_*.ff"))
+                 if os.path.exists(step04_file(ch, f))]                # --prune keeps only some step-04 outputs
         for f in rng.sample(files, min(args.n, len(files))):
             piece = os.path.basename(os.path.dirname(f))
             pair = re.search(r"_(\d+_\d+)\.ff$", f).group(1)
@@ -1033,6 +1102,15 @@ def main():
     p.add_argument("--min-free-gb", type=float, default=100.0,
                    help="start no new job while the machine has less available memory (Linux)")
     p.add_argument("--max-job-gb", type=float, default=60.0, help="kill a FORM job above this memory (0 = never)")
+    p.add_argument("--min-disk-gb", type=float, default=100.0,
+                   help="start no new job while the disk of --form-tmp has less free space")
+    p.add_argument("--max-tmp-gb", type=float, default=1000.0,
+                   help="start no new job while the running jobs' FORM temporary files together exceed this")
+    p.add_argument("--kill-disk-gb", type=float, default=20.0,
+                   help="below this free disk, stop the job with the largest temporary files (failed; runs again on the next start)")
+    p.add_argument("--prune", action="store_true",
+                   help="delete the step-04 output of a pair once all its step-05 jobs are done (keeps 2 pairs per "
+                        "channel for verify)")
     p.add_argument("--nice", type=int, default=10, help="nice level of the FORM jobs")
     p.add_argument("--form-tmp", help="directory for FORM's temporary sort files (FORM -t)")
     p.add_argument("--sample", type=float, default=30.0, help="seconds between memory samples / status updates")
